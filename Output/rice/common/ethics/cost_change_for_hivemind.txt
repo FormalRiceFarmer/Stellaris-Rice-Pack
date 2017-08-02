@@ -1,0 +1,37 @@
+
+ethic_hive_mind = {
+	playable = { host_has_dlc = "Utopia" }
+
+	cost = 4
+	category = "hvm"
+	category_value = 0
+	use_for_pops = no
+	
+	country_modifier = {
+		country_resource_influence_add = 1
+		country_resource_unity_mult = 0.20
+		pop_environment_tolerance = 0.10
+		pop_growth_speed = 0.25
+	}
+	
+	tags = {
+		ETHIC_HIVE_MIND_NO_TUTORIAL
+		ETHIC_HIVE_MIND_AUTHORITY
+		ETHIC_HIVE_MIND_IMMORTAL_RULER
+		ETHIC_HIVE_MIND_NO_FACTIONS
+		ETHIC_HIVE_MIND_DOMESTIC_POP_SURVIVAL
+	}
+	
+	random_weight = {
+		value = 75
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { host_has_dlc = "Utopia" }
+
+				# needs setup at galaxy generation time (see game_start.7)
+				has_global_flag = game_started
+			}
+		}
+	}
+}
