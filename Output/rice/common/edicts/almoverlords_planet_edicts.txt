@@ -1,0 +1,281 @@
+# Sets the edict-cost for all edicts with this variable
+@standardEdictCost = 150
+
+planet_edict = {
+	name = "mark_for_handover"
+	influence_cost = 0
+	length = 0
+	
+	prerequisites = { "tech_frontier_growth_alpha" }
+	
+	potential = {
+		sector_controlled = yes
+		owner = {
+			not = { is_ai = yes }
+			minerals > 250
+			energy > 500
+			influence > 50
+		}
+		OR = {
+			has_building = building_libraryofadministration
+			has_building = building_councilhall
+			has_building = building_chamberofexecutives
+			has_building = building_chamberofexecutives_2
+			has_building = building_hallofwarriors
+			has_building = building_governerspalace
+			has_building = building_templeofrule
+		}
+		not = { has_planet_flag = pf_marked_for_handover2 }
+	}
+	
+	effect = {
+		owner = { add_minerals = -250 }
+		owner = { add_energy = -500 }
+		owner = { add_influence = -50 }
+		hidden_effect = {
+			set_planet_flag = pf_marked_for_handover2
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+planet_edict = {
+	name = "unmark_for_handover"
+	influence_cost = 0
+	length = 0
+	
+	potential = {
+		owner = {
+			not = { is_ai = yes }
+		}
+		has_planet_flag = pf_marked_for_handover2
+	}
+	
+	effect = {
+		owner = { add_minerals = 250 }
+		owner = { add_energy = 500 }
+		owner = { add_influence = 50 }
+		hidden_effect = {
+			remove_planet_flag = pf_marked_for_handover2
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+planet_edict = {
+	name = "create_state"
+	influence_cost = 0
+	length = 0
+	
+	prerequisites = { "tech_frontier_growth_alpha" }
+	
+	potential = {
+		sector_controlled = yes
+		owner = {
+			not = { is_ai = yes }
+			minerals > 500
+			energy > 1000
+			influence > 200
+			nor = {
+				has_authority = auth_dictatorial
+				has_authority = auth_hive_mind
+				has_authority = auth_machine_consciousness
+			}
+			not = { has_ethic = ethic_fanatic_authoritarian }
+		}
+		OR = {
+			has_building = building_libraryofadministration
+			has_building = building_councilhall
+		}
+		planet_size > 11
+		not = { has_planet_flag = pf_marked_for_handover2 }
+	}
+	
+	effect = {
+		owner = { add_influence = -200 }
+		planet_event = { id = almoverlords.11 }
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
+planet_edict = {
+	name = "create_corporation"
+	influence_cost = 0
+	length = 0
+	
+	prerequisites = { "tech_frontier_growth_alpha" }
+	
+	potential = {
+		sector_controlled = yes
+		owner = {
+			not = { is_ai = yes }
+			minerals > 250
+			energy > 500
+			influence > 100
+			nor = {
+				has_authority = auth_hive_mind
+				has_authority = auth_machine_consciousness
+			}
+			nor = {
+				has_ethic = ethic_fanatic_spiritualist
+				has_ethic = ethic_fanatic_authoritarian
+			}
+		}
+		OR = {
+			has_building = building_chamberofexecutives
+			has_building = building_chamberofexecutives_2
+		}
+		OR = {
+			has_building = building_tradestation
+			has_building = building_trade_company
+		}
+		planet_size > 10
+		not = { has_planet_flag = pf_marked_for_handover2 }
+	}
+	
+	effect = {
+		owner = { add_influence = -100 }
+		planet_event = { id = almoverlords.12 }
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
+planet_edict = {
+	name = "create_freeport"
+	influence_cost = 0
+	length = 0
+	
+	prerequisites = { "tech_frontier_growth_alpha" }
+	
+	potential = {
+		sector_controlled = yes
+		has_spaceport = yes
+		owner = {
+			not = { has_country_flag = cf_has_freeport }
+			#not = { is_ai = yes }
+			minerals > 500
+			energy > 1500
+			influence > 250
+			nor = {
+				has_authority = auth_hive_mind
+				has_authority = auth_machine_consciousness
+			}
+			nor = {
+				has_ethic = ethic_xenophobe
+				has_ethic = ethic_fanatic_xenophobe
+				has_ethic = ethic_fanatic_spiritualist
+				has_ethic = ethic_fanatic_authoritarian
+			}
+		}
+		OR = {
+			has_building = building_capital_1
+			has_building = building_capital_2
+			has_building = building_commerce_coord
+			has_building = building_central_databank
+		}
+		has_building = building_trade_company
+		planet_size > 12
+	}
+	
+	effect = {
+		planet_event = { id = almoverlords.13 }
+	}
+	
+	ai_weight = {
+		weight = 1
+	}
+}
+
+planet_edict = {
+	name = "create_foundation"
+	influence_cost = 0
+	length = 0
+	
+	prerequisites = { "tech_frontier_growth_alpha" }
+	
+	potential = {
+		sector_controlled = yes
+		has_spaceport = yes
+		owner = {
+			not = { has_country_flag = cf_two_foundations }
+			#not = { is_ai = yes }
+			energy > 5000
+			influence > 500
+			nor = {
+				has_authority = auth_hive_mind
+				has_authority = auth_machine_consciousness
+			}
+			or = {
+				has_ethic = ethic_materialist
+				has_ethic = ethic_fanatic_materialist
+			}
+		}
+		has_building = building_central_databank
+		planet_size > 14
+	}
+	
+	effect = {
+		planet_event = { id = almoverlords.14 }
+	}
+	
+	ai_weight = {
+		weight = 1
+	}
+}
+
+planet_edict = {
+	name = "create_district"
+	influence_cost = 0
+	length = 0
+	
+	prerequisites = { "tech_frontier_growth_alpha" }
+	
+	potential = {
+		sector_controlled = yes
+		owner = {
+			not = { is_ai = yes }
+			minerals > 250
+			energy > 500
+			influence > 100
+			nor = {
+				has_authority = auth_hive_mind
+				has_authority = auth_machine_consciousness
+			}
+			or = {
+				has_ethic = ethic_fanatic_spiritualist
+				has_ethic = ethic_fanatic_authoritarian
+				has_ethic = ethic_fanatic_militarist
+				has_ethic = ethic_fanatic_xenophobe
+			}
+		}
+		OR = {
+			has_building = building_hallofwarriors
+			has_building = building_governerspalace
+			has_building = building_templeofrule
+			has_building = building_councilhall
+		}
+		planet_size > 10
+		not = { has_planet_flag = pf_marked_for_handover2 }
+	}
+	
+	effect = {
+		owner = { add_influence = -100 }
+		planet_event = { id = almoverlords.15 }
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}

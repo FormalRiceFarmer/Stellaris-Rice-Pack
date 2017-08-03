@@ -1,0 +1,70 @@
+component_set = {
+	key = "LARGE_SWARMER_TORPEDOES"
+	
+	icon = "GFX_ship_part_swarmer_missile_3"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ALPHA_SIF_1"
+	
+	icon = "GFX_ship_part_alpha_sif_1"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ALPHA_SUPPLY_BAY_1"
+	
+	icon = "GFX_ship_part_alpha_supply_bay_1"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ALPHA_AUTO_LOADERS_1"
+	
+	icon = "GFX_ship_part_alpha_auto_loaders_1"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ALPHA_AUXILIARY_TARGETING_1"
+	
+	icon = "GFX_ship_part_alpha_auxiliary_targeting_1"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ALPHA_AUXILIARY_NAVSYSTEMS_1"
+	
+	icon = "GFX_ship_part_alpha_auxiliary_navsystems_1"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ALPHA_ECM_SUITE"
+	
+	icon = "GFX_ship_part_alpha_auxiliary_navsystems_1"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ALPHA_INTERDICTION_BEAMS"
+	
+	icon = "GFX_ship_part_alpha_auxiliary_navsystems_1"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ALPHA_INTERDICTION_BEAMS_2"
+	
+	icon = "GFX_ship_part_alpha_auxiliary_navsystems_1"
+	icon_frame = 1	
+}
+
+# component_set = {
+	# key = "corvette_spy_auras"
+	
+	# show_in_designer = no
+	# icon = "GFX_ship_part_aura_quantum_destabilizer"
+	# icon_frame = 1	
+# }

@@ -1,0 +1,2968 @@
+namespace = manage_trade
+
+# Yearly auto-stocking
+event = {
+	id = manage_trade.5500
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = {
+		every_country = {
+			limit = {
+				has_country_edict = "autostocking_on"
+				is_country_type = default
+			}
+			every_owned_planet = {
+				limit = {
+					not = { sector_controlled = yes }
+					not = { has_modifier = stocking_ice }
+					not = { has_building = "building_capital_tradehub" }
+					not = { has_planet_flag = stockpiling_exemption_on }
+					any_tile = {
+						has_resource = {
+							type = sr_ice
+							amount > 0
+						}
+					}
+				}
+				add_modifier = {
+					modifier = stocking_ice
+					days = -1
+				}
+				owner = {
+					capital_scope = {
+						random_tile = {
+							limit = {
+								has_building = "building_capital_tradehub"
+							}
+							add_resource = {
+								resource = sr_ice
+								amount = 1
+							}
+						}
+					}
+				}
+			}
+			every_owned_planet = {
+				limit = {
+					not = { sector_controlled = yes }
+					not = { has_modifier = stocking_actinides }
+					not = { has_building = "building_capital_tradehub" }
+					not = { has_planet_flag = stockpiling_exemption_on }
+					any_tile = {
+						has_resource = {
+							type = sr_actinides
+							amount > 0
+						}
+					}
+				}
+				add_modifier = {
+					modifier = stocking_actinides
+					days = -1
+				}
+				owner = {
+					capital_scope = {
+						random_tile = {
+							limit = {
+								has_building = "building_capital_tradehub"
+							}
+							add_resource = {
+								resource = sr_actinides
+								amount = 1
+							}
+						}
+					}
+				}
+			}
+			every_owned_planet = {
+				limit = {
+					not = { sector_controlled = yes }
+					not = { has_modifier = stocking_fuels }
+					not = { has_building = "building_capital_tradehub" }
+					not = { has_planet_flag = stockpiling_exemption_on }
+					any_tile = {
+						has_resource = {
+							type = sr_natural_fuels
+							amount > 0
+						}
+					}
+				}
+				add_modifier = {
+					modifier = stocking_fuels
+					days = -1
+				}
+				owner = {
+					capital_scope = {
+						random_tile = {
+							limit = {
+								has_building = "building_capital_tradehub"
+							}
+							add_resource = {
+								resource = sr_natural_fuels
+								amount = 1
+							}
+						}
+					}
+				}
+			}
+		}			
+	}
+}
+
+# Importing food
+planet_event = {
+	id = manage_trade.300
+	is_triggered_only = yes
+	hide_window = yes
+	location = ROOT
+	
+	immediate = {
+		add_modifier = {
+			modifier = "importing_food"
+			days = -1
+		}
+		random_tile = {
+			limit = {
+				OR = {
+					has_building = "building_tradestation"
+					has_building = "building_trade_company"
+				}
+			}
+			add_resource = {
+				resource = food
+				amount = 2
+				replace = no
+			}
+			add_resource = {
+				resource = energy
+				amount = -1
+				replace = no
+			}				
+		}
+	}
+}
+
+planet_event = {
+	id = manage_trade.350
+	is_triggered_only = yes
+	hide_window = yes
+	location = ROOT
+	
+	immediate = {
+		remove_modifier = importing_food
+		random_tile = {
+			limit = {
+				OR = {
+					has_building = "building_tradestation"
+					has_building = "building_trade_company"
+				}
+			}
+			add_resource = {
+				resource = food
+				amount = -2
+				replace = no
+			}
+			add_resource = {
+				resource = energy
+				amount = 1
+				replace = no
+			}				
+		}
+	}
+}
+
+# Calculate and initialise number of possible routes originating from a planet
+planet_event = {
+	id = manage_trade.500
+	is_triggered_only = yes
+	hide_window = yes
+	location = ROOT
+
+	immediate = {
+		if = {
+			limit = {
+				ROOT = {
+					check_variable = {
+						which = "max_trade_routes"
+						value < 1					
+					}
+				}
+			}
+			ROOT = {
+				set_variable = {
+					which = "max_trade_routes"
+					value = 0
+				}
+			}
+			if = {
+				limit = {
+					ROOT = { has_spaceport_module = commerce_guild }
+				}
+				change_variable = {
+					which = "max_trade_routes"
+					value = 1			
+				}
+			}
+			if = {
+				limit = {
+					ROOT = { has_spaceport_module = trade_port }
+				}
+				change_variable = {
+					which = "max_trade_routes"
+					value = 1			
+				}
+			}
+			if = {
+				limit = {
+					ROOT = { has_spaceport_module = merchant_company }
+				}
+				change_variable = {
+					which = "max_trade_routes"
+					value = 1			
+				}
+			}
+			if = {
+				limit = {
+					ROOT = { has_spaceport_module = frontier_supplier }
+				}
+				change_variable = {
+					which = "max_trade_routes"
+					value = 1			
+				}
+			}
+		}
+	}
+}
+
+# Add a route originating from a planet
+planet_event = {
+	id = manage_trade.600
+	is_triggered_only = yes
+	hide_window = yes
+	location = ROOT
+
+	immediate = {
+		 ROOT = {
+			planet_event = {
+				id = manage_trade.500
+			}
+			if = {
+				limit = {
+					check_variable = {
+						which = "number_trade_routes"
+						value < 1
+					}					
+				}
+				set_variable = {
+					which = "number_trade_routes"
+					value = 1		
+				}
+				else = {
+					change_variable = {
+						which = "number_trade_routes"
+						value = 1		
+					}				
+				}
+			}
+			random_tile = {
+				limit = {
+					OR = {
+						has_building = "building_tradestation"
+						has_building = "building_trade_company"
+					}
+				}
+				add_resource = {
+					resource = energy
+					amount = 1
+					replace = no
+				}			
+			}
+			planet_event = {
+				id = manage_trade.800
+			}
+		}
+	}
+}
+
+# Remove a route originating from a planet
+planet_event = {
+	id = manage_trade.700
+	is_triggered_only = yes
+	hide_window = yes
+	location = ROOT
+
+	immediate = {
+		ROOT = {
+			planet_event = {
+				id = manage_trade.500
+			}
+			change_variable = {
+				which = "number_trade_routes"
+				value = -1				
+			}
+			random_tile = {
+				limit = {
+					OR = {
+						has_building = "building_tradestation"
+						has_building = "building_trade_company"
+					}
+				}
+				add_resource = {
+					resource = energy
+					amount = -1
+					replace = no
+				}			
+			}
+			planet_event = {
+				id = manage_trade.800
+			}
+		}
+	}
+}
+
+# Planet modifier displaying number of trade routes
+planet_event = {
+	id = manage_trade.800
+	is_triggered_only = yes
+	hide_window = yes
+	location = ROOT
+	
+	immediate = {
+		ROOT = {
+			remove_modifier = trade_routes_1
+			remove_modifier = trade_routes_2
+			remove_modifier = trade_routes_3
+			remove_modifier = trade_routes_4
+			
+			if = {
+				limit = {
+					check_variable = {
+						which = "number_trade_routes"
+						value = 1
+					}					
+				}
+				add_modifier = {
+					modifier = trade_routes_1
+					days = -1
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						which = "number_trade_routes"
+						value = 2
+					}					
+				}
+				add_modifier = {
+					modifier = trade_routes_2
+					days = -1
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						which = "number_trade_routes"
+						value = 3
+					}					
+				}
+				add_modifier = {
+					modifier = trade_routes_3
+					days = -1
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						which = "number_trade_routes"
+						value = 4
+					}					
+				}
+				add_modifier = {
+					modifier = trade_routes_4
+					days = -1
+				}
+			}
+		}
+	}
+}
+
+# Increase trade goods production
+planet_event = {
+	id = manage_trade.900
+	is_triggered_only = yes
+	hide_window = yes
+	location = ROOT
+	
+	immediate = {
+		add_modifier = {
+			modifier = "increase_tradegoods"
+			days = -1
+		}
+		
+		random_tile = {
+			limit = {
+				OR = {
+					has_building = "building_tradestation"
+					has_building = "building_trade_company"
+				}
+			}
+			add_resource = {
+				resource = sr_tradegoods
+				amount = 1
+				replace = no
+			}				
+		}
+	}
+}
+
+# Reduce trade goods production
+planet_event = {
+	id = manage_trade.950
+	is_triggered_only = yes
+	hide_window = yes
+	location = ROOT
+	
+	immediate = {
+		remove_modifier = "increase_tradegoods"
+		
+		random_tile = {
+			limit = {
+				OR = {
+					has_building = "building_tradestation"
+					has_building = "building_trade_company"
+				}
+			}
+			add_resource = {
+				resource = sr_tradegoods
+				amount = -1
+				replace = no
+			}				
+		}
+	}
+}
+
+# Increase cores production
+planet_event = {
+	id = manage_trade.905
+	is_triggered_only = yes
+	hide_window = yes
+	location = ROOT
+	
+	immediate = {
+		add_modifier = {
+			modifier = "increase_cores"
+			days = -1
+		}
+		
+		random_tile = {
+			limit = {
+				has_building = "building_power_hub_2"
+			}
+			add_resource = {
+				resource = sr_micro_cores
+				amount = 1
+				replace = no
+			}	
+			set_building = "building_power_hub_2_plus"		
+		}
+	}
+}
+
+# Reduce cores production
+planet_event = {
+	id = manage_trade.955
+	is_triggered_only = yes
+	hide_window = yes
+	location = ROOT
+	
+	immediate = {
+		remove_modifier = "increase_cores"
+		
+		random_tile = {
+			limit = {
+				has_building = "building_power_hub_2_plus"
+			}
+			add_resource = {
+				resource = sr_micro_cores
+				amount = -1
+				replace = no
+			}	
+			set_building = "building_power_hub_2"			
+		}
+	}
+}
+
+# Increase gems production
+planet_event = {
+	id = manage_trade.915
+	is_triggered_only = yes
+	hide_window = yes
+	location = ROOT
+	
+	immediate = {
+		add_modifier = {
+			modifier = "increase_gems"
+			days = -1
+		}
+		
+		random_tile = {
+			limit = {
+				has_building = "building_mineral_processing_plant_2"
+			}
+			add_resource = {
+				resource = sr_replicator_gems
+				amount = 1
+				replace = no
+			}	
+			set_building = "building_mineral_processing_plant_2_plus"		
+		}
+	}
+}
+
+# Reduce gems production
+planet_event = {
+	id = manage_trade.965
+	is_triggered_only = yes
+	hide_window = yes
+	location = ROOT
+	
+	immediate = {
+		remove_modifier = "increase_gems"
+		
+		random_tile = {
+			limit = {
+				has_building = "building_mineral_processing_plant_2_plus"
+			}
+			add_resource = {
+				resource = sr_replicator_gems
+				amount = -1
+				replace = no
+			}	
+			set_building = "building_mineral_processing_plant_2"			
+		}
+	}
+}
+
+# Increase gems production transformer
+planet_event = {
+	id = manage_trade.925
+	is_triggered_only = yes
+	hide_window = yes
+	location = ROOT
+	
+	immediate = {
+		add_modifier = {
+			modifier = "increase_gems_tr"
+			days = -1
+		}
+		
+		random_tile = {
+			limit = {
+				has_building = "building_mineral_transformer"
+			}
+			add_resource = {
+				resource = sr_replicator_gems
+				amount = 1
+				replace = no
+			}	
+			set_building = "building_mineral_transformer_plus"		
+		}
+	}
+}
+
+# Reduce gems production transformer
+planet_event = {
+	id = manage_trade.975
+	is_triggered_only = yes
+	hide_window = yes
+	location = ROOT
+	
+	immediate = {
+		remove_modifier = "increase_gems_tr"
+		
+		random_tile = {
+			limit = {
+				has_building = "building_mineral_transformer_plus"
+			}
+			add_resource = {
+				resource = sr_replicator_gems
+				amount = -1
+				replace = no
+			}	
+			set_building = "building_mineral_transformer"			
+		}
+	}
+}
+
+planet_event = {
+	id = manage_trade.1000
+	is_triggered_only = yes
+	
+	title = "manage_trade.1000.name"
+	desc = "manage_trade.1000.desc"
+	picture = GFX_evt_fleet_neutral_exports
+
+	location = ROOT
+	
+	#auto_opens = yes
+	
+	option = {
+		name = "Export Actinides (1)"
+		
+		trigger = {
+				not = { has_planet_flag = pf_export_actinides }
+				not = { has_planet_flag = pf_import_actinides }
+				has_building = "building_nuclear_research"
+		}
+		
+		hidden_effect = {
+			set_planet_flag = pf_export_actinides
+			random_tile = {
+				limit = {
+					has_building = "building_nuclear_research"
+				}
+				add_resource = {
+					resource = sr_actinides
+					amount = -1
+					replace = no
+				}	
+			}
+			
+			owner = {
+				capital_scope = {
+					random_tile = {
+						limit = {
+							has_building = "building_capital_tradehub"
+						}
+						add_resource = {
+							resource = sr_actinides
+							amount = 1
+							replace = no
+						}
+					}
+				}
+			}
+			
+			planet_event = {
+				id = manage_trade.1000
+			}
+		}
+	}
+	
+	option = {
+		name = "Stop exporting Actinides"
+		
+		trigger = {
+			has_planet_flag = pf_export_actinides
+			has_building = "building_nuclear_research"
+			owner = {
+				capital_scope = {
+					any_tile = {
+						has_building = "building_capital_tradehub"
+						has_resource = {
+							type = sr_actinides
+							amount > 0
+						}
+					}
+				}
+			}	
+		}
+		
+		hidden_effect = {
+			remove_planet_flag = pf_export_actinides
+			random_tile = {
+				limit = {
+					has_building = "building_nuclear_research"
+				}
+				add_resource = {
+					resource = sr_actinides
+					amount = 1
+					replace = no
+				}	
+			}
+			
+			owner = {
+				capital_scope = {
+					random_tile = {
+						limit = {
+							has_building = "building_capital_tradehub"
+						}
+						add_resource = {
+							resource = sr_actinides
+							amount = -1
+							replace = no
+						}
+					}
+				}
+			}
+			
+			planet_event = {
+				id = manage_trade.1000
+			}
+		}
+	}
+	
+	option = {
+		name = "Export Nutrient Rations (1)"
+		
+		trigger = {
+			not = { has_planet_flag = pf_export_nutrient_rations }
+			not = { has_planet_flag = pf_import_nutrient_rations }
+			has_building = "building_frontier_provisioner"
+		}
+		
+		hidden_effect = {
+			set_planet_flag = pf_export_nutrient_rations
+			random_tile = {
+				limit = {
+					has_building = "building_frontier_provisioner"
+				}
+				set_building = "building_frontier_provisioner_ex"
+			}
+			
+			owner = {
+				capital_scope = {
+					random_tile = {
+						limit = {
+							has_building = "building_capital_tradehub"
+						}
+						add_resource = {
+							resource = sr_nutrient_rations
+							amount = 1
+							replace = no
+						}
+					}
+				}
+			}
+			
+			planet_event = {
+				id = manage_trade.1000
+			}
+		}
+	}
+	
+	option = {
+		name = "Stop exporting Nutrient Rations"
+		
+		trigger = {
+			has_planet_flag = pf_export_nutrient_rations
+			has_building = "building_frontier_provisioner_ex"
+			owner = {
+				capital_scope = {
+					any_tile = {
+						has_building = "building_capital_tradehub"
+						has_resource = {
+							type = sr_nutrient_rations
+							amount > 0
+						}
+					}
+				}
+			}	
+		}
+		
+		hidden_effect = {
+			remove_planet_flag = pf_export_nutrient_rations
+			random_tile = {
+				limit = {
+					has_building = "building_frontier_provisioner_ex"
+				}
+				set_building = "building_frontier_provisioner"	
+			}
+			
+			owner = {
+				capital_scope = {
+					random_tile = {
+						limit = {
+							has_building = "building_capital_tradehub"
+						}
+						add_resource = {
+							resource = sr_nutrient_rations
+							amount = -1
+							replace = no
+						}
+					}
+				}
+			}
+			
+			planet_event = {
+				id = manage_trade.1000
+			}
+		}
+	}
+	
+	option = {
+		name = "Export Luxuries (1)"
+		
+		trigger = {
+			not = { has_planet_flag = pf_export_luxuries }
+			not = { has_planet_flag = pf_import_luxuries }
+			has_building = "building_luxuries_manufacturing"
+		}
+		
+		hidden_effect = {
+			set_planet_flag = pf_export_luxuries
+			random_tile = {
+				limit = {
+					has_building = "building_luxuries_manufacturing"
+				}
+				set_building = "building_luxuries_manufacturing_ex"
+			}
+			
+			owner = {
+				capital_scope = {
+					random_tile = {
+						limit = {
+							has_building = "building_capital_tradehub"
+						}
+						add_resource = {
+							resource = sr_luxuries
+							amount = 1
+							replace = no
+						}
+					}
+				}
+			}
+			
+			planet_event = {
+				id = manage_trade.1000
+			}
+		}
+	}
+	
+	option = {
+		name = "Stop exporting Luxuries"
+		
+		trigger = {
+			has_planet_flag = pf_export_luxuries
+			has_building = "building_luxuries_manufacturing_ex"
+			owner = {
+				capital_scope = {
+					any_tile = {
+						has_building = "building_capital_tradehub"
+						has_resource = {
+							type = sr_luxuries
+							amount > 0
+						}
+					}
+				}
+			}	
+		}
+		
+		hidden_effect = {
+			remove_planet_flag = pf_export_luxuries
+			random_tile = {
+				limit = {
+					has_building = "building_luxuries_manufacturing_ex"
+				}
+				set_building = "building_luxuries_manufacturing"	
+			}
+			
+			owner = {
+				capital_scope = {
+					random_tile = {
+						limit = {
+							has_building = "building_capital_tradehub"
+						}
+						add_resource = {
+							resource = sr_luxuries
+							amount = -1
+							replace = no
+						}
+					}
+				}
+			}
+			
+			planet_event = {
+				id = manage_trade.1000
+			}
+		}
+	}
+	
+	option = {
+		name = "Export Synthehol (1)"
+		
+		trigger = {
+			not = { has_planet_flag = pf_export_synthehol }
+			not = { has_planet_flag = pf_import_synthehol }
+			has_building = "building_frontier_brewery"
+		}
+		
+		hidden_effect = {
+			set_planet_flag = pf_export_synthehol
+			random_tile = {
+				limit = {
+					has_building = "building_frontier_brewery"
+				}
+				set_building = "building_frontier_brewery_ex"
+			}
+			
+			owner = {
+				capital_scope = {
+					random_tile = {
+						limit = {
+							has_building = "building_capital_tradehub"
+						}
+						add_resource = {
+							resource = sr_synthehol
+							amount = 1
+							replace = no
+						}
+					}
+				}
+			}
+			
+			planet_event = {
+				id = manage_trade.1000
+			}
+		}
+	}
+	
+	option = {
+		name = "Stop exporting Synthehol"
+		
+		trigger = {
+			has_planet_flag = pf_export_synthehol
+			has_building = "building_frontier_brewery_ex"
+			owner = {
+				capital_scope = {
+					any_tile = {
+						has_building = "building_capital_tradehub"
+						has_resource = {
+							type = sr_synthehol
+							amount > 0
+						}
+					}
+				}
+			}	
+		}
+		
+		hidden_effect = {
+			remove_planet_flag = pf_export_synthehol
+			random_tile = {
+				limit = {
+					has_building = "building_frontier_brewery_ex"
+				}
+				set_building = "building_frontier_brewery"	
+			}
+			
+			owner = {
+				capital_scope = {
+					random_tile = {
+						limit = {
+							has_building = "building_capital_tradehub"
+						}
+						add_resource = {
+							resource = sr_synthehol
+							amount = -1
+							replace = no
+						}
+					}
+				}
+			}
+			
+			planet_event = {
+				id = manage_trade.1000
+			}
+		}
+	}
+	
+	option = {
+		name = "Export Trade Goods (1)"
+		
+		trigger = {
+			not = { has_planet_flag = pf_export_tradegoods }
+			not = { has_planet_flag = pf_import_tradegoods }
+			any_tile = {
+				OR = {
+					has_building = "building_tradestation"
+					has_building = "building_trade_company"
+				}
+				has_resource = {
+					type = sr_tradegoods
+					amount > 0
+				}
+			}
+		}
+		
+		hidden_effect = {
+			set_planet_flag = pf_export_tradegoods
+			random_tile = {
+				limit = {
+					OR = {
+						has_building = "building_tradestation"
+						has_building = "building_trade_company"
+					}
+				}
+				add_resource = {
+					resource = sr_tradegoods
+					amount = -1	
+					replace = no
+				}
+				if = {
+					limit = {
+						has_building = "building_tradestation"
+					}
+					set_building = "building_tradestation_ex"
+				}
+				if = {
+					limit = {
+						has_building = "building_trade_company"
+					}
+					set_building = "building_trade_company_ex"
+				}
+			}
+			
+			owner = {
+				capital_scope = {
+					random_tile = {
+						limit = {
+							has_building = "building_capital_tradehub"
+						}
+						add_resource = {
+							resource = sr_tradegoods
+							amount = 1
+							replace = no
+						}
+					}
+				}
+			}
+			
+			planet_event = {
+				id = manage_trade.1000
+			}
+		}
+	}
+	
+	option = {
+		name = "Stop exporting Trade Goods"
+		
+		trigger = {
+			has_planet_flag = pf_export_tradegoods
+			OR = {
+				has_building = "building_tradestation_ex"
+				has_building = "building_trade_company_ex"
+			}
+			owner = {
+				capital_scope = {
+					any_tile = {
+						has_building = "building_capital_tradehub"
+						has_resource = {
+							type = sr_tradegoods
+							amount > 0
+						}
+					}
+				}
+			}		
+		}
+		
+		hidden_effect = {
+			remove_planet_flag = pf_export_tradegoods
+			random_tile = {
+				limit = {
+					OR = {
+						has_building = "building_tradestation_ex"
+						has_building = "building_trade_company_ex"
+					}
+				}
+				add_resource = {
+					resource = sr_tradegoods
+					amount = 1	
+					replace = no
+				}
+				if = {
+					limit = {
+						has_building = "building_tradestation_ex"
+					}
+					set_building = "building_tradestation"
+				}
+				if = {
+					limit = {
+						has_building = "building_trade_company_ex"
+					}
+					set_building = "building_trade_company"
+				}
+			}
+			
+			owner = {
+				capital_scope = {
+					random_tile = {
+						limit = {
+							has_building = "building_capital_tradehub"
+						}
+						add_resource = {
+							resource = sr_tradegoods
+							amount = -1
+							replace = no
+						}
+					}
+				}
+			}
+			
+			planet_event = {
+				id = manage_trade.1000
+			}
+		}
+	}
+
+	option = {
+		name = "Export processed Replicator Gems (1)"
+		
+		trigger = {
+			not = { has_planet_flag = pf_export_gems }
+			not = { has_planet_flag = pf_import_gems }
+			any_tile = {
+				OR = {
+					has_building = "building_tradestation"
+					has_building = "building_trade_company"
+				}
+			}
+			any_tile = {
+				has_building = "building_mineral_processing_plant_2_plus"
+				has_resource = {
+					type = sr_replicator_gems
+					amount > 0
+				}
+			}
+		}
+		
+		hidden_effect = {
+			set_planet_flag = pf_export_gems
+			random_tile = {
+				limit = {
+					has_building = "building_mineral_processing_plant_2_plus"
+				}
+				add_resource = {
+					resource = sr_replicator_gems
+					amount = -1	
+					replace = no
+				}
+				set_building = "building_mineral_processing_plant_2_ex"
+			}
+			
+			owner = {
+				capital_scope = {
+					random_tile = {
+						limit = {
+							has_building = "building_capital_tradehub"
+						}
+						add_resource = {
+							resource = sr_replicator_gems
+							amount = 1
+							replace = no
+						}
+					}
+				}
+			}
+			
+			planet_event = {
+				id = manage_trade.1000
+			}
+		}
+	}
+	
+	option = {
+		name = "Stop exporting processed Rep-Gems"
+		
+		trigger = {
+			has_planet_flag = pf_export_gems
+			has_building = "building_mineral_processing_plant_2_ex"
+			owner = {
+				capital_scope = {
+					any_tile = {
+						has_building = "building_capital_tradehub"
+						has_resource = {
+							type = sr_replicator_gems
+							amount > 0
+						}
+					}
+				}
+			}		
+		}
+		
+		hidden_effect = {
+			remove_planet_flag = pf_export_gems
+			random_tile = {
+				limit = {
+					has_building = "building_mineral_processing_plant_2_ex"
+				}
+				add_resource = {
+					resource = sr_replicator_gems
+					amount = 1	
+					replace = no
+				}
+				set_building = "building_mineral_processing_plant_2_plus"
+			}
+			
+			owner = {
+				capital_scope = {
+					random_tile = {
+						limit = {
+							has_building = "building_capital_tradehub"
+						}
+						add_resource = {
+							resource = sr_replicator_gems
+							amount = -1
+							replace = no
+						}
+					}
+				}
+			}
+			
+			planet_event = {
+				id = manage_trade.1000
+			}
+		}
+	}
+	
+	option = {
+		name = "Export transformed Replicator Gems (1)"
+		
+		trigger = {
+			not = { has_planet_flag = pf_export_gems_tr }
+			not = { has_planet_flag = pf_import_gems_tr }
+			any_tile = {
+				OR = {
+					has_building = "building_tradestation"
+					has_building = "building_trade_company"
+				}
+			}
+			any_tile = {
+				has_building = "building_mineral_transformer_plus"
+				has_resource = {
+					type = sr_replicator_gems
+					amount > 0
+				}
+			}
+		}
+		
+		hidden_effect = {
+			set_planet_flag = pf_export_gems_tr
+			random_tile = {
+				limit = {
+					has_building = "building_mineral_transformer_plus"
+				}
+				add_resource = {
+					resource = sr_replicator_gems
+					amount = -1	
+					replace = no
+				}
+				set_building = "building_mineral_transformer_ex"
+			}
+			
+			owner = {
+				capital_scope = {
+					random_tile = {
+						limit = {
+							has_building = "building_capital_tradehub"
+						}
+						add_resource = {
+							resource = sr_replicator_gems
+							amount = 1
+							replace = no
+						}
+					}
+				}
+			}
+			
+			planet_event = {
+				id = manage_trade.1000
+			}
+		}
+	}
+	
+	option = {
+		name = "Stop exporting transformed Rep-Gems"
+		
+		trigger = {
+			has_planet_flag = pf_export_gems_tr
+			has_building = "building_mineral_transformer_ex"
+			owner = {
+				capital_scope = {
+					any_tile = {
+						has_building = "building_capital_tradehub"
+						has_resource = {
+							type = sr_replicator_gems
+							amount > 0
+						}
+					}
+				}
+			}		
+		}
+		
+		hidden_effect = {
+			remove_planet_flag = pf_export_gems_tr
+			random_tile = {
+				limit = {
+					has_building = "building_mineral_transformer_ex"
+				}
+				add_resource = {
+					resource = sr_replicator_gems
+					amount = 1	
+					replace = no
+				}
+				set_building = "building_mineral_transformer_plus"
+			}
+			
+			owner = {
+				capital_scope = {
+					random_tile = {
+						limit = {
+							has_building = "building_capital_tradehub"
+						}
+						add_resource = {
+							resource = sr_replicator_gems
+							amount = -1
+							replace = no
+						}
+					}
+				}
+			}
+			
+			planet_event = {
+				id = manage_trade.1000
+			}
+		}
+	}
+	
+	option = {
+		name = "Export Microfission Cores (1)"
+		
+		trigger = {
+			not = { has_planet_flag = pf_export_cores }
+			not = { has_planet_flag = pf_import_cores }
+			any_tile = {
+				OR = {
+					has_building = "building_tradestation"
+					has_building = "building_trade_company"
+				}
+			}
+			any_tile = {
+				has_building = "building_power_hub_2_plus"
+				has_resource = {
+					type = sr_micro_cores
+					amount > 0
+				}
+			}
+		}
+		
+		hidden_effect = {
+			set_planet_flag = pf_export_cores
+			random_tile = {
+				limit = {
+					has_building = "building_power_hub_2_plus"
+				}
+				add_resource = {
+					resource = sr_micro_cores
+					amount = -1	
+					replace = no
+				}
+				set_building = "building_power_hub_2_ex"
+			}
+			
+			owner = {
+				capital_scope = {
+					random_tile = {
+						limit = {
+							has_building = "building_capital_tradehub"
+						}
+						add_resource = {
+							resource = sr_micro_cores
+							amount = 1
+							replace = no
+						}
+					}
+				}
+			}
+			
+			planet_event = {
+				id = manage_trade.1000
+			}
+		}
+	}
+	
+	option = {
+		name = "Stop exporting Microfission Cores"
+		
+		trigger = {
+			has_planet_flag = pf_export_cores
+			has_building = "building_power_hub_2_ex"
+			owner = {
+				capital_scope = {
+					any_tile = {
+						has_building = "building_capital_tradehub"
+						has_resource = {
+							type = sr_micro_cores
+							amount > 0
+						}
+					}
+				}
+			}		
+		}
+		
+		hidden_effect = {
+			remove_planet_flag = pf_export_cores
+			random_tile = {
+				limit = {
+					has_building = "building_power_hub_2_ex"
+				}
+				add_resource = {
+					resource = sr_micro_cores
+					amount = 1	
+					replace = no
+				}
+				set_building = "building_power_hub_2_plus"
+			}
+			
+			owner = {
+				capital_scope = {
+					random_tile = {
+						limit = {
+							has_building = "building_capital_tradehub"
+						}
+						add_resource = {
+							resource = sr_micro_cores
+							amount = -1
+							replace = no
+						}
+					}
+				}
+			}
+			
+			planet_event = {
+				id = manage_trade.1000
+			}
+		}
+	}
+	
+	option = {
+		name = "Export Ice (2)"
+		
+		trigger = {
+				not = { has_planet_flag = pf_export_ice }
+				not = { has_planet_flag = pf_import_ice }
+				has_building = "building_ice_factory"
+		}
+		
+		hidden_effect = {
+				set_planet_flag = pf_export_ice
+				random_tile = {
+					limit = {
+						has_building = "building_ice_factory"
+					}
+					set_building = "building_ice_factory_ex"
+				}
+				
+				owner = {
+					capital_scope = {
+						random_tile = {
+							limit = {
+								has_building = "building_capital_tradehub"
+							}
+							add_resource = {
+								resource = sr_ice
+								amount = 2
+								replace = no
+							}
+						}
+					}
+				}
+				
+				planet_event = {
+					id = manage_trade.1000
+				}
+			}
+	}
+	
+	option = {
+		name = "Stop exporting Ice"
+		
+		trigger = {
+			has_planet_flag = pf_export_ice
+			has_building = "building_ice_factory_ex"
+			owner = {
+				capital_scope = {
+					any_tile = {
+						has_building = "building_capital_tradehub"
+						has_resource = {
+							type = sr_ice
+							amount > 1
+						}
+					}
+				}
+			}	
+		}
+		
+		hidden_effect = {
+			remove_planet_flag = pf_export_ice
+			random_tile = {
+				limit = {
+					has_building = "building_ice_factory_ex"
+				}
+				set_building = "building_ice_factory"	
+			}
+			
+			owner = {
+				capital_scope = {
+					random_tile = {
+						limit = {
+							has_building = "building_capital_tradehub"
+						}
+						add_resource = {
+							resource = sr_ice
+							amount = -2
+							replace = no
+						}
+					}
+				}
+			}
+			
+			planet_event = {
+				id = manage_trade.1000
+			}
+		}
+	}
+	
+	# option = {
+		# name = "Export BioMass-Pods (3)"
+		
+		# trigger = {
+				# not = { has_planet_flag = pf_export_biomass_pods }
+				# not = { has_planet_flag = pf_import_biomass_pods }
+				# has_building = "building_biomass_former"
+		# }
+		
+		# hidden_effect = {
+				# set_planet_flag = pf_export_biomass_pods
+				# random_tile = {
+					# limit = {
+						# has_building = "building_biomass_former"
+					# }
+					# set_building = "building_biomass_former_ex"
+				# }
+				
+				# owner = {
+					# capital_scope = {
+						# random_tile = {
+							# limit = {
+								# OR = {
+									# has_building = "building_exo_ops"
+									# has_building = "building_colony_shelter"
+									# has_building = "building_capital_1"
+									# has_building = "building_capital_2"
+									# has_building = "building_capital_3"
+									# has_building = "building_mining_guild"
+									# has_building = "building_central_databank"
+									# has_building = "building_farming_guild"
+									# has_building = "building_commerce_coord"
+								# }
+							# }
+							# add_resource = {
+								# resource = sr_biomass_pods
+								# amount = 3
+								# replace = no
+							# }
+						# }
+					# }
+				# }
+				
+				# planet_event = {
+					# id = manage_trade.1000
+				# }
+			# }
+		# }
+	# }
+	
+	# option = {
+		# name = "Stop exporting BioMass-Pods"
+		
+		# trigger = {
+			# has_planet_flag = pf_export_biomass_pods
+			# has_building = "building_biomass_former_ex"
+			# owner = {
+				# capital_scope = {
+					# any_tile = {
+						# OR = {
+							# has_building = "building_exo_ops"
+							# has_building = "building_colony_shelter"
+							# has_building = "building_capital_1"
+							# has_building = "building_capital_2"
+							# has_building = "building_capital_3"
+							# has_building = "building_mining_guild"
+							# has_building = "building_central_databank"
+							# has_building = "building_farming_guild"
+							# has_building = "building_commerce_coord"
+						# }
+						# has_resource = {
+							# type = sr_biomass_pods
+							# amount > 2
+						# }
+					# }
+				# }
+			# }	
+		# }
+		
+		# hidden_effect = {
+			# remove_planet_flag = pf_export_biomass_pods
+			# random_tile = {
+				# limit = {
+					# has_building = "building_biomass_former_ex"
+				# }
+				# set_building = "building_biomass_former"	
+			# }
+			
+			# owner = {
+				# capital_scope = {
+					# random_tile = {
+						# limit = {
+							# OR = {
+								# has_building = "building_exo_ops"
+								# has_building = "building_colony_shelter"
+								# has_building = "building_capital_1"
+								# has_building = "building_capital_2"
+								# has_building = "building_capital_3"
+								# has_building = "building_mining_guild"
+								# has_building = "building_central_databank"
+								# has_building = "building_farming_guild"
+								# has_building = "building_commerce_coord"
+							# }
+						# }
+						# add_resource = {
+							# resource = sr_biomass_pods
+							# amount = -3
+							# replace = no
+						# }
+					# }
+				# }
+			# }
+			
+			# planet_event = {
+				# id = manage_trade.1000
+			# }
+		# }
+	# }
+	
+	option = {
+		name = "Export Natural Fuels (3)"
+		
+		trigger = {
+			not = { has_planet_flag = pf_export_natural_fuels }
+			not = { has_planet_flag = pf_import_natural_fuels }
+			OR = {
+				has_building = "building_fuel_refinery_0"
+				has_building = "building_fuel_refinery"
+				has_building = "building_fuel_refinery_2"
+			}
+		}
+		
+		hidden_effect = {
+			set_planet_flag = pf_export_natural_fuels
+			random_tile = {
+				limit = {
+					OR = {
+						has_building = "building_fuel_refinery_0"
+						has_building = "building_fuel_refinery"
+						has_building = "building_fuel_refinery_2"
+					}
+				}
+				if = {
+					limit = {
+						has_building = "building_fuel_refinery_0"
+					}
+					set_building = "building_fuel_refinery_0_ex"
+				}
+				if = {
+					limit = {
+						has_building = "building_fuel_refinery"
+					}
+					set_building = "building_fuel_refinery_ex"
+				}
+				if = {
+					limit = {
+						has_building = "building_fuel_refinery_2"
+					}
+					set_building = "building_fuel_refinery_2_ex"
+				}
+			}
+			
+			owner = {
+				capital_scope = {
+					random_tile = {
+						limit = {
+							has_building = "building_capital_tradehub"
+						}
+						add_resource = {
+							resource = sr_natural_fuels
+							amount = 3
+							replace = no
+						}
+					}
+				}
+			}
+			
+			planet_event = {
+				id = manage_trade.1000
+			}
+		}
+	}
+	
+	option = {
+		name = "Stop exporting Natural Fuels"
+		
+		trigger = {
+			has_planet_flag = pf_export_natural_fuels
+			owner = {
+				capital_scope = {
+					any_tile = {
+						has_building = "building_capital_tradehub"
+						has_resource = {
+							type = sr_natural_fuels
+							amount > 2
+						}
+					}
+				}
+			}
+		}
+		
+		hidden_effect = {
+			remove_planet_flag = pf_export_natural_fuels
+			random_tile = {
+				limit = {
+					OR = {
+						has_building = "building_fuel_refinery_0_ex"
+						has_building = "building_fuel_refinery_ex"
+						has_building = "building_fuel_refinery_2_ex"
+					}
+				}
+				if = {
+					limit = {
+						has_building = "building_fuel_refinery_0_ex"
+					}
+					set_building = "building_fuel_refinery_0"
+				}
+				if = {
+					limit = {
+						has_building = "building_fuel_refinery_ex"
+					}
+					set_building = "building_fuel_refinery"
+				}
+				if = {
+					limit = {
+						has_building = "building_fuel_refinery_2_ex"
+					}
+					set_building = "building_fuel_refinery_2"
+				}
+			}
+			
+			owner = {
+				capital_scope = {
+					random_tile = {
+						limit = {
+							has_building = "building_capital_tradehub"
+						}
+						add_resource = {
+							resource = sr_natural_fuels
+							amount = -3
+							replace = no
+						}
+					}
+				}
+			}
+			
+			planet_event = {
+				id = manage_trade.1000
+			}
+		}
+	}
+	
+	option = {
+		name = "Finished"
+	}
+}
+
+planet_event = {
+	id = manage_trade.2000
+	is_triggered_only = yes
+	
+	title = "manage_trade.2000.title"
+	desc = "manage_trade.2000.desc"
+	picture = GFX_evt_landing_ship_imports
+
+	location = ROOT
+	
+	#auto_opens = yes
+	
+	option = {
+		name = "Import Actinides (1)"
+		
+		trigger = {
+			not = { has_planet_flag = pf_export_actinides }
+			not = { has_planet_flag = pf_import_actinides }
+			owner = {
+				capital_scope = {
+					any_tile = {
+						has_building = "building_capital_tradehub"
+						has_resource = {
+							type = sr_actinides
+							amount > 0
+						}
+					}
+				}
+			}
+		}
+		
+		hidden_effect = {
+			set_planet_flag = pf_import_actinides				
+			random_tile = {
+				limit = {
+					OR = {
+						has_building = "building_exo_ops"
+						has_building = "building_colony_shelter"
+						has_building = "building_capital_1"
+						has_building = "building_capital_2"
+						has_building = "building_capital_3"
+						has_building = "building_mining_guild"
+						has_building = "building_central_databank"
+						has_building = "building_farming_guild"
+						has_building = "building_commerce_coord"
+					}
+				}
+				add_resource = {
+					resource = sr_actinides
+					amount = 1
+					replace = no
+				}	
+			}
+			owner = {
+				capital_scope = {
+					random_tile = {
+						limit = {
+							has_building = "building_capital_tradehub"
+						}
+						add_resource = {
+							resource = sr_actinides
+							amount = -1
+							replace = no
+						}
+					}
+				}
+			}
+			planet_event = {
+				id = manage_trade.2000
+			}
+		}
+	}
+	
+	option = {
+		name = "Stop importing Actinides"
+		
+		trigger = {
+			has_planet_flag = pf_import_actinides
+		}
+		
+		hidden_effect = {
+			remove_planet_flag = pf_import_actinides	
+			random_tile = {
+				limit = {
+					OR = {
+						has_building = "building_exo_ops"
+						has_building = "building_colony_shelter"
+						has_building = "building_capital_1"
+						has_building = "building_capital_2"
+						has_building = "building_capital_3"
+						has_building = "building_mining_guild"
+						has_building = "building_central_databank"
+						has_building = "building_farming_guild"
+						has_building = "building_commerce_coord"
+					}
+				}
+				add_resource = {
+					resource = sr_actinides
+					amount = -1
+					replace = no
+				}	
+			}			
+			owner = {
+				capital_scope = {
+					random_tile = {
+						limit = {
+							has_building = "building_capital_tradehub"
+						}
+						add_resource = {
+							resource = sr_actinides
+							amount = 1
+							replace = no
+						}
+					}
+				}
+			}
+			
+			planet_event = {
+				id = manage_trade.2000
+			}
+		}
+	}
+	
+	option = {
+		name = "Import Trade Goods (1)"
+		
+		trigger = {
+			not = { has_planet_flag = pf_export_tradegoods }
+			not = { has_planet_flag = pf_import_tradegoods }
+			owner = {
+				capital_scope = {
+					any_tile = {
+						has_building = "building_capital_tradehub"
+						has_resource = {
+							type = sr_tradegoods
+							amount > 0
+						}
+					}
+				}
+			}
+		}
+		
+		hidden_effect = {
+			set_planet_flag = pf_import_tradegoods				
+			random_tile = {
+				limit = {
+					OR = {
+						has_building = "building_exo_ops"
+						has_building = "building_colony_shelter"
+						has_building = "building_capital_1"
+						has_building = "building_capital_2"
+						has_building = "building_capital_3"
+						has_building = "building_mining_guild"
+						has_building = "building_central_databank"
+						has_building = "building_farming_guild"
+						has_building = "building_commerce_coord"
+					}
+				}
+				add_resource = {
+					resource = sr_tradegoods
+					amount = 1
+					replace = no
+				}	
+			}
+			owner = {
+				capital_scope = {
+					random_tile = {
+						limit = {
+							has_building = "building_capital_tradehub"
+						}
+						add_resource = {
+							resource = sr_tradegoods
+							amount = -1
+							replace = no
+						}
+					}
+				}
+			}
+			planet_event = {
+				id = manage_trade.2000
+			}
+		}
+	}
+	
+	option = {
+		name = "Stop importing Trade Goods"
+		
+		trigger = {
+			has_planet_flag = pf_import_tradegoods
+		}
+		
+		hidden_effect = {
+			remove_planet_flag = pf_import_tradegoods	
+			random_tile = {
+				limit = {
+					OR = {
+						has_building = "building_exo_ops"
+						has_building = "building_colony_shelter"
+						has_building = "building_capital_1"
+						has_building = "building_capital_2"
+						has_building = "building_capital_3"
+						has_building = "building_mining_guild"
+						has_building = "building_central_databank"
+						has_building = "building_farming_guild"
+						has_building = "building_commerce_coord"
+					}
+				}
+				add_resource = {
+					resource = sr_tradegoods
+					amount = -1
+					replace = no
+				}	
+			}			
+			owner = {
+				capital_scope = {
+					random_tile = {
+						limit = {
+							has_building = "building_capital_tradehub"
+						}
+						add_resource = {
+							resource = sr_tradegoods
+							amount = 1
+							replace = no
+						}
+					}
+				}
+			}
+			
+			planet_event = {
+				id = manage_trade.2000
+			}
+		}
+	}
+	
+	option = {
+		name = "Import Microfission Cores (1)"
+		
+		trigger = {
+			not = { has_planet_flag = pf_export_cores }
+			not = { has_planet_flag = pf_import_cores }
+			owner = {
+				capital_scope = {
+					any_tile = {
+						has_building = "building_capital_tradehub"
+						has_resource = {
+							type = sr_micro_cores
+							amount > 0
+						}
+					}
+				}
+			}
+		}
+		
+		hidden_effect = {
+			set_planet_flag = pf_import_cores			
+			random_tile = {
+				limit = {
+					OR = {
+						has_building = "building_exo_ops"
+						has_building = "building_colony_shelter"
+						has_building = "building_capital_1"
+						has_building = "building_capital_2"
+						has_building = "building_capital_3"
+						has_building = "building_mining_guild"
+						has_building = "building_central_databank"
+						has_building = "building_farming_guild"
+						has_building = "building_commerce_coord"
+					}
+				}
+				add_resource = {
+					resource = sr_micro_cores
+					amount = 1
+					replace = no
+				}	
+			}
+			owner = {
+				capital_scope = {
+					random_tile = {
+						limit = {
+							has_building = "building_capital_tradehub"
+						}
+						add_resource = {
+							resource = sr_micro_cores
+							amount = -1
+							replace = no
+						}
+					}
+				}
+			}
+			planet_event = {
+				id = manage_trade.2000
+			}
+		}
+	}
+	
+	option = {
+		name = "Stop importing Microfission Cores"
+		
+		trigger = {
+			has_planet_flag = pf_import_cores
+		}
+		
+		hidden_effect = {
+			remove_planet_flag = pf_import_cores	
+			random_tile = {
+				limit = {
+					OR = {
+						has_building = "building_exo_ops"
+						has_building = "building_colony_shelter"
+						has_building = "building_capital_1"
+						has_building = "building_capital_2"
+						has_building = "building_capital_3"
+						has_building = "building_mining_guild"
+						has_building = "building_central_databank"
+						has_building = "building_farming_guild"
+						has_building = "building_commerce_coord"
+					}
+				}
+				add_resource = {
+					resource = sr_micro_cores
+					amount = -1
+					replace = no
+				}	
+			}			
+			owner = {
+				capital_scope = {
+					random_tile = {
+						limit = {
+							has_building = "building_capital_tradehub"
+						}
+						add_resource = {
+							resource = sr_micro_cores
+							amount = 1
+							replace = no
+						}
+					}
+				}
+			}
+			
+			planet_event = {
+				id = manage_trade.2000
+			}
+		}
+	}
+	
+	option = {
+		name = "Import Nutrient Rations (1)"
+		
+		trigger = {
+			not = { has_planet_flag = pf_export_nutrient_rations }
+			not = { has_planet_flag = pf_import_nutrient_rations }
+			owner = {
+				capital_scope = {
+					any_tile = {
+						has_building = "building_capital_tradehub"
+						has_resource = {
+							type = sr_nutrient_rations
+							amount > 0
+						}
+					}
+				}
+			}
+		}
+		
+		hidden_effect = {
+			set_planet_flag = pf_import_nutrient_rations				
+			random_tile = {
+				limit = {
+					OR = {
+						has_building = "building_exo_ops"
+						has_building = "building_colony_shelter"
+						has_building = "building_capital_1"
+						has_building = "building_capital_2"
+						has_building = "building_capital_3"
+						has_building = "building_mining_guild"
+						has_building = "building_central_databank"
+						has_building = "building_farming_guild"
+						has_building = "building_commerce_coord"
+					}
+				}
+				add_resource = {
+					resource = sr_nutrient_rations
+					amount = 1
+					replace = no
+				}	
+			}
+			owner = {
+				capital_scope = {
+					random_tile = {
+						limit = {
+							has_building = "building_capital_tradehub"
+						}
+						add_resource = {
+							resource = sr_nutrient_rations
+							amount = -1
+							replace = no
+						}
+					}
+				}
+			}
+			
+			planet_event = {
+				id = manage_trade.2000
+			}
+		}
+	}
+	
+	option = {
+		name = "Stop importing Nutrient Rations"
+		
+		trigger = {
+			has_planet_flag = pf_import_nutrient_rations
+		}
+		
+		hidden_effect = {
+			remove_planet_flag = pf_import_nutrient_rations	
+			random_tile = {
+				limit = {
+					OR = {
+						has_building = "building_exo_ops"
+						has_building = "building_colony_shelter"
+						has_building = "building_capital_1"
+						has_building = "building_capital_2"
+						has_building = "building_capital_3"
+						has_building = "building_mining_guild"
+						has_building = "building_central_databank"
+						has_building = "building_farming_guild"
+						has_building = "building_commerce_coord"
+					}
+				}
+				add_resource = {
+					resource = sr_nutrient_rations
+					amount = -1
+					replace = no
+				}	
+			}			
+			owner = {
+				capital_scope = {
+					random_tile = {
+						limit = {
+							has_building = "building_capital_tradehub"
+						}
+						add_resource = {
+							resource = sr_nutrient_rations
+							amount = 1
+							replace = no
+						}
+					}
+				}
+			}
+			
+			planet_event = {
+				id = manage_trade.2000
+			}
+		}
+	}
+	
+	option = {
+		name = "Import Luxuries (1)"
+		
+		trigger = {
+			not = { has_planet_flag = pf_export_luxuries }
+			not = { has_planet_flag = pf_import_luxuries }
+			owner = {
+				capital_scope = {
+					any_tile = {
+						has_building = "building_capital_tradehub"
+						has_resource = {
+							type = sr_luxuries
+							amount > 0
+						}
+					}
+				}
+			}
+		}
+		
+		hidden_effect = {
+			set_planet_flag = pf_import_luxuries				
+			random_tile = {
+				limit = {
+					OR = {
+						has_building = "building_exo_ops"
+						has_building = "building_colony_shelter"
+						has_building = "building_capital_1"
+						has_building = "building_capital_2"
+						has_building = "building_capital_3"
+						has_building = "building_mining_guild"
+						has_building = "building_central_databank"
+						has_building = "building_farming_guild"
+						has_building = "building_commerce_coord"
+					}
+				}
+				add_resource = {
+					resource = sr_luxuries
+					amount = 1
+					replace = no
+				}	
+			}
+			owner = {
+				capital_scope = {
+					random_tile = {
+						limit = {
+							has_building = "building_capital_tradehub"
+						}
+						add_resource = {
+							resource = sr_luxuries
+							amount = -1
+							replace = no
+						}
+					}
+				}
+			}
+			
+			planet_event = {
+				id = manage_trade.2000
+			}
+		}
+	}
+	
+	option = {
+		name = "Stop importing Luxuries"
+		
+		trigger = {
+			has_planet_flag = pf_import_luxuries
+		}
+		
+		hidden_effect = {
+			remove_planet_flag = pf_import_luxuries	
+			random_tile = {
+				limit = {
+					OR = {
+						has_building = "building_exo_ops"
+						has_building = "building_colony_shelter"
+						has_building = "building_capital_1"
+						has_building = "building_capital_2"
+						has_building = "building_capital_3"
+						has_building = "building_mining_guild"
+						has_building = "building_central_databank"
+						has_building = "building_farming_guild"
+						has_building = "building_commerce_coord"
+					}
+				}
+				add_resource = {
+					resource = sr_luxuries
+					amount = -1
+					replace = no
+				}	
+			}			
+			owner = {
+				capital_scope = {
+					random_tile = {
+						limit = {
+							has_building = "building_capital_tradehub"
+						}
+						add_resource = {
+							resource = sr_luxuries
+							amount = 1
+							replace = no
+						}
+					}
+				}
+			}
+			
+			planet_event = {
+				id = manage_trade.2000
+			}
+		}
+	}
+	
+	option = {
+		name = "Import Ice (2)"
+		
+		trigger = {
+			not = { has_planet_flag = pf_export_ice }
+			not = { has_planet_flag = pf_import_ice }
+			owner = {
+				capital_scope = {
+					any_tile = {
+						has_building = "building_capital_tradehub"
+						has_resource = {
+							type = sr_ice
+							amount > 1
+						}
+					}
+				}
+			}
+		}
+		
+		hidden_effect = {
+			set_planet_flag = pf_import_ice				
+			random_tile = {
+				limit = {
+					OR = {
+						has_building = "building_exo_ops"
+						has_building = "building_colony_shelter"
+						has_building = "building_capital_1"
+						has_building = "building_capital_2"
+						has_building = "building_capital_3"
+						has_building = "building_mining_guild"
+						has_building = "building_central_databank"
+						has_building = "building_farming_guild"
+						has_building = "building_commerce_coord"
+					}
+				}
+				add_resource = {
+					resource = sr_ice
+					amount = 2
+					replace = no
+				}	
+			}
+			owner = {
+				capital_scope = {
+					random_tile = {
+						limit = {
+							has_building = "building_capital_tradehub"
+						}
+						add_resource = {
+							resource = sr_ice
+							amount = -2
+							replace = no
+						}
+					}
+				}
+			}
+			
+			planet_event = {
+				id = manage_trade.2000
+			}
+		}
+	}
+	
+	option = {
+		name = "Stop importing Ice"
+		
+		trigger = {
+			has_planet_flag = pf_import_ice
+		}
+		
+		hidden_effect = {
+			remove_planet_flag = pf_import_ice	
+			random_tile = {
+				limit = {
+					OR = {
+						has_building = "building_exo_ops"
+						has_building = "building_colony_shelter"
+						has_building = "building_capital_1"
+						has_building = "building_capital_2"
+						has_building = "building_capital_3"
+						has_building = "building_mining_guild"
+						has_building = "building_central_databank"
+						has_building = "building_farming_guild"
+						has_building = "building_commerce_coord"
+					}
+				}
+				add_resource = {
+					resource = sr_ice
+					amount = -2
+					replace = no
+				}	
+			}			
+			owner = {
+				capital_scope = {
+					random_tile = {
+						limit = {
+							has_building = "building_capital_tradehub"
+						}
+						add_resource = {
+							resource = sr_ice
+							amount = 2
+							replace = no
+						}
+					}
+				}
+			}
+			
+			planet_event = {
+				id = manage_trade.2000
+			}
+		}
+	}
+	
+	# option = {
+		# name = "Import BioMass-Pods (3)"
+		
+		# trigger = {
+			# not = { has_planet_flag = pf_export_biomass_pods }
+			# not = { has_planet_flag = pf_import_biomass_pods }
+			# owner = {
+				# capital_scope = {
+					# any_tile = {
+						# OR = {
+							# has_building = "building_exo_ops"
+							# has_building = "building_colony_shelter"
+							# has_building = "building_capital_1"
+							# has_building = "building_capital_2"
+							# has_building = "building_capital_3"
+							# has_building = "building_mining_guild"
+							# has_building = "building_central_databank"
+							# has_building = "building_farming_guild"
+							# has_building = "building_commerce_coord"
+						# }
+						# has_resource = {
+							# type = sr_biomass_pods
+							# amount > 2
+						# }
+					# }
+				# }
+			# }
+		# }
+		
+		# hidden_effect = {
+			# set_planet_flag = pf_import_biomass_pods				
+			# random_tile = {
+				# limit = {
+					# OR = {
+						# has_building = "building_exo_ops"
+						# has_building = "building_colony_shelter"
+						# has_building = "building_capital_1"
+						# has_building = "building_capital_2"
+						# has_building = "building_capital_3"
+						# has_building = "building_mining_guild"
+						# has_building = "building_central_databank"
+						# has_building = "building_farming_guild"
+						# has_building = "building_commerce_coord"
+					# }
+				# }
+				# add_resource = {
+					# resource = sr_biomass_pods
+					# amount = 3
+					# replace = no
+				# }	
+			# }
+			# owner = {
+				# capital_scope = {
+					# random_tile = {
+						# limit = {
+							# OR = {
+								# has_building = "building_exo_ops"
+								# has_building = "building_colony_shelter"
+								# has_building = "building_capital_1"
+								# has_building = "building_capital_2"
+								# has_building = "building_capital_3"
+								# has_building = "building_mining_guild"
+								# has_building = "building_central_databank"
+								# has_building = "building_farming_guild"
+								# has_building = "building_commerce_coord"
+							# }
+						# }
+						# add_resource = {
+							# resource = sr_biomass_pods
+							# amount = -3
+							# replace = no
+						# }
+					# }
+				# }
+			# }
+			
+			# planet_event = {
+				# id = manage_trade.2000
+			# }
+		# }
+	# }
+	
+	# option = {
+		# name = "Stop importing BioMass-Pods"
+		
+		# trigger = {
+			# has_planet_flag = pf_import_biomass_pods
+		# }
+		
+		# hidden_effect = {
+			# remove_planet_flag = pf_import_biomass_pods	
+			# random_tile = {
+				# limit = {
+					# OR = {
+						# has_building = "building_exo_ops"
+						# has_building = "building_colony_shelter"
+						# has_building = "building_capital_1"
+						# has_building = "building_capital_2"
+						# has_building = "building_capital_3"
+						# has_building = "building_mining_guild"
+						# has_building = "building_central_databank"
+						# has_building = "building_farming_guild"
+						# has_building = "building_commerce_coord"
+					# }
+				# }
+				# add_resource = {
+					# resource = sr_biomass_pods
+					# amount = -3
+					# replace = no
+				# }	
+			# }			
+			# owner = {
+				# capital_scope = {
+					# random_tile = {
+						# limit = {
+							# OR = {
+								# has_building = "building_exo_ops"
+								# has_building = "building_colony_shelter"
+								# has_building = "building_capital_1"
+								# has_building = "building_capital_2"
+								# has_building = "building_capital_3"
+								# has_building = "building_mining_guild"
+								# has_building = "building_central_databank"
+								# has_building = "building_farming_guild"
+								# has_building = "building_commerce_coord"
+							# }
+						# }
+						# add_resource = {
+							# resource = sr_biomass_pods
+							# amount = 3
+							# replace = no
+						# }
+					# }
+				# }
+			# }
+			
+			# planet_event = {
+				# id = manage_trade.2000
+			# }
+		# }
+	# }
+	
+	option = {
+		name = "Import Synthehol (1)"
+		
+		trigger = {
+			not = { has_planet_flag = pf_export_synthehol }
+			not = { has_planet_flag = pf_import_synthehol }
+			owner = {
+				capital_scope = {
+					any_tile = {
+						has_building = "building_capital_tradehub"
+						has_resource = {
+							type = sr_synthehol
+							amount > 0
+						}
+					}
+				}
+			}
+		}
+		
+		hidden_effect = {
+			set_planet_flag = pf_import_synthehol				
+			random_tile = {
+				limit = {
+					OR = {
+						has_building = "building_exo_ops"
+						has_building = "building_colony_shelter"
+						has_building = "building_capital_1"
+						has_building = "building_capital_2"
+						has_building = "building_capital_3"
+						has_building = "building_mining_guild"
+						has_building = "building_central_databank"
+						has_building = "building_farming_guild"
+						has_building = "building_commerce_coord"
+					}
+				}
+				add_resource = {
+					resource = sr_synthehol
+					amount = 1
+					replace = no
+				}	
+			}
+			owner = {
+				capital_scope = {
+					random_tile = {
+						limit = {
+							has_building = "building_capital_tradehub"
+						}
+						add_resource = {
+							resource = sr_synthehol
+							amount = -1
+							replace = no
+						}
+					}
+				}
+			}
+			
+			planet_event = {
+				id = manage_trade.2000
+			}
+		}
+	}
+	
+	option = {
+		name = "Stop importing Synthehol"
+		
+		trigger = {
+			has_planet_flag = pf_import_synthehol
+		}
+		
+		hidden_effect = {
+			remove_planet_flag = pf_import_synthehol	
+			random_tile = {
+				limit = {
+					OR = {
+						has_building = "building_exo_ops"
+						has_building = "building_colony_shelter"
+						has_building = "building_capital_1"
+						has_building = "building_capital_2"
+						has_building = "building_capital_3"
+						has_building = "building_mining_guild"
+						has_building = "building_central_databank"
+						has_building = "building_farming_guild"
+						has_building = "building_commerce_coord"
+					}
+				}
+				add_resource = {
+					resource = sr_synthehol
+					amount = -1
+					replace = no
+				}	
+			}			
+			owner = {
+				capital_scope = {
+					random_tile = {
+						limit = {
+							has_building = "building_capital_tradehub"
+						}
+						add_resource = {
+							resource = sr_synthehol
+							amount = 1
+							replace = no
+						}
+					}
+				}
+			}
+			
+			planet_event = {
+				id = manage_trade.2000
+			}
+		}
+	}
+	
+	option = {
+		name = "Import Natural Fuels (3)"
+		
+		trigger = {
+			not = { has_planet_flag = pf_export_natural_fuels }
+			not = { has_planet_flag = pf_import_natural_fuels }
+			owner = {
+				capital_scope = {
+					any_tile = {
+						has_building = "building_capital_tradehub"
+						has_resource = {
+							type = sr_natural_fuels
+							amount > 2
+						}
+					}
+				}
+			}
+		}
+		
+		hidden_effect = {
+			set_planet_flag = pf_import_natural_fuels				
+			random_tile = {
+				limit = {
+					OR = {
+						has_building = "building_exo_ops"
+						has_building = "building_colony_shelter"
+						has_building = "building_capital_1"
+						has_building = "building_capital_2"
+						has_building = "building_capital_3"
+						has_building = "building_mining_guild"
+						has_building = "building_central_databank"
+						has_building = "building_farming_guild"
+						has_building = "building_commerce_coord"
+					}
+				}
+				add_resource = {
+					resource = sr_natural_fuels
+					amount = 3
+					replace = no
+				}	
+			}
+			owner = {
+				capital_scope = {
+					random_tile = {
+						limit = {
+							has_building = "building_capital_tradehub"
+						}
+						add_resource = {
+							resource = sr_natural_fuels
+							amount = -3
+							replace = no
+						}
+					}
+				}
+			}
+			
+			planet_event = {
+				id = manage_trade.2000
+			}
+		}
+	}
+	
+	option = {
+		name = "Stop importing Natural Fuels"
+		
+		trigger = {
+			has_planet_flag = pf_import_natural_fuels
+		}
+		
+		hidden_effect = {
+			remove_planet_flag = pf_import_natural_fuels	
+			random_tile = {
+				limit = {
+					OR = {
+						has_building = "building_exo_ops"
+						has_building = "building_colony_shelter"
+						has_building = "building_capital_1"
+						has_building = "building_capital_2"
+						has_building = "building_capital_3"
+						has_building = "building_mining_guild"
+						has_building = "building_central_databank"
+						has_building = "building_farming_guild"
+						has_building = "building_commerce_coord"
+					}
+				}
+				add_resource = {
+					resource = sr_natural_fuels
+					amount = -3
+					replace = no
+				}	
+			}			
+			owner = {
+				capital_scope = {
+					random_tile = {
+						limit = {
+							has_building = "building_capital_tradehub"
+						}
+						add_resource = {
+							resource = sr_natural_fuels
+							amount = 3
+							replace = no
+						}
+					}
+				}
+			}
+			
+			planet_event = {
+				id = manage_trade.2000
+			}
+		}
+	}
+	
+	option = {
+		name = "Finished"
+	}
+}
+
+planet_event = {
+	id = manage_trade.2100
+	is_triggered_only = yes
+	hide_window = yes
+	location = ROOT
+	
+	immediate = {
+		every_tile = {
+			limit = {
+				has_resource = {
+					type = sr_h2o
+					amount > 0
+				}			
+			}
+			while = {
+				limit = {
+					has_resource = {
+						type = sr_h2o
+						amount > 0
+					}
+				}
+				add_resource = {
+					resource = sr_h2o
+					amount = -1
+				}
+				add_resource = {
+					resource = sr_ice
+					amount = 1
+				}
+			}
+		}	
+	}
+}
+
+planet_event = {
+	id = manage_trade.2200
+	is_triggered_only = yes
+	hide_window = yes
+	location = ROOT
+	
+	immediate = {
+		every_tile = {
+			limit = {
+				has_resource = {
+					type = sr_ice
+					amount > 0
+				}
+			}
+			while = {
+				limit = {
+					has_resource = {
+						type = sr_ice
+						amount > 0
+					}
+				}
+				add_resource = {
+					resource = sr_h2o
+					amount = 1
+				}
+				add_resource = {
+					resource = sr_ice
+					amount = -1
+				}
+			}
+		}	
+	}
+}
+
+planet_event = {
+	id = manage_trade.2300
+	is_triggered_only = yes
+	hide_window = yes
+	location = ROOT
+	
+	immediate = {
+		every_tile = {
+			limit = {
+				has_resource = {
+					type = sr_ice
+					amount > 0
+				}			
+			}
+			while = {
+				limit = {
+					has_resource = {
+						type = sr_ice
+						amount > 0
+					}
+				}
+				add_resource = {
+					resource = sr_h2o
+					amount = 1
+				}
+				add_resource = {
+					resource = sr_ice
+					amount = -1
+				}
+			}
+		}	
+	}
+}
+
+planet_event = {
+	id = manage_trade.2400
+	is_triggered_only = yes
+	hide_window = yes
+	location = ROOT
+	
+	immediate = {
+		every_tile = {
+			limit = {
+				has_resource = {
+					type = sr_h2o
+					amount > 0
+				}
+			}
+			while = {
+				limit = {
+					has_resource = {
+						type = sr_h2o
+						amount > 0
+					}
+				}
+				add_resource = {
+					resource = sr_h2o
+					amount = -1
+				}
+				add_resource = {
+					resource = sr_ice
+					amount = 1
+				}
+			}
+		}	
+	}
+}

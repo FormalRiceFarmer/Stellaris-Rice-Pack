@@ -1,0 +1,69 @@
+ship_section_template = {
+	key = "HVYCORVETTE_MID_T1M1"
+	ship_size = corvette
+	fits_on_slot = mid
+	entity = "corvette_M1S1_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_alpha_heavycorvettes }
+	
+	ai_weight = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { has_technology = tech_torpedoes_1 }
+		}
+	}
+	
+	component_slot = {
+		name = "TORPEDO_02"
+		slot_size = torpedo
+		slot_type = weapon
+		locatorname = "small_gun_01"
+	}
+	
+	component_slot = {
+		name = "TORPEDO_01"
+		slot_size = torpedo
+		slot_type = weapon
+		locatorname = "medium_gun_01"
+	}
+
+	medium_utility_slots = 4
+	aux_utility_slots = 2
+	
+	cost = 60
+}
+
+ship_section_template = {
+	key = "HVYCORVETTE_MID_M1"
+	ship_size = corvette
+	fits_on_slot = mid
+	entity = "corvette_M1S1_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_alpha_heavycorvettes }
+
+	ai_weight = {
+		factor = 2
+	}
+	
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		slot_size = medium
+		slot_type = weapon
+		locatorname = "small_gun_01"
+	}
+	
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		slot_size = medium
+		slot_type = weapon
+		locatorname = "medium_gun_01"
+	}
+
+	medium_utility_slots = 4
+	aux_utility_slots = 2
+	
+	cost = 50
+}

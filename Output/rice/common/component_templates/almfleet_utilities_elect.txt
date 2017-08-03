@@ -1,0 +1,142 @@
+@shipAuraRange = 80
+@stationSmallAuraRange = 70
+@stationMediumAuraRange = 90
+@stationLargeAuraRange = 110
+
+utility_component_template = {
+	key = "ALPHA_ECM_SUITE"
+	size = aux
+	icon = "GFX_ship_part_alpha_auxiliary_navsystems_1"
+	icon_frame = 1
+	power = -25
+	cost = 20
+	
+	class_restriction = { shipclass_military }
+	size_restriction = { corvette destroyer }
+	
+	prerequisites = { "tech_improved_databank_uplinks" }
+	component_set = "ALPHA_ECM_SUITE"
+	
+	hostile_aura = {
+		name = "ECM Suite / Range: 40"
+		radius = 40
+		apply_on = fleets
+		
+		stack_info = {
+			id = hostile_ecm_aura
+			priority = 10
+		}
+		
+		modifier = {
+			ship_accuracy_add = -5
+			ship_tracking_add = -10
+		}
+		
+		graphics = {
+			# area_effect = {
+				# entity = "circle_area_entity"
+				# dynamic_scale = yes
+			# }
+			# ship_effect = {
+				# entity = "ship_aura_negative_entity" 
+				# dynamic_scale = no
+			# }
+		}
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# utility_component_template = {
+	# key = "ALPHA_INTERDICTION_BEAMS"
+	# size = aux
+	# icon = "GFX_ship_part_alpha_auxiliary_navsystems_1"
+	# icon_frame = 1
+	# power = -100
+	# cost = 100
+	
+	# class_restriction = { shipclass_military }
+	# size_restriction = { battleship }
+	
+	# prerequisites = { "tech_alpha_interdiction" }
+	# component_set = "ALPHA_INTERDICTION_BEAMS"
+	
+	# hostile_aura = {
+		# name = "Interdiction Beams / Range: 150"
+		# radius = 150
+		# apply_on = fleets
+		
+		# stack_info = {
+			# id = hostile_interdiction_beams
+			# priority = 10
+		# }
+		
+		# modifier = {
+			# ship_windup_mult = 3
+			# fleet_emergency_ftl_min_days_mult = 1
+		# }
+		
+		# graphics = {
+			# # area_effect = {
+				# # entity = "circle_area_entity"
+				# # dynamic_scale = yes
+			# # }
+			# # ship_effect = {
+				# # entity = "ship_aura_negative_entity" 
+				# # dynamic_scale = no
+			# # }
+		# }
+	# }
+	
+	# ai_weight = {
+		# weight = 0
+	# }
+# }
+
+# utility_component_template = {
+	# key = "ALPHA_INTERDICTION_BEAMS_2"
+	# size = aux
+	# icon = "GFX_ship_part_alpha_auxiliary_navsystems_1"
+	# icon_frame = 1
+	# power = -50
+	# cost = 50
+	
+	# class_restriction = { shipclass_military }
+	# size_restriction = { cruiser }
+	
+	# prerequisites = { "tech_alpha_interdiction" }
+	# component_set = "ALPHA_INTERDICTION_BEAMS_2"
+	
+	# hostile_aura = {
+		# name = "Interdiction Beams / Range: 90"
+		# radius = 90
+		# apply_on = fleets
+		
+		# stack_info = {
+			# id = hostile_interdiction_beams
+			# priority = 10
+		# }
+		
+		# modifier = {
+			# ship_windup_mult = 2
+			# fleet_emergency_ftl_min_days_mult = 1
+		# }
+		
+		# graphics = {
+			# # area_effect = {
+				# # entity = "circle_area_entity"
+				# # dynamic_scale = yes
+			# # }
+			# # ship_effect = {
+				# # entity = "ship_aura_negative_entity" 
+				# # dynamic_scale = no
+			# # }
+		# }
+	# }
+	
+	# ai_weight = {
+		# weight = 0
+	# }
+# }

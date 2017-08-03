@@ -1,0 +1,1452 @@
+namespace = alphamod_surveys
+
+ship_event = {
+	id = alphamod_surveys.1
+
+	is_triggered_only = yes
+	location = fromfrom
+	hide_window = yes
+	
+	trigger = {
+		fromfrom = {
+			NOT = { has_planet_flag = alphamod_surveyed }
+		}
+	}
+	
+	immediate = {
+		fromfrom = {
+			set_planet_flag = alphamod_surveyed
+			if = {
+				limit = {
+					OR = {
+						is_planet_class = pc_continental
+						is_planet_class = pc_alpine
+						is_planet_class = pc_tundra
+						is_planet_class = pc_ocean
+						is_planet_class = pc_gaia
+						is_planet_class = pc_arctic
+					}
+				}
+				every_tile = {
+					limit = { 
+						has_blocker = no
+						has_building = no
+						has_grown_pop = no
+						has_growing_pop = no
+						has_building_construction = no
+						num_adjacent_tiles = 1
+					}
+					random_list = {
+						70 = {
+							clear_deposits = yes
+							set_blocker = "tb_alpha_ice_cap"
+						}
+						10 = {
+							clear_deposits = yes
+							set_blocker = "tb_alpha_mountain_range"
+						}
+						20 = {
+						}
+					}
+				}
+			}
+
+			every_tile = {
+				limit = { 
+					OR = {
+						has_blocker = "tb_dense_jungle"
+					}
+				}
+				clear_deposits = yes
+				random_list = {
+					40 = {
+						clear_deposits = yes
+					}
+					5 = { 	
+						add_resource = { resource = sr_natural_fuels amount = 1 }					
+					}
+					5 = { 	
+						add_resource = { resource = engineering_research amount = 1 }
+					}
+					5 = { 	
+						add_resource = { resource = society_research amount = 2 }
+					}
+					10 = { 	
+						add_resource = { resource = society_research amount = 1 }
+					}
+					5 = { 	
+						add_resource = { resource = society_research amount = 1 }
+						add_resource = { resource = engineering_research amount = 1 }
+					}
+					10 = { 	
+						add_resource = { resource = food amount = 1 }
+						add_resource = { resource = sr_biomass amount = 1 }	
+					}
+					10 = { 	
+						add_resource = { resource = sr_h2o amount = 1 }
+						add_resource = { resource = sr_biomass amount = 1 }	
+					}
+					5 = { 	
+						add_resource = { resource = sr_biomass amount = 2 }
+						add_resource = { resource = sr_natural_fuels amount = 1 }						
+					}
+					5 = { 	
+						add_resource = { resource = food amount = 1 }
+						add_resource = { resource = sr_biomass amount = 1 }
+						add_resource = { resource = sr_h2o amount = 1 }						
+					}
+				}
+			}
+			
+			every_tile = {
+				limit = { 
+					OR = {
+						has_blocker = "tb_dangerous_wildlife"
+					}
+				}
+				clear_deposits = yes
+				random_list = {
+					45 = {
+						clear_deposits = yes
+					}
+					5 = { 	
+						add_resource = { resource = society_research amount = 2 }
+					}
+					10 = { 	
+						add_resource = { resource = society_research amount = 1 }
+					}
+					10 = { 	
+						add_resource = { resource = food amount = 1 }
+						add_resource = { resource = sr_h2o amount = 1 }	
+					}
+					10 = { 	
+						add_resource = { resource = sr_h2o amount = 1 }
+						add_resource = { resource = sr_biomass amount = 1 }	
+					}
+					5 = { 	
+						add_resource = { resource = food amount = 2 }	
+					}
+					5 = { 	
+						add_resource = { resource = food amount = 1 }
+						add_resource = { resource = society_research amount = 1 }						
+					}
+					10 = { 	
+						add_resource = { resource = sr_natural_fuels amount = 1 }					
+					}
+				}
+			}
+			
+			every_tile = {
+				limit = { 
+					OR = {
+						has_blocker = "tb_mountain_range"
+					}
+				}
+				clear_deposits = yes
+				random_list = {
+					30 = {
+						clear_deposits = yes
+					}
+					10 = { 	
+						add_resource = { resource = engineering_research amount = 2 }	
+					}
+					5 = { 	
+						add_resource = { resource = engineering_research amount = 1 }	
+					}
+					5 = { 	
+						add_resource = { resource = engineering_research amount = 1 }
+						add_resource = { resource = minerals amount = 1 }
+					}
+					10 = { 	
+						add_resource = { resource = minerals amount = 1 }
+					}
+					10 = { 	
+						add_resource = { resource = sr_ice amount = 1 }	
+					}
+					5 = { 	
+						add_resource = { resource = minerals amount = 1 }
+						add_resource = { resource = sr_h2o amount = 1 }	
+					}
+					5 = { 	
+						add_resource = { resource = minerals amount = 2 }
+						add_resource = { resource = sr_natural_fuels amount = 1 }	
+					}
+					5 = { 	
+						add_resource = { resource = minerals amount = 2 }	
+					}
+					5 = { 	
+						add_resource = { resource = sr_actinides amount = 1 }	
+					}
+					10 = { 	
+						add_resource = { resource = minerals amount = 1 }
+						add_resource = { resource = sr_ice amount = 1 }							
+					}
+				}
+				random_neighboring_tile = {
+					limit = { 
+						NOR = {
+							has_blocker = "tb_alpha_mountain_range"
+							has_blocker = "tb_alpha_ocean_vortex"
+							has_blocker = "tb_alpha_volcano_chain"
+							has_blocker = "tb_sandworm_activity"
+							has_blocker = "tb_alpha_ice_cap"
+						}
+					}
+					random_list = {
+						50 = {
+							clear_deposits = yes
+						}
+						50 = { 	
+							clear_deposits = yes
+							add_resource = { resource = minerals amount = 1 }
+						}
+					}
+				}
+			}
+			
+			every_tile = {
+				limit = { 
+					OR = {
+						has_blocker = "tb_active_volcano"
+					}
+				}
+				clear_deposits = yes
+				random_list = {
+					35 = {
+						clear_deposits = yes
+					}
+					10 = { 	
+						add_resource = { resource = engineering_research amount = 3 }	
+					}
+					5 = { 	
+						add_resource = { resource = engineering_research amount = 2 }	
+					}
+					5 = { 	
+						add_resource = { resource = physics_research amount = 1 }	
+					}
+					15 = { 	
+						add_resource = { resource = energy amount = 1 }
+						add_resource = { resource = engineering_research amount = 1 }
+					}
+					10 = { 	
+						add_resource = { resource = energy amount = 2 }	
+					}
+					5 = { 	
+						add_resource = { resource = energy amount = 2 }
+						add_resource = { resource = sr_natural_fuels amount = 1 }	
+					}
+					5 = { 	
+						add_resource = { resource = energy amount = 2 }
+						add_resource = { resource = minerals amount = 1 }	
+					}
+					5 = { 	
+						add_resource = { resource = energy amount = 2 }
+						add_resource = { resource = sr_actinides amount = 1 }	
+					}
+					5 = { 	
+						add_resource = { resource = energy amount = 3 }						
+					}
+				}
+				random_neighboring_tile = {
+					limit = { 
+						NOR = {
+							has_blocker = "tb_alpha_mountain_range"
+							has_blocker = "tb_alpha_ocean_vortex"
+							has_blocker = "tb_alpha_volcano_chain"
+							has_blocker = "tb_sandworm_activity"
+							has_blocker = "tb_alpha_ice_cap"
+						}
+					}
+					random_list = {
+						50 = {
+							remove_blocker = yes
+							clear_deposits = yes
+						}
+						10 = {
+							remove_blocker = yes
+							clear_deposits = yes
+							add_resource = { resource = engineering_research amount = 1 }							
+						}
+						25 = { 	
+							remove_blocker = yes
+							clear_deposits = yes
+							add_resource = { resource = energy amount = 1 }
+						}
+						15 = { 	
+							remove_blocker = yes
+							clear_deposits = yes
+							add_resource = { resource = energy amount = 1 }
+							add_resource = { resource = minerals amount = 1 }
+						}
+					}
+				}
+				random_neighboring_tile = {
+					limit = { 
+						NOR = {
+							has_blocker = "tb_alpha_mountain_range"
+							has_blocker = "tb_alpha_ocean_vortex"
+							has_blocker = "tb_alpha_volcano_chain"
+							has_blocker = "tb_sandworm_activity"
+							has_blocker = "tb_alpha_ice_cap"
+						}
+					}
+					remove_blocker = yes
+					clear_deposits = yes
+					random_list = {
+						45 = {
+							clear_deposits = yes
+						}
+						5 = {
+							remove_blocker = yes
+							clear_deposits = yes
+							add_resource = { resource = physics_research amount = 1 }							
+						}
+						30 = { 	
+							add_resource = { resource = energy amount = 1 }
+						}
+						20 = { 	
+							add_resource = { resource = energy amount = 1 }
+							add_resource = { resource = minerals amount = 1 }
+						}
+					}
+				}
+			}
+			
+			every_tile = {
+				limit = { 
+					OR = {
+						has_blocker = "tb_quicksand_basin"
+					}
+				}
+				clear_deposits = yes
+				random_list = {
+					50 = { 	
+						clear_deposits = yes
+					}
+					10 = {
+						add_resource = { resource = engineering_research amount = 1 }							
+					}
+					5 = {
+						add_resource = { resource = engineering_research amount = 2 }							
+					}
+					5 = {
+						add_resource = { resource = physics_research amount = 1 }							
+					}
+					5 = { 	
+						add_resource = { resource = minerals amount = 1 }
+						add_resource = { resource = sr_natural_fuels amount = 1 }	
+					}
+					5 = { 	
+						add_resource = { resource = sr_h2o amount = 1 }
+						add_resource = { resource = minerals amount = 1 }	
+					}
+					10 = { 	
+						add_resource = { resource = minerals amount = 2 }	
+					}
+					5 = { 	
+						add_resource = { resource = minerals amount = 1 }
+						add_resource = { resource = engineering_research amount = 1 }							
+					}
+					5 = { 	
+						add_resource = { resource = sr_h2o amount = 1 }
+						add_resource = { resource = sr_natural_fuels amount = 1 }						
+					}
+				}
+			}
+			
+			every_tile = {
+				limit = { 
+					OR = {
+						has_blocker = "tb_noxious_swamp"
+					}
+				}
+				clear_deposits = yes
+				random_list = {
+					30 = { 	
+						clear_deposits = yes
+					}
+					5 = {
+						add_resource = { resource = engineering_research amount = 1 }							
+					}
+					5 = {
+						add_resource = { resource = society_research amount = 2 }							
+					}
+					15 = { 	
+						add_resource = { resource = sr_h2o amount = 1 }
+						add_resource = { resource = sr_natural_fuels amount = 1 }
+						add_resource = { resource = sr_biomass amount = 1 }						
+					}
+					15 = { 	
+						add_resource = { resource = sr_h2o amount = 1 }
+						add_resource = { resource = food amount = 1 }					
+					}
+					15 = { 	
+						add_resource = { resource = sr_biomass amount = 1 }
+						add_resource = { resource = sr_h2o amount = 2 }						
+					}
+					15 = { 	
+						add_resource = { resource = sr_biomass amount = 2 }
+						add_resource = { resource = sr_h2o amount = 1 }							
+					}
+				}
+			}
+			
+			every_tile = {
+				limit = { 
+					OR = {
+						has_blocker = "tb_massive_glacier"
+					}
+				}
+				clear_deposits = yes
+				random_list = {
+					45 = { 	
+						clear_deposits = yes
+					}
+					5 = {
+						add_resource = { resource = engineering_research amount = 2 }							
+					}
+					5 = {
+						add_resource = { resource = society_research amount = 1 }							
+					}
+					5 = {
+						add_resource = { resource = physics_research amount = 1 }							
+					}
+					10 = { 	
+						add_resource = { resource = sr_ice amount = 1 }
+						add_resource = { resource = sr_natural_fuels amount = 1 }				
+					}
+					10 = { 	
+						add_resource = { resource = sr_ice amount = 2 }
+						add_resource = { resource = sr_natural_fuels amount = 1 }						
+					}
+					10 = { 	
+						add_resource = { resource = sr_ice amount = 1 }
+						add_resource = { resource = sr_actinides amount = 1 }							
+					}
+					10 = { 	
+						add_resource = { resource = sr_ice amount = 1 }
+						add_resource = { resource = minerals amount = 1 }						
+					}
+				}
+			}
+			
+			every_tile = {
+				limit = { 
+					OR = {
+						has_blocker = "tb_toxic_kelp"
+					}
+				}
+				clear_deposits = yes
+				random_list = {
+					30 = { 	
+						clear_deposits = yes
+					}
+					5 = {
+						add_resource = { resource = engineering_research amount = 1 }							
+					}
+					5 = {
+						add_resource = { resource = society_research amount = 2 }							
+					}
+					15 = { 	
+						add_resource = { resource = food amount = 1 }
+						add_resource = { resource = sr_biomass amount = 1 }				
+					}
+					15 = { 	
+						add_resource = { resource = sr_biomass amount = 1 }
+						add_resource = { resource = sr_natural_fuels amount = 1 }						
+					}
+					20 = { 	
+						add_resource = { resource = sr_biomass amount = 1 }							
+					}
+					10 = { 	
+						add_resource = { resource = sr_biomass amount = 2 }					
+					}
+				}
+			}
+			
+			every_tile = {
+				limit = { 
+					OR = {
+						has_blocker = "tb_deep_sinkhole"
+					}
+				}
+				clear_deposits = yes
+				random_list = {
+					60 = { 	
+						clear_deposits = yes
+					}
+					10 = {
+						add_resource = { resource = engineering_research amount = 1 }							
+					}
+					5 = {
+						add_resource = { resource = engineering_research amount = 2 }							
+					}
+					5 = {
+						add_resource = { resource = physics_research amount = 1 }							
+					}
+					5 = { 	
+						add_resource = { resource = minerals amount = 1 }		
+					}
+					5 = { 	
+						add_resource = { resource = minerals amount = 1 }
+						add_resource = { resource = sr_natural_fuels amount = 1 }						
+					}
+					5 = { 	
+						add_resource = { resource = minerals amount = 2 }						
+					}
+					5 = { 	
+						add_resource = { resource = minerals amount = 1 }
+						add_resource = { resource = sr_h2o amount = 1 }						
+					}
+				}
+			}
+			
+			every_tile = {
+				limit = { 
+					OR = {
+						has_blocker = "tb_wild_crops"
+					}
+				}
+				clear_deposits = yes
+				random_list = {
+					20 = { 	
+						clear_deposits = yes
+					}
+					15 = { 	
+						add_resource = { resource = food amount = 1 }	
+					}
+					5 = {
+						add_resource = { resource = society_research amount = 2 }							
+					}
+					10 = {
+						add_resource = { resource = society_research amount = 1 }							
+					}
+					15 = { 	
+						add_resource = { resource = food amount = 2 }	
+					}
+					20 = { 	
+						add_resource = { resource = food amount = 1 }
+						add_resource = { resource = sr_h2o amount = 1 }						
+					}
+					15 = { 	
+						add_resource = { resource = food amount = 2 }
+						add_resource = { resource = sr_h2o amount = 1 }						
+					}
+				}				
+				random_list = {
+					25 = { 
+						random_neighboring_tile = {
+							limit = { 
+								NOR = {
+									has_blocker = "tb_alpha_mountain_range"
+									has_blocker = "tb_alpha_ocean_vortex"
+									has_blocker = "tb_alpha_volcano_chain"
+									has_blocker = "tb_sandworm_activity"
+									has_blocker = "tb_alpha_ice_cap"
+									has_building = yes
+									has_grown_pop = yes
+									has_growing_pop = yes
+									has_building_construction = yes 
+								}
+							}
+							remove_blocker = yes
+							set_blocker = "tb_wild_crops"
+							clear_deposits = yes
+							add_resource = { resource = food amount = 1 }
+						}
+					}
+					25 = { 
+						random_neighboring_tile = {
+							limit = { 
+								NOR = {
+									has_blocker = "tb_alpha_mountain_range"
+									has_blocker = "tb_alpha_ocean_vortex"
+									has_blocker = "tb_alpha_volcano_chain"
+									has_blocker = "tb_sandworm_activity"
+									has_blocker = "tb_alpha_ice_cap"
+								}
+							}
+							clear_deposits = yes
+							add_resource = { resource = food amount = 1 }
+						}
+					}
+				}
+			}
+			
+			every_tile = {
+				limit = { 
+					OR = {
+						has_blocker = "tb_ancient_forest"
+						has_blocker = "tb_alpine_forest"
+					}
+				}
+				clear_deposits = yes
+				random_list = {
+					30 = { 	
+						clear_deposits = yes
+					}
+					5 = {
+						add_resource = { resource = engineering_research amount = 2 }							
+					}
+					5 = {
+						add_resource = { resource = society_research amount = 2 }							
+					}
+					10 = {
+						add_resource = { resource = society_research amount = 1 }							
+					}
+					15 = { 	
+						add_resource = { resource = sr_natural_fuels amount = 1 }
+						add_resource = { resource = sr_biomass amount = 1 }		
+					}
+					20 = { 	
+						add_resource = { resource = sr_natural_fuels amount = 1 }					
+					}
+					15 = { 	
+						add_resource = { resource = sr_h2o amount = 1 }
+						add_resource = { resource = sr_biomass amount = 1 }						
+					}
+				}			
+				random_list = {
+					25 = { 
+						random_neighboring_tile = {
+							limit = { 
+								NOR = {
+									has_blocker = "tb_alpha_mountain_range"
+									has_blocker = "tb_alpha_ocean_vortex"
+									has_blocker = "tb_alpha_volcano_chain"
+									has_blocker = "tb_sandworm_activity"
+									has_blocker = "tb_alpha_ice_cap"
+									has_building = yes
+									has_grown_pop = yes
+									has_growing_pop = yes
+									has_building_construction = yes 
+								}
+							}
+							remove_blocker = yes
+							if = {
+								limit = {
+									prevprev = {
+										not = { is_planet_class = pc_alpine }
+									}
+								}
+								set_blocker = "tb_ancient_forest"
+								clear_deposits = yes
+								add_resource = { resource = sr_natural_fuels amount = 1 }
+								add_resource = { resource = sr_biomass amount = 1 }
+								else = {
+									set_blocker = "tb_alpine_forest"
+									clear_deposits = yes
+									add_resource = { resource = sr_natural_fuels amount = 1 }
+									add_resource = { resource = sr_biomass amount = 1 }								
+								}							
+							}
+						}
+					}
+					15 = { 
+						random_neighboring_tile = {
+							limit = { 
+								NOR = {
+									has_blocker = "tb_alpha_mountain_range"
+									has_blocker = "tb_alpha_ocean_vortex"
+									has_blocker = "tb_alpha_volcano_chain"
+									has_blocker = "tb_sandworm_activity"
+									has_blocker = "tb_alpha_ice_cap"
+								}
+							}
+							clear_deposits = yes
+							add_resource = { resource = sr_h2o amount = 2 }
+						}
+					}
+					10 = { 
+						random_neighboring_tile = {
+							limit = { 
+								NOR = {
+									has_blocker = "tb_alpha_mountain_range"
+									has_blocker = "tb_alpha_ocean_vortex"
+									has_blocker = "tb_alpha_volcano_chain"
+									has_blocker = "tb_sandworm_activity"
+									has_blocker = "tb_alpha_ice_cap"
+								}
+							}
+							clear_deposits = yes
+							add_resource = { resource = sr_natural_fuels amount = 2 }
+						}
+					}
+				}
+			}
+			
+			every_tile = {
+				limit = { 
+					OR = {
+						has_blocker = "tb_sandworm_activity"
+					}
+				}
+				random_neighboring_tile = {
+					limit = { 
+						NOR = {
+							has_blocker = "tb_alpha_mountain_range"
+							has_blocker = "tb_alpha_ocean_vortex"
+							has_blocker = "tb_alpha_volcano_chain"
+							has_blocker = "tb_sandworm_activity"
+							has_blocker = "tb_alpha_ice_cap"
+						}
+					}
+					clear_deposits = yes
+					add_resource = { resource = sr_wormspice amount = 1 }			
+				}
+				random_neighboring_tile = {
+					limit = { 
+						NOR = {
+							has_blocker = "tb_alpha_mountain_range"
+							has_blocker = "tb_alpha_ocean_vortex"
+							has_blocker = "tb_alpha_volcano_chain"
+							has_blocker = "tb_sandworm_activity"
+							has_blocker = "tb_alpha_ice_cap"
+						}
+					}
+					clear_deposits = yes
+					add_resource = { resource = sr_wormspice amount = 1 }			
+				}
+				clear_deposits = yes
+			}
+
+			every_tile = {
+				limit = { 
+					OR = {
+						has_blocker = "tb_alpha_mountain_range"
+					}
+				}
+				random_neighboring_tile = {
+					limit = { 
+						NOR = {
+							has_blocker = "tb_alpha_mountain_range"
+							has_blocker = "tb_alpha_ocean_vortex"
+							has_blocker = "tb_alpha_volcano_chain"
+							has_blocker = "tb_sandworm_activity"
+							has_blocker = "tb_massive_glacier"
+							has_blocker = "tb_mountain_range"
+							has_blocker = "tb_alpha_ice_cap"
+							has_building = yes
+							has_grown_pop = yes
+							has_growing_pop = yes
+							has_building_construction = yes 
+						}
+					}
+					clear_deposits = yes
+					add_resource = { resource = sr_ice amount = 1 }
+					remove_blocker = yes
+					set_blocker = "tb_massive_glacier"
+				}
+				random_neighboring_tile = {
+					limit = { 
+						NOR = {
+							has_blocker = "tb_alpha_mountain_range"
+							has_blocker = "tb_alpha_ocean_vortex"
+							has_blocker = "tb_alpha_volcano_chain"
+							has_blocker = "tb_sandworm_activity"
+							has_blocker = "tb_massive_glacier"
+							has_blocker = "tb_mountain_range"
+							has_blocker = "tb_alpha_ice_cap"
+							has_building = yes
+							has_grown_pop = yes
+							has_growing_pop = yes
+							has_building_construction = yes 
+						}
+					}
+					clear_deposits = yes
+					add_resource = { resource = minerals amount = 1 }
+					remove_blocker = yes
+					set_blocker = "tb_mountain_range"				
+				}
+				random_neighboring_tile = {
+					limit = { 
+						NOR = {
+							has_blocker = "tb_alpha_mountain_range"
+							has_blocker = "tb_alpha_ocean_vortex"
+							has_blocker = "tb_alpha_volcano_chain"
+							has_blocker = "tb_sandworm_activity"
+							has_blocker = "tb_massive_glacier"
+							has_blocker = "tb_mountain_range"
+							has_blocker = "tb_alpha_ice_cap"
+							has_building = yes
+							has_grown_pop = yes
+							has_growing_pop = yes
+							has_building_construction = yes 
+						}
+					}
+					clear_deposits = yes
+					add_resource = { resource = minerals amount = 2 }
+					remove_blocker = yes
+					set_blocker = "tb_mountain_range"				
+				}
+				random_neighboring_tile = {
+					limit = { 
+						NOR = {
+							has_blocker = "tb_alpha_mountain_range"
+							has_blocker = "tb_alpha_ocean_vortex"
+							has_blocker = "tb_alpha_volcano_chain"
+							has_blocker = "tb_sandworm_activity"
+							has_blocker = "tb_massive_glacier"
+							has_blocker = "tb_mountain_range"
+							has_blocker = "tb_alpha_ice_cap"
+						}
+					}
+					clear_deposits = yes
+					add_resource = { resource = sr_h2o amount = 1 }			
+				}
+				clear_deposits = yes
+			}
+			
+			every_tile = {
+				limit = { 
+					OR = {
+						has_blocker = "tb_alpha_volcano_chain"
+					}
+				}
+				random_neighboring_tile = {
+					limit = { 
+						NOR = {
+							has_blocker = "tb_alpha_mountain_range"
+							has_blocker = "tb_alpha_ocean_vortex"
+							has_blocker = "tb_alpha_volcano_chain"
+							has_blocker = "tb_sandworm_activity"
+							has_blocker = "tb_active_volcano"
+							has_blocker = "tb_alpha_ice_cap"
+							has_building = yes
+							has_grown_pop = yes
+							has_growing_pop = yes
+							has_building_construction = yes 
+						}
+					}
+					clear_deposits = yes
+					add_resource = { resource = energy amount = 1 }
+					remove_blocker = yes
+					set_blocker = "tb_active_volcano"
+				}
+				random_neighboring_tile = {
+					limit = { 
+						NOR = {
+							has_blocker = "tb_alpha_mountain_range"
+							has_blocker = "tb_alpha_ocean_vortex"
+							has_blocker = "tb_alpha_volcano_chain"
+							has_blocker = "tb_sandworm_activity"
+							has_blocker = "tb_active_volcano"
+							has_blocker = "tb_alpha_ice_cap"
+						}
+					}
+					clear_deposits = yes
+					add_resource = { resource = energy amount = 2 }			
+				}
+				random_neighboring_tile = {
+					limit = { 
+						NOR = {
+							has_blocker = "tb_alpha_mountain_range"
+							has_blocker = "tb_alpha_ocean_vortex"
+							has_blocker = "tb_alpha_volcano_chain"
+							has_blocker = "tb_sandworm_activity"
+							has_blocker = "tb_active_volcano"
+							has_blocker = "tb_alpha_ice_cap"
+						}
+					}
+					clear_deposits = yes
+					add_resource = { resource = minerals amount = 1 }			
+				}
+				random_neighboring_tile = {
+					limit = { 
+						NOR = {
+							has_blocker = "tb_alpha_mountain_range"
+							has_blocker = "tb_alpha_ocean_vortex"
+							has_blocker = "tb_alpha_volcano_chain"
+							has_blocker = "tb_sandworm_activity"
+							has_blocker = "tb_active_volcano"
+							has_blocker = "tb_alpha_ice_cap"
+						}
+					}
+					clear_deposits = yes
+					add_resource = { resource = energy amount = 1 }			
+				}
+				clear_deposits = yes
+				prev = {
+					random_list = {
+						60 = { 
+							add_modifier = {
+								modifier = "volcanic_ash_clouds"
+								days = -1
+							}
+						}
+						40 = {}
+					}
+				}
+			}
+			
+			every_tile = {
+				limit = { 
+					OR = {
+						has_blocker = "tb_alpha_ocean_vortex"
+					}
+				}
+				every_neighboring_tile = {
+					clear_deposits = yes
+					add_resource = { resource = energy amount = 1 }
+					add_resource = { resource = engineering_research amount = 1 }
+					remove_blocker = yes
+				}
+				clear_deposits = yes
+				prev = {
+					add_modifier = {
+						modifier = "alpha_storms"
+						days = -1
+					}
+				}
+			}
+			
+			every_tile = {
+				limit = { 
+					has_deposit = "d_great_oasis_deposit"
+					has_building = no
+					has_grown_pop = no
+					has_growing_pop = no
+					has_building_construction = no
+				}
+				remove_blocker = yes
+				set_blocker = "tb_great_oasis"
+			}
+			
+			every_tile = {
+				limit = { 
+					has_deposit = "d_geothermalsprings_deposit"
+					has_building = no
+					has_grown_pop = no
+					has_growing_pop = no
+					has_building_construction = no
+				}
+				remove_blocker = yes
+				set_blocker = "tb_geothermal_springs"
+			}
+			
+			every_tile = {
+				limit = { 
+					has_deposit = "d_jurassicvalley_deposit"
+					has_building = no
+					has_grown_pop = no
+					has_growing_pop = no
+					has_building_construction = no
+				}
+				remove_blocker = yes
+				set_blocker = "tb_jurrasic_valley"
+			}
+			
+			every_tile = {
+				limit = { 
+					has_deposit = "d_jungleofriches_deposit"
+					has_building = no
+					has_grown_pop = no
+					has_growing_pop = no
+					has_building_construction = no
+				}
+				remove_blocker = yes
+				set_blocker = "tb_jungle_riches"
+			}
+			
+			every_tile = {
+				limit = { 
+					has_deposit = "d_precursorruins_deposit"
+					has_building = no
+					has_grown_pop = no
+					has_growing_pop = no
+					has_building_construction = no
+				}
+				remove_blocker = yes
+				set_blocker = "tb_ancient_ruins"
+			}
+			
+			every_tile = {
+				limit = { 
+					has_deposit = "d_massivecaverns_deposit"
+					has_building = no
+					has_grown_pop = no
+					has_growing_pop = no
+					has_building_construction = no
+				}
+				remove_blocker = yes
+				set_blocker = "tb_massive_caverns"
+			}
+		}
+		
+		fromfrom = {
+			if = {
+				limit = {
+					is_planet_class = pc_arctic
+				}
+				every_tile = {
+					limit = { 
+						has_blocker = no
+						has_building = no
+						has_grown_pop = no
+						has_growing_pop = no
+						has_building_construction = no
+					}
+					random_list = {
+						16 = {
+							add_resource = { resource = sr_ice amount = 1 }
+						}
+						5 = {
+							add_resource = { resource = sr_ice amount = 2 }
+						}
+						2 = {
+							add_resource = { resource = sr_natural_fuels amount = 1 }
+						}
+						1 = {
+							add_resource = { resource = sr_actinides amount = 1 }
+						}
+						1 = {
+							add_resource = { resource = sr_ice amount = 3 }
+						}
+						75 = {}
+					}					
+				}
+			}
+			
+			if = {
+				limit = {
+					is_planet_class = pc_tundra
+				}
+				every_tile = {
+					limit = { 
+						has_blocker = no
+						has_building = no
+						has_grown_pop = no
+						has_growing_pop = no
+						has_building_construction = no
+					}
+					random_list = {
+						10 = {
+							add_resource = { resource = sr_ice amount = 1 }
+						}
+						4 = {
+							add_resource = { resource = sr_ice amount = 2 }
+						}
+						3 = {
+							add_resource = { resource = sr_natural_fuels amount = 1 }
+						}
+						2 = {
+							add_resource = { resource = sr_natural_fuels amount = 2 }
+						}
+						3 = {
+							add_resource = { resource = minerals amount = 1 }
+						}
+						1 = {
+							add_resource = { resource = sr_actinides amount = 1 }
+						}
+						1 = {
+							add_resource = { resource = food amount = 1 }
+						}
+						1 = {
+							add_resource = { resource = sr_h2o amount = 1 }
+						}
+						75 = {}
+					}					
+				}
+			}
+			
+			if = {
+				limit = {
+					is_planet_class = pc_alpine
+				}
+				every_tile = {
+					limit = { 
+						has_blocker = no
+						has_building = no
+						has_grown_pop = no
+						has_growing_pop = no
+						has_building_construction = no
+					}
+					random_list = {
+						15 = {
+							add_resource = { resource = sr_ice amount = 1 }
+						}
+						4 = {
+							add_resource = { resource = sr_ice amount = 2 }
+						}
+						2 = {
+							add_resource = { resource = sr_natural_fuels amount = 1 }
+						}
+						2 = {
+							add_resource = { resource = sr_natural_fuels amount = 2 }
+						}
+						1 = {
+							add_resource = { resource = food amount = 1 }
+						}
+						1 = {
+							add_resource = { resource = sr_h2o amount = 1 }
+						}
+						75 = {}
+					}					
+				}
+			}
+
+			if = {
+				limit = {
+					OR = {
+						is_planet_class = pc_asteroid
+						is_planet_class = pc_barren
+					}
+				}
+				every_tile = {
+					limit = { 
+						has_blocker = no
+						has_building = no
+						has_grown_pop = no
+						has_growing_pop = no
+						has_building_construction = no
+					}
+					random_list = {
+						4 = {
+							add_resource = { resource = minerals amount = 1 }
+						}
+						5 = {
+							add_resource = { resource = minerals amount = 2 }
+						}
+						8 = {
+							add_resource = { resource = sr_natural_fuels amount = 1 }
+						}
+						9 = {
+							add_resource = { resource = sr_ice amount = 1 }
+						}
+						1 = {
+							add_resource = { resource = sr_actinides amount = 1 }
+						}
+						3 = {
+							add_resource = { resource = energy amount = 1 }
+						}
+						70 = {}
+					}					
+				}
+			}
+			
+			if = {
+				limit = {
+					is_planet_class = pc_desert
+				}
+				every_tile = {
+					limit = { 
+						has_blocker = no
+						has_building = no
+						has_grown_pop = no
+						has_growing_pop = no
+						has_building_construction = no
+					}
+					random_list = {
+						10 = {
+							add_resource = { resource = energy amount = 1 }
+						}
+						4 = {
+							add_resource = { resource = energy amount = 2 }
+						}
+						6 = {
+							add_resource = { resource = sr_natural_fuels amount = 1 }
+						}
+						2 = {
+							add_resource = { resource = sr_natural_fuels amount = 2 }
+						}
+						3 = {
+							add_resource = { resource = minerals amount = 1 }
+						}
+						75 = {}
+					}					
+				}
+			}
+			
+			if = {
+				limit = {
+					OR = {
+						is_planet_class = pc_continental
+						is_planet_class = pc_gaia
+					}
+				}
+				every_tile = {
+					limit = { 
+						has_blocker = no
+						has_building = no
+						has_grown_pop = no
+						has_growing_pop = no
+						has_building_construction = no
+					}
+					random_list = {
+						2 = {
+							add_resource = { resource = sr_natural_fuels amount = 1 }
+						}
+						1 = {
+							add_resource = { resource = sr_natural_fuels amount = 2 }
+						}
+						3 = {
+							add_resource = { resource = minerals amount = 1 }
+						}
+						5 = {
+							add_resource = { resource = food amount = 1 }
+						}
+						7 = {
+							add_resource = { resource = sr_h2o amount = 1 }
+						}
+						7 = {
+							add_resource = { resource = sr_biomass amount = 1 }
+						}
+						75 = {}
+					}					
+				}
+			}
+			
+			if = {
+				limit = {
+					is_planet_class = pc_gaia
+				}
+				every_tile = {
+					limit = { 
+						has_blocker = no
+						has_building = no
+						has_grown_pop = no
+						has_growing_pop = no
+						has_building_construction = no
+					}
+					random_list = {
+						1 = {
+							add_resource = { resource = sr_exotic_foods amount = 1 }
+						}
+						5 = {
+							add_resource = { resource = food amount = 1 }
+						}
+						4 = {
+							add_resource = { resource = sr_biomass amount = 1 }
+						}
+						90 = {}
+					}					
+				}
+			}
+
+			if = {
+				limit = {
+					is_planet_class = pc_tropical
+				}
+				every_tile = {
+					limit = { 
+						has_blocker = no
+						has_building = no
+						has_grown_pop = no
+						has_growing_pop = no
+						has_building_construction = no
+					}
+					random_list = {
+						2 = {
+							add_resource = { resource = sr_natural_fuels amount = 1 }
+						}
+						1 = {
+							add_resource = { resource = sr_natural_fuels amount = 2 }
+						}
+						1 = {
+							add_resource = { resource = minerals amount = 1 }
+						}
+						8 = {
+							add_resource = { resource = food amount = 1 }
+							add_resource = { resource = sr_biomass amount = 1 }
+						}
+						10 = {
+							add_resource = { resource = sr_h2o amount = 1 }
+							add_resource = { resource = sr_biomass amount = 1 }
+						}
+						8 = {
+							add_resource = { resource = sr_biomass amount = 1 }
+						}
+						70 = {}
+					}					
+				}
+			}
+
+			if = {
+				limit = {
+					is_planet_class = pc_ocean
+				}
+				every_tile = {
+					limit = { 
+						has_blocker = no
+						has_building = no
+						has_grown_pop = no
+						has_growing_pop = no
+						has_building_construction = no
+					}
+					random_list = {
+						2 = {
+							add_resource = { resource = sr_natural_fuels amount = 1 }
+						}
+						1 = {
+							add_resource = { resource = sr_natural_fuels amount = 2 }
+						}
+						4 = {
+							add_resource = { resource = food amount = 1 }
+						}
+						31 = {
+							add_resource = { resource = sr_h2o amount = 1 }
+						}
+						12 = {
+							add_resource = { resource = sr_biomass amount = 1 }
+							add_resource = { resource = sr_h2o amount = 1 }
+						}
+						50 = {}
+					}					
+				}
+			}			
+			
+			if = {
+				limit = {
+					is_planet_class = pc_savannah
+				}
+				every_tile = {
+					limit = { 
+						has_blocker = no
+						has_building = no
+						has_grown_pop = no
+						has_growing_pop = no
+						has_building_construction = no
+					}
+					random_list = {
+						7 = {
+							add_resource = { resource = energy amount = 1 }
+						}
+						2 = {
+							add_resource = { resource = energy amount = 2 }
+						}
+						5 = {
+							add_resource = { resource = sr_natural_fuels amount = 1 }
+						}
+						2 = {
+							add_resource = { resource = sr_natural_fuels amount = 2 }
+						}
+						3 = {
+							add_resource = { resource = minerals amount = 1 }
+						}
+						2 = {
+							add_resource = { resource = food amount = 1 }
+						}
+						2 = {
+							add_resource = { resource = sr_h2o amount = 1 }
+						}
+						2 = {
+							add_resource = { resource = sr_biomass amount = 1 }
+						}
+						75 = {}
+					}					
+				}
+			}
+			
+			if = {
+				limit = {
+					is_planet_class = pc_arid
+				}
+				every_tile = {
+					limit = { 
+						has_blocker = no
+						has_building = no
+						has_grown_pop = no
+						has_growing_pop = no
+						has_building_construction = no
+					}
+					random_list = {
+						8 = {
+							add_resource = { resource = energy amount = 1 }
+						}
+						3 = {
+							add_resource = { resource = energy amount = 2 }
+						}
+						5 = {
+							add_resource = { resource = sr_natural_fuels amount = 1 }
+						}
+						2 = {
+							add_resource = { resource = sr_natural_fuels amount = 2 }
+						}
+						4 = {
+							add_resource = { resource = minerals amount = 1 }
+						}
+						2 = {
+							add_resource = { resource = food amount = 1 }
+						}
+						1 = {
+							add_resource = { resource = sr_h2o amount = 1 }
+						}
+						75 = {}
+					}					
+				}
+			}
+			
+			every_tile = {
+				limit = {
+					OR = {
+						has_blocker = "tb_alpha_mountain_range"
+						has_blocker = "tb_alpha_ocean_vortex"
+						has_blocker = "tb_alpha_volcano_chain"
+						has_blocker = "tb_sandworm_activity"
+						has_blocker = "tb_alpha_ice_cap"
+					}
+				}
+				clear_deposits = yes
+			}
+		}
+	}
+}
+
+event = {
+	id = alphamod_surveys.2
+
+	is_triggered_only = yes
+	location = ROOT
+	hide_window = yes
+	
+	trigger = {
+		ROOT = {
+			has_planet_flag = alphamod_surveyed
+		}
+	}
+	
+	immediate = {
+		ROOT = {
+			every_tile = {
+				limit = {
+					OR = {
+						has_blocker = "tb_alpha_mountain_range"
+						has_blocker = "tb_alpha_ocean_vortex"
+						has_blocker = "tb_alpha_volcano_chain"
+						has_blocker = "tb_sandworm_activity"
+						has_blocker = "tb_alpha_ice_cap"
+					}
+				}
+				clear_deposits = yes
+			}
+		}
+	}
+}
+
+# Clean up current games
+planet_event = {
+	id = alphamod_surveys.3
+	hide_window = yes
+	
+	trigger = {
+		has_owner = yes
+		num_pops > 0
+		not = { has_planet_flag = alphamodtbcleanup2 }
+	}
+	
+	immediate = {
+		set_planet_flag = alphamodtbcleanup2
+		every_tile = {
+			limit = {
+				OR = {
+					has_blocker = "tb_alpha_mountain_range"
+					has_blocker = "tb_alpha_ocean_vortex"
+					has_blocker = "tb_alpha_volcano_chain"
+					has_blocker = "tb_sandworm_activity"
+					has_blocker = "tb_alpha_ice_cap"
+				}
+			}
+			clean_basic_resources = yes
+		}
+	}
+}

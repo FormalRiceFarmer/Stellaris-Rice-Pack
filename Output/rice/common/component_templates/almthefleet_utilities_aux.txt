@@ -1,0 +1,150 @@
+# utility_component_template = {
+	# key = "COMBAT_COMPUTER_SPY"
+	# size = small
+	# icon = "GFX_ship_part_computer_default"
+	# icon_frame = 1
+	# power = -10
+	# cost = 10
+	# ship_behavior = "default"
+	
+	# modifier = {
+		# ship_evasion_add = 15
+		# ship_combat_speed_mult = 0.2
+		# ship_speed_mult = 0.5
+		# fleet_emergency_ftl_min_days_mult = -0.9
+		# ship_winddown_mult = -0.3
+	# }
+	# ship_modifier = {
+		# ship_weapon_damage = -0.5
+		# ship_weapon_range_mult = 0.2
+	# }
+	
+	# ai_weight = {
+		# weight = 1
+	# }
+	
+	# class_restriction = { shipclass_military }
+	# #prerequisites = { "tech_alpha_shuttlecraft" }
+	# size_restriction = { corvette_spy }
+	# component_set = "combat_computers"
+# }
+
+utility_component_template = {
+	key = "ALPHA_SIF_1"
+	size = aux
+	icon = "GFX_ship_part_alpha_sif_1"
+	icon_frame = 1
+	power = -25
+	cost = 50
+	
+	class_restriction = { shipclass_military shipclass_military_station shipclass_outpost_station }
+	size_restriction = { cruiser battleship military_station_large outpost_station }
+	
+	prerequisites = { "tech_planetary_shield_generator" }
+	component_set = "ALPHA_SIF_1"
+	
+	modifier = {
+		ship_hitpoints_mult = 0.15
+	}
+	
+	ai_weight = {
+		weight = 5
+	}
+}
+
+utility_component_template = {
+	key = "ALPHA_SUPPLY_BAY_1"
+	size = aux
+	icon = "GFX_ship_part_alpha_supply_bay_1"
+	icon_frame = 1
+	power = 0
+	cost = 10
+	
+	class_restriction = { shipclass_military }
+	size_restriction = { cruiser battleship }
+	
+	prerequisites = { "tech_orbital_hydroponics" }
+	component_set = "ALPHA_SUPPLY_BAY_1"
+	
+	modifier = {
+		ship_auto_repair_add = 0.005
+		ship_upkeep_mult = -0.05
+	}
+	
+	ai_weight = {
+		weight = 1
+	}
+}
+
+utility_component_template = {
+	key = "ALPHA_AUTO_LOADERS_1"
+	size = aux
+	icon = "GFX_ship_part_alpha_auto_loaders_1"
+	icon_frame = 1
+	power = -5
+	cost = 25
+	
+	class_restriction = { shipclass_military shipclass_outpost_station shipclass_military_station }
+	
+	prerequisites = { "tech_powered_exoskeletons" }
+	component_set = "ALPHA_AUTO_LOADERS_1"
+	
+	modifier = {
+		weapon_type_kinetic_weapon_fire_rate_mult = 0.05
+		weapon_type_explosive_weapon_fire_rate_mult = 0.05
+		weapon_type_energy_weapon_fire_rate_mult = 0.05
+	}
+	
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "ALPHA_AUXILIARY_TARGETING_1"
+	size = aux
+	icon = "GFX_ship_part_alpha_auxiliary_targeting_1"
+	icon_frame = 1
+	power = -10
+	cost = 25
+	
+	class_restriction = { shipclass_military shipclass_military_station }
+	
+	prerequisites = { "tech_synchronized_defences" }
+	component_set = "ALPHA_AUXILIARY_TARGETING_1"
+	
+	modifier = {
+		ship_accuracy_add = 3
+		ship_tracking_add = 2
+		ship_weapon_range_mult = 0.05
+	}
+	
+	ai_weight = {
+		weight = 2
+	}
+}
+
+utility_component_template = {
+	key = "ALPHA_AUXILIARY_NAVSYSTEMS_1"
+	size = aux
+	icon = "GFX_ship_part_alpha_auxiliary_navsystems_1"
+	icon_frame = 1
+	power = -15
+	cost = 20
+	
+	class_restriction = { shipclass_military }
+	size_restriction = { corvette destroyer cruiser battleship }
+	
+	prerequisites = { "tech_databank_uplinks" }
+	component_set = "ALPHA_AUXILIARY_NAVSYSTEMS_1"
+	
+	modifier = {
+		ship_interstellar_speed_mult = 0.1
+		ship_ftl_jumpdrive_range_mult = 0.2
+		ship_ftl_warp_range_mult = 0.2
+	}
+	
+	ai_weight = {
+		weight = 1
+	}
+}

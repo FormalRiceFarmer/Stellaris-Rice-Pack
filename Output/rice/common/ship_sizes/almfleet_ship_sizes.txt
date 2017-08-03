@@ -1,0 +1,96 @@
+# @civilian_ships_combat_speed = 0.5
+# @corvette_combat_speed = 1.75 	# assault ships
+# @corvette_combat_rotation = 0.08
+# @corvette_collision_radius = 2.0
+# @corvette_formation_priority = 3
+
+# @destroyer_combat_speed = 1.25	 # picket ships
+# @destroyer_combat_rotation = 0.05
+# @destroyer_collision_radius = 2.5
+# @destroyer_formation_priority = 2
+
+# @cruiser_combat_speed = 1.25	 # picket/assault ships
+# @cruiser_combat_rotation = 0.035
+# @cruiser_collision_radius = 3
+# @cruiser_formation_priority = 1
+
+# @battleship_combat_speed = 0.75	
+# @battleship_combat_rotation = 0.025
+# @battleship_collision_radius = 3
+# @battleship_formation_priority = 4
+
+# @build_block_radius_none = 0
+# @build_block_radius_tiny = 10
+# @build_block_radius_small = 70
+# @build_block_radius_medium = 90
+# @build_block_radius_large = 110
+
+# super_capital = {
+	# formation_priority = @battleship_formation_priority
+	# max_speed = 2
+	# acceleration = 0.1
+	# rotation_speed = 0.1
+	# combat_max_speed = @battleship_combat_speed
+	# combat_rotation_speed = @battleship_combat_rotation
+	# collision_radius = @battleship_collision_radius
+	# modifier = {
+		# ship_armor_add = 100
+		# ship_evasion_add = 1
+	# }
+	# max_hitpoints = 3600
+	# size_multiplier = 12
+	# fleet_slot_size = 6
+	# section_slots = { "bow" = { locator = "part1" } "midfore" = { locator = "part2" } "midaft" = { locator = "part4" } "stern" = { locator = "part3" } }
+	# num_target_locators = 4
+	# is_space_station = no
+	# icon_frame = 5
+	# base_buildtime = 720
+	# required_spaceport_level = 6
+	# can_have_federation_design = yes
+	# enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+	
+	# prerequisites = { "tech_alpha_dreadnoughts" }
+	
+	# class = shipclass_military
+	# required_component_set = "ftl_components"
+	# required_component_set = "combat_computers"
+	# required_component_set = "thruster_components"
+	# required_component_set = "ship_sensor_components"
+# }
+
+# corvette_spy = {
+	# formation_priority = @corvette_formation_priority
+	# max_speed = 6.0
+	# acceleration = 0.4
+	# rotation_speed = 0.15
+	# combat_max_speed = @corvette_combat_speed
+	# combat_rotation_speed = @corvette_combat_rotation
+	# collision_radius = @corvette_collision_radius
+	# modifier = {
+		# ship_armor_add = 1
+		# ship_evasion_add = 70
+	# }
+	# max_hitpoints = 200
+	# size_multiplier = 1
+	# fleet_slot_size = 1
+	# section_slots = { "mid" = { locator = "part1" } }
+	# num_target_locators = 2
+	# is_space_station = no
+	# icon_frame = 2
+	# base_buildtime = 180
+	# can_have_federation_design = yes
+	# enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+	
+	# entity = "corvette_entity"
+	
+	# cost = 100
+	
+	# #prerequisites = { "tech_alpha_espionage" }
+	
+	# class = shipclass_military
+	# required_component_set = "ftl_components"
+	# required_component_set = "combat_computers"
+	# required_component_set = "thruster_components"
+	# required_component_set = "ship_sensor_components"
+	# required_component_set = "corvette_spy_auras"
+# }
