@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "molluscoid_01_expressway_mesh"
+		file = "gfx/models/ships/_nsc_01/mammalian_01_expressway.mesh"
+		scale = 1.0
+
+		meshsettings = {
+			name = "|Expressway|Expressway"
+			index = 0
+			texture_diffuse = "mammalian_01_expressway_diffuse.dds"
+			texture_normal = "mammalian_01_expressway_normal.dds"
+			texture_specular = "mammalian_01_expressway_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

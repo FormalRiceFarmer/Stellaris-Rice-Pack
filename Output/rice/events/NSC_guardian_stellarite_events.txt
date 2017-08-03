@@ -1,0 +1,278 @@
+namespace = NSC_guardian_stellarite
+
+country_event = {
+	# Triggered upon defeat of the defeat of the Stellarite. If AI beats it, spawns new one. If player beats it, gives flag to unlock Playable Guardians. If more than one player has Playable Guardians active, spawns new system.
+	id = NSC_guardian_stellarite.1
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		From = {
+			is_country_type = guardian_stellarite
+		}
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				has_country_flag = playable_guardian_feature_active
+				has_country_flag = NSC_player_empire
+				NOT = { has_country_flag = guardian_stellarite_defeated }
+			}
+			set_country_flag = guardian_stellarite_defeated
+			country_event = { id = NSC_guardian_stellarite.2 }
+		}
+		#The remaining coding is to make sure in multiplier if any players have Playable Guardians active yet didn't defeat the Stellarite, have the oppertunity.
+		if = {
+			limit = {
+				any_country = {
+					has_country_flag = NSC_player_empire
+					has_country_flag = playable_guardian_feature_active
+					NOT = { has_country_flag = guardian_stellarite_defeated }
+				}
+			}
+			nsc_spawn_stellarite = yes
+		}
+	}
+}
+
+country_event = {
+	id = NSC_guardian_stellarite.2
+	title = "guardian_stellarite.2.name"
+	desc = "guardian_stellarite.2.desc"
+	picture = "GFX_evt_stellarites"
+	show_sound = "event_sensor_ping"
+	is_triggered_only = yes
+	
+	trigger = {
+		has_country_flag = NSC_player_empire
+		has_country_flag = guardian_stellarite_defeated
+	}
+	
+	option = { 
+		name = "guardian_stellarite.2.a"
+		trigger = {
+			NOR = {
+				has_country_flag = playable_guardians_postponed
+				has_country_flag = captain_galleon_built
+				has_country_flag = dreadnought_built
+				has_country_flag = dimensional_horror_built
+				has_country_flag = enigmatic_fortress_built
+				has_country_flag = dragon_built
+				has_country_flag = technosphere_built
+				has_country_flag = wraith_built
+			}
+		}
+		hidden_effect = {
+			country_event = { id = NSC_guardian_stellarite.3 }
+		}
+	}
+	option = { 
+		name = "guardian_stellarite.2.b"
+		trigger = {
+			NOR = {
+				has_country_flag = playable_guardians_postponed
+				has_country_flag = captain_galleon_built
+				has_country_flag = dreadnought_built
+				has_country_flag = dimensional_horror_built
+				has_country_flag = enigmatic_fortress_built
+				has_country_flag = dragon_built
+				has_country_flag = technosphere_built
+				has_country_flag = wraith_built
+			}
+		}
+		hidden_effect = {
+			country_event = { id = NSC_guardian_main.2 }
+		}
+	}
+	option = { 
+		name = "guardian_stellarite.2.c"
+		trigger = {
+			OR = {
+				has_country_flag = playable_guardians_postponed
+				has_country_flag = captain_galleon_built
+				has_country_flag = dreadnought_built
+				has_country_flag = dimensional_horror_built
+				has_country_flag = enigmatic_fortress_built
+				has_country_flag = dragon_built
+				has_country_flag = technosphere_built
+				has_country_flag = wraith_built
+			}
+		}
+	}
+}
+
+country_event = {
+	id = NSC_guardian_stellarite.3
+	title = "guardian_stellarite.3.name"
+	desc = "guardian_stellarite.3.desc"
+	picture = "GFX_evt_stellarites"
+	show_sound = "event_sensor_ping"
+	is_triggered_only = yes
+	
+	trigger = {
+		has_country_flag = NSC_player_empire
+		has_country_flag = guardian_stellarite_defeated
+	}
+	
+	option = {
+		name = "guardian_stellarite.3.a"
+		enable_special_project = {
+			name = "guardian_stellarite_project"
+			owner = root
+			location = root.capital_scope
+		}
+	}
+	option = {
+		name = "guardian_backout.1.a"
+		custom_tooltip = "NSC_guardian_main_tooltip"
+		hidden_effect = {
+			country_event = { id = NSC_guardian_main.2 }
+		}
+	}
+}
+
+country_event = {
+	id = NSC_guardian_stellarite.4
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		has_country_flag = "NSC_player_empire"
+		has_country_flag = playable_guardian_feature_active
+	}
+	
+	#trigger = {
+	#	has_country_flag = NSC_player_empire
+	#	has_country_flag = guardian_stellarite_defeated
+	#}
+
+	immediate = {
+		create_fleet = {
+			name = "NAME_Ethereal_Stellarite"
+			settings = {
+				is_boss = yes
+				spawn_debris = no
+			}
+			effect = {
+				set_owner = root
+				create_ship = {
+					name = random
+					design = "NAME_Ethereal_Stellarite"
+				}
+				set_location = {
+					target = root.capital_scope
+					distance = 20
+					angle = random
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	# This adds Stellarite summoned country flag.
+	id = NSC_guardian_stellarite.5
+	hide_window = yes
+
+	trigger = {
+		OR = {
+			is_country_type = "default"
+			#Compatibility with mod: Zenith of Fallen Empires
+			is_country_type = ascended_empire
+			is_country_type = lost_empire
+			is_country_type = ascended_hive_mind
+		}
+		is_ai = no
+		NOT = { has_country_flag = "stellarite_built" }
+		count_owned_ships = {
+			limit = { is_ship_size = NSC_stellarite }
+			count = 1
+		}
+	}
+	immediate = {
+		set_country_flag = "stellarite_built"
+		country_event = { id = NSC_guardian_stellarite.6 }
+	}
+}
+
+country_event = {
+	# Stellarite summoned message.
+	id = NSC_guardian_stellarite.6
+	title = "guardian_stellarite.4.name"
+	desc = "guardian_stellarite.4.desc"
+	picture = "GFX_evt_stellarites"
+	show_sound = "event_sensor_ping"
+	is_triggered_only = yes
+	option = { name = EXCELLENT }
+}
+
+country_event = {
+	# Checks if the Stellarite has died or has been "disbanded".
+	id = NSC_guardian_stellarite.7
+	hide_window = yes
+
+	trigger = {
+		has_country_flag = "stellarite_built"
+		OR = {
+			is_country_type = "default"
+			#Compatibility with mod: Zenith of Fallen Empires
+			is_country_type = ascended_empire
+			is_country_type = lost_empire
+			is_country_type = ascended_hive_mind
+		}
+		is_ai = no
+		count_owned_ships = {
+			limit = { is_ship_size = NSC_stellarite }
+			count = 0
+		}
+	}
+	immediate = {
+		remove_country_flag = "stellarite_built"
+		country_event = { id = NSC_guardian_stellarite.8 }
+	}
+}
+
+country_event = {
+	# Stellarite killed or disbanded message.
+	id = NSC_guardian_stellarite.8
+	title = "guardian_stellarite.5.name"
+	desc = "guardian_stellarite.5.desc"
+	picture = "GFX_evt_exploding_ship"
+	show_sound = "event_sensor_ping"
+	is_triggered_only = yes
+	option = {
+		name = UNDERSTOOD
+		trigger = {
+			OR = {
+				has_country_flag = playable_guardians_postponed
+				has_country_flag = captain_galleon_built
+				has_country_flag = dreadnought_built
+				has_country_flag = dimensional_horror_built
+				has_country_flag = enigmatic_fortress_built
+				has_country_flag = dragon_built
+				has_country_flag = technosphere_built
+				has_country_flag = wraith_built
+			}
+		}
+	}
+	option = {
+		name = UNDERSTOOD
+		custom_tooltip = "NSC_guardian_main_tooltip"
+		trigger = {
+			NOR = {
+				has_country_flag = playable_guardians_postponed
+				has_country_flag = captain_galleon_built
+				has_country_flag = dreadnought_built
+				has_country_flag = dimensional_horror_built
+				has_country_flag = enigmatic_fortress_built
+				has_country_flag = dragon_built
+				has_country_flag = technosphere_built
+				has_country_flag = wraith_built
+			}
+		}
+		hidden_effect = {
+			country_event = { id = NSC_guardian_main.2 }
+		}
+	}
+}

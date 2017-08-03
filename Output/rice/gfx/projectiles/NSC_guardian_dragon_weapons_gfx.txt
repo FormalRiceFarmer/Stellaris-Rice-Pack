@@ -1,0 +1,1497 @@
+# Dragon Weaponry Colors
+
+# Red Dragonfire Drake
+projectile_gfx_beam = {
+	#common for all types of projectiles
+	name = "dragon_weapon_red"
+	color = { 1.0 0 0 1.0 }
+	hit_entity = "dragon_weapon_hit_entity"
+	shield_hit_entity = "dragon_weapon_shield_hit_entity"
+	muzzle_flash_entity = "dragon_weapon_muzzle_red_entity"
+	windup_entity = "dragon_weapon_windup_red_entity"
+	
+	#beam specific data
+	width = 10.0
+	texture_scroll_speed = 1.0
+	texture_tiling = 5.5
+	
+	hit = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.05	0.0
+			0.1		40.0
+			0.7		5.0
+			0.9		0.0
+			1.0 	0.0
+		}
+		duration = 3.0
+	}
+	miss = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.05	0.0
+			0.1		40.0
+			0.4		5.0
+			0.6		0.0
+			1.0 	0.0
+		}
+		duration = 3.0 #1.5
+	}
+	texture = "gfx/models/combat_items/titan_laser_diffuse.dds"
+	
+	set_state = {
+		section = "attack"
+	}
+	
+	shield_impact = {
+		size = large
+		loop_duration = 0.5
+		delay = 0.2
+	}
+}
+
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "dragon_wing_red_weapon"
+	color = { 0.8 		0.8		0 	0.0 }
+	hit_entity = "dragon_wing_hit_entity"
+	shield_hit_entity = "dragon_wing_shield_hit_entity"
+	muzzle_flash_entity = "dragon_wing_muzzle_red_entity"
+	
+	#ballistic specific
+	entity = "dragon_wing_projectile_red_entity"
+	speed = 450.0			#preferred speed of the projectile
+	max_duration = 1.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+	
+	shield_impact = {
+		size = medium
+		delay = 0
+	}
+}
+
+projectile_gfx_beam = {
+	#common for all types of projectiles
+	name = "arc_emitter_red"
+	color = { 1.0 0 0 5.0 }
+	hit_entity = "arc_emitter_hit_entity"
+	shield_hit_entity = "arc_emitter_shield_hit_entity"
+	muzzle_flash_entity = "arc_emitter_muzzle_entity"
+	windup_entity = "arc_emitter_windup_entity"
+	
+	#beam specific data
+	width = 15
+	texture_scroll_speed = 0.0
+	stretch_to_fit = yes
+	texture_tiling = 3	
+	hit = {
+		alpha_curve = { 
+			0.0  0.0
+			0.1 50.0
+			0.25	 0.0
+			0.3 0.0
+			0.45 5.0
+			1.0  0.0
+		}
+		duration = 0.4
+
+	}
+	miss = {
+		alpha_curve = { 
+			0.0  0.0
+			0.1 50.0
+			0.25	 0.0
+			0.3 0.0
+			0.45 5.0
+			1.0  0.0
+		}
+		duration = 0.4
+
+	}
+	texture = "gfx/models/combat_items/arc_emitter_diffuse.dds"
+	
+	shield_impact = {
+		size = large
+		delay = 0
+	}
+}
+
+
+# Orange Dragonfire Drake
+projectile_gfx_beam = {
+	#common for all types of projectiles
+	name = "dragon_weapon_orange"
+	color = { 1.0 0.5 0 1.0 }
+	hit_entity = "dragon_weapon_hit_entity"
+	shield_hit_entity = "dragon_weapon_shield_hit_entity"
+	muzzle_flash_entity = "dragon_weapon_muzzle_entity"
+	windup_entity = "dragon_weapon_windup_entity"
+	
+	#beam specific data
+	width = 10.0
+	texture_scroll_speed = 1.0
+	texture_tiling = 5.5
+	
+	hit = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.05	0.0
+			0.1		40.0
+			0.7		5.0
+			0.9		0.0
+			1.0 	0.0
+		}
+		duration = 3.0
+	}
+	miss = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.05	0.0
+			0.1		40.0
+			0.4		5.0
+			0.6		0.0
+			1.0 	0.0
+		}
+		duration = 3.0 #1.5
+	}
+	texture = "gfx/models/combat_items/titan_laser_diffuse.dds"
+	
+	set_state = {
+		section = "attack"
+	}
+	
+	shield_impact = {
+		size = large
+		loop_duration = 0.5
+		delay = 0.2
+	}
+}
+
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "dragon_wing_orange_weapon"
+	color = { 0.8 		0.8		1.0 	0.0 }
+	hit_entity = "dragon_wing_hit_entity"
+	shield_hit_entity = "dragon_wing_shield_hit_entity"
+	muzzle_flash_entity = "dragon_wing_muzzle_orange_entity"
+	
+	#ballistic specific
+	entity = "dragon_wing_projectile_orange_entity"
+	speed = 450.0			#preferred speed of the projectile
+	max_duration = 1.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+	
+	shield_impact = {
+		size = medium
+		delay = 0
+	}
+}
+
+projectile_gfx_beam = {
+	#common for all types of projectiles
+	name = "arc_emitter_orange"
+	color = { 1.0 0.5 0 5.0 }
+	hit_entity = "arc_emitter_hit_entity"
+	shield_hit_entity = "arc_emitter_shield_hit_entity"
+	muzzle_flash_entity = "arc_emitter_muzzle_entity"
+	windup_entity = "arc_emitter_windup_entity"
+	
+	#beam specific data
+	width = 15
+	texture_scroll_speed = 0.0
+	stretch_to_fit = yes
+	texture_tiling = 3	
+	hit = {
+		alpha_curve = { 
+			0.0  0.0
+			0.1 50.0
+			0.25	 0.0
+			0.3 0.0
+			0.45 5.0
+			1.0  0.0
+		}
+		duration = 0.4
+
+	}
+	miss = {
+		alpha_curve = { 
+			0.0  0.0
+			0.1 50.0
+			0.25	 0.0
+			0.3 0.0
+			0.45 5.0
+			1.0  0.0
+		}
+		duration = 0.4
+
+	}
+	texture = "gfx/models/combat_items/arc_emitter_diffuse.dds"
+	
+	shield_impact = {
+		size = large
+		delay = 0
+	}
+}
+
+# Yellow Dragonfire Drake
+projectile_gfx_beam = {
+	#common for all types of projectiles
+	name = "dragon_weapon_yellow"
+	color = { 1.0 1.0 0 1.0 }
+	hit_entity = "dragon_weapon_hit_entity"
+	shield_hit_entity = "dragon_weapon_shield_hit_entity"
+	muzzle_flash_entity = "dragon_weapon_muzzle_yellow_entity"
+	windup_entity = "dragon_weapon_windup_yellow_entity"
+	
+	#beam specific data
+	width = 10.0
+	texture_scroll_speed = 1.0
+	texture_tiling = 5.5
+	
+	hit = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.05	0.0
+			0.1		40.0
+			0.7		5.0
+			0.9		0.0
+			1.0 	0.0
+		}
+		duration = 3.0
+	}
+	miss = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.05	0.0
+			0.1		40.0
+			0.4		5.0
+			0.6		0.0
+			1.0 	0.0
+		}
+		duration = 3.0 #1.5
+	}
+	texture = "gfx/models/combat_items/titan_laser_diffuse.dds"
+	
+	set_state = {
+		section = "attack"
+	}
+	
+	shield_impact = {
+		size = large
+		loop_duration = 0.5
+		delay = 0.2
+	}
+}
+
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "dragon_wing_yellow_weapon"
+	color = { 0.8 		0.8		1.0 	0.0 }
+	hit_entity = "dragon_wing_hit_entity"
+	shield_hit_entity = "dragon_wing_shield_hit_entity"
+	muzzle_flash_entity = "dragon_wing_muzzle_yellow_entity"
+	
+	#ballistic specific
+	entity = "dragon_wing_projectile_yellow_entity"
+	speed = 450.0			#preferred speed of the projectile
+	max_duration = 1.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+	
+	shield_impact = {
+		size = medium
+		delay = 0
+	}
+}
+
+projectile_gfx_beam = {
+	#common for all types of projectiles
+	name = "arc_emitter_yellow"
+	color = { 1.0 1.0 0 5.0 }
+	hit_entity = "arc_emitter_hit_entity"
+	shield_hit_entity = "arc_emitter_shield_hit_entity"
+	muzzle_flash_entity = "arc_emitter_muzzle_entity"
+	windup_entity = "arc_emitter_windup_entity"
+	
+	#beam specific data
+	width = 15
+	texture_scroll_speed = 0.0
+	stretch_to_fit = yes
+	texture_tiling = 3	
+	hit = {
+		alpha_curve = { 
+			0.0  0.0
+			0.1 50.0
+			0.25	 0.0
+			0.3 0.0
+			0.45 5.0
+			1.0  0.0
+		}
+		duration = 0.4
+
+	}
+	miss = {
+		alpha_curve = { 
+			0.0  0.0
+			0.1 50.0
+			0.25	 0.0
+			0.3 0.0
+			0.45 5.0
+			1.0  0.0
+		}
+		duration = 0.4
+
+	}
+	texture = "gfx/models/combat_items/arc_emitter_diffuse.dds"
+	
+	shield_impact = {
+		size = large
+		delay = 0
+	}
+}
+
+# Chartreuse Dragonfire Drake
+projectile_gfx_beam = {
+	#common for all types of projectiles
+	name = "dragon_weapon_chartreuse"
+	color = { 0.5 1.0 0 1.0 }
+	hit_entity = "dragon_weapon_hit_entity"
+	shield_hit_entity = "dragon_weapon_shield_hit_entity"
+	muzzle_flash_entity = "dragon_weapon_muzzle_chartreuse_entity"
+	windup_entity = "dragon_weapon_windup_chartreuse_entity"
+	
+	#beam specific data
+	width = 10.0
+	texture_scroll_speed = 1.0
+	texture_tiling = 5.5
+	
+	hit = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.05	0.0
+			0.1		40.0
+			0.7		5.0
+			0.9		0.0
+			1.0 	0.0
+		}
+		duration = 3.0
+	}
+	miss = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.05	0.0
+			0.1		40.0
+			0.4		5.0
+			0.6		0.0
+			1.0 	0.0
+		}
+		duration = 3.0 #1.5
+	}
+	texture = "gfx/models/combat_items/titan_laser_diffuse.dds"
+	
+	set_state = {
+		section = "attack"
+	}
+	
+	shield_impact = {
+		size = large
+		loop_duration = 0.5
+		delay = 0.2
+	}
+}
+
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "dragon_wing_chartreuse_weapon"
+	color = { 0.8 		0.8		1.0 	0.0 }
+	hit_entity = "dragon_wing_hit_entity"
+	shield_hit_entity = "dragon_wing_shield_hit_entity"
+	muzzle_flash_entity = "dragon_wing_muzzle_chartreuse_entity"
+	
+	#ballistic specific
+	entity = "dragon_wing_projectile_chartreuse_entity"
+	speed = 450.0			#preferred speed of the projectile
+	max_duration = 1.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+	
+	shield_impact = {
+		size = medium
+		delay = 0
+	}
+}
+
+projectile_gfx_beam = {
+	#common for all types of projectiles
+	name = "arc_emitter_chartreuse"
+	color = { 0.5 1.0 0 5.0 }
+	hit_entity = "arc_emitter_hit_entity"
+	shield_hit_entity = "arc_emitter_shield_hit_entity"
+	muzzle_flash_entity = "arc_emitter_muzzle_entity"
+	windup_entity = "arc_emitter_windup_entity"
+	
+	#beam specific data
+	width = 15
+	texture_scroll_speed = 0.0
+	stretch_to_fit = yes
+	texture_tiling = 3	
+	hit = {
+		alpha_curve = { 
+			0.0  0.0
+			0.1 50.0
+			0.25	 0.0
+			0.3 0.0
+			0.45 5.0
+			1.0  0.0
+		}
+		duration = 0.4
+
+	}
+	miss = {
+		alpha_curve = { 
+			0.0  0.0
+			0.1 50.0
+			0.25	 0.0
+			0.3 0.0
+			0.45 5.0
+			1.0  0.0
+		}
+		duration = 0.4
+
+	}
+	texture = "gfx/models/combat_items/arc_emitter_diffuse.dds"
+	
+	shield_impact = {
+		size = large
+		delay = 0
+	}
+}
+
+# Green Dragonfire Drake
+projectile_gfx_beam = {
+	#common for all types of projectiles
+	name = "dragon_weapon_green"
+	color = { 0 1.0 0 1.0 }
+	hit_entity = "dragon_weapon_hit_entity"
+	shield_hit_entity = "dragon_weapon_shield_hit_entity"
+	muzzle_flash_entity = "dragon_weapon_muzzle_green_entity"
+	windup_entity = "dragon_weapon_windup_green_entity"
+	
+	#beam specific data
+	width = 10.0
+	texture_scroll_speed = 1.0
+	texture_tiling = 5.5
+	
+	hit = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.05	0.0
+			0.1		40.0
+			0.7		5.0
+			0.9		0.0
+			1.0 	0.0
+		}
+		duration = 3.0
+	}
+	miss = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.05	0.0
+			0.1		40.0
+			0.4		5.0
+			0.6		0.0
+			1.0 	0.0
+		}
+		duration = 3.0 #1.5
+	}
+	texture = "gfx/models/combat_items/titan_laser_diffuse.dds"
+	
+	set_state = {
+		section = "attack"
+	}
+	
+	shield_impact = {
+		size = large
+		loop_duration = 0.5
+		delay = 0.2
+	}
+}
+
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "dragon_wing_green_weapon"
+	color = { 0.8 		0.8		1.0 	0.0 }
+	hit_entity = "dragon_wing_hit_entity"
+	shield_hit_entity = "dragon_wing_shield_hit_entity"
+	muzzle_flash_entity = "dragon_wing_muzzle_green_entity"
+	
+	#ballistic specific
+	entity = "dragon_wing_projectile_green_entity"
+	speed = 450.0			#preferred speed of the projectile
+	max_duration = 1.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+	
+	shield_impact = {
+		size = medium
+		delay = 0
+	}
+}
+
+projectile_gfx_beam = {
+	#common for all types of projectiles
+	name = "arc_emitter_green"
+	color = { 0 1.0 0 5.0 }
+	hit_entity = "arc_emitter_hit_entity"
+	shield_hit_entity = "arc_emitter_shield_hit_entity"
+	muzzle_flash_entity = "arc_emitter_muzzle_entity"
+	windup_entity = "arc_emitter_windup_entity"
+	
+	#beam specific data
+	width = 15
+	texture_scroll_speed = 0.0
+	stretch_to_fit = yes
+	texture_tiling = 3	
+	hit = {
+		alpha_curve = { 
+			0.0  0.0
+			0.1 50.0
+			0.25	 0.0
+			0.3 0.0
+			0.45 5.0
+			1.0  0.0
+		}
+		duration = 0.4
+
+	}
+	miss = {
+		alpha_curve = { 
+			0.0  0.0
+			0.1 50.0
+			0.25	 0.0
+			0.3 0.0
+			0.45 5.0
+			1.0  0.0
+		}
+		duration = 0.4
+
+	}
+	texture = "gfx/models/combat_items/arc_emitter_diffuse.dds"
+	
+	shield_impact = {
+		size = large
+		delay = 0
+	}
+}
+
+# Aquamarine Dragonfire Drake
+projectile_gfx_beam = {
+	#common for all types of projectiles
+	name = "dragon_weapon_aquamarine"
+	color = { 0 1.0 0.5 1.0 }
+	hit_entity = "dragon_weapon_hit_entity"
+	shield_hit_entity = "dragon_weapon_shield_hit_entity"
+	muzzle_flash_entity = "dragon_weapon_muzzle_aquamarine_entity"
+	windup_entity = "dragon_weapon_windup_aquamarine_entity"
+	
+	#beam specific data
+	width = 10.0
+	texture_scroll_speed = 1.0
+	texture_tiling = 5.5
+	
+	hit = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.05	0.0
+			0.1		40.0
+			0.7		5.0
+			0.9		0.0
+			1.0 	0.0
+		}
+		duration = 3.0
+	}
+	miss = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.05	0.0
+			0.1		40.0
+			0.4		5.0
+			0.6		0.0
+			1.0 	0.0
+		}
+		duration = 3.0 #1.5
+	}
+	texture = "gfx/models/combat_items/titan_laser_diffuse.dds"
+	
+	set_state = {
+		section = "attack"
+	}
+	
+	shield_impact = {
+		size = large
+		loop_duration = 0.5
+		delay = 0.2
+	}
+}
+
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "dragon_wing_aquamarine_weapon"
+	color = { 0.8 		0.8		1.0 	0.0 }
+	hit_entity = "dragon_wing_hit_entity"
+	shield_hit_entity = "dragon_wing_shield_hit_entity"
+	muzzle_flash_entity = "dragon_wing_muzzle_aquamarine_entity"
+	
+	#ballistic specific
+	entity = "dragon_wing_projectile_aquamarine_entity"
+	speed = 450.0			#preferred speed of the projectile
+	max_duration = 1.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+	
+	shield_impact = {
+		size = medium
+		delay = 0
+	}
+}
+
+projectile_gfx_beam = {
+	#common for all types of projectiles
+	name = "arc_emitter_aquamarine"
+	color = { 0 1.0 0.5 5.0 }
+	hit_entity = "arc_emitter_hit_entity"
+	shield_hit_entity = "arc_emitter_shield_hit_entity"
+	muzzle_flash_entity = "arc_emitter_muzzle_entity"
+	windup_entity = "arc_emitter_windup_entity"
+	
+	#beam specific data
+	width = 15
+	texture_scroll_speed = 0.0
+	stretch_to_fit = yes
+	texture_tiling = 3	
+	hit = {
+		alpha_curve = { 
+			0.0  0.0
+			0.1 50.0
+			0.25	 0.0
+			0.3 0.0
+			0.45 5.0
+			1.0  0.0
+		}
+		duration = 0.4
+
+	}
+	miss = {
+		alpha_curve = { 
+			0.0  0.0
+			0.1 50.0
+			0.25	 0.0
+			0.3 0.0
+			0.45 5.0
+			1.0  0.0
+		}
+		duration = 0.4
+
+	}
+	texture = "gfx/models/combat_items/arc_emitter_diffuse.dds"
+	
+	shield_impact = {
+		size = large
+		delay = 0
+	}
+}
+
+# Cyan Dragonfire Drake
+projectile_gfx_beam = {
+	#common for all types of projectiles
+	name = "dragon_weapon_cyan"
+	color = { 0 1.0 1.0 1.0 }
+	hit_entity = "dragon_weapon_hit_entity"
+	shield_hit_entity = "dragon_weapon_shield_hit_entity"
+	muzzle_flash_entity = "dragon_weapon_muzzle_cyan_entity"
+	windup_entity = "dragon_weapon_windup_cyan_entity"
+	
+	#beam specific data
+	width = 10.0
+	texture_scroll_speed = 1.0
+	texture_tiling = 5.5
+	
+	hit = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.05	0.0
+			0.1		40.0
+			0.7		5.0
+			0.9		0.0
+			1.0 	0.0
+		}
+		duration = 3.0
+	}
+	miss = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.05	0.0
+			0.1		40.0
+			0.4		5.0
+			0.6		0.0
+			1.0 	0.0
+		}
+		duration = 3.0 #1.5
+	}
+	texture = "gfx/models/combat_items/titan_laser_diffuse.dds"
+	
+	set_state = {
+		section = "attack"
+	}
+	
+	shield_impact = {
+		size = large
+		loop_duration = 0.5
+		delay = 0.2
+	}
+}
+
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "dragon_wing_cyan_weapon"
+	color = { 0.8 		0.8		1.0 	0.0 }
+	hit_entity = "dragon_wing_hit_entity"
+	shield_hit_entity = "dragon_wing_shield_hit_entity"
+	muzzle_flash_entity = "dragon_wing_muzzle_cyan_entity"
+	
+	#ballistic specific
+	entity = "dragon_wing_projectile_cyan_entity"
+	speed = 450.0			#preferred speed of the projectile
+	max_duration = 1.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+	
+	shield_impact = {
+		size = medium
+		delay = 0
+	}
+}
+
+projectile_gfx_beam = {
+	#common for all types of projectiles
+	name = "arc_emitter_cyan"
+	color = { 0 1.0 1.0 5.0 }
+	hit_entity = "arc_emitter_hit_entity"
+	shield_hit_entity = "arc_emitter_shield_hit_entity"
+	muzzle_flash_entity = "arc_emitter_muzzle_entity"
+	windup_entity = "arc_emitter_windup_entity"
+	
+	#beam specific data
+	width = 15
+	texture_scroll_speed = 0.0
+	stretch_to_fit = yes
+	texture_tiling = 3	
+	hit = {
+		alpha_curve = { 
+			0.0  0.0
+			0.1 50.0
+			0.25	 0.0
+			0.3 0.0
+			0.45 5.0
+			1.0  0.0
+		}
+		duration = 0.4
+
+	}
+	miss = {
+		alpha_curve = { 
+			0.0  0.0
+			0.1 50.0
+			0.25	 0.0
+			0.3 0.0
+			0.45 5.0
+			1.0  0.0
+		}
+		duration = 0.4
+
+	}
+	texture = "gfx/models/combat_items/arc_emitter_diffuse.dds"
+	
+	shield_impact = {
+		size = large
+		delay = 0
+	}
+}
+
+# Azure Dragonfire Drake
+projectile_gfx_beam = {
+	#common for all types of projectiles
+	name = "dragon_weapon_azure"
+	color = { 0 0.5 1.0 1.0 }
+	hit_entity = "dragon_weapon_hit_entity"
+	shield_hit_entity = "dragon_weapon_shield_hit_entity"
+	muzzle_flash_entity = "dragon_weapon_muzzle_azure_entity"
+	windup_entity = "dragon_weapon_windup_azure_entity"
+	
+	#beam specific data
+	width = 10.0
+	texture_scroll_speed = 1.0
+	texture_tiling = 5.5
+	
+	hit = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.05	0.0
+			0.1		40.0
+			0.7		5.0
+			0.9		0.0
+			1.0 	0.0
+		}
+		duration = 3.0
+	}
+	miss = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.05	0.0
+			0.1		40.0
+			0.4		5.0
+			0.6		0.0
+			1.0 	0.0
+		}
+		duration = 3.0 #1.5
+	}
+	texture = "gfx/models/combat_items/titan_laser_diffuse.dds"
+	
+	set_state = {
+		section = "attack"
+	}
+	
+	shield_impact = {
+		size = large
+		loop_duration = 0.5
+		delay = 0.2
+	}
+}
+
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "dragon_wing_azure_weapon"
+	color = { 0.8 		0.8		1.0 	0.0 }
+	hit_entity = "dragon_wing_hit_entity"
+	shield_hit_entity = "dragon_wing_shield_hit_entity"
+	muzzle_flash_entity = "dragon_wing_muzzle_azure_entity"
+	
+	#ballistic specific
+	entity = "dragon_wing_projectile_azure_entity"
+	speed = 450.0			#preferred speed of the projectile
+	max_duration = 1.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+	
+	shield_impact = {
+		size = medium
+		delay = 0
+	}
+}
+
+projectile_gfx_beam = {
+	#common for all types of projectiles
+	name = "arc_emitter_azure"
+	color = { 0 0.5 1.0 5.0 }
+	hit_entity = "arc_emitter_hit_entity"
+	shield_hit_entity = "arc_emitter_shield_hit_entity"
+	muzzle_flash_entity = "arc_emitter_muzzle_entity"
+	windup_entity = "arc_emitter_windup_entity"
+	
+	#beam specific data
+	width = 15
+	texture_scroll_speed = 0.0
+	stretch_to_fit = yes
+	texture_tiling = 3	
+	hit = {
+		alpha_curve = { 
+			0.0  0.0
+			0.1 50.0
+			0.25	 0.0
+			0.3 0.0
+			0.45 5.0
+			1.0  0.0
+		}
+		duration = 0.4
+
+	}
+	miss = {
+		alpha_curve = { 
+			0.0  0.0
+			0.1 50.0
+			0.25	 0.0
+			0.3 0.0
+			0.45 5.0
+			1.0  0.0
+		}
+		duration = 0.4
+
+	}
+	texture = "gfx/models/combat_items/arc_emitter_diffuse.dds"
+	
+	shield_impact = {
+		size = large
+		delay = 0
+	}
+}
+
+# Blue Dragonfire Drake
+projectile_gfx_beam = {
+	#common for all types of projectiles
+	name = "dragon_weapon_blue"
+	color = { 0 0 1.0 1.0 }
+	hit_entity = "dragon_weapon_hit_entity"
+	shield_hit_entity = "dragon_weapon_shield_hit_entity"
+	muzzle_flash_entity = "dragon_weapon_muzzle_blue_entity"
+	windup_entity = "dragon_weapon_windup_blue_entity"
+	
+	#beam specific data
+	width = 10.0
+	texture_scroll_speed = 1.0
+	texture_tiling = 5.5
+	
+	hit = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.05	0.0
+			0.1		40.0
+			0.7		5.0
+			0.9		0.0
+			1.0 	0.0
+		}
+		duration = 3.0
+	}
+	miss = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.05	0.0
+			0.1		40.0
+			0.4		5.0
+			0.6		0.0
+			1.0 	0.0
+		}
+		duration = 3.0 #1.5
+	}
+	texture = "gfx/models/combat_items/titan_laser_diffuse.dds"
+	
+	set_state = {
+		section = "attack"
+	}
+	
+	shield_impact = {
+		size = large
+		loop_duration = 0.5
+		delay = 0.2
+	}
+}
+
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "dragon_wing_blue_weapon"
+	color = { 0.8 		0.8		1.0 	0.0 }
+	hit_entity = "dragon_wing_hit_entity"
+	shield_hit_entity = "dragon_wing_shield_hit_entity"
+	muzzle_flash_entity = "dragon_wing_muzzle_blue_entity"
+	
+	#ballistic specific
+	entity = "dragon_wing_projectile_blue_entity"
+	speed = 450.0			#preferred speed of the projectile
+	max_duration = 1.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+	
+	shield_impact = {
+		size = medium
+		delay = 0
+	}
+}
+
+projectile_gfx_beam = {
+	#common for all types of projectiles
+	name = "arc_emitter_blue"
+	color = { 0 0 1.0 5.0 }
+	hit_entity = "arc_emitter_hit_entity"
+	shield_hit_entity = "arc_emitter_shield_hit_entity"
+	muzzle_flash_entity = "arc_emitter_muzzle_entity"
+	windup_entity = "arc_emitter_windup_entity"
+	
+	#beam specific data
+	width = 15
+	texture_scroll_speed = 0.0
+	stretch_to_fit = yes
+	texture_tiling = 3	
+	hit = {
+		alpha_curve = { 
+			0.0  0.0
+			0.1 50.0
+			0.25	 0.0
+			0.3 0.0
+			0.45 5.0
+			1.0  0.0
+		}
+		duration = 0.4
+
+	}
+	miss = {
+		alpha_curve = { 
+			0.0  0.0
+			0.1 50.0
+			0.25	 0.0
+			0.3 0.0
+			0.45 5.0
+			1.0  0.0
+		}
+		duration = 0.4
+
+	}
+	texture = "gfx/models/combat_items/arc_emitter_diffuse.dds"
+	
+	shield_impact = {
+		size = large
+		delay = 0
+	}
+}
+
+# Violet Dragonfire Drake
+projectile_gfx_beam = {
+	#common for all types of projectiles
+	name = "dragon_weapon_violet"
+	color = { 0.5 0 1.0 1.0 }
+	hit_entity = "dragon_weapon_hit_entity"
+	shield_hit_entity = "dragon_weapon_shield_hit_entity"
+	muzzle_flash_entity = "dragon_weapon_muzzle_violet_entity"
+	windup_entity = "dragon_weapon_windup_violet_entity"
+	
+	#beam specific data
+	width = 10.0
+	texture_scroll_speed = 1.0
+	texture_tiling = 5.5
+	
+	hit = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.05	0.0
+			0.1		40.0
+			0.7		5.0
+			0.9		0.0
+			1.0 	0.0
+		}
+		duration = 3.0
+	}
+	miss = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.05	0.0
+			0.1		40.0
+			0.4		5.0
+			0.6		0.0
+			1.0 	0.0
+		}
+		duration = 3.0 #1.5
+	}
+	texture = "gfx/models/combat_items/titan_laser_diffuse.dds"
+	
+	set_state = {
+		section = "attack"
+	}
+	
+	shield_impact = {
+		size = large
+		loop_duration = 0.5
+		delay = 0.2
+	}
+}
+
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "dragon_wing_violet_weapon"
+	color = { 0.8 		0.8		1.0 	0.0 }
+	hit_entity = "dragon_wing_hit_entity"
+	shield_hit_entity = "dragon_wing_shield_hit_entity"
+	muzzle_flash_entity = "dragon_wing_muzzle_violet_entity"
+	
+	#ballistic specific
+	entity = "dragon_wing_projectile_violet_entity"
+	speed = 450.0			#preferred speed of the projectile
+	max_duration = 1.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+	
+	shield_impact = {
+		size = medium
+		delay = 0
+	}
+}
+
+projectile_gfx_beam = {
+	#common for all types of projectiles
+	name = "arc_emitter_violet"
+	color = { 0.5 0 1.0 5.0 }
+	hit_entity = "arc_emitter_hit_entity"
+	shield_hit_entity = "arc_emitter_shield_hit_entity"
+	muzzle_flash_entity = "arc_emitter_muzzle_entity"
+	windup_entity = "arc_emitter_windup_entity"
+	
+	#beam specific data
+	width = 15
+	texture_scroll_speed = 0.0
+	stretch_to_fit = yes
+	texture_tiling = 3	
+	hit = {
+		alpha_curve = { 
+			0.0  0.0
+			0.1 50.0
+			0.25	 0.0
+			0.3 0.0
+			0.45 5.0
+			1.0  0.0
+		}
+		duration = 0.4
+
+	}
+	miss = {
+		alpha_curve = { 
+			0.0  0.0
+			0.1 50.0
+			0.25	 0.0
+			0.3 0.0
+			0.45 5.0
+			1.0  0.0
+		}
+		duration = 0.4
+
+	}
+	texture = "gfx/models/combat_items/arc_emitter_diffuse.dds"
+	
+	shield_impact = {
+		size = large
+		delay = 0
+	}
+}
+
+# Magenta Dragonfire Drake
+projectile_gfx_beam = {
+	#common for all types of projectiles
+	name = "dragon_weapon_magenta"
+	color = { 1.0 0 1.0 1.0 }
+	hit_entity = "dragon_weapon_hit_entity"
+	shield_hit_entity = "dragon_weapon_shield_hit_entity"
+	muzzle_flash_entity = "dragon_weapon_muzzle_magenta_entity"
+	windup_entity = "dragon_weapon_windup_magenta_entity"
+	
+	#beam specific data
+	width = 10.0
+	texture_scroll_speed = 1.0
+	texture_tiling = 5.5
+	
+	hit = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.05	0.0
+			0.1		40.0
+			0.7		5.0
+			0.9		0.0
+			1.0 	0.0
+		}
+		duration = 3.0
+	}
+	miss = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.05	0.0
+			0.1		40.0
+			0.4		5.0
+			0.6		0.0
+			1.0 	0.0
+		}
+		duration = 3.0 #1.5
+	}
+	texture = "gfx/models/combat_items/titan_laser_diffuse.dds"
+	
+	set_state = {
+		section = "attack"
+	}
+	
+	shield_impact = {
+		size = large
+		loop_duration = 0.5
+		delay = 0.2
+	}
+}
+
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "dragon_wing_magenta_weapon"
+	color = { 0.8 		0.8		1.0 	0.0 }
+	hit_entity = "dragon_wing_hit_entity"
+	shield_hit_entity = "dragon_wing_shield_hit_entity"
+	muzzle_flash_entity = "dragon_wing_muzzle_magenta_entity"
+	
+	#ballistic specific
+	entity = "dragon_wing_projectile_magenta_entity"
+	speed = 450.0			#preferred speed of the projectile
+	max_duration = 1.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+	
+	shield_impact = {
+		size = medium
+		delay = 0
+	}
+}
+
+projectile_gfx_beam = {
+	#common for all types of projectiles
+	name = "arc_emitter_magenta"
+	color = { 1.0 0 1.0 5.0 }
+	hit_entity = "arc_emitter_hit_entity"
+	shield_hit_entity = "arc_emitter_shield_hit_entity"
+	muzzle_flash_entity = "arc_emitter_muzzle_entity"
+	windup_entity = "arc_emitter_windup_entity"
+	
+	#beam specific data
+	width = 15
+	texture_scroll_speed = 0.0
+	stretch_to_fit = yes
+	texture_tiling = 3	
+	hit = {
+		alpha_curve = { 
+			0.0  0.0
+			0.1 50.0
+			0.25	 0.0
+			0.3 0.0
+			0.45 5.0
+			1.0  0.0
+		}
+		duration = 0.4
+
+	}
+	miss = {
+		alpha_curve = { 
+			0.0  0.0
+			0.1 50.0
+			0.25	 0.0
+			0.3 0.0
+			0.45 5.0
+			1.0  0.0
+		}
+		duration = 0.4
+
+	}
+	texture = "gfx/models/combat_items/arc_emitter_diffuse.dds"
+	
+	shield_impact = {
+		size = large
+		delay = 0
+	}
+}
+
+# Rose Dragonfire Drake
+projectile_gfx_beam = {
+	#common for all types of projectiles
+	name = "dragon_weapon_rose"
+	color = { 1.0 0 0.5 1.0 }
+	hit_entity = "dragon_weapon_hit_entity"
+	shield_hit_entity = "dragon_weapon_shield_hit_entity"
+	muzzle_flash_entity = "dragon_weapon_muzzle_rose_entity"
+	windup_entity = "dragon_weapon_windup_rose_entity"
+	
+	#beam specific data
+	width = 10.0
+	texture_scroll_speed = 1.0
+	texture_tiling = 5.5
+	
+	hit = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.05	0.0
+			0.1		40.0
+			0.7		5.0
+			0.9		0.0
+			1.0 	0.0
+		}
+		duration = 3.0
+	}
+	miss = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.05	0.0
+			0.1		40.0
+			0.4		5.0
+			0.6		0.0
+			1.0 	0.0
+		}
+		duration = 3.0 #1.5
+	}
+	texture = "gfx/models/combat_items/titan_laser_diffuse.dds"
+	
+	set_state = {
+		section = "attack"
+	}
+	
+	shield_impact = {
+		size = large
+		loop_duration = 0.5
+		delay = 0.2
+	}
+}
+
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "dragon_wing_rose_weapon"
+	color = { 0.8 		0.8		1.0 	0.0 }
+	hit_entity = "dragon_wing_hit_entity"
+	shield_hit_entity = "dragon_wing_shield_hit_entity"
+	muzzle_flash_entity = "dragon_wing_muzzle_rose_entity"
+	
+	#ballistic specific
+	entity = "dragon_wing_projectile_rose_entity"
+	speed = 450.0			#preferred speed of the projectile
+	max_duration = 1.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+	
+	shield_impact = {
+		size = medium
+		delay = 0
+	}
+}
+
+projectile_gfx_beam = {
+	#common for all types of projectiles
+	name = "arc_emitter_rose"
+	color = { 1.0 0 0.5 5.0 }
+	hit_entity = "arc_emitter_hit_entity"
+	shield_hit_entity = "arc_emitter_shield_hit_entity"
+	muzzle_flash_entity = "arc_emitter_muzzle_entity"
+	windup_entity = "arc_emitter_windup_entity"
+	
+	#beam specific data
+	width = 15
+	texture_scroll_speed = 0.0
+	stretch_to_fit = yes
+	texture_tiling = 3	
+	hit = {
+		alpha_curve = { 
+			0.0  0.0
+			0.1 50.0
+			0.25	 0.0
+			0.3 0.0
+			0.45 5.0
+			1.0  0.0
+		}
+		duration = 0.4
+
+	}
+	miss = {
+		alpha_curve = { 
+			0.0  0.0
+			0.1 50.0
+			0.25	 0.0
+			0.3 0.0
+			0.45 5.0
+			1.0  0.0
+		}
+		duration = 0.4
+
+	}
+	texture = "gfx/models/combat_items/arc_emitter_diffuse.dds"
+	
+	shield_impact = {
+		size = large
+		delay = 0
+	}
+}
+
+# White Dragonfire Drake
+projectile_gfx_beam = {
+	#common for all types of projectiles
+	name = "dragon_weapon_white"
+	color = { 1.0 1.0 1.0 1.0 }
+	hit_entity = "dragon_weapon_hit_entity"
+	shield_hit_entity = "dragon_weapon_shield_hit_entity"
+	muzzle_flash_entity = "dragon_weapon_muzzle_white_entity"
+	windup_entity = "dragon_weapon_windup_white_entity"
+	
+	#beam specific data
+	width = 10.0
+	texture_scroll_speed = 1.0
+	texture_tiling = 5.5
+	
+	hit = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.05	0.0
+			0.1		40.0
+			0.7		5.0
+			0.9		0.0
+			1.0 	0.0
+		}
+		duration = 3.0
+	}
+	miss = {
+		alpha_curve = { 
+			0.0 	0.0
+			0.05	0.0
+			0.1		40.0
+			0.4		5.0
+			0.6		0.0
+			1.0 	0.0
+		}
+		duration = 3.0 #1.5
+	}
+	texture = "gfx/models/combat_items/titan_laser_diffuse.dds"
+	
+	set_state = {
+		section = "attack"
+	}
+	
+	shield_impact = {
+		size = large
+		loop_duration = 0.5
+		delay = 0.2
+	}
+}
+
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "dragon_wing_white_weapon"
+	color = { 0.8 		0.8		1.0 	0.0 }
+	hit_entity = "dragon_wing_hit_entity"
+	shield_hit_entity = "dragon_wing_shield_hit_entity"
+	muzzle_flash_entity = "dragon_wing_muzzle_white_entity"
+	
+	#ballistic specific
+	entity = "dragon_wing_projectile_white_entity"
+	speed = 450.0			#preferred speed of the projectile
+	max_duration = 1.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+	
+	shield_impact = {
+		size = medium
+		delay = 0
+	}
+}
+
+projectile_gfx_beam = {
+	#common for all types of projectiles
+	name = "arc_emitter_white"
+	color = { 1.0 1.0 1.0 5.0 }
+	hit_entity = "arc_emitter_hit_entity"
+	shield_hit_entity = "arc_emitter_shield_hit_entity"
+	muzzle_flash_entity = "arc_emitter_muzzle_entity"
+	windup_entity = "arc_emitter_windup_entity"
+	
+	#beam specific data
+	width = 15
+	texture_scroll_speed = 0.0
+	stretch_to_fit = yes
+	texture_tiling = 3	
+	hit = {
+		alpha_curve = { 
+			0.0  0.0
+			0.1 50.0
+			0.25	 0.0
+			0.3 0.0
+			0.45 5.0
+			1.0  0.0
+		}
+		duration = 0.4
+
+	}
+	miss = {
+		alpha_curve = { 
+			0.0  0.0
+			0.1 50.0
+			0.25	 0.0
+			0.3 0.0
+			0.45 5.0
+			1.0  0.0
+		}
+		duration = 0.4
+
+	}
+	texture = "gfx/models/combat_items/arc_emitter_diffuse.dds"
+	
+	shield_impact = {
+		size = large
+		delay = 0
+	}
+}

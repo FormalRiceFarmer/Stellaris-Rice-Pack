@@ -1,0 +1,83 @@
+namespace = ai_ship_classes
+
+event = {
+	id = "ai_ship_classes.1" #on yearly pulse - thus it must be event, not country_event
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		#Checks and saves Player Empire as reference to compare AI technology level against.
+		if = {
+			limit = { NOT = { exists = event_target:nsc_player_tech_country } }
+			random_country = {
+				limit = { 
+					is_ai = no 
+					OR = {
+						is_country_type = "default"
+						#Compatibility with mod: Zenith of Fallen Empires
+						is_country_type = ascended_empire
+						is_country_type = lost_empire
+						is_country_type = ascended_hive_mind
+					}
+				}
+				# Save as global event target so we use the same one next on_yearly_pulse
+				save_global_event_target_as = nsc_player_tech_country
+			}
+		}
+		#If AI Challenge active, every year at year start, applies flag to all regular AI empires, check all their technology against the marked Players (above) and giving appropriate level as needed per country.
+		if = {
+			limit = { has_global_flag = "nsc_kinky_challenge" }
+			every_country = {
+				limit = {
+					is_ai = yes
+					OR = {
+						is_country_type = "default"
+						#Compatibility with mod: Zenith of Fallen Empires
+						is_country_type = ascended_empire
+						is_country_type = lost_empire
+						is_country_type = ascended_hive_mind
+					}
+				}
+				set_country_flag = nsc_ai_tech_check
+			}
+			while = {
+				limit = { any_country = { has_country_flag = nsc_ai_tech_check } }
+				random_country = {
+					limit = { has_country_flag = nsc_ai_tech_check }
+					event_target:nsc_player_tech_country = {
+						switch = {
+							trigger = has_technology
+							tech_flagship_1 = { prev = { nsc_ai_tech_give_flagship = yes } }
+							tech_superdreadnought_1 = { prev = { nsc_ai_tech_give_superdreadnought = yes } }
+							tech_dreadnought_1 = { prev = { nsc_ai_tech_give_dreadnought = yes } }
+							tech_carrier_1 = { prev = { nsc_ai_tech_give_carrier = yes } }
+							tech_battleship_1 = { prev = { nsc_ai_tech_give_battleship = yes } }
+							tech_light_carrier_1 = { prev = { nsc_ai_tech_give_light_carrier = yes } }
+							tech_spaceport_6 = { prev = { nsc_ai_tech_give_6 = yes } }
+							tech_spaceport_5 = { prev = { nsc_ai_tech_give_5 = yes } }
+							tech_spaceport_4 = { prev = { nsc_ai_tech_give_4 = yes } }
+							tech_spaceport_3 = { prev = { nsc_ai_tech_give_3 = yes } }
+							tech_spaceport_2 = { prev = { nsc_ai_tech_give_2 = yes } }
+						}
+					}
+				}
+			}
+			while = {
+				limit = { any_country = { has_country_flag = nsc_ai_tech_check } }
+				random_country = {
+					limit = { has_country_flag = nsc_ai_tech_check }
+					event_target:nsc_player_tech_country = {
+						switch = {
+							trigger = has_technology
+							tech_headquarters_1 = { prev = { nsc_ai_tech_give_military_headquarters = yes } }
+							tech_battle_fortress_1 = { prev = { nsc_ai_tech_give_military_battle_fortress = yes } }
+							tech_space_defense_station_3 = { prev = { nsc_ai_tech_give_military_station_3 = yes } }
+							tech_space_defense_station_2 = { prev = { nsc_ai_tech_give_military_station_2 = yes } }
+						}
+					}
+					remove_country_flag = nsc_ai_tech_check
+				}
+			}
+		}
+	}
+}
