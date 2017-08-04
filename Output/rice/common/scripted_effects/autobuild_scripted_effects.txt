@@ -1,0 +1,139 @@
+#	Example:
+#
+#	example_effect = {
+#		add_energy = -100
+#	}
+#
+#
+#	In a script file:
+#
+#	effect = {
+#		example_effect = yes
+#	}
+#
+
+#	Example:
+#
+#	example_effect = {
+#		add_energy = -100
+#	}
+#
+#
+#	In a script file:
+#
+#	effect = {
+#		example_effect = yes
+#	}
+#
+
+autobuild_effect_clear_cost_flags = {
+	remove_country_flag = autobuild_cost_20000
+	remove_country_flag = autobuild_cost_5000
+	remove_country_flag = autobuild_cost_2500
+	remove_country_flag = autobuild_cost_1000
+	remove_country_flag = autobuild_cost_500
+}
+
+# for tile star trek mod
+autobuild_build_basic_lab = {
+	if = {
+		limit = {
+			not = {
+				has_global_flag = star_trek_new_horizons
+			}
+		}
+		add_building_construction = building_basic_science_lab_1
+		else = {
+			if = {
+				limit = {
+					has_resource = {
+						type = physics_research
+						amount > 0
+					}
+				}
+				add_building_construction = building_physics_lab_0
+				else = {
+					if = {
+						limit = {
+							has_resource = {
+								type = society_research
+								amount > 0
+							}
+						}
+						add_building_construction = building_bio_lab_0
+						else = {
+							if = {
+								limit = {
+									has_resource = {
+										type = engineering_research
+										amount > 0
+									}
+								}
+								add_building_construction = building_engineering_facility_0
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+# for planet
+autobuild_effect_set_planet_local_build = {
+#	planet_event = { id = autobuild.101 }
+	planet_event = { id = autobuild.102 }
+	planet_event = { id = autobuild.103 }
+	planet_event = { id = autobuild.104 }
+	planet_event = { id = autobuild.105 }
+	planet_event = { id = autobuild.106 }
+	planet_event = { id = autobuild.107 }
+	planet_event = { id = autobuild.108 }
+	planet_event = { id = autobuild.109 }
+	planet_event = { id = autobuild.110 }
+	planet_event = { id = autobuild.111 }
+	planet_event = { id = autobuild.112 }
+	planet_event = { id = autobuild.113 }
+	planet_event = { id = autobuild.114 }
+	planet_event = { id = autobuild.115 }
+	planet_event = { id = autobuild.116 }
+	planet_event = { id = autobuild.117 }
+
+
+#	planet_event = { id = autobuild.130 }
+#	planet_event = { id = autobuild.131 }
+	planet_event = { id = autobuild.132 }
+	planet_event = { id = autobuild.133 }
+	planet_event = { id = autobuild.134 }
+	planet_event = { id = autobuild.135 }
+	planet_event = { id = autobuild.136 }
+	planet_event = { id = autobuild.137 }
+	planet_event = { id = autobuild.138 }
+	#planet_event = { id = autobuild.139 }
+	planet_event = { id = autobuild.140 }
+	planet_event = { id = autobuild.142 }
+	planet_event = { id = autobuild.143 }
+	planet_event = { id = autobuild.144 }
+	planet_event = { id = autobuild.145 }
+	human_fallen_empires_effect_autobuild = yes
+	stellaris+evolved_effect_autobuild = yes
+	alphamod_effect_autobuild = yes
+	# fell free use this effect for your mod
+	autobuild_effect_mod_api = yes
+}
+
+human_fallen_empires_effect_autobuild = {
+
+}
+
+stellaris+evolved_effect_autobuild = {
+
+}
+
+alphamod_effect_autobuild = {
+# 	log = "123"
+}
+
+autobuild_effect_mod_api = {
+#	log = "123"
+}
