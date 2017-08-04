@@ -1,0 +1,267 @@
+namespace = linear_trees
+country_event = {
+  id = linear_trees.1289
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_new_thrusters_5" "tech_singularity_power" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_new_thrusters_6" }
+      }
+      add_research_option = "tech_new_thrusters_6"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1290
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_thrusters_4" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_tfw_fight_thrusters" }
+      }
+      add_research_option = "tech_tfw_fight_thrusters"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1291
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_tfw_fight_thrusters" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_tfw_fight_thrusters2" }
+      }
+      add_research_option = "tech_tfw_fight_thrusters2"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1292
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_cold_fusion_power" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_shield_pumps_1" }
+      }
+      add_research_option = "tech_shield_pumps_1"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1293
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_shield_pumps_1" "tech_zero_point_power" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_shield_pumps_2" }
+      }
+      add_research_option = "tech_shield_pumps_2"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1294
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_shield_pumps_2" "tech_antimatter_power_optimized" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_shield_pumps_3" }
+      }
+      add_research_option = "tech_shield_pumps_3"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1295
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_shield_pumps_3" "tech_singularity_power" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_shield_pumps_4" }
+      }
+      add_research_option = "tech_shield_pumps_4"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1296
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_shield_pumps_4" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_shield_pumps_5" }
+      }
+      add_research_option = "tech_shield_pumps_5"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1297
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_spaceport_3" "tech_robotic_workers" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tfw_auto_repair_1" }
+      }
+      add_research_option = "tfw_auto_repair_1"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1298
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_spaceport_4" "tfw_auto_repair_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tfw_auto_repair_2" }
+      }
+      add_research_option = "tfw_auto_repair_2"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1299
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_spaceport_5" "tfw_auto_repair_2" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tfw_auto_repair_3" }
+      }
+      add_research_option = "tfw_auto_repair_3"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1300
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_spaceport_3" "tech_psionic_theory" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tfw_psi_machinery" }
+      }
+      add_research_option = "tfw_psi_machinery"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1301
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tfw_psi_machinery" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tfw_auto_repair_psi1" }
+      }
+      add_research_option = "tfw_auto_repair_psi1"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1302
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_spaceport_4" "tfw_auto_repair_psi1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tfw_auto_repair_psi2" }
+      }
+      add_research_option = "tfw_auto_repair_psi2"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1303
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_spaceport_5" "tfw_auto_repair_psi2" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tfw_auto_repair_psi3" }
+      }
+      add_research_option = "tfw_auto_repair_psi3"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1304
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_sensors_4" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_tfw_sensors_5" }
+      }
+      add_research_option = "tech_tfw_sensors_5"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1305
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_tfw_sensors_5" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_tfw_sensors_6" }
+      }
+      add_research_option = "tech_tfw_sensors_6"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1306
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_tfw_sensors_6" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_tfw_sensors_7" }
+      }
+      add_research_option = "tech_tfw_sensors_7"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1307
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_tfw_sensors_6" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_tfw_psi_sensors" }
+      }
+      add_research_option = "tech_tfw_psi_sensors"
+    }
+  }
+}

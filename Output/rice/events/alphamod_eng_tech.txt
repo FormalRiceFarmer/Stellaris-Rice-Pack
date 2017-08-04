@@ -1,0 +1,379 @@
+namespace = linear_trees
+country_event = {
+  id = linear_trees.295
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_tb_volcano" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_geothermal_stations" }
+      }
+      add_research_option = "tech_alpha_geothermal_stations"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.296
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_desert_colonization" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_spice_harvesting" }
+      }
+      add_research_option = "tech_alpha_spice_harvesting"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.297
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_spice_harvesting" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_spice_harvesting_2" }
+      }
+      add_research_option = "tech_alpha_spice_harvesting_2"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.298
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_survey_corps" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_exo_ops" }
+      }
+      add_research_option = "tech_alpha_exo_ops"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.299
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_exo_ops" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "	#cost" }
+      }
+      add_research_option = "	#cost"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.300
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_exo_ops" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_exo_barracks" }
+      }
+      add_research_option = "tech_alpha_exo_barracks"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.301
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_basic_industry" "tech_alpha_exo_ops" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_exo_mining" }
+      }
+      add_research_option = "tech_alpha_exo_mining"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.302
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_exo_mining" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_mining_worlds" }
+      }
+      add_research_option = "tech_alpha_mining_worlds"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.303
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_power_plant_1" "tech_alpha_exo_ops" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_exo_power" }
+      }
+      add_research_option = "tech_alpha_exo_power"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.304
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_exo_power" "tech_alpha_exo_mining" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_exo_atmospheres" }
+      }
+      add_research_option = "tech_alpha_exo_atmospheres"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.305
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_thrusters_2" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_shuttlecraft" }
+      }
+      add_research_option = "tech_alpha_shuttlecraft"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.306
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_shuttlecraft" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_survey_corps" }
+      }
+      add_research_option = "tech_alpha_survey_corps"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.307
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_mining_network_2" "tech_alpha_steam_plants" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_natfuel_sourcing_2" }
+      }
+      add_research_option = "tech_alpha_natfuel_sourcing_2"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.308
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_natfuel_sourcing_2" "tech_mining_network_3" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_natfuel_sourcing_3" }
+      }
+      add_research_option = "tech_alpha_natfuel_sourcing_3"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.309
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_mining_network_3" "tech_matter_replication_alpha" "tech_alpha_mining_worlds" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_mining_capitals" }
+      }
+      add_research_option = "tech_alpha_mining_capitals"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.310
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_mineral_processing_2" "tech_alpha_micro_fission" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_matter_replication_alpha" }
+      }
+      add_research_option = "tech_matter_replication_alpha"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.311
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_mineral_processing_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "# tech_biomass_transfer_alpha" }
+      }
+      add_research_option = "# tech_biomass_transfer_alpha"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.312
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_mineral_processing_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_biomass_processing" }
+      }
+      add_research_option = "tech_biomass_processing"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.313
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_powered_exoskeletons" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_verticalfarms" }
+      }
+      add_research_option = "tech_alpha_verticalfarms"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.314
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_ship_armor_1" "tech_powered_exoskeletons" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_adv_renewable" }
+      }
+      add_research_option = "tech_alpha_adv_renewable"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.315
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_adv_renewable" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_adv_hydration" }
+      }
+      add_research_option = "tech_alpha_adv_hydration"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.316
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_fusion_power" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_steam_plants" }
+      }
+      add_research_option = "tech_alpha_steam_plants"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.317
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_droid_workers" "tech_gene_crops" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_farmdroids" }
+      }
+      add_research_option = "tech_alpha_farmdroids"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.318
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_powered_exoskeletons" "tech_fusion_power" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_lightmechs" }
+      }
+      add_research_option = "tech_alpha_lightmechs"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.319
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_lightmechs" "tech_alpha_natfuel_sourcing_2" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_mediummechs" }
+      }
+      add_research_option = "tech_alpha_mediummechs"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.320
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_mediummechs" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_heavymechs" }
+      }
+      add_research_option = "tech_alpha_heavymechs"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.321
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_heavymechs" "tech_alpha_natfuel_sourcing_3" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_assaultmechs" }
+      }
+      add_research_option = "tech_alpha_assaultmechs"
+    }
+  }
+}

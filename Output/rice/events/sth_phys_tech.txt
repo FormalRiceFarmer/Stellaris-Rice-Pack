@@ -1,0 +1,4215 @@
+namespace = linear_trees
+country_event = {
+  id = linear_trees.809
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_basic_science_lab_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_optical_2" }
+      }
+      add_research_option = "tech_physics_optical_2"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.810
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_optical_2" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_administrative_3" }
+      }
+      add_research_option = "tech_physics_administrative_3"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.811
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_administrative_3" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_duotronic_4" }
+      }
+      add_research_option = "tech_physics_duotronic_4"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.812
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_duotronic_4" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_basic_5" }
+      }
+      add_research_option = "tech_physics_basic_5"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.813
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_basic_5" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_isolinear_6" }
+      }
+      add_research_option = "tech_physics_isolinear_6"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.814
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_isolinear_6" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_self_7" }
+      }
+      add_research_option = "tech_physics_self_7"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.815
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_self_7" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_truly_8" }
+      }
+      add_research_option = "tech_physics_truly_8"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.816
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_self_7" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_minos_9" }
+      }
+      add_research_option = "tech_physics_minos_9"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.817
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_administrative_3" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_databank_10" }
+      }
+      add_research_option = "tech_physics_databank_10"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.818
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_administrative_3" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_virtual_11" }
+      }
+      add_research_option = "tech_physics_virtual_11"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.819
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_duotronic_4" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_multitronic_12" }
+      }
+      add_research_option = "tech_physics_multitronic_12"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.820
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_basic_5" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_improved_13" }
+      }
+      add_research_option = "tech_physics_improved_13"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.821
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_basic_5" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_synchronized_14" }
+      }
+      add_research_option = "tech_physics_synchronized_14"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.822
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_isolinear_6" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_positronic_16" }
+      }
+      add_research_option = "tech_physics_positronic_16"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.823
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_isolinear_6" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_exo-comps_17" }
+      }
+      add_research_option = "tech_physics_exo-comps_17"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.824
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_isolinear_6" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_organic_18" }
+      }
+      add_research_option = "tech_physics_organic_18"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.825
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_basic_science_lab_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_advanced_19" }
+      }
+      add_research_option = "tech_physics_advanced_19"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.826
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_advanced_19" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_applied_20" }
+      }
+      add_research_option = "tech_physics_applied_20"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.827
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_applied_20" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_space-time_21" }
+      }
+      add_research_option = "tech_physics_space-time_21"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.828
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_space-time_21" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_unified_22" }
+      }
+      add_research_option = "tech_physics_unified_22"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.829
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_basic_science_lab_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_transporters_23" }
+      }
+      add_research_option = "tech_physics_transporters_23"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.830
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_transporters_23" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_replicators_24" }
+      }
+      add_research_option = "tech_physics_replicators_24"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.831
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_basic_5" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_self-refining_25" }
+      }
+      add_research_option = "tech_physics_self-refining_25"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.832
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_replicators_24" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_holodeck_26" }
+      }
+      add_research_option = "tech_physics_holodeck_26"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.833
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_holodeck_26" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_holographic_27" }
+      }
+      add_research_option = "tech_physics_holographic_27"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.834
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_holodeck_26" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_omicron_28" }
+      }
+      add_research_option = "tech_physics_omicron_28"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.835
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_holodeck_26" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_holographic_29" }
+      }
+      add_research_option = "tech_physics_holographic_29"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.836
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_basic_science_lab_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_gravitic_31" }
+      }
+      add_research_option = "tech_physics_gravitic_31"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.837
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_gravitic_31" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_nuclear_32" }
+      }
+      add_research_option = "tech_physics_nuclear_32"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.838
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_gravitic_31" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_compherhansive_33" }
+      }
+      add_research_option = "tech_physics_compherhansive_33"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.839
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_gravitic_31" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_subspace_34" }
+      }
+      add_research_option = "tech_physics_subspace_34"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.840
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_subspace_34" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_stellar_35" }
+      }
+      add_research_option = "tech_physics_stellar_35"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.841
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_subspace_34" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_magneton_36" }
+      }
+      add_research_option = "tech_physics_magneton_36"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.842
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_subspace_34" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_orbital_37" }
+      }
+      add_research_option = "tech_physics_orbital_37"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.843
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_subspace_34" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_signal_38" }
+      }
+      add_research_option = "tech_physics_signal_38"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.844
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_subspace_34" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_inverse_39" }
+      }
+      add_research_option = "tech_physics_inverse_39"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.845
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_inverse_39" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_astrometrics_40" }
+      }
+      add_research_option = "tech_physics_astrometrics_40"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.846
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_inverse_39" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_tachyon_41" }
+      }
+      add_research_option = "tech_physics_tachyon_41"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.847
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_inverse_39" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_trans-spectral_42" }
+      }
+      add_research_option = "tech_physics_trans-spectral_42"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.848
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_inverse_39" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_multiphasic_43" }
+      }
+      add_research_option = "tech_physics_multiphasic_43"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.849
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_multiphasic_43" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_planetary_44" }
+      }
+      add_research_option = "tech_physics_planetary_44"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.850
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_optical_2" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_optical_45" }
+      }
+      add_research_option = "tech_physics_optical_45"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.851
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_duotronic_4" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_duotronic_46" }
+      }
+      add_research_option = "tech_physics_duotronic_46"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.852
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_isolinear_6" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_isolinear_47" }
+      }
+      add_research_option = "tech_physics_isolinear_47"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.853
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_transporters_23" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_elwin_48" }
+      }
+      add_research_option = "tech_physics_elwin_48"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.854
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_engineering_large_533" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_miniaturized_49" }
+      }
+      add_research_option = "tech_physics_miniaturized_49"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.855
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_fission_power" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_inertial_54" }
+      }
+      add_research_option = "tech_physics_inertial_54"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.856
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_inertial_54" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_advanced_55" }
+      }
+      add_research_option = "tech_physics_advanced_55"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.857
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_inertial_54" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_carbon_56" }
+      }
+      add_research_option = "tech_physics_carbon_56"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.858
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_carbon_56" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_pure_57" }
+      }
+      add_research_option = "tech_physics_pure_57"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.859
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_carbon_56" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_zero_58" }
+      }
+      add_research_option = "tech_physics_zero_58"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.860
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_pure_57" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_synchronous_59" }
+      }
+      add_research_option = "tech_physics_synchronous_59"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.861
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_synchronous_59" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_thermionic_60" }
+      }
+      add_research_option = "tech_physics_thermionic_60"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.862
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_synchronous_59" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_tetryonic_61" }
+      }
+      add_research_option = "tech_physics_tetryonic_61"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.863
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_zero_58" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_manheim_62" }
+      }
+      add_research_option = "tech_physics_manheim_62"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.864
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_manheim_62" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_temporal_63" }
+      }
+      add_research_option = "tech_physics_temporal_63"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.865
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_temporal_63" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_temporal_64" }
+      }
+      add_research_option = "tech_physics_temporal_64"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.866
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_fission_power" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_gravimetric_65" }
+      }
+      add_research_option = "tech_physics_gravimetric_65"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.867
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_gravimetric_65" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_navigational_66" }
+      }
+      add_research_option = "tech_physics_navigational_66"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.868
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_gravimetric_65" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_coleopteric_67" }
+      }
+      add_research_option = "tech_physics_coleopteric_67"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.869
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_gravimetric_65" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_exploration_68" }
+      }
+      add_research_option = "tech_physics_exploration_68"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.870
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_gravimetric_65" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_militarized_69" }
+      }
+      add_research_option = "tech_physics_militarized_69"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.871
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_gravimetric_65" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_artificial_70" }
+      }
+      add_research_option = "tech_physics_artificial_70"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.872
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_exploration_68" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_experimental_71" }
+      }
+      add_research_option = "tech_physics_experimental_71"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.873
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_militarized_69" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_dimensional_72" }
+      }
+      add_research_option = "tech_physics_dimensional_72"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.874
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_exploration_68" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_dicyclic_73" }
+      }
+      add_research_option = "tech_physics_dicyclic_73"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.875
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_militarized_69" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_dilithium_74" }
+      }
+      add_research_option = "tech_physics_dilithium_74"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.876
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_artificial_70" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_applied_75" }
+      }
+      add_research_option = "tech_physics_applied_75"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.877
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_dicyclic_73" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_tricyclic_76" }
+      }
+      add_research_option = "tech_physics_tricyclic_76"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.878
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_dilithium_74" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_bipolar_77" }
+      }
+      add_research_option = "tech_physics_bipolar_77"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.879
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_applied_75" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_singularity_78" }
+      }
+      add_research_option = "tech_physics_singularity_78"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.880
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_tricyclic_76" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_isodyanmic_79" }
+      }
+      add_research_option = "tech_physics_isodyanmic_79"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.881
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_bipolar_77" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_hyper-inection_80" }
+      }
+      add_research_option = "tech_physics_hyper-inection_80"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.882
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_singularity_78" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_singularity_81" }
+      }
+      add_research_option = "tech_physics_singularity_81"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.883
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_fission_power" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_gravity_82" }
+      }
+      add_research_option = "tech_physics_gravity_82"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.884
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_gravity_82" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_defensive_83" }
+      }
+      add_research_option = "tech_physics_defensive_83"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.885
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_defensive_83" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_advanced_84" }
+      }
+      add_research_option = "tech_physics_advanced_84"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.886
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_covariant_101" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_multi-spectrum_85" }
+      }
+      add_research_option = "tech_physics_multi-spectrum_85"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.887
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_radial_103" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_multiphasic_86" }
+      }
+      add_research_option = "tech_physics_multiphasic_86"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.888
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_advanced_84" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_extendable_87" }
+      }
+      add_research_option = "tech_physics_extendable_87"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.889
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_multi-spatial_91" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_shield_88" }
+      }
+      add_research_option = "tech_physics_shield_88"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.890
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_multiphasic_86" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_modulating_89" }
+      }
+      add_research_option = "tech_physics_modulating_89"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.891
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_radial_103" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_shield_90" }
+      }
+      add_research_option = "tech_physics_shield_90"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.892
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_advanced_84" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_multi-spatial_91" }
+      }
+      add_research_option = "tech_physics_multi-spatial_91"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.893
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_multi-spatial_91" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_multi-adaptive_92" }
+      }
+      add_research_option = "tech_physics_multi-adaptive_92"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.894
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_multi-adaptive_92" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_refractive_93" }
+      }
+      add_research_option = "tech_physics_refractive_93"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.895
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_multi-adaptive_92" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_shield_94" }
+      }
+      add_research_option = "tech_physics_shield_94"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.896
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_refractive_93" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_paratrinic_95" }
+      }
+      add_research_option = "tech_physics_paratrinic_95"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.897
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_gravity_82" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_early_96" }
+      }
+      add_research_option = "tech_physics_early_96"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.898
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_early_96" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_nullifier_97" }
+      }
+      add_research_option = "tech_physics_nullifier_97"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.899
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_advanced_84" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_interphase_98" }
+      }
+      add_research_option = "tech_physics_interphase_98"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.900
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_advanced_84" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_personal_99" }
+      }
+      add_research_option = "tech_physics_personal_99"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.901
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_nullifier_97" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_aldean_100" }
+      }
+      add_research_option = "tech_physics_aldean_100"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.902
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_advanced_84" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_covariant_101" }
+      }
+      add_research_option = "tech_physics_covariant_101"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.903
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_advanced_84" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_regenerative_102" }
+      }
+      add_research_option = "tech_physics_regenerative_102"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.904
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_covariant_101" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_radial_103" }
+      }
+      add_research_option = "tech_physics_radial_103"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.905
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_regenerative_102" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_immersion_104" }
+      }
+      add_research_option = "tech_physics_immersion_104"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.906
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_radial_103" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_interphased_105" }
+      }
+      add_research_option = "tech_physics_interphased_105"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.907
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_immersion_104" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_unimatrix_106" }
+      }
+      add_research_option = "tech_physics_unimatrix_106"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.908
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_industrial_108" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_superconducting_107" }
+      }
+      add_research_option = "tech_physics_superconducting_107"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.909
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_gravimetric_65" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_industrial_108" }
+      }
+      add_research_option = "tech_physics_industrial_108"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.910
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_industrial_108" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_anti-pergium_109" }
+      }
+      add_research_option = "tech_physics_anti-pergium_109"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.911
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_industrial_108" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_field_110" }
+      }
+      add_research_option = "tech_physics_field_110"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.912
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_industrial_108" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_global_111" }
+      }
+      add_research_option = "tech_physics_global_111"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.913
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_industrial_108" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_z-particles_112" }
+      }
+      add_research_option = "tech_physics_z-particles_112"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.914
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_z-particles_112" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_z-pergium_113" }
+      }
+      add_research_option = "tech_physics_z-pergium_113"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.915
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_z-particles_112" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_quantum_114" }
+      }
+      add_research_option = "tech_physics_quantum_114"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.916
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_z-particles_112" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_planetary_115" }
+      }
+      add_research_option = "tech_physics_planetary_115"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.917
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_z-particles_112" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_artificial_116" }
+      }
+      add_research_option = "tech_physics_artificial_116"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.918
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_kreiger-pergium_118" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_omega_117" }
+      }
+      add_research_option = "tech_physics_omega_117"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.919
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_artificial_116" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_kreiger-pergium_118" }
+      }
+      add_research_option = "tech_physics_kreiger-pergium_118"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.920
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_artificial_116" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_zero_119" }
+      }
+      add_research_option = "tech_physics_zero_119"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.921
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_artificial_116" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_applied_120" }
+      }
+      add_research_option = "tech_physics_applied_120"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.922
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_gravity_82" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_gravity_121" }
+      }
+      add_research_option = "tech_physics_gravity_121"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.923
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_gravity_121" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_tractor_122" }
+      }
+      add_research_option = "tech_physics_tractor_122"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.924
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_tractor_122" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_interial_123" }
+      }
+      add_research_option = "tech_physics_interial_123"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.925
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_interial_123" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_advanced_124" }
+      }
+      add_research_option = "tech_physics_advanced_124"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.926
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_advanced_124" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_subspace_125" }
+      }
+      add_research_option = "tech_physics_subspace_125"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.927
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_power_plant_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_phase_131" }
+      }
+      add_research_option = "tech_physics_phase_131"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.928
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_phase_131" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_beam_132" }
+      }
+      add_research_option = "tech_physics_beam_132"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.929
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_phase_131" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_aceton_133" }
+      }
+      add_research_option = "tech_physics_aceton_133"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.930
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_aceton_133" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_energy_134" }
+      }
+      add_research_option = "tech_physics_energy_134"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.931
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_phase_131" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_cannon_135" }
+      }
+      add_research_option = "tech_physics_cannon_135"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.932
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_phase_131" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_explosive_136" }
+      }
+      add_research_option = "tech_physics_explosive_136"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.933
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_beam_132" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_teratogenic_137" }
+      }
+      add_research_option = "tech_physics_teratogenic_137"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.934
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_cannon_135" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_phase_138" }
+      }
+      add_research_option = "tech_physics_phase_138"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.935
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_holographic_141" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_muon_139" }
+      }
+      add_research_option = "tech_physics_muon_139"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.936
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_holographic_141" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_quantum_140" }
+      }
+      add_research_option = "tech_physics_quantum_140"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.937
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_aceton_133" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_holographic_141" }
+      }
+      add_research_option = "tech_physics_holographic_141"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.938
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_teratogenic_137" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_focusing_142" }
+      }
+      add_research_option = "tech_physics_focusing_142"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.939
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_teratogenic_137" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_flash_143" }
+      }
+      add_research_option = "tech_physics_flash_143"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.940
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_holographic_141" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_medevlan_144" }
+      }
+      add_research_option = "tech_physics_medevlan_144"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.941
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_holographic_141" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_subatomic_145" }
+      }
+      add_research_option = "tech_physics_subatomic_145"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.942
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_holographic_141" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_isokinetic_146" }
+      }
+      add_research_option = "tech_physics_isokinetic_146"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.943
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_explosive_136" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_central_147" }
+      }
+      add_research_option = "tech_physics_central_147"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.944
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_phase_138" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_high_148" }
+      }
+      add_research_option = "tech_physics_high_148"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.945
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_phase_131" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_dervish_149" }
+      }
+      add_research_option = "tech_physics_dervish_149"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.946
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_phaser_cannon_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_phase_156" }
+      }
+      add_research_option = "tech_physics_phase_156"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.947
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_phase_156" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_phase-modulated_157" }
+      }
+      add_research_option = "tech_physics_phase-modulated_157"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.948
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_phaser_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_nadion_159" }
+      }
+      add_research_option = "tech_physics_nadion_159"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.949
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_phaser_158" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_burst_160" }
+      }
+      add_research_option = "tech_physics_burst_160"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.950
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_burst_160" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_regenerative_161" }
+      }
+      add_research_option = "tech_physics_regenerative_161"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.951
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_regenerative_161" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_quad-interlinked_162" }
+      }
+      add_research_option = "tech_physics_quad-interlinked_162"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.952
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_ushaan_377" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_dual-bank_163" }
+      }
+      add_research_option = "tech_physics_dual-bank_163"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.953
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_dual-bank_163" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_phaser_164" }
+      }
+      add_research_option = "tech_physics_phaser_164"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.954
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_burst_160" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_optronically_165" }
+      }
+      add_research_option = "tech_physics_optronically_165"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.955
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_optronically_165" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_co-variant_166" }
+      }
+      add_research_option = "tech_physics_co-variant_166"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.956
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_nadion_159" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_compression_167" }
+      }
+      add_research_option = "tech_physics_compression_167"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.957
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_compression_167" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_wave_168" }
+      }
+      add_research_option = "tech_physics_wave_168"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.958
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_wave_168" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_spiral-wave_169" }
+      }
+      add_research_option = "tech_physics_spiral-wave_169"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.959
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_spiral-wave_169" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_spiral-wave_170" }
+      }
+      add_research_option = "tech_physics_spiral-wave_170"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.960
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_phase_131" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_plasma-phaser_171" }
+      }
+      add_research_option = "tech_physics_plasma-phaser_171"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.961
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_plasma-phaser_171" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_nadion_172" }
+      }
+      add_research_option = "tech_physics_nadion_172"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.962
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_nadion_172" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_auto-phaser_173" }
+      }
+      add_research_option = "tech_physics_auto-phaser_173"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.963
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_auto-phaser_173" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_compressed_174" }
+      }
+      add_research_option = "tech_physics_compressed_174"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.964
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_phaser_158" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_assault_175" }
+      }
+      add_research_option = "tech_physics_assault_175"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.965
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_assault_175" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_compressed_176" }
+      }
+      add_research_option = "tech_physics_compressed_176"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.966
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_compressed_176" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_pulse_177" }
+      }
+      add_research_option = "tech_physics_pulse_177"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.967
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_phaser_158" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_starbase_178" }
+      }
+      add_research_option = "tech_physics_starbase_178"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.968
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_assault_175" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_starbase_179" }
+      }
+      add_research_option = "tech_physics_starbase_179"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.969
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_combined_397" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_atalskes_180" }
+      }
+      add_research_option = "tech_physics_atalskes_180"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.970
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_combined_397" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_compression_181" }
+      }
+      add_research_option = "tech_physics_compression_181"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.971
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_combined_397" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_phaser-disruptor_182" }
+      }
+      add_research_option = "tech_physics_phaser-disruptor_182"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.972
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_combined_397" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_phaser-mount_183" }
+      }
+      add_research_option = "tech_physics_phaser-mount_183"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.973
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_phaser_158" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_modulated_184" }
+      }
+      add_research_option = "tech_physics_modulated_184"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.974
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_phaser_158" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_coherent_185" }
+      }
+      add_research_option = "tech_physics_coherent_185"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.975
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_phaser_158" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_modular_186" }
+      }
+      add_research_option = "tech_physics_modular_186"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.976
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_phaser_158" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_tunneling_187" }
+      }
+      add_research_option = "tech_physics_tunneling_187"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.977
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_modulated_184" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_modulated_188" }
+      }
+      add_research_option = "tech_physics_modulated_188"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.978
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_coherent_185" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_coherent_189" }
+      }
+      add_research_option = "tech_physics_coherent_189"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.979
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_modular_186" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_modular_190" }
+      }
+      add_research_option = "tech_physics_modular_190"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.980
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_tunneling_187" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_tunneling_191" }
+      }
+      add_research_option = "tech_physics_tunneling_191"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.981
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_modulated_188" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_modulated_192" }
+      }
+      add_research_option = "tech_physics_modulated_192"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.982
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_coherent_189" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_coherent_193" }
+      }
+      add_research_option = "tech_physics_coherent_193"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.983
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_modular_190" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_modular_194" }
+      }
+      add_research_option = "tech_physics_modular_194"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.984
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_tunneling_191" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_tunneling_195" }
+      }
+      add_research_option = "tech_physics_tunneling_195"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.985
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_disruptor_cannon_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_phase_202" }
+      }
+      add_research_option = "tech_physics_phase_202"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.986
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_plasma_disruptor_beam_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_modulated_203" }
+      }
+      add_research_option = "tech_physics_modulated_203"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.987
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_swivel_204" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_space-fitted_205" }
+      }
+      add_research_option = "tech_physics_space-fitted_205"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.988
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_space-fitted_205" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_kang_206" }
+      }
+      add_research_option = "tech_physics_kang_206"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.989
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_kang_206" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_crescent-wave_207" }
+      }
+      add_research_option = "tech_physics_crescent-wave_207"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.990
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_space-fitted_205" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_anti-proton_208" }
+      }
+      add_research_option = "tech_physics_anti-proton_208"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.991
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_anti-proton_208" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_radiation_209" }
+      }
+      add_research_option = "tech_physics_radiation_209"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.992
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_radiation_209" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_quantum_210" }
+      }
+      add_research_option = "tech_physics_quantum_210"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.993
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_radiation_209" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_thalaron_211" }
+      }
+      add_research_option = "tech_physics_thalaron_211"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.994
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_swivel_204" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_disruptor_212" }
+      }
+      add_research_option = "tech_physics_disruptor_212"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.995
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_disruptor_212" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_phase-resonance_213" }
+      }
+      add_research_option = "tech_physics_phase-resonance_213"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.996
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_phase-resonance_213" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_photonic_214" }
+      }
+      add_research_option = "tech_physics_photonic_214"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.997
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_swivel_204" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_type-1_215" }
+      }
+      add_research_option = "tech_physics_type-1_215"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.998
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_type-1_215" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_type-4_216" }
+      }
+      add_research_option = "tech_physics_type-4_216"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.999
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_type-4_216" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_system-5_217" }
+      }
+      add_research_option = "tech_physics_system-5_217"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1000
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_swivel_204" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_starbase_218" }
+      }
+      add_research_option = "tech_physics_starbase_218"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1001
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_starbase_218" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_starbase_219" }
+      }
+      add_research_option = "tech_physics_starbase_219"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1002
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_swivel_204" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_varon-t_220" }
+      }
+      add_research_option = "tech_physics_varon-t_220"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1003
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_swivel_204" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_crm_221" }
+      }
+      add_research_option = "tech_physics_crm_221"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1004
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_swivel_204" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_disruptor_222" }
+      }
+      add_research_option = "tech_physics_disruptor_222"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1005
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_swivel_204" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_disruptor-mount_223" }
+      }
+      add_research_option = "tech_physics_disruptor-mount_223"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1006
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_swivel_204" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_tetryonic_224" }
+      }
+      add_research_option = "tech_physics_tetryonic_224"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1007
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_swivel_204" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_tetryonic_225" }
+      }
+      add_research_option = "tech_physics_tetryonic_225"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1008
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_swivel_204" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_plasma_226" }
+      }
+      add_research_option = "tech_physics_plasma_226"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1009
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_swivel_204" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_plasma_227" }
+      }
+      add_research_option = "tech_physics_plasma_227"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1010
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_tetryonic_224" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_tetryonic_228" }
+      }
+      add_research_option = "tech_physics_tetryonic_228"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1011
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_tetryonic_225" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_tetryonic_229" }
+      }
+      add_research_option = "tech_physics_tetryonic_229"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1012
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_plasma_226" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_plasma_230" }
+      }
+      add_research_option = "tech_physics_plasma_230"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1013
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_plasma_227" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_plasma_231" }
+      }
+      add_research_option = "tech_physics_plasma_231"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1014
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_tetryonic_228" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_tetryonic_232" }
+      }
+      add_research_option = "tech_physics_tetryonic_232"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1015
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_tetryonic_229" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_tetryonic_233" }
+      }
+      add_research_option = "tech_physics_tetryonic_233"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1016
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_plasma_230" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_plasma_234" }
+      }
+      add_research_option = "tech_physics_plasma_234"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1017
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_plasma_231" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_plasma_235" }
+      }
+      add_research_option = "tech_physics_plasma_235"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1018
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_plasma_cannon_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_modulating_241" }
+      }
+      add_research_option = "tech_physics_modulating_241"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1019
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_modulating_241" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_plasmatic_242" }
+      }
+      add_research_option = "tech_physics_plasmatic_242"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1020
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_plasmatic_242" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_gatling_243" }
+      }
+      add_research_option = "tech_physics_gatling_243"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1021
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_gatling_243" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_plasma_244" }
+      }
+      add_research_option = "tech_physics_plasma_244"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1022
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_plasma_244" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_plasma_245" }
+      }
+      add_research_option = "tech_physics_plasma_245"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1023
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_modulating_241" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_magnetic-constraint_246" }
+      }
+      add_research_option = "tech_physics_magnetic-constraint_246"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1024
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_magnetic-constraint_246" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_forced_247" }
+      }
+      add_research_option = "tech_physics_forced_247"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1025
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_forced_247" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_sustained_248" }
+      }
+      add_research_option = "tech_physics_sustained_248"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1026
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_sustained_248" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_tri-reinforced_249" }
+      }
+      add_research_option = "tech_physics_tri-reinforced_249"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1027
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_modulating_241" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_plasma_250" }
+      }
+      add_research_option = "tech_physics_plasma_250"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1028
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_plasma_250" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_plasma_251" }
+      }
+      add_research_option = "tech_physics_plasma_251"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1029
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_plasma_250" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_starbase_252" }
+      }
+      add_research_option = "tech_physics_starbase_252"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1030
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_starbase_252" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_starbase_253" }
+      }
+      add_research_option = "tech_physics_starbase_253"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1031
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_plasma_251" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_miasma_254" }
+      }
+      add_research_option = "tech_physics_miasma_254"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1032
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_plasma_250" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_plasma_255" }
+      }
+      add_research_option = "tech_physics_plasma_255"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1033
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_plasma_250" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_phased_256" }
+      }
+      add_research_option = "tech_physics_phased_256"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1034
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_plasma_250" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_compressed_257" }
+      }
+      add_research_option = "tech_physics_compressed_257"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1035
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_phased_256" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_phased_258" }
+      }
+      add_research_option = "tech_physics_phased_258"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1036
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_compressed_257" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_compressed_259" }
+      }
+      add_research_option = "tech_physics_compressed_259"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1037
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_phased_258" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_phased_260" }
+      }
+      add_research_option = "tech_physics_phased_260"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1038
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_compressed_259" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_compressed_261" }
+      }
+      add_research_option = "tech_physics_compressed_261"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1039
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_plasma_250" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_mobile_262" }
+      }
+      add_research_option = "tech_physics_mobile_262"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1040
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_plasma_250" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_plasma_263" }
+      }
+      add_research_option = "tech_physics_plasma_263"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1041
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_antiproton_cannon_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_anti-proton_269" }
+      }
+      add_research_option = "tech_physics_anti-proton_269"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1042
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_anti-proton_269" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_positron_270" }
+      }
+      add_research_option = "tech_physics_positron_270"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1043
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_positron_270" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_positron_271" }
+      }
+      add_research_option = "tech_physics_positron_271"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1044
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_positron_271" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_anti-positronic_272" }
+      }
+      add_research_option = "tech_physics_anti-positronic_272"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1045
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_anti-positronic_272" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_doomsday_273" }
+      }
+      add_research_option = "tech_physics_doomsday_273"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1046
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_antiproton_cannon_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_anti-matter_274" }
+      }
+      add_research_option = "tech_physics_anti-matter_274"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1047
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_anti-proton_269" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_sheathed_275" }
+      }
+      add_research_option = "tech_physics_sheathed_275"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1048
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_sheathed_275" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_sheathed_276" }
+      }
+      add_research_option = "tech_physics_sheathed_276"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1049
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_sheathed_276" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_sheathed_277" }
+      }
+      add_research_option = "tech_physics_sheathed_277"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1050
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_sheathed_277" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_sheathed_278" }
+      }
+      add_research_option = "tech_physics_sheathed_278"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1051
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_antiproton_cannon_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_anti-proton_279" }
+      }
+      add_research_option = "tech_physics_anti-proton_279"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1052
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_anti-proton_279" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_anti-proton_280" }
+      }
+      add_research_option = "tech_physics_anti-proton_280"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1053
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_anti-proton_279" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_proton_281" }
+      }
+      add_research_option = "tech_physics_proton_281"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1054
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_anti-proton_279" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_anti-matter_282" }
+      }
+      add_research_option = "tech_physics_anti-matter_282"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1055
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_anti-proton_279" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_starbase_283" }
+      }
+      add_research_option = "tech_physics_starbase_283"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1056
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_starbase_283" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_starbase_284" }
+      }
+      add_research_option = "tech_physics_starbase_284"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1057
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_anti-proton_279" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_anti-photon_285" }
+      }
+      add_research_option = "tech_physics_anti-photon_285"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1058
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_anti-proton_279" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_proton_286" }
+      }
+      add_research_option = "tech_physics_proton_286"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1059
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_anti-photon_285" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_anti-photon_287" }
+      }
+      add_research_option = "tech_physics_anti-photon_287"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1060
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_proton_286" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_proton_288" }
+      }
+      add_research_option = "tech_physics_proton_288"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1061
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_anti-photon_287" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_anti-photon_289" }
+      }
+      add_research_option = "tech_physics_anti-photon_289"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1062
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_proton_288" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_proton_290" }
+      }
+      add_research_option = "tech_physics_proton_290"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1063
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_polaron_beam_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_focused_296" }
+      }
+      add_research_option = "tech_physics_focused_296"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1064
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_focused_296" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_multi-polar_297" }
+      }
+      add_research_option = "tech_physics_multi-polar_297"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1065
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_multi-polar_297" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_reverse-polarity_298" }
+      }
+      add_research_option = "tech_physics_reverse-polarity_298"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1066
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_reverse-polarity_298" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_neutronic_299" }
+      }
+      add_research_option = "tech_physics_neutronic_299"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1067
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_neutronic_299" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_neutronic_300" }
+      }
+      add_research_option = "tech_physics_neutronic_300"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1068
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_focused_296" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_polaron_301" }
+      }
+      add_research_option = "tech_physics_polaron_301"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1069
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_polaron_301" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_polaron_302" }
+      }
+      add_research_option = "tech_physics_polaron_302"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1070
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_polaron_302" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_polaron_303" }
+      }
+      add_research_option = "tech_physics_polaron_303"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1071
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_polaron_303" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_polaron_304" }
+      }
+      add_research_option = "tech_physics_polaron_304"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1072
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_polaron_301" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_polaron_305" }
+      }
+      add_research_option = "tech_physics_polaron_305"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1073
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_polaron_301" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_polaron_306" }
+      }
+      add_research_option = "tech_physics_polaron_306"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1074
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_polaron_301" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_anti-coagulant_307" }
+      }
+      add_research_option = "tech_physics_anti-coagulant_307"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1075
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_engineering_large_533" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_starbase_308" }
+      }
+      add_research_option = "tech_physics_starbase_308"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1076
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_engineering_deep_536" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_starbase_309" }
+      }
+      add_research_option = "tech_physics_starbase_309"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1077
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_polaron_301" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_phased_310" }
+      }
+      add_research_option = "tech_physics_phased_310"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1078
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_polaron_301" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_neutral_311" }
+      }
+      add_research_option = "tech_physics_neutral_311"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1079
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_phased_310" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_phased_312" }
+      }
+      add_research_option = "tech_physics_phased_312"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1080
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_neutral_311" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_particle_313" }
+      }
+      add_research_option = "tech_physics_particle_313"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1081
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_phased_312" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_phased_314" }
+      }
+      add_research_option = "tech_physics_phased_314"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1082
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_particle_313" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_particle_315" }
+      }
+      add_research_option = "tech_physics_particle_315"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1083
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_tetryon_cannon_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_tetryon_321" }
+      }
+      add_research_option = "tech_physics_tetryon_321"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1084
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_tetryon_321" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_tetryonic_322" }
+      }
+      add_research_option = "tech_physics_tetryonic_322"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1085
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_tetryonic_322" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_harmonic_323" }
+      }
+      add_research_option = "tech_physics_harmonic_323"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1086
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_harmonic_323" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_thoron_324" }
+      }
+      add_research_option = "tech_physics_thoron_324"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1087
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_thoron_324" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_gatling_325" }
+      }
+      add_research_option = "tech_physics_gatling_325"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1088
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_tetryon_321" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_graviton_326" }
+      }
+      add_research_option = "tech_physics_graviton_326"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1089
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_graviton_326" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_heavy_327" }
+      }
+      add_research_option = "tech_physics_heavy_327"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1090
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_heavy_327" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_phase-conjugate_328" }
+      }
+      add_research_option = "tech_physics_phase-conjugate_328"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1091
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_phase-conjugate_328" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_tachyon_329" }
+      }
+      add_research_option = "tech_physics_tachyon_329"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1092
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_tetryon_321" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_tetryon_330" }
+      }
+      add_research_option = "tech_physics_tetryon_330"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1093
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_tetryon_330" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_tetryon_331" }
+      }
+      add_research_option = "tech_physics_tetryon_331"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1094
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_tetryon_330" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_plasma_332" }
+      }
+      add_research_option = "tech_physics_plasma_332"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1095
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_tetryon_330" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_mobile_333" }
+      }
+      add_research_option = "tech_physics_mobile_333"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1096
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_tetryon_330" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_tetryon_334" }
+      }
+      add_research_option = "tech_physics_tetryon_334"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1097
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_tetryon_330" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_starbase_335" }
+      }
+      add_research_option = "tech_physics_starbase_335"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1098
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_starbase_335" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_starbase_336" }
+      }
+      add_research_option = "tech_physics_starbase_336"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1099
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_tetryon_330" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_modulated_337" }
+      }
+      add_research_option = "tech_physics_modulated_337"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1100
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_tetryon_330" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_tunneling_338" }
+      }
+      add_research_option = "tech_physics_tunneling_338"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1101
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_modulated_337" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_modulated_339" }
+      }
+      add_research_option = "tech_physics_modulated_339"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1102
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_tunneling_338" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_tunneling_340" }
+      }
+      add_research_option = "tech_physics_tunneling_340"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1103
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_modulated_339" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_modulated_341" }
+      }
+      add_research_option = "tech_physics_modulated_341"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1104
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_tunneling_340" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_tunneling_342" }
+      }
+      add_research_option = "tech_physics_tunneling_342"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1105
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_tetryon_331" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_tetryon_343" }
+      }
+      add_research_option = "tech_physics_tetryon_343"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1106
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_tetryon_343" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_tetryon_344" }
+      }
+      add_research_option = "tech_physics_tetryon_344"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1107
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_phase_138" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_loader_345" }
+      }
+      add_research_option = "tech_physics_loader_345"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1108
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_central_147" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_miniaturized_346" }
+      }
+      add_research_option = "tech_physics_miniaturized_346"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1109
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_central_147" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_thermodynamic_347" }
+      }
+      add_research_option = "tech_physics_thermodynamic_347"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+namespace = linear_trees
+country_event = {
+  id = linear_trees.1268
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_strike_craft_3" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tfw_strike_drone" }
+      }
+      add_research_option = "tfw_strike_drone"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1269
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_strike_craft_3" "tfw_psi_machinery" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tfw_psi_strike_craft" }
+      }
+      add_research_option = "tfw_psi_strike_craft"
+    }
+  }
+}

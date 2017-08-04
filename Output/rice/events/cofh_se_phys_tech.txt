@@ -1,0 +1,15 @@
+namespace = linear_trees
+country_event = {
+  id = linear_trees.429
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_sensors_3" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "	icon" }
+      }
+      add_research_option = "	icon"
+    }
+  }
+}

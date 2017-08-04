@@ -1,0 +1,701 @@
+namespace = linear_trees
+country_event = {
+  id = linear_trees.233
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = tech_galactic_ambitions }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_novus_xeno_diplomacy" }
+      }
+      add_research_option = "tech_novus_xeno_diplomacy"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.234
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_nano_vitality_crops" "tech_novus_stellar_administration" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "	icon" }
+      }
+      add_research_option = "	icon"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.235
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_space_construction" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_novus_harvest_enriched_soil" }
+      }
+      add_research_option = "tech_novus_harvest_enriched_soil"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.236
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_eco_simulation" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_novus_food_processing_1" }
+      }
+      add_research_option = "tech_novus_food_processing_1"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.237
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_novus_food_processing_1" "tech_colonial_centralization" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_novus_food_processing_2" }
+      }
+      add_research_option = "tech_novus_food_processing_2"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.238
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_novus_food_processing_2" "tech_colonial_centralization" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_novus_food_processing_3" }
+      }
+      add_research_option = "tech_novus_food_processing_3"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.239
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_novus_food_processing_3" "tech_galactic_administration" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_novus_food_processing_4" }
+      }
+      add_research_option = "tech_novus_food_processing_4"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.240
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_novus_food_processing_4" "tech_novus_stellar_administration" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_novus_food_processing_5" }
+      }
+      add_research_option = "tech_novus_food_processing_5"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.241
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_colonial_centralization" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "	icon" }
+      }
+      add_research_option = "	icon"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.242
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_galactic_administration" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_novus_monument_of_culture" }
+      }
+      add_research_option = "tech_novus_monument_of_culture"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.243
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_novus_stellar_administration" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_novus_monument_of_exploration" }
+      }
+      add_research_option = "tech_novus_monument_of_exploration"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.244
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_colonial_centralization" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_novus_hyper_entertainment_forum" }
+      }
+      add_research_option = "tech_novus_hyper_entertainment_forum"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.245
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_planetary_government" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_novus_purity_campaigns" }
+      }
+      add_research_option = "tech_novus_purity_campaigns"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.246
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_centralized_command" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_novus_virtual_combat_arena" }
+      }
+      add_research_option = "tech_novus_virtual_combat_arena"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.247
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_biolab_3" "tech_novus_stellar_administration" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "	icon" }
+      }
+      add_research_option = "	icon"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.248
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_novus_biolab_4" "tech_novus_engineering_lab_4" "tech_novus_physics_lab_4" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_novus_stellar_science_hub" }
+      }
+      add_research_option = "tech_novus_stellar_science_hub"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.249
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_galactic_administration" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "	icon" }
+      }
+      add_research_option = "	icon"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.250
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_colonial_centralization" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "	icon" }
+      }
+      add_research_option = "	icon"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.251
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_mine_zro" "tech_mine_teldar" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_novus_new_worlds_emporium" }
+      }
+      add_research_option = "tech_novus_new_worlds_emporium"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.252
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_engos_vapor" "tech_alien_life_studies" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_novus_the_living_habitat" }
+      }
+      add_research_option = "tech_novus_the_living_habitat"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.253
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_novus_harvest_enriched_soil" "tech_pitharan_dust" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_novus_enriched_bio_gardens" }
+      }
+      add_research_option = "tech_novus_enriched_bio_gardens"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.254
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alien_life_studies" "tech_galactic_administration" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_novus_entertainment_center" }
+      }
+      add_research_option = "tech_novus_entertainment_center"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.255
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_novus_grand_mausoleum" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_novus_planetary_park" }
+      }
+      add_research_option = "tech_novus_planetary_park"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.256
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_novus_grand_mausoleum" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_novus_peace_memorium" }
+      }
+      add_research_option = "tech_novus_peace_memorium"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.257
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_novus_battle_training_center" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_novus_empirical_defense_center" }
+      }
+      add_research_option = "tech_novus_empirical_defense_center"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.258
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_centralized_command" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_novus_battle_training_center" }
+      }
+      add_research_option = "tech_novus_battle_training_center"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.259
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_galactic_administration" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_novus_new_worlds_initiative" }
+      }
+      add_research_option = "tech_novus_new_worlds_initiative"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.260
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_novus_labor_assignment_center" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_novus_empire_development_council" }
+      }
+      add_research_option = "tech_novus_empire_development_council"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.261
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_colonial_centralization" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_novus_labor_assignment_center" }
+      }
+      add_research_option = "tech_novus_labor_assignment_center"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.262
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_galactic_administration" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_novus_sensory_station" }
+      }
+      add_research_option = "tech_novus_sensory_station"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.263
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_galactic_administration" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_novus_xeno_immigration_center" }
+      }
+      add_research_option = "tech_novus_xeno_immigration_center"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.264
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_novus_cleansing_station" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_novus_xeno_enforcement_agency" }
+      }
+      add_research_option = "tech_novus_xeno_enforcement_agency"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.265
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_galactic_administration" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_novus_pilgrimage_site" }
+      }
+      add_research_option = "tech_novus_pilgrimage_site"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.266
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_symbol_unity" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_novus_temple_of_enlightenment" }
+      }
+      add_research_option = "tech_novus_temple_of_enlightenment"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.267
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_combat_training" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_novus_tactical_combat_training" }
+      }
+      add_research_option = "tech_novus_tactical_combat_training"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.268
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_novus_tactical_combat_training" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_novus_advanced_combat_training" }
+      }
+      add_research_option = "tech_novus_advanced_combat_training"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.269
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_cloning" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_novus_enhanced_cloning" }
+      }
+      add_research_option = "tech_novus_enhanced_cloning"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.270
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_novus_planetary_defense" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_novus_imperial_security" }
+      }
+      add_research_option = "tech_novus_imperial_security"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.271
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_psionic_theory" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_novus_super_psionic_army" }
+      }
+      add_research_option = "tech_novus_super_psionic_army"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.272
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_atmospheric_manipulation" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_novus_atmosphere_processing" }
+      }
+      add_research_option = "tech_novus_atmosphere_processing"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.273
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_spaceport_2" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_novus_colonizer_assembly_yard" }
+      }
+      add_research_option = "tech_novus_colonizer_assembly_yard"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.274
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_spaceport_6" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_novus_state_media_news" }
+      }
+      add_research_option = "tech_novus_state_media_news"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.275
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_spaceport_6" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_novus_divine_news_radio" }
+      }
+      add_research_option = "tech_novus_divine_news_radio"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.276
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_spaceport_6" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_novus_ministry_of_war_radio" }
+      }
+      add_research_option = "tech_novus_ministry_of_war_radio"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.277
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_spaceport_6" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_novus_shipwright_contractors" }
+      }
+      add_research_option = "tech_novus_shipwright_contractors"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.278
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_spaceport_6" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_novus_naval_corp_of_engineers" }
+      }
+      add_research_option = "tech_novus_naval_corp_of_engineers"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.279
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_spaceport_6" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_novus_orbital_atmospheric_manipulation" }
+      }
+      add_research_option = "tech_novus_orbital_atmospheric_manipulation"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.280
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_spaceport_4" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_novus_orbital_society_lab" }
+      }
+      add_research_option = "tech_novus_orbital_society_lab"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.281
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_orbital_hydroponics" "tech_spaceport_3" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_novus_orbital_hydroponics_2" }
+      }
+      add_research_option = "tech_novus_orbital_hydroponics_2"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.282
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_doctrine_fleet_support" "tech_spaceport_4" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_novus_crew_quarters_2" }
+      }
+      add_research_option = "tech_novus_crew_quarters_2"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+namespace = linear_trees
+country_event = {
+  id = linear_trees.616
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_basic_army" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_medium_army" }
+      }
+      add_research_option = "tech_medium_army"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.617
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_medium_army" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_advance_army" }
+      }
+      add_research_option = "tech_advance_army"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.618
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_advance_army" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_titans_army" }
+      }
+      add_research_option = "tech_titans_army"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.619
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_basic_planets" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_advance_planets" }
+      }
+      add_research_option = "tech_advance_planets"
+    }
+  }
+}

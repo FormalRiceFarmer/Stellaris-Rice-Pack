@@ -1,0 +1,29 @@
+namespace = linear_trees
+country_event = {
+  id = linear_trees.423
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_engineering_lab_2" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "	icon" }
+      }
+      add_research_option = "	icon"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.424
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_engineering_lab_2" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "	icon" }
+      }
+      add_research_option = "	icon"
+    }
+  }
+}

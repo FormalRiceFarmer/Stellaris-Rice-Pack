@@ -1,0 +1,59 @@
+namespace = linear_trees
+country_event = {
+  id = linear_trees.1405
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_mega_engineering" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_advanced_megastructure_engineering" }
+      }
+      add_research_option = "tech_advanced_megastructure_engineering"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1406
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_power_plant_4" "tech_power_hub_2" "tech_mine_dark_matter" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_supercooled_energy_conduits" }
+      }
+      add_research_option = "tech_supercooled_energy_conduits"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1407
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_mining_network_4" "tech_mineral_processing_2" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_superscale_industrial_automation" }
+      }
+      add_research_option = "tech_superscale_industrial_automation"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1408
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_nutrient_replication" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_artificial_environment_control" }
+      }
+      add_research_option = "tech_artificial_environment_control"
+    }
+  }
+}
+#1409 removed
+#1410 removed

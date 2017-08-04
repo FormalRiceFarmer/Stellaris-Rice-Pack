@@ -1,0 +1,477 @@
+namespace = linear_trees
+country_event = {
+  id = linear_trees.1
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_spaceport_2" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_spaceport_3" }
+      }
+      add_research_option = "tech_spaceport_3"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.2
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_spaceport_3" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_spaceport_4" }
+      }
+      add_research_option = "tech_spaceport_4"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.3
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_spaceport_4" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_spaceport_5" }
+      }
+      add_research_option = "tech_spaceport_5"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.4
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_spaceport_5" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_spaceport_6" }
+      }
+      add_research_option = "tech_spaceport_6"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.5
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_spaceport_5" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_cruiser_yard" }
+      }
+      add_research_option = "tech_cruiser_yard"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.6
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_spaceport_6" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_battleship_yard" }
+      }
+      add_research_option = "tech_battleship_yard"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.7
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_spaceport_5" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_strike_craft_1" }
+      }
+      add_research_option = "tech_strike_craft_1"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.8
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_strike_craft_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_strike_craft_2" }
+      }
+      add_research_option = "tech_strike_craft_2"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.9
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_strike_craft_2" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_strike_craft_3" }
+      }
+      add_research_option = "tech_strike_craft_3"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.10
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_defense_army" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_assault_armies" }
+      }
+      add_research_option = "tech_assault_armies"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.11
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_spaceport_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_ship_armor_1" }
+      }
+      add_research_option = "tech_ship_armor_1"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.12
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_ship_armor_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_ship_armor_2" }
+      }
+      add_research_option = "tech_ship_armor_2"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.13
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_ship_armor_2" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_ship_armor_3" }
+      }
+      add_research_option = "tech_ship_armor_3"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.14
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_ship_armor_3" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_ship_armor_4" }
+      }
+      add_research_option = "tech_ship_armor_4"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.15
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_ship_armor_4" "tech_mine_neutronium" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_ship_armor_5" }
+      }
+      add_research_option = "tech_ship_armor_5"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.16
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_thrusters_2" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_thrusters_3" }
+      }
+      add_research_option = "tech_thrusters_3"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.17
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_thrusters_3" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_thrusters_4" }
+      }
+      add_research_option = "tech_thrusters_4"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.18
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_space_construction" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_space_defense_station_1" }
+      }
+      add_research_option = "tech_space_defense_station_1"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.19
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_space_defense_station_2" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_space_defense_station_3" }
+      }
+      add_research_option = "tech_space_defense_station_3"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.20
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_space_defense_station_2" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_space_defense_station_improvement" }
+      }
+      add_research_option = "tech_space_defense_station_improvement"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.21
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_mining_network_2" "tech_colonial_centralization" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_mining_network_3" }
+      }
+      add_research_option = "tech_mining_network_3"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.22
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_mining_network_3" "tech_galactic_administration" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_mining_network_4" }
+      }
+      add_research_option = "tech_mining_network_4"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.23
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_mineral_processing_1" "tech_colonial_centralization" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_mineral_processing_2" }
+      }
+      add_research_option = "tech_mineral_processing_2"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.24
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_engineering_lab_1" "tech_colonial_centralization" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_engineering_lab_2" }
+      }
+      add_research_option = "tech_engineering_lab_2"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.25
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_engineering_lab_2" "tech_galactic_administration" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_engineering_lab_3" }
+      }
+      add_research_option = "tech_engineering_lab_3"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.26
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_powered_exoskeletons" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_robotic_workers" }
+      }
+      add_research_option = "tech_robotic_workers"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.27
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_robotic_workers" "tech_colonial_centralization" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_droid_workers" }
+      }
+      add_research_option = "tech_droid_workers"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.28
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_droid_workers" "tech_galactic_administration" "tech_sentient_ai" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_synthetic_workers" }
+      }
+      add_research_option = "tech_synthetic_workers"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.29
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_synthetic_workers" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_synthetic_leaders" }
+      }
+      add_research_option = "tech_synthetic_leaders"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.30
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_thrusters_2" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_afterburners_1" }
+      }
+      add_research_option = "tech_afterburners_1"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.31
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_afterburners_1" "tech_thrusters_3" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_afterburners_2" }
+      }
+      add_research_option = "tech_afterburners_2"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.32
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_engineering_lab_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_assembly_pattern" }
+      }
+      add_research_option = "tech_assembly_pattern"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.33
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_assembly_pattern" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_construction_templates" }
+      }
+      add_research_option = "tech_construction_templates"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.34
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_space_defense_station_3" "tech_spaceport_6" "tech_zero_point_power" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_mega_engineering" }
+      }
+      add_research_option = "tech_mega_engineering"
+    }
+  }
+}

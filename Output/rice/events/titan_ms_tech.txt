@@ -1,0 +1,71 @@
+namespace = linear_trees
+country_event = {
+  id = linear_trees.1349
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_Titan_MS_0" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_Titan_MS_1" }
+      }
+      add_research_option = "tech_Titan_MS_1"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1350
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_Titan_MS_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_Titan_MS_2" }
+      }
+      add_research_option = "tech_Titan_MS_2"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1351
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_Titan_MS_2" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_Titan_MS_3" }
+      }
+      add_research_option = "tech_Titan_MS_3"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1352
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_Titan_MS_3" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_Titan_MS_4" }
+      }
+      add_research_option = "tech_Titan_MS_4"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1353
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_Titan_MS_4" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_Titan_MS_5" }
+      }
+      add_research_option = "tech_Titan_MS_5"
+    }
+  }
+}

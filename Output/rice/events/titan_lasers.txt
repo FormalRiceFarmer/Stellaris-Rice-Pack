@@ -1,0 +1,29 @@
+namespace = linear_trees
+country_event = {
+  id = linear_trees.1347
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_titan_laser_prototype" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_titan_laser" }
+      }
+      add_research_option = "tech_titan_laser"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1348
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_titan_laser" "tech_extradimensional_weapon_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_titan_disintegrator" }
+      }
+      add_research_option = "tech_titan_disintegrator"
+    }
+  }
+}

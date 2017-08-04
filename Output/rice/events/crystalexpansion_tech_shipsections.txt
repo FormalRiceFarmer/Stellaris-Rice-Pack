@@ -1,0 +1,57 @@
+namespace = linear_trees
+country_event = {
+  id = linear_trees.517
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_spaceport_4" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_c_destroyer_sections" }
+      }
+      add_research_option = "tech_c_destroyer_sections"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.518
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_spaceport_5" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_c_cruiser_sections" }
+      }
+      add_research_option = "tech_c_cruiser_sections"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.519
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_spaceport_6" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_c_battleship_sections" }
+      }
+      add_research_option = "tech_c_battleship_sections"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.520
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_lab_2" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_c_science_sections" }
+      }
+      add_research_option = "tech_c_science_sections"
+    }
+  }
+}

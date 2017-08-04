@@ -1,0 +1,71 @@
+namespace = linear_trees
+country_event = {
+  id = linear_trees.1439
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_BEAMC_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_BEAMC_2" }
+      }
+      add_research_option = "tech_BEAMC_2"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1440
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_BEAMC_2" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_BEAMC_3" }
+      }
+      add_research_option = "tech_BEAMC_3"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1441
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_EFSF_BEAMC_3" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_EFSF_BEAMC_1" }
+      }
+      add_research_option = "tech_EFSF_BEAMC_1"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1442
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_EFSF_BEAMC_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_EFSF_BEAMC_2" }
+      }
+      add_research_option = "tech_EFSF_BEAMC_2"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1443
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_EFSF_BEAMC_2" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_EFSF_BEAMC_3" }
+      }
+      add_research_option = "tech_EFSF_BEAMC_3"
+    }
+  }
+}

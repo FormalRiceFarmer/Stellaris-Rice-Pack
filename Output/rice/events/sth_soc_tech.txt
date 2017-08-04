@@ -1,0 +1,2059 @@
+namespace = linear_trees
+country_event = {
+  id = linear_trees.1110
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_planetary_government" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_ministry_354" }
+      }
+      add_research_option = "tech_society_ministry_354"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1111
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_ministry_354" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_planetary_355" }
+      }
+      add_research_option = "tech_society_planetary_355"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1112
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_planetary_355" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_galactic_356" }
+      }
+      add_research_option = "tech_society_galactic_356"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1113
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_galactic_356" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_colonial_357" }
+      }
+      add_research_option = "tech_society_colonial_357"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1114
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_colonial_357" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_galactic_358" }
+      }
+      add_research_option = "tech_society_galactic_358"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1115
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_galactic_358" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_foundations_359" }
+      }
+      add_research_option = "tech_society_foundations_359"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1116
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_foundations_359" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_communication_360" }
+      }
+      add_research_option = "tech_society_communication_360"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1117
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_foundations_359" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_administrative_361" }
+      }
+      add_research_option = "tech_society_administrative_361"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1118
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_planetary_government" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_border_362" }
+      }
+      add_research_option = "tech_society_border_362"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1119
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_border_362" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_interstellar_363" }
+      }
+      add_research_option = "tech_society_interstellar_363"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1120
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_interstellar_363" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_galactic_364" }
+      }
+      add_research_option = "tech_society_galactic_364"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1121
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_galactic_364" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_manifest_365" }
+      }
+      add_research_option = "tech_society_manifest_365"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1122
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_manifest_365" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_propaganda_366" }
+      }
+      add_research_option = "tech_society_propaganda_366"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1123
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_planetary_government" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_planetary_367" }
+      }
+      add_research_option = "tech_society_planetary_367"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1124
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_planetary_367" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_engineered_368" }
+      }
+      add_research_option = "tech_society_engineered_368"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1125
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_engineered_368" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_adaptive_369" }
+      }
+      add_research_option = "tech_society_adaptive_369"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1126
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_adaptive_369" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_imperial_370" }
+      }
+      add_research_option = "tech_society_imperial_370"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1127
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_imperial_370" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_proclamation_371" }
+      }
+      add_research_option = "tech_society_proclamation_371"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1128
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_planetary_government" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_bank_373" }
+      }
+      add_research_option = "tech_society_bank_373"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1129
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_planetary_government" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_post-scarcity_374" }
+      }
+      add_research_option = "tech_society_post-scarcity_374"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1130
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_planetary_government" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_teaching_375" }
+      }
+      add_research_option = "tech_society_teaching_375"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1131
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_planetary_government" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_rules_376" }
+      }
+      add_research_option = "tech_society_rules_376"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1132
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_planetary_government" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_ushaan_377" }
+      }
+      add_research_option = "tech_society_ushaan_377"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1133
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_planetary_government" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_benzite_378" }
+      }
+      add_research_option = "tech_society_benzite_378"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1134
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_planetary_government" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_words_379" }
+      }
+      add_research_option = "tech_society_words_379"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1135
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_planetary_government" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_the_380" }
+      }
+      add_research_option = "tech_society_the_380"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1136
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_planetary_government" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_ritualized_381" }
+      }
+      add_research_option = "tech_society_ritualized_381"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1137
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_planetary_355" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_interstellar_383" }
+      }
+      add_research_option = "tech_society_interstellar_383"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1138
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_planetary_355" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_consensus-shaped_384" }
+      }
+      add_research_option = "tech_society_consensus-shaped_384"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1139
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_engineered_368" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_the_385" }
+      }
+      add_research_option = "tech_society_the_385"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1140
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_engineered_368" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_multiculturalism_386" }
+      }
+      add_research_option = "tech_society_multiculturalism_386"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1141
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_engineered_368" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_spirit_387" }
+      }
+      add_research_option = "tech_society_spirit_387"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1142
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_colonial_357" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_galactic_388" }
+      }
+      add_research_option = "tech_society_galactic_388"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1143
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_colonial_357" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_perfected_389" }
+      }
+      add_research_option = "tech_society_perfected_389"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1144
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_colonial_357" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_distributed_390" }
+      }
+      add_research_option = "tech_society_distributed_390"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1145
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_distributed_390" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_cultural_391" }
+      }
+      add_research_option = "tech_society_cultural_391"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1146
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_defense_army" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_space_393" }
+      }
+      add_research_option = "tech_society_space_393"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1147
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_defense_army" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_global_394" }
+      }
+      add_research_option = "tech_society_global_394"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1148
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_defense_army" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_special_395" }
+      }
+      add_research_option = "tech_society_special_395"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1149
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_space_393" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_space_396" }
+      }
+      add_research_option = "tech_society_space_396"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1150
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_special_395" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_combined_397" }
+      }
+      add_research_option = "tech_society_combined_397"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1151
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_space_396" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_spirit_398" }
+      }
+      add_research_option = "tech_society_spirit_398"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1152
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_space_396" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_tactical-optimal_399" }
+      }
+      add_research_option = "tech_society_tactical-optimal_399"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1153
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_space_396" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_interstellar_400" }
+      }
+      add_research_option = "tech_society_interstellar_400"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1154
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_space_396" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_long-term_401" }
+      }
+      add_research_option = "tech_society_long-term_401"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1155
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_space_396" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_self-assembling_402" }
+      }
+      add_research_option = "tech_society_self-assembling_402"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1156
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_combined_397" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_centralized_403" }
+      }
+      add_research_option = "tech_society_centralized_403"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1157
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_space_396" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_naval_404" }
+      }
+      add_research_option = "tech_society_naval_404"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1158
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_naval_404" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_distributed_405" }
+      }
+      add_research_option = "tech_society_distributed_405"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1159
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_naval_404" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_naval_406" }
+      }
+      add_research_option = "tech_society_naval_406"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1160
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_naval_404" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_modular_407" }
+      }
+      add_research_option = "tech_society_modular_407"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1161
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_naval_404" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_galactic_408" }
+      }
+      add_research_option = "tech_society_galactic_408"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1162
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_naval_404" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_interstellar_410" }
+      }
+      add_research_option = "tech_society_interstellar_410"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1163
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_distributed_405" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_self-sustaining_411" }
+      }
+      add_research_option = "tech_society_self-sustaining_411"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1164
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_interstellar_410" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_advanced_412" }
+      }
+      add_research_option = "tech_society_advanced_412"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1165
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_interstellar_410" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_fluid_413" }
+      }
+      add_research_option = "tech_society_fluid_413"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1166
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_interstellar_410" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_holographic_414" }
+      }
+      add_research_option = "tech_society_holographic_414"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1167
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_advanced_412" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_virtual_415" }
+      }
+      add_research_option = "tech_society_virtual_415"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1168
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_interstellar_410" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_modular_416" }
+      }
+      add_research_option = "tech_society_modular_416"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1169
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_tactical-optimal_399" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_holographic_417" }
+      }
+      add_research_option = "tech_society_holographic_417"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1170
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_virtual_415" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_aggressive_418" }
+      }
+      add_research_option = "tech_society_aggressive_418"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1171
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_defense_army" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_black_ops" }
+      }
+      add_research_option = "tech_black_ops"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1172
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_virtual_415" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_nerve_420" }
+      }
+      add_research_option = "tech_society_nerve_420"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1173
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_xeno_diplomacy" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_interstellar_427" }
+      }
+      add_research_option = "tech_society_interstellar_427"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1174
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_interstellar_427" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_galactic_428" }
+      }
+      add_research_option = "tech_society_galactic_428"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1175
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_galactic_428" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_adapting_429" }
+      }
+      add_research_option = "tech_society_adapting_429"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1176
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_adapting_429" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_open-standard_430" }
+      }
+      add_research_option = "tech_society_open-standard_430"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1177
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_open-standard_430" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_code_431" }
+      }
+      add_research_option = "tech_society_code_431"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1178
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_code_431" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_diplomatic_432" }
+      }
+      add_research_option = "tech_society_diplomatic_432"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1179
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_interstellar_427" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_galactic_433" }
+      }
+      add_research_option = "tech_society_galactic_433"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1180
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_xeno_diplomacy" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_ministry_434" }
+      }
+      add_research_option = "tech_society_ministry_434"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1181
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_ministry_434" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_applied_435" }
+      }
+      add_research_option = "tech_society_applied_435"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1182
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_applied_435" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_secret_436" }
+      }
+      add_research_option = "tech_society_secret_436"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1183
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_secret_436" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_indoctrination_437" }
+      }
+      add_research_option = "tech_society_indoctrination_437"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1184
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_indoctrination_437" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_counter-intelligence_438" }
+      }
+      add_research_option = "tech_society_counter-intelligence_438"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1185
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_counter-intelligence_438" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_imperial_439" }
+      }
+      add_research_option = "tech_society_imperial_439"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1186
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_imperial_439" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_will_440" }
+      }
+      add_research_option = "tech_society_will_440"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1187
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_eco_simulation" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_xenobiology_441" }
+      }
+      add_research_option = "tech_society_xenobiology_441"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1188
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_xenobiology_441" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_secrets_442" }
+      }
+      add_research_option = "tech_society_secrets_442"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1189
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_secrets_442" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_bioform_443" }
+      }
+      add_research_option = "tech_society_bioform_443"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1190
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_bioform_443" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_psycho-history_444" }
+      }
+      add_research_option = "tech_society_psycho-history_444"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1191
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_xenobiology_441" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_xenology_445" }
+      }
+      add_research_option = "tech_society_xenology_445"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1192
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_xenobiology_441" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_interstellar_446" }
+      }
+      add_research_option = "tech_society_interstellar_446"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1193
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_xenobiology_441" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_genome_447" }
+      }
+      add_research_option = "tech_society_genome_447"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1194
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_interstellar_446" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_advanced_448" }
+      }
+      add_research_option = "tech_society_advanced_448"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1195
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_interstellar_446" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_zero-g_449" }
+      }
+      add_research_option = "tech_society_zero-g_449"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1196
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_secrets_442" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_heuristic_450" }
+      }
+      add_research_option = "tech_society_heuristic_450"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1197
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_secrets_442" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_university_452" }
+      }
+      add_research_option = "tech_society_university_452"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1198
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_heuristic_450" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_radical_453" }
+      }
+      add_research_option = "tech_society_radical_453"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1199
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_university_452" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_predictive_454" }
+      }
+      add_research_option = "tech_society_predictive_454"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1200
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_university_452" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_science_455" }
+      }
+      add_research_option = "tech_society_science_455"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1201
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_university_452" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_galactic_456" }
+      }
+      add_research_option = "tech_society_galactic_456"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1202
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_bioform_443" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_bio-molecular_457" }
+      }
+      add_research_option = "tech_society_bio-molecular_457"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1203
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_bioform_443" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_global_459" }
+      }
+      add_research_option = "tech_society_global_459"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1204
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_bioform_443" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_psionics_460" }
+      }
+      add_research_option = "tech_society_psionics_460"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1205
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_global_459" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_holographic_461" }
+      }
+      add_research_option = "tech_society_holographic_461"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1206
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_psionics_460" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_applied_462" }
+      }
+      add_research_option = "tech_society_applied_462"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1207
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_foundations_359" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_talent_463" }
+      }
+      add_research_option = "tech_society_talent_463"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1208
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_foundations_359" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_sentient_464" }
+      }
+      add_research_option = "tech_society_sentient_464"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1209
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_foundations_359" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_cell_465" }
+      }
+      add_research_option = "tech_society_cell_465"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1210
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_eco_simulation" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_gene_tailoring" }
+      }
+      add_research_option = "tech_gene_tailoring"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1211
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_gene_tailoring" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_jem_hadar_cloning" }
+      }
+      add_research_option = "tech_jem_hadar_cloning"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1212
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_gene_tailoring" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_retrovirus_468" }
+      }
+      add_research_option = "tech_society_retrovirus_468"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1213
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_gene_tailoring" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_epigenetic_triggers" }
+      }
+      add_research_option = "tech_epigenetic_triggers"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1214
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_epigenetic_triggers" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_selected_470" }
+      }
+      add_research_option = "tech_society_selected_470"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1215
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_epigenetic_triggers" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_mass_471" }
+      }
+      add_research_option = "tech_society_mass_471"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1216
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_selected_470" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_capacity_472" }
+      }
+      add_research_option = "tech_society_capacity_472"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1217
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_capacity_472" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_targeted_473" }
+      }
+      add_research_option = "tech_society_targeted_473"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1218
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_targeted_473" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_morphegenic_474" }
+      }
+      add_research_option = "tech_society_morphegenic_474"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1219
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_targeted_473" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_deep_475" }
+      }
+      add_research_option = "tech_society_deep_475"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1220
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_morphegenic_474" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_the_476" }
+      }
+      add_research_option = "tech_society_the_476"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1221
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_jem_hadar_cloning" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_improved_477" }
+      }
+      add_research_option = "tech_society_improved_477"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1222
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_improved_477" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_enhanced_478" }
+      }
+      add_research_option = "tech_society_enhanced_478"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1223
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_eco_simulation" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_protein_479" }
+      }
+      add_research_option = "tech_society_protein_479"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1224
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_protein_479" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_orbital_480" }
+      }
+      add_research_option = "tech_society_orbital_480"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1225
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_orbital_480" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_gene_481" }
+      }
+      add_research_option = "tech_society_gene_481"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1226
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_gene_481" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_xenobotany_482" }
+      }
+      add_research_option = "tech_society_xenobotany_482"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1227
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_xenobotany_482" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_biodiversity_483" }
+      }
+      add_research_option = "tech_society_biodiversity_483"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1228
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_biodiversity_483" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_nano-vitality_484" }
+      }
+      add_research_option = "tech_society_nano-vitality_484"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1229
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_nano-vitality_484" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_transgenic_485" }
+      }
+      add_research_option = "tech_society_transgenic_485"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1230
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_protein_479" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_advanced_486" }
+      }
+      add_research_option = "tech_society_advanced_486"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1231
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_eco_simulation" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_that_487" }
+      }
+      add_research_option = "tech_society_that_487"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1232
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_that_487" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_neural_488" }
+      }
+      add_research_option = "tech_society_neural_488"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1233
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_neural_488" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_divine_489" }
+      }
+      add_research_option = "tech_society_divine_489"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1234
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_divine_489" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_mass-scale_490" }
+      }
+      add_research_option = "tech_society_mass-scale_490"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1235
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_mass-scale_490" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_stimulant_491" }
+      }
+      add_research_option = "tech_society_stimulant_491"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1236
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_eco_simulation" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_colonization_1" }
+      }
+      add_research_option = "tech_colonization_1"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1237
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_colonization_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_frontier_497" }
+      }
+      add_research_option = "tech_society_frontier_497"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1238
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_frontier_497" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_advanced_498" }
+      }
+      add_research_option = "tech_society_advanced_498"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1239
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_terraforming_base_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_intergalactic_499" }
+      }
+      add_research_option = "tech_society_intergalactic_499"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1240
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_terraforming_base_2" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_weather_500" }
+      }
+      add_research_option = "tech_society_weather_500"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1241
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_terraforming_base_3" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_gravitational_501" }
+      }
+      add_research_option = "tech_society_gravitational_501"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1242
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_terraforming_base_3" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_assembly_502" }
+      }
+      add_research_option = "tech_society_assembly_502"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1243
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_eco_simulation" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_mars_503" }
+      }
+      add_research_option = "tech_society_mars_503"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1244
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_colonization_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_civilian_504" }
+      }
+      add_research_option = "tech_society_civilian_504"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1245
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_colonization_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_frontier_505" }
+      }
+      add_research_option = "tech_society_frontier_505"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1246
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_civilian_504" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_pioneering_506" }
+      }
+      add_research_option = "tech_society_pioneering_506"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1247
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_frontier_505" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_stasis_507" }
+      }
+      add_research_option = "tech_society_stasis_507"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1248
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_advanced_498" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_terraforming_base_1" }
+      }
+      add_research_option = "tech_terraforming_base_1"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1249
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_terraforming_base_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_terraforming_base_2" }
+      }
+      add_research_option = "tech_terraforming_base_2"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1250
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_terraforming_base_2" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_hostile_511" }
+      }
+      add_research_option = "tech_society_hostile_511"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1251
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_terraforming_base_2" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_terraforming_base_3" }
+      }
+      add_research_option = "tech_terraforming_base_3"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1252
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_terraforming_base_3" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_terraforming_borg" }
+      }
+      add_research_option = "tech_terraforming_borg"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1253
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_colonization_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_tholian_514" }
+      }
+      add_research_option = "tech_society_tholian_514"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1254
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_tholian_514" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_steam_515" }
+      }
+      add_research_option = "tech_society_steam_515"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1255
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_society_steam_515" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_advanced_516" }
+      }
+      add_research_option = "tech_society_advanced_516"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.1256
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_colonization_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_society_sheliak_517" }
+      }
+      add_research_option = "tech_society_sheliak_517"
+    }
+  }
+}

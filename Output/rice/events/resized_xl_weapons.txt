@@ -1,0 +1,71 @@
+namespace = linear_trees
+country_event = {
+  id = linear_trees.631
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_resized_energy_lance_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_resized_energy_lance_2" }
+      }
+      add_research_option = "tech_resized_energy_lance_2"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.632
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_arc_emitter_2" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_resized_arc_emitter_1" }
+      }
+      add_research_option = "tech_resized_arc_emitter_1"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.633
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_resized_arc_emitter_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_resized_arc_emitter_2" }
+      }
+      add_research_option = "tech_resized_arc_emitter_2"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.634
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_mass_accelerator_2" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_resized_mass_accelerator_1" }
+      }
+      add_research_option = "tech_resized_mass_accelerator_1"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.635
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_resized_mass_accelerator_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_resized_mass_accelerator_2" }
+      }
+      add_research_option = "tech_resized_mass_accelerator_2"
+    }
+  }
+}

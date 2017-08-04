@@ -1,0 +1,169 @@
+namespace = linear_trees
+country_event = {
+  id = linear_trees.283
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_advanced_energy_lance" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_advanced_energy_lance_2" }
+      }
+      add_research_option = "tech_advanced_energy_lance_2"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.284
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_advanced_energy_lance_2" "tech_extradimensional_weapon_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_advanced_energy_lance_3" }
+      }
+      add_research_option = "tech_advanced_energy_lance_3"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.285
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_resized_arc_emitter_2" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_advanced_arc_emitter" }
+      }
+      add_research_option = "tech_advanced_arc_emitter"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.286
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_resized_mass_accelerator_2" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_advanced_kinetic_weapon" }
+      }
+      add_research_option = "tech_advanced_kinetic_weapon"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.287
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_autocannons_3" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_hellfire_autocannons" }
+      }
+      add_research_option = "tech_hellfire_autocannons"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.288
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_plasma_3" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_plasma_launcher" }
+      }
+      add_research_option = "tech_plasma_launcher"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.289
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_disruptors_3" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_electromagnetic_beam" }
+      }
+      add_research_option = "tech_electromagnetic_beam"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.290
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_flak_batteries_2" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_mini_flak_battery" }
+      }
+      add_research_option = "tech_mini_flak_battery"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.291
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_pd_tracking_3" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_energy_lance_point_defence" }
+      }
+      add_research_option = "tech_energy_lance_point_defence"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.292
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_missiles_5" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_integrated_missile_system" }
+      }
+      add_research_option = "tech_integrated_missile_system"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.293
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_strike_craft_3" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_titan_strike_craft" }
+      }
+      add_research_option = "tech_titan_strike_craft"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.294
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_torpedoes_3" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_smart_torpedoes" }
+      }
+      add_research_option = "tech_smart_torpedoes"
+    }
+  }
+}

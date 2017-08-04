@@ -1,0 +1,57 @@
+namespace = linear_trees
+country_event = {
+  id = linear_trees.512
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_c_shields_synth_6" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_c_shields_synth_7" }
+      }
+      add_research_option = "tech_c_shields_synth_7"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.513
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_c_shields_synth_7" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_c_shields_synth_8" }
+      }
+      add_research_option = "tech_c_shields_synth_8"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.514
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_c_shields_synth_8" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_c_shields_synth_9" }
+      }
+      add_research_option = "tech_c_shields_synth_9"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.515
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_c_shields_synth_9" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_c_shields_synth_10" }
+      }
+      add_research_option = "tech_c_shields_synth_10"
+    }
+  }
+}

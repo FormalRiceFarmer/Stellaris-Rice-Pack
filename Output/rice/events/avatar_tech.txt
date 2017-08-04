@@ -1,0 +1,99 @@
+namespace = linear_trees
+country_event = {
+  id = linear_trees.412
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_sun_crusher_phy_02" "tech_titan_doomsday_weapons_04" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_avatar_soc_01" }
+      }
+      add_research_option = "tech_avatar_soc_01"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.413
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_avatar_soc_01" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_avatar_soc_02" }
+      }
+      add_research_option = "tech_avatar_soc_02"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.414
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_avatar_soc_01" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_avatar_eng_01" }
+      }
+      add_research_option = "tech_avatar_eng_01"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.415
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_avatar_eng_01" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_avatar_eng_02" }
+      }
+      add_research_option = "tech_avatar_eng_02"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.416
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_sun_crusher" "tech_avatar_soc_01" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_avatar_phy_01" }
+      }
+      add_research_option = "tech_avatar_phy_01"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.417
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_avatar_phy_01" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_avatar_phy_02" }
+      }
+      add_research_option = "tech_avatar_phy_02"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.418
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_avatar" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_avatar_doomsday_01" }
+      }
+      add_research_option = "tech_avatar_doomsday_01"
+    }
+  }
+}

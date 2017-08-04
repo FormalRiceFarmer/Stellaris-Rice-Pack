@@ -1,0 +1,533 @@
+namespace = linear_trees
+country_event = {
+  id = linear_trees.96
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_databank_uplinks" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_improved_databank_uplinks" }
+      }
+      add_research_option = "tech_improved_databank_uplinks"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.97
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_lab_1" "tech_colonial_centralization" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_lab_2" }
+      }
+      add_research_option = "tech_physics_lab_2"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.98
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_lab_2" "tech_galactic_administration" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_physics_lab_3" }
+      }
+      add_research_option = "tech_physics_lab_3"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.99
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_physics_lab_1" "tech_galactic_administration" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_global_research_initiative" }
+      }
+      add_research_option = "tech_global_research_initiative"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.100
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_basic_science_lab_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_administrative_ai" }
+      }
+      add_research_option = "tech_administrative_ai"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.101
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_administrative_ai" "tech_colonization_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_cryostasis_1" }
+      }
+      add_research_option = "tech_cryostasis_1"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.102
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_self_aware_logic" "tech_cryostasis_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_cryostasis_2" }
+      }
+      add_research_option = "tech_cryostasis_2"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.103
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_administrative_ai" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_self_aware_logic" }
+      }
+      add_research_option = "tech_self_aware_logic"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.104
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_administrative_ai" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_automated_exploration" }
+      }
+      add_research_option = "tech_automated_exploration"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.105
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_self_aware_logic" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_sentient_ai" }
+      }
+      add_research_option = "tech_sentient_ai"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.106
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_administrative_ai" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_combat_computers_1" }
+      }
+      add_research_option = "tech_combat_computers_1"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.107
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_combat_computers_1" "tech_self_aware_logic" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_combat_computers_2" }
+      }
+      add_research_option = "tech_combat_computers_2"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.108
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_combat_computers_2" "tech_sentient_ai" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_combat_computers_3" }
+      }
+      add_research_option = "tech_combat_computers_3"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.109
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_administrative_ai" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_synchronized_defences" }
+      }
+      add_research_option = "tech_synchronized_defences"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.110
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_fusion_power" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_cold_fusion_power" }
+      }
+      add_research_option = "tech_cold_fusion_power"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.111
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_cold_fusion_power" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_antimatter_power" }
+      }
+      add_research_option = "tech_antimatter_power"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.112
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_antimatter_power" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_zero_point_power" }
+      }
+      add_research_option = "tech_zero_point_power"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.113
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_shields_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_shields_2" }
+      }
+      add_research_option = "tech_shields_2"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.114
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_shields_2" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_shields_3" }
+      }
+      add_research_option = "tech_shields_3"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.115
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_shields_3" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_shields_4" }
+      }
+      add_research_option = "tech_shields_4"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.116
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_shields_4" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_shields_5" }
+      }
+      add_research_option = "tech_shields_5"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.117
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_shields_3" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_shield_rechargers_1" }
+      }
+      add_research_option = "tech_shield_rechargers_1"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.118
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_shields_4" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_shield_recharge_aura_1" }
+      }
+      add_research_option = "tech_shield_recharge_aura_1"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.119
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_shields_2" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_planetary_shield_generator" }
+      }
+      add_research_option = "tech_planetary_shield_generator"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.120
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_psionic_theory" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_psionic_shield" }
+      }
+      add_research_option = "tech_psionic_shield"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.121
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_sensors_2" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_sensors_3" }
+      }
+      add_research_option = "tech_sensors_3"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.122
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_sensors_3" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_sensors_4" }
+      }
+      add_research_option = "tech_sensors_4"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.123
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_sensors_2" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_orbital_sensor_array" }
+      }
+      add_research_option = "tech_orbital_sensor_array"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.124
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_power_plant_2" "tech_colonial_centralization" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_power_plant_3" }
+      }
+      add_research_option = "tech_power_plant_3"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.125
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_power_plant_3" "tech_galactic_administration" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_power_plant_4" }
+      }
+      add_research_option = "tech_power_plant_4"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.126
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_power_hub_1" "tech_colonial_centralization" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_power_hub_2" }
+      }
+      add_research_option = "tech_power_hub_2"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.127
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_wormhole_generation_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_wormhole_generation_2" }
+      }
+      add_research_option = "tech_wormhole_generation_2"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.128
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_wormhole_generation_2" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_wormhole_generation_3" }
+      }
+      add_research_option = "tech_wormhole_generation_3"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.129
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_hyper_drive_2" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_hyper_drive_3" }
+      }
+      add_research_option = "tech_hyper_drive_3"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.130
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_warp_drive_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_warp_drive_2" }
+      }
+      add_research_option = "tech_warp_drive_2"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.131
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_warp_drive_2" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_warp_drive_3" }
+      }
+      add_research_option = "tech_warp_drive_3"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.132
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_zero_point_power" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_jump_drive_1" }
+      }
+      add_research_option = "tech_jump_drive_1"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.133
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_shields_3" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_aura_quantum_destabilizer" }
+      }
+      add_research_option = "tech_aura_quantum_destabilizer"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+namespace = linear_trees
+country_event = {
+  id = linear_trees.521
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_c_crystalis_targeting_matrix_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_c_crystalis_targeting_matrix_2" }
+      }
+      add_research_option = "tech_c_crystalis_targeting_matrix_2"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.522
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_c_crystalis_targeting_matrix_2" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_c_crystalis_targeting_matrix_3" }
+      }
+      add_research_option = "tech_c_crystalis_targeting_matrix_3"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.523
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_c_crystalis_targeting_matrix_3" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_c_crystalis_targeting_matrix_4" }
+      }
+      add_research_option = "tech_c_crystalis_targeting_matrix_4"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.524
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_c_crystalis_targeting_matrix_4" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_c_crystalis_targeting_matrix_5" }
+      }
+      add_research_option = "tech_c_crystalis_targeting_matrix_5"
+    }
+  }
+}

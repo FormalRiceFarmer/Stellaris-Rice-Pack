@@ -1,0 +1,71 @@
+namespace = linear_trees
+country_event = {
+  id = linear_trees.490
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_c_eng_research_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_c_eng_research_2" }
+      }
+      add_research_option = "tech_c_eng_research_2"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.491
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_c_eng_research_2" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_c_eng_research_3" }
+      }
+      add_research_option = "tech_c_eng_research_3"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.492
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_administrative_ai" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "	tier" }
+      }
+      add_research_option = "	tier"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.493
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_c_phy_research_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "	is_rare" }
+      }
+      add_research_option = "	is_rare"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.494
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_c_phy_research_2" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "	is_rare" }
+      }
+      add_research_option = "	is_rare"
+    }
+  }
+}

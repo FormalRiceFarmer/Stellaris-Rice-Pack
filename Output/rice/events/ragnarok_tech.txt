@@ -1,0 +1,99 @@
+namespace = linear_trees
+country_event = {
+  id = linear_trees.624
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_ragnarok_eng_01" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_ragnarok_soc_01" }
+      }
+      add_research_option = "tech_ragnarok_soc_01"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.625
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_ragnarok_soc_01" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_ragnarok_soc_02" }
+      }
+      add_research_option = "tech_ragnarok_soc_02"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.626
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_ragnarok_phy_01" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_ragnarok_eng_01" }
+      }
+      add_research_option = "tech_ragnarok_eng_01"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.627
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_ragnarok_eng_01" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_ragnarok_eng_02" }
+      }
+      add_research_option = "tech_ragnarok_eng_02"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.628
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_erebus" "tech_avatar_doomsday_01" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_ragnarok_phy_01" }
+      }
+      add_research_option = "tech_ragnarok_phy_01"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.629
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_ragnarok_phy_01" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_ragnarok_phy_02" }
+      }
+      add_research_option = "tech_ragnarok_phy_02"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.630
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_ragnarok_eng_02" "tech_ragnarok_phy_02" "tech_ragnarok_soc_02" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_ragnarok_doomsday_01" }
+      }
+      add_research_option = "tech_ragnarok_doomsday_01"
+    }
+  }
+}

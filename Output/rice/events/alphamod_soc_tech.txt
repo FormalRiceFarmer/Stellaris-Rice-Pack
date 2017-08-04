@@ -1,0 +1,1009 @@
+namespace = linear_trees
+country_event = {
+  id = linear_trees.340
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_power_hub_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_commercial_colonies" }
+      }
+      add_research_option = "tech_alpha_commercial_colonies"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.341
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_ocean_exploitation_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_ocean_exploitation_2" }
+      }
+      add_research_option = "tech_alpha_ocean_exploitation_2"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.342
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_tropical_colonization" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "	#cost" }
+      }
+      add_research_option = "	#cost"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.343
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_tropical_exploitation_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "	#cost" }
+      }
+      add_research_option = "	#cost"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.344
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_arctic_colonization" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "	#cost" }
+      }
+      add_research_option = "	#cost"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.345
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_arctic_colonization" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_arctic_exploitation_2" }
+      }
+      add_research_option = "tech_alpha_arctic_exploitation_2"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.346
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_desert_colonization" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_desert_exploitation_1" }
+      }
+      add_research_option = "tech_alpha_desert_exploitation_1"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.347
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_desert_exploitation_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_desert_exploitation_2" }
+      }
+      add_research_option = "tech_alpha_desert_exploitation_2"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.348
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_nano_vitality_crops" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_farming_capitals" }
+      }
+      add_research_option = "tech_alpha_farming_capitals"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.349
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_traditional_farming" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_preservations" }
+      }
+      add_research_option = "tech_alpha_preservations"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.350
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_eco_simulation" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_traditional_farming" }
+      }
+      add_research_option = "tech_alpha_traditional_farming"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.351
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_gene_crops" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_food_hybrids" }
+      }
+      add_research_option = "tech_alpha_food_hybrids"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.352
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_hydroponics" "tech_biolab_1" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_intensive_hydroponics" }
+      }
+      add_research_option = "tech_alpha_intensive_hydroponics"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.353
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_intensive_hydroponics" "tech_biolab_2" "tech_alpha_food_hybrids" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_intensive_hydroponics_2" }
+      }
+      add_research_option = "tech_alpha_intensive_hydroponics_2"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.354
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_intensive_hydroponics_2" "tech_biolab_3" "tech_frontier_trade_alpha" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_intensive_hydroponics_3" }
+      }
+      add_research_option = "tech_alpha_intensive_hydroponics_3"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.355
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_xeno_outreach" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_diplomatic_corps" }
+      }
+      add_research_option = "tech_alpha_diplomatic_corps"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.356
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_diplomatic_corps" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_pacifism" }
+      }
+      add_research_option = "tech_alpha_pacifism"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.357
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_open_embassies" "tech_alpha_pacifism" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_mediation" }
+      }
+      add_research_option = "tech_alpha_mediation"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.358
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_mediation" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_promise_eden" }
+      }
+      add_research_option = "tech_alpha_promise_eden"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.359
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_diplomatic_corps" "tech_alpha_survey_corps" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_open_embassies" }
+      }
+      add_research_option = "tech_alpha_open_embassies"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.360
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_shuttlecraft" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_colony_control" }
+      }
+      add_research_option = "tech_alpha_colony_control"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.361
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_colony_control" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_colonial_administrations_alpha" }
+      }
+      add_research_option = "tech_colonial_administrations_alpha"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.362
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_colony_control" "tech_alpha_commercial_colonies" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_colonial_corporations_alpha" }
+      }
+      add_research_option = "tech_colonial_corporations_alpha"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.363
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_colonial_corporations_alpha" "tech_trade_ports" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_colonial_corporations_alpha_2" }
+      }
+      add_research_option = "tech_colonial_corporations_alpha_2"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.364
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_colony_control" "tech_centralized_command" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_colonial_warlords_alpha" }
+      }
+      add_research_option = "tech_colonial_warlords_alpha"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.365
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_colony_control" "tech_homeworld_security" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_colonial_dictatorship_alpha" }
+      }
+      add_research_option = "tech_colonial_dictatorship_alpha"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.366
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_colony_control" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_colonial_spiritualleaders_alpha" }
+      }
+      add_research_option = "tech_colonial_spiritualleaders_alpha"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.367
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_colony_control" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_colonial_councils_alpha" }
+      }
+      add_research_option = "tech_colonial_councils_alpha"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.368
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_hivemind" "tech_genome_mapping" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "# tech_alpha_hivemind_2" }
+      }
+      add_research_option = "# tech_alpha_hivemind_2"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.369
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_hivemind_2" "tech_improved_databank_uplinks" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "# tech_alpha_hivemind_3" }
+      }
+      add_research_option = "# tech_alpha_hivemind_3"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.370
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_castes" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_castes_2" }
+      }
+      add_research_option = "tech_alpha_castes_2"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.371
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_centralized_command" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_military_service" }
+      }
+      add_research_option = "tech_alpha_military_service"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.372
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_military_service" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_military_service_2" }
+      }
+      add_research_option = "tech_alpha_military_service_2"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.373
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_military_service" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_military_service_3" }
+      }
+      add_research_option = "tech_alpha_military_service_3"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.374
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_military_service" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_fanatic_military" }
+      }
+      add_research_option = "tech_alpha_fanatic_military"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.375
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_fanatic_military" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_fanatic_military_2" }
+      }
+      add_research_option = "tech_alpha_fanatic_military_2"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.376
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_space_recreation" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_academies" }
+      }
+      add_research_option = "tech_alpha_academies"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.377
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_homeworld_security" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_xenophobia" }
+      }
+      add_research_option = "tech_alpha_xenophobia"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.378
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_xenophobia" "tech_genome_mapping" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_gene_analytics" }
+      }
+      add_research_option = "tech_alpha_gene_analytics"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.379
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_xenophobia" "tech_alpha_aggressive_security" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_fanatic_xenophobia" }
+      }
+      add_research_option = "tech_alpha_fanatic_xenophobia"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.380
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_xenophobia" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_fanatic_xenophobia_2" }
+      }
+      add_research_option = "tech_alpha_fanatic_xenophobia_2"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.381
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_fanatic_xenophobia" "tech_alpha_gene_analytics" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_gene_analytics_2" }
+      }
+      add_research_option = "tech_alpha_gene_analytics_2"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.382
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_gene_analytics_2" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_gene_analytics_3" }
+      }
+      add_research_option = "tech_alpha_gene_analytics_3"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.383
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_trade_ports" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_materialism" }
+      }
+      add_research_option = "tech_alpha_materialism"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.384
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_materialism" "tech_space_recreation" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_luxury_industries" }
+      }
+      add_research_option = "tech_alpha_luxury_industries"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.385
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_materialism" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_fanatic_materialism" }
+      }
+      add_research_option = "tech_alpha_fanatic_materialism"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.386
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_fanatic_materialism" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_fanatic_materialism_2" }
+      }
+      add_research_option = "tech_alpha_fanatic_materialism_2"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.387
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_frontier_growth_alpha" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_hives" }
+      }
+      add_research_option = "tech_alpha_hives"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.388
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_frontier_growth_alpha" "tech_space_recreation" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_sprawls" }
+      }
+      add_research_option = "tech_alpha_sprawls"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.389
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_frontier_growth_alpha" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_retreats" }
+      }
+      add_research_option = "tech_alpha_retreats"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.390
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_frontier_growth_alpha" "tech_merchant_companies" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_cultures" }
+      }
+      add_research_option = "tech_alpha_cultures"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.391
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_frontier_growth_alpha" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_citadels" }
+      }
+      add_research_option = "tech_alpha_citadels"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.392
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_frontier_growth_alpha" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_sanctuaries" }
+      }
+      add_research_option = "tech_alpha_sanctuaries"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.393
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_frontier_growth_alpha" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_orders" }
+      }
+      add_research_option = "tech_alpha_orders"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.394
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_frontier_growth_alpha" "tech_alpha_micro_fission" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_arcologies" }
+      }
+      add_research_option = "tech_alpha_arcologies"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.395
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_xeno_outreach" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_homeworld_security" }
+      }
+      add_research_option = "tech_homeworld_security"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.396
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_homeworld_security" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "# tech_alpha_surveillance_stations" }
+      }
+      add_research_option = "# tech_alpha_surveillance_stations"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.397
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_homeworld_security" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_surveillance_centers" }
+      }
+      add_research_option = "tech_alpha_surveillance_centers"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.398
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_homeworld_security" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_aggressive_security" }
+      }
+      add_research_option = "tech_alpha_aggressive_security"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.399
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_shuttlecraft" "tech_alpha_commercial_colonies" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_trade_ports" }
+      }
+      add_research_option = "tech_trade_ports"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.400
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_trade_ports" "tech_matter_replication_alpha" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_merchant_companies" }
+      }
+      add_research_option = "tech_merchant_companies"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.401
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_merchant_companies" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_merchant_companies_2" }
+      }
+      add_research_option = "tech_merchant_companies_2"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.402
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_trade_ports" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_frontier_trade_alpha" }
+      }
+      add_research_option = "tech_frontier_trade_alpha"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.403
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_frontier_trade_alpha" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_frontier_supply" }
+      }
+      add_research_option = "tech_alpha_frontier_supply"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.404
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_frontier_supply" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_frontier_growth_alpha" }
+      }
+      add_research_option = "tech_frontier_growth_alpha"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.405
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_xeno_outreach" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_space_recreation" }
+      }
+      add_research_option = "tech_space_recreation"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.406
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_frontier_hospital" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_medical_advances" }
+      }
+      add_research_option = "tech_alpha_medical_advances"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.407
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_medical_advances" "tech_genome_mapping" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_medical_advances_2" }
+      }
+      add_research_option = "tech_alpha_medical_advances_2"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.408
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_medical_advances_2" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_medical_advances_3" }
+      }
+      add_research_option = "tech_alpha_medical_advances_3"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.409
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_alpha_medical_advances_3" "tech_cloning" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_medical_advances_4" }
+      }
+      add_research_option = "tech_alpha_medical_advances_4"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.410
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_space_recreation" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_orbital_community" }
+      }
+      add_research_option = "tech_alpha_orbital_community"
+    }
+  }
+}
+country_event = {
+  id = linear_trees.411
+  hide_window = yes
+  is_triggered_only = yes
+  trigger = { is_ai = no has_technology = "tech_colonial_spiritualleaders_alpha" }
+  immediate = {
+    if = {
+      limit = {
+        NOT = { has_tech_option = "tech_alpha_orbital_faith" }
+      }
+      add_research_option = "tech_alpha_orbital_faith"
+    }
+  }
+}
