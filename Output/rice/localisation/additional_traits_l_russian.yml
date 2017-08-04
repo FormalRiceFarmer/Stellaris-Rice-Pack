@@ -1,0 +1,164 @@
+﻿l_russian:
+####################################
+ # Traits
+ ####################################
+ #Handicaps
+ 
+ trait_additrait_ephemeral:0 "Эфемерные"
+ trait_additrait_ephemeral_desc:0 "§LЭтот вид менее устойчив, чем остальные и его представители умирают раньше.§!\n"
+ 
+ trait_additrait_easily_distracted:0 "Легко Отвлекающиеся"
+ trait_additrait_easily_distracted_desc:0 "§LПредставители этого вида очень легко увлекаются, но не надолго.§!\n"
+ 
+ trait_additrait_simple_minded:0 "Туповатые"
+ trait_additrait_simple_minded_desc:0 "§LЗвезды до сих пор не понимают, как этот вид достиг сверхсветовых скоростей .§!\n"
+ 
+ trait_additrait_lazy:0 "Ленивые"
+ trait_additrait_lazy_desc:0 "§LЭтот вид никогда не работает слишком много.§!\n"
+ 
+ trait_additrait_prodigal:0 "Prodigal"
+ trait_additrait_prodigal_desc:0 "§LThis species is economicaly inefficient and tends to often spend their funds on useless things.§!\n"
+ 
+ trait_additrait_lethargic:0 "Летаргические"
+ trait_additrait_lethargic_desc:0 "§LЭтот вид никогда не торопится с работой. Зачем делать сегодня, если можно сделать завтра?§!\n"
+ 
+ trait_additrait_unfit_engineers:0 "Бездарные инженеры"
+ trait_additrait_unfit_engineers_desc:0 "§LПредставители этой расы с трудом понимают даже основы инженерного искусства.§!\n" 
+ 
+ trait_additrait_unfit_physicists:0 "Бездарные физики"
+ trait_additrait_unfit_physicists_desc:0 "§LПредставители этой расы с трудом понимают даже основы теоретической физики.§!\n"
+ 
+ trait_additrait_unfit_sociologists:0 "Бездарные социологи"
+ trait_additrait_unfit_sociologists_desc:0 "§LПредставители этой расы с трудом понимают даже основы социологии.§!\n"
+ 
+ trait_additrait_hateful:0 "Ненавидимые"
+ trait_additrait_hateful_desc:0 "§LВызывающая внешность и поведение представителей этого вида заставляет другие расы избегать их.\n\nКроме того, рост доверия к ним уменьшается на 25%.§!\n"
+ 
+ trait_additrait_hunter_gatherers:0 "Страстные охотники"
+ trait_additrait_hunter_gatherers_desc:0 "Представители этого вида имеют глубокие культурные корни в спортивной и промысловой охоте. И при этом не слишком доверяют современным сельскохозяйственным методам.§!\n"
+ 
+ trait_additrait_violent:0 "Агрессивные"
+ trait_additrait_violent_desc:0 "Глубокие биологические процессы подчас делают представителей этого вида весьма вспыльчивыми малыми.§!\n"
+ 
+ trait_additrait_free_spirits:0 "Вольнодумцы"
+ trait_additrait_free_spirits_desc:0 "Этот народ известен своим природным вольнодумством, что заставляет их без пиетета относиться к любой идеологии.§!\n"
+ 
+ trait_additrait_iconoclastic:0 "Нонконформисты"
+ trait_additrait_iconoclastic_desc:0 "Рано или подзно устаревшие традиционалистские идеи отомрут за ненадобностью. Так зачем ждать?.§!\n"
+
+ trait_additrait_delicate:0 "Хрупкие"
+ trait_additrait_delicate_desc:0 "§LПредставителей этого вида очень легко поранить. Они не самые физически стойкие существа.§!\n"
+ 
+ trait_additrait_weak_willed:0 "Слабовольные"
+ trait_additrait_weak_willed_desc:0 "§LЭтот вид плохо переносит всяческий стресс. В бою они быстро теряют присутствие духа.§!\n"
+ 
+ trait_additrait_very_slow_breeders:0 "Фригидные"
+ trait_additrait_very_slow_breeders_desc:0 "§LЭтот вид размножается очень медленно. Не нужно ждать от них бурного роста популяции.§!\n"
+ 
+ trait_additrait_melancholic:0 "Melancholic"
+ trait_additrait_melancholic_desc:0 "§LMembers of this species are easily consumed by daily routine and find little excitement in their life.§!\n"
+
+ ###########################################################################################################################################################
+ #Neutral
+ 
+ #trait_additrait_focused:0 "Сосредоточенные"
+ #trait_additrait_focused_desc:0 "§LПредставители этого вида привыкли решать проблемы по мере их поступления. Их учёные имеют прибавку к скорости исследований.\n\nС другой стороны, число вариантов исследований уменьшается на один.§!\n"
+ 
+ ###########################################################################################################################################################
+ #Avantages
+ 
+ trait_additrait_multitasking:0 "Мильтизадачные"
+ trait_additrait_multitasking_desc:0 "§LУмение этого вида делать две вещи одновременно ускоряет их техничиский прогресс.§!\n"
+ 
+ trait_additrait_easily_satisfied:0 "Непривередливые"
+ trait_additrait_easily_satisfied_desc:0 "§LПредставителям этого вида достаточно удолетворения их базовых потребностей.§!\n"
+ 
+ trait_additrait_born_warriors:0 "Прирождённые Воины"
+ trait_additrait_born_warriors_desc:0 "§LЛучшие философы этого вида пришли к единому выводу: ответ всему - война.\n\nThis trait also add +5% damage to your fleet.§!\n"
+ 
+ trait_additrait_sociable:0 "Общительные"
+ trait_additrait_sociable_desc:0 "§LВ силу инстинктов, или традиций, но этот вид обладает уникальной способностью быть душой любой компании.\n\nРост доверия увеличивается на 25%.§!\n"
+ 
+ trait_additrait_competitive:0 "Любители соревнований"
+ trait_additrait_competitive_desc:0 "§LЭтот вид обладает неуёмной страстью к любым видам соревновательных дисциплин.\n\nВы получаете бонус +50% к приросту влияния от Соперничества.§!\n"
+ 
+ trait_additrait_aggressive:0 "Агрессивные"
+ trait_additrait_aggressive_desc:0 "§LОбщение - не самая сильная сторона этих существ.\n\nВы можете выбрать (1) дополнительного соперника.§!\n"
+ 
+ trait_additrait_extremely_aggressive:0 "Безумно агрессивные"
+ trait_additrait_extremely_aggressive_desc:0 "§LЭтот вид готов порвать глотку всякому, кто косо на него взглянет.\n\nВы можете выбрать (2) дополнительных соперников.§!\n"
+ 
+ trait_additrait_zealous_defenders:0 "Рьяные Защитники"
+ trait_additrait_zealous_defenders_desc:0 "§LЭти ребята сражаются как черти, защищая родную землю.§!\n"
+ 
+ trait_additrait_lateral_thinkers:0 "Объёмно мыслящие"
+ trait_additrait_lateral_thinkers_desc:0 "Представители этого вида обладают развитым пространственным мышлением. Мыслить в масштабах космоса для них пара пустяков.\n\nВаши корабли наносят на 8% больше урона.§!\n"
+  
+ trait_additrait_roboticians:0 "Робототехники"
+ trait_additrait_roboticians_desc:0 "§LЭта цивилизация открыла робототехнику раньше космических полётов.\n\nВы получаете технологию [Роботы].§!\n"
+ 
+ trait_additrait_belligerent:0 "Забияки"
+ trait_additrait_belligerent_desc:0 "§LЭти существа просто не могут жить в мире и спокойствии.\n\nВы можете выбрать (1) дополнительного соперника, а прирост влияния от Соперничества увеличивается на 50%.§!\n"
+ 
+ trait_additrait_fast_analysers:0 "Быстро соображающие"
+ trait_additrait_fast_analysers_desc:0 "§LПредставители этого вида не тратят времени на раздумья.\n\nВсе исследования ускоряются на 10%.§!\n"
+ 
+ trait_additrait_thermosynthetic:0 "Термосинтетики"
+ trait_additrait_thermosynthetic_desc:0 "§LЭтот вид умеет получать питательные вещества напрямую из солнечного света.§!\n" 
+
+ trait_additrait_war_lovers:0 "Любители повоевать"
+ trait_additrait_war_lovers_desc:0 "§LВойна - это Круто! Мир - это Отстой! ...по крайней мере, так думают представители этого вида.\n\n+15% War Happiness, -5% Peace Happiness.§!\n"
+  
+ trait_additrait_peace_lovers:0 "Friends of Peace"
+ trait_additrait_peace_lovers_desc:0 "§LWar is an horrible thing, this species wants none to do with it.\n\n+15% Peace Happiness, -5% War Happiness.§!\n"
+ 
+ trait_additrait_doulophage:0 "Пожиратели рабов"
+ trait_additrait_doulophage_desc:0 "§LМало того, что они порабощают другие народы... так они их ещё и ЕДЯТ!§!\n"
+ 
+ trait_additrait_psionics:0 "Псионики"
+ trait_additrait_psionics_desc:0 "§LПредставители этого вида - прирождённые псионики. И они знают, как использовать свою силу.\n\nВы получаете технологию [psionic_theory].§!\n"
+  
+ trait_additrait_passionate:0 "Passionate"
+ trait_additrait_passionate_desc:0 "§LMembers of this species enjoy life in all of it's form and constantly find inspiration in things around them.§!\n"
+ 
+ ###########################################################################################################################################################
+ #Presentients
+ 
+ trait_additrait_presentient_natural_inventors:0 "Изобретатели от природы"
+ trait_additrait_presentient_natural_inventors_desc:0 "§LПредставители этого вида любят копаться с разнообразными механизмами, находя новые способы усовершенствовать их.§!\n"
+ 
+ trait_additrait_presentient_natural_savants:0 "Прирождённые гении"
+ trait_additrait_presentient_natural_savants_desc:0 "§LПредставителям этого вида от природы свойственна любопытность в области познания мира.§!\n"
+ 
+ ###########################################################################################################################################################
+ #Traits Modifiers
+ 
+ wear_trait_additrait_sociable:0 "Общительные"
+ wear_trait_additrait_sociable_desc:0 "Титульное население этой империи - Общительное."
+ 
+ wear_trait_additrait_hateful:0 "Ненавидимые"
+ wear_trait_additrait_hateful_desc:0 "Титульное население этой империи - Ненавидимое."
+
+ wear_trait_additrait_born_warriors:0 "Прирождённые воины"
+ wear_trait_additrait_born_warriors_desc:0 "Титульное население этой империи - отличные воины."
+
+ wear_trait_additrait_competitive:0 "Любители соревнований"
+ wear_trait_additrait_competitive_desc:0 "Титульное население этой империи любит посоревноваться."
+
+ #wear_trait_additrait_focused:0 "Сосредоточенные"
+ #wear_trait_additrait_focused_desc:0 "Титульное население этой империи - Сосредоточенные"
+
+ wear_trait_additrait_aggressive:0 "Агрессивные"
+ wear_trait_additrait_aggressive_desc:0 "Титульное население этой империи - Агрессивное."
+
+ wear_trait_additrait_extremely_aggressive:0 "Безумно Агрессивные"
+ wear_trait_additrait_extremely_aggressive_desc:0 "Лучше не класть этим ребятам палец в рот."
+
+ wear_trait_additrait_lateral_thinkers:0 "Объемно мыслящие"
+ wear_trait_additrait_lateral_thinkers_desc:0 "Титульное население этой империи отлично ориентируется в пространстве."
+ 
+ wear_trait_additrait_belligerent:0 "Забияки"
+ wear_trait_additrait_belligerent_desc:0 "Титульное население этой империи - Забияки."
+
+ wear_trait_additrait_fast_analysers:0 "Быстро соображающие"
+ wear_trait_additrait_fast_analysers_desc:0 "Титульное население этой империи очень быстро соображает."

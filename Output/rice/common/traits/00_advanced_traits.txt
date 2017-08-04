@@ -1,0 +1,157 @@
+##################
+# Advanced Genetics Traits #
+##################
+
+trait_natural_farmers = {
+	cost = 4
+	initial = no
+	randomized = no
+	modification = yes
+	advanced_trait = yes
+	opposites = { "trait_agrarian"}
+	modifier = {
+		tile_resource_food_mult = 0.30
+	}
+}
+
+trait_masters_of_industry = {
+	cost = 4
+	initial = no
+	randomized = no
+	modification = yes
+	advanced_trait = yes
+	opposites = { "trait_industrious"}
+	modifier = {
+		tile_resource_minerals_mult = 0.30
+	}
+}
+
+trait_entrepreneural = {
+	cost = 4
+	initial = no
+	randomized = no
+	modification = yes
+	advanced_trait = yes
+	opposites = { "trait_frugal"}
+	modifier = {
+		tile_resource_energy_mult = 0.30
+	}
+}
+
+trait_united = {
+	cost = 1
+	initial = no
+	randomized = no
+	modification = yes
+	advanced_trait = yes
+	opposites = { "trait_nerve_stapled" }
+	modifier = {
+		tile_resource_unity_mult = 0.20
+		}
+}
+
+trait_alluring = {
+	cost = 3
+	initial = no
+	randomized = no
+	modification = yes
+	advanced_trait = yes	
+	opposites = { "trait_charismatic" "trait_repugnant" }
+	
+	modifier = {
+		pop_other_species_happiness = 0.15
+		
+	}
+}
+
+trait_immortal = {
+	cost = 5
+
+	initial = no
+	randomized = no
+	modification = yes
+	immortal_leaders = yes
+	advanced_trait = yes
+	opposites = { "trait_enduring" "trait_fleeting" "trait_venerable" }
+}
+leader_trait_immortal = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_immortal.dds"
+	immortal_leaders = yes
+	leader_trait = yes
+	initial = no
+	randomized = no
+}
+leader_trait_immortal_ruler = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/trait_immortal.dds"
+	immortal_leaders = yes
+	leader_trait = yes
+	initial = no
+	randomized = no
+	leader_class = { ruler }
+}
+
+trait_spartan_living = {
+	cost = 3
+	initial = no
+	randomized = no
+	modification = yes
+	advanced_trait = yes
+	opposites = { "trait_wasteful" "trait_conservational"}
+	modifier = {
+		pop_consumer_goods_mult = -0.5
+	}
+}
+trait_abstemious = {
+	cost = 3
+	initial = no
+	randomized = no
+	modification = yes
+	advanced_trait = yes
+	opposites = { "trait_feaster" }
+	modifier = {
+		pop_food_req_mult = -0.5
+	}
+}
+
+
+trait_focused = {
+	cost = -2
+	initial = no
+	randomized = no
+	modification = yes
+	advanced_trait = yes
+	opposites = { "trait_quick_learners" "trait_slow_learners"}
+	modifier = {
+		species_leader_exp_gain = -1
+	}
+}
+
+trait_genetic_memory = {
+	cost = 6
+	initial = no
+	randomized = no
+	modification = yes
+	opposites = { "trait_talented" }
+	advanced_trait = yes
+
+	modifier = {
+		leader_skill_levels = +4
+	}
+}
+
+trait_feaster = {
+	cost = -2
+	initial = no
+	randomized = no
+	modification = yes
+	advanced_trait = yes
+	opposites = { "trait_abstemious" }
+	modifier = {
+		pop_food_req_mult = 1
+	}
+}
+

@@ -1,0 +1,514 @@
+##############################
+# Miners Faction
+##############################
+
+plentiful_factions_miners = {
+	election_header = "GFX_faction_header_yellow"
+	guiding_ethic = ethic_materialist
+	
+	unique = yes
+	support_multiplier = 1
+	
+	is_potential = {
+		has_encountered_other_species = yes
+		NOT = { has_authority = auth_hive_mind }
+		has_tradition = "tr_industrial_adopt"
+	}
+	
+	parameters = {
+		empire = {
+			type = country
+			valid_objects = {
+				is_same_value = root
+			}
+		}
+	}
+	
+	can_join_faction = {
+		is_enslaved = no
+		is_being_purged = no
+		NOT = { has_trait = trait_nerve_stapled }
+		OR = {
+			has_ethic = ethic_materialist
+			has_ethic = ethic_fanatic_materialist
+			is_robot_pop = yes
+		}
+	}
+	
+	attraction = {
+		base = 125
+		
+		modifier = {
+			factor = 1.25
+			exists = from
+			from = {
+				exists = leader
+				leader = { leader_class = ruler }
+			}
+		}
+		
+		modifier = {
+			factor = 0.75
+			exists = from
+			from = {
+				NOT = { exists = leader }
+			}
+		}
+		
+		modifier = {
+			factor = 1.5
+			
+			OR = {
+				has_ethic = ethic_materialist
+				has_ethic = ethic_fanatic_materialist
+			}
+		}
+	}
+	
+	leader = {
+		base = 100
+	}
+	
+	demand = {
+		title = "MINERS_GOODS"
+		unfulfilled_title = "MINERS_GOODS"
+		desc = "MINERS_GOODS_DESC"
+		
+		fulfilled_effect = 5
+		
+		potential = {
+			exists = owner
+			owner = {
+				has_tradition = "tr_industrial_5"
+			}
+		}
+		
+		trigger = {
+			owner = {
+				has_country_edict = plentiful_traditions_industrial_goods
+			}
+		}
+	}	
+
+	demand = {
+		title = "MINERS_CIVIC"
+		unfulfilled_title = "MINERS_CIVIC"
+		desc = "MINERS_CIVIC_DESC"
+
+		fulfilled_effect = 5
+		unfulfilled_effect = -5
+
+		potential = {
+			exists = owner
+		}
+		
+		trigger = {
+			owner = { 
+				has_civic = civic_mining_guilds
+			}
+		}
+	}
+	
+	demand = {
+		title = "MINERS_FACILITY"
+		unfulfilled_title = "MINERS_FACILITY"
+		desc = "MINERS_FACILITY_DESC"
+
+		fulfilled_effect = 5
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				has_tradition = "tr_industrial_4"
+			}
+		}
+		
+		trigger = {
+			owner = { 
+			    any_owned_planet = {
+					has_building = building_plentiful_traditions_purification_facility
+				}
+			}
+		}
+	}
+	
+	demand = {
+		title = "MINERS_NETWORK"
+		unfulfilled_title = "MINERS_NETWORK"
+		desc = "MINERS_NETWORK_DESC"
+
+		fulfilled_effect = 5
+		unfulfilled_effect = -3
+
+		potential = {
+			exists = owner
+		}
+		
+		trigger = {
+			owner = { 
+			    any_owned_planet = {
+					OR = {
+						has_building = building_mining_network_5
+						has_building = building_ancient_factory
+						has_building = building_fe_ancient_factory
+					}
+				}
+			}
+		}
+	}
+	
+	demand = {
+		title = "MINERS_PROCESSING"
+		unfulfilled_title = "MINERS_PROCESSING"
+		desc = "MINERS_PROCESSING_DESC"
+
+		fulfilled_effect = 5
+		unfulfilled_effect = -3
+
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = "tech_mineral_processing_2"
+			}
+		}
+		
+		trigger = {
+			owner = { 
+			    any_owned_planet = {
+					has_building = building_mineral_processing_plant_2
+				}
+			}
+		}
+	}
+	
+	demand = {
+		title = "MINERS_SILO"
+		unfulfilled_title = "MINERS_SILO"
+		desc = "MINERS_SILO_DESC"
+
+		fulfilled_effect = 5
+		unfulfilled_effect = -3
+
+		potential = {
+			exists = owner
+		}
+		
+		trigger = {
+			owner = { 
+			    any_owned_planet = {
+					OR = {
+						has_building = building_mineral_silo_1
+						has_building = building_mineral_silo_2
+						has_building = building_mineral_silo_3
+					}
+				}
+			}
+		}
+	}
+	
+	demand = {
+		title = "MINERS_ORBITAL"
+		unfulfilled_title = "MINERS_ORBITAL"
+		desc = "MINERS_ORBITAL_DESC"
+
+		fulfilled_effect = 5
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+		}
+		
+		trigger = {
+			owner = {
+				any_owned_planet = {
+					has_spaceport_module = orbital_fracking_cannon
+				}
+			}
+		}
+	}
+	
+	demand = {
+		title = "MINERS_EXCAVATION"
+		unfulfilled_title = "MINERS_EXCAVATION"
+		desc = "MINERS_EXCAVATION_DESC"
+
+		fulfilled_effect = 5
+		unfulfilled_effect = -5
+
+		potential = {
+			exists = owner
+			owner = {
+				has_tradition = "tr_industrial_finish"
+			}
+		}
+
+		trigger = {
+			owner = {
+				any_owned_planet = {
+					has_modifier = "modifier_plentiful_traditions_ionized_excavation"
+				}
+			}
+		}
+	}
+
+	demand = {
+		title = "MINERS_MINIMUM"
+		unfulfilled_title = "MINERS_MINIMUM"
+		desc = "MINERS_MINIMUM_DESC"
+
+		fulfilled_effect = 3
+		unfulfilled_effect = -3
+
+		potential = {
+			exists = owner
+		}
+
+		trigger = {
+			owner = { minerals > 9999 }
+		}
+	}
+	
+	demand = {
+		title = "MINERS_DEPOSIT"
+		unfulfilled_title = "MINERS_DEPOSIT"
+		desc = "MINERS_DEPOSIT_DESC"
+
+		fulfilled_effect = 2
+		unfulfilled_effect = -2
+
+		potential = {
+			exists = owner
+		}
+
+		trigger = {
+			owner = {
+			    any_owned_planet = {
+					OR = {
+						has_deposit = "d_vast_mineral_deposit"
+					}
+				}
+			}
+		}
+	}
+
+	on_create = {
+		pop_faction_event = { id = factions.1 } # Industry change new message?
+	}
+
+	on_destroy = {
+		if = {
+			limit = {
+				has_modifier = promoted_materialist
+			}
+			remove_modifier = promoted_materialist
+		}
+		if = {
+			limit = {
+				has_modifier = suppressed_materialist
+			}
+			remove_modifier = suppressed_materialist
+		}
+	}
+	
+	actions = {
+		embrace_faction = {
+			title = "EMBRACE_FACTION"
+			description = "EMBRACE_FACTION_DESC"
+			
+			cost = {
+				influence = 250
+			}
+			
+			potential = {
+				exists = owner
+			}
+			
+			valid = {
+				custom_tooltip = {
+					fail_text = EMBRACE_FACTION_COOLDOWN
+					parameter:empire = {
+						NOT = { has_modifier = embraced_faction_timer }
+					}
+				}
+				support > 0.20
+				parameter:empire = {
+					NOT = { has_ethic = "ethic_fanatic_materialist" }
+				}
+			}
+
+			effect = {
+				add_modifier = { modifier = embraced_faction days = 3600 }
+				hidden_effect = {
+					if = {
+						limit = {
+							has_modifier = promoted_faction
+						}
+						remove_modifier = promoted_faction
+					}
+				}
+				parameter:empire = {
+					shift_ethic = ethic_materialist
+					hidden_effect = {
+						add_modifier = { modifier = embraced_faction_timer days = 3600 }
+						every_pop_faction = {
+							limit = { NOT = { is_same_value = root } }
+							add_modifier = { modifier = embraced_another_faction days = 3600 }
+						}
+					}
+				}
+				hidden_effect = {
+					save_event_target_as = TargetFaction
+					parameter:empire = {
+						every_relation = {
+							limit = {
+								is_ai = no
+								is_country_type = default			
+								has_communications = prev
+							}
+							country_event = { id = factions.2000 } # Industry change new message?
+						}
+					}				
+				}				
+			}
+			
+			ai_weight = {
+				base = 1
+				modifier = {
+					factor = 0
+					support < 0.50
+					owner = {
+						has_ethic = ethic_materialist
+					}
+				}
+				modifier = {
+					factor = 0
+					NOT = { 
+						owner = {
+							exists = ruler
+							ruler = {
+								leader_of_faction = plentiful_factions_miners
+							}
+						}
+					}
+				}
+				modifier = {
+					factor = 0
+					owner = {
+						count_pop_factions = {
+							limit = {
+								NOR = {
+									is_pop_faction_type = democratic_election_faction_1
+									is_pop_faction_type = democratic_election_faction_2
+								}
+							}
+							count < 4
+						}					
+					}
+				}				
+			}
+		}
+		promote_faction = {
+			title = "PROMOTE_FACTION"
+			description = "PROMOTE_FACTION_DESC"
+			
+			potential = {
+				exists = owner
+				parameter:empire = {
+					NOR = {
+						has_ethic = ethic_materialist
+						has_ethic = ethic_fanatic_materialist
+					}
+					NOR = {
+						has_modifier = suppressed_materialist
+						has_modifier = promoted_materialist
+					}
+				}
+			}
+
+			effect = {
+				parameter:empire = {
+					add_modifier = { modifier = promoted_materialist days = -1 }
+				}
+			}
+			
+			ai_weight = {
+				base = 0
+			}
+		}
+		cancel_promote_faction = {
+			title = "CANCEL_PROMOTE_FACTION"
+			description = "CANCEL_PROMOTE_FACTION_DESC"
+			
+			potential = {
+				exists = owner
+				parameter:empire = {
+					has_modifier = promoted_materialist
+				}
+			}
+
+			effect = {
+				if = {
+					limit = {
+						has_modifier = promoted_faction
+					}
+					remove_modifier = promoted_faction
+				}
+				parameter:empire = {
+					remove_modifier = promoted_materialist
+				}
+			}
+			
+			ai_weight = {
+				base = 0
+			}
+		}		
+		suppress_faction = {
+			title = "SUPPRESS_FACTION"
+			description = "SUPPRESS_FACTION_DESC"
+			
+			potential = {
+				exists = owner
+				parameter:empire = {
+					NOR = {
+						has_modifier = suppressed_materialist
+						has_modifier = promoted_materialist
+					}
+				}
+			}
+
+			effect = {
+				add_modifier = { modifier = suppressed_faction days = -1 }
+				parameter:empire = {
+					add_modifier = { modifier = suppressed_materialist days = -1 }
+				}
+			}
+			
+			ai_weight = {
+				base = 0
+			}
+		}
+		cancel_suppress_faction = {
+			title = "CANCEL_SUPPRESS_FACTION"
+			description = "CANCEL_SUPPRESS_FACTION_DESC"
+			
+			potential = {
+				exists = owner
+				parameter:empire = {
+					has_modifier = suppressed_materialist
+				}
+			}
+
+			effect = {
+				remove_modifier = suppressed_faction
+				parameter:empire = {
+					remove_modifier = suppressed_materialist
+				}
+			}
+			
+			ai_weight = {
+				base = 0
+			}
+		}
+	}
+}

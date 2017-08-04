@@ -1,0 +1,304 @@
+################################################################################
+# Tyranny
+################################################################################
+
+ap_divine_right = {
+	possible = {
+			fail_text = "requires_tr_tyranny_5"
+			has_tradition = tr_tyranny_5
+		}
+	
+	modifier = {
+			slave_food_output = 0.10
+			slave_mineral_output = 0.10
+			country_core_sector_system_cap = 6
+			country_leader_cap = 5
+			country_resource_unity_mult = 0.1
+	}
+
+	potential = {
+		NOT = {
+			has_ascension_perk = ap_divine_right
+		}
+	}
+	
+	ai_weight = {
+		factor = 200
+		modifier = {
+			factor = 0
+			NOT = { has_ethic = ethic_fanatic_authoritarian }
+		}
+	}
+}
+
+################################################################################
+# Liberty
+################################################################################
+
+ap_liberte_egalite_fraternite = {
+	possible = {
+			fail_text = "requires_tr_liberty_5"
+			has_tradition = tr_liberty_5
+		}
+	
+	modifier = {
+			faction_influence_mult = 0.30
+			faction_influence_add = 2
+			country_government_civic_points_add = 2
+			country_leader_cap = 5
+			country_resource_unity_mult = 0.1
+	}
+
+	potential = {
+		NOT = {
+			has_ascension_perk = ap_liberte_egalite_fraternite
+		}
+	}
+	
+	ai_weight = {
+		factor = 200
+		modifier = {
+			factor = 0
+			NOT = { has_ethic = ethic_fanatic_egalitarian }
+		}
+	}
+}
+
+################################################################################
+# Identity
+################################################################################
+
+ap_bloodlines = {
+	possible = {
+			fail_text = "requires_tr_identity_5"
+			has_tradition = tr_identity_5
+		}
+	
+	modifier = {
+			tradition_cost_num_xeno_slaves_mult = -0.30
+			tradition_cost_num_founder_pops_mult = -0.15
+			leader_skill_levels = 2
+			country_leader_cap = 5
+			country_resource_unity_mult = 0.1
+	}
+
+	potential = {
+		NOT = {
+			has_ascension_perk = ap_bloodlines
+		}
+	}
+	
+	ai_weight = {
+		factor = 200
+		modifier = {
+			factor = 0
+			NOT = { has_ethic = ethic_fanatic_xenophobe }
+		}
+	}
+}
+
+################################################################################
+# Diversity
+################################################################################
+
+ap_confluence = {
+	possible = {
+			fail_text = "requires_tr_diversity_5"
+			has_tradition = tr_diversity_5
+		}
+	
+	modifier = {
+			tradition_cost_num_xenos_mult = -0.25
+			planet_migration_xeno_pull = 1		
+			pop_other_species_happiness = 0.1
+			country_leader_cap = 5
+			country_resource_unity_mult = 0.1
+	}
+
+	potential = {
+		NOT = {
+			has_ascension_perk = ap_confluence
+		}
+	}
+	
+	ai_weight = {
+		factor = 200
+		modifier = {
+			factor = 0
+			NOT = { has_ethic = ethic_fanatic_xenophile }
+		}
+	}
+}
+
+################################################################################
+# Hostility
+################################################################################
+
+ap_nemesis = {
+	possible = {
+			fail_text = "requires_tr_hostility_5"
+			has_tradition = tr_hostility_5
+		}
+	
+	modifier = {
+			spaceport_ship_build_speed_mult = 0.33
+			max_rivalries = 3
+			subject_tribute_mult = 0.20
+			country_trust_growth = -0.5
+			country_leader_cap = 5
+			country_resource_unity_mult = 0.1
+	}
+
+	potential = {
+		NOT = {
+			has_ascension_perk = ap_nemesis
+		}
+	}
+	
+	ai_weight = {
+		factor = 200
+		modifier = {
+			factor = 0
+			NOT = { has_ethic = ethic_fanatic_militarist }
+		}
+	}
+}
+
+################################################################################
+# Neutrality
+################################################################################
+
+ap_peacemaker = {
+	possible = {
+			fail_text = "requires_tr_neutrality_5"
+			has_tradition = tr_neutrality_5
+		}
+	
+	modifier = {
+			shipclass_military_station_build_cost_mult = 1
+			shipclass_military_station_damage_mult = 1.5
+			shipclass_military_station_hit_points_mult = 2.5
+			ship_home_territory_fire_rate_mult = 0.15
+			max_rivalries = -3
+			country_leader_cap = 5
+			country_resource_unity_mult = 0.1
+	}
+
+	potential = {
+		NOT = {
+			has_ascension_perk = ap_peacemaker
+		}
+	}
+	
+	ai_weight = {
+		factor = 200
+		modifier = {
+			factor = 0
+			NOT = { has_ethic = ethic_fanatic_pacifist }
+		}
+	}
+}
+
+################################################################################
+# Astronomy
+################################################################################
+
+ap_transmutation = {
+	possible = {
+			fail_text = "requires_tr_astronomy_5"
+			has_tradition = tr_astronomy_5
+		}
+	
+	modifier = {
+			country_resource_physics_research_mult = 0.20
+			country_resource_minerals_mult = 0.10
+			category_particles_research_speed_mult = 0.10
+			country_leader_cap = 5
+			country_resource_unity_mult = 0.1
+	}
+
+	potential = {
+		NOT = {
+			has_ascension_perk = ap_transmutation
+		}
+	}
+	
+	ai_weight = {
+		factor = 200
+		modifier = {
+			factor = 0
+			NOT = { has_ethic = ethic_fanatic_materialist }
+		}
+	}
+}
+
+################################################################################
+# Astrology
+################################################################################
+
+ap_clairvoyance = {
+	possible = {
+			fail_text = "requires_tr_astrology_5"
+			has_tradition = tr_astrology_5
+		}
+	
+	modifier = {
+			country_resource_society_research_mult = 0.20
+			num_tech_alternatives_add = 2
+			category_psionics_research_speed_mult = 0.10
+			country_leader_cap = 5
+			country_resource_unity_mult = 0.1
+	}
+
+	potential = {
+		NOT = {
+			has_ascension_perk = ap_clairvoyance
+		}
+	}
+	
+	ai_weight = {
+		factor = 200
+		modifier = {
+			factor = 0
+			NOT = { has_ethic = ethic_fanatic_spiritualist }
+		}
+	}
+}
+
+################################################################################
+# Consonance
+################################################################################
+
+ap_pestilence = {
+	possible = {
+		AND = {
+			fail_text = "requires_tr_consonance_5"
+			has_tradition = tr_consonance_5
+			fail_text = "requires_tr_consonance_3"
+			has_tradition = tr_consonance_3
+		}
+	}
+		
+	
+	modifier = {
+			shipsize_colonizer_build_cost_mult = -0.6
+			shipsize_colonizer_construction_speed_mult = 2
+			country_colony_influence_cost_mult = -0.5
+			country_core_sector_system_cap = 10
+			country_sector_cap_add = -3
+	}
+
+	potential = {
+		NOT = {
+			has_ascension_perk = ap_pestilence
+		}
+	}
+	
+	ai_weight = {
+		factor = 200
+		modifier = {
+			factor = 0
+			NOT = { has_ethic = ethic_hive_mind }
+		}
+	}
+}

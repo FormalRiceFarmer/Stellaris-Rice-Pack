@@ -1,0 +1,47 @@
+modifier_plentiful_traditions_ionized_excavation = {
+    icon = "gfx/interface/icons/planet_modifiers/pm_ionized_excavation.dds"
+}
+
+modifier_plentiful_traditions_overcharge = {
+    icon = "gfx/interface/icons/planet_modifiers/pm_overcharge.dds"
+}
+
+modifier_plentiful_traditions_plentiful_deeds = {
+    pop_happiness = 0.05
+    icon = "gfx/interface/icons/planet_modifiers/pm_plentiful_deeds.dds"
+}
+
+modifier_plentiful_traditions_false_flag = {
+	planet_unrest_add = 25
+	icon_frame = 3
+	icon = "gfx/interface/icons/planet_modifiers/pm_unrest.dds"
+}
+
+modifier_plentiful_traditions_locust_swarm = {
+	tile_resource_food_mult = -0.1
+	icon_frame = 3
+	icon = "gfx/interface/icons/planet_modifiers/pm_starvation.dds"
+}
+
+modifier_plentiful_traditions_sabotage = {
+	all_technology_research_speed = -0.1
+	icon_frame = 3
+	icon = "gfx/interface/icons/planet_modifiers/pm_sabotage_random.dds"
+}
+
+modifier_plentiful_traditions_signal_of_fright_positive = {
+    pop_happiness = 0.05
+    icon = "gfx/interface/icons/planet_modifiers/pm_signal_of_fright_positive.dds"
+}
+
+modifier_plentiful_traditions_signal_of_fright_negative = {
+	planet_unrest_add = 25
+    pop_happiness = -0.10
+    icon = "gfx/interface/icons/planet_modifiers/pm_signal_of_fright_negative.dds"
+}
+
+modifier_plentiful_traditions_toxic_plague = {
+	pop_growth_speed = -0.15
+	icon_frame = 3
+	icon = "gfx/interface/icons/planet_modifiers/pm_toxic_plague.dds"
+}

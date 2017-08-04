@@ -1,0 +1,145 @@
+﻿l_russian:
+
+PERKS_NEW:0 "§YСОВЕРШЕНСТВО§"
+
+################################################################
+# BASTION
+################################################################
+
+ tradition_bastion:0 "Бастион"
+ tradition_bastion_desc:0 "Чтобы защитить себя, мы должны возвести неприступные стены."
+ tr_bastion_adopt:0 "Традиции Бастиона"
+ tr_bastion_adopt_desc:0 "$tradition_bastion_desc$\n\n$tr_bastion_adopt_effect$\n\n$tr_bastion_finish_effect$"
+ tr_bastion_adopt_effect:0 "§E$TRADITIONS_ADOPT$:§!\n§Y$shipclass_military_station_build_cost_mult$§! снижается на §G-15%§!."
+
+ tr_bastion_finish:0 "Завершение Традиций Бастиона"
+ tr_bastion_finish_effect:0 "§E$TRADITIONS_FINISH$:§!\nПриняв все $tr_bastion_adopt$ мы увеличим §Y$MOD_COUNTRY_BORDER_MULT$§! на §G+20%§!."
+ 
+ tr_bastion_1:0 "Укрепление Станций"
+ tr_bastion_1_desc:0 "§Y$shipclass_military_station_damage_mult$§! повышается на §G+10%§!,\n§Y$shipclass_military_station_hit_points_mult$§! увеличивается на §G+33%§!."
+ tr_bastion_1_delayed:0 "Военные станции - первая линия обороны в космосе. Поэтому мы должны обеспечить их способность противостоять вражескому огню и ответить ударом на удар."
+ 
+ tr_bastion_2:0 "Зашифрованные Директивы"
+ tr_bastion_2_desc:0 "§Y$MOD_COUNTRY_EDICT_INFLUENCE_COST$§! снижается на §G-10%§!,\n§Y$MOD_COUNTRY_EDICT_LENGTH_MULT$§! увеличиватся на §G+15%§!."
+ tr_bastion_2_delayed:0 "Правительственный канал информации всегда должен быть зашифрован, чтобы обеспечить дополнительную защиту от взлома и нежелательного влияния. Такие меры позволят нам быстро и без каких-либо помех выполнять любые задачи."
+ 
+ tr_bastion_3:0 "Мобилизация Армий"
+ tr_bastion_3_desc:0 "§Y$MOD_ARMY_BUILD_SPEED_MULT$§! быстрее на §G+25%§! и §Y$MOD_PLANET_ARMY_BUILD_COST_MULT$§! дешевле на §G-15%§!."
+ tr_bastion_3_delayed:0 "Чтобы подготовиться к внезапным нападениям, наши наземные силы должны стать бдительнее и мобильнее."
+ 
+ tr_bastion_4:0 "Прочные Корабли"
+ tr_bastion_4_desc:0 "§Y$MOD_SHIP_HITPOINTS_MULT$§! и §Y$MOD_SHIP_ARMOR_MULT$§! увеличены на §G+15%§!."
+ tr_bastion_4_delayed:0 "Разрушенная техника не может принести пользы на поле боя, поэтому важно разрабатывать космические аппараты с дополнительными уровнями защиты и живучести."
+ 
+ tr_bastion_5:0 "Генератор Черного Дня"
+ tr_bastion_5_desc:1 "§Y$MOD_PLANET_FORTIFICATION_STRENGTH$§! повышается на §G+125%§!.\n\n§HСооружение:§! $add_traditions_building_black_day_generator$"
+ tr_bastion_5_delayed:0 "Наши планеты - это фундамент нашей империи: потерять ключевой мир равнозначно поражению. Помня об этом, наши инженеры смогли создать планетарный щит-генератор, достигнув совершенно нового уровня планетарных укреплений."
+ 
+################################################################
+# MACHINERY
+################################################################
+
+ tradition_machinery:0 "Машинерия"
+ tradition_machinery_desc:0 "Благодаря искусству создания машин и роботов мы приведем нашу цивилизацию к лучшему будущему."
+ tr_machinery_adopt:0 "Традиции Машинерии"
+ tr_machinery_adopt_desc:0 "$tradition_machinery_desc$\n\n$tr_machinery_adopt_effect$\n\n$tr_machinery_finish_effect$"
+ tr_machinery_adopt_effect:0 "§E$TRADITIONS_ADOPT$:§!\n§Y$MOD_COUNTRY_ROBOT_BUILD_SPEED_MULT$§! повышается на §G+10%§!."
+
+ tr_machinery_finish:0 "Завершение Традиций Машинерии"
+ tr_machinery_finish_effect:0 "§E$TRADITIONS_FINISH$:§!\nПриняв все $tr_machinery_adopt$ мы повысим §Y$category_computing_research_speed_mult$§! на §G+10%§!."
+ 
+ tr_machinery_1:0 "Сборочные Линии"
+ tr_machinery_1_desc:0 "§Y$MOD_PLANET_BUILDING_BUILD_SPEED_MULT$§! увеличивается на §G+25%§!."
+ tr_machinery_1_delayed:0 "Распределяя прозводство на несколько больших сборочных линий, можно значительно ускорить строительство объектов."
+ 
+ tr_machinery_2:0 "Чипы Церебральной Сети"
+ tr_machinery_2_desc:0 "§Y$MOD_COUNTRY_NUM_TECH_ALTERNATIVES_ADD$§! увеличено на §G1§! и §Y$MOD_LEADER_SPECIES_EXP_GAIN$§! быстрее на §G+10%§!."
+ tr_machinery_2_delayed:0 "Технология чипов, внедряемых в мозг ведущих ученых и лидеров для получения всеобъемлющего доступа к информационной сети, блестяще прошла все испытания. Теперь мы сможем как ускорить процесс обучения для отдельных лиц, так и задать более широкий диапазон научного поиска."
+ 
+ tr_machinery_3:0 "Программа Оптимизации Роботов"
+ tr_machinery_3_desc:0 "§Y$MOD_POP_ROBOT_PRODUCTION_OUTPUT$§! повышается на §G+10%§!,\n§YУрон против Восстания Машин§! увеличен на §G+10%§!."
+ tr_machinery_3_delayed:0 "Оптимизация рабочих алгоритмов всей робототехники может стать ключом к богатству для нашей державы, а также - улучшить наше понимание машинного сознания."
+ 
+ tr_machinery_4:0 "Медицинские Нанороботы"
+ tr_machinery_4_desc:0 "§Y$MOD_POP_GROWTH_SPEED$§! увеличивается на §G+10%§!."
+ tr_machinery_4_delayed:0 "Наши новейшие изобретения в области робототехники и нанотехнологий позволили создать медицинские нано-машины. С их помощью можно лечить травмы без прямого вмешательства, тем самым значительно повышая уровень живучести населения."
+ 
+ tr_machinery_5:0 "Нано-Инженерия"
+ tr_machinery_5_desc:1 "§Y$MOD_LEADER_AGE$§! возрастает на §G20§!,\n§Y$MOD_ARMY_DAMAGE_MULT$§! повышается на §G+10%§!,\n§Y$tile_resource_minerals_mult$§! увеличивается на §G+5%§!."
+ tr_machinery_5_delayed:0 "В то время, как мы достигаем высшего мастерства в машинной инженерии и получаем возможность улучшать существа на молекулярном уровне, появляется возможность незаметно улучшить наши тела."
+ 
+################################################################
+# GENESIS
+################################################################
+
+ tradition_genesis:0 "Генезис"
+ tradition_genesis_desc:0 "Прогресс генной инженерии делает вполне возможным контроль над эволюцией нашего вида."
+ tr_genesis_adopt:0 "Традиции Генетики"
+ tr_genesis_adopt_desc:0 "$tradition_genesis_desc$\n\n$tr_genesis_adopt_effect$\n\n$tr_genesis_finish_effect$"
+ tr_genesis_adopt_effect:0 "§E$TRADITIONS_ADOPT$:§!\n§Y$category_biology_research_speed_mult$§! увеличивается на §G+10%§!."
+
+ tr_genesis_finish:0 "Завершение Традиций Генетики"
+ tr_genesis_finish_effect:0 "§E$TRADITIONS_FINISH$:§!\nЗавершив все $tr_genesis_adopt$ мы уменьшим §Y$MOD_POP_FOOD_REQ$§! на §G-10%§!."
+ 
+ tr_genesis_1:0 "Радиационные Исследования"
+ tr_genesis_1_desc:0 "§Y$pc_nuked_habitability$§! повышается на §G+10%§!,\n§Y$category_materials_research_speed_mult$§! увеличивается на §G+5%§!."
+ tr_genesis_1_delayed:0 "Радиация может служить различным целям. И хотя это часто считается опасным и нестабильным, существуют способы использовать излучение для контролируемых мутаций и исследований материалов."
+ 
+ tr_genesis_2:0 "Натуральные Стимуляторы"
+ tr_genesis_2_desc:0 "§Y$MOD_POP_HAPPINESS$§! повышается на §G+5%§!,\n§Y$tile_resource_energy_mult$§! улучшается на §G+5%§!."
+ tr_genesis_2_delayed:0 "Некоторые вещества могут быть весьма полезными и относительно безвредными при использовании в небольших дозах - для повышения производительности, или просто для удовольствия."
+ 
+ tr_genesis_3:0 "Охрана Природы"
+ tr_genesis_3_desc:0 "§Y$MOD_POP_ENVIRONMENT_TOLERANCE$§! повышается на §G+5%§! и §Y$MOD_POP_CONSUMER_GOODS_MULT$§! уменьшается на §G-10%§!."
+ tr_genesis_3_delayed:0 "Бережное и нежное отношение к природе должно быть основой нашего общества."
+ 
+ tr_genesis_4:0 "Генетические Улучшения"
+ tr_genesis_4_desc:0 "§Y$MOD_COUNTRY_TRAIT_POINTS$§! увеличено на §G2§!."
+ tr_genesis_4_delayed:0 "Благодаря исследованиям и целенаправленным усилиям мы можем найти больше способов улучшить нашу ДНК."
+ 
+ tr_genesis_5:0 "Исследования Стагнации"
+ tr_genesis_5_desc:1 "§Y$MOD_POP_GOVERNMENT_ETHIC_ATTRACTION$§! повышается на §G+5%§! и §Y$tile_resource_unity_mult$§! увеличивается на §G+5%§!."
+ tr_genesis_5_delayed:0 "Падшие Империи являются примером того, что даже самые могущественные могут входить в периоды застоя. Чтобы избежать такой судьбы, мы должны изучить причины и способы предотвращения стагнации."
+ 
+################################################################
+# ETHER
+################################################################
+
+ tradition_ether:0 "Эфир"
+ tradition_ether_desc:0 "Наша наука доказала, что существует так называемое «Царство Духов». Даже если мы не сможем сами достичь его, необходимо изучать новую реальность."
+ tr_ether_adopt:0 "Эфирные Традиции"
+ tr_ether_adopt_desc:0 "$tradition_ether_desc$\n\n$tr_ether_adopt_effect$\n\n$tr_ether_finish_effect$"
+ tr_ether_adopt_effect:0 "§E$TRADITIONS_ADOPT$:§!\n§Y$category_psionics_research_speed_mult$§! увеличится на §G+10%§!."
+
+ tr_ether_finish:0 "Завершение Эфирных Традиций"
+ tr_ether_finish_effect:0 "§E$TRADITIONS_FINISH$:§!\nЗавершив все $tr_ether_adopt$ мы получим прирост §Y$country_resource_influence_mult$§! на §G+10%§!."
+ 
+ tr_ether_1:0 "Пси-Волны"
+ tr_ether_1_desc:0 "§Y$country_resource_influence_add$§! увеличивается на §G3§!."
+ tr_ether_1_delayed:0 "Наши исследования показывают, что реальность пронизана волнами очень специфического характера - «Пси-волны», как мы начали их называть. Их излучают все живые существа, и кажется, мы можем использовать волны для того, чтобы влиять на живых существ."
+ 
+ tr_ether_2:0 "Групповые Медитации"
+ tr_ether_2_desc:0 "§Y$max_influence$§! увеличивается на §G200§! и §Y$MOD_COUNTRY_FACTION_INFLUENCE_ADD$§! увеличивается на §G2§!."
+ tr_ether_2_delayed:0 "Кажется, что «Духовное Царство» легче приоткрыть группой умов, а не отдельным разумом. Таким образом, было бы полезно поощрять совместную работу и создавать связи, чтобы влиять на другой мир."
+ 
+ tr_ether_3:0 "Договор с Малыми Духами"
+ tr_ether_3_desc:1 "§HУказ:§! $edict_add_traditions_pact_with_lesser_spirits$"
+ tr_ether_3_delayed:0 "Пелена требует значительных усилий и способностей для контакта, однако меньшие связи могут быть установлены относительно легко."
+ 
+ tr_ether_4:0 "Познание Щитов"
+ tr_ether_4_desc:0 "§Y$MOD_SHIP_SHIELD_HP_MULT$§! увеличивается на §G+15%§!."
+ tr_ether_4_delayed:0 "Используя знания о «Духовном Царстве», можно значительно улучшить щиты наших кораблей."
+ 
+ tr_ether_5:0 "Осколки Творения"
+ tr_ether_5_desc:0 "§YУрон космическим существам§! увеличен на §G+15%§!."
+ tr_ether_5_delayed:0 "Каждое существо - осколок, отраженный в другом мире словно в зеркале. И чем больше существо, тем больше его отражение. И тем оно уязвимее".
+  
+ ################################################################
+# BUILDINGS AND EDICTS
+################################################################
+ 
+ add_traditions_building_black_day_generator:0 "Генератор Черного Дня" 
+ add_traditions_building_black_day_generator_desc:0 "Это монструозное сооружение порождает щит вокруг планеты, настолько массивный, что солнечный свет едва проходит сквозь него, делая дни почти такими темными, как ночи. Недостатком такого уровня защиты является то, что строительство генератора и его работа требуют больших затрат энергии."
+ 
+ edict_add_traditions_pact_with_lesser_spirits:0 "Договор с Малыми Духами" 
+ edict_add_traditions_pact_with_lesser_spirits_desc:0 "Открывает пси-портал в Пелену на этой планете, позволяя напрямую взаимодействовать с Малыми Духами. Хотя иногда это может быть вредно, в целом результаты оправдывают риск."

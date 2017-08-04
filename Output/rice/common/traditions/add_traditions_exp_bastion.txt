@@ -1,0 +1,107 @@
+@cost = 56
+
+tr_bastion_adopt = {
+	cost = { unity = @cost }
+	modifier = {
+		shipclass_military_station_build_cost_mult = -0.15
+	}
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			has_ethic = ethic_xenophobe
+		}
+		modifier = {
+			factor = 3
+			has_ethic = ethic_fanatic_xenophobe
+		}
+		modifier = {
+			factor = 1
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_militarist
+		}		
+	}
+}
+
+tr_bastion_finish = {
+	modifier = {
+		country_border_mult = 0.2
+		ascension_perks_add = 1
+	}
+}
+
+# Fortified Stations
+tr_bastion_1 = {
+	cost = { unity = @cost }
+	modifier = {
+		shipclass_military_station_damage_mult = 0.10
+		shipclass_military_station_hit_points_mult = 0.33
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+# Encrypted Directives
+tr_bastion_2 = {
+	cost = { unity = @cost }
+	modifier = {
+		edict_influence_cost = -0.10
+		edict_length_mult = 0.15
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+# Ground Forces Mobilization
+tr_bastion_3 = {
+	cost = { unity = @cost }
+	
+	modifier = {
+		planet_army_build_speed_mult = 0.25
+		planet_army_build_cost_mult = -0.15
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+# Durable Ships
+tr_bastion_4 = {
+	cost = { unity = @cost }
+	possible = {
+		has_tradition = tr_bastion_1
+		has_tradition = tr_bastion_2
+	}
+	modifier = {
+		ship_hitpoints_mult = 0.15
+		ship_armor_mult = 0.15
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+# Planetary Shielding
+tr_bastion_5 = {
+	cost = { unity = @cost }
+	possible = {
+		has_tradition = tr_bastion_3
+		has_tradition = tr_bastion_2
+	}
+	
+	modifier = {
+		planet_fortification_strength = 1.25
+	}
+	#unlocks Black Day Generator
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+

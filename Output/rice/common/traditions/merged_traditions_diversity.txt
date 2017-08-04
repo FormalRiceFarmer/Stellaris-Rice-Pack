@@ -1,0 +1,103 @@
+@cost = 56
+
+tr_diversity_adopt = {
+	cost = { unity = @cost }
+	possible = {
+		has_ethic = ethic_fanatic_xenophile
+		NOT = {
+			has_tradition = tr_identity_adopt
+		}
+	}		
+	
+	modifier = {
+		pop_ethic_xenophile_attraction_mult = 0.25
+	}
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 300
+			has_ethic = ethic_fanatic_xenophile
+		}		
+	}
+}
+
+tr_diversity_finish = {
+	modifier = {
+		ascension_perks_add = 1
+	}
+}
+
+#Xenophiliac Philosophy
+tr_diversity_1 = {
+	cost = { unity = @cost }
+
+	modifier = {
+		diplomacy_influence_cost = -0.125
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+#Xenophiliac Governance
+tr_diversity_2 = {
+	cost = { unity = @cost }
+	
+	modifier = {
+		country_resource_influence_add = 1
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+#Xenophiliac Principle
+tr_diversity_3 = {
+	cost = { unity = @cost }
+	possible = {
+		has_tradition = tr_diversity_1
+	}
+	
+### Unlock Building Cultural Exchange Center
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+#Xenophiliac Regency
+tr_diversity_4 = {
+	cost = { unity = @cost }
+	possible = {
+		has_tradition = tr_diversity_2
+	}
+	
+### Unlocks Monument
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+#Xenophiliac Legacy
+tr_diversity_5 = {
+	cost = { unity = @cost }
+	possible = {
+		has_tradition = tr_diversity_3
+		has_tradition = tr_diversity_4
+	}
+		
+	modifier = {
+		country_resource_unity_mult = 0.1
+		
+	}
+	
+### Unlocks Custom Perk
+	
+	ai_weight = {
+		factor = 1000
+	}
+}

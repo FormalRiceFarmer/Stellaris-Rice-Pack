@@ -1,0 +1,26 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_tr_purity_1"
+		textureFile = "gfx/interface/icons/traditions/tradition_purity_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_purity_2"
+		textureFile = "gfx/interface/icons/traditions/tradition_purity_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_purity_3"
+		textureFile = "gfx/interface/icons/traditions/tradition_purity_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_purity_4"
+		textureFile = "gfx/interface/icons/traditions/tradition_purity_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_purity_5"
+		textureFile = "gfx/interface/icons/traditions/tradition_purity_5.dds"
+	}
+}

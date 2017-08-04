@@ -1,0 +1,121 @@
+@cost = 56
+
+tr_benevolence_adopt = {
+	cost = { unity = @cost }
+	modifier = {
+		tradition_cost_num_xenos_mult = -0.15
+	}
+	possible = {
+		NOT = {
+			has_tradition = tr_purity_adopt
+		}
+	}	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			has_ethic = ethic_xenophile
+		}
+		modifier = {
+			factor = 3
+			has_ethic = ethic_fanatic_xenophile
+		}
+		modifier = {
+			factor = 2
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 3
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = -2
+			OR = {
+				has_ethic = ethic_militarist
+				has_ethic = ethic_fanatic_militarist
+				has_ethic = ethic_authoritarian
+				has_ethic = ethic_fanatic_authoritarian
+			}
+		}
+		modifier = {
+			factor = -5
+			OR = {
+				has_ethic = ethic_xenophobe
+				has_ethic = ethic_fanatic_xenophobe
+			}
+		}
+	}
+}
+
+tr_benevolence_finish = {
+	modifier = {
+		tile_resource_unity_mult = 0.15
+		ascension_perks_add = 1
+	}
+}
+
+tr_benevolence_1 = {
+	cost = { unity = @cost }
+	modifier = {
+		pop_ethic_xenophile_attraction_mult = 0.15
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_benevolence_2 = {
+	cost = { unity = @cost }
+	modifier = {
+		category_statecraft_research_speed_mult = 0.2
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_benevolence_3 = {
+	cost = { unity = @cost }
+	possible = {
+		has_tradition = tr_benevolence_1
+	}
+	modifier = {
+		pop_migration_speed = 0.3
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_benevolence_4 = {
+	cost = { unity = @cost }
+	possible = {
+		has_tradition = tr_benevolence_2
+	}
+	modifier = {
+		country_leader_pool_size = 2
+		country_leader_cap = 1
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_benevolence_5 = {
+	cost = { unity = @cost }
+	possible = {
+		has_tradition = tr_benevolence_3
+		has_tradition = tr_benevolence_4
+	}
+	modifier = {
+		planet_migration_xeno_pull = 0.3
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}

@@ -1,0 +1,44 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_adopted_tradition_category_bg_evolution"
+		textureFile = "gfx/interface/traditions/adopted_tradition_category_bg_evolution.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_tradition_hex_bg_evolution"
+		textureFile = "gfx/interface/traditions/tradition_hex_bg_evolution.dds"
+	}
+	
+	corneredTileSpriteType = {
+		name = "GFX_tradition_category_tile_evolution"
+		textureFile = "gfx/interface/tiles/tradition_category_tile_evolution.dds"
+		borderSize = { x=140 y=140 }
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+
+	spriteType = {
+		name = "GFX_tr_evolution_1"
+		textureFile = "gfx/interface/icons/traditions/tradition_evolution_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_evolution_2"
+		textureFile = "gfx/interface/icons/traditions/tradition_evolution_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_evolution_3"
+		textureFile = "gfx/interface/icons/traditions/tradition_evolution_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_evolution_4"
+		textureFile = "gfx/interface/icons/traditions/tradition_evolution_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_evolution_5"
+		textureFile = "gfx/interface/icons/traditions/tradition_evolution_5.dds"
+	}
+}

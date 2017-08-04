@@ -1,0 +1,15 @@
+d_plentiful_traditions_m1_deposit = {
+	resources = { minerals = 1 }
+	station = shipclass_mining_station
+	orbital_weight = {
+		weight = 0
+	}
+}
+
+d_plentiful_traditions_miners_deposit = {
+	resources = { minerals = 0 }
+	station = shipclass_mining_station
+	orbital_weight = {
+		weight = 0
+	}
+}

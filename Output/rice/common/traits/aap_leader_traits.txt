@@ -1,0 +1,98 @@
+
+trait_dust_enchanted_ruler = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/extra_leader_traits/trait_dust_enchanted.dds"
+	immortal_leaders = yes
+	#self_modifier = {
+	#	leader_influence_cost = 3.00
+	#}
+	modifier = {
+		pop_government_ethic_attraction = 0.2
+		country_resource_influence_add = 1
+		country_resource_unity_mult = 0.15
+		navy_size_mult = 0.15
+		pop_happiness = 0.10
+	}
+	leader_trait = yes
+	leader_class = { ruler }
+	initial = no
+	randomized = no
+}
+
+trait_dust_enchanted_governor = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/extra_leader_traits/trait_dust_enchanted.dds"
+	immortal_leaders = yes
+	self_modifier = {
+		leader_influence_cost = 3.00
+	}
+	modifier = {
+		planet_unrest_add = -30
+		tile_resource_energy_mult = 0.25
+		tile_resource_minerals_mult = 0.25
+		planet_building_build_speed_mult = 0.5
+	}
+	leader_trait = yes
+	leader_class = { governor }
+	initial = no
+	randomized = no
+}
+
+trait_dust_enchanted_scientist = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/extra_leader_traits/trait_dust_enchanted.dds"
+	immortal_leaders = yes
+	self_modifier = {
+		leader_influence_cost = 3.00
+	}
+	modifier = {
+		all_technology_research_speed = 0.2
+		science_ship_survey_speed = 0.3
+		ship_anomaly_fail_risk = -0.15
+	}
+	leader_trait = yes
+	leader_class = { scientist }
+	initial = no
+	randomized = no
+}
+
+trait_dust_enchanted_general = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/extra_leader_traits/trait_dust_enchanted.dds"
+	immortal_leaders = yes
+	self_modifier = {
+		leader_influence_cost = 3.00
+	}
+	modifier = {
+		army_morale = 0.4
+		army_damage_mult = 0.4
+		army_attack_morale_mult = 0.4
+		army_health = 0.4
+	}
+	leader_trait = yes
+	leader_class = { general }
+	initial = no
+	randomized = no
+}
+
+trait_dust_enchanted_admiral = {
+	cost = 0
+	modification = no
+	icon = "gfx/interface/icons/traits/extra_leader_traits/trait_dust_enchanted.dds"
+	immortal_leaders = yes
+	self_modifier = {
+		leader_influence_cost = 3.00
+	}
+	modifier = {
+		ship_evasion_mult = 0.3
+		ship_fire_rate_mult = 0.3
+	}
+	leader_trait = yes
+	leader_class = { admiral }
+	initial = no
+	randomized = no
+}

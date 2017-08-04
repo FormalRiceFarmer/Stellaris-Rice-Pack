@@ -1,0 +1,89 @@
+@cost = 56
+
+tr_statecraft_adopt = {
+	cost = { unity = @cost }	
+	
+	modifier = {
+		leader_influence_cost = -0.10
+	}
+	
+	ai_weight = {
+		factor = 10	
+	}
+}
+
+tr_statecraft_finish = {
+	modifier = {
+		country_government_civic_points_add = 2
+		ascension_perks_add = 1
+	}
+}
+# Censorship
+tr_statecraft_1 = {
+	cost = { unity = @cost }
+
+	modifier = {
+		country_resource_influence_add = 1
+		country_unrest_unhappy_slave_effect_mult = -0.10
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+# Public Debates
+tr_statecraft_2 = {
+	cost = { unity = @cost }
+	possible = {
+		has_tradition = tr_statecraft_1
+	}
+	
+	modifier = {
+		faction_influence_mult = 0.20
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+# Government Propaganda
+tr_statecraft_3 = {
+	cost = { unity = @cost }
+	modifier = {
+		pop_government_ethic_attraction = 0.15
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+# Large State Apparatus
+tr_statecraft_4 = {
+	cost = { unity = @cost }
+	possible = {
+		has_tradition = tr_statecraft_3
+	}
+	modifier = {
+		country_leader_cap = 3
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+# World Control
+tr_statecraft_5 = {
+	cost = { unity = @cost }
+	possible = {
+		has_tradition = tr_statecraft_3
+	}
+	
+	modifier = {
+		country_border_mult = 0.1
+		country_core_sector_system_cap = 1
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}

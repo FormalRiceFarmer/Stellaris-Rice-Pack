@@ -1,4 +1,4 @@
-﻿NAI = {
+NAI = {
 POP_FOOD_MIN = 4
 }
 

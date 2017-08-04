@@ -1,0 +1,69 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_adopted_tradition_category_bg_consonance"
+		textureFile = "gfx/interface/traditions/adopted_tradition_category_bg_consonance.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_tradition_hex_bg_consonance"
+		textureFile = "gfx/interface/traditions/tradition_hex_bg_consonance.dds"
+	}
+	
+	corneredTileSpriteType = {
+		name = "GFX_tradition_category_tile_consonance"
+		textureFile = "gfx/interface/tiles/tradition_category_tile_consonance.dds"
+		borderSize = { x=140 y=140 }
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+
+	spriteType = {
+		name = "GFX_tr_consonance_1"
+		textureFile = "gfx/interface/icons/traditions/tradition_consonance_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_consonance_2"
+		textureFile = "gfx/interface/icons/traditions/tradition_consonance_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_consonance_3"
+		textureFile = "gfx/interface/icons/traditions/tradition_consonance_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_consonance_4"
+		textureFile = "gfx/interface/icons/traditions/tradition_consonance_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_consonance_5"
+		textureFile = "gfx/interface/icons/traditions/tradition_consonance_5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_tr_consonance_6"
+		textureFile = "gfx/interface/icons/traditions/beta.dds"
+	}
+		
+	spriteType = {
+		name = "GFX_tr_consonance_7"
+		textureFile = "gfx/interface/icons/traditions/beta.dds"
+	}
+		
+	spriteType = {
+		name = "GFX_tr_consonance_8"
+		textureFile = "gfx/interface/icons/traditions/beta.dds"
+	}
+		
+	spriteType = {
+		name = "GFX_tr_consonance_9"
+		textureFile = "gfx/interface/icons/traditions/beta.dds"
+	}
+		
+	spriteType = {
+		name = "GFX_tr_consonance_10"
+		textureFile = "gfx/interface/icons/traditions/beta.dds"
+	}
+}

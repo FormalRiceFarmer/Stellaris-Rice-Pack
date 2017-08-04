@@ -1,0 +1,15 @@
+namespace = plentiful_traditions_plentiful_deeds_pedict
+
+planet_event = {
+    id = plentiful_traditions_plentiful_deeds_pedict.1
+    
+    hide_window = yes
+    is_triggered_only = yes
+    
+	immediate = {
+		add_modifier = {
+			modifier = "modifier_plentiful_traditions_plentiful_deeds"
+			days = 720
+		}
+	}
+}

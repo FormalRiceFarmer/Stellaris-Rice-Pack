@@ -1,0 +1,101 @@
+@cost = 56
+
+tr_malice_adopt = {
+	cost = { unity = @cost }
+	modifier = {
+		country_insult_efficiency = 0.5
+	}
+	possible = {
+		NOT = {
+			has_tradition = tr_aspiration_adopt
+		}
+	}
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			has_ethic = ethic_authoritarian
+		}
+		modifier = {
+			factor = 3
+			has_ethic = ethic_fanatic_authoritarian
+		}
+		modifier = {
+			factor = -5
+			has_ethic = ethic_hive_mind
+		}
+	}
+}
+
+tr_malice_finish = {
+	modifier = {
+
+		ascension_perks_add = 1
+	}
+}
+
+tr_malice_1 = {
+	cost = { unity = @cost }
+	modifier = {
+		country_unrest_unhappy_slave_effect_mult = -0.15
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_malice_2 = {
+	cost = { unity = @cost }
+	modifier = {
+		rivalry_influence_gain = 0.3
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_malice_3 = {
+	cost = { unity = @cost }
+	possible = {
+		has_tradition = tr_malice_1
+	}
+	modifier = {
+		slave_food_output = 0.1
+		slave_mineral_output = 0.1
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_malice_4 = {
+	cost = { unity = @cost }
+	possible = {
+		has_tradition = tr_malice_2
+	}
+	modifier = {
+		faction_influence_mult = 0.25
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_malice_5 = {
+	cost = { unity = @cost }
+	possible = {
+		has_tradition = tr_malice_3
+		has_tradition = tr_malice_4
+	}
+	modifier = {
+		max_rivalries = 3
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}

@@ -1,0 +1,44 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_adopted_tradition_category_bg_aspiration"
+		textureFile = "gfx/interface/traditions/adopted_tradition_category_bg_aspiration.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_tradition_hex_bg_aspiration"
+		textureFile = "gfx/interface/traditions/tradition_hex_bg_aspiration.dds"
+	}
+	
+	corneredTileSpriteType = {
+		name = "GFX_tradition_category_tile_aspiration"
+		textureFile = "gfx/interface/tiles/tradition_category_tile_aspiration.dds"
+		borderSize = { x=140 y=140 }
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+
+	spriteType = {
+		name = "GFX_tr_aspiration_1"
+		textureFile = "gfx/interface/icons/traditions/tradition_aspiration_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_aspiration_2"
+		textureFile = "gfx/interface/icons/traditions/tradition_aspiration_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_aspiration_3"
+		textureFile = "gfx/interface/icons/traditions/tradition_aspiration_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_aspiration_4"
+		textureFile = "gfx/interface/icons/traditions/tradition_aspiration_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_aspiration_5"
+		textureFile = "gfx/interface/icons/traditions/tradition_aspiration_5.dds"
+	}
+}

@@ -1,0 +1,103 @@
+@cost = 56
+
+tr_astronomy_adopt = {
+	cost = { unity = @cost }
+	possible = {
+		has_ethic = ethic_fanatic_materialist
+		NOT = {
+			has_tradition = tr_astrology_adopt
+		}
+	}		
+	
+	modifier = {
+		pop_ethic_materialist_attraction_mult = 0.25
+	}
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 300
+			has_ethic = ethic_fanatic_materialist
+		}
+	}
+}
+
+tr_astronomy_finish = {
+	modifier = {
+		ascension_perks_add = 1
+	}
+}
+
+#Materialistic Philosophy
+tr_astronomy_1 = {
+	cost = { unity = @cost }
+
+	modifier = {
+		country_robot_maintenance_mult = -0.05
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+#materialistic Governance
+tr_astronomy_2 = {
+	cost = { unity = @cost }
+	
+	modifier = {
+		country_resource_physics_research_add = 5
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+#Materialistic Principle
+tr_astronomy_3 = {
+	cost = { unity = @cost }
+	possible = {
+		has_tradition = tr_astronomy_1
+	}
+	
+### Unlock Building Particle Accelerator
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+#Materialistic Regency
+tr_astronomy_4 = {
+	cost = { unity = @cost }
+	possible = {
+		has_tradition = tr_astronomy_2
+	}
+	
+### Unlocks Monument
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+#Materialistic Legacy
+tr_astronomy_5 = {
+	cost = { unity = @cost }
+	possible = {
+		has_tradition = tr_astronomy_3
+		has_tradition = tr_astronomy_4
+	}
+		
+	modifier = {
+		country_resource_unity_mult = 0.1
+		
+	}
+	
+### Unlocks Custom Perk
+	
+	ai_weight = {
+		factor = 1000
+	}
+}

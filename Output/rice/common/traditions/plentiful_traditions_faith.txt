@@ -1,0 +1,93 @@
+@cost = 56
+
+tr_faith_adopt = {
+	cost = { unity = @cost }
+	modifier = {
+		pop_government_ethic_attraction = 0.15
+	}
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			has_ethic = ethic_spiritualist
+		}
+		modifier = {
+			factor = 3
+			has_ethic = ethic_fanatic_spiritualist
+		}			
+	}
+}
+
+tr_faith_finish = {
+	modifier = {
+# temple
+		country_resource_influence_add = 1
+		ascension_perks_add = 1
+	}
+}
+
+tr_faith_5 = {
+	cost = { unity = @cost }
+	possible = {
+		has_tradition = tr_faith_3
+		has_tradition = tr_faith_2
+	}
+	modifier = {
+		pop_government_ethic_attraction = 0.10
+		faction_influence_mult = 0.20
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_faith_2 = {
+	cost = { unity = @cost }
+	modifier = {
+		edict_length_mult = 0.15
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_faith_1 = {
+	cost = { unity = @cost }
+	modifier = {
+		planet_sensor_range_mult = 0.25
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_faith_4 = {
+	cost = { unity = @cost }
+	possible = {
+		has_tradition = tr_faith_1
+		has_tradition = tr_faith_2
+	}
+	modifier = {
+		country_resource_minerals_mult = 0.1
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_faith_3 = {
+	cost = { unity = @cost }
+	
+	modifier = {
+		edict_influence_cost = -0.10
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}

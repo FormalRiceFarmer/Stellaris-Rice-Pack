@@ -1,0 +1,45 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_adopted_tradition_category_bg_naval"
+		textureFile = "gfx/interface/traditions/adopted_tradition_category_bg_naval.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_tradition_hex_bg_naval"
+		textureFile = "gfx/interface/traditions/tradition_hex_bg_naval.dds"
+	}
+	
+	corneredTileSpriteType = {
+		name = "GFX_tradition_category_tile_naval"
+		textureFile = "gfx/interface/tiles/tradition_category_tile_naval.dds"
+		borderSize = { x=140 y=140 }
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+
+	spriteType = {
+		name = "GFX_tr_naval_1"
+		textureFile = "gfx/interface/icons/traditions/tradition_naval_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_naval_2"
+		textureFile = "gfx/interface/icons/traditions/tradition_naval_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_naval_3"
+		textureFile = "gfx/interface/icons/traditions/tradition_naval_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_naval_4"
+		textureFile = "gfx/interface/icons/traditions/tradition_naval_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_naval_5"
+		textureFile = "gfx/interface/icons/traditions/tradition_naval_5.dds"
+	}
+	
+}

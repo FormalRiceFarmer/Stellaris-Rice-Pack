@@ -1,0 +1,165 @@
+﻿l_french:
+####################################
+ # Traits
+ ####################################
+ #Handicaps
+ 
+ trait_additrait_ephemeral:0 "Ephémere"
+ trait_additrait_ephemeral_desc:0 "§LCette espèce est moins résistante que beaucoup d'autres et vit moins longtemps.§!\n"
+ 
+ trait_additrait_easily_distracted:0 "Facilement distraite"
+ trait_additrait_easily_distracted_desc:0 "§LCette espèce peut se passionner pour un sujet, mais jamais longtemps.§!\n"
+ 
+ trait_additrait_simple_minded:0 "Esprit simple"
+ trait_additrait_simple_minded_desc:0 "§LComment cette espèce fit pour atteindre l'espace, les astres se le demandent encore.§!\n"
+ 
+ trait_additrait_lazy:0 "Fainéante"
+ trait_additrait_lazy_desc:0 "§LCette espèce ne travaille jamais très dur."
+ 
+ trait_additrait_prodigal:0 "Gaspilleuse"
+ trait_additrait_prodigal_desc:0 "§LCette espèce est mauvaise en économie et dépense ses fonds pour des choses inutiles.§!\n"
+ 
+ trait_additrait_lethargic:0 "Léthargique"
+ trait_additrait_lethargic_desc:0 "§LCette espèce prend son temps et ne travaille pas trop dur. Ce sera fini un jour ou l'autre, pourquoi se presser ?§!\n"
+ 
+ trait_additrait_unfit_engineers:0 "Piètres Ingénieurs"
+ trait_additrait_unfit_engineers_desc:0 "Les membres de cette espèce ont des difficultés à saisir la plupart des concepts fondamentaux de l'ingénierie.\n"
+ 
+ trait_additrait_unfit_physicists:0 "Piètres Physiciens" 
+ trait_additrait_unfit_physicists_desc:0 "Les membres de cette espèce ont des difficultés à saisir la plupart des concepts fondamentaux de la physique théorique.\n"
+ 
+ trait_additrait_unfit_sociologists:0 "Piètres Sociologues"
+ trait_additrait_unfit_sociologists_desc:0 "Les membres de cette espèce ont des difficultés à saisir la plupart des concepts fondamentaux de la sociologie.\n"
+  
+ trait_additrait_hateful:0 "Détestable"
+ trait_additrait_hateful_desc:0 "§LLes coutumes et manières révoltantes de cette espèce incite les autres à l'éviter.\n\nCe trait réduit la croissance de la Confiance de 25%.§!\n"
+
+ trait_additrait_hunter_gatherers:0 "Chasseurs-Cueilleurs"
+ trait_additrait_hunter_gatherers_desc:0 "Cette espèce a une longue tradition consistant à vivre au gré de la nature et n'est pas habituée à l'agriculture moderne.§!\n"
+ 
+ trait_additrait_violent:0 "Violente"
+ trait_additrait_violent_desc:0 "Il y a une prédisposition génétique aux combats fraticides de cette espèce.§!\n"
+ 
+ trait_additrait_free_spirits:0 "Esprits Libres"
+ trait_additrait_free_spirits_desc:0 "Ce peuple est formé de libre penseurs et diffèrent souvent des éthiques gouvernementales.§!\n"
+ 
+ trait_additrait_iconoclastic:0 "Iconoclaste"
+ trait_additrait_iconoclastic_desc:0 "Si cette espèce ne cherche pas à renverser les institutions et idées traditionnelles, ce n'est probablement plus qu'une question de temps.§!\n"
+ 
+ trait_additrait_delicate:0 "Délicate"
+ trait_additrait_delicate_desc:0 "§LLes membres de cette espèce se blessent facilement. Ils ne sont pas capable d'affronter la douleur efficacement.§!\n"
+ 
+ trait_additrait_weak_willed:0 "Faible Volonté"
+ trait_additrait_weak_willed_desc:0 "§LCette espèce plie rapidement sous la pression.§!\n"
+ 
+ trait_additrait_very_slow_breeders:0 "Reproduction Difficile"
+ trait_additrait_very_slow_breeders_desc:0 "§LCette espèce se reproduit très lentement, ce qui ralentit la croissance de population.§!\n"
+  
+ trait_additrait_melancholic:0 "Mélancholiques"
+ trait_additrait_melancholic_desc:0 "§LLes membres de cette espèce se trouvent trop occupés par la routine journalière et ne trouvent que peu de plaisirs dans leur vie.§!\n"
+
+ ###########################################################################################################################################################
+ #Neutral
+ 
+ #trait_additrait_focused:0 "Concentrée"
+ #trait_additrait_focused_desc:0 "§LCette espèce concentre ses spécialistes sur une seule recherche à la fois.\n\nCe trait réduit d'une les alternatives de recherches.§!\n"
+ 
+ ###########################################################################################################################################################
+ #Avantages
+ 
+ trait_additrait_multitasking:0 "Multitâche"
+ trait_additrait_multitasking_desc:0 "§LL'abilité de cette espèce à accomplir deux choses à la fois rend leur développement technologique rapide.§!\n"
+ 
+ trait_additrait_easily_satisfied:0 "Facilement satisfaite"
+ trait_additrait_easily_satisfied_desc:0 "§LIl en faut peu pour rendre cette espèce heureuse.§!\n"
+ 
+ trait_additrait_born_warriors:0 "Guerriers-nés"
+ trait_additrait_born_warriors_desc:0 "§LLes meilleurs philosophes de cette espèce s'accordent sur un point : La guerre est la réponse.\n\nCe trait ajoute également +5% de dégâts infligés par votre flotte.§!\n"
+ 
+ trait_additrait_sociable:0 "Sociable"
+ trait_additrait_sociable_desc:0 "§LCette espèce, par instinct ou tradition, est habituée à discuter avec tous.\n\nCe trait augmente la croissance de la Confiance de 25%.§!\n"
+ 
+ trait_additrait_competitive:0 "Compétitive"
+ trait_additrait_competitive_desc:0 "§LCette espèce vit pour la confrontation, qu'elle s'exprime par des rituels ou des combats incessants.\n\nCe trait ajoute +50% au gain d'Influence pour les Rivalités.§!\n"
+ 
+ trait_additrait_aggressive:0 "Agressive"
+ trait_additrait_aggressive_desc:0 "§LLa coopération n'est pas un point fort de cette espèce.\n\nCe trait autorise (1) Rivalité maximale.§!\n"
+ 
+ trait_additrait_extremely_aggressive:0 "Extrémement Agressive"
+ trait_additrait_extremely_aggressive_desc:0 "§LCette espèce se sent menacée par les autres et tend à réagir violemment.\n\nCe trait autorise (2) Rivalité maximales.§!\n" 
+ 
+ trait_additrait_zealous_defenders:0 "Zélotes"
+ trait_additrait_zealous_defenders_desc:0 "§LCette espèce combat avec un zèle aveugle lorsqu'elle est menacée.§!\n"
+ 
+ trait_additrait_lateral_thinkers:0 "Pensée Latérale"
+ trait_additrait_lateral_thinkers_desc:0 "§LCette espèce est habituée aux batailles en trois dimensions, l'espace n'est pas une surprise pour elle.\n\nCe trait ajoute également +8% de dégâts infligés par votre flotte.§!\n"
+  
+ trait_additrait_roboticians:0 "Roboticiens"
+ trait_additrait_roboticians_desc:0 "§LCette espèce a découvert la robotique avancée avant le voyage supraluminique.\n\nCe trait donne la technologie robotic_workers.§!\n"
+  
+ trait_additrait_belligerent:0 "Bélligérante"
+ trait_additrait_belligerent_desc:0 "§LCette espèce prospère dans la confrontation.\n\nCe trait autorise (1) Rivalité maximale et ajoute +50% au gain d'Influence pour les Rivalités.§!\n"
+ 
+ trait_additrait_fast_analysers:0 "Rapides Analystes"
+ trait_additrait_fast_analysers_desc:0 "§LCette espèce perd rarement de temps sur des données insignifiantes.\n\nCe trait augmente la vitesse des reconnaissances de 10%.§!\n"
+ 
+ trait_additrait_thermosynthetic:0 "Thermosynthétique"
+ trait_additrait_thermosynthetic_desc:0 "§LCette espèce dérive de nombreux nutriments de la lumière venue du soleil ou d'autres sources de chaleur.§!\n"
+  
+ trait_additrait_war_lovers:0 "Esprit Guerrier"
+ trait_additrait_war_lovers_desc:0 "§LLa Guerre est Amour, la Paix est haineuse. C'est ce qu'affirme cette espèce.\n\n+15% Bonheur en temps de guerre, -5% Bonheur en temps de paix.§!\n"
+  
+ trait_additrait_peace_lovers:0 "Esprit Pacifiste"
+ trait_additrait_peace_lovers_desc:0 "§LLa guerre est une chose horrible, cette espèce ne veut rien avoir à faire avec.\n\n+15% Bonheur en temps de paix, -5% Bonheur en temps de guerre.§!\n"
+
+ trait_additrait_doulophage:0 "Mangeurs d'Esclaves"
+ trait_additrait_doulophage_desc:0 "§LLes membres de cette espèce ne font pas seulement travailler leurs esclaves. Ils leur arrive de les manger.§!\n"
+ 
+ trait_additrait_psionics:0 "Psioniques"
+ trait_additrait_psionics_desc:0 "§LCette espèce possède des pouvoirs psioniques et connait ses usages.\n\nCe trait donne la technologie psionic_theory.§!\n" 
+ 
+ trait_additrait_passionate:0 "Passionnés"
+ trait_additrait_passionate_desc:0 "§LLes membres de cette espèce apprécient la vie sous toutes ses formes et trouvent une inspiration en toute chose de leur vie.§!\n" 
+ 
+ ###########################################################################################################################################################
+ #Presentients
+ 
+ trait_additrait_presentient_natural_inventors:0 "Inventeurs Doués"
+ trait_additrait_presentient_natural_inventors_desc:0 "§LLes membres de cette espèce aiment bricoler avec leur environnement pour réaliser leurs nouvelles créations.§!\n"
+ 
+ trait_additrait_presentient_natural_savants:0 "Savants Doués"
+ trait_additrait_presentient_natural_savants_desc:0 "§LLes membres de cette espèce sont particulièrement curieux des lois de la physique et de l'origine de l'univers.§!\n"
+ 
+ ###########################################################################################################################################################
+ #Traits Modifiers
+ 
+ wear_trait_additrait_sociable:0 "Sociable"
+ wear_trait_additrait_sociable_desc:0 "L'espèce dominante dans cet empire est Sociable."
+ 
+ wear_trait_additrait_hateful:0 "Détestable"
+ wear_trait_additrait_hateful_desc:0 "L'espèce dominante dans cet empire est Détestable."
+
+ wear_trait_additrait_born_warriors:0 "Guerriers-nés"
+ wear_trait_additrait_born_warriors_desc:0 "L'espèce dominante dans cet empire est faite de Guerriers-nés."
+
+ wear_trait_additrait_competitive:0 "Compétitive"
+ wear_trait_additrait_competitive_desc:0 "L'espèce dominante dans cet empire est Competitive."
+
+ #wear_trait_additrait_focused:0 "Concentrée"
+ #wear_trait_additrait_focused_desc:0 "L'espèce dominante dans cet empire est Concentrée."
+
+ wear_trait_additrait_aggressive:0 "Agressive"
+ wear_trait_additrait_aggressive_desc:0 "L'espèce dominante dans cet empire est Agressive."
+
+ wear_trait_additrait_extremely_aggressive:0 "Extrémement Agressive"
+ wear_trait_additrait_extremely_aggressive_desc:0 "L'espèce dominante dans cet empire est Extrémement Agressive."
+
+ wear_trait_additrait_lateral_thinkers:0 "Pensée Latérale"
+ wear_trait_additrait_lateral_thinkers_desc:0 "L'espèce dominante dans cet empire est imprégnée de Pensée Latérale."
+ 
+ wear_trait_additrait_belligerent:0 "Belligérante"
+ wear_trait_additrait_belligerent_desc:0 "L'espéce dominante dans cet empire est Belligérante."
+
+ wear_trait_additrait_fast_analysers:0 "Rapides Analystes"
+ wear_trait_additrait_fast_analysers_desc:0 "L'espéce dominante dans cet empire est faite de Rapides Analystes."
+ 

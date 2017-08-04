@@ -1,0 +1,38 @@
+
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ap_custom_beyond_the_timespace"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_custom_beyond_the_timespace.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_ap_custom_superior_state_apparatus"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_custom_superior_state_apparatus.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_ap_custom_personal_printing_workshops"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_custom_personal_printing_workshops.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_ap_custom_semi_perpetual_energy_generator"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_custom_semi_perpetual_energy_generator.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_ap_custom_nanobot_mastery"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_custom_nanobot_mastery.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_ap_custom_dust_of_endless"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_custom_dust_of_endless.dds"
+		alwaystransparent = yes
+	}
+}

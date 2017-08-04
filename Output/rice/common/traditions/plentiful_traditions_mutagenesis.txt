@@ -1,0 +1,103 @@
+@cost = 56
+
+tr_mutagenesis_adopt = {
+	cost = { unity = @cost }
+	modifier = {
+		pop_food_req_mult = -0.15
+	}
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 3
+			has_ethic = ethic_hive_mind
+		}
+		modifier = {
+			factor = -2
+			OR = {
+				has_ethic = ethic_pacifist
+				has_ethic = ethic_fanatic_pacifist
+				has_ethic = ethic_egalitarian
+				has_ethic = ethic_fanatic_egalitarian
+				has_ethic = ethic_xenophile
+				has_ethic = ethic_fanatic_xenophile
+			}
+		}
+	}
+}
+
+tr_mutagenesis_finish = {
+	modifier = {
+	tradition_cost_num_colonies_mult = -0.15
+#Pillar
+		ascension_perks_add = 1
+	}
+}
+
+tr_mutagenesis_1 = {
+	cost = { unity = @cost }
+	modifier = {
+		pop_environment_tolerance = 0.10
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_mutagenesis_2 = {
+	cost = { unity = @cost }
+	possible = {
+		has_tradition = tr_mutagenesis_1
+	}
+	modifier = {
+		pop_fortification_defense = 0.75
+		country_core_sector_system_cap = 1
+#Roots
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_mutagenesis_3 = {
+	cost = { unity = @cost }
+	
+	modifier = {
+		ship_auto_repair_add = 0.015
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_mutagenesis_4 = {
+	cost = { unity = @cost }
+	possible = {
+		has_tradition = tr_mutagenesis_3
+	}
+	modifier = {
+		tradition_cost_num_founder_pops_mult = -0.75
+#Toxic
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_mutagenesis_5 = {
+	cost = { unity = @cost }
+	possible = {
+		has_tradition = tr_mutagenesis_4
+	}
+	modifier = {
+#Lab
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}

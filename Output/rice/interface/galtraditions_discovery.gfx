@@ -1,0 +1,7 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_arrow_side"
+		textureFile = "gfx/interface/traditions/arrow_side.dds"
+	}
+}

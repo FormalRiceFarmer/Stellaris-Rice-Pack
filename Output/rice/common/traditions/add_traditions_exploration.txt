@@ -1,0 +1,116 @@
+@cost = 56
+
+tr_exploration_adopt = {
+	cost = { unity = @cost }
+	modifier = {
+		ship_speed_mult = 0.15
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 3
+			years_passed < 10
+		}
+		modifier = {
+			factor = 2
+			has_ethic = ethic_xenophobe
+		}
+		modifier = {
+			factor = 3
+			has_ethic = ethic_fanatic_xenophobe
+		}
+		modifier = {
+			factor = 1
+			has_ethic = ethic_pacifism
+		}
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_pacifism
+		}
+		modifier = {
+			factor = 1
+			has_ethic = ethic_materialist
+		}		
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_materialist
+		}
+	}
+}
+
+tr_exploration_finish = {
+	modifier = {
+		ship_evasion_mult = 0.15	
+		ascension_perks_add = 1
+	}
+}
+# Listening Outposts
+tr_exploration_1 = {
+	cost = { unity = @cost }
+
+	modifier = {
+		planet_sensor_range_mult = 0.25
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+# Innovative Sensor Chips
+tr_exploration_2 = {
+	cost = { unity = @cost }
+	possible = {
+		has_tradition = tr_exploration_1
+	}	
+	modifier = {
+		ship_sensor_range_mult = 0.20
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+# Echoes of Singularity
+tr_exploration_3 = {
+	cost = { unity = @cost }
+	possible = {
+		has_tradition = tr_exploration_2
+		has_tradition = tr_exploration_5
+	}	
+	modifier = {
+		ship_interstellar_speed_mult = 0.10	
+		ship_emergency_ftl_mult = -0.33
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+# Standardized Survey Protocols
+tr_exploration_4 = {
+	cost = { unity = @cost }
+
+	modifier = {
+		science_ship_survey_speed = 0.10
+		ship_anomaly_generation_chance_mult = 0.15
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}
+# Improved Data Analysis
+tr_exploration_5 = {
+	cost = { unity = @cost }
+	possible = {
+		has_tradition = tr_exploration_4
+	}	
+	modifier = {
+		ship_anomaly_research_speed_mult = 0.20
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
