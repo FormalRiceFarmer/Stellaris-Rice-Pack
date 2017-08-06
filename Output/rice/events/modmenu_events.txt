@@ -1,32 +1,23 @@
 namespace = modmenu
 
-# menu
 country_event = {
 	id = modmenu.1
 	title = modmenu.1.name
 	desc = modmenu.1.desc
-	picture = GFX_evt_alien_city
+	picture = GFX_evt_NSC_event18
 	is_triggered_only = yes
 
 	option = {
 		name = modmenu.0
 		custom_tooltip = modmenu.0.tooltip
-		trigger = {
-			has_global_flag = autobuild_installed
-		}
-		hidden_effect = {
-			country_event = { id = autobuild.3 }
-		}
+		trigger = { has_global_flag = autobuild_installed }
+		hidden_effect = { country_event = { id = autobuild.3 } }
 	}
 	option = {
 		name = modmenu.1
 		custom_tooltip = modmenu.1.tooltip
-		trigger = {
-			has_global_flag = board_that_ship_installed
-		}
-		hidden_effect = {
-			country_event = { id = board_that_ship_menu.1 }
-		}
+		trigger = { has_global_flag = board_that_ship_installed }
+		hidden_effect = { country_event = { id = board_that_ship_menu.1 } }
 	}
 	option = {
 		name = modmenu.2
@@ -37,31 +28,23 @@ country_event = {
 				has_global_flag = has_playable_guardians
 			}
 		}
-		hidden_effect = {
-			country_event = { id = NSC_features.1 }
-		}
+		hidden_effect = { country_event = { id = NSC_features.1 } }
 	}
 	option = {
 		name = modmenu.3
 		custom_tooltip = modmenu.3.tooltip
-		trigger = {
-			has_global_flag = harder_invaders_installed
-		}
-		hidden_effect = {
-			country_event = { id = harder_invaders_menu.1 }
-		}
+		trigger = { has_global_flag = harder_invaders_installed }
+		hidden_effect = { country_event = { id = harder_invaders_menu.1 } }
 	}
 	option = {
 		name = modmenu.4
 		custom_tooltip = modmenu.4.tooltip
-		trigger = {
-			has_global_flag = human_fallen_empires_installed
-		}
-		hidden_effect = {
-			country_event = { id = human_fallen_empires_menu.1 }
-		}
+		trigger = { has_global_flag = human_fallen_empires_installed }
+		hidden_effect = { country_event = { id = human_fallen_empires_menu.1 } }
 	}
-	option = {
-		name = modmenu_exit
-	}
+	option = { name = modmenu_exit }
 }
+
+################################################################################################
+# IMPORTANT: FILE NAME MUST REMAIN "modmenu_events" FOR OVERWRITE PURPOSES FOR COMPATIBLE MODS #
+################################################################################################
