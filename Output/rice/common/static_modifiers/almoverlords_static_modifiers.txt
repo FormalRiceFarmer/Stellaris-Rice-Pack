@@ -1,0 +1,47 @@
+planet_state_member = {
+	planet_border_mult = 0.5
+	tile_resource_minerals_mult = 0.1
+	tile_resource_food_mult = 0.2
+}
+
+planet_state_capital = {
+	planet_border_mult = 1.5
+	tile_resource_energy_mult = 0.15
+}
+
+planet_corporation_member = {
+	planet_border_mult = 0.5
+	tile_resource_energy_mult = 0.15
+}
+
+planet_corporation_capital = {
+	planet_border_mult = 1.0
+	tile_resource_energy_mult = 0.25
+}
+
+planet_freeport_capital = {
+	planet_border_mult = 2.5
+	tile_resource_energy_mult = 0.5
+	tile_resource_minerals_mult = 0.25
+	tile_resource_food_mult = 0.25
+}
+
+planet_district_capital = {
+	planet_border_mult = 0.5
+	tile_resource_minerals_mult = 0.25
+	tile_resource_food_mult = 0.25
+}
+
+planet_district_member = {
+	planet_border_mult = 0.5
+	tile_resource_minerals_mult = 0.25
+	tile_resource_food_mult = 0.25
+}
+
+planet_foundation_capital = {
+	planet_border_mult = 1.5
+	tile_resource_energy_mult = 0.25
+	tile_resource_society_research_mult = 0.5
+	tile_resource_physics_research_mult = 0.5
+	tile_resource_engineering_research_mult = 0.5
+}

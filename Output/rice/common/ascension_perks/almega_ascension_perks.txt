@@ -1,0 +1,179 @@
+# #Luminous Beings Are We - It's the Force. Not psychics.
+  # ap_luminous_beings_are_we = {
+	  # on_enabled = {
+		    # #add_research_option = 
+		    # #hidden_effect = {
+			# #    country_event = { id = utopia.2700 }
+		    # #}
+	  # }
+	
+	  # possible = {		
+		  # custom_tooltip = {
+			  # fail_text = "requires_not_ap_transendence"
+			  # NOT = { has_ascension_perk = ap_transcendence }
+		  # }
+		# custom_tooltip = {
+			# fail_text = "requires_ap_mind_over_matter"
+			# has_ascension_perk = ap_mind_over_matter
+		# }
+	  # }
+
+	  # modifier = {
+
+	  # }
+	
+	  # potential = {
+		  # NOT = {
+			  # has_ascension_perk = ap_luminous_beings_are_we
+		  # }
+	  # }
+	
+	  # ai_weight = {
+		  # factor = 0
+	  # }
+  # }
+
+# #One To Watch Over Us All - Everyone is monitored by and maintained by a single central AI, through nanites.
+  # ap_guardian_ai = {
+	  # on_enabled = {
+		    # #add_research_option =
+		    # #hidden_effect = {
+			# #    country_event = { id = utopia.2700 }
+		    # #}
+	  # }
+	
+	  # possible = {
+		  # custom_tooltip = {
+			  # fail_text = "requires_not_ap_synthetic_evolution"
+			  # NOT = { has_ascension_perk = ap_synthetic_evolution }
+		  # }
+		  # custom_tooltip = {
+			  # fail_text = "requires_not_ap_mind_over_matter"
+			  # NOT = { has_ascension_perk = ap_mind_over_matter }
+		  # }	
+		  # custom_tooltip = {
+			  # fail_text = "requires_not_ap_transendence"
+			  # NOT = { has_ascension_perk = ap_transcendence }
+		  # }
+		  # has_ascension_perk = ap_neural_transceivers
+	  # }
+
+	  # modifier = {
+	  # }
+	
+	  # potential = {
+		  # NOT = {
+			  # has_ascension_perk = ap_guardian_ai
+		  # }
+	  # }
+	
+	  # ai_weight = {
+		  # factor = 0
+	  # }
+  # }
+  
+ # #Distributed AI - Free SAIN on every colony!
+  # ap_distributed_ais = {
+	  # on_enabled = {
+		    # #add_research_option =
+		    # #hidden_effect = {
+			# #    country_event = { id = utopia.2700 }
+		    # #}
+	  # }
+	
+	  # possible = {
+		  # custom_tooltip = {
+			  # fail_text = "requires_not_ap_mind_over_matter"
+			  # NOT = { has_ascension_perk = ap_mind_over_matter }
+		  # }	
+		  # custom_tooltip = {
+			  # fail_text = "requires_not_ap_transendence"
+			  # NOT = { has_ascension_perk = ap_transcendence }
+		  # }
+		  # has_ascension_perk = ap_technological_ascendancy
+	  # }
+
+	  # modifier = {
+	  # }
+	
+	  # potential = {
+		  # NOT = {
+			  # has_ascension_perk = ap_distributed_ais
+		  # }
+	  # }
+	
+	  # ai_weight = {
+		  # factor = 0
+	  # }
+  # }
+  
+# #Neural Transceivers - Linking the mind directly to machines.
+  # ap_neural_transceivers = {
+	  # on_enabled = {
+		    # #add_research_option =
+		    # #hidden_effect = {
+			# #    country_event = { id = utopia.2700 }
+		    # #}
+	  # }
+	
+	  # possible = {
+		  # custom_tooltip = {
+			  # fail_text = "requires_not_ap_mind_over_matter"
+			  # NOT = { has_ascension_perk = ap_mind_over_matter }
+		  # }	
+		  # custom_tooltip = {
+			  # fail_text = "requires_not_ap_transendence"
+			  # NOT = { has_ascension_perk = ap_transcendence }
+		  # }
+		  # has_ascension_perk = ap_technological_ascendancy
+	  # }
+
+	  # modifier = {
+	  # }
+	
+	  # potential = {
+		  # NOT = {
+			  # has_ascension_perk = ap_neural_transceivers
+		  # }
+	  # }
+	
+	  # ai_weight = {
+		  # factor = 0
+	  # }
+  # }
+
+# #Consciousness Transfers - transfer to a new, cloned body or be digitally stored or transfered to another place before being put in a custom body.
+  # ap_consciousness_transfers = {
+	  # on_enabled = {
+		    # #add_research_option =
+		    # #hidden_effect = {
+			# #    country_event = { id = utopia.2700 }
+		    # #}
+	  # }
+	
+	  # possible = {
+		  # custom_tooltip = {
+			  # fail_text = "requires_not_ap_synthetic_evolution"
+			  # NOT = { has_ascension_perk = ap_synthetic_evolution }
+		  # }
+		  # custom_tooltip = {
+			  # fail_text = "requires_not_ap_transendence"
+			  # NOT = { has_ascension_perk = ap_transcendence }
+		  # }
+		  # has_ascension_perk = ap_neural_transceivers
+		  # has_ascension_perk = ap_engineered_evolution
+	  # }
+
+	  # modifier = {
+	  # }
+	
+	  # potential = {
+		  # NOT = {
+			  # has_ascension_perk = ap_consciousness_transfers
+		  # }
+	  # }
+	
+	  # ai_weight = {
+		  # factor = 0
+	  # }
+  # }

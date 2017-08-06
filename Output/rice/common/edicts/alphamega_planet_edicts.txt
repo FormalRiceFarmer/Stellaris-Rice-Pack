@@ -1,0 +1,91 @@
+# Sets the edict-cost for all edicts with this variable
+@standardEdictCost = 150
+
+planet_edict = {
+	name = "clear_all_blockers"
+	influence_cost = 150
+	
+	length = 0
+
+	modifier = {
+	}
+	
+	potential = {
+		not = { has_planet_flag = pf_blockers_cleared }
+		any_tile = {
+			has_blocker = yes
+		}
+		owner = {
+			has_ascension_perk = ap_mastery_of_nature
+		}
+		OR = {
+			is_planet_class = pc_continental
+			is_planet_class = pc_arctic
+			is_planet_class = pc_tundra
+			is_planet_class = pc_alpine
+			is_planet_class = pc_desert
+			is_planet_class = pc_arid
+			is_planet_class = pc_savannah
+			is_planet_class = pc_ocean
+			is_planet_class = pc_tropical
+		}
+	}
+	
+	effect = {
+		set_planet_flag = pf_blockers_cleared
+		every_tile = {
+			limit = { has_blocker = yes }
+			remove_blocker = yes
+		}
+	}
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			owner = {
+				influence < 500
+			}
+		}
+	}
+}
+
+planet_edict = {
+	name = "world_shape_homeworld"
+	influence_cost = 150
+	length = 0
+	
+	modifier = {
+	}
+
+	potential = {
+		is_homeworld = yes
+		planet_size < 25
+		not = { has_planet_flag = pf_hwworldshaped }
+		owner = {
+			has_ascension_perk = ap_world_shaper
+		}
+	}
+	
+	effect = {
+		hidden_effect = {
+			set_planet_flag = pf_hwworldshaped
+			while = {
+				limit = {
+					planet_size < 25
+				}
+				change_planet_size = 1
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			owner = {
+				influence < 500
+			}
+		}
+	}
+}

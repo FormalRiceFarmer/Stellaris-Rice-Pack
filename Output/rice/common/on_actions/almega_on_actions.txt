@@ -1,0 +1,18 @@
+on_yearly_pulse = {
+	events = {
+		alphamega.1
+		alphamega.2
+	}
+}
+
+on_monthly_pulse = {
+	events = {
+		alphamega.2
+	}
+}
+
+on_building_complete = {
+	events = {
+		alphamega.3
+	}
+}

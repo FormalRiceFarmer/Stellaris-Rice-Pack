@@ -1,0 +1,462 @@
+namespace = alphamod_traitsetup
+
+country_event = {
+	id = alphamod_traitsetup.1
+
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = {
+		every_country = {
+			limit = {
+				has_trait = "trait_innovative"
+			}
+			add_modifier = {
+				modifier = "innovative_bonus"
+				days = -1
+			}
+		}
+		every_country = {
+			limit = {
+				OR = {
+					has_trait = "trait_agrarian"
+					has_trait = "trait_conservational"
+					has_civic = civic_agrarian_idyll
+				}
+			}
+			give_technology = { message = no tech = tech_alpha_traditional_farming }
+		}
+		every_country = {
+			limit = {
+				OR = {
+					has_civic = civic_warrior_culture
+					has_civic = civic_citizen_service
+				}
+			}
+			give_technology = { message = no tech = tech_centralized_command }
+		}
+		every_country = {
+			limit = {
+				has_civic = civic_warrior_culture
+			}
+			give_technology = { message = no tech = tech_alpha_military_service }
+			give_technology = { message = no tech = tech_alpha_military_service_3 }
+		}
+		every_country = {
+			limit = {
+				has_civic = civic_police_state
+			}
+			give_technology = { message = no tech = tech_homeworld_security }
+		}
+		every_country = {
+			limit = {
+				has_civic = civic_slaver_guilds
+			}
+			give_technology = { message = no tech = tech_neural_implants }
+		}
+		every_country = {
+			limit = {
+				has_civic = civic_corporate_dominion
+			}
+			give_technology = { message = no tech = tech_colonial_corporations_alpha }
+		}
+		every_country = {
+			limit = {
+				OR = {
+					has_civic = civic_corporate_dominion
+					has_trait = "trait_thrifty"
+					has_trait = "trait_decadent"
+				}
+			}
+			give_technology = { message = no tech = tech_alpha_commercial_colonies }
+			give_technology = { message = no tech = tech_alpha_materialism }
+		}
+		every_country = {
+			limit = {
+				has_trait = "trait_decadent"
+			}
+			give_technology = { message = no tech = tech_alpha_luxury_industries }
+		}
+		every_country = {
+			limit = {
+				OR = {
+					has_civic = civic_corporate_dominion
+					has_civic = civic_efficient_bureaucracy
+				}
+			}
+			give_technology = { message = no tech = tech_alpha_colony_control }
+		}		
+	}
+}
+
+event = {
+	id = alphamod_traitsetup.2
+
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = {
+		set_global_flag = gf_alphamod_activated		
+	}
+}
+
+country_event = {
+	id = alphamod_traitsetup.3
+
+	is_triggered_only = yes
+	hide_window = yes
+	
+	immediate = {
+		every_country = {
+			limit = {
+				is_country_type = default
+			}
+			every_owned_planet = {
+				limit = {
+					is_homeworld = yes
+				}
+				change_planet_size = 2
+				every_tile = {
+					limit = { has_building = "building_hydroponics_farm_1" }
+					add_resource = {
+						resource = sr_h2o
+						amount = 2
+						replace = no
+					}
+				}
+				random_tile = {
+					limit = { has_building = no }
+					remove_blocker = yes
+					set_building = "building_capital_tradehub"
+					add_resource = {
+						resource = food
+						amount = 1
+						replace = yes
+					}
+					add_resource = {
+						resource = energy
+						amount = 1
+						replace = no
+					}
+					add_resource = {
+						resource = minerals
+						amount = 2
+						replace = no
+					}
+					add_resource = {
+						resource = sr_actinides
+						amount = 1
+						replace = no
+					}
+					add_resource = {
+						resource = sr_natural_fuels
+						amount = 1
+						replace = no
+					}
+					add_resource = {
+						resource = sr_ice
+						amount = 1
+						replace = no
+					}
+				}
+				random_tile = {
+					limit = { has_blocker = no has_building = no }
+					set_building = "building_large_city"
+					add_resource = {
+						resource = food
+						amount = 1
+						replace = yes
+					}
+				}
+				random_tile = {
+					limit = { has_blocker = no has_building = no }
+					set_building = "building_large_city"
+					add_resource = {
+						resource = food
+						amount = 1
+						replace = yes
+					}
+				}
+				random_tile = {
+					limit = { has_blocker = no has_building = no }
+					set_building = "building_fuel_sourcer"
+					add_resource = {
+						resource = sr_natural_fuels
+						amount = 2
+						replace = yes
+					}
+					add_resource = {
+						resource = energy
+						amount = 1
+						replace = no
+					}				
+				}
+				random_tile = {
+					limit = { has_blocker = no has_building = no }
+					set_building = "building_rocket_launchsite"
+					add_resource = {
+						resource = engineering_research
+						amount = 1
+						replace = yes
+					}						
+				}
+				random_tile = {
+					limit = { has_building = no }
+					add_resource = {
+						resource = sr_actinides
+						amount = 1
+						replace = no
+					}
+				}
+				random_tile = {
+					limit = { 
+						has_building = no
+						not = {
+							has_resource = {
+								type = sr_actinides
+								amount > 0
+							}
+						}
+					}
+					add_resource = {
+						resource = sr_natural_fuels
+						amount = 1
+						replace = no
+					}
+				}
+				if = {
+					limit = {
+						or = {
+						is_planet_class = pc_arctic
+						is_planet_class = pc_tundra
+						is_planet_class = pc_alpine
+						}
+					}
+					random_tile = {
+						limit = { has_building = no }
+						add_resource = {
+							resource = sr_ice
+							amount = 1
+							replace = no
+						}
+					}					
+				}
+				if = {
+					limit = {
+						is_planet_class = pc_tropical
+					}
+					random_tile = {
+						limit = { has_building = no }
+						add_resource = {
+							resource = sr_biomass
+							amount = 1
+							replace = no
+						}
+						add_resource = {
+							resource = food
+							amount = 1
+							replace = no
+						}
+					}
+					random_tile = {
+						limit = { has_building = no }
+						add_resource = {
+							resource = sr_biomass
+							amount = 1
+							replace = no
+						}
+					}
+					else = {
+						random_tile = {
+							limit = { has_building = no }
+							add_resource = {
+								resource = sr_natural_fuels
+								amount = 1
+								replace = no
+							}
+						}						
+					}
+				}
+				if = {
+					limit = {
+						or = {
+							is_planet_class = pc_tropical
+							is_planet_class = pc_continental
+							is_planet_class = pc_savannah
+							is_planet_class = pc_alpine						
+						}
+					}
+					random_tile = {
+						limit = { has_building = no }
+						add_resource = {
+							resource = sr_biomass
+							amount = 1
+							replace = no
+						}
+					}
+					random_tile = {
+						limit = { has_building = no }
+						add_resource = {
+							resource = sr_biomass
+							amount = 1
+							replace = no
+						}
+					}
+					else = {
+						random_tile = {
+							limit = { has_building = no }
+							add_resource = {
+								resource = minerals
+								amount = 1
+								replace = no
+							}
+						}						
+					}
+				}
+				if = {
+					limit = {
+						is_planet_class = pc_arctic
+					}
+					random_tile = {
+						limit = { has_building = no }
+						add_resource = {
+							resource = sr_ice
+							amount = 1
+							replace = no
+						}
+					}
+					random_tile = {
+						limit = { has_building = no }
+						add_resource = {
+							resource = sr_ice
+							amount = 1
+							replace = no
+						}
+					}
+					random_tile = {
+						limit = { has_building = no }
+						add_resource = {
+							resource = sr_ice
+							amount = 1
+							replace = no
+						}
+					}					
+				}
+				if = {
+					limit = {						
+						not = { is_planet_class = pc_desert }
+						not = { is_planet_class = pc_arid }
+						not = { is_planet_class = pc_savannah }
+					}
+					random_tile = {
+						limit = { has_building = no }
+						add_resource = {
+							resource = sr_h2o
+							amount = 1
+							replace = no
+						}
+					}
+					else = {
+						random_tile = {
+							limit = { has_building = no }
+							add_resource = {
+								resource = energy
+								amount = 1
+								replace = no
+							}
+						}					
+					}
+				}
+				if = {
+					limit = {						
+						not = { is_planet_class = pc_desert }
+					}
+					random_tile = {
+						limit = { has_building = no }
+						add_resource = {
+							resource = sr_h2o
+							amount = 1
+							replace = no
+						}
+					}
+					else = {
+						random_tile = {
+							limit = { has_building = no }
+							add_resource = {
+								resource = energy
+								amount = 2
+								replace = no
+							}
+						}					
+					}
+				}
+				if = {
+					limit = {						
+						is_planet_class = pc_ocean
+					}
+					random_tile = {
+						limit = { has_building = no }
+						add_resource = {
+							resource = sr_h2o
+							amount = 1
+							replace = no
+						}
+					}
+					random_tile = {
+						limit = { has_building = no }
+						add_resource = {
+							resource = sr_h2o
+							amount = 1
+							replace = no
+						}
+					}
+					random_tile = {
+						limit = { has_building = no }
+						add_resource = {
+							resource = sr_h2o
+							amount = 2
+							replace = no
+						}
+					}
+					else = {
+						random_tile = {
+							limit = { has_building = no }
+							add_resource = {
+								resource = minerals
+								amount = 1
+								replace = no
+							}
+						}					
+					}
+				}
+				if = {
+					limit = {
+						or = {
+							is_planet_class = pc_ocean
+							is_planet_class = pc_continental
+							is_planet_class = pc_tropical
+						}
+					}
+					random_tile = {
+						limit = { has_building = no }
+						add_resource = {
+							resource = sr_h2o
+							amount = 2
+							replace = no
+						}
+					}
+					else = {
+						random_tile = {
+							limit = { has_building = no }
+							add_resource = {
+								resource = energy
+								amount = 1
+								replace = no
+							}
+						}					
+					}
+				}
+			}
+		}
+	}
+}

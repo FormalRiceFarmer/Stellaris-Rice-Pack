@@ -1,0 +1,125 @@
+@lots = 10
+@lotsandlots = 20
+
+@infcosthigh = 50
+@infcostmed = 25
+@infcostlow = 10
+
+@engcostcheap = 40
+@engcostlow = 80
+@engcostmed = 175
+@engcosthigh = 250
+
+@mincostcheap = 25
+@mincostlow = 50
+@mincostmed = 125
+@mincosthigh = 250
+
+@srlow = 1
+@srmed = 2
+@srhigh = 4
+
+@buildquick = 90
+@buildnormal = 150
+@buildlong = 240
+@buildhuge = 360
+
+@weightnormal = 2
+@weightuseful = 8
+@weightimportant = 14
+@weightcritical = 30
+
+@b0effect = 1
+@b1effect = 1.5
+@b2effect = 2
+@b3effect = 3
+@b4effect = 4
+@b5effect = 5
+
+@b1upkeep = 1
+@b2upkeep = 1.5
+@b3upkeep = 2
+@b4upkeep = 3
+@b5upkeep = 5
+
+building_biosphere_stimulator = {
+	base_buildtime = 720
+	#planet_unique = yes
+	
+	cost = {
+		minerals = 100
+		energy = 250
+		influence = 25
+	}
+	
+	required_resources = {
+		energy = 3
+	}
+	
+	produced_resources = {
+		sr_biomass = 1
+		society_research = 3
+		engineering_research = 1
+	}
+	
+	planet_modifier = {
+		pop_environment_tolerance = 0.01
+	}
+	
+	potential = {
+		planet = {
+			not = { has_planet_flag = biomass_stimulated }
+			any_tile = { has_biomass_deposit = yes }
+			not = { is_hab_or_ringyard = yes }
+			owner = {
+				nor = {
+					has_ethic = ethic_fanatic_spiritualist
+					has_ethic = ethic_fanatic_xenophobe
+				}
+				has_technology = tech_biomass_processing
+				or = {
+					has_ascension_perk = ap_engineered_evolution
+					has_ascension_perk = ap_world_shaper
+					has_ascension_perk = ap_mastery_of_nature
+				}
+			}
+		}
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requirement_biomass_deposit"
+			tile = { has_biomass_deposit = yes }
+		}		
+	}
+	
+	on_queued = {
+		# planet = {
+			# set_planet_flag = biomass_stimulated
+		# }
+		tile = {
+			add_resource = {
+				resource = sr_biomass
+				amount = -1
+			}
+		}
+	}
+	
+	on_unqueued = {
+		# planet = {
+			# remove_planet_flag = biomass_stimulated
+		# }
+		tile = {
+			add_resource = {
+				resource = sr_biomass
+				amount = 1
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+	
+	ai_replace = no
+}

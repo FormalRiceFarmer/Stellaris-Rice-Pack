@@ -1,0 +1,225 @@
+ring_shipyard_0 = {
+	entity = ""
+	construction_entity = "big_planetary_ring_game_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = yes
+	build_time = 1800
+
+	build_cost = {
+		minerals = 4000
+		energy = 2000
+		influence = 200
+	}
+	#construction_blocks_others = no
+
+	prerequisites = {
+		#"tech_mega_engineering"
+	}
+	
+	potential = {
+		not = { is_ai = yes }
+		OR = {
+			AND = {
+				has_ascension_perk = "ap_voidborn"
+				has_ascension_perk = "ap_master_builders"
+			}
+			has_technology = tech_mega_engineering
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+	}
+
+	placement_rules = {
+		planet_possible = {
+			custom_tooltip = {
+				fail_text = "requires_no_anomaly"
+				NOT = { has_anomaly = yes }
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_existing_megastructure"
+				NOR = {
+					has_planet_flag = megastructure
+					has_planet_flag = has_megastructure
+					solar_system = {
+						has_star_flag = ring_world_built
+					}
+				}
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_orbital_station"
+				has_orbital_station = no
+			}
+			custom_tooltip = {
+				fail_text = "requires_mineable_body"
+				not = { has_ring = yes }
+				is_surveyed = {
+					who = prev.from
+					status = yes
+				}
+				OR = {
+					is_planet_class = pc_molten
+					is_planet_class = pc_molten_habitable
+					orbital_deposit_tile = {
+						has_resource = {
+							type = minerals
+							amount > 2
+						}
+					}
+				}
+				not = { is_planet_class = pc_asteroid }
+				not = { is_planet_class = pc_asteroid_2 }
+				not = { is_planet_class = pc_gas_giant }
+				not = { is_planet_class = pc_habitat }
+				not = { is_planet_class = pc_ringworld_shipyard }
+			}
+
+			custom_tooltip = {
+				fail_text = "requires_not_minor_planetary_body"
+				NOR = {
+					is_asteroid = yes
+					is_moon = yes
+				}
+			}
+			
+			custom_tooltip = {
+				fail_text = "requires_not_star"
+				is_star = no
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 0
+	}
+	
+	on_build_start = {}
+	on_build_cancel = {}
+	
+	on_build_complete = {
+	
+		spawn_planet = {
+			class = "pc_ringworld_shipyard"
+			location = fromfrom.planet
+			orbit_location = yes
+			orbit_angle_offset = 0
+			orbit_distance_offset = 0
+			size = 12
+			has_ring = no
+			
+			init_effect = {
+				set_name = "Engineering Ring"
+				set_planet_entity = {
+					entity = "big_planetary_ring_game_entity"
+					graphical_culture = fromfrom
+				}
+				surveyed = {
+					set_surveyed = yes
+					surveyor = FROM
+				}
+				while = {
+					limit = {
+						any_tile = { has_blocker = yes }
+					}
+					random_tile = {
+						limit = { has_blocker = yes }
+						remove_blocker = yes
+					}
+				}
+				copy_orbital_tile = fromfrom.planet
+				
+				add_modifier = {
+					modifier = ringyard_engineering
+					days = -1
+				}
+				random_tile = {
+					add_resource = {
+						resource = energy
+						amount = 2
+					}
+					set_building = building_hab_solar_power_processor				
+				}
+				random_tile = {
+					add_resource = {
+						resource = energy
+						amount = 2
+					}
+					set_building = building_hab_solar_power_processor				
+				}
+				set_planet_flag = megastructure
+				set_planet_flag = habitat
+			}
+		}
+		
+		spawn_planet = {
+			class = "pc_ringworld_shipyard"
+			location = fromfrom.planet
+			orbit_location = yes
+			orbit_angle_offset = 0
+			orbit_distance_offset = 0
+			size = 8
+			has_ring = no
+			
+			init_effect = {
+				set_name = "Processing Ring"
+				set_planet_entity = {
+					entity = "planetary_ring_game_entity"
+					graphical_culture = fromfrom
+				}
+				surveyed = {
+					set_surveyed = yes
+					surveyor = FROM
+				}
+				while = {
+					limit = {
+						any_tile = { has_blocker = yes }
+					}
+					random_tile = {
+						limit = { has_blocker = yes }
+						remove_blocker = yes
+					}
+				}
+				set_planet_flag = megastructure
+				set_planet_flag = habitat
+				add_modifier = {
+					modifier = ringyard_processing
+					days = -1
+				}
+				random_tile = {
+					add_resource = {
+						resource = minerals
+						amount = 3
+					}
+					set_building = building_mineral_processing_plant_1
+					random_neighboring_tile = {
+						add_resource = {
+							resource = minerals
+							amount = 1
+						}
+						set_building = building_hab_astro_mining_facility					
+					}
+					random_neighboring_tile = {
+						limit = {
+							has_building = no
+						}
+						add_resource = {
+							resource = minerals
+							amount = 1
+						}
+						set_building = building_hab_astro_mining_facility					
+					}
+				}
+			}
+		}
+		
+		fromfrom.planet = {
+			set_planet_flag = has_megastructure
+			set_planet_flag = pf_habitat
+		}
+		remove_megastructure = fromfrom
+	}
+}

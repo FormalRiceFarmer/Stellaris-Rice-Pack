@@ -1,0 +1,22 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_diplomacy_status_is_state"
+		texturefile = "gfx/interface/icons/diplomacy/diplomacy_isstate.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_status_is_corporation"
+		texturefile = "gfx/interface/icons/diplomacy/diplomacy_iscorporation.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_status_is_freeport"
+		texturefile = "gfx/interface/icons/diplomacy/diplomacy_isfreeport.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_status_is_district"
+		texturefile = "gfx/interface/icons/diplomacy/diplomacy_isdistrict.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_status_is_foundation"
+		texturefile = "gfx/interface/icons/diplomacy/diplomacy_isfoundation.dds"
+	}
+}

@@ -1,0 +1,96 @@
+country_edict = {
+	name = "united_to_ascend"
+	
+	influence_cost = 0
+	
+	potential = {
+		num_ascension_perks > 6
+		unity > 50000
+		not = { has_technology = tech_ascension_theory }
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+country_edict = {
+	name = "united_to_megastructures"
+	
+	influence_cost = 0
+	
+	potential = {
+		num_ascension_perks > 7
+		unity > 250000
+		not = { has_technology = tech_mega_engineering }
+	}
+
+	ai_weight = {
+		weight = 1.5
+	}
+}
+
+country_edict = {
+	name = "convert_unity_to_influence"
+	
+	influence_cost = 0
+	
+	potential = {
+		has_technology = tech_mega_engineering
+		num_ascension_perks > 7
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+country_edict = {
+	name = "holy_crusade"
+	
+	modifier = {
+		pop_ethic_militarist_attraction_mult = 0.1
+		pop_ethic_spiritualist_attraction_mult = 0.25
+		planet_fortification_strength = 0.5
+		planet_army_build_speed_mult = 1.0
+		planet_army_build_cost_mult = -0.1
+		all_technology_research_speed = -0.2
+		ship_reparation_speed_mult = 0.25
+		ship_upkeep_mult = -0.25
+		spaceport_ship_build_speed_mult = 0.5
+		spaceport_ship_build_cost_mult = -0.2
+		planet_unrest_add = -10
+	}
+	
+	influence_cost = 1.5
+	
+	potential = {
+		OR = {
+			has_ethic = "ethic_fanatic_spiritualist"
+			has_ethic = "ethic_spiritualist"
+		}
+		NOT = { has_ethic = "ethic_fanatic_pacifist" }
+		NOT = { has_ethic = "ethic_pacifist" }
+		has_ascension_perk = ap_consecrated_worlds	
+	}
+	
+	allow = {
+		is_at_war = yes
+		not = { has_country_edict = for_the_cause }
+	}
+	
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 2
+			is_at_war = yes
+			has_ethic = "ethic_fanatic_spiritualist"
+			NOT = { has_ethic = "ethic_pacifist" }
+			has_ascension_perk = ap_consecrated_worlds
+		}
+		modifier = {
+			weight = 0
+			not = { is_at_war = yes }
+		}
+	}
+}

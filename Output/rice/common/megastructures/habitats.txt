@@ -1,0 +1,165 @@
+# see README.txt for example
+
+habitat_0 = {
+	entity = ""
+	construction_entity = "orbital_habitat_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = yes
+	entity_offset = { x = -7 y = -7 }
+	build_time = 1200
+	build_cost = {
+		minerals = 2400
+		energy = 1200
+		influence = 120
+	}
+	construction_blocks_others = no
+
+	potential = {
+		OR = {
+			has_technology = tech_orbitalhabitats
+			has_ascension_perk = ap_voidborn
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		# Limit AI to one per system
+		solar_system = {
+			OR = {
+				space_owner = { not = { is_ai = yes } }
+				AND = {
+					space_owner = { is_ai = yes }
+					not = { 
+						any_planet = {
+							has_planet_flag = pf_habitat
+						}
+					}
+				}
+			}
+		}
+	}
+
+	placement_rules = {
+		planet_possible = {
+			custom_tooltip = {
+				fail_text = "requires_no_anomaly"
+				NOT = { has_anomaly = yes }
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_existing_megastructure"
+				not = { has_planet_flag = has_megastructure }
+				not = { has_planet_flag = pf_habitat}
+				not = { is_planet_class = pc_habitat }
+				can_build_megastructure_on_planet = yes
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_orbital_station"
+				has_orbital_station = no
+			}
+			custom_tooltip = {
+				fail_text = "requires_survey_not_habitable"
+				is_surveyed = {
+					who = prev.from
+					status = yes
+				}
+				habitable_planet = no
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_star"
+				is_star = no
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_minor_planetary_body"
+				NOR = {
+					is_asteroid = yes
+					is_moon = yes
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 1
+		modifier = {
+			factor = 0
+			influence < 500
+		}
+		modifier = {
+			factor = 0
+			minerals < 5000
+		}
+		# Can only build one anywhere at a time
+		modifier = {
+			factor = 0
+			has_country_flag = cf_building_habitat
+		}
+	}
+	
+	on_build_start = {
+		from = {
+			set_country_flag = cf_building_habitat
+		}
+	}
+	on_build_cancel = {
+		from = {
+			remove_country_flag = cf_building_habitat
+		}
+	}
+	
+	on_build_complete = {
+		from = {
+			remove_country_flag = cf_building_habitat
+		}
+		spawn_planet = {
+			class = "pc_habitat"
+			location = fromfrom.planet
+			orbit_location = yes
+			orbit_angle_offset = 45
+			orbit_distance_offset = 9.899
+			size = 12
+			has_ring = no
+			
+			init_effect = {
+				set_name = "HABITAT_PLANET_NAME"
+				set_planet_entity = {
+					entity = "orbital_habitat_entity"
+					graphical_culture = fromfrom
+				}
+				surveyed = {
+					set_surveyed = yes
+					surveyor = FROM
+				}
+				while = {
+					limit = {
+						any_tile = { has_blocker = yes }
+					}
+					random_tile = {
+						limit = { has_blocker = yes }
+						remove_blocker = yes
+					}
+				}
+				copy_orbital_tile = fromfrom.planet
+				set_planet_flag = megastructure
+				set_planet_flag = habitat
+				set_planet_flag = pf_habitat
+				set_planet_flag = pf_disallow_shanty_towns
+				add_modifier = {
+					modifier = engineers_paradise
+					days = -1
+				}
+				add_modifier = {
+					modifier = physicists_paradise
+					days = -1
+				}
+			}
+		}
+		fromfrom.planet = {
+			set_planet_flag = has_megastructure
+			set_planet_flag = pf_habitat
+		}
+		remove_megastructure = fromfrom
+	}
+}

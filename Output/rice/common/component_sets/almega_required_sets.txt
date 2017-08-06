@@ -1,0 +1,20 @@
+component_set = {
+	key = "MF_ALPHA_SIF_1"
+	
+	icon = "GFX_ship_part_alpha_sif_2"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "MF_ALPHA_AUTO_LOADERS_1"
+	
+	icon = "GFX_ship_part_alpha_auto_loaders_2"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "MF_ALPHA_AUXILIARY_TARGETING_1"
+	
+	icon = "GFX_ship_part_alpha_auxiliary_targeting_2"
+	icon_frame = 1	
+}
