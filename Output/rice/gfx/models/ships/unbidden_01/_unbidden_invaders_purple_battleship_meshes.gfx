@@ -1,0 +1,27 @@
+objectTypes = {
+
+	#######  Battleship Loop sections  #######
+	
+	pdxmesh = {
+		name = "unbidden_01_battleship_loop_mesh"
+		file = "gfx/models/planets/ringworld_tech.mesh"
+		cull_distance = 999999999.0f
+		scale = 0.05
+		
+		meshsettings = {
+			texture_diffuse = "ship_mask_pure_purple.dds"
+			shader = "PdxMeshExtraDimensionalShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "unbidden_01_battleship_turret_mesh"
+		file = "gfx/models/ships/fallen_empire_01/fallen_empire_large_warship.mesh"
+		scale = 0.2
+
+		meshsettings = {
+			texture_diffuse = "ship_mask_pure_purple.dds"
+			shader = "PdxMeshExtraDimensionalShip"
+		}
+	}
+}

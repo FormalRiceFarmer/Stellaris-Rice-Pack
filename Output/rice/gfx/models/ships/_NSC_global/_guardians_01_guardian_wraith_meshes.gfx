@@ -1,0 +1,169 @@
+objectTypes = {
+	pdxmesh = {
+		name = "wraith_01_orange_mesh"
+		file = "gfx/models/ships/guardians/wraith/wraith_01.mesh"
+		scale = 1.0
+		
+		animation = { id = "idle"			type = "wraith_01_idle_animation" }
+		animation = { id = "moving"			type = "wraith_01_moving_animation" }
+		animation = { id = "death"			type = "wraith_01_death_animation" }
+
+		meshsettings = {
+			name = "arm_Shape3"
+			index = 0
+			texture_diffuse = "wraith_orange_diffuse.dds"
+			texture_normal = "wraith_normal.dds"
+			texture_specular = "wraith_specular.dds"
+			shader = "AlphaBlend_00"
+		}
+
+		meshsettings = {
+			name = "flakesShape"
+			index = 0
+			texture_diffuse = "wraith_fins_orange_diffuse.dds"
+			texture_normal = "wraith_fins_normal.dds"
+			texture_specular = "wraith_fins_specular.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+	
+	pdxmesh = {
+		name = "wraith_01_yellow_new_mesh"
+		file = "gfx/models/ships/guardians/wraith/wraith_01.mesh"
+		scale = 1.0
+		
+		animation = { id = "idle"			type = "wraith_01_idle_animation" }
+		animation = { id = "moving"			type = "wraith_01_moving_animation" }
+		animation = { id = "death"			type = "wraith_01_death_animation" }
+
+		meshsettings = {
+			name = "arm_Shape3"
+			index = 0
+			texture_diffuse = "wraith_yellow_new_diffuse.dds"
+			texture_normal = "wraith_normal.dds"
+			texture_specular = "wraith_specular.dds"
+			shader = "AlphaBlend_00"
+		}
+
+		meshsettings = {
+			name = "flakesShape"
+			index = 0
+			texture_diffuse = "wraith_fins_yellow_new_diffuse.dds"
+			texture_normal = "wraith_fins_normal.dds"
+			texture_specular = "wraith_fins_specular.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+	
+	pdxmesh = {
+		name = "wraith_01_green_mesh"
+		file = "gfx/models/ships/guardians/wraith/wraith_01.mesh"
+		scale = 1.0
+		
+		animation = { id = "idle"			type = "wraith_01_idle_animation" }
+		animation = { id = "moving"			type = "wraith_01_moving_animation" }
+		animation = { id = "death"			type = "wraith_01_death_animation" }
+
+		meshsettings = {
+			name = "arm_Shape3"
+			index = 0
+			texture_diffuse = "wraith_green_diffuse.dds"
+			texture_normal = "wraith_normal.dds"
+			texture_specular = "wraith_specular.dds"
+			shader = "AlphaBlend_00"
+		}
+
+		meshsettings = {
+			name = "flakesShape"
+			index = 0
+			texture_diffuse = "wraith_fins_green_diffuse.dds"
+			texture_normal = "wraith_fins_normal.dds"
+			texture_specular = "wraith_fins_specular.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+	
+	pdxmesh = {
+		name = "wraith_01_azure_mesh"
+		file = "gfx/models/ships/guardians/wraith/wraith_01.mesh"
+		scale = 1.0
+		
+		animation = { id = "idle"			type = "wraith_01_idle_animation" }
+		animation = { id = "moving"			type = "wraith_01_moving_animation" }
+		animation = { id = "death"			type = "wraith_01_death_animation" }
+
+		meshsettings = {
+			name = "arm_Shape3"
+			index = 0
+			texture_diffuse = "wraith_azure_diffuse.dds"
+			texture_normal = "wraith_normal.dds"
+			texture_specular = "wraith_specular.dds"
+			shader = "AlphaBlend_00"
+		}
+
+		meshsettings = {
+			name = "flakesShape"
+			index = 0
+			texture_diffuse = "wraith_fins_azure_diffuse.dds"
+			texture_normal = "wraith_fins_normal.dds"
+			texture_specular = "wraith_fins_specular.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+	
+	pdxmesh = {
+		name = "wraith_01_violet_mesh"
+		file = "gfx/models/ships/guardians/wraith/wraith_01.mesh"
+		scale = 1.0
+		
+		animation = { id = "idle"			type = "wraith_01_idle_animation" }
+		animation = { id = "moving"			type = "wraith_01_moving_animation" }
+		animation = { id = "death"			type = "wraith_01_death_animation" }
+
+		meshsettings = {
+			name = "arm_Shape3"
+			index = 0
+			texture_diffuse = "wraith_violet_diffuse.dds"
+			texture_normal = "wraith_normal.dds"
+			texture_specular = "wraith_specular.dds"
+			shader = "AlphaBlend_00"
+		}
+
+		meshsettings = {
+			name = "flakesShape"
+			index = 0
+			texture_diffuse = "wraith_fins_violet_diffuse.dds"
+			texture_normal = "wraith_fins_normal.dds"
+			texture_specular = "wraith_fins_specular.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+	
+	pdxmesh = {
+		name = "wraith_01_white_mesh"
+		file = "gfx/models/ships/guardians/wraith/wraith_01.mesh"
+		scale = 1.0
+		
+		animation = { id = "idle"			type = "wraith_01_idle_animation" }
+		animation = { id = "moving"			type = "wraith_01_moving_animation" }
+		animation = { id = "death"			type = "wraith_01_death_animation" }
+
+		meshsettings = {
+			name = "arm_Shape3"
+			index = 0
+			texture_diffuse = "wraith_white_diffuse.dds"
+			texture_normal = "wraith_normal.dds"
+			texture_specular = "wraith_specular.dds"
+			shader = "AlphaBlend_00"
+		}
+
+		meshsettings = {
+			name = "flakesShape"
+			index = 0
+			texture_diffuse = "wraith_fins_white_diffuse.dds"
+			texture_normal = "wraith_fins_normal.dds"
+			texture_specular = "wraith_fins_specular.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+	}
+}

@@ -1,0 +1,378 @@
+objectTypes = {
+	pdxmesh = {
+		name = "NSC_red_dragonfire_drake_mesh"
+		file = "gfx/models/ships/guardians/space_dragon/guardian_01_space_dragon.mesh"
+		scale = 1.0
+		
+		animation = { id = "idle"			type = "guardian_01_space_dragon_idle_animation" }
+		animation = { id = "moving"			type = "guardian_01_space_dragon_moving_animation" }
+		animation = { id = "death"			type = "guardian_01_space_dragon_death_animation" }
+		animation = { id = "attack"			type = "guardian_01_space_dragon_attack_animation" }
+		
+		meshsettings = {
+			name = "pPlane26Shape"
+			index = 0
+			texture_diffuse = "guardians_01_space_dragon_fins_true_red_diffuse.dds"
+			texture_normal = "guardian_01_space_dragon_fins_normal.dds"
+			texture_specular = "guardian_01_space_dragon_fins_specular.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+
+		meshsettings = {
+			name = "pPlane26Shape"
+			index = 1
+			texture_diffuse = "guardians_01_space_dragon_true_red_diffuse.dds"
+			texture_normal = "guardian_01_space_dragon_normal.dds"
+			texture_specular = "guardian_01_space_dragon_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "NSC_orange_dragonfire_drake_mesh"
+		file = "gfx/models/ships/guardians/space_dragon/guardian_01_space_dragon.mesh"
+		scale = 1.0
+		
+		animation = { id = "idle"			type = "guardian_01_space_dragon_idle_animation" }
+		animation = { id = "moving"			type = "guardian_01_space_dragon_moving_animation" }
+		animation = { id = "death"			type = "guardian_01_space_dragon_death_animation" }
+		animation = { id = "attack"			type = "guardian_01_space_dragon_attack_animation" }
+		
+		meshsettings = {
+			name = "pPlane26Shape"
+			index = 0
+			texture_diffuse = "guardian_01_space_dragon_fins_red_diffuse.dds"
+			texture_normal = "guardian_01_space_dragon_fins_normal.dds"
+			texture_specular = "guardian_01_space_dragon_fins_specular.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+
+		meshsettings = {
+			name = "pPlane26Shape"
+			index = 1
+			texture_diffuse = "guardian_01_space_dragon_red_diffuse.dds"
+			texture_normal = "guardian_01_space_dragon_normal.dds"
+			texture_specular = "guardian_01_space_dragon_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "NSC_yellow_dragonfire_drake_mesh"
+		file = "gfx/models/ships/guardians/space_dragon/guardian_01_space_dragon.mesh"
+		scale = 1.0
+		
+		animation = { id = "idle"			type = "guardian_01_space_dragon_idle_animation" }
+		animation = { id = "moving"			type = "guardian_01_space_dragon_moving_animation" }
+		animation = { id = "death"			type = "guardian_01_space_dragon_death_animation" }
+		animation = { id = "attack"			type = "guardian_01_space_dragon_attack_animation" }
+		
+		meshsettings = {
+			name = "pPlane26Shape"
+			index = 0
+			texture_diffuse = "guardians_01_space_dragon_fins_yellow_diffuse.dds"
+			texture_normal = "guardian_01_space_dragon_fins_normal.dds"
+			texture_specular = "guardian_01_space_dragon_fins_specular.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+
+		meshsettings = {
+			name = "pPlane26Shape"
+			index = 1
+			texture_diffuse = "guardians_01_space_dragon_yellow_diffuse.dds"
+			texture_normal = "guardian_01_space_dragon_normal.dds"
+			texture_specular = "guardian_01_space_dragon_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "NSC_chartreuse_dragonfire_drake_mesh"
+		file = "gfx/models/ships/guardians/space_dragon/guardian_01_space_dragon.mesh"
+		scale = 1.0
+		
+		animation = { id = "idle"			type = "guardian_01_space_dragon_idle_animation" }
+		animation = { id = "moving"			type = "guardian_01_space_dragon_moving_animation" }
+		animation = { id = "death"			type = "guardian_01_space_dragon_death_animation" }
+		animation = { id = "attack"			type = "guardian_01_space_dragon_attack_animation" }
+		
+		meshsettings = {
+			name = "pPlane26Shape"
+			index = 0
+			texture_diffuse = "guardians_01_space_dragon_fins_chartreuse_diffuse.dds"
+			texture_normal = "guardian_01_space_dragon_fins_normal.dds"
+			texture_specular = "guardian_01_space_dragon_fins_specular.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+
+		meshsettings = {
+			name = "pPlane26Shape"
+			index = 1
+			texture_diffuse = "guardians_01_space_dragon_chartreuse_diffuse.dds"
+			texture_normal = "guardian_01_space_dragon_normal.dds"
+			texture_specular = "guardian_01_space_dragon_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "NSC_green_dragonfire_drake_mesh"
+		file = "gfx/models/ships/guardians/space_dragon/guardian_01_space_dragon.mesh"
+		scale = 1.0
+		
+		animation = { id = "idle"			type = "guardian_01_space_dragon_idle_animation" }
+		animation = { id = "moving"			type = "guardian_01_space_dragon_moving_animation" }
+		animation = { id = "death"			type = "guardian_01_space_dragon_death_animation" }
+		animation = { id = "attack"			type = "guardian_01_space_dragon_attack_animation" }
+		
+		meshsettings = {
+			name = "pPlane26Shape"
+			index = 0
+			texture_diffuse = "guardians_01_space_dragon_fins_green_diffuse.dds"
+			texture_normal = "guardian_01_space_dragon_fins_normal.dds"
+			texture_specular = "guardian_01_space_dragon_fins_specular.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+
+		meshsettings = {
+			name = "pPlane26Shape"
+			index = 1
+			texture_diffuse = "guardians_01_space_dragon_green_diffuse.dds"
+			texture_normal = "guardian_01_space_dragon_normal.dds"
+			texture_specular = "guardian_01_space_dragon_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "NSC_aquamarine_dragonfire_drake_mesh"
+		file = "gfx/models/ships/guardians/space_dragon/guardian_01_space_dragon.mesh"
+		scale = 1.0
+		
+		animation = { id = "idle"			type = "guardian_01_space_dragon_idle_animation" }
+		animation = { id = "moving"			type = "guardian_01_space_dragon_moving_animation" }
+		animation = { id = "death"			type = "guardian_01_space_dragon_death_animation" }
+		animation = { id = "attack"			type = "guardian_01_space_dragon_attack_animation" }
+		
+		meshsettings = {
+			name = "pPlane26Shape"
+			index = 0
+			texture_diffuse = "guardians_01_space_dragon_fins_aquamarine_diffuse.dds"
+			texture_normal = "guardian_01_space_dragon_fins_normal.dds"
+			texture_specular = "guardian_01_space_dragon_fins_specular.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+
+		meshsettings = {
+			name = "pPlane26Shape"
+			index = 1
+			texture_diffuse = "guardians_01_space_dragon_aquamarine_diffuse.dds"
+			texture_normal = "guardian_01_space_dragon_normal.dds"
+			texture_specular = "guardian_01_space_dragon_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "NSC_cyan_dragonfire_drake_mesh"
+		file = "gfx/models/ships/guardians/space_dragon/guardian_01_space_dragon.mesh"
+		scale = 1.0
+		
+		animation = { id = "idle"			type = "guardian_01_space_dragon_idle_animation" }
+		animation = { id = "moving"			type = "guardian_01_space_dragon_moving_animation" }
+		animation = { id = "death"			type = "guardian_01_space_dragon_death_animation" }
+		animation = { id = "attack"			type = "guardian_01_space_dragon_attack_animation" }
+		
+		meshsettings = {
+			name = "pPlane26Shape"
+			index = 0
+			texture_diffuse = "guardians_01_space_dragon_fins_cyan_diffuse.dds"
+			texture_normal = "guardian_01_space_dragon_fins_normal.dds"
+			texture_specular = "guardian_01_space_dragon_fins_specular.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+
+		meshsettings = {
+			name = "pPlane26Shape"
+			index = 1
+			texture_diffuse = "guardians_01_space_dragon_cyan_diffuse.dds"
+			texture_normal = "guardian_01_space_dragon_normal.dds"
+			texture_specular = "guardian_01_space_dragon_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "NSC_azure_dragonfire_drake_mesh"
+		file = "gfx/models/ships/guardians/space_dragon/guardian_01_space_dragon.mesh"
+		scale = 1.0
+		
+		animation = { id = "idle"			type = "guardian_01_space_dragon_idle_animation" }
+		animation = { id = "moving"			type = "guardian_01_space_dragon_moving_animation" }
+		animation = { id = "death"			type = "guardian_01_space_dragon_death_animation" }
+		animation = { id = "attack"			type = "guardian_01_space_dragon_attack_animation" }
+		
+		meshsettings = {
+			name = "pPlane26Shape"
+			index = 0
+			texture_diffuse = "guardians_01_space_dragon_fins_azure_diffuse.dds"
+			texture_normal = "guardian_01_space_dragon_fins_normal.dds"
+			texture_specular = "guardian_01_space_dragon_fins_specular.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+
+		meshsettings = {
+			name = "pPlane26Shape"
+			index = 1
+			texture_diffuse = "guardians_01_space_dragon_azure_diffuse.dds"
+			texture_normal = "guardian_01_space_dragon_normal.dds"
+			texture_specular = "guardian_01_space_dragon_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "NSC_blue_dragonfire_drake_mesh"
+		file = "gfx/models/ships/guardians/space_dragon/guardian_01_space_dragon.mesh"
+		scale = 1.0
+		
+		animation = { id = "idle"			type = "guardian_01_space_dragon_idle_animation" }
+		animation = { id = "moving"			type = "guardian_01_space_dragon_moving_animation" }
+		animation = { id = "death"			type = "guardian_01_space_dragon_death_animation" }
+		animation = { id = "attack"			type = "guardian_01_space_dragon_attack_animation" }
+		
+		meshsettings = {
+			name = "pPlane26Shape"
+			index = 0
+			texture_diffuse = "guardians_01_space_dragon_fins_true_blue_diffuse.dds"
+			texture_normal = "guardian_01_space_dragon_fins_normal.dds"
+			texture_specular = "guardian_01_space_dragon_fins_specular.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+
+		meshsettings = {
+			name = "pPlane26Shape"
+			index = 1
+			texture_diffuse = "guardians_01_space_dragon_true_blue_diffuse.dds"
+			texture_normal = "guardian_01_space_dragon_normal.dds"
+			texture_specular = "guardian_01_space_dragon_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "NSC_violet_dragonfire_drake_mesh"
+		file = "gfx/models/ships/guardians/space_dragon/guardian_01_space_dragon.mesh"
+		scale = 1.0
+		
+		animation = { id = "idle"			type = "guardian_01_space_dragon_idle_animation" }
+		animation = { id = "moving"			type = "guardian_01_space_dragon_moving_animation" }
+		animation = { id = "death"			type = "guardian_01_space_dragon_death_animation" }
+		animation = { id = "attack"			type = "guardian_01_space_dragon_attack_animation" }
+		
+		meshsettings = {
+			name = "pPlane26Shape"
+			index = 0
+			texture_diffuse = "guardians_01_space_dragon_fins_violet_diffuse.dds"
+			texture_normal = "guardian_01_space_dragon_fins_normal.dds"
+			texture_specular = "guardian_01_space_dragon_fins_specular.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+
+		meshsettings = {
+			name = "pPlane26Shape"
+			index = 1
+			texture_diffuse = "guardians_01_space_dragon_violet_diffuse.dds"
+			texture_normal = "guardian_01_space_dragon_normal.dds"
+			texture_specular = "guardian_01_space_dragon_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "NSC_magenta_dragonfire_drake_mesh"
+		file = "gfx/models/ships/guardians/space_dragon/guardian_01_space_dragon.mesh"
+		scale = 1.0
+		
+		animation = { id = "idle"			type = "guardian_01_space_dragon_idle_animation" }
+		animation = { id = "moving"			type = "guardian_01_space_dragon_moving_animation" }
+		animation = { id = "death"			type = "guardian_01_space_dragon_death_animation" }
+		animation = { id = "attack"			type = "guardian_01_space_dragon_attack_animation" }
+		
+		meshsettings = {
+			name = "pPlane26Shape"
+			index = 0
+			texture_diffuse = "guardians_01_space_dragon_fins_magenta_diffuse.dds"
+			texture_normal = "guardian_01_space_dragon_fins_normal.dds"
+			texture_specular = "guardian_01_space_dragon_fins_specular.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+
+		meshsettings = {
+			name = "pPlane26Shape"
+			index = 1
+			texture_diffuse = "guardians_01_space_dragon_magenta_diffuse.dds"
+			texture_normal = "guardian_01_space_dragon_normal.dds"
+			texture_specular = "guardian_01_space_dragon_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "NSC_rose_dragonfire_drake_mesh"
+		file = "gfx/models/ships/guardians/space_dragon/guardian_01_space_dragon.mesh"
+		scale = 1.0
+		
+		animation = { id = "idle"			type = "guardian_01_space_dragon_idle_animation" }
+		animation = { id = "moving"			type = "guardian_01_space_dragon_moving_animation" }
+		animation = { id = "death"			type = "guardian_01_space_dragon_death_animation" }
+		animation = { id = "attack"			type = "guardian_01_space_dragon_attack_animation" }
+		
+		meshsettings = {
+			name = "pPlane26Shape"
+			index = 0
+			texture_diffuse = "guardians_01_space_dragon_fins_rose_diffuse.dds"
+			texture_normal = "guardian_01_space_dragon_fins_normal.dds"
+			texture_specular = "guardian_01_space_dragon_fins_specular.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+
+		meshsettings = {
+			name = "pPlane26Shape"
+			index = 1
+			texture_diffuse = "guardians_01_space_dragon_rose_diffuse.dds"
+			texture_normal = "guardian_01_space_dragon_normal.dds"
+			texture_specular = "guardian_01_space_dragon_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "NSC_white_dragonfire_drake_mesh"
+		file = "gfx/models/ships/guardians/space_dragon/guardian_01_space_dragon.mesh"
+		scale = 1.0
+		
+		animation = { id = "idle"			type = "guardian_01_space_dragon_idle_animation" }
+		animation = { id = "moving"			type = "guardian_01_space_dragon_moving_animation" }
+		animation = { id = "death"			type = "guardian_01_space_dragon_death_animation" }
+		animation = { id = "attack"			type = "guardian_01_space_dragon_attack_animation" }
+		
+		meshsettings = {
+			name = "pPlane26Shape"
+			index = 0
+			texture_diffuse = "guardians_01_space_dragon_fins_white_diffuse.dds"
+			texture_normal = "guardian_01_space_dragon_fins_normal.dds"
+			texture_specular = "guardian_01_space_dragon_fins_specular.dds"
+			shader = "PdxMeshAlphaAdditive"
+		}
+
+		meshsettings = {
+			name = "pPlane26Shape"
+			index = 1
+			texture_diffuse = "guardians_01_space_dragon_white_diffuse.dds"
+			texture_normal = "guardian_01_space_dragon_normal.dds"
+			texture_specular = "NSC_guardian_01_space_dragon_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

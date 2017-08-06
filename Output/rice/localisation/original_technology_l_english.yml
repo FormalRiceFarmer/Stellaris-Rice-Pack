@@ -1,0 +1,20 @@
+﻿l_english:
+ 
+ ####################################
+ # Technology
+ ####################################
+ 
+ tech_original:0 "Battleship Mk. 0 Design"
+ tech_original_desc:1 "The classic battleship, carries unmatched power into battle at even greater cost and reduced maneuverability."
+ tech_hybrid:0 "Hybrid Battleship Design"
+ tech_hybrid_desc:1 "Xeno species encounter enable us to intergrate some of their ship designs into our own."
+ tech_loop:0 "Bank's Loop Weapon Platform"
+ tech_loop_desc:1 "With the fallen empire tech reversed engineered, we're able to intergrate ancient tech into our ships, gaining us an advantages when they back."
+ 
+ ####################################
+ # Technology View
+ ####################################
+
+ TECH_UNLOCK_LOOP_TITLE:0 "§HUnlocks Section:§! Loop"
+ TECH_UNLOCK_LOOP_DESC:0 "§HLoop Section§!\nA large ring-like section, consists of powerful weapon sections, that designed to flow around the battleship."
+ 

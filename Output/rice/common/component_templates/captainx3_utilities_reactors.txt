@@ -1,0 +1,248 @@
+# Icons set here are the ones show in the actual slot. The reason is so that we can support different icons for different sizes. 
+
+#####################
+# REACTOR UTILITIES #
+#####################
+
+
+# Graviton Reactor
+
+utility_component_template = {
+	key = "GRAVITON_REACTOR_S"
+	size = small
+	icon = "GFX_ship_part_reactor_6_NSC"
+	icon_frame = 1
+	power = 40
+	cost = 35
+	
+	prerequisites = { "tech_graviton_power"  }
+	upgrades_to = "DARK_MATTER_REACTOR_S"
+	component_set = "GRAVITON_REACTOR"
+}
+
+utility_component_template = {
+	key = "GRAVITON_REACTOR_M"
+	size = medium
+	icon = "GFX_ship_part_reactor_6_NSC"
+	icon_frame = 1
+	power = 80
+	cost = 70
+	
+	prerequisites = { "tech_graviton_power"  }
+	upgrades_to = "DARK_MATTER_REACTOR_M"
+	component_set = "GRAVITON_REACTOR"
+}
+
+utility_component_template = {
+	key = "GRAVITON_REACTOR_L"
+	size = large
+	icon = "GFX_ship_part_reactor_6_NSC"
+	icon_frame = 1
+	power = 160
+	cost = 140
+	
+	prerequisites = { "tech_graviton_power"  }
+	upgrades_to = "DARK_MATTER_REACTOR_L"
+	component_set = "GRAVITON_REACTOR"
+}
+
+# Dark Matter Reactor
+
+utility_component_template = {
+	key = "DARK_MATTER_REACTOR_S"
+	size = small
+	icon = "GFX_ship_part_reactor_7_NSC"
+	icon_frame = 1
+	power = 50
+	cost = 45
+	
+	prerequisites = { "tech_dark_matter_power"  }
+	upgrades_to = "ADV_ZERO_POINT_REACTOR_S"
+	component_set = "DARK_MATTER_REACTOR"
+}
+
+utility_component_template = {
+	key = "DARK_MATTER_REACTOR_M"
+	size = medium
+	icon = "GFX_ship_part_reactor_7_NSC"
+	icon_frame = 1
+	power = 100
+	cost = 90
+	
+	prerequisites = { "tech_dark_matter_power"  }
+	upgrades_to = "ADV_ZERO_POINT_REACTOR_M"
+	component_set = "DARK_MATTER_REACTOR"
+}
+
+utility_component_template = {
+	key = "DARK_MATTER_REACTOR_L"
+	size = large
+	icon = "GFX_ship_part_reactor_7_NSC"
+	icon_frame = 1
+	power = 200
+	cost = 180
+	
+	prerequisites = { "tech_dark_matter_power"  }
+	upgrades_to = "ADV_ZERO_POINT_REACTOR_L"
+	component_set = "DARK_MATTER_REACTOR"
+}
+
+# This reactor is the "Singularity" Reactor, but uses the enternal game of the AZPM to keep saved games alive with the "closest" reactor in power in the new system.
+utility_component_template = {
+	key = "ADV_ZERO_POINT_REACTOR_S" #SINGULARITY_REACTOR
+	size = small
+	icon = "GFX_ship_part_reactor_8_NSC"
+	icon_frame = 1
+	power = 60
+	cost = 55
+	
+	prerequisites = { "tech_adv_zero_point_power"  }
+	upgrades_to = "MULTIDIMENSIONAL_REACTOR_S"
+	component_set = "ADV_ZERO_POINT_REACTOR"
+}
+
+utility_component_template = {
+	key = "ADV_ZERO_POINT_REACTOR_M" #SINGULARITY_REACTOR
+	size = medium
+	icon = "GFX_ship_part_reactor_8_NSC"
+	icon_frame = 1
+	power = 120
+	cost = 110
+	
+	prerequisites = { "tech_adv_zero_point_power"  }
+	upgrades_to = "MULTIDIMENSIONAL_REACTOR_M"
+	component_set = "ADV_ZERO_POINT_REACTOR"
+}
+
+utility_component_template = {
+	key = "ADV_ZERO_POINT_REACTOR_L" #SINGULARITY_REACTOR
+	size = large
+	icon = "GFX_ship_part_reactor_8_NSC"
+	icon_frame = 1
+	power = 240
+	cost = 220
+	
+	prerequisites = { "tech_adv_zero_point_power"  }
+	upgrades_to = "MULTIDIMENSIONAL_REACTOR_L"
+	component_set = "ADV_ZERO_POINT_REACTOR"
+}
+
+# Multidimensional Reactor
+
+utility_component_template = {
+	key = "MULTIDIMENSIONAL_REACTOR_S"
+	size = small
+	icon = "GFX_ship_part_reactor_9_NSC"
+	icon_frame = 1
+	power = 70
+	cost = 65
+	
+	prerequisites = { "tech_multidimensional_power"  }
+	upgrades_to = "NSC_ZERO_POINT_REACTOR_S"
+	component_set = "MULTIDIMENSIONAL_REACTOR"
+}
+
+utility_component_template = {
+	key = "MULTIDIMENSIONAL_REACTOR_M"
+	size = medium
+	icon = "GFX_ship_part_reactor_9_NSC"
+	icon_frame = 1
+	power = 140
+	cost = 130
+	
+	prerequisites = { "tech_multidimensional_power"  }
+	upgrades_to = "NSC_ZERO_POINT_REACTOR_M"
+	component_set = "MULTIDIMENSIONAL_REACTOR"
+}
+
+utility_component_template = {
+	key = "MULTIDIMENSIONAL_REACTOR_L"
+	size = large
+	icon = "GFX_ship_part_reactor_9_NSC"
+	icon_frame = 1
+	power = 280
+	cost = 260
+	
+	prerequisites = { "tech_multidimensional_power"  }
+	upgrades_to = "NSC_ZERO_POINT_REACTOR_L"
+	component_set = "MULTIDIMENSIONAL_REACTOR"
+}
+
+# Zero Point Reactor
+
+utility_component_template = {
+	key = "NSC_ZERO_POINT_REACTOR_S"
+	size = small
+	icon = "GFX_ship_part_reactor_10_NSC"
+	icon_frame = 1
+	power = 80
+	cost = 75
+	
+	prerequisites = { "tech_nsc_zero_point_power"  }
+	upgrades_to = "NSC_OPTIMIZED_ENIGMATIC_REACTOR_S"
+	component_set = "NSC_ZERO_POINT_REACTOR"
+}
+
+utility_component_template = {
+	key = "NSC_ZERO_POINT_REACTOR_M"
+	size = medium
+	icon = "GFX_ship_part_reactor_10_NSC"
+	icon_frame = 1
+	power = 160
+	cost = 150
+	
+	prerequisites = { "tech_nsc_zero_point_power"  }
+	upgrades_to = "NSC_OPTIMIZED_ENIGMATIC_REACTOR_M"
+	component_set = "NSC_ZERO_POINT_REACTOR"
+}
+
+utility_component_template = {
+	key = "NSC_ZERO_POINT_REACTOR_L"
+	size = large
+	icon = "GFX_ship_part_reactor_10_NSC"
+	icon_frame = 1
+	power = 320
+	cost = 300
+	
+	prerequisites = { "tech_nsc_zero_point_power"  }
+	upgrades_to = "NSC_OPTIMIZED_ENIGMATIC_REACTOR_L"
+	component_set = "NSC_ZERO_POINT_REACTOR"
+}
+
+# Optimized Enigmatic Power Core
+
+utility_component_template = {
+	key = "NSC_OPTIMIZED_ENIGMATIC_REACTOR_S"
+	size = small
+	icon = "GFX_ship_part_reactor_11_enigmatic_NSC"
+	icon_frame = 1
+	power = 100
+	cost = 95
+	
+	prerequisites = { "tech_optimized_enigmatic_power"  }
+	component_set = "NSC_OPTIMIZED_ENIGMATIC_REACTOR"
+}
+
+utility_component_template = {
+	key = "NSC_OPTIMIZED_ENIGMATIC_REACTOR_M"
+	size = medium
+	icon = "GFX_ship_part_reactor_11_enigmatic_NSC"
+	icon_frame = 1
+	power = 200
+	cost = 190
+	
+	prerequisites = { "tech_optimized_enigmatic_power"  }
+	component_set = "NSC_OPTIMIZED_ENIGMATIC_REACTOR"
+}
+
+utility_component_template = {
+	key = "NSC_OPTIMIZED_ENIGMATIC_REACTOR_L"
+	size = large
+	icon = "GFX_ship_part_reactor_11_enigmatic_NSC"
+	icon_frame = 1
+	power = 400
+	cost = 380
+	
+	prerequisites = { "tech_optimized_enigmatic_power"  }
+	component_set = "NSC_OPTIMIZED_ENIGMATIC_REACTOR"
+}

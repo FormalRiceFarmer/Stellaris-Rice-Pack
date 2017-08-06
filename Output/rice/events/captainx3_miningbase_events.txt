@@ -1,0 +1,72 @@
+namespace = miningbase
+
+planet_event = {
+	id = miningbase.1
+	hide_window = yes
+	trigger = {
+		NOT = { has_modifier = "miningbase_bonus_planet" }
+		is_colony = yes
+		solar_system = {
+			any_ship_in_system = {
+				is_ship_size = MiningBase
+			}
+		}
+	}
+	immediate = {
+		add_modifier = {
+			modifier = "miningbase_bonus_planet"
+			days = 30
+		}
+	}
+}
+
+
+country_event = {
+	id = miningbase.2
+	hide_window = yes
+	mean_time_to_happen = { days = 30 }
+	trigger = { any_owned_ship = { is_ship_size = MiningBase } }
+	immediate = {
+		remove_modifier = nsc_miningbonus_1
+		remove_modifier = nsc_miningbonus_2
+		remove_modifier = nsc_miningbonus_3
+		remove_modifier = nsc_miningbonus_4
+		remove_modifier = nsc_miningbonus_5
+		remove_modifier = nsc_miningbonus_6
+		remove_modifier = nsc_miningbonus_7
+		remove_modifier = nsc_miningbonus_8
+		remove_modifier = nsc_miningbonus_9
+		remove_modifier = nsc_miningbonus_10
+		if = {
+			limit = { count_owned_ships = { limit = { is_ship_size = MiningBase } count > 9 } }
+			add_modifier = { modifier = nsc_miningbonus_10 days = -1 }
+		else = { if = {
+			limit = { count_owned_ships = { limit = { is_ship_size = MiningBase } count = 9 } }
+			add_modifier = { modifier = nsc_miningbonus_9 days = -1 }
+		else = { if = {
+			limit = { count_owned_ships = { limit = { is_ship_size = MiningBase } count = 8 } }
+			add_modifier = { modifier = nsc_miningbonus_8 days = -1 }
+		else = { if = {
+			limit = { count_owned_ships = { limit = { is_ship_size = MiningBase } count = 7 } }
+			add_modifier = { modifier = nsc_miningbonus_7 days = -1 }
+		else = { if = {
+			limit = { count_owned_ships = { limit = { is_ship_size = MiningBase } count = 6 } }
+			add_modifier = { modifier = nsc_miningbonus_6 days = -1 }
+		else = { if = {
+			limit = { count_owned_ships = { limit = { is_ship_size = MiningBase } count = 5 } }
+			add_modifier = { modifier = nsc_miningbonus_5 days = -1 }
+		else = { if = {
+			limit = { count_owned_ships = { limit = { is_ship_size = MiningBase } count = 4 } }
+			add_modifier = { modifier = nsc_miningbonus_4 days = -1 }
+		else = { if = {
+			limit = { count_owned_ships = { limit = { is_ship_size = MiningBase } count = 3 } }
+			add_modifier = { modifier = nsc_miningbonus_3 days = -1 }
+		else = { if = {
+			limit = { count_owned_ships = { limit = { is_ship_size = MiningBase } count = 2 } }
+			add_modifier = { modifier = nsc_miningbonus_2 days = -1 }
+		else = { if = {
+			limit = { count_owned_ships = { limit = { is_ship_size = MiningBase } count = 1 } }
+			add_modifier = { modifier = nsc_miningbonus_1 days = -1 }
+		}}}}}}}}}}}}}}}}}}}
+	}
+}

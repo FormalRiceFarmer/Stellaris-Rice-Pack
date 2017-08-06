@@ -1,0 +1,346 @@
+@wraithScale = 0.75
+
+entity = {
+	name = "red_wraith_entity"
+	pdxmesh = "locator_mesh"
+	
+	locator = { name = "part1" 	position = { 0 0 0 } }
+  
+	game_data = {
+  		raytrace_projectiles = no
+  		dissolve_on_death = 3.0
+		ship_color = hsv { 0.02 1.0 0.75 1.0 }
+ 	}
+  
+	cull_radius = 10.0
+}
+
+entity = {
+	name = "orange_wraith_entity"
+	pdxmesh = "locator_mesh"
+	
+	locator = { name = "part1" 	position = { 0 0 0 } }
+  
+	game_data = {
+  		raytrace_projectiles = no
+  		dissolve_on_death = 3.0
+		ship_color = hsv { 0.06 1.0 0.75 1.0 }
+ 	}
+  
+	cull_radius = 10.0
+}
+
+entity = {
+	name = "yellow_wraith_entity"
+	pdxmesh = "locator_mesh"
+	
+	locator = { name = "part1" 	position = { 0 0 0 } }
+  
+	game_data = {
+  		raytrace_projectiles = no
+  		dissolve_on_death = 3.0
+		ship_color = hsv { 0.09 1.0 0.75 1.0 }
+ 	}
+  
+	cull_radius = 10.0
+}
+
+entity = {
+	name = "green_wraith_entity"
+	pdxmesh = "locator_mesh"
+	
+	locator = { name = "part1" 	position = { 0 0 0 } }
+  
+	game_data = {
+  		raytrace_projectiles = no
+  		dissolve_on_death = 3.0
+		ship_color = hsv { 0.09 1.0 0.75 1.0 }
+ 	}
+  
+	cull_radius = 10.0
+}
+
+entity = {
+	name = "blue_wraith_entity"
+	pdxmesh = "locator_mesh"
+	
+	locator = { name = "part1" 	position = { 0 0 0 } }
+  
+	game_data = {
+  		raytrace_projectiles = no
+  		dissolve_on_death = 6.0
+		ship_color = hsv { 0.55 1.0 0.75 1.0 }
+ 	}
+  
+	cull_radius = 10.0
+}
+
+entity = {
+	name = "violet_wraith_entity"
+	pdxmesh = "locator_mesh"
+	
+	locator = { name = "part1" 	position = { 0 0 0 } }
+  
+	game_data = {
+  		raytrace_projectiles = no
+  		dissolve_on_death = 6.0
+		ship_color = hsv { 0.55 1.0 0.75 1.0 }
+ 	}
+  
+	cull_radius = 10.0
+}
+
+entity = {
+	name = "white_wraith_entity"
+	pdxmesh = "locator_mesh"
+	
+	locator = { name = "part1" 	position = { 0 0 0 } }
+  
+	game_data = {
+  		raytrace_projectiles = no
+  		dissolve_on_death = 6.0
+		ship_color = hsv { 0.55 1.0 0.75 1.0 }
+ 	}
+  
+	cull_radius = 10.0
+}
+
+entity = {
+	name = "red_wraith_section_entity"
+	pdxmesh = "wraith_01_red_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		event = { time = 0 node = "ship_main" particle = "wraith_body_electricity_red_effect" keep_particle = yes trigger_once = yes }
+		
+		event = { trigger_once = yes sound = { soundeffect = "wraith_idle"  } }
+		event = { trigger_once = yes sound = { soundeffect = "wraith_spark_01" } }
+		event = { trigger_once = yes sound = { soundeffect = "wraith_spark_02" } }
+		
+		event = { time = 0 node = "tentacle_locator_01" particle = "wraith_tentacle_electricity_red_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "tentacle_locator_02" particle = "wraith_tentacle_electricity_red_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "tentacle_locator_03" particle = "wraith_tentacle_electricity_red_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "tentacle_locator_04" particle = "wraith_tentacle_electricity_red_effect" keep_particle = yes trigger_once = yes }
+	}
+	state = { name = "moving" animation = "moving" 
+		event = { time = 0 node = "ship_main" particle = "wraith_body_electricity_red_effect" keep_particle = yes trigger_once = yes }
+		
+		event = { trigger_once = yes sound = { soundeffect = "wraith_moving" } }
+		
+		event = { time = 0 node = "tentacle_locator_01" particle = "wraith_tentacle_electricity_red_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "tentacle_locator_02" particle = "wraith_tentacle_electricity_red_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "tentacle_locator_03" particle = "wraith_tentacle_electricity_red_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "tentacle_locator_04" particle = "wraith_tentacle_electricity_red_effect" keep_particle = yes trigger_once = yes }
+	}
+	state = { name = "death" animation = "death" looping = no
+		event = { trigger_once = yes sound = { soundeffect = "wraith_death" } }
+	}
+	
+	
+	scale = @wraithScale
+	# XL weapon windup locator names: xl_windup_01-064
+}
+
+entity = {
+	name = "yellow_wraith_section_entity"
+	pdxmesh = "wraith_01_yellow_new_mesh"
+	scale = @wraithScale
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		event = { time = 0 node = "ship_main" particle = "wraith_body_electricity_yellow_new_effect" keep_particle = yes trigger_once = yes }
+		
+		start_event = { trigger_once = yes sound = { soundeffect = "wraith_idle"  } }
+		event = { trigger_once = yes sound = { soundeffect = "wraith_spark_01" } }
+		event = { trigger_once = yes sound = { soundeffect = "wraith_spark_02" } }
+		
+		event = { time = 0 node = "tentacle_locator_01" particle = "wraith_tentacle_electricity_yellow_new_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "tentacle_locator_02" particle = "wraith_tentacle_electricity_yellow_new_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "tentacle_locator_03" particle = "wraith_tentacle_electricity_yellow_new_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "tentacle_locator_04" particle = "wraith_tentacle_electricity_yellow_new_effect" keep_particle = yes trigger_once = yes }
+	}
+	state = { name = "moving" animation = "moving" 
+		event = { time = 0 node = "ship_main" particle = "wraith_body_electricity_yellow_new_effect" keep_particle = yes trigger_once = yes }
+		
+		event = { trigger_once = yes sound = { soundeffect = "wraith_moving" } }
+		
+		event = { time = 0 node = "tentacle_locator_01" particle = "wraith_tentacle_electricity_yellow_new_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "tentacle_locator_02" particle = "wraith_tentacle_electricity_yellow_new_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "tentacle_locator_03" particle = "wraith_tentacle_electricity_yellow_new_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "tentacle_locator_04" particle = "wraith_tentacle_electricity_yellow_new_effect" keep_particle = yes trigger_once = yes }
+	}
+	state = { name = "death" animation = "death" looping = no
+		event = { trigger_once = yes sound = { soundeffect = "wraith_death" } }
+	}
+}
+
+entity = {
+	name = "orange_wraith_section_entity"
+	pdxmesh = "wraith_01_orange_mesh"
+	scale = @wraithScale
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		event = { time = 0 node = "ship_main" particle = "wraith_body_electricity_orange_effect" keep_particle = yes trigger_once = yes }
+		
+		start_event = { trigger_once = yes sound = { soundeffect = "wraith_idle"  } }
+		event = { trigger_once = yes sound = { soundeffect = "wraith_spark_01" } }
+		event = { trigger_once = yes sound = { soundeffect = "wraith_spark_02" } }
+		
+		event = { time = 0 node = "tentacle_locator_01" particle = "wraith_tentacle_electricity_orange_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "tentacle_locator_02" particle = "wraith_tentacle_electricity_orange_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "tentacle_locator_03" particle = "wraith_tentacle_electricity_orange_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "tentacle_locator_04" particle = "wraith_tentacle_electricity_orange_effect" keep_particle = yes trigger_once = yes }
+	}
+	state = { name = "moving" animation = "moving" 
+		event = { time = 0 node = "ship_main" particle = "wraith_body_electricity_orange_effect" keep_particle = yes trigger_once = yes }
+		
+		event = { trigger_once = yes sound = { soundeffect = "wraith_moving" } }
+		
+		event = { time = 0 node = "tentacle_locator_01" particle = "wraith_tentacle_electricity_orange_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "tentacle_locator_02" particle = "wraith_tentacle_electricity_orange_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "tentacle_locator_03" particle = "wraith_tentacle_electricity_orange_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "tentacle_locator_04" particle = "wraith_tentacle_electricity_orange_effect" keep_particle = yes trigger_once = yes }
+	}
+	state = { name = "death" animation = "death" looping = no
+		event = { trigger_once = yes sound = { soundeffect = "wraith_death" } }
+	}
+}
+
+entity = {
+	name = "green_wraith_section_entity"
+	pdxmesh = "wraith_01_green_mesh"
+	scale = @wraithScale
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		event = { time = 0 node = "ship_main" particle = "wraith_body_electricity_green_effect" keep_particle = yes trigger_once = yes }
+		
+		start_event = { trigger_once = yes sound = { soundeffect = "wraith_idle"  } }
+		event = { trigger_once = yes sound = { soundeffect = "wraith_spark_01" } }
+		event = { trigger_once = yes sound = { soundeffect = "wraith_spark_02" } }
+		
+		event = { time = 0 node = "tentacle_locator_01" particle = "wraith_tentacle_electricity_green_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "tentacle_locator_02" particle = "wraith_tentacle_electricity_green_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "tentacle_locator_03" particle = "wraith_tentacle_electricity_green_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "tentacle_locator_04" particle = "wraith_tentacle_electricity_green_effect" keep_particle = yes trigger_once = yes }
+	}
+	state = { name = "moving" animation = "moving" 
+		event = { time = 0 node = "ship_main" particle = "wraith_body_electricity_green_effect" keep_particle = yes trigger_once = yes }
+		
+		event = { trigger_once = yes sound = { soundeffect = "wraith_moving" } }
+		
+		event = { time = 0 node = "tentacle_locator_01" particle = "wraith_tentacle_electricity_green_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "tentacle_locator_02" particle = "wraith_tentacle_electricity_green_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "tentacle_locator_03" particle = "wraith_tentacle_electricity_green_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "tentacle_locator_04" particle = "wraith_tentacle_electricity_green_effect" keep_particle = yes trigger_once = yes }
+	}
+	state = { name = "death" animation = "death" looping = no
+		event = { trigger_once = yes sound = { soundeffect = "wraith_death" } }
+	}
+}
+
+entity = {
+	name = "blue_wraith_section_entity"
+	pdxmesh = "wraith_01_azure_mesh"
+	scale = @wraithScale
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		event = { time = 0 node = "ship_main" particle = "wraith_body_electricity_blue_effect" keep_particle = yes trigger_once = yes }
+		
+		start_event = { trigger_once = yes sound = { soundeffect = "wraith_idle"  } }
+		event = { trigger_once = yes sound = { soundeffect = "wraith_spark_01" stop_on_state_change = yes } }
+		event = { trigger_once = yes sound = { soundeffect = "wraith_spark_02" stop_on_state_change = yes } }
+		
+		event = { time = 0 node = "tentacle_locator_01" particle = "wraith_tentacle_electricity_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "tentacle_locator_02" particle = "wraith_tentacle_electricity_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "tentacle_locator_03" particle = "wraith_tentacle_electricity_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "tentacle_locator_04" particle = "wraith_tentacle_electricity_blue_effect" keep_particle = yes trigger_once = yes }
+	}
+	state = { name = "moving" animation = "moving" 
+		event = { time = 0 node = "ship_main" particle = "wraith_body_electricity_blue_effect" keep_particle = yes trigger_once = yes }
+		
+		event = { sound = { soundeffect = "wraith_moving" } }
+		event = { trigger_once = yes sound = { soundeffect = "wraith_spark_01" stop_on_state_change = yes } }
+		event = { trigger_once = yes sound = { soundeffect = "wraith_spark_02" stop_on_state_change = yes } }
+		
+		event = { time = 0 node = "tentacle_locator_01" particle = "wraith_tentacle_electricity_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "tentacle_locator_02" particle = "wraith_tentacle_electricity_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "tentacle_locator_03" particle = "wraith_tentacle_electricity_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "tentacle_locator_04" particle = "wraith_tentacle_electricity_blue_effect" keep_particle = yes trigger_once = yes }
+	}
+	state = { name = "death" animation = "death" looping = no
+		event = { trigger_once = yes sound = { soundeffect = "wraith_death" } }
+	}
+}
+
+entity = {
+	name = "violet_wraith_section_entity"
+	pdxmesh = "wraith_01_violet_mesh"
+	scale = @wraithScale
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		event = { time = 0 node = "ship_main" particle = "wraith_body_electricity_violet_effect" keep_particle = yes trigger_once = yes }
+		
+		start_event = { trigger_once = yes sound = { soundeffect = "wraith_idle"  } }
+		event = { trigger_once = yes sound = { soundeffect = "wraith_spark_01" stop_on_state_change = yes } }
+		event = { trigger_once = yes sound = { soundeffect = "wraith_spark_02" stop_on_state_change = yes } }
+		
+		event = { time = 0 node = "tentacle_locator_01" particle = "wraith_tentacle_electricity_violet_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "tentacle_locator_02" particle = "wraith_tentacle_electricity_violet_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "tentacle_locator_03" particle = "wraith_tentacle_electricity_violet_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "tentacle_locator_04" particle = "wraith_tentacle_electricity_violet_effect" keep_particle = yes trigger_once = yes }
+	}
+	state = { name = "moving" animation = "moving" 
+		event = { time = 0 node = "ship_main" particle = "wraith_body_electricity_violet_effect" keep_particle = yes trigger_once = yes }
+		
+		event = { sound = { soundeffect = "wraith_moving" } }
+		event = { trigger_once = yes sound = { soundeffect = "wraith_spark_01" stop_on_state_change = yes } }
+		event = { trigger_once = yes sound = { soundeffect = "wraith_spark_02" stop_on_state_change = yes } }
+		
+		event = { time = 0 node = "tentacle_locator_01" particle = "wraith_tentacle_electricity_violet_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "tentacle_locator_02" particle = "wraith_tentacle_electricity_violet_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "tentacle_locator_03" particle = "wraith_tentacle_electricity_violet_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "tentacle_locator_04" particle = "wraith_tentacle_electricity_violet_effect" keep_particle = yes trigger_once = yes }
+	}
+	state = { name = "death" animation = "death" looping = no
+		event = { trigger_once = yes sound = { soundeffect = "wraith_death" } }
+	}
+}
+
+entity = {
+	name = "white_wraith_section_entity"
+	pdxmesh = "wraith_01_white_mesh"
+	scale = @wraithScale
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		event = { time = 0 node = "ship_main" particle = "wraith_body_electricity_white_effect" keep_particle = yes trigger_once = yes }
+		
+		start_event = { trigger_once = yes sound = { soundeffect = "wraith_idle"  } }
+		event = { trigger_once = yes sound = { soundeffect = "wraith_spark_01" stop_on_state_change = yes } }
+		event = { trigger_once = yes sound = { soundeffect = "wraith_spark_02" stop_on_state_change = yes } }
+		
+		event = { time = 0 node = "tentacle_locator_01" particle = "wraith_tentacle_electricity_white_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "tentacle_locator_02" particle = "wraith_tentacle_electricity_white_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "tentacle_locator_03" particle = "wraith_tentacle_electricity_white_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "tentacle_locator_04" particle = "wraith_tentacle_electricity_white_effect" keep_particle = yes trigger_once = yes }
+	}
+	state = { name = "moving" animation = "moving" 
+		event = { time = 0 node = "ship_main" particle = "wraith_body_electricity_white_effect" keep_particle = yes trigger_once = yes }
+		
+		event = { sound = { soundeffect = "wraith_moving" } }
+		event = { trigger_once = yes sound = { soundeffect = "wraith_spark_01" stop_on_state_change = yes } }
+		event = { trigger_once = yes sound = { soundeffect = "wraith_spark_02" stop_on_state_change = yes } }
+		
+		event = { time = 0 node = "tentacle_locator_01" particle = "wraith_tentacle_electricity_white_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "tentacle_locator_02" particle = "wraith_tentacle_electricity_white_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "tentacle_locator_03" particle = "wraith_tentacle_electricity_white_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "tentacle_locator_04" particle = "wraith_tentacle_electricity_white_effect" keep_particle = yes trigger_once = yes }
+	}
+	state = { name = "death" animation = "death" looping = no
+		event = { trigger_once = yes sound = { soundeffect = "wraith_death" } }
+	}
+}

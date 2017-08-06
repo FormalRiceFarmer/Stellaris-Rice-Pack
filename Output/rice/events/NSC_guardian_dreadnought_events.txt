@@ -1,0 +1,340 @@
+namespace = NSC_guardian_automated_dreadnought
+
+country_event = {
+	# Triggered on defeat of Automated Dreadnought. Checks if AI, Player, or Player with Playable Guardians killed it, plus adds another system if more than one Playable Guardian player is in-game.
+	id = NSC_guardian_automated_dreadnought.1
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		From = {
+			is_country_type = guardian_dreadnought
+		}
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				has_country_flag = playable_guardian_feature_active
+				has_country_flag = NSC_player_empire
+				NOT = { has_country_flag = guardian_dreadnought_defeated }
+			}
+			set_country_flag = guardian_dreadnought_defeated
+			country_event = { id = NSC_guardian_automated_dreadnought.2 }
+		}
+		#The remaining coding is to make sure in multiplier if any players have Playable Guardians active yet didn't defeat the Automated Dreadnought, have the oppertunity.
+		if = {
+			limit = {
+				any_country = {
+					has_country_flag = NSC_player_empire
+					has_country_flag = playable_guardian_feature_active
+					NOT = { has_country_flag = guardian_dreadnought_defeated }
+				}
+			}
+			nsc_spawn_dreadnought = yes
+		}
+	}
+}
+
+country_event = {
+	# Player gets to decided if they want a Dreadnought now or later, with alternative options if they don't currently have a Guardian.
+	id = NSC_guardian_automated_dreadnought.2
+	title = "guardian_dreadnought.2.name"
+	desc = "guardian_dreadnought.2.desc"
+	picture = "GFX_evt_automated_dreadnought"
+	show_sound = "event_sensor_ping"
+	is_triggered_only = yes
+	
+	trigger = {
+		has_country_flag = NSC_player_empire
+		has_country_flag = "guardian_dreadnought_defeated"
+	}
+	
+	option = {
+		name = "guardian_dreadnought.2.a"
+		trigger = {
+			NOR = {
+				has_country_flag = playable_guardians_postponed
+				has_country_flag = captain_galleon_built
+				has_country_flag = dimensional_horror_built
+				has_country_flag = enigmatic_fortress_built
+				has_country_flag = dragon_built
+				has_country_flag = stellarite_built
+				has_country_flag = technosphere_built
+				has_country_flag = wraith_built
+			}
+		}
+		hidden_effect = {
+			country_event = { id = NSC_guardian_automated_dreadnought.3 }
+		}
+	}
+	option = {
+		name = "guardian_dreadnought.2.b"
+		trigger = {
+			NOR = {
+				has_country_flag = playable_guardians_postponed
+				has_country_flag = captain_galleon_built
+				has_country_flag = dimensional_horror_built
+				has_country_flag = enigmatic_fortress_built
+				has_country_flag = dragon_built
+				has_country_flag = stellarite_built
+				has_country_flag = technosphere_built
+				has_country_flag = wraith_built
+			}
+		}
+		hidden_effect = {
+			country_event = { id = NSC_guardian_main.2 }
+		}
+	}	
+	option = {
+		name = "guardian_dreadnought.2.c"
+		trigger = {
+			OR = {
+				has_country_flag = playable_guardians_postponed
+				has_country_flag = captain_galleon_built
+				has_country_flag = dimensional_horror_built
+				has_country_flag = enigmatic_fortress_built
+				has_country_flag = dragon_built
+				has_country_flag = stellarite_built
+				has_country_flag = technosphere_built
+				has_country_flag = wraith_built
+			}
+		}
+	}	
+}
+
+country_event = {
+	# Primary and Secondary trigger for getting an Automated Dreadnought.
+	id = NSC_guardian_automated_dreadnought.3
+	title = "guardian_dreadnought.3.name"
+	desc = "guardian_dreadnought.3.desc"
+	picture = "GFX_evt_automated_dreadnought"
+	show_sound = "event_sensor_ping"
+	is_triggered_only = yes
+	
+	trigger = {
+		has_country_flag = NSC_player_empire
+		has_country_flag = "guardian_dreadnought_defeated"
+	}
+	
+	option = { 
+		name = "guardian_dreadnought.3.a"
+		enable_special_project = {
+			name = guardian_dreadnought_original_project
+			location = capital_scope
+			owner = root
+		}
+	}
+	
+	option = { 
+		name = "guardian_dreadnought.3.b"
+		enable_special_project = {
+			name = guardian_dreadnought_alternative_project
+			location = capital_scope
+			owner = root
+		}
+	}
+	
+	option = {
+		name = "guardian_backout.1.a"
+		custom_tooltip = "NSC_guardian_main_tooltip"
+		hidden_effect = {
+			country_event = { id = NSC_guardian_main.2 }
+		}
+	}		
+}
+
+country_event = {
+	# This adds the Automated Dreadnought built country flag.
+	id = NSC_guardian_automated_dreadnought.4
+	hide_window = yes
+
+	trigger = {
+		OR = {
+			is_country_type = "default"
+			#Compatibility with mod: Zenith of Fallen Empires
+			is_country_type = ascended_empire
+			is_country_type = lost_empire
+			is_country_type = ascended_hive_mind
+		}
+		is_ai = no
+		NOT = { has_country_flag = "dreadnought_built" }
+		OR = {
+			count_owned_ships = {
+				limit = { is_ship_size = nsc_automated_dreadnought }
+				count = 1
+			}
+			count_owned_ships = {
+				limit = { is_ship_size = nsc_automated_dreadnought_alternative }
+				count = 1
+			}
+		}
+	}
+	immediate = {
+		set_country_flag = "dreadnought_built"
+		country_event = { id = NSC_guardian_automated_dreadnought.5 }
+	}
+}
+
+country_event = {
+	# Automated Dreadnought built message.
+	id = NSC_guardian_automated_dreadnought.5
+	title = "guardian_dreadnought.4.name"
+	desc = "guardian_dreadnought.4.desc"
+	picture = "GFX_evt_automated_dreadnought"
+	show_sound = "event_sensor_ping"
+	is_triggered_only = yes
+	option = { name = EXCELLENT }
+}
+
+country_event = {
+	# Checks if the Automated Dreadnought has been destroyed or has been "disbanded".
+	id = NSC_guardian_automated_dreadnought.6
+	hide_window = yes
+
+	trigger = {
+		has_country_flag = "dreadnought_built"
+		OR = {
+			is_country_type = "default"
+			#Compatibility with mod: Zenith of Fallen Empires
+			is_country_type = ascended_empire
+			is_country_type = lost_empire
+			is_country_type = ascended_hive_mind
+		}
+		is_ai = no
+		AND = {
+			count_owned_ships = {
+				limit = { is_ship_size = nsc_automated_dreadnought }
+				count = 0
+			}
+			count_owned_ships = {
+				limit = { is_ship_size = nsc_automated_dreadnought_alternative }
+				count = 0
+			}
+		}
+	}
+	immediate = {
+		remove_country_flag = "dreadnought_built"
+		country_event = { id = NSC_guardian_automated_dreadnought.7 }
+	}
+}
+
+country_event = {
+	# Automated Dreadnought destroyed or disbanded message.
+	id = NSC_guardian_automated_dreadnought.7
+	title = "guardian_dreadnought.5.name"
+	desc = "guardian_dreadnought.5.desc"
+	picture = "GFX_evt_exploding_ship"
+	show_sound = "event_sensor_ping"
+	is_triggered_only = yes
+	option = {
+		name = UNDERSTOOD
+		trigger = {
+			OR = {
+				has_country_flag = playable_guardians_postponed
+				has_country_flag = captain_galleon_built
+				has_country_flag = dragon_built
+				has_country_flag = dimensional_horror_built
+				has_country_flag = enigmatic_fortress_built
+				has_country_flag = stellarite_built
+				has_country_flag = technosphere_built
+				has_country_flag = wraith_built
+			}
+		}
+	}
+	option = {
+		name = UNDERSTOOD
+		custom_tooltip = "NSC_guardian_main_tooltip"
+		trigger = {
+			NOR = {
+				has_country_flag = playable_guardians_postponed
+				has_country_flag = captain_galleon_built
+				has_country_flag = dragon_built
+				has_country_flag = dimensional_horror_built
+				has_country_flag = enigmatic_fortress_built
+				has_country_flag = stellarite_built
+				has_country_flag = technosphere_built
+				has_country_flag = wraith_built
+			}
+		}
+		hidden_effect = {
+			country_event = { id = NSC_guardian_main.2 }
+		}
+	}
+}
+
+country_event = {
+	id = NSC_guardian_automated_dreadnought.101
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		has_country_flag = "NSC_player_empire"
+		has_country_flag = playable_guardian_feature_active
+	}
+	
+	#trigger = {
+	#	has_country_flag = NSC_player_empire
+	#	has_country_flag = "guardian_dreadnought_defeated"
+	#}
+
+	immediate = {
+		create_fleet = {
+			name = "NAME_Automated_Dreadnought"
+			settings = {
+				is_boss = yes
+				spawn_debris = no
+			}
+			effect = {
+				set_owner = root
+				create_ship = {
+					name = random
+					design = "NAME_NSC_Automated_Dreadnought"
+				}
+				set_location = {
+					target = root.capital_scope
+					distance = 20
+					angle = random
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = NSC_guardian_automated_dreadnought.102
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		has_country_flag = "NSC_player_empire"
+		has_country_flag = playable_guardian_feature_active
+	}
+	
+	#trigger = {
+	#	has_country_flag = NSC_player_empire
+	#	has_country_flag = "guardian_dreadnought_defeated"
+	#}
+
+	immediate = {
+		create_fleet = {
+			name = "NAME_Automated_Dreadnought"
+			settings = {
+				is_boss = yes
+				spawn_debris = no
+			}
+			effect = {
+				set_owner = root
+				create_ship = {
+					name = random
+					design = "NAME_NSC_Automated_Dreadnought_II"
+				}
+				set_location = {
+					target = root.capital_scope
+					distance = 20
+					angle = random
+				}
+			}
+		}
+	}
+}

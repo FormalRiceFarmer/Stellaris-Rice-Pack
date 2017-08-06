@@ -1,0 +1,408 @@
+namespace = NSC_guardian_technosphere
+
+country_event = {
+	# Triggered upon defeat of the defeat of the Technosphere. If AI beats it, spawns new one. If player beats it, gives flag to unlock Playable Guardians. If more than one player has Playable Guardians active, spawns new system.
+	id = NSC_guardian_technosphere.1
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		From = {
+			is_country_type = guardian_sphere
+		}
+		NOR = {
+			has_country_flag = guardian_technosphere_defeated 
+			has_country_flag = guardian_technosphere_helped
+			has_country_flag = guardian_technosphere_hacked 
+		}
+	}
+	
+	immediate = {
+		set_country_flag = guardian_technosphere_defeated
+		if = {
+			limit = {
+				any_country = {
+					has_country_flag = NSC_player_empire
+					has_country_flag = playable_guardian_feature_active
+					NOR = {
+						has_country_flag = guardian_technosphere_defeated 
+						has_country_flag = guardian_technosphere_helped
+						has_country_flag = guardian_technosphere_hacked 
+					}
+				}
+			}
+			nsc_spawn_technopshere = yes
+		}
+		country_event = { id = NSC_guardian_technosphere.2 }
+	}
+}
+
+# technosphere_hacked
+# technosphere_help_sucess
+# technosphere_help_failed
+# technosphere_help_failed_alt
+
+country_event = {
+	#Checks if the player manages to peacefully and successfully help the Technosphere, rewarded with knowledge required.
+	id = NSC_guardian_technosphere.10
+	hide_window = yes
+	
+	# "if" and "limit" are not required here
+	trigger = {
+		has_country_flag = technosphere_help_sucess #Custom Flag in Guardian Event File - Success
+		NOR = {
+			has_country_flag = guardian_technosphere_defeated 
+			has_country_flag = guardian_technosphere_helped
+			has_country_flag = guardian_technosphere_hacked 
+		}
+	}
+	
+	immediate = {
+		set_country_flag = guardian_technosphere_helped
+		if = {
+			limit = {
+				any_country = {
+					has_country_flag = NSC_player_empire
+					has_country_flag = playable_guardian_feature_active
+					NOR = {
+						has_country_flag = guardian_technosphere_defeated 
+						has_country_flag = guardian_technosphere_helped
+						has_country_flag = guardian_technosphere_hacked 
+					}
+				}
+			}
+			nsc_spawn_technopshere = yes
+		}
+		country_event = { id = NSC_guardian_technosphere.2 }
+	}
+}
+
+country_event = {
+	#Checks if the player manages to successfully hack the Technosphere (extremely hard - 5% chance), but rewards them with their new knowledge.
+	id = NSC_guardian_technosphere.11
+	hide_window = yes
+	
+	# "if" and "limit" are not required here
+	trigger = {
+		has_country_flag = technosphere_hacked #Custom Flag in Guardian Event File - Successful Hack (5% chance)
+		NOR = {
+			has_country_flag = guardian_technosphere_defeated 
+			has_country_flag = guardian_technosphere_helped
+			has_country_flag = guardian_technosphere_hacked 
+		}
+	}
+	
+	immediate = {
+		set_country_flag = guardian_technosphere_hacked
+		if = {
+			limit = {
+				any_country = {
+					has_country_flag = NSC_player_empire
+					has_country_flag = playable_guardian_feature_active
+					NOR = {
+						has_country_flag = guardian_technosphere_defeated 
+						has_country_flag = guardian_technosphere_helped
+						has_country_flag = guardian_technosphere_hacked 
+					}
+				}
+			}
+			nsc_spawn_technopshere = yes
+		}
+		country_event = { id = NSC_guardian_technosphere.2 }
+	}
+}
+
+#Given to a player who tries to help the Technosphere and fails (2 out of 3 possible outcomes). Explains why, respawns Technosphere.
+event = {
+    id = NSC_guardian_technosphere.12
+	title = "guardian_technosphere.6.name"
+    desc = {
+		trigger = {
+			switch = {
+				trigger = has_country_flag
+				technosphere_help_failed = { text = guardian_technosphere.6.desc }
+				technosphere_help_failed_alt = { text = guardian_technosphere.6.alt.desc }
+			}
+		}
+	}
+	picture = "GFX_evt_technosphere"
+	show_sound = "event_sensor_ping"
+	is_triggered_only = yes
+	fire_only_once = yes #To not annoy the player after many failures, just needs to read it once per campaign.
+	
+	trigger = {
+		has_country_flag = playable_guardian_feature_active
+		OR = {
+			has_country_flag = technosphere_help_failed
+			has_country_flag = technosphere_help_failed_alt
+		}
+	}
+	
+	immediate = { nsc_spawn_technopshere = yes }
+	
+	option = { name = NSC_features_understood }
+}
+
+country_event = {
+	id = NSC_guardian_technosphere.2
+	title = "guardian_technosphere.2.name"
+	desc = {
+		trigger = {
+			switch = {
+				trigger = has_country_flag
+				guardian_technosphere_defeated = { text = guardian_technosphere.21.desc }
+				guardian_technosphere_helped = { text = guardian_technosphere.22.desc }
+				guardian_technosphere_hacked = { text = guardian_technosphere.23.desc }
+			}
+		}
+	}
+	picture = "GFX_evt_technosphere"
+	show_sound = "event_sensor_ping"
+	is_triggered_only = yes
+	
+	trigger = {
+		has_country_flag = playable_guardian_feature_active
+		OR = {
+			has_country_flag = guardian_technosphere_defeated
+			has_country_flag = guardian_technosphere_helped
+			has_country_flag = guardian_technosphere_hacked
+		}
+	}
+	
+	option = {
+		name = "guardian_technosphere.2.a"
+		trigger = {
+			NOR = {
+				has_country_flag = playable_guardians_postponed
+				has_country_flag = captain_galleon_built
+				has_country_flag = dreadnought_built
+				has_country_flag = dimensional_horror_built
+				has_country_flag = enigmatic_fortress_built
+				has_country_flag = stellarite_built
+				has_country_flag = dragon_built
+				has_country_flag = wraith_built
+			}
+		}
+		hidden_effect = {
+			country_event = { id = NSC_guardian_technosphere.3 }
+		}
+	}	
+	option = {
+		name = "guardian_technosphere.2.b"
+		trigger = {
+			NOR = {
+				has_country_flag = playable_guardians_postponed
+				has_country_flag = captain_galleon_built
+				has_country_flag = dreadnought_built
+				has_country_flag = dimensional_horror_built
+				has_country_flag = enigmatic_fortress_built
+				has_country_flag = stellarite_built
+				has_country_flag = dragon_built
+				has_country_flag = wraith_built
+			}
+		}
+		hidden_effect = {
+			country_event = { id = NSC_guardian_main.2 }
+		}
+	}
+	option = {
+		name = "guardian_technosphere.2.c"
+		trigger = {
+			OR = {
+				has_country_flag = playable_guardians_postponed
+				has_country_flag = captain_galleon_built
+				has_country_flag = dreadnought_built
+				has_country_flag = dimensional_horror_built
+				has_country_flag = enigmatic_fortress_built
+				has_country_flag = stellarite_built
+				has_country_flag = dragon_built
+				has_country_flag = wraith_built
+			}
+		}
+	}
+}
+
+country_event = {
+	id = NSC_guardian_technosphere.3
+	title = "guardian_technosphere.3.name"
+	desc = "guardian_technosphere.3.desc"
+	picture = "GFX_evt_technosphere"
+	show_sound = "event_sensor_ping"
+	is_triggered_only = yes
+	
+	trigger = {
+		has_country_flag = NSC_player_empire
+		OR = {
+			has_country_flag = guardian_technosphere_defeated
+			has_country_flag = guardian_technosphere_helped
+			has_country_flag = guardian_technosphere_hacked
+		}
+	}
+	
+	option = { 
+		name = "guardian_technosphere.3.a"
+		enable_special_project = {
+			name = guardian_technosphere_project
+			location = capital_scope
+			owner = root
+		}
+	}
+	
+	option = {
+		name = "guardian_backout.1.a"
+		custom_tooltip = "NSC_guardian_main_tooltip"
+		hidden_effect = {
+			country_event = { id = NSC_guardian_main.2 }
+		}
+	}		
+}
+
+
+country_event = {
+	# Primary/Secondary Spawn
+	id = NSC_guardian_technosphere.4
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		has_country_flag = "NSC_player_empire"
+		has_country_flag = playable_guardian_feature_active
+	}
+	
+	#trigger = {
+	#	has_country_flag = NSC_player_empire
+	#	OR = {
+	#		has_country_flag = guardian_technosphere_defeated
+	#		has_country_flag = guardian_technosphere_helped
+	#	}
+	#}
+
+	immediate = {
+		create_fleet = {
+			name = "NAME_Technosphere_Infinity_Machine"
+			settings = {
+				is_boss = yes
+				spawn_debris = no
+			}
+			effect = {
+				set_owner = root
+				create_ship = {
+					name = random
+					design = "NAME_NSC_Infinity_Machine"
+				}
+				set_location = {
+					target = root.capital_scope
+					distance = 20
+					angle = random
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	# This adds the Technosphere built country flag.
+	id = NSC_guardian_technosphere.5
+	hide_window = yes
+
+	trigger = {
+		OR = {
+			is_country_type = "default"
+			#Compatibility with mod: Zenith of Fallen Empires
+			is_country_type = ascended_empire
+			is_country_type = lost_empire
+			is_country_type = ascended_hive_mind
+		}
+		is_ai = no
+		NOT = { has_country_flag = "technosphere_built" }
+		count_owned_ships = {
+			limit = { is_ship_size = NSC_technosphere }
+			count = 1
+		}
+	}
+	immediate = {
+		set_country_flag = "technosphere_built"
+		country_event = { id = NSC_guardian_technosphere.6 }
+	}
+}
+
+country_event = {
+	# Technosphere summoned message.
+	id = NSC_guardian_technosphere.6
+	title = "guardian_technosphere.4.name"
+	desc = "guardian_technosphere.4.desc"
+	picture = "GFX_evt_technosphere"
+	show_sound = "event_sensor_ping"
+	is_triggered_only = yes
+	option = { name = EXCELLENT }
+}
+
+country_event = {
+	# Checks if the Technosphere is destroyed or has been "disbanded".
+	id = NSC_guardian_technosphere.7
+	hide_window = yes
+
+	trigger = {
+		has_country_flag = "technosphere_built"
+		OR = {
+			is_country_type = "default"
+			#Compatibility with mod: Zenith of Fallen Empires
+			is_country_type = ascended_empire
+			is_country_type = lost_empire
+			is_country_type = ascended_hive_mind
+		}
+		is_ai = no
+		count_owned_ships = {
+			limit = { is_ship_size = NSC_technosphere }
+			count = 0
+		}
+	}
+	immediate = {
+		remove_country_flag = "technosphere_built"
+		country_event = { id = NSC_guardian_technosphere.8 }
+	}
+}
+
+country_event = {
+	# Technosphere destroyed or disbanded message.
+	id = NSC_guardian_technosphere.8
+	title = "guardian_technosphere.5.name"
+	desc = "guardian_technosphere.5.desc"
+	picture = "GFX_evt_exploding_ship"
+	show_sound = "event_sensor_ping"
+	is_triggered_only = yes
+	option = {
+		name = UNDERSTOOD
+		trigger = {
+			OR = {
+				has_country_flag = playable_guardians_postponed
+				has_country_flag = captain_galleon_built
+				has_country_flag = dreadnought_built
+				has_country_flag = dimensional_horror_built
+				has_country_flag = enigmatic_fortress_built
+				has_country_flag = stellarite_built
+				has_country_flag = dragon_built
+				has_country_flag = wraith_built
+			}
+		}
+	}
+	option = {
+		name = UNDERSTOOD
+		custom_tooltip = "NSC_guardian_main_tooltip"
+		trigger = {
+			NOR = {
+				has_country_flag = playable_guardians_postponed
+				has_country_flag = captain_galleon_built
+				has_country_flag = dreadnought_built
+				has_country_flag = dimensional_horror_built
+				has_country_flag = enigmatic_fortress_built
+				has_country_flag = stellarite_built
+				has_country_flag = dragon_built
+				has_country_flag = wraith_built
+			}
+		}
+		hidden_effect = {
+			country_event = { id = NSC_guardian_main.2 }
+		}
+	}
+}

@@ -1,0 +1,18 @@
+spriteTypes = {
+	
+	############################
+	### ASCENSION PERK ICONS ###
+	############################
+	
+	spriteType = {
+		name = "GFX_ap_drastic_measure"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_drastic_measure.dds"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_ap_fallen_loop"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_fallen_loop.dds"
+		alwaystransparent = yes
+	}
+}

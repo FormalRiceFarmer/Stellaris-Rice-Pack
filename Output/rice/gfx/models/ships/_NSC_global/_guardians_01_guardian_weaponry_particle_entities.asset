@@ -1,0 +1,775 @@
+################################
+# Red Dragonfire Drake Entries #
+################################
+
+entity = {
+	name = "dragon_weapon_windup_red_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.8
+		event = { trigger_once = yes sound = { soundeffect = "dragon_breath_windup" } }
+	
+		event = { time = 0.0 use_parent_nodes = yes node = xl_gun_01 particle = "NSC_dragon_weapon_red_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "dragon_weapon_muzzle_red_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7.0 looping = no
+		event = { time = 0 particle = "NSC_dragon_weapon_red_muzzle_particle" keep_particle = yes }
+		
+		event = { trigger_once = yes sound = { soundeffect = "dragon_breath_fire" } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_dragon_breath_fire" } }
+		
+	}
+}
+
+entity = {
+	name = "dragon_wing_projectile_red_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle" 
+	state = { name = "idle" 
+		event = { time = 0 particle = "NSC_dragon_wing_projectile_particle_red" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+	}
+	scale = 1.0
+}
+
+entity = {
+	name = "dragon_wing_muzzle_red_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 3 looping = no
+		event = { time = 0 particle = "NSC_dragon_wing_muzzle_particle_red" keep_particle = yes sound = { soundeffect = dragon_wing_attack } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_dragon_wing_attack" } }
+	}
+}
+
+###################################
+# Orange Dragonfire Drake Entries #
+###################################
+
+entity = {
+	name = "dragon_weapon_windup_orange_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.8
+		event = { trigger_once = yes sound = { soundeffect = "dragon_breath_windup" } }
+	
+		event = { time = 0.0 use_parent_nodes = yes node = xl_gun_01 particle = "dragon_weapon_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "dragon_weapon_muzzle_orange_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7.0 looping = no
+		event = { time = 0 particle = "dragon_weapon_muzzle_particle" keep_particle = yes }
+		
+		event = { trigger_once = yes sound = { soundeffect = "dragon_breath_fire" } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_dragon_breath_fire" } }
+		
+	}
+}
+
+entity = {
+	name = "dragon_wing_projectile_orange_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle" 
+	state = { name = "idle" 
+		event = { time = 0 particle = "NSC_dragon_wing_projectile_particle_orange" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+	}
+	scale = 1.0
+}
+
+entity = {
+	name = "dragon_wing_muzzle_orange_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 3 looping = no
+		event = { time = 0 particle = "NSC_dragon_wing_muzzle_particle_orange" keep_particle = yes sound = { soundeffect = dragon_wing_attack } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_dragon_wing_attack" } }
+	}
+}
+
+###################################
+# Yellow Dragonfire Drake Entries #
+###################################
+
+entity = {
+	name = "dragon_weapon_windup_yellow_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.8
+		event = { trigger_once = yes sound = { soundeffect = "dragon_breath_windup" } }
+	
+		event = { time = 0.0 use_parent_nodes = yes node = xl_gun_01 particle = "NSC_dragon_weapon_yellow_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "dragon_weapon_muzzle_yellow_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7.0 looping = no
+		event = { time = 0 particle = "NSC_dragon_weapon_yellow_muzzle_particle" keep_particle = yes }
+		
+		event = { trigger_once = yes sound = { soundeffect = "dragon_breath_fire" } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_dragon_breath_fire" } }
+		
+	}
+}
+
+entity = {
+	name = "dragon_wing_projectile_yellow_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle" 
+	state = { name = "idle" 
+		event = { time = 0 particle = "NSC_dragon_wing_projectile_particle_yellow" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+	}
+	scale = 1.0
+}
+
+entity = {
+	name = "dragon_wing_muzzle_yellow_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 3 looping = no
+		event = { time = 0 particle = "NSC_dragon_wing_muzzle_particle_yellow" keep_particle = yes sound = { soundeffect = dragon_wing_attack } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_dragon_wing_attack" } }
+	}
+}
+
+#######################################
+# Chartreuse Dragonfire Drake Entries #
+#######################################
+
+entity = {
+	name = "dragon_weapon_windup_chartreuse_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.8
+		event = { trigger_once = yes sound = { soundeffect = "dragon_breath_windup" } }
+	
+		event = { time = 0.0 use_parent_nodes = yes node = xl_gun_01 particle = "NSC_dragon_weapon_chartreuse_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "dragon_weapon_muzzle_chartreuse_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7.0 looping = no
+		event = { time = 0 particle = "NSC_dragon_weapon_chartreuse_muzzle_particle" keep_particle = yes }
+		
+		event = { trigger_once = yes sound = { soundeffect = "dragon_breath_fire" } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_dragon_breath_fire" } }
+		
+	}
+}
+
+entity = {
+	name = "dragon_wing_projectile_chartreuse_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle" 
+	state = { name = "idle" 
+		event = { time = 0 particle = "NSC_dragon_wing_projectile_particle_chartreuse" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+	}
+	scale = 1.0
+}
+
+entity = {
+	name = "dragon_wing_muzzle_chartreuse_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 3 looping = no
+		event = { time = 0 particle = "NSC_dragon_wing_muzzle_particle_chartreuse" keep_particle = yes sound = { soundeffect = dragon_wing_attack } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_dragon_wing_attack" } }
+	}
+}
+
+##################################
+# Green Dragonfire Drake Entries #
+##################################
+
+entity = {
+	name = "dragon_weapon_windup_green_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.8
+		event = { trigger_once = yes sound = { soundeffect = "dragon_breath_windup" } }
+	
+		event = { time = 0.0 use_parent_nodes = yes node = xl_gun_01 particle = "NSC_dragon_weapon_green_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "dragon_weapon_muzzle_green_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7.0 looping = no
+		event = { time = 0 particle = "NSC_dragon_weapon_green_muzzle_particle" keep_particle = yes }
+		
+		event = { trigger_once = yes sound = { soundeffect = "dragon_breath_fire" } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_dragon_breath_fire" } }
+		
+	}
+}
+
+entity = {
+	name = "dragon_wing_projectile_green_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle" 
+	state = { name = "idle" 
+		event = { time = 0 particle = "NSC_dragon_wing_projectile_particle_green" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+	}
+	scale = 1.0
+}
+
+entity = {
+	name = "dragon_wing_muzzle_green_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 3 looping = no
+		event = { time = 0 particle = "NSC_dragon_wing_muzzle_particle_green" keep_particle = yes sound = { soundeffect = dragon_wing_attack } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_dragon_wing_attack" } }
+	}
+}
+
+#######################################
+# Aquamarine Dragonfire Drake Entries #
+#######################################
+
+entity = {
+	name = "dragon_weapon_windup_aquamarine_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.8
+		event = { trigger_once = yes sound = { soundeffect = "dragon_breath_windup" } }
+	
+		event = { time = 0.0 use_parent_nodes = yes node = xl_gun_01 particle = "NSC_dragon_weapon_aquamarine_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "dragon_weapon_muzzle_aquamarine_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7.0 looping = no
+		event = { time = 0 particle = "NSC_dragon_weapon_aquamarine_muzzle_particle" keep_particle = yes }
+		
+		event = { trigger_once = yes sound = { soundeffect = "dragon_breath_fire" } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_dragon_breath_fire" } }
+		
+	}
+}
+
+entity = {
+	name = "dragon_wing_projectile_aquamarine_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle" 
+	state = { name = "idle" 
+		event = { time = 0 particle = "NSC_dragon_wing_projectile_particle_aquamarine" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+	}
+	scale = 1.0
+}
+
+entity = {
+	name = "dragon_wing_muzzle_aquamarine_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 3 looping = no
+		event = { time = 0 particle = "NSC_dragon_wing_muzzle_particle_aquamarine" keep_particle = yes sound = { soundeffect = dragon_wing_attack } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_dragon_wing_attack" } }
+	}
+}
+
+#################################
+# Cyan Dragonfire Drake Entries #
+#################################
+
+entity = {
+	name = "dragon_weapon_windup_cyan_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.8
+		event = { trigger_once = yes sound = { soundeffect = "dragon_breath_windup" } }
+	
+		event = { time = 0.0 use_parent_nodes = yes node = xl_gun_01 particle = "NSC_dragon_weapon_cyan_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "dragon_weapon_muzzle_cyan_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7.0 looping = no
+		event = { time = 0 particle = "NSC_dragon_weapon_cyan_muzzle_particle" keep_particle = yes }
+		
+		event = { trigger_once = yes sound = { soundeffect = "dragon_breath_fire" } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_dragon_breath_fire" } }
+		
+	}
+}
+
+entity = {
+	name = "dragon_wing_projectile_cyan_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle" 
+	state = { name = "idle" 
+		event = { time = 0 particle = "NSC_dragon_wing_projectile_particle_cyan" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+	}
+	scale = 1.0
+}
+
+entity = {
+	name = "dragon_wing_muzzle_cyan_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 3 looping = no
+		event = { time = 0 particle = "NSC_dragon_wing_muzzle_particle_cyan" keep_particle = yes sound = { soundeffect = dragon_wing_attack } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_dragon_wing_attack" } }
+	}
+}
+
+##################################
+# Azure Dragonfire Drake Entries #
+##################################
+
+entity = {
+	name = "dragon_weapon_windup_azure_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.8
+		event = { trigger_once = yes sound = { soundeffect = "dragon_breath_windup" } }
+	
+		event = { time = 0.0 use_parent_nodes = yes node = xl_gun_01 particle = "NSC_dragon_weapon_azure_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "dragon_weapon_muzzle_azure_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7.0 looping = no
+		event = { time = 0 particle = "NSC_dragon_weapon_azure_muzzle_particle" keep_particle = yes }
+		
+		event = { trigger_once = yes sound = { soundeffect = "dragon_breath_fire" } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_dragon_breath_fire" } }
+		
+	}
+}
+
+entity = {
+	name = "dragon_wing_projectile_azure_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle" 
+	state = { name = "idle" 
+		event = { time = 0 particle = "NSC_dragon_wing_projectile_particle_azure" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+	}
+	scale = 1.0
+}
+
+entity = {
+	name = "dragon_wing_muzzle_azure_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 3 looping = no
+		event = { time = 0 particle = "NSC_dragon_wing_muzzle_particle_azure" keep_particle = yes sound = { soundeffect = dragon_wing_attack } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_dragon_wing_attack" } }
+	}
+}
+
+#################################
+# Blue Dragonfire Drake Entries #
+#################################
+
+entity = {
+	name = "dragon_weapon_windup_blue_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.8
+		event = { trigger_once = yes sound = { soundeffect = "dragon_breath_windup" } }
+	
+		event = { time = 0.0 use_parent_nodes = yes node = xl_gun_01 particle = "NSC_dragon_weapon_blue_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "dragon_weapon_muzzle_blue_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7.0 looping = no
+		event = { time = 0 particle = "NSC_dragon_weapon_blue_muzzle_particle" keep_particle = yes }
+		
+		event = { trigger_once = yes sound = { soundeffect = "dragon_breath_fire" } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_dragon_breath_fire" } }
+		
+	}
+}
+
+entity = {
+	name = "dragon_wing_projectile_blue_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle" 
+	state = { name = "idle" 
+		event = { time = 0 particle = "NSC_dragon_wing_projectile_particle_blue" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+	}
+	scale = 1.0
+}
+
+entity = {
+	name = "dragon_wing_muzzle_blue_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 3 looping = no
+		event = { time = 0 particle = "NSC_dragon_wing_muzzle_particle_blue" keep_particle = yes sound = { soundeffect = dragon_wing_attack } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_dragon_wing_attack" } }
+	}
+}
+
+###################################
+# Violet Dragonfire Drake Entries #
+###################################
+
+entity = {
+	name = "dragon_weapon_windup_violet_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.8
+		event = { trigger_once = yes sound = { soundeffect = "dragon_breath_windup" } }
+	
+		event = { time = 0.0 use_parent_nodes = yes node = xl_gun_01 particle = "NSC_dragon_weapon_violet_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "dragon_weapon_muzzle_violet_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7.0 looping = no
+		event = { time = 0 particle = "NSC_dragon_weapon_violet_muzzle_particle" keep_particle = yes }
+		
+		event = { trigger_once = yes sound = { soundeffect = "dragon_breath_fire" } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_dragon_breath_fire" } }
+		
+	}
+}
+
+entity = {
+	name = "dragon_wing_projectile_violet_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle" 
+	state = { name = "idle" 
+		event = { time = 0 particle = "NSC_dragon_wing_projectile_particle_violet" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+	}
+	scale = 1.0
+}
+
+entity = {
+	name = "dragon_wing_muzzle_violet_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 3 looping = no
+		event = { time = 0 particle = "NSC_dragon_wing_muzzle_particle_violet" keep_particle = yes sound = { soundeffect = dragon_wing_attack } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_dragon_wing_attack" } }
+	}
+}
+
+####################################
+# Magenta Dragonfire Drake Entries #
+####################################
+
+entity = {
+	name = "dragon_weapon_windup_magenta_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.8
+		event = { trigger_once = yes sound = { soundeffect = "dragon_breath_windup" } }
+	
+		event = { time = 0.0 use_parent_nodes = yes node = xl_gun_01 particle = "NSC_dragon_weapon_magenta_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "dragon_weapon_muzzle_magenta_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7.0 looping = no
+		event = { time = 0 particle = "NSC_dragon_weapon_magenta_muzzle_particle" keep_particle = yes }
+		
+		event = { trigger_once = yes sound = { soundeffect = "dragon_breath_fire" } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_dragon_breath_fire" } }
+		
+	}
+}
+
+entity = {
+	name = "dragon_wing_projectile_magenta_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle" 
+	state = { name = "idle" 
+		event = { time = 0 particle = "NSC_dragon_wing_projectile_particle_magenta" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+	}
+	scale = 1.0
+}
+
+entity = {
+	name = "dragon_wing_muzzle_magenta_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 3 looping = no
+		event = { time = 0 particle = "NSC_dragon_wing_muzzle_particle_magenta" keep_particle = yes sound = { soundeffect = dragon_wing_attack } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_dragon_wing_attack" } }
+	}
+}
+
+#################################
+# Rose Dragonfire Drake Entries #
+#################################
+
+entity = {
+	name = "dragon_weapon_windup_rose_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.8
+		event = { trigger_once = yes sound = { soundeffect = "dragon_breath_windup" } }
+	
+		event = { time = 0.0 use_parent_nodes = yes node = xl_gun_01 particle = "NSC_dragon_weapon_rose_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "dragon_weapon_muzzle_rose_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7.0 looping = no
+		event = { time = 0 particle = "NSC_dragon_weapon_rose_muzzle_particle" keep_particle = yes }
+		
+		event = { trigger_once = yes sound = { soundeffect = "dragon_breath_fire" } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_dragon_breath_fire" } }
+		
+	}
+}
+
+entity = {
+	name = "dragon_wing_projectile_rose_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle" 
+	state = { name = "idle" 
+		event = { time = 0 particle = "NSC_dragon_wing_projectile_particle_rose" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+	}
+	scale = 1.0
+}
+
+entity = {
+	name = "dragon_wing_muzzle_rose_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 3 looping = no
+		event = { time = 0 particle = "NSC_dragon_wing_muzzle_particle_rose" keep_particle = yes sound = { soundeffect = dragon_wing_attack } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_dragon_wing_attack" } }
+	}
+}
+
+##################################
+# White Dragonfire Drake Entries #
+##################################
+
+entity = {
+	name = "dragon_weapon_windup_white_entity"
+	
+	default_state = "attack"
+	get_state_from_parent = no
+	state = {
+		name = "attack" looping = yes state_time = 0.8
+		event = { trigger_once = yes sound = { soundeffect = "dragon_breath_windup" } }
+	
+		event = { time = 0.0 use_parent_nodes = yes node = xl_gun_01 particle = "NSC_dragon_weapon_white_muzzle_windup_effect" trigger_once = yes keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "dragon_weapon_muzzle_white_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7.0 looping = no
+		event = { time = 0 particle = "NSC_dragon_weapon_white_muzzle_particle" keep_particle = yes }
+		
+		event = { trigger_once = yes sound = { soundeffect = "dragon_breath_fire" } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_dragon_breath_fire" } }
+		
+	}
+}
+
+entity = {
+	name = "dragon_wing_projectile_white_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle" 
+	state = { name = "idle" 
+		event = { time = 0 particle = "NSC_dragon_wing_projectile_particle_white" keep_particle = yes }
+	}
+	state = { name = "stop"
+		looping = no
+		#state_time = 2.0
+	}
+	scale = 1.0
+}
+
+entity = {
+	name = "dragon_wing_muzzle_white_entity"
+	pdxmesh = "locator_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 3 looping = no
+		event = { time = 0 particle = "NSC_dragon_wing_muzzle_particle_white" keep_particle = yes sound = { soundeffect = dragon_wing_attack } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_dragon_wing_attack" } }
+	}
+}
+
+#################################
+# Automated Dreadnought Entries #
+#################################
+
+entity = {
+	name = "dreadnought_kinetic_artillery_muzzle_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "dreadnought_kinetic_artillery_muzzle_particle" keep_particle = yes sound = { soundeffect = adv_kinectic_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_adv_kinectic_fire" } }
+	}
+}
+
+entity = {
+	name = "dreadnought_kinetic_artillery_entity"
+	pdxmesh = "dreadnought_kinetic_artillery_tracer_round_mesh"
+	scale = 2
+	
+	default_state = idle
+	state = { name = "idle" }	
+}
+
+entity = {
+	name = "dreadnought_gauss_cannon_small_muzzle_entity"
+	cull_radius = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 7 looping = no
+		event = { time = 0 particle = "dreadnought_gauss_cannon_small_muzzle_particle" keep_particle = yes sound = { soundeffect = mass_driver_fire } }
+		event = { trigger_once = yes sound = { soundeffect = "distance_mass_driver_fire" } }
+	}
+}

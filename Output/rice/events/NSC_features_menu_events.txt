@@ -1,0 +1,571 @@
+namespace = NSC_features
+
+# NSC Features Menu, with all Feature Options/FAQ Information listings.
+country_event = {
+	id = NSC_features.1
+	title = NSC_features.1.name
+	desc = NSC_features.1.desc
+	picture = GFX_evt_NSC_event6
+	is_triggered_only = yes
+
+	# Option deactivates Playable Guardians
+	option = {
+		name = NSC_features.1.a
+		custom_tooltip = NSC_features.1.a.tooltip
+		trigger = {
+			has_leviathans = yes
+			has_country_flag = playable_guardian_feature_active
+		}
+		hidden_effect = { country_event = { id = NSC_features.10 } }
+	}
+	
+	# Option activates Playable Guardians
+	option = {
+		name = NSC_features.2.a
+		custom_tooltip = NSC_features.2.a.tooltip
+		trigger = {
+			has_leviathans = yes
+			NOT = { has_country_flag = playable_guardian_feature_active }
+		}
+		hidden_effect = { country_event = { id = NSC_features.11 } }
+	}
+	
+	# Option activates AI Challenge Feature
+	option = {
+		name = NSC_features.3.a
+		custom_tooltip = NSC_features.3.a.tooltip
+		trigger = {
+			has_country_flag = spawn_guardian_player
+			NOT = { has_global_flag = "nsc_kinky_challenge" }
+		}
+		hidden_effect = { country_event = { id = NSC_features.12 } }
+	}
+	
+	# Option deactivates AI Challenge Feature
+	option = {
+		name = NSC_features.4.a
+		custom_tooltip = NSC_features.4.a.tooltip
+		trigger = {
+			has_country_flag = spawn_guardian_player
+			has_global_flag = "nsc_kinky_challenge"
+		}
+		hidden_effect = { country_event = { id = NSC_features.13 } }
+	}
+	
+	# Option gives player the oppertunity to also receive NSC Components even if they have a component mod.
+	# This option cannot be undone once activated.
+	option = {
+		name = NSC_features.6.a
+		custom_tooltip = NSC_features.6.a.tooltip
+		trigger = {
+			has_global_flag = nsc_component_option_full
+			has_country_flag = spawn_guardian_player
+		}
+		hidden_effect = { country_event = { id = NSC_features.14 } }
+	}
+	
+	# Option gives player system spawn choices
+	option = {
+		name = NSC_features.5.a
+		custom_tooltip = NSC_features.5.a.tooltip
+		trigger = { has_country_flag = spawn_guardian_player }
+		hidden_effect = { country_event = { id = NSC_features.15 }	}
+	}
+	
+	# Option gives player the Playable Guardians User Manual
+	option = {
+		name = NSC_features.1000.a
+		custom_tooltip = NSC_features_1000.a.tooltip
+		hidden_effect = { country_event = { id = NSC_features.1000 } }
+	}
+	
+	# Option gives player the AI Challenge Feature Guide
+	option = {
+		name = NSC_features.1100.a
+		custom_tooltip = NSC_features_1100.a.tooltip
+		hidden_effect = { country_event = { id = NSC_features.1100 } }
+	}
+	
+	# Option gives player the Mothball & Scrapyard Facility User Manual
+	option = {
+		name = NSC_features.1200.a
+		custom_tooltip = NSC_features_1200.a.tooltip
+		hidden_effect = { country_event = { id = NSC_features.1200 } }
+	}
+	
+	# Option gives player the NSC Ship Component User Manual
+	option = {
+		name = NSC_features.1300.a
+		custom_tooltip = NSC_features_1300.a.tooltip
+		hidden_effect = { country_event = { id = NSC_features.1300 } }
+	}
+	
+	# Option gives player the NSC General FAQ
+	option = {
+		name = NSC_features.2000.a
+		custom_tooltip = NSC_features_2000.a.tooltip
+		hidden_effect = { country_event = { id = NSC_features.2000 } }
+	}
+	
+	# Option gives player the NSC Bug FAQ
+	option = {
+		name = NSC_features.2100.a
+		custom_tooltip = NSC_features_2100.a.tooltip
+		hidden_effect = { country_event = { id = NSC_features.2100 } }
+	}
+	
+	option = { name = NSC_features_exit }
+}
+
+# Message that appears after selecting "begin". Meant to tell players where all NSC Feature Options went and that they need to use it if they want any Guardian systems.
+country_event = {
+	id = NSC_features.2
+	title = NSC_features.2.name
+	desc = NSC_features.2.desc
+	picture = GFX_evt_NSC_event32
+	is_triggered_only = yes
+	
+	option = { name = NSC_features_understood }
+}
+
+country_event = {
+	# Removes the Playable Guardian country flag.
+	id = NSC_features.10
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		remove_country_flag = playable_guardian_feature_active
+		country_event = { id = NSC_features.1 }
+	}
+}
+
+country_event = {
+	# Sets the Playable Guardian country flag, and checks if the Player has any Playable Guardian or has "defeated" any Playable Guardians, activating the Playable Guardian Repository if needed.
+	id = NSC_features.11
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		set_country_flag = playable_guardian_feature_active
+		if = {
+			limit = {
+				OR = {
+					has_country_flag = captain_galleon_built
+					has_country_flag = dreadnought_built
+					has_country_flag = dragon_built
+					has_country_flag = horror_built
+					has_country_flag = fortress_built
+					has_country_flag = stellarite_built
+					has_country_flag = technosphere_built
+					has_country_flag = wraith_built
+				}
+			}
+			country_event = { id = NSC_features.1 }
+		}
+		if = {
+			limit = {
+				NOR = {
+					has_country_flag = captain_galleon_built
+					has_country_flag = dreadnought_built
+					has_country_flag = dragon_built
+					has_country_flag = horror_built
+					has_country_flag = fortress_built
+					has_country_flag = stellarite_built
+					has_country_flag = technosphere_built
+					has_country_flag = wraith_built
+					has_special_project = guardian_dreadnought_original_project
+					has_special_project = guardian_dreadnought_alternative_project
+					has_special_project = guardian_horror_project
+					has_special_project = guardian_fortress_project
+					has_special_project = guardian_dragon_red_project
+					has_special_project = guardian_dragon_orange_project
+					has_special_project = guardian_dragon_yellow_project
+					has_special_project = guardian_dragon_chartreuse_project
+					has_special_project = guardian_dragon_green_project
+					has_special_project = guardian_dragon_aquamarine_project
+					has_special_project = guardian_dragon_cyan_project
+					has_special_project = guardian_dragon_azure_project
+					has_special_project = guardian_dragon_blue_project
+					has_special_project = guardian_dragon_violet_project
+					has_special_project = guardian_dragon_magenta_project
+					has_special_project = guardian_dragon_rose_project
+					has_special_project = guardian_dragon_white_project
+					has_special_project = guardian_stellarite_project
+					has_special_project = guardian_technosphere_project
+					has_special_project = guardian_wraith_red_project
+					has_special_project = guardian_wraith_orange_project
+					has_special_project = guardian_wraith_yellow_project
+					has_special_project = guardian_wraith_green_project
+					has_special_project = guardian_wraith_blue_project
+					has_special_project = guardian_wraith_violet_project
+					has_special_project = guardian_wraith_white_project
+					has_special_project = captain_galleon_creation
+				}
+				OR = {
+					has_country_flag = guardian_dragon_defeated
+					has_country_flag = guardian_dreadnought_defeated
+					has_country_flag = guardian_fortress_defeated
+					has_country_flag = guardian_horror_defeated
+					has_country_flag = guardian_galleon_defeated
+					has_country_flag = guardian_stellarite_defeated
+					has_country_flag = guardian_technosphere_defeated
+					has_country_flag = guardian_technosphere_helped
+					has_country_flag = guardian_wraith_defeated
+				}
+			}
+			country_event = { id = NSC_guardian_main.2 }
+		}
+		if = {
+			limit = {
+				NOR = {
+					has_country_flag = captain_galleon_built
+					has_country_flag = dreadnought_built
+					has_country_flag = dragon_built
+					has_country_flag = horror_built
+					has_country_flag = fortress_built
+					has_country_flag = stellarite_built
+					has_country_flag = technosphere_built
+					has_country_flag = wraith_built
+					has_country_flag = guardian_dragon_defeated
+					has_country_flag = guardian_dreadnought_defeated
+					has_country_flag = guardian_fortress_defeated
+					has_country_flag = guardian_horror_defeated
+					has_country_flag = guardian_galleon_defeated
+					has_country_flag = guardian_stellarite_defeated
+					has_country_flag = guardian_technosphere_defeated
+					has_country_flag = guardian_technosphere_helped
+					has_country_flag = guardian_wraith_defeated
+				}
+			}
+			country_event = { id = NSC_features.1 }
+		}
+	}
+}
+
+country_event = {
+	# Sets the AI Challenge global flag.
+	id = NSC_features.12
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		set_global_flag = nsc_kinky_challenge
+		country_event = { id = NSC_features.1 }
+	}
+}
+
+country_event = {
+	# Removes the AI Challenge global flag.
+	id = NSC_features.13
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		remove_global_flag = nsc_kinky_challenge
+		country_event = { id = NSC_features.1 }
+	}
+}
+
+country_event = {
+	# Let's the Player choose whether or not to include NSC components in with "actual" Component Mod components.
+	id = NSC_features.14
+	title = NSC_features.14.name
+	desc = NSC_features.14.desc
+	picture = GFX_evt_NSC_event9
+	is_triggered_only = yes
+
+	option = {
+		name = NSC_features.14.a
+		hidden_effect = { country_event = { id = nscflag.6 } }
+	}
+	option = {
+		name = NSC_features_backout
+		hidden_effect = { country_event = { id = NSC_features.1 } }
+	}
+}
+
+country_event = {
+	# Let's the Player choose how to proceed with spawning systems: universally or individually.
+	id = NSC_features.15
+	title = NSC_features.9.name
+	desc = NSC_features.9.desc
+	picture = GFX_evt_NSC_event20
+	is_triggered_only = yes
+
+	option = {
+		name = NSC_features.9.a
+		custom_tooltip = NSC_features.9.a.tooltip
+		trigger = { host_has_dlc = "Leviathans Story Pack" }
+		hidden_effect = { country_event = { id = NSC_guardian_main.102 } }
+	}
+	option = {
+		name = NSC_features.9.b
+		custom_tooltip = NSC_features.9.b.tooltip
+		trigger = { host_has_dlc = "Leviathans Story Pack" }
+		hidden_effect = { country_event = { id = NSC_guardian_main.110 } }
+	}
+	option = {
+		name = NSC_features.9.c
+		custom_tooltip = NSC_features.9.c.tooltip
+		trigger = {
+			OR = {
+				has_global_flag = carrack_galleon_lost
+				any_country = { has_country_flag = guardian_galleon_defeated }
+			}
+		}
+		hidden_effect = { country_event = { id = NSC_system_spawn.7 } }
+	}
+	option = {
+		name = NSC_features.9.d
+		custom_tooltip = NSC_features.9.d.tooltip
+		hidden_effect = {  country_event = { id = NSC_system_spawn.1 } }
+	}
+	option = {
+		name = NSC_features.9.e
+		custom_tooltip = NSC_features.9.e.tooltip
+		hidden_effect = { country_event = { id = NSC_system_spawn.2 } }
+	}
+	option = {
+		name = NSC_features_backout
+		hidden_effect = { country_event = { id = NSC_features.1 } }
+	}
+}
+
+#This is "Page 1" of the Playable Guardian User Manual
+country_event = {
+	id = NSC_features.1000
+	title = NSC_features.1000.name
+	desc = NSC_features.1000.desc
+	picture = GFX_evt_NSC_event23
+	is_triggered_only = yes
+	
+	option = {
+		name = NSC_features_pages
+		hidden_effect = { country_event = { id = NSC_features.1001 } }
+	}
+}
+
+#This is "Page 2" of the Playable Guardian User Manual
+country_event = {
+	id = NSC_features.1001
+	title = NSC_features.1000.name
+	desc = NSC_features.1001.desc
+	picture = GFX_evt_NSC_event17
+	is_triggered_only = yes
+	
+	option = {
+		name = NSC_features_pages
+		hidden_effect = { country_event = { id = NSC_features.1002 } }
+	}
+}
+
+#This is "Page 3" of the Playable Guardian User Manual
+country_event = {
+	id = NSC_features.1002
+	title = NSC_features.1000.name
+	desc = NSC_features.1002.desc
+	picture = GFX_evt_NSC_event11
+	is_triggered_only = yes
+	
+	option = {
+		name = NSC_features_pages
+		hidden_effect = { country_event = { id = NSC_features.1003 } }
+	}
+}
+
+#This is "Page 4" of the Playable Guardian User Manual
+country_event = {
+	id = NSC_features.1003
+	title = NSC_features.1000.name
+	desc = NSC_features.1003.desc
+	picture = GFX_evt_NSC_event22
+	is_triggered_only = yes
+	
+	option = {
+		name = NSC_features_pages
+		hidden_effect = { country_event = { id = NSC_features.1004 } }
+	}
+}
+
+#This is "Page 5" of the Playable Guardian User Manual
+country_event = {
+	id = NSC_features.1004
+	title = NSC_features.1000.name
+	desc = NSC_features.1004.desc
+	picture = GFX_evt_NSC_event15
+	is_triggered_only = yes
+	
+	option = {
+		name = NSC_features_pages
+		hidden_effect = { country_event = { id = NSC_features.1005 } }
+	}
+}
+
+#This is "Page 6" of the Playable Guardian User Manual
+country_event = {
+	id = NSC_features.1005
+	title = NSC_features.1000.name
+	desc = NSC_features.1005.desc
+	picture = GFX_evt_NSC_event24
+	is_triggered_only = yes
+	
+	option = {
+		name = NSC_features_pages
+		hidden_effect = { country_event = { id = NSC_features.1006 } }
+	}
+}
+
+#This is "Page 7" of the Playable Guardian User Manual
+country_event = {
+	id = NSC_features.1006
+	title = NSC_features.1000.name
+	desc = NSC_features.1006.desc
+	picture = GFX_evt_NSC_event19
+	is_triggered_only = yes
+	
+	option = {
+		name = NSC_features_understood
+		hidden_effect = { country_event = { id = NSC_features.1 } }
+	}
+}
+
+#This is the AI Challenge feature description inside the NSC Features Menu.
+country_event = {
+	id = NSC_features.1100
+	title = NSC_features.1100.name
+	desc = NSC_features.1100.desc
+	picture = GFX_evt_NSC_event3
+	is_triggered_only = yes
+	
+	option = {
+		name = NSC_features_understood
+		hidden_effect = { country_event = { id = NSC_features.1 } }
+	}
+}
+
+#This is Page 1 of the Mothball & Scrapyard Facility Guide
+country_event = {
+	id = NSC_features.1200
+	title = NSC_features.1200.name
+	desc = NSC_features.1200.desc
+	picture = GFX_evt_NSC_event28
+	is_triggered_only = yes
+	
+	option = {
+		name = NSC_features_pages
+		hidden_effect = { country_event = { id = NSC_features.1201 } }
+	}
+}
+
+#This is Page 2 of the Mothball & Scrapyard Facility Guide
+country_event = {
+	id = NSC_features.1201
+	title = NSC_features.1200.name
+	desc = NSC_features.1201.desc
+	picture = GFX_evt_NSC_event13
+	is_triggered_only = yes
+	
+	option = {
+		name = NSC_features_pages
+		hidden_effect = { country_event = { id = NSC_features.1202 } }
+	}
+}
+
+#This is Page 3 of the Mothball & Scrapyard Facility Guide
+country_event = {
+	id = NSC_features.1202
+	title = NSC_features.1200.name
+	desc = NSC_features.1202.desc
+	picture = GFX_evt_NSC_event26
+	is_triggered_only = yes
+	
+	option = {
+		name = NSC_features_understood
+		hidden_effect = { country_event = { id = NSC_features.1 } }
+	}
+}
+
+#This is Page 1 of the NSC Ship Component Guide
+country_event = {
+	id = NSC_features.1300
+	title = NSC_features.1300.name
+	desc = NSC_features.1300.desc
+	picture = GFX_evt_NSC_event1
+	is_triggered_only = yes
+	
+	option = {
+		name = NSC_features_understood
+		hidden_effect = { country_event = { id = NSC_features.1 } }
+	}
+}
+
+#This is Page 1 of the NSC General FAQ Text Message
+country_event = {
+	id = NSC_features.2000
+	title = NSC_features.2000.name
+	desc = NSC_features.2000.desc
+	picture = GFX_evt_NSC_event27
+	is_triggered_only = yes
+	
+	option = {
+		name = NSC_features_pages
+		hidden_effect = { country_event = { id = NSC_features.2001 } }
+	}
+}
+
+#This is Page 2 of the NSC General FAQ Text Message
+country_event = {
+	id = NSC_features.2001
+	title = NSC_features.2000.name
+	desc = NSC_features.2001.desc
+	picture = GFX_evt_NSC_event7
+	is_triggered_only = yes
+	
+	option = {
+		name = NSC_features_understood
+		hidden_effect = { country_event = { id = NSC_features.1 } }
+	}
+}
+
+#This is Page 1 of the NSC Bug FAQ Text Message
+country_event = {
+	id = NSC_features.2100
+	title = NSC_features.2100.name
+	desc = NSC_features.2100.desc
+	picture = GFX_evt_NSC_event21
+	is_triggered_only = yes
+	
+	option = {
+		name = NSC_features_pages
+		hidden_effect = { country_event = { id = NSC_features.2101 } }
+	}
+}
+
+#This is Page 2 of the NSC Bug FAQ Text Message
+country_event = {
+	id = NSC_features.2101
+	title = NSC_features.2100.name
+	desc = NSC_features.2101.desc
+	picture = GFX_evt_NSC_event14
+	is_triggered_only = yes
+	
+	option = {
+		name = NSC_features_pages
+		hidden_effect = { country_event = { id = NSC_features.2102 } }
+	}
+}
+
+#This is Page 3 of the NSC Bug FAQ Text Message
+country_event = {
+	id = NSC_features.2102
+	title = NSC_features.2100.name
+	desc = NSC_features.2102.desc
+	picture = GFX_evt_NSC_event10
+	is_triggered_only = yes
+	
+	option = {
+		name = NSC_features_understood
+		hidden_effect = { country_event = { id = NSC_features.1 } }
+	}
+}

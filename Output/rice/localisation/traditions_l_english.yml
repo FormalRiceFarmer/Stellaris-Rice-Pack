@@ -1,0 +1,7 @@
+﻿l_english:
+ 
+ ####################################
+# Ascension Perks
+####################################
+  
+ requires_ap_galactic_contender:1 "$TRIGGER_FAIL$Requires the §Y$ap_galactic_contender$§! Ascension Perk."

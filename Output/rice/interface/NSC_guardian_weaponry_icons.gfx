@@ -1,0 +1,223 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_ship_part_laser_blue"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_laser_blue.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_laser_green"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_laser_green.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_laser_orange"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_laser_orange.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_laser_red"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_laser_red.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_laser_violet"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_laser_violet.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_laser_white"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_laser_white.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_laser_yellow"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_laser_yellow.dds"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_ship_part_dragonfire_red"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_dragonfire_red.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_dragonfire_bolt_red"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_dragonfire_bolt_red.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_dragonfire_lightning_red"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_dragonfire_lightning_red.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_dragonfire_orange"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_dragonfire_orange.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_dragonfire_bolt_orange"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_dragonfire_bolt_orange.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_dragonfire_lightning_orange"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_dragonfire_lightning_orange.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_dragonfire_yellow"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_dragonfire_yellow.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_dragonfire_bolt_yellow"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_dragonfire_bolt_yellow.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_dragonfire_lightning_yellow"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_dragonfire_lightning_yellow.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_dragonfire_chartreuse"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_dragonfire_chartreuse.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_dragonfire_bolt_chartreuse"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_dragonfire_bolt_chartreuse.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_dragonfire_lightning_chartreuse"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_dragonfire_lightning_chartreuse.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_dragonfire_green"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_dragonfire_green.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_dragonfire_bolt_green"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_dragonfire_bolt_green.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_dragonfire_lightning_green"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_dragonfire_lightning_green.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_dragonfire_aquamarine"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_dragonfire_aquamarine.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_dragonfire_bolt_aquamarine"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_dragonfire_bolt_aquamarine.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_dragonfire_lightning_aquamarine"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_dragonfire_lightning_aquamarine.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_dragonfire_cyan"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_dragonfire_cyan.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_dragonfire_bolt_cyan"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_dragonfire_bolt_cyan.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_dragonfire_lightning_cyan"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_dragonfire_lightning_cyan.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_dragonfire_azure"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_dragonfire_azure.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_dragonfire_bolt_azure"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_dragonfire_bolt_azure.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_dragonfire_lightning_azure"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_dragonfire_lightning_azure.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_dragonfire_blue"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_dragonfire_blue.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_dragonfire_bolt_blue"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_dragonfire_bolt_blue.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_dragonfire_lightning_blue"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_dragonfire_lightning_blue.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_dragonfire_violet"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_dragonfire_violet.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_dragonfire_bolt_violet"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_dragonfire_bolt_violet.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_dragonfire_lightning_violet"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_dragonfire_lightning_violet.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_dragonfire_magenta"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_dragonfire_magenta.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_dragonfire_bolt_magenta"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_dragonfire_bolt_magenta.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_dragonfire_lightning_magenta"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_dragonfire_lightning_magenta.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_dragonfire_rose"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_dragonfire_rose.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_dragonfire_bolt_rose"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_dragonfire_bolt_rose.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_dragonfire_lightning_rose"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_dragonfire_lightning_rose.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_dragonfire_white"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_dragonfire_white.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_dragonfire_bolt_white"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_dragonfire_bolt_white.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_dragonfire_lightning_white"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_dragonfire_lightning_white.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_dimensional_arm_ripper"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_dimensional_arm_ripper.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_dreadnought_kinetic_artillery"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_dreadnought_kinetic_artillery.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_dreadnought_plasma_cannon"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_dreadnought_plasma_cannon.dds"
+	}
+	spriteType = {
+		name = "GFX_ship_part_dreadnought_phase_disruptor"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_dreadnought_phase_disruptor.dds"
+	}
+}	
+
+	
+	
+	

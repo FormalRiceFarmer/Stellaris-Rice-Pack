@@ -1,0 +1,28 @@
+namespace = NSC_game_start
+
+# Triggered on game start to add ships via on_action call like game_start.9
+country_event = {
+	id = NSC_game_start.1
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		create_fleet = {
+			effect = {
+				set_owner = prev
+				while = {
+					count = 5
+					create_ship = {
+						name = random
+						random_existing_design = corvette
+					}
+				}
+				set_location = {
+				 	target = prev.capital_scope
+					distance = 10
+				 	angle = -30
+				}
+			}
+		}
+	}
+}

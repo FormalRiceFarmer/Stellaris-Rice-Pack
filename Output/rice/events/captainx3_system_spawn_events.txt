@@ -1,0 +1,703 @@
+namespace = NSC_system_spawn
+
+# This is the universal Creature Home Spawn Message.
+country_event = {
+	id = NSC_system_spawn.1
+	title = "NSC_system_spawn.1.name"
+	desc = "NSC_system_spawn.1.desc"
+	picture = GFX_evt_NSC_event12
+	show_sound = "event_sensor_ping"
+	is_triggered_only = yes
+	
+	option = { 
+		name = "NSC_system_spawn.1.a"
+		hidden_effect = {
+			set_variable = {
+				which = "creature_home_spawn_universal"
+				value = 1
+			}
+			country_event = { id = NSC_system_spawn.100 }
+			country_event = { id = NSC_features.1 }
+		}
+	}
+	option = { 
+		name = "NSC_system_spawn.1.b"
+		hidden_effect = {
+			set_variable = {
+				which = "creature_home_spawn_universal"
+				value = 2
+			}
+			country_event = { id = NSC_system_spawn.100 }
+			country_event = { id = NSC_features.1 }
+		}
+	}
+	option = { 
+		name = "NSC_system_spawn.1.c"
+		hidden_effect = {
+			set_variable = {
+				which = "creature_home_spawn_universal"
+				value = 3
+			}
+			country_event = { id = NSC_system_spawn.100 }
+			country_event = { id = NSC_features.1 }
+		}
+	}
+	option = { 
+		name = "NSC_system_spawn.1.d"
+		hidden_effect = {
+			set_variable = {
+				which = "creature_home_spawn_universal"
+				value = 4
+			}
+			country_event = { id = NSC_system_spawn.100 }
+			country_event = { id = NSC_features.1 }
+		}
+	}
+	option = { 
+		name = "NSC_features_backout"
+		hidden_effect = { country_event = { id = NSC_features.15 } }
+	}
+}
+
+country_event = {
+	id = NSC_system_spawn.2
+	title = "NSC_system_spawn.2.name"
+	desc = "NSC_system_spawn.2.desc"
+	picture = GFX_evt_NSC_event29
+	show_sound = "event_sensor_ping"
+	is_triggered_only = yes
+	
+	option = {
+		name = "NSC_system_spawn.2.a"
+		hidden_effect = { country_event = { id = NSC_system_spawn.3 } }
+	}
+	option = {
+		name = "NSC_system_spawn.2.b"
+		hidden_effect = {
+			set_variable = {
+				which = "crystal_home_spawn_individual"
+				value = 1
+			}
+			country_event = { id = NSC_system_spawn.101 }
+			country_event = { id = NSC_system_spawn.3 }
+		}
+	}
+	option = { 
+		name = "NSC_system_spawn.2.c"
+		hidden_effect = {
+			set_variable = {
+				which = "crystal_home_spawn_individual"
+				value = 2
+			}
+			country_event = { id = NSC_system_spawn.101 }
+			country_event = { id = NSC_system_spawn.3 }
+		}
+	}
+	option = { 
+		name = "NSC_system_spawn.2.d"
+		hidden_effect = {
+			set_variable = {
+				which = "crystal_home_spawn_individual"
+				value = 3
+			}
+			country_event = { id = NSC_system_spawn.101 }
+			country_event = { id = NSC_system_spawn.3 }
+		}
+	}
+	option = { 
+		name = "NSC_system_spawn.2.e"
+		hidden_effect = {
+			set_variable = {
+				which = "crystal_home_spawn_individual"
+				value = 4
+			}
+			country_event = { id = NSC_system_spawn.101 }
+			country_event = { id = NSC_system_spawn.3 }
+		}
+	}
+	option = { 
+		name = "NSC_features_backout"
+		custom_tooltip = NSC_features_backout.tooltip
+		hidden_effect = { country_event = { id = NSC_features.15 } }
+	}
+}
+
+country_event = {
+	id = NSC_system_spawn.3
+	title = "NSC_system_spawn.2.name"
+	desc = "NSC_system_spawn.3.desc"
+	picture = GFX_evt_NSC_event33
+	show_sound = "event_sensor_ping"
+	is_triggered_only = yes
+	
+	option = { 
+		name = "NSC_system_spawn.2.a"
+		hidden_effect = { country_event = { id = NSC_system_spawn.4 } }
+	}
+	option = { 
+		name = "NSC_system_spawn.2.b"
+		hidden_effect = {
+			set_variable = {
+				which = "cloud_home_spawn_individual"
+				value = 1
+			}
+			country_event = { id = NSC_system_spawn.102 }
+			country_event = { id = NSC_system_spawn.4 }
+		}
+	}
+	option = { 
+		name = "NSC_system_spawn.2.c"
+		hidden_effect = {
+			set_variable = {
+				which = "cloud_home_spawn_individual"
+				value = 2
+			}
+			country_event = { id = NSC_system_spawn.102 }
+			country_event = { id = NSC_system_spawn.4 }
+		}
+	}
+	option = { 
+		name = "NSC_system_spawn.2.d"
+		hidden_effect = {
+			set_variable = {
+				which = "cloud_home_spawn_individual"
+				value = 3
+			}
+			country_event = { id = NSC_system_spawn.102 }
+			country_event = { id = NSC_system_spawn.4 }
+		}
+	}
+	option = { 
+		name = "NSC_system_spawn.2.e"
+		hidden_effect = {
+			set_variable = {
+				which = "cloud_home_spawn_individual"
+				value = 4
+			}
+			country_event = { id = NSC_system_spawn.102 }
+			country_event = { id = NSC_system_spawn.4 }
+		}
+	}
+}
+
+country_event = {
+	id = NSC_system_spawn.4
+	title = "NSC_system_spawn.2.name"
+	desc = "NSC_system_spawn.4.desc"
+	picture = GFX_evt_NSC_event30
+	show_sound = "event_sensor_ping"
+	is_triggered_only = yes
+	
+	option = { 
+		name = "NSC_system_spawn.2.a"
+		hidden_effect = { country_event = { id = NSC_system_spawn.5 } }
+	}
+	option = { 
+		name = "NSC_system_spawn.2.b"
+		hidden_effect = {
+			set_variable = {
+				which = "drone_home_spawn_individual"
+				value = 1
+			}
+			country_event = { id = NSC_system_spawn.103 }
+			country_event = { id = NSC_system_spawn.5 }
+		}
+	}
+	option = { 
+		name = "NSC_system_spawn.2.c"
+		hidden_effect = {
+			set_variable = {
+				which = "drone_home_spawn_individual"
+				value = 2
+			}
+			country_event = { id = NSC_system_spawn.103 }
+			country_event = { id = NSC_system_spawn.5 }
+		}
+	}
+	option = { 
+		name = "NSC_system_spawn.2.d"
+		hidden_effect = {
+			set_variable = {
+				which = "drone_home_spawn_individual"
+				value = 3
+			}
+			country_event = { id = NSC_system_spawn.103 }
+			country_event = { id = NSC_system_spawn.5 }
+		}
+	}
+	option = { 
+		name = "NSC_system_spawn.2.e"
+		hidden_effect = {
+			set_variable = {
+				which = "drone_home_spawn_individual"
+				value = 4
+			}
+			country_event = { id = NSC_system_spawn.103 }
+			country_event = { id = NSC_system_spawn.5 }
+		}
+	}
+}
+
+country_event = {
+	id = NSC_system_spawn.5
+	title = "NSC_system_spawn.2.name"
+	desc = "NSC_system_spawn.5.desc"
+	picture = GFX_evt_NSC_event8
+	show_sound = "event_sensor_ping"
+	is_triggered_only = yes
+	
+	option = {
+		name = "NSC_system_spawn.2.a"
+		hidden_effect = { country_event = { id = NSC_features.1 } }
+	}
+	option = { 
+		name = "NSC_system_spawn.2.b"
+		hidden_effect = {
+			set_variable = {
+				which = "pirate_home_spawn_individual"
+				value = 1
+			}
+			country_event = { id = NSC_system_spawn.104 }
+			country_event = { id = NSC_features.1 }
+		}
+	}
+	option = { 
+		name = "NSC_system_spawn.2.c"
+		hidden_effect = {
+			set_variable = {
+				which = "pirate_home_spawn_individual"
+				value = 2
+			}
+			country_event = { id = NSC_system_spawn.104 }
+			country_event = { id = NSC_features.1 }
+		}
+	}
+	option = { 
+		name = "NSC_system_spawn.2.d"
+		hidden_effect = {
+			set_variable = {
+				which = "pirate_home_spawn_individual"
+				value = 3
+			}
+			country_event = { id = NSC_system_spawn.104 }
+			country_event = { id = NSC_features.1 }
+		}
+	}
+	option = { 
+		name = "NSC_system_spawn.2.e"
+		hidden_effect = {
+			set_variable = {
+				which = "pirate_home_spawn_individual"
+				value = 4
+			}
+			country_event = { id = NSC_system_spawn.104 }
+			country_event = { id = NSC_features.1 }
+		}
+	}
+}
+
+country_event = {
+	id = NSC_system_spawn.7
+	title = "NSC_system_spawn.7.name"
+	desc = "NSC_system_spawn.7.desc"
+	picture = GFX_evt_NSC_event32
+	show_sound = "event_sensor_ping"
+	is_triggered_only = yes
+	
+	option = { 
+		name = "NSC_system_spawn.2.b"
+		hidden_effect = {
+			set_variable = {
+				which = "hidden_paradise_spawn_universal"
+				value = 1
+			}
+			country_event = { id = NSC_system_spawn.107 }
+			country_event = { id = NSC_features.1 }
+		}
+	}
+	option = { 
+		name = "NSC_system_spawn.2.c"
+		hidden_effect = {
+			set_variable = {
+				which = "hidden_paradise_spawn_universal"
+				value = 2
+			}
+			country_event = { id = NSC_system_spawn.107 }
+			country_event = { id = NSC_features.1 }
+		}
+	}
+	option = { 
+		name = "NSC_system_spawn.2.d"
+		hidden_effect = {
+			set_variable = {
+				which = "hidden_paradise_spawn_universal"
+				value = 3
+			}
+			country_event = { id = NSC_system_spawn.107 }
+			country_event = { id = NSC_features.1 }
+		}
+	}
+	option = { 
+		name = "NSC_system_spawn.2.e"
+		hidden_effect = {
+			set_variable = {
+				which = "hidden_paradise_spawn_universal"
+				value = 4
+			}
+			country_event = { id = NSC_system_spawn.107 }
+			country_event = { id = NSC_features.1 }
+		}
+	}
+	option = { 
+		name = "NSC_features_backout"
+		hidden_effect = { country_event = { id = NSC_features.15 } }
+	}
+}
+
+country_event = {
+	# Determines spawning of Creature Home Systems based on player universal imput.
+	id = NSC_system_spawn.100
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		if = {
+			limit = {
+				check_variable = {
+					which = creature_home_spawn_universal
+					value = 1
+				}
+			}
+			random_list = {
+				75 = {}
+				25 = {
+					nsc_spawn_elite_crystal = yes
+					nsc_spawn_elite_cloud = yes
+					nsc_spawn_elite_drone = yes
+					nsc_spawn_elite_pirate = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = creature_home_spawn_universal
+					value = 2
+				}
+			}
+			random_list = {
+				50 = {}
+				50 = {
+					nsc_spawn_elite_crystal = yes
+					nsc_spawn_elite_cloud = yes
+					nsc_spawn_elite_drone = yes
+					nsc_spawn_elite_pirate = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = creature_home_spawn_universal
+					value = 3
+				}
+			}
+			random_list = {
+				25 = {}
+				75 = {
+					nsc_spawn_elite_crystal = yes
+					nsc_spawn_elite_cloud = yes
+					nsc_spawn_elite_drone = yes
+					nsc_spawn_elite_pirate = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = creature_home_spawn_universal
+					value = 4
+				}
+			}
+			nsc_spawn_elite_crystal = yes
+			nsc_spawn_elite_cloud = yes
+			nsc_spawn_elite_drone = yes
+			nsc_spawn_elite_pirate = yes
+		}
+	}
+}
+
+country_event = {
+	# Determines spawning of Crystal Home System based on player imput.
+	id = NSC_system_spawn.101
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		if = {
+			limit = {
+				check_variable = {
+					which = crystal_home_spawn_individual
+					value = 1
+				}
+			}
+			random_list = {
+				75 = {}
+				25 = { nsc_spawn_elite_crystal = yes }
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = crystal_home_spawn_individual
+					value = 2
+				}
+			}
+			random_list = {
+				50 = {}
+				50 = { nsc_spawn_elite_crystal = yes }
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = crystal_home_spawn_individual
+					value = 3
+				}
+			}
+			random_list = {
+				25 = {}
+				75 = { nsc_spawn_elite_crystal = yes }
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = crystal_home_spawn_individual
+					value = 4
+				}
+			}
+			nsc_spawn_elite_crystal = yes
+		}
+	}
+}
+
+country_event = {
+	# Determines spawning of Cloud Home System based on player imput.
+	id = NSC_system_spawn.102
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		if = {
+			limit = {
+				check_variable = {
+					which = cloud_home_spawn_individual
+					value = 1
+				}
+			}
+			random_list = {
+				75 = {}
+				25 = { nsc_spawn_elite_cloud = yes }
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = cloud_home_spawn_individual
+					value = 2
+				}
+			}
+			random_list = {
+				50 = {}
+				50 = { nsc_spawn_elite_cloud = yes }
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = cloud_home_spawn_individual
+					value = 3
+				}
+			}
+			random_list = {
+				25 = {}
+				75 = { nsc_spawn_elite_cloud = yes }
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = cloud_home_spawn_individual
+					value = 4
+				}
+			}
+			nsc_spawn_elite_cloud = yes
+		}
+	}
+}
+
+country_event = {
+	# Determines spawning of Drone Home System based on player imput.
+	id = NSC_system_spawn.103
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		if = {
+			limit = {
+				check_variable = {
+					which = drone_home_spawn_individual
+					value = 1
+				}
+			}
+			random_list = {
+				75 = {}
+				25 = { nsc_spawn_elite_drone = yes }
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = drone_home_spawn_individual
+					value = 2
+				}
+			}
+			random_list = {
+				50 = {}
+				50 = { nsc_spawn_elite_drone = yes }
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = drone_home_spawn_individual
+					value = 3
+				}
+			}
+			random_list = {
+				25 = {}
+				75 = { nsc_spawn_elite_drone = yes }
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = drone_home_spawn_individual
+					value = 4
+				}
+			}
+			nsc_spawn_elite_drone = yes
+		}
+	}
+}
+
+country_event = {
+	# Determines spawning of Pirate Home System based on player imput.
+	id = NSC_system_spawn.104
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		if = {
+			limit = {
+				check_variable = {
+					which = pirate_home_spawn_individual
+					value = 1
+				}
+			}
+			random_list = {
+				75 = {}
+				25 = { nsc_spawn_elite_pirate = yes }
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = pirate_home_spawn_individual
+					value = 2
+				}
+			}
+			random_list = {
+				50 = {}
+				50 = { nsc_spawn_elite_pirate = yes }
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = pirate_home_spawn_individual
+					value = 3
+				}
+			}
+			random_list = {
+				25 = {}
+				75 = { nsc_spawn_elite_pirate = yes }
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = pirate_home_spawn_individual
+					value = 4
+				}
+			}
+			nsc_spawn_elite_pirate = yes
+		}
+	}
+}
+
+country_event = {
+	# Determines spawning of Hidden Paradise System based on player imput.
+	id = NSC_system_spawn.107
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		if = {
+			limit = {
+				check_variable = {
+					which = hidden_paradise_spawn_universal
+					value = 1
+				}
+			}
+			random_list = {
+				75 = {}
+				25 = { nsc_spawn_hidden_paradise = yes }
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = hidden_paradise_spawn_universal
+					value = 2
+				}
+			}
+			random_list = {
+				50 = {}
+				50 = { nsc_spawn_hidden_paradise = yes }
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = hidden_paradise_spawn_universal
+					value = 3
+				}
+			}
+			random_list = {
+				25 = {}
+				75 = { nsc_spawn_hidden_paradise = yes }
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					which = hidden_paradise_spawn_universal
+					value = 4
+				}
+			}
+			nsc_spawn_hidden_paradise = yes
+		}
+	}
+}

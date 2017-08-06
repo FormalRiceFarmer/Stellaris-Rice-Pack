@@ -1,0 +1,146 @@
+@exd_bloom_factor = 1
+
+# Loop
+
+entity = {
+	name = "unbidden_04_battleship_loop_entity"
+	pdxmesh = "empty_mesh"
+	
+	locator = { name = "part1" position = { 0 13 -1 } rotation = { 0 -90 0 } }
+	locator = { name = "part2" position = { 0 -13 -1 } rotation = { 0 90 0 } }
+	locator = { name = "part3" position = { 13 0 -1 } rotation = { 90 -90 0 } }
+	locator = { name = "part4" position = { -13 0 -1 } rotation = { -90 -90 0 } }
+	locator = { name = "part5" position = { 6.5 11.25833 -1 } rotation = { 30 -90 0 } }
+	locator = { name = "part6" position = { -6.5 11.25833 -1 } rotation = { -30 -90 0 } }
+	locator = { name = "part7" position = { 11.25833 6.5 -1 } rotation = { 60 -90 0 } }
+	locator = { name = "part8" position = { -11.25833 6.5 -1 } rotation = { -60 -90 0 } }
+	locator = { name = "part9" position = { 6.5 -11.25833 -1 } rotation = { 30 90 0 } }
+	locator = { name = "part10" position = { -6.5 -11.25833 -1 } rotation = { -30 90 0 } }
+	locator = { name = "part11" position = { 11.25833 -6.5 -1 } rotation = { 60 90 0 } }
+	locator = { name = "part12" position = { -11.25833 -6.5 -1 } rotation = { -60 90 0 } }
+	locator = { name = "part13" position = { 0 13 1 } rotation = { 0 -90 0 } }
+	locator = { name = "part14" position = { 0 -13 1 } rotation = { 0 90 0 } }
+	locator = { name = "part15" position = { 13 0 1 } rotation = { 90 -90 0 } }
+	locator = { name = "part16" position = { -13 0 1 } rotation = { -90 -90 0 } }
+	locator = { name = "part17" position = { 6.5 11.25833 1 } rotation = { 30 -90 0 } }
+	locator = { name = "part18" position = { -6.5 11.25833 1 } rotation = { -30 -90 0 } }
+	locator = { name = "part19" position = { 11.25833 6.5 1 } rotation = { 60 -90 0 } }
+	locator = { name = "part20" position = { -11.25833 6.5 1 } rotation = { -60 -90 0 } }
+	locator = { name = "part21" position = { 6.5 -11.25833 1 } rotation = { 30 90 0 } }
+	locator = { name = "part22" position = { -6.5 -11.25833 1 } rotation = { -30 90 0 } }
+	locator = { name = "part23" position = { 11.25833 -6.5 1 } rotation = { 60 90 0 } }
+	locator = { name = "part24" position = { -11.25833 -6.5 1 } rotation = { -60 90 0 } }
+	locator = { name = "part25" position = { 0 14 0 } rotation = { 0 90 0 } }
+	locator = { name = "part26" position = { 0 -14 0 } rotation = { 0 -90 0 } }
+	locator = { name = "part27" position = { 14 0 0 } rotation = { -90 90 0 } }
+	locator = { name = "part28" position = { -14 0 0 } rotation = { 90 90 0 } }
+	locator = { name = "part29" position = { 9.89949 9.89949 0 } rotation = { -45 90 0 } }
+	locator = { name = "part30" position = { -9.89949 9.89949 0 } rotation = { 45 90 0 } }
+	locator = { name = "part31" position = { 9.89949 -9.89949 0 } rotation = { -45 -90 0 } }
+	locator = { name = "part32" position = { -9.89949 -9.89949 0 } rotation = { 45 -90 0 } }
+	
+	attach = { part1 = "unbidden_04_battleship_loop_section_entity" }
+	attach = { part2 = "unbidden_04_battleship_loop_section_entity" }
+	attach = { part3 = "unbidden_04_battleship_loop_section_entity" }
+	attach = { part4 = "unbidden_04_battleship_loop_section_entity" }
+	attach = { part5 = "unbidden_04_battleship_loop_section_entity" }
+	attach = { part6 = "unbidden_04_battleship_loop_section_entity" }
+	attach = { part7 = "unbidden_04_battleship_loop_section_entity" }
+	attach = { part8 = "unbidden_04_battleship_loop_section_entity" }
+	attach = { part9 = "unbidden_04_battleship_loop_section_entity" }
+	attach = { part10 = "unbidden_04_battleship_loop_section_entity" }
+	attach = { part11 = "unbidden_04_battleship_loop_section_entity" }
+	attach = { part12 = "unbidden_04_battleship_loop_section_entity" }
+	attach = { part13 = "unbidden_04_battleship_loop_section_entity" }
+	attach = { part14 = "unbidden_04_battleship_loop_section_entity" }
+	attach = { part15 = "unbidden_04_battleship_loop_section_entity" }
+	attach = { part16 = "unbidden_04_battleship_loop_section_entity" }
+	attach = { part17 = "unbidden_04_battleship_loop_section_entity" }
+	attach = { part18 = "unbidden_04_battleship_loop_section_entity" }
+	attach = { part19 = "unbidden_04_battleship_loop_section_entity" }
+	attach = { part20 = "unbidden_04_battleship_loop_section_entity" }
+	attach = { part21 = "unbidden_04_battleship_loop_section_entity" }
+	attach = { part22 = "unbidden_04_battleship_loop_section_entity" }
+	attach = { part23 = "unbidden_04_battleship_loop_section_entity" }
+	attach = { part24 = "unbidden_04_battleship_loop_section_entity" }
+	attach = { part25 = "unbidden_04_battleship_loop_turret_entity" }
+	attach = { part26 = "unbidden_04_battleship_loop_turret_entity" }
+	attach = { part27 = "unbidden_04_battleship_loop_turret_entity" }
+	attach = { part28 = "unbidden_04_battleship_loop_turret_entity" }
+	attach = { part29 = "unbidden_04_battleship_loop_turret_entity" }
+	attach = { part30 = "unbidden_04_battleship_loop_turret_entity" }
+	attach = { part31 = "unbidden_04_battleship_loop_turret_entity" }
+	attach = { part32 = "unbidden_04_battleship_loop_turret_entity" }
+	
+	locator = { name = "xl_gun_01" position = { 9 9 -4.5 } rotation = { 0 0 0 } }
+	locator = { name = "xl_gun_02" position = { -9 9 -4.5 } rotation = { 0 0 0 } }
+	locator = { name = "xl_gun_03" position = { 9 -9 -4.5 } rotation = { 0 0 0 } }
+	locator = { name = "xl_gun_04" position = { -9 -9 -4.5 } rotation = { 0 0 0 } }
+	locator = { name = "large_gun_01" position = { 0 14.3 0 } rotation = { 0 0 0 } }
+	locator = { name = "large_gun_02" position = { 0 -14.3 0 } rotation = { 0 0 180 } }
+	locator = { name = "large_gun_03" position = { 14.3 0 0 } rotation = { 0 0 -90 } }
+	locator = { name = "large_gun_04" position = { -14.3 0 0 } rotation = { 0 0 90 } }
+	locator = { name = "large_gun_05" position = { 10.25305 10.25305 0 } rotation = { 0 0 -45 } }
+	locator = { name = "large_gun_06" position = { -10.25305 10.25305 0 } rotation = { 0 0 45 } }
+	locator = { name = "large_gun_07" position = { 10.25305 -10.25305 0 } rotation = { 0 0 -135 } }
+	locator = { name = "large_gun_08" position = { -10.25305 -10.25305 0 } rotation = { 0 0 135 } }
+	locator = { name = "medium_gun_01" position = { 2 14.2 0 } rotation = { 0 0 0 } }
+	locator = { name = "medium_gun_02" position = { -2 14.2 0 } rotation = { 0 0 0 } }
+	locator = { name = "medium_gun_03" position = { 2 -14.2 0 } rotation = { 0 0 180 } }
+	locator = { name = "medium_gun_04" position = { -2 -14.2 0 } rotation = { 0 0 180 } }
+	locator = { name = "medium_gun_05" position = { 14.2 2 0 } rotation = { 0 0 -90 } }
+	locator = { name = "medium_gun_06" position = { 14.2 -2 0 } rotation = { 0 0 -90 } }
+	locator = { name = "medium_gun_07" position = { -14.2 2 0 } rotation = { 0 0 90 } }
+	locator = { name = "medium_gun_08" position = { -14.2 -2 0 } rotation = { 0 0 90 } }
+	locator = { name = "medium_gun_09" position = { 11 9 0 } rotation = { 0 0 -45 } }
+	locator = { name = "medium_gun_10" position = { 9 11 0 } rotation = { 0 0 -45 } }
+	locator = { name = "medium_gun_11" position = { -11 9 0 } rotation = { 0 0 45 } }
+	locator = { name = "medium_gun_12" position = { -9 11 0 } rotation = { 0 0 45 } }
+	locator = { name = "medium_gun_13" position = { 11 -9 0 } rotation = { 0 0 -135 } }
+	locator = { name = "medium_gun_14" position = { 9 -11 0 } rotation = { 0 0 -135 } }
+	locator = { name = "medium_gun_15" position = { -11 -9 0 } rotation = { 0 0 135 } }
+	locator = { name = "medium_gun_16" position = { -9 -11 0 } rotation = { 0 0 135 } }
+	
+	default_state = "idle"
+	state = { name = "idle"		state_time = 5
+		event = { time = 0 particle = "ed_large_red_ship_effect"	keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_medium_01" particle = "extradimensional_01_red_exhaust_idle"	keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_medium_02" particle = "extradimensional_01_red_exhaust_idle"	keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_medium_03" particle = "extradimensional_01_red_exhaust_idle"	keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_medium_04" particle = "extradimensional_01_red_exhaust_idle"	keep_particle = yes trigger_once = yes }
+		start_event = { trigger_once = yes sound = { soundeffect = "ex_battleship_hum" } }
+	}
+	state = { name = "moving"		state_time = 5
+		event = { time = 0 particle = "ed_large_red_ship_effect"	keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_moving_01" particle = "extradimensional_01_red_exhaust_moving"	keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_moving_02" particle = "extradimensional_01_red_exhaust_moving"	keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_moving_03" particle = "extradimensional_01_red_exhaust_moving"	keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_moving_04" particle = "extradimensional_01_red_exhaust_moving"	keep_particle = yes trigger_once = yes }
+	}
+	state = { name = "death"		state_time = 5 
+		event = { time = 0 node = "root" particle = "ed_red_dissolve_effect"	keep_particle = yes trigger_once = yes }
+	}
+	
+	game_data = {
+		uv_animation_speed 		= 0.2
+		uv_animation_direction 	= { 0.0 0.02 }
+		bloom_factor = @exd_bloom_factor
+	}
+}
+	
+entity = {
+	name = "unbidden_04_battleship_loop_section_entity"
+	pdxmesh = "unbidden_04_battleship_loop_mesh"
+	cull_radius = 500.0
+	game_data = {
+		size = 1
+	}
+}
+
+entity = {
+	name = "unbidden_04_battleship_loop_turret_entity"
+	pdxmesh = "unbidden_04_battleship_turret_mesh"
+	game_data = {
+		size = 1
+	}
+}

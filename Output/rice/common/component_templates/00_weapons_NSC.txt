@@ -1,0 +1,272 @@
+# #####################
+# LEVEL 3 XL WEAPONRY #
+# #####################
+
+weapon_component_template = {
+	key = "LARGE_ENERGY_LANCE_HQ"
+	size = extra_large
+	entity = "invisible_turret_entity"
+	damage = { min = 200.0 max = 360.0 }
+	windup = { min = 22.0 max = 35.0 }
+	total_fire_time = 60
+	range = 120.0
+	accuracy = 0.85
+	type = instant
+	power = -140.0
+	cost = 140.0
+	armor_penetration = 0.85
+	shield_damage = 0.80
+	
+	icon = "GFX_ship_part_energy_lance_nsc"
+	icon_frame = 1
+	
+	min_range = 10.0
+	static_rotation = yes
+	use_ship_kill_target = no
+	
+	prerequisites = { "tech_energy_lance_NSC" }
+	component_set = "ENERGY_LANCE_HQ"
+	projectile_gfx = "graviton_lance"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_long_range weapon_role_anti_armor }
+}
+
+weapon_component_template = {
+	key = "LARGE_ARC_EMITTER_HQ"
+	size = extra_large
+	entity = "invisible_turret_entity"
+	damage = { min = 1.0 max = 300.0 }
+	windup = { min = 22.0 max = 30.0 }
+	total_fire_time = 60
+	range = 120.0
+	accuracy = 1.0
+	tracking = 1.0
+	type = instant
+	power = -140.0
+	cost = 140.0
+	armor_penetration = 0.85
+	shield_penetration = 1.00
+	shield_damage = 0.0
+	
+	icon = "GFX_ship_part_arc_emitter_nsc"
+	icon_frame = 1
+	
+	min_range = 10.0
+	static_rotation = yes
+	use_ship_kill_target = no
+	
+	prerequisites = { "tech_arc_emitter_NSC" }
+	component_set = "ARC_EMITTER_HQ"
+	projectile_gfx = "pulsated_arc_emitter"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_long_range weapon_role_anti_shield }
+}
+
+weapon_component_template = {
+	key = "LARGE_MASS_ACCELERATOR_HQ"
+	size = extra_large
+	entity = "invisible_turret_entity"
+	damage = { min = 180.0 max = 400.0 }
+	windup = { min = 2.0 max = 25.0 }
+	total_fire_time = 70
+	range = 120.0
+	accuracy = 0.95
+	tracking = 0.0
+	type = instant
+	power = -140.0
+	cost = 140.0
+	armor_penetration = 0.75
+	shield_penetration = 0.0
+	shield_damage = 1.50
+	
+	icon = "GFX_ship_part_mass_accelerator_nsc"
+	icon_frame = 1
+	
+	min_range = 10.0
+	static_rotation = yes
+	use_ship_kill_target = no
+	
+	prerequisites = { "tech_mass_accelerator_NSC" }
+	component_set = "MASS_ACCELERATOR_HQ"
+	projectile_gfx = "adv_kinetic_artillery"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_long_range }
+}
+
+# ###########################
+# LEVEL 3 KINETIC ARTILLERY #
+# ###########################
+
+weapon_component_template = {
+	type = instant
+	
+	key = "LARGE_KINETIC_ARTILLERY_NSC"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_kinetic_artillery_nsc"
+	icon_frame = 1
+	
+	damage = { min = 136.0 max = 260.0 }
+	windup = { min = 2.0 max = 18.0 }
+	total_fire_time = 70
+	range = 100.0
+	accuracy = 0.7
+	tracking = 0.05
+	type = instant
+	power = -70.0
+	cost = 70.0
+	armor_penetration = 0.25
+	shield_penetration = 0.0
+	shield_damage = 1.33
+	
+	prerequisites = { "tech_kinetic_artillery_nsc" }
+	component_set = "KINETIC_ARTILLERY_NSC"
+	projectile_gfx = "dreadnought_kinetic_artillery"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_long_range }
+}
+
+# ####################
+# Frigate Flak Battery
+# ####################
+
+
+# ## Frigate Flak Battery 1
+weapon_component_template = {
+	type = point_defence
+	
+	key = "FRIGATE_FLAK_BATTERY_1"
+	size = torpedo
+	entity = "medium_kinetic_gun_entity"
+	damage = { min = 3.0 max = 30.0 }
+	windup = { min = 2.0 max = 16.0 }
+	total_fire_time = 16
+	range = 40.0
+	accuracy = 0.7
+	tracking = 0.2
+	type = instant
+	power = -20.0
+	cost = 20.0
+	armor_penetration = 0.0
+	shield_penetration = 0.0
+	shield_damage = 1.0
+	
+	icon = "GFX_ship_part_flak_batteries_1"
+	icon_frame = 1
+	
+	size_restriction = { Frigate }
+	
+	prerequisites = { "tech_flak_batteries_1" }
+	component_set = "FRIGATE_FLAK_BATTERY_1"
+	projectile_gfx = "mass_driver_m"
+	tags = { weapon_type_point_defense weapon_type_kinetic }
+	ai_tags = { weapon_role_point_defense weapon_role_short_range }
+	upgrades_to = "FRIGATE_FLAK_BATTERY_2"
+}
+
+# ## Frigate Flak Battery 2
+weapon_component_template = {
+	type = point_defence
+	
+	key = "FRIGATE_FLAK_BATTERY_2"
+	size = torpedo
+	entity = "medium_kinetic_gun_entity"
+	damage = { min = 4.0 max = 35.0 }
+	windup = { min = 2.0 max = 18.0 }
+	total_fire_time = 18
+	range = 40.0
+	accuracy = 0.7
+	tracking = 0.3
+	type = instant
+	power = -25.0
+	cost = 25.0
+	armor_penetration = 0.0
+	shield_penetration = 0.0
+	shield_damage = 1.0
+	
+	icon = "GFX_ship_part_flak_batteries_2"
+	icon_frame = 1
+	
+	size_restriction = { Frigate }
+	
+	prerequisites = { "tech_flak_batteries_2" }
+	component_set = "FRIGATE_FLAK_BATTERY_2"
+	projectile_gfx = "mass_driver_m"
+	tags = { weapon_type_point_defense weapon_type_kinetic }
+	ai_tags = { weapon_role_point_defense weapon_role_short_range }
+	upgrades_to = "FRIGATE_FLAK_BATTERY_3"
+}
+
+# ## Frigate Flak Battery 3
+weapon_component_template = {
+	type = point_defence
+	
+	key = "FRIGATE_FLAK_BATTERY_3"
+	size = torpedo
+	entity = "medium_kinetic_gun_entity"
+	damage = { min = 7.5 max = 40.0 }
+	windup = { min = 2.0 max = 18.0 }
+	total_fire_time = 18
+	range = 40.0
+	accuracy = 0.75
+	tracking = 0.5
+	type = instant
+	power = -35.0
+	cost = 30.0
+	armor_penetration = 0.0
+	shield_penetration = 0.0
+	shield_damage = 1.0
+	
+	icon = "GFX_ship_part_flak_batteries_3"
+	icon_frame = 1
+	
+	size_restriction = { Frigate }
+	
+	prerequisites = { "tech_flak_batteries_3_frigate" }
+	component_set = "FRIGATE_FLAK_BATTERY_3"
+	projectile_gfx = "mass_driver_m"
+	tags = { weapon_type_point_defense weapon_type_kinetic }
+	ai_tags = { weapon_role_point_defense weapon_role_short_range }
+}
+
+
+# ####################
+# MISSILE WEAPONS
+# ####################
+
+
+weapon_component_template = {
+	key = "NSC_LARGE_CRUISE_MISSILE_1"
+	size = large
+	entity = "turret_missile_large_entity"
+	
+	icon = "GFX_ship_part_NSC_tomahawk_missile"
+	icon_frame = 1
+	static_rotation = no
+	type = missile
+
+	damage = { min = 300 max = 450 }
+	windup = { min = 8 max = 12 }
+	total_fire_time = 90.0
+	range = 165.0
+	accuracy = 1
+	tracking = 0.05
+	shield_damage = 1.50
+	armor_penetration = 0.75
+	tracking = 0.0
+	power = -100
+	cost = 100
+
+	missile_speed = 5.0
+	missile_evasion = 0.1
+	missile_health = 20
+	missile_armor = 0.0
+	missile_shield = 0.0
+	
+	prerequisites = { "tech_NSC_tomahawk_missile" }
+	component_set = "CRUISE_MISSILES"
+	projectile_gfx = "large_missile"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_long_range }
+}

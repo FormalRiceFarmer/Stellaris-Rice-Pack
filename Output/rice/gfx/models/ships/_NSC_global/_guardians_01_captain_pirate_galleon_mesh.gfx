@@ -1,0 +1,37 @@
+objectTypes = {
+	pdxmesh = {
+		name = "captain_pirate_galleon_mesh"
+		file = "gfx/models/ships/_NSC_global/captain_pirate_galleon.mesh"
+		scale = 1.0
+		
+		animation = { id = "idle"		type = "pirate_01_galleon_idle_animation" }
+		animation = { id = "death"		type = "pirate_01_galleon_death_animation" }
+		
+		meshsettings = {
+			name = "|captain_pirate_galleon_mid2|captain_pirate_galleon_mid2"
+			index = 0
+			texture_diffuse = "pirate_01_blackened_gold_corvette_diffuse.dds"
+			texture_normal = "pirate_corvette_01_normal.dds"
+			texture_specular = "pirate_corvette_01_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "|captain_pirate_galleon_mid1|captain_pirate_galleon_mid1"
+			index = 0
+			texture_diffuse = "pirate_01_blackened_gold_destroyer_diffuse.dds"
+			texture_normal = "pirate_01_destroyer_normal.dds"
+			texture_specular = "pirate_01_destroyer_spec.dds"
+			shader = "PdxMeshShip"
+		}
+
+		meshsettings = {
+			name = "captain_pirate_galleon_top3Shape"
+			index = 0
+			texture_diffuse = "pirate_01_blackened_gold_base_asteroid_diffuse.dds"
+			texture_normal = "pirate_01_base_asteroid_normal.dds"
+			texture_specular = "pirate_01_base_asteroid_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

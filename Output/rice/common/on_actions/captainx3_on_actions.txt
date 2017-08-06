@@ -1,0 +1,66 @@
+on_game_start = {
+    events = {
+        nscflag.1 #Installs "has_nsc" country flag.
+		nscflag.2 #Installs "NSC Player Empire" country flag.
+		nscflag.3 #Installs "NSC Control Player" country flag.
+    }
+}
+
+on_press_begin = {
+	events = {
+		NSC_guardian_main.1 #Gives all Players with Leviathans DLC the Playable Guardian flag to start.
+		nscflag.7 #Checks which Component Mods (BOSP, ESC, Crystallis) are active and determines if Player gets Component Feature.
+		NSC_features.2 #Launches advisory notice for all NSC Players explaining NSC Features Menu location.
+	}
+}
+
+on_yearly_pulse = { events = { ai_ship_classes.1 } } #If AI Challenge is active, gives all regular AI empires any "mainstream" ship class technologies the player has.
+
+on_monthly_pulse = {
+	events = {
+		nscflag.5 #Checks to see if the player activated NSC mid game, and if so, installs all appropriate flags/techs.
+		nscflag.4 #Checks if any "new countries" have arisen in an NSC Stellaris campaign and gives them the "has NSC" flag.
+	}
+}
+
+on_ship_built = {
+	events = {
+		nsc_flagship_check.1 #Tells Player Flagship is built.
+		nsc_flagship_warning.1 #Tells Player HQ Station is built.
+	}
+}
+
+on_fleet_destroyed_perp = {
+	events = { #All these events are for when a Player defeats a Guardian, starting the Playable Guardian process.
+		NSC_guardian_automated_dreadnought.1
+		NSC_guardian_dimensional_horror.1
+		NSC_guardian_ether_drake.1
+		NSC_guardian_pirate.1
+		NSC_guardian_stellarite.1
+		NSC_guardian_technosphere.1
+		NSC_guardian_wraith.1
+	}
+}
+
+on_border_change_station_lost = {
+	events = { #Makes sure that if the player loses the HQ Station or Enigmatic Fortress Playable Guardian Stations to a "boarder change", they are automatically deleted.
+		nsc_hq.303
+		NSC_guardian_enigmatic_fortress.10
+	}
+}
+
+on_entering_system = { events = { NSC_guardian_pirate.2 } }#Gives description of Hidden Paradise system for the player when entering.
+
+on_ship_disabled = { events = { NSC_guardian_pirate.3 } }#Disables the Carrack Pirate Galleon and saves the event target.
+
+on_building_miningbase = { events = { miningbase.1 } }#Gives bonuses
+
+on_building_powerstation = { events = { powerstation.1 } } #Gives bonuses
+
+on_fleet_disbanded = { events = { nsc_flagship_check.301 } } #Tells Player Flagship has been destroyed.
+
+on_ship_destroyed_victim = { events = { nsc_flagship_check.302 } } #Tells Player Flagship has been destroyed.
+
+on_building_complete = { events = { nsc_mansion.1 } } #Counts Governor's Masions in empire to know when to add "government corruption" modifier.
+
+empire_init_create_ships = { events = { NSC_game_start.1 } } #Gives the player 5 more corvettes on game start.

@@ -1,0 +1,557 @@
+namespace = NSC_guardian_wraith
+
+country_event = {
+	# Triggered upon defeat of a Wraith. If AI beats it, spawns new one. If player beats it, gives flag to unlock Playable Guardians. If more than one player has Playable Guardians active, spawns new system.
+	id = NSC_guardian_wraith.1
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		From = {
+			is_country_type = guardian_wraith
+		}
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				has_country_flag = playable_guardian_feature_active
+				has_country_flag = NSC_player_empire
+				NOT = { has_country_flag = guardian_wraith_defeated }
+			}
+			set_country_flag = guardian_wraith_defeated
+			country_event = { id = NSC_guardian_wraith.2 }
+		}
+		#The remaining coding is to make sure in multiplier if any players have Playable Guardians active yet didn't defeat the Ether Drake, have the oppertunity.
+		if = {
+			limit = {
+				any_country = {
+					has_country_flag = NSC_player_empire
+					has_country_flag = playable_guardian_feature_active
+					NOT = { has_country_flag = guardian_wraith_defeated }
+				}
+			}
+			nsc_spawn_wraith = yes
+		}
+	}
+}
+
+country_event = {
+	id = NSC_guardian_wraith.2
+	title = "guardian_wraith.2.name"
+	desc = "guardian_wraith.2.desc"
+	picture = "GFX_evt_wraith"
+	show_sound = "event_sensor_ping"
+	is_triggered_only = yes
+	
+	trigger = {
+		has_country_flag = "NSC_player_empire"
+		has_country_flag = "guardian_wraith_defeated"
+	}
+			
+	option = {
+		name = "guardian_wraith.2.a"
+		trigger = {
+			NOR = {
+				has_country_flag = playable_guardians_postponed
+				has_country_flag = captain_galleon_built
+				has_country_flag = dreadnought_built
+				has_country_flag = dimensional_horror_built
+				has_country_flag = enigmatic_fortress_built
+				has_country_flag = stellarite_built
+				has_country_flag = technosphere_built
+				has_country_flag = dragon_built
+			}
+		}
+		hidden_effect = {
+			country_event = { id = NSC_guardian_wraith.3 }
+		}
+	}	
+	option = {
+		name = "guardian_wraith.2.b"
+		trigger = {
+			NOR = {
+				has_country_flag = playable_guardians_postponed
+				has_country_flag = captain_galleon_built
+				has_country_flag = dreadnought_built
+				has_country_flag = dimensional_horror_built
+				has_country_flag = enigmatic_fortress_built
+				has_country_flag = stellarite_built
+				has_country_flag = technosphere_built
+				has_country_flag = dragon_built
+			}
+		}
+		hidden_effect = {
+			country_event = { id = NSC_guardian_main.2 }
+		}
+	}
+	option = {
+		name = "guardian_wraith.2.c"
+		trigger = {
+			OR = {
+				has_country_flag = playable_guardians_postponed
+				has_country_flag = captain_galleon_built
+				has_country_flag = dreadnought_built
+				has_country_flag = dimensional_horror_built
+				has_country_flag = enigmatic_fortress_built
+				has_country_flag = stellarite_built
+				has_country_flag = technosphere_built
+				has_country_flag = dragon_built
+			}
+		}
+	}
+}
+
+country_event = {
+	# First and Second trigger for getting a Wraith.
+	id = NSC_guardian_wraith.3
+	title = "guardian_wraith.3.name"
+	desc = "guardian_wraith.3.desc"
+	picture = "GFX_evt_wraith"
+	show_sound = "event_sensor_ping"
+	is_triggered_only = yes
+	
+	trigger = {
+		has_country_flag = "NSC_player_empire"
+		has_country_flag = "guardian_wraith_defeated"
+	}
+	
+	option = {
+		name = "guardian_wraith.3.a"
+		enable_special_project = {
+			name = "guardian_wraith_red_project"
+			owner = root
+			location = root.capital_scope
+		}
+	}
+	option = {
+		name = "guardian_wraith.3.b"
+		enable_special_project = {
+			name = "guardian_wraith_orange_project"
+			owner = root
+			location = root.capital_scope
+		}
+	}
+	option = {
+		name = "guardian_wraith.3.c"
+		enable_special_project = {
+			name = "guardian_wraith_yellow_project"
+			owner = root
+			location = root.capital_scope
+		}
+	}
+	option = {
+		name = "guardian_wraith.3.d"
+		enable_special_project = {
+			name = "guardian_wraith_green_project"
+			owner = root
+			location = root.capital_scope
+		}
+	}
+	option = {
+		name = "guardian_wraith.3.e"
+		enable_special_project = {
+			name = "guardian_wraith_blue_project"
+			owner = root
+			location = root.capital_scope
+		}
+	}
+	option = {
+		name = "guardian_wraith.3.f"
+		enable_special_project = {
+			name = "guardian_wraith_violet_project"
+			owner = root
+			location = root.capital_scope
+		}
+	}
+	option = {
+		name = "guardian_wraith.3.g"
+		enable_special_project = {
+			name = "guardian_wraith_white_project"
+			owner = root
+			location = root.capital_scope
+		}
+	}
+	option = {
+		name = "guardian_backout.1.a"
+		custom_tooltip = "NSC_guardian_main_tooltip"
+		hidden_effect = {
+			country_event = { id = NSC_guardian_main.2 }
+		}
+	}
+}
+
+country_event = {
+	# This adds the Wraith built country flag.
+	id = NSC_guardian_wraith.4
+	hide_window = yes
+
+	trigger = {
+		has_country_flag = "NSC_player_empire"
+		NOT = { has_country_flag = "wraith_built" }
+		any_owned_ship = {
+			OR = {
+				is_ship_size = red_wraith
+				is_ship_size = orange_wraith
+				is_ship_size = yellow_wraith
+				is_ship_size = green_wraith
+				is_ship_size = blue_wraith
+				is_ship_size = violet_wraith
+				is_ship_size = white_wraith
+			}
+		}
+	}
+	immediate = {
+		set_country_flag = "wraith_built"
+		country_event = { id = NSC_guardian_wraith.5 }
+	}
+}
+
+country_event = {
+	# Wraith grown message.
+	id = NSC_guardian_wraith.5
+	title = "guardian_wraith.4.name"
+	desc = "guardian_wraith.4.desc"
+	picture = "GFX_evt_wraith"
+	show_sound = "event_sensor_ping"
+	is_triggered_only = yes
+	option = { name = EXCELLENT }
+}
+
+country_event = {
+	# Checks if the Wraith has been killed or has been "disbanded".
+	id = NSC_guardian_wraith.6
+	hide_window = yes
+
+	trigger = {
+		has_country_flag = "wraith_built"
+		has_country_flag = "NSC_player_empire"
+		NOT = {
+			any_owned_ship = {
+				OR = {
+					is_ship_size = red_wraith
+					is_ship_size = orange_wraith
+					is_ship_size = yellow_wraith
+					is_ship_size = green_wraith
+					is_ship_size = blue_wraith
+					is_ship_size = violet_wraith
+					is_ship_size = white_wraith
+				}
+			}
+		}
+	}
+	immediate = {
+		remove_country_flag = "wraith_built"
+		country_event = { id = NSC_guardian_wraith.7 }
+	}
+}
+
+country_event = {
+	# Wraith killed or disbanded message.
+	id = NSC_guardian_wraith.7
+	title = "guardian_wraith.5.name"
+	desc = "guardian_wraith.5.desc"
+	picture = "GFX_evt_exploding_ship"
+	show_sound = "event_sensor_ping"
+	is_triggered_only = yes
+	option = {
+		name = UNDERSTOOD
+		trigger = {
+			OR = {
+				has_country_flag = playable_guardians_postponed
+				has_country_flag = captain_galleon_built
+				has_country_flag = dreadnought_built
+				has_country_flag = dimensional_horror_built
+				has_country_flag = enigmatic_fortress_built
+				has_country_flag = stellarite_built
+				has_country_flag = technosphere_built
+				has_country_flag = dragon_built
+			}
+		}
+	}
+	option = {
+		name = UNDERSTOOD
+		custom_tooltip = "NSC_guardian_main_tooltip"
+		trigger = {
+			NOR = {
+				has_country_flag = playable_guardians_postponed
+				has_country_flag = captain_galleon_built
+				has_country_flag = dreadnought_built
+				has_country_flag = dimensional_horror_built
+				has_country_flag = enigmatic_fortress_built
+				has_country_flag = stellarite_built
+				has_country_flag = technosphere_built
+				has_country_flag = dragon_built
+			}
+		}
+		hidden_effect = {
+			country_event = { id = NSC_guardian_main.2 }
+		}
+	}
+}
+
+country_event = {
+	id = NSC_guardian_wraith.101
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		has_country_flag = "NSC_player_empire"
+		has_country_flag = playable_guardian_feature_active
+	}
+
+	#trigger = {
+	#	has_country_flag = NSC_player_empire
+	#	has_country_flag = guardian_wraith_defeated
+	#}
+	
+	immediate = {
+		create_fleet = {
+			name = "NAME_Phantom_Wraith_450THz"
+			settings = {
+				is_boss = yes
+				spawn_debris = no
+			}
+			effect = {
+				set_owner = root
+				create_ship = {
+					name = random
+					design = "NAME_Phantom_Spectral_Wraith_450THz" #Red
+				}
+				set_location = {
+					target = root.capital_scope
+					distance = 20
+					angle = random
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = NSC_guardian_wraith.102
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		has_country_flag = "NSC_player_empire"
+		has_country_flag = playable_guardian_feature_active
+	}
+	
+	#trigger = {
+	#	has_country_flag = NSC_player_empire
+	#	has_country_flag = guardian_wraith_defeated
+	#}
+
+	immediate = {
+		create_fleet = {
+			name = "NAME_Phantom_Wraith_500THz"
+			settings = {
+				is_boss = yes
+				spawn_debris = no
+			}
+			effect = {
+				set_owner = root
+				create_ship = {
+					name = random
+					design = "NAME_Phantom_Spectral_Wraith_500THz" #Orange
+				}
+				set_location = {
+					target = root.capital_scope
+					distance = 20
+					angle = random
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = NSC_guardian_wraith.103
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		has_country_flag = "NSC_player_empire"
+		has_country_flag = playable_guardian_feature_active
+	}
+	
+	#trigger = {
+	#	has_country_flag = NSC_player_empire
+	#	has_country_flag = guardian_wraith_defeated
+	#}
+
+	immediate = {
+		create_fleet = {
+			name = "NAME_Phantom_Wraith_520THz"
+			settings = {
+				is_boss = yes
+				spawn_debris = no
+			}
+			effect = {
+				set_owner = root
+				create_ship = {
+					name = random
+					design = "NAME_Phantom_Spectral_Wraith_520THz" #Yellow
+				}
+				set_location = {
+					target = root.capital_scope
+					distance = 20
+					angle = random
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = NSC_guardian_wraith.104
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		has_country_flag = "NSC_player_empire"
+		has_country_flag = playable_guardian_feature_active
+	}
+	
+	#trigger = {
+	#	has_country_flag = NSC_player_empire
+	#	has_country_flag = guardian_wraith_defeated
+	#}
+
+	immediate = {
+		create_fleet = {
+			name = "NAME_Phantom_Wraith_550THz"
+			settings = {
+				is_boss = yes
+				spawn_debris = no
+			}
+			effect = {
+				set_owner = root
+				create_ship = {
+					name = random
+					design = "NAME_Phantom_Spectral_Wraith_550THz" #Green
+				}
+				set_location = {
+					target = root.capital_scope
+					distance = 20
+					angle = random
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = NSC_guardian_wraith.105
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		has_country_flag = "NSC_player_empire"
+		has_country_flag = playable_guardian_feature_active
+	}
+	
+	#trigger = {
+	#	has_country_flag = NSC_player_empire
+	#	has_country_flag = guardian_wraith_defeated
+	#}
+
+	immediate = {
+		create_fleet = {
+			name = "NAME_Phantom_Wraith_650THz"
+			settings = {
+				is_boss = yes
+				spawn_debris = no
+			}
+			effect = {
+				set_owner = root
+				create_ship = {
+					name = random
+					design = "NAME_Phantom_Spectral_Wraith_650THz" #Blue
+				}
+				set_location = {
+					target = root.capital_scope
+					distance = 20
+					angle = random
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = NSC_guardian_wraith.106
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		has_country_flag = "NSC_player_empire"
+		has_country_flag = playable_guardian_feature_active
+	}
+	
+	#trigger = {
+	#	has_country_flag = NSC_player_empire
+	#	has_country_flag = guardian_wraith_defeated
+	#}
+
+	immediate = {
+		create_fleet = {
+			name = "NAME_Phantom_Wraith_720THz"
+			settings = {
+				is_boss = yes
+				spawn_debris = no
+			}
+			effect = {
+				set_owner = root
+				create_ship = {
+					name = random
+					design = "NAME_Phantom_Spectral_Wraith_720THz" #Violet
+				}
+				set_location = {
+					target = root.capital_scope
+					distance = 20
+					angle = random
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = NSC_guardian_wraith.107
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		has_country_flag = "NSC_player_empire"
+		has_country_flag = playable_guardian_feature_active
+	}
+	
+	#trigger = {
+	#	has_country_flag = NSC_player_empire
+	#	has_country_flag = guardian_wraith_defeated
+	#}
+
+	immediate = {
+		create_fleet = {
+			name = "NAME_Phantom_Wraith_800THz"
+			settings = {
+				is_boss = yes
+				spawn_debris = no
+			}
+			effect = {
+				set_owner = root
+				create_ship = {
+					name = random
+					design = "NAME_Phantom_Spectral_Wraith_800THz" #White - Unsure if White has a terahertz value, so higher than human visable spectrum, "white" for gameplay purposes.
+				}
+				set_location = {
+					target = root.capital_scope
+					distance = 20
+					angle = random
+				}
+			}
+		}
+	}
+}

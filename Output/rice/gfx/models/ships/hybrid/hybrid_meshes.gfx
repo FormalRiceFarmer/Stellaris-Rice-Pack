@@ -1,0 +1,1446 @@
+objectTypes = {
+	
+	pdxmesh = {
+		name = "hybrid_battleship_frame_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_battleship_frame.mesh"
+				animation = { id = "idle"			type = "fungoid_01_battleship_frame_idle_animation" }
+				animation = { id = "death3"			type = "fungoid_01_battleship_frame_death3_animation" }
+				animation = { id = "attack"			type = "fungoid_01_battleship_frame_idle_animation" }				
+		scale = 1.0
+		#meshsettings = {
+		#	shader = "PdxMeshShip"
+		#}
+	}
+	
+	pdxmesh = {
+		name = "hybrid_fungoid_battleship_bow_L1M1S2_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_fungoid_battleship_bow_L1M1S2.mesh"
+		scale = 1.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_fungoid_battleship_bow_L1S4_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_fungoid_battleship_bow_L1S4.mesh"
+		scale = 1.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_fungoid_battleship_bow_L2_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_fungoid_battleship_bow_L2.mesh"
+		scale = 1.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_fungoid_battleship_bow_M1S2SHB_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_fungoid_battleship_bow_M1S2SHB.mesh"
+		scale = 1.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_fungoid_battleship_bow_M2S4_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_fungoid_battleship_bow_M2S4.mesh"
+		scale = 1.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_fungoid_battleship_bow_M3S2_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_fungoid_battleship_bow_M3S2.mesh"
+		scale = 1.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "hybrid_fungoid_battleship_bow_XL1_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_fungoid_battleship_bow_XL1.mesh"
+		scale = 1.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}				
+		
+	pdxmesh = {
+		name = "hybrid_fungoid_battleship_mid_L2S4_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_fungoid_battleship_mid_L2S4.mesh"
+		scale = 1.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_fungoid_battleship_mid_L1M4_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_fungoid_battleship_mid_L1M4.mesh"
+		scale = 1.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_fungoid_battleship_mid_L2M2_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_fungoid_battleship_mid_L2M2.mesh"
+		scale = 1.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_fungoid_battleship_mid_L3_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_fungoid_battleship_mid_L3.mesh"
+		scale = 1.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_fungoid_battleship_mid_M4SHB_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_fungoid_battleship_mid_M4SHB.mesh"
+		scale = 1.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_fungoid_battleship_mid_S4LHB_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_fungoid_battleship_mid_S4LHB.mesh"
+		scale = 1.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_fungoid_battleship_stern_L1_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_fungoid_battleship_stern_L1.mesh"
+		scale = 1.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "hybrid_fungoid_battleship_stern_M1S2_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_fungoid_battleship_stern_M1S2.mesh"
+		scale = 1.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}		
+		
+	pdxmesh = {
+		name = "hybrid_fungoid_battleship_stern_m2_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_fungoid_battleship_stern_M2.mesh"
+		scale = 1.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}	
+	
+	pdxmesh = {
+		name = "hybrid_fungoid_battleship_stern_S4_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_fungoid_battleship_stern_S4.mesh"
+		scale = 1.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}	
+	
+	pdxmesh = {
+		name = "hybrid_molluscoid_battleship_bow_L1M1S2_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_molluscoid_battleship_bow_L1M1S2.mesh"
+		scale = 1.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+		#Mipmap tweaking
+		#texture_diffuse = "2x2.dds"
+		}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_molluscoid_battleship_bow_L1S4_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_molluscoid_battleship_bow_L1S4.mesh"
+		scale = 1.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+		#Mipmap tweaking
+		#texture_diffuse = "2x2.dds"
+		}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_molluscoid_battleship_bow_L2_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_molluscoid_battleship_bow_L2.mesh"
+		scale = 1.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+		#Mipmap tweaking
+		#texture_diffuse = "2x2.dds"
+		}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_molluscoid_battleship_bow_M1S2SHB_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_molluscoid_battleship_bow_M1S2SHB.mesh"
+		scale = 1.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+		#Mipmap tweaking
+		#texture_diffuse = "2x2.dds"
+		}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_molluscoid_battleship_bow_M2S4_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_molluscoid_battleship_bow_M2S4.mesh"
+		scale = 1.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+		#Mipmap tweaking
+		#texture_diffuse = "2x2.dds"
+		}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_molluscoid_battleship_bow_M3S2_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_molluscoid_battleship_bow_M3S2.mesh"
+		scale = 1.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+		#Mipmap tweaking
+		#texture_diffuse = "2x2.dds"
+		}
+	}
+	
+	pdxmesh = {
+		name = "hybrid_molluscoid_battleship_bow_XL1_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_molluscoid_battleship_bow_XL1.mesh"
+		scale = 1.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+		#Mipmap tweaking
+		#texture_diffuse = "2x2.dds"
+		}
+	}	
+	
+	pdxmesh = {
+		name = "hybrid_molluscoid_battleship_mid_L2S4_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_molluscoid_battleship_mid_L2S4.mesh"
+		scale = 1.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+		#Mipmap tweaking
+		#texture_diffuse = "2x2.dds"
+		}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_molluscoid_battleship_mid_L1M4_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_molluscoid_battleship_mid_L1M4.mesh"
+		scale = 1.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+		#Mipmap tweaking
+		#texture_diffuse = "2x2.dds"
+		}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_molluscoid_battleship_mid_L2M2_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_molluscoid_battleship_mid_L2M2.mesh"
+		scale = 1.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+		#Mipmap tweaking
+		#texture_diffuse = "2x2.dds"
+		}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_molluscoid_battleship_mid_L3_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_molluscoid_battleship_mid_L3.mesh"
+		scale = 1.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+		#Mipmap tweaking
+		#texture_diffuse = "2x2.dds"
+		}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_molluscoid_battleship_mid_M4SHB_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_molluscoid_battleship_mid_M4SHB.mesh"
+		scale = 1.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+		#Mipmap tweaking
+		#texture_diffuse = "2x2.dds"
+		}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_molluscoid_battleship_mid_S4LHB_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_molluscoid_battleship_mid_S4LHB.mesh"
+		scale = 1.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+		#Mipmap tweaking
+		#texture_diffuse = "2x2.dds"
+		}
+	}
+	
+	pdxmesh = {
+		name = "hybrid_molluscoid_battleship_stern_L1_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_molluscoid_battleship_stern_L1.mesh"
+		scale = 1.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+		#Mipmap tweaking
+		#texture_diffuse = "2x2.dds"
+		}
+	}
+	
+	pdxmesh = {
+		name = "hybrid_molluscoid_battleship_stern_M1S2_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_molluscoid_battleship_stern_M1S2.mesh"
+		scale = 1.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+		#Mipmap tweaking
+		#texture_diffuse = "2x2.dds"
+		}
+	}		
+		
+	pdxmesh = {
+		name = "hybrid_molluscoid_battleship_stern_M2_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_molluscoid_battleship_stern_M2.mesh"
+		scale = 1.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+		#Mipmap tweaking
+		#texture_diffuse = "2x2.dds"
+		}
+	}			
+		
+	pdxmesh = {
+		name = "hybrid_molluscoid_battleship_stern_S4_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_molluscoid_battleship_stern_S4.mesh"
+		scale = 1.0
+		meshsettings = {
+			shader = "PdxMeshShip"
+		#Mipmap tweaking
+		#texture_diffuse = "2x2.dds"
+		}
+	}
+	
+	pdxmesh = {
+		name = "hybrid_mammalian_battleship_bow_L1M1S2_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_mammalian_battleship_bow_L1M1S2.mesh"
+		scale = 1.1
+
+		meshsettings = {
+			name = "rigg:polySurface1300Shape"
+			index = 0
+			texture_diffuse = "mammalian_01_battleship_diffuse.dds"
+			texture_normal = "mammalian_01_battleship_normal.dds"
+			texture_specular = "mammalian_01_battleship_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_mammalian_battleship_bow_L1S4_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_mammalian_battleship_bow_L1S4.mesh"
+		scale = 1.1
+
+		meshsettings = {
+			name = "polySurface1303Shape"
+			index = 0
+			texture_diffuse = "mammalian_01_battleship_diffuse.dds"
+			texture_normal = "mammalian_01_battleship_normal.dds"
+			texture_specular = "mammalian_01_battleship_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}	
+		
+	pdxmesh = {
+		name = "hybrid_mammalian_battleship_bow_L2_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_mammalian_battleship_bow_L2.mesh"
+		scale = 1.1
+
+		meshsettings = {
+			name = "rigg:polySurface1301Shape"
+			index = 0
+			texture_diffuse = "mammalian_01_battleship_diffuse.dds"
+			texture_normal = "mammalian_01_battleship_normal.dds"
+			texture_specular = "mammalian_01_battleship_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "hybrid_mammalian_battleship_bow_M1S2SHB_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_mammalian_battleship_bow_M1S2SHB.mesh"
+		scale = 1.1
+
+		meshsettings = {
+			name = "rigg:polySurface1302Shape"
+			index = 0
+			texture_diffuse = "mammalian_01_battleship_diffuse.dds"
+			texture_normal = "mammalian_01_battleship_normal.dds"
+			texture_specular = "mammalian_01_battleship_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+		pdxmesh = {
+		name = "hybrid_mammalian_battleship_bow_M2S4_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_mammalian_battleship_bow_M2S4.mesh"
+		scale = 1.1
+
+		meshsettings = {
+			name = "rigg:polySurface1293Shape"
+			index = 0
+			texture_diffuse = "mammalian_01_battleship_diffuse.dds"
+			texture_normal = "mammalian_01_battleship_normal.dds"
+			texture_specular = "mammalian_01_battleship_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "hybrid_mammalian_battleship_bow_M3S2_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_mammalian_battleship_bow_M3S2.mesh"
+		scale = 1.1
+
+		meshsettings = {
+			name = "rigg:polySurface1299Shape"
+			index = 0
+			texture_diffuse = "mammalian_01_battleship_diffuse.dds"
+			texture_normal = "mammalian_01_battleship_normal.dds"
+			texture_specular = "mammalian_01_battleship_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "hybrid_mammalian_battleship_bow_XL1_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_mammalian_battleship_bow_XL1.mesh"
+		scale = 1.1
+		meshsettings = {
+			shader = "PdxMeshShip"
+			#Mipmap tweaking
+		#texture_diffuse = "2x2.dds"
+		}
+	}	
+		
+	pdxmesh = {
+		name = "hybrid_mammalian_battleship_mid_L1M4_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_mammalian_battleship_mid_L1M4.mesh"
+		scale = 1.1
+
+		meshsettings = {
+			name = "rigg:polySurface1296Shape"
+			index = 0
+			texture_diffuse = "mammalian_01_battleship_diffuse.dds"
+			texture_normal = "mammalian_01_battleship_normal.dds"
+			texture_specular = "mammalian_01_battleship_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	
+		pdxmesh = {
+		name = "hybrid_mammalian_battleship_mid_L2M2_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_mammalian_battleship_mid_L2M2.mesh"
+		scale = 1.1
+
+		meshsettings = {
+			name = "rigg:polySurface1292Shape"
+			index = 0
+			texture_diffuse = "mammalian_01_battleship_diffuse.dds"
+			texture_normal = "mammalian_01_battleship_normal.dds"
+			texture_specular = "mammalian_01_battleship_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}	
+		
+	pdxmesh = {
+		name = "hybrid_mammalian_battleship_mid_L2S4_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_mammalian_battleship_mid_L2S4.mesh"
+		scale = 1.1
+
+		meshsettings = {
+			name = "rigg:polySurface1291Shape"
+			index = 0
+			texture_diffuse = "mammalian_01_battleship_diffuse.dds"
+			texture_normal = "mammalian_01_battleship_normal.dds"
+			texture_specular = "mammalian_01_battleship_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "hybrid_mammalian_battleship_mid_L3_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_mammalian_battleship_mid_L3.mesh"
+		scale = 1.1
+
+		meshsettings = {
+			name = "rigg:polySurface1290Shape"
+			index = 0
+			texture_diffuse = "mammalian_01_battleship_diffuse.dds"
+			texture_normal = "mammalian_01_battleship_normal.dds"
+			texture_specular = "mammalian_01_battleship_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "hybrid_mammalian_battleship_mid_M4SHB_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_mammalian_battleship_mid_M4SHB.mesh"
+		scale = 1.1
+
+		meshsettings = {
+			name = "rigg:polySurface1297Shape"
+			index = 0
+			texture_diffuse = "mammalian_01_battleship_diffuse.dds"
+			texture_normal = "mammalian_01_battleship_normal.dds"
+			texture_specular = "mammalian_01_battleship_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "hybrid_mammalian_battleship_mid_S4LHB_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_mammalian_battleship_mid_S4LHB.mesh"
+		scale = 1.1
+
+		meshsettings = {
+			name = "rigg:polySurface1298Shape"
+			index = 0
+			texture_diffuse = "mammalian_01_battleship_diffuse.dds"
+			texture_normal = "mammalian_01_battleship_normal.dds"
+			texture_specular = "mammalian_01_battleship_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}		
+		
+	pdxmesh = {
+		name = "hybrid_mammalian_battleship_stern_L1_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_mammalian_battleship_stern_L1.mesh"
+		scale = 1.1
+
+		meshsettings = {
+			name = "mammalian_battleshio_stern_01Shape"
+			index = 0
+			texture_diffuse = "mammalian_01_battleship_diffuse.dds"
+			texture_normal = "mammalian_01_battleship_normal.dds"
+			texture_specular = "mammalian_01_battleship_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_mammalian_battleship_stern_M1S2_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_mammalian_battleship_stern_M1S2.mesh"
+		scale = 1.1
+
+		meshsettings = {
+			name = "rigg:polySurface1295Shape"
+			index = 0
+			texture_diffuse = "mammalian_01_battleship_diffuse.dds"
+			texture_normal = "mammalian_01_battleship_normal.dds"
+			texture_specular = "mammalian_01_battleship_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}	
+
+	pdxmesh = {
+		name = "hybrid_mammalian_battleship_stern_M2_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_mammalian_battleship_stern_M2.mesh"
+		scale = 1.1
+
+		meshsettings = {
+			name = "mammalian_battleship_stern_m2Shape"
+			index = 0
+			texture_diffuse = "mammalian_01_battleship_diffuse.dds"
+			texture_normal = "mammalian_01_battleship_normal.dds"
+			texture_specular = "mammalian_01_battleship_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_mammalian_battleship_stern_S4_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_mammalian_battleship_stern_S4.mesh"
+		scale = 1.1
+
+		meshsettings = {
+			name = "rigg:polySurface1294Shape"
+			index = 0
+			texture_diffuse = "mammalian_01_battleship_diffuse.dds"
+			texture_normal = "mammalian_01_battleship_normal.dds"
+			texture_specular = "mammalian_01_battleship_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+	
+		pdxmesh = {
+		name = "hybrid_plantoid_battleship_bow_L1M1S2_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_plantoid_battleship_bow_L1M1S2.mesh"
+		scale = 1.15
+		#meshsettings = {
+		#	shader = "PdxMeshShip"
+		#	
+		#	#Mipmap tweaking
+		#	#texture_diffuse = "2x2.dds"
+		#}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_plantoid_battleship_bow_L1S4_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_plantoid_battleship_bow_L1S4.mesh"
+		scale = 1.15
+		#meshsettings = {
+		#	shader = "PdxMeshShip"
+		#	
+		#	#Mipmap tweaking
+		#	#texture_diffuse = "2x2.dds"
+		#}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_plantoid_battleship_bow_L2_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_plantoid_battleship_bow_L2.mesh"
+		scale = 1.15
+		#meshsettings = {
+		#	shader = "PdxMeshShip"
+		#	
+		#	#Mipmap tweaking
+		#	#texture_diffuse = "2x2.dds"
+		#}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_plantoid_battleship_bow_M1S2SHB_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_plantoid_battleship_bow_M1S2SHB.mesh"
+		scale = 1.15
+		#meshsettings = {
+		#	shader = "PdxMeshShip"
+		#	
+		#	#Mipmap tweaking
+		#	#texture_diffuse = "2x2.dds"
+		#}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_plantoid_battleship_bow_M2S4_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_plantoid_battleship_bow_M2S4.mesh"
+		scale = 1.15
+		#meshsettings = {
+		#	shader = "PdxMeshShip"
+		#	
+		#	#Mipmap tweaking
+		#	#texture_diffuse = "2x2.dds"
+		#}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_plantoid_battleship_bow_M3S2_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_plantoid_battleship_bow_M3S2.mesh"
+		scale = 1.15
+		#meshsettings = {
+		#	shader = "PdxMeshShip"
+		#	
+		#	#Mipmap tweaking
+		#	#texture_diffuse = "2x2.dds"
+		#}
+	}	
+	
+	pdxmesh = {
+		name = "hybrid_plantoid_battleship_bow_XL1_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_plantoid_battleship_bow_XL1.mesh"
+		scale = 1.15
+		#meshsettings = {
+		#	shader = "PdxMeshShip"
+		#	
+		#	#Mipmap tweaking
+		#	#texture_diffuse = "2x2.dds"
+		#}
+	}	
+		
+	pdxmesh = {
+		name = "hybrid_plantoid_battleship_mid_L2S4_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_plantoid_battleship_mid_L2S4.mesh"
+		scale = 1.15
+		#meshsettings = {
+		#	shader = "PdxMeshShip"
+		#	
+		#	#Mipmap tweaking
+		#	#texture_diffuse = "2x2.dds"
+		#}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_plantoid_battleship_mid_L1M4_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_plantoid_battleship_mid_L1M4.mesh"
+		scale = 1.15
+		#meshsettings = {
+		#	shader = "PdxMeshShip"
+		#	
+		#	#Mipmap tweaking
+		#	#texture_diffuse = "2x2.dds"
+		#}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_plantoid_battleship_mid_L2M2_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_plantoid_battleship_mid_L2M2.mesh"
+		scale = 1.15
+		#meshsettings = {
+		#	shader = "PdxMeshShip"
+		#	
+		#	#Mipmap tweaking
+		#	#texture_diffuse = "2x2.dds"
+		#}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_plantoid_battleship_mid_L3_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_plantoid_battleship_mid_L3.mesh"
+		scale = 1.15
+		#meshsettings = {
+		#	shader = "PdxMeshShip"
+		#	
+		#	#Mipmap tweaking
+		#	#texture_diffuse = "2x2.dds"
+		#}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_plantoid_battleship_mid_M4SHB_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_plantoid_battleship_mid_M4SHB.mesh"
+		scale = 1.15
+		#meshsettings = {
+		#	shader = "PdxMeshShip"
+		#	
+		#	#Mipmap tweaking
+		#	#texture_diffuse = "2x2.dds"
+		#}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_plantoid_battleship_mid_S4LHB_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_plantoid_battleship_mid_S4LHB.mesh"
+		scale = 1.15
+		#meshsettings = {
+		#	shader = "PdxMeshShip"
+		#	
+		#	#Mipmap tweaking
+		#	#texture_diffuse = "2x2.dds"
+		#}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_plantoid_battleship_stern_L1_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_plantoid_battleship_stern_L1.mesh"
+		scale = 1.15
+		#meshsettings = {
+		#	shader = "PdxMeshShip"
+		#	
+		#	#Mipmap tweaking
+		#	#texture_diffuse = "2x2.dds"
+		#}
+	}
+	
+	pdxmesh = {
+		name = "hybrid_plantoid_battleship_stern_M1S2_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_plantoid_battleship_stern_M1S2.mesh"
+		scale = 1.15
+		#meshsettings = {
+		#	shader = "PdxMeshShip"
+		#	
+		#	#Mipmap tweaking
+		#	#texture_diffuse = "2x2.dds"
+		#}
+	}		
+		
+	pdxmesh = {
+		name = "hybrid_plantoid_battleship_stern_M2_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_plantoid_battleship_stern_M2.mesh"
+		scale = 1.15
+		#meshsettings = {
+		#	shader = "PdxMeshShip"
+		#	
+		#	#Mipmap tweaking
+		#	#texture_diffuse = "2x2.dds"
+		#}
+	}	
+	
+	pdxmesh = {
+		name = "hybrid_plantoid_battleship_stern_S4_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_plantoid_battleship_stern_S4.mesh"
+		scale = 1.15
+		#meshsettings = {
+		#	shader = "PdxMeshShip"
+		#	
+		#	#Mipmap tweaking
+		#	#texture_diffuse = "2x2.dds"
+		#}
+	}
+	
+	pdxmesh = {
+		name = "hybrid_avian_battleship_bow_L1M1S2_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_avian_battleship_bow_L1M1S2.mesh"
+		scale = 1.1
+				meshsettings = {
+			shader = "PdxMeshShip"
+	}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_avian_battleship_bow_L1S4_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_avian_battleship_bow_L1S4.mesh"
+		scale = 1.1
+				meshsettings = {
+			shader = "PdxMeshShip"
+	}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_avian_battleship_bow_L2_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_avian_battleship_bow_L2.mesh"
+		scale = 1.1
+		meshsettings = {
+			shader = "PdxMeshShip"
+	}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_avian_battleship_bow_M1S2SHB_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_avian_battleship_bow_M1S2SHB.mesh"
+		scale = 1.1
+		meshsettings = {
+			shader = "PdxMeshShip"
+	}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_avian_battleship_bow_M2S4_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_avian_battleship_bow_M2S4.mesh"
+		scale = 1.1
+		meshsettings = {
+			shader = "PdxMeshShip"
+	}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_avian_battleship_bow_M3S2_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_avian_battleship_bow_M3S2.mesh"
+		scale = 1.1
+		meshsettings = {
+			shader = "PdxMeshShip"
+	}
+	}
+	
+	pdxmesh = {
+		name = "hybrid_avian_battleship_bow_XL1_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_avian_battleship_bow_XL1.mesh"
+		scale = 1.1
+		meshsettings = {
+			shader = "PdxMeshShip"
+	}
+	}	
+		
+	pdxmesh = {
+		name = "hybrid_avian_battleship_mid_L2S4_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_avian_battleship_mid_L2S4.mesh"
+		scale = 1.1
+		meshsettings = {
+			shader = "PdxMeshShip"
+	}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_avian_battleship_mid_L1M4_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_avian_battleship_mid_L1M4.mesh"
+		scale = 1.1
+		meshsettings = {
+			shader = "PdxMeshShip"
+	}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_avian_battleship_mid_L2M2_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_avian_battleship_mid_L2M2.mesh"
+		scale = 1.1
+		meshsettings = {
+			shader = "PdxMeshShip"
+	}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_avian_battleship_mid_L3_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_avian_battleship_mid_L3.mesh"
+		scale = 1.1
+		meshsettings = {
+			shader = "PdxMeshShip"
+	}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_avian_battleship_mid_M4SHB_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_avian_battleship_mid_M4SHB.mesh"
+		scale = 1.1
+		meshsettings = {
+			shader = "PdxMeshShip"
+	}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_avian_battleship_mid_S4LHB_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_avian_battleship_mid_S4LHB.mesh"
+		scale = 1.1
+		meshsettings = {
+			shader = "PdxMeshShip"
+	}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_avian_battleship_stern_L1_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_avian_battleship_stern_L1.mesh"
+		scale = 1.1
+		meshsettings = {
+			shader = "PdxMeshShip"
+	}
+	}
+	
+	pdxmesh = {
+		name = "hybrid_avian_battleship_stern_M1S2_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_avian_battleship_stern_M1S2.mesh"
+		scale = 1.1
+		meshsettings = {
+			shader = "PdxMeshShip"
+	}
+	}		
+		
+	pdxmesh = {
+		name = "hybrid_avian_battleship_stern_m2_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_avian_battleship_stern_M2.mesh"
+		scale = 1.1
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}	
+	
+	pdxmesh = {
+		name = "hybrid_avian_battleship_stern_S4_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_avian_battleship_stern_S4.mesh"
+		scale = 1.1
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "hybrid_arthropoid_battleship_bow_L1M1S2_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_arthropoid_battleship_bow_L1M1S2.mesh"
+		scale = 1.1
+		meshsettings = {
+			shader = "PdxMeshShip"
+			
+			#Mipmap tweaking
+			#texture_diffuse = "2x2.dds"
+		}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_arthropoid_battleship_bow_L1S4_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_arthropoid_battleship_bow_L1S4.mesh"
+		scale = 1.1
+				meshsettings = {
+			shader = "PdxMeshShip"
+			
+			#Mipmap tweaking
+			#texture_diffuse = "2x2.dds"
+	}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_arthropoid_battleship_bow_L2_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_arthropoid_battleship_bow_L2.mesh"
+		scale = 1.1
+				meshsettings = {
+			shader = "PdxMeshShip"
+			
+			#Mipmap tweaking
+			#texture_diffuse = "2x2.dds"
+	}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_arthropoid_battleship_bow_M1S2SHB_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_arthropoid_battleship_bow_M1S2SHB.mesh"
+		scale = 1.1
+				meshsettings = {
+			shader = "PdxMeshShip"
+			
+			#Mipmap tweaking
+			#texture_diffuse = "2x2.dds"
+	}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_arthropoid_battleship_bow_M2S4_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_arthropoid_battleship_bow_M2S4.mesh"
+		scale = 1.1
+				meshsettings = {
+			shader = "PdxMeshShip"
+			
+			#Mipmap tweaking
+			#texture_diffuse = "2x2.dds"
+	}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_arthropoid_battleship_bow_M3S2_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_arthropoid_battleship_bow_M3S2.mesh"
+		scale = 1.1
+				meshsettings = {
+			shader = "PdxMeshShip"
+			
+			#Mipmap tweaking
+			#texture_diffuse = "2x2.dds"
+	}
+	}				
+		
+	pdxmesh = {
+		name = "hybrid_arthropoid_battleship_mid_L2S4_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_arthropoid_battleship_mid_L2S4.mesh"
+		scale = 1.1
+		meshsettings = {
+			shader = "PdxMeshShip"
+			
+			#Mipmap tweaking
+			#texture_diffuse = "2x2.dds"
+		}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_arthropoid_battleship_mid_L1M4_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_arthropoid_battleship_mid_L1M4.mesh"
+		scale = 1.1
+				meshsettings = {
+			shader = "PdxMeshShip"
+			
+			#Mipmap tweaking
+			#texture_diffuse = "2x2.dds"
+	}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_arthropoid_battleship_mid_L2M2_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_arthropoid_battleship_mid_L2M2.mesh"
+		scale = 1.1
+				meshsettings = {
+			shader = "PdxMeshShip"
+			
+			#Mipmap tweaking
+			#texture_diffuse = "2x2.dds"
+	}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_arthropoid_battleship_mid_L3_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_arthropoid_battleship_mid_L3.mesh"
+		scale = 1.1
+				meshsettings = {
+			shader = "PdxMeshShip"
+			
+			#Mipmap tweaking
+			#texture_diffuse = "2x2.dds"
+	}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_arthropoid_battleship_mid_M4SHB_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_arthropoid_battleship_mid_M4SHB.mesh"
+		scale = 1.1
+				meshsettings = {
+			shader = "PdxMeshShip"
+			
+			#Mipmap tweaking
+			#texture_diffuse = "2x2.dds"
+	}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_arthropoid_battleship_mid_S4LHB_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_arthropoid_battleship_mid_S4LHB.mesh"
+		scale = 1.1
+				meshsettings = {
+			shader = "PdxMeshShip"
+			
+			#Mipmap tweaking
+			#texture_diffuse = "2x2.dds"
+	}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_arthropoid_battleship_stern_L1_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_arthropoid_battleship_stern_L1.mesh"
+		scale = 1.1
+		meshsettings = {
+			shader = "PdxMeshShip"
+			
+			#Mipmap tweaking
+			#texture_diffuse = "2x2.dds"
+		}
+	}
+	
+	pdxmesh = {
+		name = "hybrid_arthropoid_battleship_stern_M1S2_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_arthropoid_battleship_stern_M1S2.mesh"
+		scale = 1.05
+				meshsettings = {
+			shader = "PdxMeshShip"
+			
+			#Mipmap tweaking
+			#texture_diffuse = "2x2.dds"
+	}
+	}		
+		
+	pdxmesh = {
+		name = "hybrid_arthropoid_battleship_stern_M2_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_arthropoid_battleship_stern_M2.mesh"
+		scale = 1.05
+				meshsettings = {
+			shader = "PdxMeshShip"
+			
+			#Mipmap tweaking
+			#texture_diffuse = "2x2.dds"
+	}
+	}	
+	
+	pdxmesh = {
+		name = "hybrid_arthropoid_battleship_stern_S4_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_arthropoid_battleship_stern_S4.mesh"
+		scale = 1.05
+				meshsettings = {
+			shader = "PdxMeshShip"
+			
+			#Mipmap tweaking
+			#texture_diffuse = "2x2.dds"
+	}
+	}
+	
+	pdxmesh = {
+		name = "hybrid_reptilian_battleship_bow_L1M1S2_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_reptilian_battleship_bow_L1M1S2.mesh"
+		scale = 0.99
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_reptilian_battleship_bow_L1S4_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_reptilian_battleship_bow_L1S4.mesh"
+		scale = 0.99
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_reptilian_battleship_bow_L2_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_reptilian_battleship_bow_L2.mesh"
+		scale = 0.99
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_reptilian_battleship_bow_M1S2SHB_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_reptilian_battleship_bow_M1S2SHB.mesh"
+		scale = 0.99
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_reptilian_battleship_bow_M2S4_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_reptilian_battleship_bow_M2S4.mesh"
+		scale = 0.99
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_reptilian_battleship_bow_M3S2_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_reptilian_battleship_bow_M3S2.mesh"
+		scale = 0.99
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "hybrid_reptilian_battleship_bow_XL1_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_reptilian_battleship_bow_XL1.mesh"
+		scale = 0.99
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}	
+		
+	pdxmesh = {
+		name = "hybrid_reptilian_battleship_mid_L2S4_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_reptilian_battleship_mid_L2S4.mesh"
+		scale = 0.99
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_reptilian_battleship_mid_L1M4_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_reptilian_battleship_mid_L1M4.mesh"
+		scale = 0.99
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_reptilian_battleship_mid_L2M2_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_reptilian_battleship_mid_L2M2.mesh"
+		scale = 0.99
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_reptilian_battleship_mid_L3_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_reptilian_battleship_mid_L3.mesh"
+		scale = 0.99
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_reptilian_battleship_mid_M4SHB_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_reptilian_battleship_mid_M4SHB.mesh"
+		scale = 0.99
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+		
+	pdxmesh = {
+		name = "hybrid_reptilian_battleship_mid_S4LHB_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_reptilian_battleship_mid_S4LHB.mesh"
+		scale = 0.99
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+
+	pdxmesh = {
+		name = "hybrid_reptilian_battleship_stern_L1_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_reptilian_battleship_stern_L1.mesh"
+		scale = 0.99
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "hybrid_reptilian_battleship_stern_M1S2_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_reptilian_battleship_stern_M1S2.mesh"
+		scale = 0.99
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}		
+		
+	pdxmesh = {
+		name = "hybrid_reptilian_battleship_stern_m2_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_reptilian_battleship_stern_M2.mesh"
+		scale = 0.99
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}	
+	
+	pdxmesh = {
+		name = "hybrid_reptilian_battleship_stern_S4_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_reptilian_battleship_stern_S4.mesh"
+		scale = 0.99
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+	
+	pdxmesh = {
+		name = "hybrid_netai_battleship_bow_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_netai_battleship_bow.mesh"
+		scale = 3.14
+		meshsettings = {
+			shader = "PdxMeshShip"
+			texture_diffuse = "hybrid_netai_battleship_diffuse.dds"
+			texture_normal = "hybrid_netai_battleship_normal.dds"
+			texture_specular = "hybrid_netai_battleship_specular.dds"
+		}
+		scale = @battleship_scale
+	}
+	
+	pdxmesh = {
+		name = "hybrid_netai_battleship_bow_hangar_closed_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_netai_battleship_bow_hangar_closed.mesh"
+		scale = 3.14
+		meshsettings = {
+			shader = "PdxMeshShip"
+			texture_diffuse = "hybrid_netai_battleship_hangar_closed_diffuse.dds"
+			texture_normal = "hybrid_netai_battleship_hangar_closed_normal.dds"
+			texture_specular = "hybrid_netai_battleship_hangar_closed_specular.dds"
+		}
+		scale = @battleship_scale
+	}
+	
+	pdxmesh = {
+		name = "hybrid_netai_battleship_bow_window_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_netai_battleship_bow_window.mesh"
+		scale = 3.14
+		meshsettings = {
+			shader = "PdxMeshAlphaAdditive"
+		}
+		scale = @battleship_scale
+	}
+	
+	pdxmesh = {
+		name = "hybrid_netai_battleship_bow_hangar_misc_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_netai_battleship_bow_hangar_misc.mesh"
+		scale = 3.14
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+		scale = @battleship_scale
+	}
+
+	pdxmesh = {
+		name = "hybrid_netai_battleship_mid_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_netai_battleship_mid.mesh"
+		scale = 3.14
+		meshsettings = {
+			shader = "PdxMeshShip"
+			texture_diffuse = "hybrid_netai_battleship_diffuse.dds"
+			texture_normal = "hybrid_netai_battleship_normal.dds"
+			texture_specular = "hybrid_netai_battleship_specular.dds"
+		}
+		scale = @battleship_scale
+	}
+	
+	pdxmesh = {
+		name = "hybrid_netai_battleship_mid_hangar_closed_1_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_netai_battleship_mid_hangar_closed_1.mesh"
+		scale = 3.14
+		meshsettings = {
+			shader = "PdxMeshShip"
+			texture_diffuse = "hybrid_netai_battleship_hangar_closed_diffuse.dds"
+			texture_normal = "hybrid_netai_battleship_hangar_closed_normal.dds"
+			texture_specular = "hybrid_netai_battleship_hangar_closed_specular.dds"
+		}
+		scale = @battleship_scale
+	}
+	
+	pdxmesh = {
+		name = "hybrid_netai_battleship_mid_hangar_closed_2_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_netai_battleship_mid_hangar_closed_2.mesh"
+		scale = 3.14
+		meshsettings = {
+			shader = "PdxMeshShip"
+			texture_diffuse = "hybrid_netai_battleship_hangar_closed_diffuse.dds"
+			texture_normal = "hybrid_netai_battleship_hangar_closed_normal.dds"
+			texture_specular = "hybrid_netai_battleship_hangar_closed_specular.dds"
+		}
+		scale = @battleship_scale
+	}
+	
+	pdxmesh = {
+		name = "hybrid_netai_battleship_mid_window_1_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_netai_battleship_mid_window_1.mesh"
+		scale = 3.14
+		meshsettings = {
+			shader = "PdxMeshAlphaAdditive"
+		}
+		scale = @battleship_scale
+	}
+	
+	pdxmesh = {
+		name = "hybrid_netai_battleship_mid_window_2_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_netai_battleship_mid_window_2.mesh"
+		scale = 3.14
+		meshsettings = {
+			shader = "PdxMeshAlphaAdditive"
+		}
+		scale = @battleship_scale
+	}
+	
+	pdxmesh = {
+		name = "hybrid_netai_battleship_mid_hangar_misc_1_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_netai_battleship_mid_hangar_misc_1.mesh"
+		scale = 3.14
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+		scale = @battleship_scale
+	}
+	
+	pdxmesh = {
+		name = "hybrid_netai_battleship_mid_hangar_misc_2_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_netai_battleship_mid_hangar_misc_2.mesh"
+		scale = 3.14
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+		scale = @battleship_scale
+	}
+	
+	pdxmesh = {
+		name = "hybrid_netai_battleship_stern_mesh"
+		file = "gfx/models/ships/hybrid/hybrid_netai_battleship_stern.mesh"
+		scale = 3.14
+		meshsettings = {
+			shader = "PdxMeshShip"
+			texture_diffuse = "hybrid_netai_battleship_diffuse.dds"
+			texture_normal = "hybrid_netai_battleship_normal.dds"
+			texture_specular = "hybrid_netai_battleship_specular.dds"
+		}
+		scale = @battleship_scale
+	}
+}
