@@ -1,0 +1,59 @@
+namespace = plentiful_traditions_ionized_excavation_pedict
+
+planet_event = {
+    id = plentiful_traditions_ionized_excavation_pedict.1
+    
+    hide_window = yes
+    is_triggered_only = yes
+
+	immediate = {
+		add_modifier = {
+			modifier = "modifier_plentiful_traditions_ionized_excavation"
+			days = 3600
+		}
+        random_tile = {
+            limit = {
+				OR = {
+					has_building = building_basic_mine
+					has_building = building_mining_network_1
+					has_building = building_mining_network_2
+					has_building = building_mining_network_3
+					has_building = building_mining_network_4
+					has_building = building_mining_network_5
+					has_building = building_mineral_processing_plant_1
+					has_building = building_mineral_processing_plant_2
+					has_building = building_mineral_silo_1
+					has_building = building_mineral_silo_2
+					has_building = building_mineral_silo_3
+					has_building = building_plentiful_traditions_purification_facility
+					has_building = building_ancient_factory
+					has_building = building_fe_ancient_factory
+				}
+                has_resource = {
+					type = minerals
+					amount > 0
+                }
+            }
+			random_list = {
+				8 = {
+					add_resource = {
+					resource = minerals
+					amount = 5
+					}
+				}
+				16 = {
+					add_resource = {
+					resource = minerals
+					amount = 4
+					}
+				}
+				76 = {
+					add_resource = {
+					resource = minerals
+					amount = 3
+					}
+				}
+            }
+        }
+	}
+}

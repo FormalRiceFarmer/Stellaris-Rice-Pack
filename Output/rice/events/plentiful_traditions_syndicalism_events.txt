@@ -1,0 +1,58 @@
+namespace = plentiful_traditions_overcharge_pedict
+
+planet_event = {
+    id = plentiful_traditions_overcharge_pedict.1
+    
+    hide_window = yes
+    is_triggered_only = yes
+
+	immediate = {
+		add_modifier = {
+			modifier = "modifier_plentiful_traditions_overcharge"
+			days = 3600
+		}
+        random_tile = {
+            limit = {
+				OR = {
+					has_building = building_basic_power_plant
+					has_building = building_power_plant_1
+					has_building = building_power_plant_2
+					has_building = building_power_plant_3
+					has_building = building_power_plant_4
+					has_building = building_power_plant_5
+					has_building = building_power_hub_1
+					has_building = building_power_hub_2
+					has_building = betharian_power_plant
+					has_building = building_galactic_stock_exchange
+					has_building = building_dark_matter_power_plant
+					has_building = building_dark_matter_power_plant
+					has_building = building_fe_dark_matter_power_plant
+				}
+                has_resource = {
+					type = energy
+					amount > 0
+                }
+            }
+			random_list = {
+				8 = {
+					add_resource = {
+					resource = energy
+					amount = 5
+					}
+				}
+				16 = {
+					add_resource = {
+					resource = energy
+					amount = 4
+					}
+				}
+				76 = {
+					add_resource = {
+					resource = energy
+					amount = 3
+					}
+				}
+            }
+        }
+	}
+}

@@ -1,0 +1,811 @@
+building_plentiful_traditions_cybernetics_facility = {
+	base_buildtime = 360
+	planet_unique = yes
+	
+	cost = {
+		minerals = 275
+	}
+	
+	required_resources = {
+		energy = 4
+	}
+	
+	produced_resources = {
+		physics_research = 6
+		unity = 1
+	}
+	
+	adjacency_bonus = {
+		tile_building_resource_physics_research_add = 1
+	}
+	
+	planet_modifier  = {
+		tile_resource_physics_research_mult = 0.05
+	}
+	
+	potential = {
+		owner = {
+			has_tradition = tr_cybernetics_finish
+		}
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_1_or_hab"
+			planet = {
+				OR = {
+					has_building = "building_hab_capital"
+					has_building = "building_capital_1"
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+building_plentiful_traditions_experimental_weapons_facility = {
+	base_buildtime = 360
+	planet_unique = yes
+	
+	cost = {
+		minerals = 275
+	}
+	
+	required_resources = {
+		energy = 4
+	}
+	
+	produced_resources = {
+		engineering_research = 6
+		unity = 1
+	}
+	
+	adjacency_bonus = {
+		tile_building_resource_engineering_research_add = 1
+	}
+	
+	planet_modifier  = {
+		tile_resource_engineering_research_mult = 0.05
+	}
+	
+	potential = {
+		owner = {
+			has_tradition = tr_order_4
+		}
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_1_or_hab"
+			planet = {
+				OR = {
+					has_building = "building_hab_capital"
+					has_building = "building_capital_1"
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+building_plentiful_traditions_trading_terminal = {
+	base_buildtime = 360
+	planet_unique = yes
+	
+	cost = {
+		minerals = 200
+	}
+	
+	required_resources = {
+		
+	}
+	
+	produced_resources = {
+		energy = 5
+		unity = 1
+	}
+	
+	planet_modifier  = {
+		tile_resource_energy_mult = 0.05
+	}
+	
+	potential = {
+		owner = {
+			has_tradition = tr_aspiration_finish
+		}
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_1_or_hab"
+			planet = {
+				OR = {
+					has_building = "building_hab_capital"
+					has_building = "building_capital_1"
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+building_plentiful_traditions_trading_depot = {
+	base_buildtime = 360
+	planet_unique = yes
+	
+	cost = {
+		minerals = 325
+	}
+	
+	required_resources = {
+		
+	}
+
+	country_modifier = {
+		max_energy = 350
+	}
+	
+	produced_resources = {
+		energy = 3
+		unity = 3
+	}
+	
+	planet_modifier  = {
+
+	}
+	
+	adjacency_bonus = {
+		tile_building_resource_energy_add = 1
+	}
+	
+	potential = {
+		owner = {
+			has_tradition = tr_aspiration_2
+		}
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_1_or_hab"
+			planet = {
+				OR = {
+					has_building = "building_hab_capital"
+					has_building = "building_capital_1"
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+building_plentiful_traditions_tower_of_fright = {
+	base_buildtime = 360
+	planet_unique = yes
+	
+	cost = {
+		minerals = 275
+	}
+	
+	required_resources = {
+		energy = 4
+	}
+	
+	produced_resources = {
+		society_research = 5
+		unity = 1
+	}
+	
+	planet_modifier  = {
+		
+	}
+	
+	potential = {
+		owner = {
+			has_tradition = tr_malice_adopt
+		}
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_1_or_hab"
+			planet = {
+				OR = {
+					has_building = "building_hab_capital"
+					has_building = "building_capital_1"
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 5
+	}
+}
+
+building_plentiful_traditions_pillar_of_affliction = {
+	base_buildtime = 360
+	planet_unique = yes
+	
+	cost = {
+		minerals = 275
+	}
+	
+	required_resources = {
+		food = 2
+		energy = 2
+	}
+	
+	produced_resources = {
+		society_research = 6
+		unity = 1
+	}
+	
+	adjacency_bonus = {
+		tile_building_resource_society_research_add = 1
+	}
+	
+	planet_modifier  = {
+		tile_resource_society_research_mult = 0.05
+	}
+	
+	potential = {
+		owner = {
+			has_tradition = tr_mutagenesis_finish
+		}
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_1_or_hab"
+			planet = {
+				OR = {
+					has_building = "building_hab_capital"
+					has_building = "building_capital_1"
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+building_plentiful_traditions_mutagenesis_lab = {
+	base_buildtime = 360
+	planet_unique = yes
+	
+	cost = {
+		minerals = 275
+	}
+	
+	required_resources = {
+		energy = 4
+	}
+
+	country_modifier = {
+#
+	}
+	
+	produced_resources = {
+		food = 6
+		unity = 1
+	}
+	
+	adjacency_bonus = {
+		tile_building_resource_food_add = 1
+	}
+	
+	planet_modifier  = {
+		tile_resource_food_mult = 0.05
+	}
+	
+	potential = {
+		owner = {
+			has_tradition = tr_mutagenesis_5
+		}
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_1_or_hab"
+			planet = {
+				OR = {
+					has_building = "building_hab_capital"
+					has_building = "building_capital_1"
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+building_plentiful_traditions_house_of_prayer = {
+	base_buildtime = 360
+	empire_unique = yes
+	
+	cost = {
+		minerals = 325
+	}
+	
+	required_resources = {
+		energy = 3
+		food = 1
+	}
+	
+	produced_resources = {
+		unity = 6
+	}
+	
+	country_modifier = {
+		country_resource_influence_add = 1
+		max_influence = 150
+	}
+	
+	adjacency_bonus = {
+
+	}
+	
+	planet_modifier  = {
+		pop_happiness = 0.10
+		pop_ethic_spiritualist_attraction_mult = 0.20
+	}
+	
+	potential = {
+		owner = {
+			has_tradition = tr_faith_finish
+		}
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_1_or_hab"
+			planet = {
+				OR = {
+					has_building = "building_hab_capital"
+					has_building = "building_capital_1"
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 12
+	}
+}
+
+building_plentiful_traditions_purification_facility = {
+	base_buildtime = 360
+	planet_unique = yes
+	
+	cost = {
+		minerals = 275
+	}
+	
+	required_resources = {
+		energy = 3
+	}
+
+	country_modifier = {
+#
+	}
+	
+	produced_resources = {
+		minerals = 4
+		unity = 1
+	}
+	
+	adjacency_bonus = {
+#		tile_building_resource_minerals_add = 1
+	}
+	
+	planet_modifier  = {
+		tile_resource_minerals_mult = 0.05
+	}
+	
+	potential = {
+		owner = {
+			has_tradition = tr_industrial_4
+		}
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_1_or_hab"
+			planet = {
+				OR = {
+					has_building = "building_hab_capital"
+					has_building = "building_capital_1"
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+#Platform
+
+building_plentiful_traditions_obelisk0 = {
+	base_buildtime = 60
+	planet_unique = yes
+	
+	cost = {
+		minerals = 75
+	}
+	
+	required_resources = {
+
+	}
+
+	country_modifier = {
+
+	}
+	
+	produced_resources = {
+#		food = 0.01
+#		energy = 0.01
+#		minerals = 0.01
+	}
+	
+	adjacency_bonus = {
+
+	}
+	
+	planet_modifier  = {
+
+	}
+	
+	upgrades = {
+		building_plentiful_traditions_obelisk1
+		building_plentiful_traditions_obelisk2
+		building_plentiful_traditions_obelisk3
+	}
+	
+	potential = {
+		owner = {
+			OR = {
+				has_tradition = tr_mysticism_1
+				has_tradition = tr_mysticism_2
+				has_tradition = tr_mysticism_3
+			}
+		}
+		planet = {
+			NOT = {
+				has_building = building_plentiful_traditions_obelisk1
+				has_building = building_plentiful_traditions_obelisk2
+				has_building = building_plentiful_traditions_obelisk3
+			}
+		}
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_1_or_hab"
+			planet = {
+				OR = {
+					has_building = "building_hab_capital"
+					has_building = "building_capital_1"
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+		
+	}
+}
+
+building_plentiful_traditions_obelisk1 = {
+	base_buildtime = 240
+	planet_unique = yes
+	is_listed = no
+	
+	cost = {
+		minerals = 250
+	}
+	
+	required_resources = {
+
+	}
+
+	country_modifier = {
+
+	}
+	
+	produced_resources = {
+		food = 3
+		energy = 1
+		unity = 2
+	}
+	
+	adjacency_bonus = {
+
+	}
+	
+	planet_modifier  = {
+		tile_resource_food_mult = 0.05
+	}
+	
+	potential = {
+		owner = {
+			has_tradition = tr_mysticism_1
+		}
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_1_or_hab"
+			planet = {
+				OR = {
+					has_building = "building_hab_capital"
+					has_building = "building_capital_1"
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 500
+	}
+}
+
+building_plentiful_traditions_obelisk2 = {
+	base_buildtime = 240
+	planet_unique = yes
+	is_listed = no
+	
+	cost = {
+		minerals = 250
+	}
+	
+	required_resources = {
+
+	}
+
+	country_modifier = {
+
+	}
+	
+	produced_resources = {
+		energy = 3
+		minerals = 1
+		unity = 2
+	}
+	
+	adjacency_bonus = {
+
+	}
+	
+	planet_modifier  = {
+		tile_resource_energy_mult = 0.05
+	}
+	
+	potential = {
+		owner = {
+			has_tradition = tr_mysticism_2
+		}
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_1_or_hab"
+			planet = {
+				OR = {
+					has_building = "building_hab_capital"
+					has_building = "building_capital_1"
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 500
+	}
+}
+
+building_plentiful_traditions_obelisk3 = {
+	base_buildtime = 240
+	planet_unique = yes
+	is_listed = no
+	
+	cost = {
+		minerals = 250
+	}
+	
+	required_resources = {
+
+	}
+
+	country_modifier = {
+
+	}
+	
+	produced_resources = {
+		minerals = 3
+		food = 1
+		unity = 2
+	}
+	
+	adjacency_bonus = {
+
+	}
+	
+	planet_modifier  = {
+		tile_resource_minerals_mult = 0.05
+	}
+	
+	potential = {
+		owner = {
+			has_tradition = tr_mysticism_3
+		}
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_1_or_hab"
+			planet = {
+				OR = {
+					has_building = "building_hab_capital"
+					has_building = "building_capital_1"
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 500
+	}
+}
+
+
+building_plentiful_traditions_sanctum_of_keys = {
+	base_buildtime = 300
+	planet_unique = yes
+	
+	cost = {
+		minerals = 275
+		influence = 50
+	}
+	
+	required_resources = {
+		energy = 2
+		food = 1
+	}
+	
+	produced_resources = {
+		unity = 4
+	}
+	
+	country_modifier = {
+#
+	}
+	
+	adjacency_bonus = {
+
+	}
+	
+	planet_modifier  = {
+		pop_happiness = 0.05
+		pop_environment_tolerance = 0.05
+	}
+	
+	potential = {
+		owner = {
+			has_tradition = tr_mysticism_5
+		}
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_1_or_hab"
+			planet = {
+				OR = {
+					has_building = "building_hab_capital"
+					has_building = "building_capital_1"
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 12
+	}
+	
+	ai_allow = {
+		# If planet only has slaves/robots, keep it to mining and farming...
+		is_slave_tile_or_planet = no
+	}
+}
+
+building_plentiful_traditions_syndicate_quarters = {
+	base_buildtime = 300
+	planet_unique = yes
+	
+	cost = {
+		minerals = 225
+	}
+	
+	required_resources = {
+		food = 1
+		energy = 1
+	}
+	
+	produced_resources = {
+		unity = 1
+	}
+	
+	country_modifier  = {
+		navy_size_add = 4
+	}
+	
+	potential = {
+		owner = {
+			has_tradition = tr_syndicalism_5
+		}
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_1_or_hab"
+			planet = {
+				OR = {
+					has_building = "building_hab_capital"
+					has_building = "building_capital_1"
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}

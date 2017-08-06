@@ -1,0 +1,77 @@
+[h1]Plentiful Traditions[/h1]
+[b]by Birdy[/b]
+Game version: 1.6.* and 1.7.*
+
+[h1]Description[/h1]
+This is a mod that adds a lot of new traditions by the addition of eight tradition trees. It's mostly a mod I made for myself, but perhaps some of you enjoy it as well. Featured on the official [url=https://www.twitch.tv/videos/140044892]Paradox Stellaris Mod Highlight Stream[/url] and on [url=https://odingaming.com/2017/05/02/stellaris-mod-roundup-may-17/]Odin Gaming[/url]!
+[list]
+[*]Cybernetics - A tradition tree that focuses on robot productivity, physics, new building, synths and energy production.
+[*]Biogenesis - Gene-therapy, locust swarms, food, biology, growth, society and grafting your empire into perfection.
+[*]Faith - Spiritualism based tree focused on government attraction and edict bonuses.
+[*]Order - Traditions that help to strive in removing chaos from the universe. Ship and FTL speed, false flag attacks, sabotage, voidcraft and engineering.
+[*]Aspiration - Tradition tree that has trade, opinion, industry and relations at its core.
+[*]Malice - For the more evil and daring empires, lower your opinion with nearby empires to taunt them into a war. Slavery, evil and suffering. Other empires WILL hate you.
+[*]Purity - A tree that fits well with Xenophobic (or isolationist) empires, faster megastructures, border size, less unrest.
+[*]Affinity - Xenophiles will welcome this tree a lot. Migration, attraction, leaders and society.
+[*]Mutagenesis - Intended for Hiveminds or similar empires. Other living organisms are nothing but building blocks towards the perfection of our collective. Toxic Plague war demand, food and society buildings, habitability, regenerative hulls. A more aggressive approach to altering the genes in favor of the great collective.
+[*]Industry - Industrial empires that care about mining, extracting, cargo and raw ingenuity to get things done without wasting effort and materials on too much elegance. If it works, it works. Planetary eruptions, ionized excavations, obital fracking cannons, purification facilities, multiple planetary edicts, an empire wide edict and a new building.
+[*]Mysticism - Protecting the core life values through compassion, frugality and modesty, Mysticism is a spiritual/pacifist/ecological tradition tree, that is very close to nature and inner peace, unless severely threatened. New buildings (3 obelisks and a sanctum) to preserve life and to provide unity among the people, a new planetary edict (Sacred Act) and the ability to colonize even the most devastated Tomb worlds as they do deserve redemption.
+[/list]
+
+[list]
+[*]NEW! Kleptocracy - Ruthless groups of entities, that often enforce their will on less capable ones. Business is done more frequent and effective when our business-partners are 'convinced' to do so by any means. New building, energy planetary edict, naval capacity and border size, trade bonuses and offensive capacilities.
+[*]NEW! Two new factions, Mystics (Mysticism) and Miners (Industry).
+[/list]
+
+[h1]Planned[/h1]
+[list]
+[*] More to come!
+[/list]
+
+[h1]Compatibility[/h1]
+It works great with other mods, except for other mods that touch the "topbar_traditions_view.gui" file since that file is used to create the tradition UI.
+
+[h1]Frequently Asked Questions[/h1]
+[b]Does this work for existing saves?[/b]
+Yes!
+
+[b]Will you add more unique Ascension Perks?[/b]
+No, there are plenty of other mods for this, but there's a new great perk mod called [url=http://steamcommunity.com/sharedfiles/filedetails/?id=1067631798]Expanded Stellaris Ascension Perks by Girion[/url].
+
+[b]How come I can't unlock all Ascension slots?[/b]
+It is to keep compatibility for perk mods, you can unlock 16 (from the traditions) plus 1 (from the already existing technology).
+
+[b]Will you add compatibility with other tradition mods?[/b]
+Unlikely, but there is a compatibility patch for [url=http://steamcommunity.com/workshop/filedetails/?id=910355834]Additional Traditions by Meltup[/url] located [url=http://steamcommunity.com/sharedfiles/filedetails/?id=943298020]here[/url].
+
+[h1]Credits[/h1]
+My floof cat Foopie, for having supported me always.
+Desper and Grimmus for being amazing.
+mikaduki for the [url=http://steamcommunity.com/sharedfiles/filedetails/?id=904976560]Japanese translation[/url].
+LiptonDI and EwieFairy for the French translation.
+Darh, Ensis and Maverik for the Spanish translation.
+aarrtt111 for the [url=http://steamcommunity.com/sharedfiles/filedetails/?id=929023996]Korean translation[/url].
+Spectrum for the [url=http://steamcommunity.com/sharedfiles/filedetails/?id=931511946]Russian translation[/url].
+p6kocka for the [url=http://steamcommunity.com/sharedfiles/filedetails/?edit=true&id=932611023]German translation[/url].
+CeasingDig for the [url=http://steamcommunity.com/sharedfiles/filedetails/?id=975074823]Polish translation[/url].
+
+[h1]To mod authors[/h1]
+For any modders looking into using my code as a [b]source of inspiration[/b] (no copying of files/graphics, make your own :D), go ahead, enjoy the modding and don't forget to give credit where credit is due.
+
+[h1]To translators[/h1]
+I highly recommend making a translation mod.
+
+[h1]To tradition mod lovers[/h1]
+For people willing to enjoy another good tradition mod, I'd highly recommend [url=http://steamcommunity.com/sharedfiles/filedetails/?id=946222466]Expanded Stellaris Traditions[/url] by Girion. Tons of work has gone into it. Give it a try, you won't regret it!
+
+[h1]Changelog[/h1]
+v1.4.2: Check out the Change Notes at the top.
+
+[h1]Support[/h1]
+If you really enjoy playing with my mod, and wish to support me, feel free to help out! Any donation is appreciated more than you might realize. It would certainly help me to bring out all the free updates more frequently. =)
+
+[url=https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Z2DT42JMD5EA6][img]http://i.imgur.com/DR3G8dK.png[/img][/url]
+
+Hope you enjoy the mod and please don't forget to rate it if you like it!
+
+Happy gaming!

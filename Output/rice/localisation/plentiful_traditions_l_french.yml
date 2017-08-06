@@ -1,0 +1,604 @@
+﻿l_french:
+
+ASCENSION_PERKS_NEW:0 "Ascensions"
+PLENTIFUL_TRADITIONS_VERSION:0 "Plentiful Traditions §GV1.42§! par Birdy"
+
+#Mystics - WILL CHANGE A LOT
+pft_plentiful_factions_mystics:0 "Faction mystique"
+pft_plentiful_factions_mystics_desc:1 "Les valeurs fondamentales des mystiques sont doubles, d'une part ce sont les fervents défenseurs de la vie et de l'esprit et d'autre part ils répandent les trois principes clés de la vie. Allant jusqu'en dernier recours à forcer les autres espèces à vivres en harmonie avec elles-mêmes selon leurs propres considérations de la question. Ils apprécient ceux qui permettent de faire des pèlerinages vers les sites divins mais ils haïssent plus que tout les synthétiques.\n\n§LÉthique spiritualiste§!"
+
+MYSTICS_BIOAFFLUENCE:0 "Bio-affluence"
+MYSTICS_BIOAFFLUENCE_DESC:0 "Autorisant les construction synthétiques dans l'empire déplaira fortement à [Root.GetName]."
+MYSTICS_PILGRIMAGE:0 "Pèlerinage"
+MYSTICS_PILGRIMAGE_DESC:0 "La construction de sanctuaires, d'obélisques, de temples et tous les monuments de culte plairont à [Root.GetName]."
+MYSTICS_REDEMPTION:0 "Rédemption"
+MYSTICS_REDEMPTION_DESC:0 "Coloniser un §YMonde mort§! rendra les mystiques de [Root.GetName] extatiquent car ils veulent y faire renaître la vie et la terre."
+MYSTICS_CITADEL:0 "Grand cycle"
+MYSTICS_CITADEL_DESC:0 "La construction d'une §Y$building_citadel_of_faith$§! dans l'empire fera grandement plaisir à [Root.GetName]."
+MYSTICS_PROFIT:0 "Désintéressement"
+MYSTICS_PROFIT_DESC:0 "La construction d'un §Y$building_galactic_stock_exchange$§! dans l'empire fera grandement plaisir à [Root.GetName]."
+MYSTICS_VITALITY:0 "Recyclage"
+MYSTICS_VITALITY_DESC:0 "Rechercher la technologie §Y$tech_nano_vitality_crops$§! fera plaisir à [Root.GetName]."
+MYSTICS_STOCKPILE:0 "Récolte"
+MYSTICS_STOCKPILE_DESC:0 "Placer nos stocks de £food  $tile_resource_food_mult$ au niveau de §Y$food_stockpiling_2_name$§! ou de §Y$food_stockpiling_3_name$§! fera plaisir à [Root.GetName]."
+
+MYSTICS_SYNTHS:0 "Constructions mortes"
+MYSTICS_SYNTHS_DESC:0 "Voir les autres empires parader devant des constructions §Ycybernétiques§! et §Ysynthétiques§!, vides de vie, déplaira certainement à [Root.GetName]."
+#Mystics - WILL CHANGE A LOT
+
+#Miners - WILL CHANGE A LOT
+pft_plentiful_factions_miners:0 "Miners Faction"
+pft_plentiful_factions_miners_desc:1 "The core values of the Mystic Faction are two-fold in that they see themselves as the preservers of life and spirit, and as the upholders of the three principles of the Keys of Life. Forcing other lifeforms to live in harmony with themselves, nature and spirit is part of their creed, but only as a last resort. They favor those that create the means for people to go on a pilgrimage to religious sites and greatly dislike robotic constructs.\n\n§LSpiritualist Ethos§!"
+
+MINERS_GOODS:0 "Logistic Efficiency"
+MINERS_GOODS_DESC:0 "Continuously running the §Y$edict_plentiful_traditions_industrial_goods$§! empire edict will please the [Root.GetName]."
+MINERS_CIVIC:0 "Civic"
+MINERS_CIVIC_DESC:0 "An active §Y$civic_mining_guilds$§! civic will please the [Root.GetName]."
+MINERS_FACILITY:0 "Mineral Purification"
+MINERS_FACILITY_DESC:0 "The construction of a §Y$building_plentiful_traditions_purification_facility$§! within the empire will greatly please the [Root.GetName]."
+
+MINERS_NETWORK:0 "Drill-Heads"
+MINERS_NETWORK_DESC:0 "The construction of a §Y$building_mining_network_5$§! within the empire will greatly please the [Root.GetName]."
+MINERS_PROCESSING:0 "Processing"
+MINERS_PROCESSING_DESC:0 "The construction of a §Y$building_mineral_processing_plant_2$§! within the empire will greatly please the [Root.GetName]."
+MINERS_SILO:0 "Mining Logistics"
+MINERS_SILO_DESC:0 "The construction of a §Y$building_mineral_silo_3$§! within the empire will greatly please the [Root.GetName]."
+MINERS_ORBITAL:0 "Secured Fracking"
+MINERS_ORBITAL_DESC:0 "The construction of an §Y$orbital_fracking_cannon$§! on one of our spaceports will please the [Root.GetName]."
+MINERS_EXCAVATION:0 "Unrestricted Excavation"
+MINERS_EXCAVATION_DESC:0 "Continuously running the §Y$edict_plentiful_traditions_ionized_excavation$§! planetary edict on one of our planets will please the [Root.GetName]."
+MINERS_MINIMUM:0 "Enriched Veins"
+MINERS_MINIMUM_DESC:0 "Keeping at least £minerals §Y10000§! stored at all times will please the [Root.GetName]."
+MINERS_DEPOSIT:0 "Tractor Beams"
+MINERS_DEPOSIT_DESC:0 "Only the best of £minerals §YMineral§! veins are worth mining in order to please the [Root.GetName]."
+
+modifier_plentiful_traditions_ionized_excavation:0 "Ionized Excavation"
+modifier_plentiful_traditions_ionized_excavation_desc:1 "Your empire gets a temporary £minerals  §YMinerals§! production bonus."
+#Miners - WILL CHANGE A LOT
+
+################################################################
+# CYBERNETICS
+################################################################
+
+tradition_cybernetics:0 "Cybernétique"
+tradition_cybernetics_desc:0 "Nos corps sont-ils une bénédiction ou une limitation ? Pouvons nous devenir quelque chose de plus ?"
+tr_cybernetics_adopt:0 "Traditions Cybernétiques"
+tr_cybernetics_adopt_desc:0 "$tradition_cybernetics_desc$\n\n$tr_cybernetics_adopt_effect$\n\n$tr_cybernetics_finish_effect$"
+tr_cybernetics_adopt_effect:0 "§E$TRADITIONS_ADOPT$:§!\n§Y$MOD_COUNTRY_ROBOT_BUILD_SPEED_MULT$§! augmentée de §G+10%§!."
+
+tr_cybernetics_finish:0 "Traditions Cybernétiques Finies"
+tr_cybernetics_finish_effect:0 "§E$TRADITIONS_FINISH$ :§!\nAdopter toutes les $tr_cybernetics_adopt$ augmentera nos §Y$MOD_COUNTRY_NUM_TECH_ALTERNATIVES_ADD$§! de §G+2§!.\n\n§HDébloque le bâtiment §! £building  $building_plentiful_traditions_cybernetics_facility$ qui offre à la planète un rendement important en £physics  §Yphysiques§!."
+ 
+tr_cybernetics_1:0 "Schémas réguliers"
+tr_cybernetics_1_desc:0 "§Y$MOD_POP_ROBOT_PRODUCTION_OUTPUT$§! augmentée de §G+10%§! and §Y$MOD_NAVY_SIZE_MULT$§! augmentée de §G+10%§!."
+tr_cybernetics_1_delayed:0 "Améliore l'efficacité avec laquelle les réseaux neuronaux artificiels conçoivent de nouvelles idées."
+ 
+tr_cybernetics_2:0 "Paradigme"
+tr_cybernetics_2_desc:0 "§Y$MOD_COUNTRY_ROBOT_MAINTENANCE_MULT$§! diminuée de §G-10%§!."
+tr_cybernetics_2_delayed:0 "Nos calculs commençent à prendre forme et à questionner nos motivations. Plusieurs de nos scientifiques se questionnent sur le fait d'aller plus loin ou non."
+ 
+tr_cybernetics_3:0 "Singularité"
+tr_cybernetics_3_desc:0 "§Y$country_resource_energy_mult$§! augmentée de §G+5%§! et §Y$category_computing_research_speed_mult$§! augmentée de §G+20%§!."
+tr_cybernetics_3_delayed:0 "La recherche en robotique devrait nous permettre d'améliorer la conservation et la génération de l'énergie."
+ 
+tr_cybernetics_4:0 "Théories de Jazarian"
+tr_cybernetics_4_desc:0 "§Y$MOD_SHIP_WEAPON_RANGE_MULT$§! augmenté de §G+15%§!."
+tr_cybernetics_4_delayed:0 "L'univers compte encore de nombreuses variables inconnues."
+ 
+tr_cybernetics_5:0 "Apprentissage profond"
+tr_cybernetics_5_desc:1 "Rendement en  £physics §Yphysiques§! augmentée de §G+15%§!."
+tr_cybernetics_5_delayed:0 "Tandis que nous continuons à augmenter les capacités de notre collectivité, nous percevons que les autres empires peuvent nous percevoir comme des menaces. Pour faire face, nous avons besoin d'une technologie plus évoluée."
+
+# Cybernetics buildings
+building_plentiful_traditions_cybernetics_facility:0 "Complexe cybernétique"
+building_plentiful_traditions_cybernetics_facility_desc:0 "Un complexe cybernétique donnera à votre empire des avancées scientifiques."
+
+################################################################
+# BIOGENESIS
+################################################################
+
+tradition_biogenesis:0 "Biogenèse"
+tradition_biogenesis_desc:0 "Tout organisme vivant peut être modifié pour le mieux, nous devons viser la perfection à tout prix."
+tr_biogenesis_adopt:0 "Traditions Biogénétiques"
+tr_biogenesis_adopt_desc:0 "$tradition_biogenesis_desc$\n\n$tr_biogenesis_adopt_effect$\n\n$tr_biogenesis_finish_effect$"
+tr_biogenesis_adopt_effect:0 "§E$TRADITIONS_ADOPT$:§!\n§Y$MOD_POP_GROWTH_SPEED$§! augmentée de §G+10%§!."
+
+tr_biogenesis_finish:0 "Traditions Biogénétiques Finies"
+tr_biogenesis_finish_effect:0 "§E$TRADITIONS_FINISH$ :§!\nAdopter toutes les $tr_biogenesis_adopt$ augmentera nos §Y$MOD_COUNTRY_GOVERNMENT_CIVIC_POINTS_ADD$§! de §G+1§! et diminuera notre §Y$MOD_COUNTRY_MODIFY_SPECIES_COST_MULT$§! de §G-15%§!.\n\nAutorise l'utilisation de la demande de guerre §YEssaim de sauterelles§!, causant un malus de production de §G-10%§! de £food  $tile_resource_food_mult$ pour §Y10§! ans."
+ 
+tr_biogenesis_1:0 "Génétique végétale"
+tr_biogenesis_1_desc:0 "§Y$MOD_POP_FOOD_MULT$§! augmentée de §G+10%§!."
+tr_biogenesis_1_delayed:0 "Certaines modifications subtiles devraient nous permettre d'augmenter notre rendement de nourriture."
+ 
+tr_biogenesis_2:0 "Climatologie"
+tr_biogenesis_2_desc:0 "§Y$MOD_PLANET_CLEAR_BLOCKER_TIME_MULT$§! diminuée de §G-15%§! et §Y$category_biology_research_speed_mult$§! augmentée de §G+20%§!."
+tr_biogenesis_2_delayed:0 "L'environnement aussi est capable de changer pour satisfaire nos besoins, avec un peu... d'aide."
+ 
+tr_biogenesis_3:0 "La voie naturelle"
+tr_biogenesis_3_desc:0 "§Y$MOD_FLEET_TERRAFORMING_COST_MULT$§! diminuée de §G-15%§!."
+tr_biogenesis_3_delayed:0 "L'adaptation à notre milieu est notre but à long terme et l'origine de chacun ne sera bientôt plus un problème."
+ 
+tr_biogenesis_4:0 "Thérapie hormonale"
+tr_biogenesis_4_desc:0 "§Y$MOD_COUNTRY_TRAIT_POINTS$§! augmentée de §G+3§!."
+tr_biogenesis_4_delayed:0 "Permet à nos citoyens de prendre des bains génétiques rafraîchissants pour atteindre la perfection."
+ 
+tr_biogenesis_5:0 "Laboratoires de greffe"
+tr_biogenesis_5_desc:1 "Rendement de £society  §Yrecherche sociétale§! augmentée de §G+15%§!."
+tr_biogenesis_5_delayed:0 "Nos citoyens commencent à réfléchir à la manière de remplacer leurs organes défaillants efficacement."
+
+# Biogenesis war demands
+war_demand_plentiful_traditions_locust_swarm_header:1 "§HEssaim de sauterelles§!"
+war_demand_plentiful_traditions_locust_swarm_subtext:0 "[parameter:country.GetName]"
+war_demand_plentiful_traditions_locust_swarm_tooltip_header:0 "$war_demand_plentiful_traditions_locust_swarm_header$"
+war_demand_plentiful_traditions_locust_swarm_tooltip_content:2 "Nos bio-ingénieurs seront capables de lâcher une essaim de sauterelles dans l'empire de [parameter:country.GetName], causant un malus de production de §G-10%§! £food  de $tile_resource_food_mult$ pour §Y10§! ans."
+war_demand_plentiful_traditions_locust_swarm_tooltip_proper_header:0 "$war_demand_plentiful_traditions_locust_swarm_header$"
+war_demand_plentiful_traditions_locust_swarm_tooltip_proper_content:1 "$war_demand_plentiful_traditions_locust_swarm_tooltip_content$"
+war_demand_plentiful_traditions_locust_swarm_no_planets:1 "Toutes les planètes de l'empire seront cédées."
+modifier_plentiful_traditions_locust_swarm:0 "Essaim de sauterelles"
+modifier_plentiful_traditions_locust_swarm_desc:0 "Il y a des signaux alarmants d'un essaim de sauterelles dans notre empire, il détruit nos réserves de £food  $tile_resource_food_mult$."
+
+################################################################
+# FAITH / House of Prayer, dedicated to my old cat Foopie, may you rest in peace floof <3
+################################################################
+
+tradition_faith:0 "Foi"
+tradition_faith_desc:0 "Notre foi est ce qui nous pousse vers l'avenir. La vérité est quelque part et nous allons la découvrir."
+tr_faith_adopt:0 "Traditions de Foi"
+tr_faith_adopt_desc:0 "$tradition_faith_desc$\n\n$tr_faith_adopt_effect$\n\n$tr_faith_finish_effect$"
+tr_faith_adopt_effect:0 "§E$TRADITIONS_ADOPT$:§!\n§Y$MOD_POP_GOVERNMENT_ETHIC_ATTRACTION$§! augmentée de §G+15%§!."
+
+tr_faith_finish:0 "Traditions de foi finies"
+tr_faith_finish_effect:0 "§E$TRADITIONS_FINISH$ :§!\nAdopter toutes les $tr_faith_adopt$ augmentera nos §Y$country_resource_influence_add$§! by §G1§!.\n\n§HDébloque le bâtiment§! £building  $building_plentiful_traditions_house_of_prayer$ qui est un bâtiment unique de l'empire qui générera de l'unité £unity  et l'§Y$pop_ethic_spiritualist_attraction_mult$§! de §G+20%§! ainsi que la production d'influence £influence  de §G+1%§! (et §G+150§! de capacité de stockage)."
+ 
+tr_faith_1:0 "Vision partagée"
+tr_faith_1_desc:0 "§Y$MOD_COUNTRY_SENSOR_RANGE_MULT$§! augmentée de §G+25%§!."
+tr_faith_1_delayed:0 "Notre foi nous montre ce qui est au-delà des frontières."
+ 
+tr_faith_2:0 "Avènement"
+tr_faith_2_desc:0 "§Y$MOD_COUNTRY_EDICT_LENGTH_MULT$§! augmentée de §G+15%§!."
+tr_faith_2_delayed:0 "Notre foi et la politique ne font qu'un, le respect des demandes de nos dirigeants, c'est le respect de la foi."
+ 
+tr_faith_3:0 "Absolution"
+tr_faith_3_desc:0 "§Y$MOD_COUNTRY_EDICT_INFLUENCE_COST$§! diminuée de §G-10%§!."
+tr_faith_3_delayed:0 "L'absolution divine ne peut être atteinte qu'en mettant tout en oeuvre pour contribuer au bien-être commun... qui passe par la parole de nos dirigeants."
+ 
+tr_faith_4:0 "Contribution"
+tr_faith_4_desc:0 "§Y$country_resource_minerals_mult$§! augmentée de §G+10%§!."
+tr_faith_4_delayed:0 "Notre foi transcende les barrières des simples questions matérielles... mais nos dirigeants ont besoin de notre force de travail pour nous garantir la paix."
+ 
+tr_faith_5:0 "Chemin de l'illumination"
+tr_faith_5_desc:1 "§Y$MOD_POP_GOVERNMENT_ETHIC_ATTRACTION$§! augmentée de §G+10%§! et §Y$MOD_COUNTRY_FACTION_INFLUENCE_MULT$§! augmentée de §G+20%§!."
+tr_faith_5_delayed:0 "Les opinions qui divergent de la foi ne sont que vaines futilités destinées à nous détourner de la vérité. Notre gouvernement saura nous guider par-delà les hérétiques pour nous amener vers le sentier d'or."
+ 
+# Faith buildings
+building_plentiful_traditions_house_of_prayer:0 "Maison de la Prière"
+building_plentiful_traditions_house_of_prayer_desc:0 "La maison de la Prière est un lieu spirituel important où les gens peuvent se réunir pour prier, la ferveur spirituelle des visiteurs est connue dans toute la galaxie."
+
+################################################################
+# ORDER
+################################################################
+
+tradition_order:0 "Ordre"
+tradition_order_desc:0 "Sans ordre, il n'y a que le chaos."
+tr_order_adopt:0 "Traditions d'Ordre"
+tr_order_adopt_desc:0 "$tradition_order_desc$\n\n$tr_order_adopt_effect$\n\n$tr_order_finish_effect$"
+tr_order_adopt_effect:0 "§E$TRADITIONS_ADOPT$ :§!\n§YRefroidissement PRL d'urgence§! diminué de §G-25%§! et §Y$MOD_SHIP_SPEED_MULT$§! aumgentée de §G+10%§!."
+
+tr_order_finish:0 "Traditions d'Ordre finies"
+tr_order_finish_effect:0 "§E$TRADITIONS_FINISH$ :§!\nAdopter toutes les $tr_order_adopt$ de diminuer le §Y$MOD_MEGASTRUCTURE_BUILD_COST_MULT$§! de §G-15%§!.\n\nPermet l'utilisation du §YFaux signalement§! comme demande de guerre, causant §Y+25§! $MOD_PLANET_UNREST_ADD$ à l'empire ennemi pour §Y10§! ans.\n\nPermet l'utilisation de §YSabotage§! comme demande de guerre, rédusiant la vitesse de recherche de l'ennemi de §G-10%§! pour §Y10§! ans."
+ 
+tr_order_1:0 "Bastion"
+tr_order_1_desc:0 "§Y$MOD_SHIP_ARMOR_MULT$§! augmenté de §G+10%§!."
+tr_order_1_delayed:0 "Compter seulement sur l'offensif est une grave erreur qui nous mènera au chaos. Nous devons pouvoir compter sur autre chose que nos armes seules afin d'établir l'ordre dans l'univers."
+ 
+tr_order_2:0 "Valeur"
+tr_order_2_desc:0 "§Y$MOD_SHIP_SHIELD_HP_MULT$§! augmentés de §G+10%§!."
+tr_order_2_delayed:0 "Nos flottes et nos armées sont unies dans le but d'amener l'ordre là où le désordre règne."
+ 
+tr_order_3:0 "Imposition"
+tr_order_3_desc:0 "§Y$MOD_SHIP_HITPOINTS_MULT$§! augmentés de §G+10%§!."
+tr_order_3_delayed:0 "L'ordre domine tout le monde, même les moins fortunés, et les sacrifices pour la cause nous uniront."
+ 
+tr_order_4:0 "Antagonisme"
+tr_order_4_desc:0 "§Y$category_voidcraft_research_speed_mult$§! augmentée de §G+15%§!.\n\n§HDébloque le bâtiment§! £building  $building_plentiful_traditions_experimental_weapons_facility$ qui offre à la planète un rendement important en £engineering  §Yingénierie§!."
+tr_order_4_delayed:0 "'Ma politique ? Une main de fer dans un gant de fer.'\n\n- Goustan Le Cruel"
+ 
+tr_order_5:0 "Héros de l'intérieur"
+tr_order_5_desc:1 "Le rendement en  £engineering  §Yingénierie§! est augmenté de §G+15%§!."
+tr_order_5_delayed:0 "Nos ingénieurs, mécaniciens, scientifiques et autres citoyens rassemblés sous notre ordre ont donné à notre glorieux empire d'incroyables avantages."
+
+# Order buildings
+building_plentiful_traditions_experimental_weapons_facility:0 "Usine d'armes expérimentales"
+building_plentiful_traditions_experimental_weapons_facility_desc:0 "Une usine d'armes expérimentales va contribuer à l'amélioration de nos recherches en ingeniérie."
+
+# Order war demands
+war_demand_plentiful_traditions_false_flag_header:1 "§HFaux signal§!"
+war_demand_plentiful_traditions_false_flag_subtext:0 "[parameter:country.GetName]"
+war_demand_plentiful_traditions_false_flag_tooltip_header:0 "$war_demand_plentiful_traditions_false_flag_header$"
+war_demand_plentiful_traditions_false_flag_tooltip_content:2 "Nos forces spéciales vont tenter de  créer un faux signal d'attaque quelque part dans l'empire de [parameter:country.GetName], causant §Y+25§! $MOD_PLANET_UNREST_ADD$ pour §Y10§! ans."
+war_demand_plentiful_traditions_false_flag_tooltip_proper_header:0 "$war_demand_plentiful_traditions_false_flag_header$"
+war_demand_plentiful_traditions_false_flag_tooltip_proper_content:1 "$war_demand_plentiful_traditions_false_flag_tooltip_content$"
+war_demand_plentiful_traditions_false_flag_no_planets:1 "Toutes les planètes de l'empire seront cédées."
+modifier_plentiful_traditions_false_flag:0 "$minor_terrorist_action$"
+modifier_plentiful_traditions_false_flag_desc:0 "$minor_terrorist_action_desc$"
+
+war_demand_plentiful_traditions_sabotage_header:1 "§HSabotage§!"
+war_demand_plentiful_traditions_sabotage_subtext:0 "[parameter:country.GetName]"
+war_demand_plentiful_traditions_sabotage_tooltip_header:0 "$war_demand_plentiful_traditions_sabotage_header$"
+war_demand_plentiful_traditions_sabotage_tooltip_content:2 "Nos espions vont tenter de saboter des structures de [parameter:country.GetName], réduisant le vitesse de recherche de §G-10%§! pour §Y10§! ans."
+war_demand_plentiful_traditions_sabotage_tooltip_proper_header:0 "$war_demand_plentiful_traditions_sabotage_header$"
+war_demand_plentiful_traditions_sabotage_tooltip_proper_content:1 "$war_demand_plentiful_traditions_sabotage_tooltip_content$"
+war_demand_plentiful_traditions_sabotage_no_planets:1 "Toutes les planètes de l'empire seront cédées."
+modifier_plentiful_traditions_sabotage:0 "Sabotés"
+modifier_plentiful_traditions_sabotage_desc:0 "Nous avons été sabotés par autre empire."
+
+################################################################
+# ASPIRATION
+################################################################
+
+tradition_aspiration:0 "Aspiration"
+tradition_aspiration_desc:0 "Il y a peu de sens dans le succès, sans personne pour le partager.\n\n§RExclut la tradition de §Y$tradition_malice$§!.§!"
+tr_aspiration_adopt:0 "Traditions d'Aspiration"
+tr_aspiration_adopt_desc:0 "$tradition_aspiration_desc$\n\n$tr_aspiration_adopt_effect$\n\n$tr_aspiration_finish_effect$"
+tr_aspiration_adopt_effect:0 "§E$TRADITIONS_ADOPT$ :§!\nLes rendements en £physics  §Yphysiques§!, en £society  §Ysociale§! et en £engineering  §Yingénierie§! sont augmentés de §G+5%§!."
+
+tr_aspiration_finish:0 "Traditions d'Aspiration finies"
+tr_aspiration_finish_effect:0 "§E$TRADITIONS_FINISH$ :§!\nAdopter toutes les $tr_aspiration_adopt$ augmentera les revenus de nos tributaires de §G+10%§! et augmentera notre §Y$category_industry_research_speed_mult$§! de §G+15%§!.\n\n§HDébloque le bâtiment§! £building  $building_plentiful_traditions_trading_terminal$ qui permet l'utilisation du décret §YCorne d'abondance§!."
+ 
+tr_aspiration_1:0 "Persévérance sans faille"
+tr_aspiration_1_desc:0 "Coût en minerais des §Y$CONSUMER_GOODS$§! utilisés par nos £pops  Pops diminué de §G-10%§!."
+tr_aspiration_1_delayed:0 "Tout ce qui est matériel n'est que peu important au final, nous devons abonder dans le sens de notre gouvernement."
+ 
+tr_aspiration_2:0 "Voie commerciale"
+tr_aspiration_2_desc:0 "§HDébloque le bâtiment§! £building  $building_plentiful_traditions_trading_depot$"
+tr_aspiration_2_delayed:0 "Notre puissance passe par nos relations avec nos voisins et par conséquent, par nos échanges avec ceux-ci."
+ 
+tr_aspiration_3:0 "Charismatique"
+tr_aspiration_3_desc:0 "§Y$MOD_POP_OTHER_SPECIES_HAPPINESS$§! augmentée de §G+5%§!. En plus, £opinion  l'§Yopinion§! des autres empires nous concernant est augmentée de §G+20§!."
+tr_aspiration_3_delayed:0 "Dans une galaxie pleine de danger, une main tendue avec un sourire peut faire la différence entre la paix et la guerre."
+ 
+tr_aspiration_4:0 "Négociation"
+tr_aspiration_4_desc:0 "§Y$MOD_COUNTRY_TRADE_ATTRACTIVENESS$§! augmentée de §G+25%§!."
+tr_aspiration_4_delayed:0 "Le commerce passe par l'art de la négociation, si certains s'y essayent, d'autres en sont les maîtres absolus."
+ 
+tr_aspiration_5:0 "Commémoration"
+tr_aspiration_5_desc:1 "§Y$MOD_COUNTRY_TRUST_GROWTH$§! augmentée de §G+25%§!."
+tr_aspiration_5_delayed:0 "Notre histoire se construit avec les autres empires, il va de soit qu'il faut se souvenir de ce que nous avons pu vivre ensemble."
+
+# Aspiration buildings
+building_plentiful_traditions_trading_terminal:0 "Centre de négoce"
+building_plentiful_traditions_trading_terminal_desc:0 "Le centre de négoce de l'empire est un centre d'échange intergalactique, offrant une amélioration du commerce pour toutes les personnes concernées.\n\nAutorise l'utilisation du décret §YCorne d'abondance§! sur la planète où ce bâtiment est construit."
+building_plentiful_traditions_trading_depot:0 "Dépôt d'échange"
+building_plentiful_traditions_trading_depot_desc:0 "Le dépôt d'échange d'un empire permet de pratiquer un commerce intragalactique d'une manière plus efficiente."
+
+# Aspiration edicts
+triggered_opinion_tr_aspiration_3:0 "Aspiration charismatique"
+opinion_plentiful_deeds:0 "Corne d'abondance"
+modifier_plentiful_traditions_plentiful_deeds:0 "Corne d'abondance"
+modifier_plentiful_traditions_plentiful_deeds_desc:1 "Votre empire obtient un bonus d'opinion temporaire avec les planètes des empires voisins."
+edict_plentiful_traditions_plentiful_deeds:0 "§YCorne d'abondance§!"
+edict_plentiful_traditions_plentiful_deeds_desc:1 "Ce décret envoie une proposition d'échange aux empires voisins, les populations sur cette planète receveront un bonus de §G5%§! de £happiness bonheur.\nLes empires concernés auront une meilleure opinion de vous temporairement.\n\n"
+
+################################################################
+# MALICE
+################################################################
+
+tradition_malice:0 "Malveillance"
+tradition_malice_desc:0 "'La peur... la cité en est envahie. Soulageons-les de leur angoisse. Envoyez les prisonniers !'\n\n- un chef de guerre d'une époque lointaine\n§RExclut la tradition de §Y$tradition_aspiration$§!.§!"
+tr_malice_adopt:0 "Traditions de Malveillance"
+tr_malice_adopt_desc:0 "$tradition_malice_desc$\n\n$tr_malice_adopt_effect$\n\n$tr_malice_finish_effect$"
+tr_malice_adopt_effect:0 "§E$TRADITIONS_ADOPT$ :§!\n§Y$MOD_COUNTRY_INSULT_EFFICIENCY$§! augmentée de §G+50%§! et notre nature malveillante diminue l'§YOpinion§! des autres empires de §G-15§!.\n\n§HDébloque le bâtiment§! £building  $building_plentiful_traditions_tower_of_fright$ qui permet l'utilisation du décret planètaire §Ysignal d'effroi§!, déclenchant la terreur des populations des empires proches."
+
+tr_malice_finish:0 "Traditions de Malveillance finies"
+tr_malice_finish_effect:0 "§E$TRADITIONS_FINISH$ :§!\nAdopter toutes les $tr_malice_adopt$ permet le décret §YNoir dessein§! augmentant nos §Y$damage_vs_country_type_fallen_empire_mult$§! et §Y$damage_vs_country_type_awakened_fallen_empire_mult$§! de §G+15%§!.\n\n"
+ 
+tr_malice_1:0 "Désespoir"
+tr_malice_1_desc:0 "§Y$MOD_COUNTRY_UNREST_UNHAPPY_SLAVE_EFFECT_MULT$§! diminuée de §G-15%§!."
+tr_malice_1_delayed:0 "Privons nos esclaves de tout espoir de liberté et de vie meilleure. Après tout, ils sont là pour nos servir."
+ 
+tr_malice_2:0 "Angoisse"
+tr_malice_2_desc:0 "§Y$MOD_COUNTRY_RIVALRY_INFLUENCE_GAIN$§! augmentée de §G+30%§!."
+tr_malice_2_delayed:0 "'Dans l'espace, personne ne vous entendra crier.'\n\n- proverbe attribué à E. Ripley"
+ 
+tr_malice_3:0 "Crainte"
+tr_malice_3_desc:0 "§Y$MOD_POP_SLAVE_MINERAL_OUTPUT$§! et §Y$MOD_POP_SLAVE_FOOD_OUTPUT$§! augmentée de §G+10%§!."
+tr_malice_3_delayed:0 "Nos esclaves semblent faire en sorte que leur mort arrive au plus vite... Nous devons régler cela, plus ils vivront, plus ils souffriront."
+ 
+tr_malice_4:0 "Colère"
+tr_malice_4_desc:0 "§Y$MOD_COUNTRY_FACTION_INFLUENCE_MULT$§! augmentée de §G+25%§!."
+tr_malice_4_delayed:0 "Nous nous délecterons de leurs souffrances lentement, cela nous offre plus d'initiative."
+ 
+tr_malice_5:0 "Méchanceté"
+tr_malice_5_desc:1 "§Y$MOD_COUNTRY_MAX_RIVALRIES$§! augmenté de §G+3§!."
+tr_malice_5_delayed:0 "Ce ne sont que des faibles, ils ne méritent de vivre que pour servir notre soif de douleur."
+
+# Malice buildings
+building_plentiful_traditions_tower_of_fright:0 "Tour de l'effroi"
+building_plentiful_traditions_tower_of_fright_desc:0 "Une tour radio qui envoie des signaux effrayants aux empires proches. Nos citoyens adorent voir la peur qui est générée chez les autres. \n\nPermet l'utilisation du décret §Msignal d'effroi§! sur la planète."
+
+# Malice edicts
+triggered_opinion_tr_malice_adopt:0 "Malveillant"
+opinion_signal_of_fright:0 "Effrayé"
+edict_plentiful_traditions_malicious_intent:0 "Noir dessein"
+edict_plentiful_traditions_malicious_intent_desc:1 "Ce décret augmente la détermination avec laquelle nous révélerons la faiblesse de nos plus grands ennemis."
+edict_plentiful_traditions_signal_of_fright:0 "§MSignal d'effroi§!"
+edict_plentiful_traditions_signal_of_fright_desc:1 "Ce décret planètaire envoie un §Msignal d'effroi§! à tous les empires avoisinants déclenchant le bonheur de notre population alors que les autres empires seront effrayés et moins productifs.\n"
+modifier_plentiful_traditions_signal_of_fright_positive:0 "Ravis"
+modifier_plentiful_traditions_signal_of_fright_positive_desc:1 "Les populations ennemies sous l'influence du §Msignal de l'effroi§! sont terrifiées, ce qui rend heureuses les populations de la planète."
+modifier_plentiful_traditions_signal_of_fright_negative:0 "Terrifiées"
+modifier_plentiful_traditions_signal_of_fright_negative_desc:1 "Nos populations sont sous l'influence d'un §Msignal de l'effroi§!."
+
+################################################################
+# PURITY
+################################################################
+
+tradition_purity:0 "Pureté"
+tradition_purity_desc:0 "Ça n'a que trop duré, chaque jour nous subissons leur parasitisme et les conséquences se font ressentir sur la population entière.\n\n§RExclut la tradition de §Y$tradition_benevolence$§!.§!"
+tr_purity_adopt:0 "Traditions de Pureté"
+tr_purity_adopt_desc:0 "$tradition_purity_desc$\n\n$tr_purity_adopt_effect$\n\n$tr_purity_finish_effect$"
+tr_purity_adopt_effect:0 "§E$TRADITIONS_ADOPT$ :§!\n§Y$MOD_TRADITION_COST_NUM_XENO_SLAVES_MULT$§! diminué de §G-20%§!"
+
+tr_purity_finish:0 "Traditions de Pureté finies"
+tr_purity_finish_effect:0 "§E$TRADITIONS_FINISH$ :§!\nAdopter toutes les $tr_purity_adopt$ va augmenter la §Y$MOD_MEGASTRUCTURE_BUILD_SPEED_MULT$§! de §G+15%§!."
+ 
+tr_purity_1:0 "Détermination"
+tr_purity_1_desc:0 "§Y$pop_ethic_xenophobe_attraction_mult$§! augmentée de §G+15%§!."
+tr_purity_1_delayed:0 "'N'ayez pas de compassion pour ces êtres inférieurs, ils tentent de s'intégrer à nous mais c'est pour mieux nous étouffer de l'intérieur. N'ayez fois en aucune de leurs paroles, ils s'immiscent perfidemment au coeur de vos vies, vous volent votre travail et, à terme, ils enlèveront vos conjoints... ils vous prendront tout ! Et dans leur lâcheté, ils mèneront notre empire à la périclité avant même que nous puissions réagir...'\n\nExtrait d'un cours d'école primaire"
+ 
+tr_purity_2:0 "Persévérance"
+tr_purity_2_desc:0 "§Y$MOD_SPACEPORT_SHIP_BUILD_SPEED_MULT$§! augmentée de §G+15%§!."
+tr_purity_2_delayed:0 "Nous ne pouvons pas permettre à tous ces xénos de continuer à polluer notre galaxie de leur infâme présence. Elle est une menace pour notre avenir."
+ 
+tr_purity_3:0 "Précautions sécuritaires"
+tr_purity_3_desc:0 "§Y$MOD_PLANET_UNREST_ADD$§! diminuée de §G-20§! sur toutes nos planètes."
+tr_purity_3_delayed:0 "Nous ne pouvons permettre à nos concitoyens d'émettre des doutes sur les paroles de nos dirigeants, ceux qui s'y opposent seront conduits dans des centres de rééducation."
+ 
+tr_purity_4:0 "Galvanisation"
+tr_purity_4_desc:0 "§Y$MOD_ARMY_HEALTH$§! augmentée de §G+25%§!."
+tr_purity_4_delayed:0 "Jamais nous ne baisseront la tête devant ces êtres inférieurs, ils tomberont devant nous."
+ 
+tr_purity_5:0 "Nemesis"
+tr_purity_5_desc:1 "§Y$MOD_COUNTRY_BORDER_MULT$§! augmentée de §G+15%§! et §Y$MOD_COUNTRY_MAX_RIVALRIES$§! augmenté de §G+1§!."
+tr_purity_5_delayed:0 "Chaque être a une place donnée dans l'univers, par conséquent, les êtres inférieurs devraient être ravis de servir les êtres supérieurs. Ceux qui s'y opposent doivent être éradiqués... ou remis dans le droit chemin."
+
+################################################################
+# BENEVOLENCE/AFFINITY
+################################################################
+
+tradition_benevolence:0 "Bienfaisance"
+tradition_benevolence_desc:0 "La grandeur de notre empire passe par l'intégration des espèces xénos et de leur reconnaissance comme étant des citoyens.\n\n§RExclut la tradition de §Y$tradition_purity$§!.§!"
+tr_benevolence_adopt:0 "Traditions de Bienfaisance"
+tr_benevolence_adopt_desc:0 "$tradition_benevolence_desc$\n\n$tr_benevolence_adopt_effect$\n\n$tr_benevolence_finish_effect$"
+tr_benevolence_adopt_effect:0 "§E$TRADITIONS_ADOPT$ :§!\n§Y$MOD_TRADITION_COST_NUM_XENOS_MULT$§! diminué de §G-15%§!"
+
+tr_benevolence_finish:0 "Traditions de Bienfaisance finies"
+tr_benevolence_finish_effect:0 "§E$TRADITIONS_FINISH$ :§!\nAdopter toutes les $tr_benevolence_adopt$ va augmenter notre §Y$country_resource_unity_mult$§! de §G+15%§!."
+ 
+tr_benevolence_1:0 "Acceptation"
+tr_benevolence_1_desc:0 "§Y$pop_ethic_xenophile_attraction_mult$§! augmentée de §G+15%§!."
+tr_benevolence_1_delayed:0 "Nous sommes tous et toutes égaux, en droits et en devoir. Ceux qui ne nous ressemblent pas n'en sont pas moins des êtres sensibles qui méritent notre respect et notre compassion."
+
+tr_benevolence_2:0 "Société empathique"
+tr_benevolence_2_desc:0 "§Y$category_statecraft_research_speed_mult$§! augmentée de §G+15%§!."
+tr_benevolence_2_delayed:0 "La compréhension inter-individuelle et l'autorisation des unions inter-espèces nous ouvrent des possibilités immenses."
+ 
+tr_benevolence_3:0 "Pitié"
+tr_benevolence_3_desc:0 "§Y$MOD_POP_MIGRATION_SPEED$§! augmentée de §G+30%§!."
+tr_benevolence_3_delayed:0 "Autoriser toutes les espèces à migrer, quel que soit leur niveau social, permet de briser le cercle vicieux de la reproduction sociale."
+ 
+tr_benevolence_4:0 "Pionnier"
+tr_benevolence_4_desc:0 "§Y$MOD_COUNTRY_LEADER_POOL_SIZE$§! augmenté de §G+2§! et §Y$MOD_COUNTRY_LEADER_CAP$§! augmenté de §G+1§!."
+tr_benevolence_4_delayed:0 "La découverte de nouveaux mondes est ce qui nous rapproche."
+ 
+tr_benevolence_5:0 "Unis dans la passion"
+tr_benevolence_5_desc:1 "§Y$MOD_PLANET_MIGRATION_XENO_PULL$§! augmentée de §G+30%§!."
+tr_benevolence_5_delayed:0 "Nous avons rencontré de nouveaux amis... et plus par-delà les étoiles."
+
+################################################################
+# MUTAGENESIS
+################################################################
+
+tradition_mutagenesis:0 "Mutagenèse"
+tradition_mutagenesis_desc:0 "Nous faisons peu de cas des autres dans notre recherche perpétuelle de nouveaux matériaux génétiques."
+#Other living organisms are nothing but building blocks towards the perfection of our collective.
+tr_mutagenesis_adopt:0 "Traditions de Mutagenèse"
+tr_mutagenesis_adopt_desc:0 "$tradition_mutagenesis_desc$\n\n$tr_mutagenesis_adopt_effect$\n\n$tr_mutagenesis_finish_effect$"
+tr_mutagenesis_adopt_effect:0 "§E$TRADITIONS_ADOPT$ :§!\n§Y$MOD_POP_FOOD_REQ_MULT$§! diminuée de §G-15%§!."
+
+tr_mutagenesis_finish:0 "Traditions de Mutagenèse finies"
+tr_mutagenesis_finish_effect:0 "§E$TRADITIONS_FINISH$ :§!\nLe §Y$TRADITION_COST$§! causé par le nombre de colonies est diminué de §G-15%§!.\n\n§HDébloque le bâtiment§! £building  $building_plentiful_traditions_pillar_of_affliction$ qui est un bâtiment planétaire unique améliorant le rendement de £society  §Yrecherche sociétale§! de la planète.\n\n"
+
+tr_mutagenesis_1:0 "Résistance climatologique"
+tr_mutagenesis_1_desc:0 "§Y$MOD_POP_ENVIRONMENT_TOLERANCE$§! augmentée de §G+10%§!."
+tr_mutagenesis_1_delayed:0 "Les autres mondes sont parfois hostiles mais les mutations peuvent aider nos citoyens à mieux y vivre."
+
+tr_mutagenesis_2:0 "Fortifications"
+tr_mutagenesis_2_desc:0 "§Y$MOD_PLANET_FORTIFICATION_STRENGTH$§! augmentée de §G+75%§! et §Y$MOD_COUNTRY_CORE_SECTOR_SYSTEM_CAP$§! augmentés de §G+1§!."
+tr_mutagenesis_2_delayed:0 "Nos fortifications nous protègent contre les menaces à venir."
+
+tr_mutagenesis_3:0 "Croissance mutagène"
+tr_mutagenesis_3_desc:0 "§Y$MOD_SHIP_AUTO_REPAIR_ADD$§! augmentée de §G+1.5%§!."
+tr_mutagenesis_3_delayed:0 "Les mutagènes soigneusement conçus que nous avons ajoutés à nos vaisseaux ont donné à notre flotte des propriétés régénératives très étonnantes."
+
+tr_mutagenesis_4:0 "Dépravation"
+tr_mutagenesis_4_desc:0 "§Y$MOD_TRADITION_COST_NUM_FOUNDER_POPS_MULT$§! réduit de §G-75%§!.\n\nDébloque la §YPeste toxique§! comme demande de guerre, qui réduit la §Y$MOD_POP_GROWTH_SPEED$§! des £pops  Pop  de §G-10%§! pour §Y10§! ans."
+tr_mutagenesis_4_delayed:0 "Notre population n'est pas un frein pour notre grandeur, au contraire même... Notre existence est un luxe pour les autres."
+
+tr_mutagenesis_5:0 "Fermes d'élevage"
+tr_mutagenesis_5_desc:1 "§HDébloque le bâtiment§! £building  $building_plentiful_traditions_mutagenesis_lab$, un bâtiment planétaire unique, qui augmente la production de £food  §Y$tile_resource_food_mult$§! de la planète."
+tr_mutagenesis_5_delayed:0 "L'industrialisation de la nourriture pose des questions d'optimisation qui sont, en grande partie, résolues par la modification de l'ADN des plantes."
+
+# Mutagenesis buildings
+building_plentiful_traditions_pillar_of_affliction:0 "Pilier d'affliction"
+building_plentiful_traditions_pillar_of_affliction_desc:0 "Un pilier qui semble vivant et qui est en mutation continuelle en absorbant les matériaux génétiques proches. Sa structure est de plus en plus grande à mesure que l'empire prend de l'ampleur..."
+building_plentiful_traditions_mutagenesis_lab:0 "Laboratoire de mutagenèse"
+building_plentiful_traditions_mutagenesis_lab_desc:0 "Un laboratoire doté d'installations mi-vivantes mi-métalliques qui offre des possibilités illimités de créations en terme de modification génétique."
+
+# Mutagenesis war demands
+war_demand_plentiful_traditions_toxic_plague_header:1 "§HPeste toxique§!"
+war_demand_plentiful_traditions_toxic_plague_subtext:0 "[parameter:country.GetName]"
+war_demand_plentiful_traditions_toxic_plague_tooltip_header:0 "$war_demand_plentiful_traditions_toxic_plague_header$"
+war_demand_plentiful_traditions_toxic_plague_tooltip_content:2 "Nous allons tenter de diffuser une peste toxique dans [parameter:country.GetName], diminuant la §Y$MOD_POP_GROWTH_SPEED$§! des £pops  Pop de §G-10%§! durant §Y10§! ans." 
+war_demand_plentiful_traditions_toxic_plague_tooltip_proper_header:0 "$war_demand_plentiful_traditions_toxic_plague_header$"
+war_demand_plentiful_traditions_toxic_plague_tooltip_proper_content:1 "$war_demand_plentiful_traditions_toxic_plague_tooltip_content$"
+war_demand_plentiful_traditions_toxic_plague_no_planets:1 "Toutes les planètes de l'empire seront cédées."
+modifier_plentiful_traditions_toxic_plague:0 "Peste toxique"
+modifier_plentiful_traditions_toxic_plague_desc:0 "Notre population est affectée par une peste toxique provoquant des décès par centaine, cela diminue la §Y$MOD_POP_GROWTH_SPEED$§! de nos £pops  pops  par §R-10%§! pendant §Y10§! ans."
+
+################################################################
+# INDUSTRY
+################################################################
+
+tradition_industrial:0 "Industrie"
+tradition_industrial_desc:0 "Notre spécilisation dans l'extraction de minéraux, le raffinage et le transport des matériaux qui en sont issus, nous permet d'optimiser notre système avec autant d'efficacité que d'élégance."
+tr_industrial_adopt:0 "Traditions de l'Industrie"
+tr_industrial_adopt_desc:0 "$tradition_industrial_desc$\n\n$tr_industrial_adopt_effect$\n\n$tr_industrial_finish_effect$"
+tr_industrial_adopt_effect:0 "§E$TRADITIONS_ADOPT$ :§!\nDiminue le §Y$shipsize_mining_station_build_cost_mult$§! de §G-15%§!\n\n§HDébloque un module du spatioport§! £building  $sm_orbital_fracking_cannon$ qui produit des £minerals  §YMinéraux§!."
+
+tr_industrial_finish:0 "Traditions de l'Industrie finies"
+tr_industrial_finish_effect:0 "§E$TRADITIONS_FINISH$ :§!\n§HDébloque un décret planétaire §! $edict_plentiful_traditions_ionized_excavation$ qui améliore les réseaux miniers avec une chance d'ajouter des £minerals  §YMinéraux§! aux gisements et de donner un bonus temporaire de §G+10%§! à leur production.\n\n§HDébloque un décret planétaire §! $edict_plentiful_traditions_harvest_erupt$ qui fera exploser la colonie, détruisant toute la planète, pour révéler les gisements de £minerals  §YMinéraux§! enfouis profondément dans le coeur de la planète.\n\n"
+
+tr_industrial_1:0 "Géoponique hydro-magnétique"
+tr_industrial_1_desc:0 "§Y$hydroponics_farm_build_cost_mult$§! diminué de §G-15%§!."
+tr_industrial_1_delayed:0 "Nos ingénieurs géoponiques et nos physiciens ont conçu des schémas de construction novateurs pour que nos structures agricoles soient plus optimisées."
+
+tr_industrial_2:0 "Baie de chargement multi-fonctionnelle"
+tr_industrial_2_desc:0 "§Y$shipsize_colonizer_build_cost_mult$§! diminué de §G-20%§!."
+tr_industrial_2_delayed:0 "La production industrielle des vaisseaux de colonisation pourrait les amener à ne pas disposer des derniers fonctionnalités mais ce n'est pas pour cela qu'ils sont construits."
+
+tr_industrial_3:0 "Systèmes de navigation cristallins"
+tr_industrial_3_desc:0 "§Y$MOD_POP_RESETTLEMENT_COST_MULT$§! diminué de §G-30%§!."
+tr_industrial_3_delayed:0 "La 'relocalisation optimale citoyenne' ou également appelée 'réimplantation' est nécessaire au fonctionnement de l'empire. Par conséquent, son application ne devrait pas nécessiter les vaisseaux de transports luxueux réclamés par les associations. Les cargos transportent du bétail, ils peuvent transporter des personnes."
+
+tr_industrial_4:0 "Faisceaux avec auto-guidage"
+tr_industrial_4_desc:0 "§HDébloque le bâtiment§! £building  $building_plentiful_traditions_purification_facility$, bâtiment planétaire unique, qui augmente les rendements de £minerals  §Y$tile_resource_minerals_mult$§! de la planète."
+tr_industrial_4_delayed:0 "Les foreuses spécialisées avec des faisceaux de recherche doté d'un ciblage par auto-guidage permettent une extraction bien plus efficace et rentable que les foreuses basiques."
+
+tr_industrial_5:0 "Comptabilité inventive"
+tr_industrial_5_desc:1 "§HDébloque le décret§! $edict_plentiful_traditions_industrial_goods$ réduisant le coût en £minerals  §Y$tile_resource_minerals_mult$§! des §Y$CONSUMER_GOODS$§! utilisés par nos £pops  Pops de §G-20%§!."
+tr_industrial_5_delayed:0 "La clé de voûte du transport est la question d'optimisation de l'espace. Si les cargos des industriels peuvent transporter des minéraux dans leurs soutes, ils peuvent aussi transporter des biens de consommation. Et tout cela pour un prix battant toute concurrence."
+
+# Industrial buildings
+building_plentiful_traditions_purification_facility:0 "Complexe de raffinage"
+building_plentiful_traditions_purification_facility_desc:0 "Le complexe de raffinage augmente la production de minéraux sur la planète grâce à des systèmes d'extraction minérale de pointe qui optimisent les rendements industriels."
+
+sm_orbital_fracking_cannon:0 "Canon orbital d'extraction"
+
+tech_plentiful_traditions_orbital_fracking_cannon:0 "Canon orbital d'extraction"
+tech_plentiful_traditions_orbital_fracking_cannon_desc:0 "Les avancées dans la technologie d'extraction orbitale pourrait, en théorie, augmenter la production de minéraux de nos réseaux miners sur la planète. Le canon demanderait une module entier du spatioport pour couvrir l'ensemble de la planète."
+
+# Industrial edicts
+edict_plentiful_traditions_industrial_goods:0 "Biens industriels"
+edict_plentiful_traditions_industrial_goods_desc:1 "Ce décret améliore la gestion logistique des biens de consommation à travers l'empire, baissant ainsi leur coût."
+
+edict_plentiful_traditions_ionized_excavation:0 "§RExtraction ionisée§!"
+edict_plentiful_traditions_ionized_excavation_desc:1 "Ce décret planétaire améliore les §Yréseaux miniers§! avec une chance d'ajouter des £minerals  §YMinéraux§! aux gisements et de donner un bonus temporaire de §G+10%§! à leur production.\n\n"
+
+edict_plentiful_traditions_harvest_erupt:0 "§RÉruption planétaire§!"
+edict_plentiful_traditions_harvest_erupt_desc:1 "Ce décret planétaire prépare la planète pour une éruption, ce qui détruira totalement la colonie et la planète. Et cela dans le but de permettre l'accès aux industriels au coeur de la planète, riche en minéraux. Le nombre de gisements de £minerals  §YMinéraux§! révélés dépendra de la §Ytaille§! de la planète ainsi que du talent de nous ingéieurs. L'équipe s'occupant du projet devrait être prête dans §Y2§! ans.\n\n§RATTENTION§!: cela DÉTRUIRA entièrement la colonie."
+
+plentiful_traditions_harvest_pedict.1.title:0 "Éruption planétaire"
+plentiful_traditions_harvest_pedict.1.desc:0 "Dès que la colonie de §Y[From.GetName]§! sera évacuée, nos ingénieurs prépareront un engin capable de faire exploser toute la planète. Nous espérons ainsi révéler d'énormes gisements £minerals  §YMinéraux§! que nous pourrions extraire."
+plentiful_traditions_harvest_pedict.1.a:0 "Faire exploser cette §Ygrande§! planète pour révéler des £minerals  §YMinéraux§!."
+plentiful_traditions_harvest_pedict.1.b:0 "Faire exploser cette planète §Ymoyenne§! pour révéler des £minerals  §YMinéraux§!."
+plentiful_traditions_harvest_pedict.1.c:0 "Faire exploser cette §Ypetite§! planète pour révéler des £minerals  §YMinéraux§!."
+plentiful_traditions_harvest_pedict.1.d:0 "Laisser §Y[From.GetName]§! comme elle est."
+
+################################################################
+# MYSTICISM
+################################################################
+
+tradition_mysticism:0 "Mysticisme"
+tradition_mysticism_desc:0 "Le chemin vers une vie en harmonie avec la nature nous amène à considérer la bio-diversité comme supérieure aux profits matérialistes et aux désirs égoïstes." # No one will protect what they don't care about, and no one will care about what they have never experienced. David Attenborough
+tr_mysticism_adopt:0 "Traditions de Mysticisme"
+tr_mysticism_adopt_desc:0 "$tradition_mysticism_desc$\n\n$tr_mysticism_adopt_effect$\n\n$tr_mysticism_finish_effect$"
+tr_mysticism_adopt_effect:0 "§E$TRADITIONS_ADOPT$ :§!\n§Y$MOD_LEADER_SPECIES_EXP_GAIN$§! augmenté de §G+15%§!."
+
+tr_mysticism_finish:0 "Traditions de Mysticisme finies"
+tr_mysticism_finish_effect:0 "§E$TRADITIONS_FINISH$ :§!\n§HDébloque un décret planétaire§! $edict_plentiful_traditions_sacred_act$ qui permet à tous les obélisques, les temples, les piliers et les sanctuaires une chance de produire de l'§YUnité§! £unity  et donnant un bonus temporaire de §G+5%§! à la production d'Unité de la planète.\n\n"
+
+tr_mysticism_1:0 "Chemin empathique"
+tr_mysticism_1_desc:0 "§Y$MOD_LEADER_AGE$§! augmenté de §G+20§!.\n\n§HDébloque le bâtiment§! £building  $building_plentiful_traditions_obelisk1$, bâtiment planétaire unique améliorable depuis la Fondation bénie, qui augmente la production de £food  §Y$tile_resource_food_mult$§! et de £energy  §Y$tile_resource_energy_mult$§!."
+tr_mysticism_1_delayed:0 "Rien n'est plus noble que l'empathie face à l'animosité."
+
+tr_mysticism_2:0 "Ascétisme"
+tr_mysticism_2_desc:0 §Y$MOD_POP_FOOD_REQ_MULT$§! et le coût des §Y$CONSUMER_GOODS$§! diminué de §G-5%§!.\n\n§HDébloque le bâtiment§! £building  $building_plentiful_traditions_obelisk2$, bâtiment planétaire unique améliorable depuis la Fondation bénie, qui augmente la production de £energy  §Y$tile_resource_energy_mult$§! et de £minerals  §Y$tile_resource_minerals_mult$§!."
+tr_mysticism_2_delayed:0 "La consommation modérée et la résistance face aux tentations nous mènent à voir la beauté de la nature dans toute sa splendeur et son rayonnement."
+
+tr_mysticism_3:0 "Cercle de modestie"
+tr_mysticism_3_desc:0 "§Y$pc_nuked_habitability$§! augmentée de §G+50%§!.\n\n§HDébloque le bâtiment§! £building  $building_plentiful_traditions_obelisk3$, bâtiment planétaire unique améliorable depuis la Fondation bénie, qui augmente la production de £minerals  §Y$tile_resource_food_mult$§! et de £food  §Y$tile_resource_food_mult$§!."
+tr_mysticism_3_delayed:0 "La peur naturelle de la mort met en exergue notre amour pour la vie."
+
+tr_mysticism_4:0 "Clés de la vie"
+tr_mysticism_4_desc:0 "§Y$country_resource_unity_mult$§! augmentée de §G+5%§! and §Y$damage_vs_country_type_drone_mult$§! augmenté de §G+15%§!."
+tr_mysticism_4_delayed:0 "L'absence d'empathie, de frugalité et de modestie pourraient nous amener à un futur sombre et vide."
+
+tr_mysticism_5:0 "Inébranlable"
+tr_mysticism_5_desc:1 "§Y$damage_vs_country_type_ai_empire_mult$§! augmenté de §G+15%§!.\n\n§HDébloque le bâtiment§! £building  $building_plentiful_traditions_sanctum_of_keys$, bâtiment unique planétaire, qui augmente légèrement le §Y$MOD_POP_HAPPINESS$§!, l'§Y$MOD_POP_ENVIRONMENT_TOLERANCE$§! et produit de l'§Unité§! £unity."
+tr_mysticism_5_delayed:0 "Le désintérêt pour le pouvoir et l'intérêt personnel donne les trois clés de la vie."
+
+# Mysticism buildings
+building_plentiful_traditions_obelisk0:0 "Fondation bénie"
+building_plentiful_traditions_obelisk0_desc:0 "Une simple dalle de béton, inutile en tant que telle mais qui est la fondation d'un sanctuaire sacré.\n\nAméliorer en §Y$building_plentiful_traditions_obelisk1$§!, §Y$building_plentiful_traditions_obelisk2$§! or §Y$building_plentiful_traditions_obelisk3$§!."
+building_plentiful_traditions_obelisk1:0 "Obélisque de l'Empathie"
+building_plentiful_traditions_obelisk1_desc:0 "L'obélisque de l'Empathie est dédié à ceux qui respectent la vie et méritent Sa bénédiction. Construit sur la $building_plentiful_traditions_obelisk0$"
+building_plentiful_traditions_obelisk2:0 "Obélisque de l'Ascétisme"
+building_plentiful_traditions_obelisk2_desc:0 ""L'obélisque de l'Ascétisme est dédié à ceux qui respectent les énergies et la nature. Construit sur la $building_plentiful_traditions_obelisk0$"
+building_plentiful_traditions_obelisk3:0 "Obélisque de la Modestie"
+building_plentiful_traditions_obelisk3_desc:0 "L'obélisque de la Modestie est dédié aux minéraux naturels de la planète et leurs propriétés de protection. Construit sur la $building_plentiful_traditions_obelisk0$"
+building_plentiful_traditions_sanctum_of_keys:0 "Sanctuaire des Dieux"
+building_plentiful_traditions_sanctum_of_keys_desc:0 "Le sanctuaire des Dieux est un des sites les plus sacrés où chaque croyant doit aller au moins une fois dans sa vie."
+
+# Mysticism edicts
+edict_plentiful_traditions_sacred_act:0 "§GActe sacré§!"
+edict_plentiful_traditions_sacred_act_desc:1 "Ce décret planétaire permet aux obélisques, aux temples, aux piliers et aux sanctuaires d'avoir une chance de produire de l'§YUnité§! £unity  additionnelle et de donner un bonus temporaire de §G+10%§!.\n\n"
+
+################################################################
+# Syndicalism
+################################################################
+
+tradition_syndicalism:0 "Kleptocracy"
+tradition_syndicalism_desc:0 "Business is done more frequent and effective when our business-partners are 'convinced' to do so by any means."
+tr_syndicalism_adopt:0 "Kleptocracy Traditions"
+tr_syndicalism_adopt_desc:0 "$tradition_syndicalism_desc$\n\n$tr_syndicalism_adopt_effect$\n\n$tr_syndicalism_finish_effect$"
+tr_syndicalism_adopt_effect:0 "§E$TRADITIONS_ADOPT$:§!\n§Y$MOD_SHIP_FIRE_RATE_MULT$§! increased by §G+8%§!."
+
+tr_syndicalism_finish:0 "Kleptocracy Traditions Finished"
+tr_syndicalism_finish_effect:0 "§E$TRADITIONS_FINISH$:§!\n§Y$MOD_COUNTRY_ENGINEERING_TECH_RESEARCH_SPEED$§! increased by §G+10%§! and §Y$MOD_COUNTRY_TRADE_ATTRACTIVENESS$§! increased by §G+20%§!.\n\n"
+
+tr_syndicalism_1:0 "Fabricated Claims"
+tr_syndicalism_1_desc:0 "§Y$MOD_COUNTRY_BORDER_MULT$§! increased by §G+10%§! and §Y$MOD_NAVY_SIZE_ADD$§! increased by §G+15§!."
+tr_syndicalism_1_delayed:0 "In times of conflict many empires often have to endure severe sanctions. Some more than others."
+
+tr_syndicalism_2:0 "Loan-Shark Activities"
+tr_syndicalism_2_desc:0 "§Y$MOD_NAVY_SIZE_MULT$§! increased by §G+10%§!.\n\n§HUnlocks Spaceport Module:§! $sm_orbital_trading_beacon$, a spaceport module that adds to the planet's £energy  §YEnergy§! production."
+tr_syndicalism_2_delayed:0 "Illegal conditions are sometimes a necessity to get things done... effectively."
+
+tr_syndicalism_3:0 "Reckless Greed"
+tr_syndicalism_3_desc:0 "§HUnlocks Planetary Edict:§! $edict_plentiful_traditions_overcharge$, boosting the planet's energy production with a chance of adding additional £energy  §YEnergy§! deposits and gives a temporary §G+10%§! bonus to their energy production at the cost of influence."
+tr_syndicalism_3_delayed:0 "Energy production and its logistics are carefully monitored to keep stability within the empire. However, temporarily overcharging a planet's energy production might not always be noticed."
+
+tr_syndicalism_4:0 "Partners in Crime"
+tr_syndicalism_4_desc:0 "£energy §Y$country_resource_energy_mult$§! increased by §G+5%§! and §Y$MOD_COUNTRY_TRUST_GROWTH$§! increased by §G+15%§!.\n\nIn addition, Empire £opinion  §YOpinion§! is increased by §G+10§!."
+tr_syndicalism_4_delayed:0 "Trading agreements don't always need to be formalized in order for them to be effective. Sometimes a little bit of credits is all you need to in order to convince the right people."
+
+tr_syndicalism_5:0 "Ominous Operators"
+tr_syndicalism_5_desc:1 "§Y$MOD_SPACEPORT_SHIP_BUILD_TIME_MULT$§! decreased by §G-15%§!.\n\n§HUnlocks Building:§! $building_plentiful_traditions_syndicate_quarters$, a planet unique building that provides the empire with a greater amount of §Y$MOD_NAVY_SIZE_ADD$§!.\n\n"
+tr_syndicalism_5_delayed:0 "Formalities are great, but conducting business is best done when paid 'under the table', where credits are not documented."
+
+# Syndicalism buildings
+building_plentiful_traditions_syndicate_quarters:0 "Syndicate Quarters"
+building_plentiful_traditions_syndicate_quarters_desc:0 "A Syndicate Quarters will increase your empire's naval capacity."
+
+sm_orbital_trading_beacon:0 "Orbital Trading Beacon"
+
+tech_plentiful_traditions_orbital_trading_beacon:0 "Orbital Trading Beacon"
+tech_plentiful_traditions_orbital_trading_beacon_desc:0 "Advances in trading technology allow for a more efficienct handling of the energy produced by our power generation networks."
+
+# Syndicalism edicts
+triggered_opinion_tr_syndicalism_4:0 "Kleptocrats"
+edict_plentiful_traditions_overcharge:0 "§YOvercharge§!"
+edict_plentiful_traditions_overcharge_desc:1 "This planetary edict boosts the planet's §Yenergy facilities§! with a chance of adding additional £energy  §YEnergy§! deposits and gives a temporary §G+10%§! bonus to their energy production at the cost of influence.\n\n"
+
+modifier_plentiful_traditions_overcharge:0 "Overcharge"
+modifier_plentiful_traditions_overcharge_desc:1 "Your planet gets a temporary £energy  §YEnergy§! production bonus."

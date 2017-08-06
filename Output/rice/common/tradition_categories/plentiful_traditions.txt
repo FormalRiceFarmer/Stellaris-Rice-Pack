@@ -1,0 +1,143 @@
+tradition_cybernetics = {
+	adoption_bonus = "tr_cybernetics_adopt"
+	finish_bonus = "tr_cybernetics_finish"
+	traditions = {
+		"tr_cybernetics_1"
+		"tr_cybernetics_2"
+		"tr_cybernetics_3"
+		"tr_cybernetics_4"
+		"tr_cybernetics_5"
+	}
+}
+
+tradition_biogenesis = {
+	adoption_bonus = "tr_biogenesis_adopt"
+	finish_bonus = "tr_biogenesis_finish"
+	traditions = {
+		"tr_biogenesis_1"
+		"tr_biogenesis_2"
+		"tr_biogenesis_3"
+		"tr_biogenesis_4"
+		"tr_biogenesis_5"
+	}
+}
+
+tradition_faith = {
+	adoption_bonus = "tr_faith_adopt"
+	finish_bonus = "tr_faith_finish"
+	traditions = {
+		"tr_faith_1"
+		"tr_faith_2"
+		"tr_faith_3"
+		"tr_faith_4"
+		"tr_faith_5"
+	}
+}
+
+tradition_order = {
+	adoption_bonus = "tr_order_adopt"
+	finish_bonus = "tr_order_finish"
+	traditions = {
+		"tr_order_1"
+		"tr_order_2"
+		"tr_order_3"
+		"tr_order_4"
+		"tr_order_5"
+	}
+}
+
+tradition_aspiration = {
+	adoption_bonus = "tr_aspiration_adopt"
+	finish_bonus = "tr_aspiration_finish"
+	traditions = {
+		"tr_aspiration_1"
+		"tr_aspiration_2"
+		"tr_aspiration_3"
+		"tr_aspiration_4"
+		"tr_aspiration_5"
+	}
+}
+
+tradition_malice = {
+	adoption_bonus = "tr_malice_adopt"
+	finish_bonus = "tr_malice_finish"
+	traditions = {
+		"tr_malice_1"
+		"tr_malice_2"
+		"tr_malice_3"
+		"tr_malice_4"
+		"tr_malice_5"
+	}
+}
+
+tradition_purity = {
+	adoption_bonus = "tr_purity_adopt"
+	finish_bonus = "tr_purity_finish"
+	traditions = {
+		"tr_purity_1"
+		"tr_purity_2"
+		"tr_purity_3"
+		"tr_purity_4"
+		"tr_purity_5"
+	}
+}
+
+tradition_benevolence = {
+	adoption_bonus = "tr_benevolence_adopt"
+	finish_bonus = "tr_benevolence_finish"
+	traditions = {
+		"tr_benevolence_1"
+		"tr_benevolence_2"
+		"tr_benevolence_3"
+		"tr_benevolence_4"
+		"tr_benevolence_5"
+	}
+}
+
+tradition_mutagenesis = {
+	adoption_bonus = "tr_mutagenesis_adopt"
+	finish_bonus = "tr_mutagenesis_finish"
+	traditions = {
+		"tr_mutagenesis_1"
+		"tr_mutagenesis_2"
+		"tr_mutagenesis_3"
+		"tr_mutagenesis_4"
+		"tr_mutagenesis_5"
+	}
+}
+
+tradition_industrial = {
+	adoption_bonus = "tr_industrial_adopt"
+	finish_bonus = "tr_industrial_finish"
+	traditions = {
+		"tr_industrial_1"
+		"tr_industrial_2"
+		"tr_industrial_3"
+		"tr_industrial_4"
+		"tr_industrial_5"
+	}
+}
+
+tradition_mysticism = {
+	adoption_bonus = "tr_mysticism_adopt"
+	finish_bonus = "tr_mysticism_finish"
+	traditions = {
+		"tr_mysticism_1"
+		"tr_mysticism_2"
+		"tr_mysticism_3"
+		"tr_mysticism_4"
+		"tr_mysticism_5"
+	}
+}
+
+tradition_syndicalism = {
+	adoption_bonus = "tr_syndicalism_adopt"
+	finish_bonus = "tr_syndicalism_finish"
+	traditions = {
+		"tr_syndicalism_1"
+		"tr_syndicalism_2"
+		"tr_syndicalism_3"
+		"tr_syndicalism_4"
+		"tr_syndicalism_5"
+	}
+}

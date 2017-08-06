@@ -1,0 +1,89 @@
+# Mystics
+
+pop_faction_name_parts_list = {
+	key = "plentiful_factions_mystics_names_1"
+	parts = {
+		"Brotherhood" = 1
+		"Council" = 1
+		"Circle" = 1
+		"Conclave" = 1
+		"House" = 1
+		"Coven" = 1
+	}
+}
+
+pop_faction_name_parts_list = {
+	key = "plentiful_factions_mystics_names_2"
+	parts = {
+		"of Mystic Values" = 1
+		"of Mysticism" = 1
+		"of Mystic Guidance" = 1
+		"of Mystics" = 1
+		"of the Sacred Oath" = 1
+		"of the Keys of Life" = 1
+		"of Redemption" = 1
+		"of Compassion" = 1
+		"of Frugality" = 1
+		"of Modesty" = 1
+		"of Cleansing" = 1
+		"of Elders" = 1
+		"of Upholding" = 1
+		"of Life and Spirit" = 1
+	}
+}
+
+pop_faction_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 100
+			is_pop_faction_type = "plentiful_factions_mystics"
+		}
+	}
+	format = "<plentiful_factions_mystics_names_1> <plentiful_factions_mystics_names_2>"
+}
+
+# Miners
+
+pop_faction_name_parts_list = {
+	key = "plentiful_factions_miners_names_1"
+	parts = {
+		"Mineral" = 1
+		"Minerals" = 1
+		"Asteroid" = 1
+		"XL" = 1
+		"Mobile" = 1
+		"Sillicon" = 1
+		"Ice" = 1
+		"Crystal" = 1
+		"Offworld" = 1
+		"Molten" = 1
+		"Deep Core" = 1
+	}
+}
+
+pop_faction_name_parts_list = {
+	key = "plentiful_factions_miners_names_2"
+	parts = {
+		"Industries" = 1
+		"Guild" = 1
+		"Heavy Transports" = 1
+		"Freighters" = 1
+		"Drills Inc." = 1
+		"Miners" = 1
+		"Freightliners" = 1
+		"Cargo Inc." = 1
+		"Ore Inc." = 1
+	}
+}
+
+pop_faction_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 100
+			is_pop_faction_type = "plentiful_factions_miners"
+		}
+	}
+	format = "<plentiful_factions_miners_names_1> <plentiful_factions_miners_names_2>"
+}
