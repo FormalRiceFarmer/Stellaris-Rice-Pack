@@ -1,0 +1,59 @@
+tradition_naval = {
+	adoption_bonus = "tr_naval_adopt"
+	finish_bonus = "tr_naval_finish"
+	traditions = {
+		"tr_naval_1"
+		"tr_naval_2"
+		"tr_naval_3"
+		"tr_naval_4"
+		"tr_naval_5"
+	}
+}
+
+tradition_aggression = {
+	adoption_bonus = "tr_aggression_adopt"
+	finish_bonus = "tr_aggression_finish"
+	traditions = {
+		"tr_aggression_1"
+		"tr_aggression_2"
+		"tr_aggression_3"
+		"tr_aggression_4"
+		"tr_aggression_5"
+	}
+}
+
+tradition_statecraft = {
+	adoption_bonus = "tr_statecraft_adopt"
+	finish_bonus = "tr_statecraft_finish"
+	traditions = {
+		"tr_statecraft_1"
+		"tr_statecraft_2"
+		"tr_statecraft_3"
+		"tr_statecraft_4"
+		"tr_statecraft_5"
+	}
+}
+
+tradition_inspiration = {
+	adoption_bonus = "tr_inspiration_adopt"
+	finish_bonus = "tr_inspiration_finish"
+	traditions = {
+		"tr_inspiration_1"
+		"tr_inspiration_2"
+		"tr_inspiration_3"
+		"tr_inspiration_4"
+		"tr_inspiration_5"
+	}
+}
+
+tradition_exploration = {
+	adoption_bonus = "tr_exploration_adopt"
+	finish_bonus = "tr_exploration_finish"
+	traditions = {
+		"tr_exploration_1"
+		"tr_exploration_2"
+		"tr_exploration_3"
+		"tr_exploration_4"
+		"tr_exploration_5"
+	}
+}

@@ -1,0 +1,176 @@
+﻿l_english:
+ 
+################################################################
+# NAVAL
+################################################################
+
+ tradition_naval:0 "Navy"
+ tradition_naval_desc:0 "As we reach out into the space, it is becoming clear that navy is going to play the main role in upcoming wars."
+ tr_naval_adopt:0 "Naval Traditions"
+ tr_naval_adopt_desc:0 "$tradition_naval_desc$\n\n$tr_naval_adopt_effect$\n\n$tr_naval_finish_effect$"
+ tr_naval_adopt_effect:0 "§E$TRADITIONS_ADOPT$:§!\n§Y$MOD_SPACEPORT_SHIP_BUILD_SPEED_MULT$§! increased by §G+10%§!."
+
+ tr_naval_finish:0 "Naval Traditions Finished"
+ tr_naval_finish_effect:0 "§E$TRADITIONS_FINISH$:§!\nAdopting all $tr_naval_adopt$ increases our ship's §Y$MOD_SHIP_COMBAT_SPEED_MULT$§! by §G+10%§!."
+ 
+ tr_naval_1:0 "Innovative Thruster Designs"
+ tr_naval_1_desc:0 "§YShip Sublight Speed§! increased by §G+10%§!."
+ tr_naval_1_delayed:0 "Constant competition between our engineers had led to improvement of ship's calibration system."
+ 
+ tr_naval_2:0 "Subspace Drivers"
+ tr_naval_2_desc:0 "§Y$MOD_SHIP_INTERSTELLAR_SPEED_MULT$§! increased by §G+10%§!."
+ tr_naval_2_delayed:0 "Our most talanted scientists went as far as overhauling the whole design of FTL drivers, creating much better version."
+ 
+ tr_naval_3:0 "Large Hangars"
+ tr_naval_3_desc:0 "§Y$MOD_NAVY_SIZE_MULT$§! increased by §G+10%§!."
+ tr_naval_3_delayed:0 "Our spaceports are designed with extremely large handgars now, allowing to sustain much bigger fleet."
+ 
+ tr_naval_4:0 "Fleet Coordination Center"
+ tr_naval_4_desc:0 "§HUnlocks Building:§! $add_traditions_building_fleet_coordination_center$"
+ tr_naval_4_delayed:0 "Managing fleet operations is not an easy task. We should build a coordination center for it."
+ 
+ tr_naval_5:0 "Lateral Thinking"
+ tr_naval_5_desc:1 "§YFleet Damage§! increased by §G+10%§!."
+ tr_naval_5_delayed:0 "A completely new paradigm of thinking has been invented for battles in three dimensional space. Common people are still wondering how it works... but it works!"
+ 
+################################################################
+# AGGRESSION
+################################################################
+
+ tradition_aggression:0 "Aggression"
+ tradition_aggression_desc:0 "Competition is all that required for species who are strong enough on their own.\n\n§RMutually exclusive with §YDiplomacy§!.§!"
+ tr_aggression_adopt:0 "Aggression Traditions"
+ tr_aggression_adopt_desc:0 "$tradition_aggression_desc$\n\n$tr_aggression_adopt_effect$\n\n$tr_aggression_finish_effect$"
+ tr_aggression_adopt_effect:0 "§E$TRADITIONS_ADOPT$:§!\n§Y$MOD_COUNTRY_RIVALRY_INFLUENCE_GAIN$§! increased by §G+30%§!."
+
+ tr_aggression_finish:0 "Aggression Traditions Finished"
+ tr_aggression_finish_effect:0 "§E$TRADITIONS_FINISH$:§!\nAdopting all $tr_aggression_adopt$ increases our §Y$MOD_COUNTRY_RIVALRY_INFLUENCE_GAIN$§! by §G+20%§!."
+ 
+ tr_aggression_1:0 "Voice of Power"
+ tr_aggression_1_desc:0 "§Y$MOD_COUNTRY_MAX_RIVALRIES$§! increased by §G2§!."
+ tr_aggression_1_delayed:0 "No matter how strong and how many our rivals are, we will always win."
+ 
+ tr_aggression_2:0 "Voice of Violance"
+ tr_aggression_2_desc:0 "§Y$MOD_COUNTRY_MAX_RIVALRIES$§! increased by §G2§!."
+ tr_aggression_2_delayed:0 "Our only true rival is our own potentialities. Others are just obstacles on the way, they will be removed sooner or later."
+ 
+ tr_aggression_3:0 "Links in the Same Chain"
+ tr_aggression_3_desc:0 "Our £unity  §YUnity§! output increased by §G+7.5%§!."
+ tr_aggression_3_delayed:0 "Universe is large and dreadful forces linger there, waiting for a single sign of weakness. But united we shall stand strong."
+ 
+ tr_aggression_4:0 "Cleansing Fire"
+ tr_aggression_4_desc:0 "§Y$MOD_POP_ENVIRONMENT_TOLERANCE$§! increased by §G+5%§!,\n§Y$MOD_COUNTRY_CLEAR_BLOCKER_COST_MULT$§! reduced by §G-33%§!."
+ tr_aggression_4_delayed:0 "We stand over nature - not it over us. With fire we shall clear the path to greatness, removing anything that stands on our way."
+ 
+ tr_aggression_5:0 "Ruthless Negotiations"
+ tr_aggression_5_desc:1 "§Y$MOD_PLANET_UNREST_ADD$§! is reduced by §G-20§! on all our planets."
+ tr_aggression_5_delayed:0 "Our path is forged. There can be no compromise and no doubt. Those, who oppose us, should know this."
+ 
+ tradition_diplomacy_desc:0 " The surest way to destroy your enemies is to make them your friends.\n\n§RMutually exclusive with §YAggression§!.§!"
+  
+################################################################
+# STATECRAFT
+################################################################
+
+ tradition_statecraft:0 "Statecraft"
+ tradition_statecraft_desc:0 "Reformation and improvement of our government is a crucial task as we strike to build a perfect society."
+ tr_statecraft_adopt:0 "Statecraft Traditions"
+ tr_statecraft_adopt_desc:0 "$tradition_statecraft_desc$\n\n$tr_statecraft_adopt_effect$\n\n$tr_statecraft_finish_effect$"
+ tr_statecraft_adopt_effect:0 "§E$TRADITIONS_ADOPT$:§!\n§YLeader Influence Cost§! reduced by §G-10%§!."
+
+ tr_statecraft_finish:0 "Statecraft Traditions Finished"
+ tr_statecraft_finish_effect:0 "§E$TRADITIONS_FINISH$:§!\nAdopting all $tr_statecraft_adopt$ increases our §Y$MOD_COUNTRY_GOVERNMENT_CIVIC_POINTS_ADD$§! by §G+2§!."
+ 
+ tr_statecraft_1:0 "Censorship"
+ tr_statecraft_1_desc:0 "§Y$MOD_COUNTRY_INFLUENCE_GAIN_ADD$§! increased by §G1§!,\n§Y$MOD_PLANET_UNREST_ADD$§! is reduced by §G-10§! on all our planets."
+ tr_statecraft_1_delayed:0 "By ensuring careful censorship we can gain more control over political forces and ensure that misinformation and wrong ideas don't reach people so easily."
+ 
+ tr_statecraft_2:0 "Public Debates"
+ tr_statecraft_2_desc:0 "§Y$MOD_COUNTRY_FACTION_INFLUENCE_MULT$§! increased by §G+20%§!."
+ tr_statecraft_2_delayed:0 "Right parties should always have ability to voice and defend their opinions in front of the masses."
+ 
+ tr_statecraft_3:0 "Government Propaganda"
+ tr_statecraft_3_desc:0 "§Y$MOD_POP_GOVERNMENT_ETHIC_ATTRACTION$§! increased by §G+15%§!"
+ tr_statecraft_3_delayed:0 "By translating right ideals and informing society about events in good light our government starts to look much more beneficial in the eyes of our people."
+ 
+ tr_statecraft_4:0 "Large State Apparatus"
+ tr_statecraft_4_desc:0 "§YLeader Capacity§! increased by §Y3§!."
+ tr_statecraft_4_delayed:0 "Government is a foundation of society that provides ways to reach for new horizons. So the bigger apparatus it has - the better!"
+ 
+ tr_statecraft_5:0 "World Control"
+ tr_statecraft_5_desc:1 "§Y$MOD_COUNTRY_BORDER_MULT$§! increased by §G+10%§!,\n§Y$MOD_COUNTRY_CORE_SECTOR_SYSTEM_CAP$§! increased by §Y1§!."
+ tr_statecraft_5_delayed:0 "We get rid of unnecessary bureaucracy procedures and increase control over our worlds. This also allows us to take one more system into our core sector."
+ 
+################################################################
+# INSPIRATION
+################################################################
+
+ tradition_inspiration:0 "Inspiration"
+ tradition_inspiration_desc:0 "Dreams and dedication are a powerful combination even on their own."
+ tr_inspiration_adopt:0 "Inspiration Traditions"
+ tr_inspiration_adopt_desc:0 "$tradition_inspiration_desc$\n\n$tr_inspiration_adopt_effect$\n\n$tr_inspiration_finish_effect$"
+ tr_inspiration_adopt_effect:0 "§E$TRADITIONS_ADOPT$:§!\n§Y$MOD_COUNTRY_ALL_TECH_RESEARCH_SPEED$§! increased by §G+5%§!."
+
+ tr_inspiration_finish:0 "Inspiration Traditions Finished"
+ tr_inspiration_finish_effect:0 "§E$TRADITIONS_FINISH$:§!\nAdopting all $tr_inspiration_adopt$ increases our §YEmpire Minerals Production and Energy Generation§! by §G+5%§!."
+ 
+ tr_inspiration_1:0 "Seeds of Life Cycle"
+ tr_inspiration_1_desc:0 "§Y$MOD_COUNTRY_TRUST_GROWTH$§! increased by §G+15%§!,\n§Y$MOD_COUNTRY_TRUST_CAP_ADD$§! increased by §G20§!."
+ tr_inspiration_1_delayed:0 "No matter if we are to bring doom or salvation to the Universe, we all are born as children of this Life Cycle."
+ 
+ tr_inspiration_2:0 "Higher Understanding"
+ tr_inspiration_2_desc:0 "£physics  §YPhysics§!, £society  §YSociety§! and £engineering  §YEngineering§! output increased by §G+10%§!."
+ tr_inspiration_2_delayed:0 "Science is not about numbers, equations, computations, or algorithms. It is about understanding."
+ 
+ tr_inspiration_3:0 "Hands of Creation"
+ tr_inspiration_3_desc:0 "§Y$MOD_PLANET_BUILDING_BUILD_SPEED_MULT$§! increased by §G+15%§!,\n§Y$MOD_PLANET_CLEAR_BLOCKER_TIME_MULT$§! decreased by §G-15%§!."
+ tr_inspiration_3_delayed:0 "Being creative is not a hobby but it is a way of life."
+ 
+ tr_inspiration_4:0 "Cornucopia"
+ tr_inspiration_4_desc:0 "§Y$country_resource_food_mult$§! increased by §G+10%§!."
+ tr_inspiration_4_delayed:0 "Food is essential to life. Therefore we must ensure that it is produced in large quantity and has good quality."
+ 
+ tr_inspiration_5:0 "Search for Paradise"
+ tr_inspiration_5_desc:1 "§Y$MOD_POP_MIGRATION_SPEED$§! increased by §G+30%§! and §Y$MOD_COUNTRY_RESETTLEMENT_COST_MULT$§! decreased by §G-15%§!."
+ tr_inspiration_5_delayed:0 "We dream of Paradise every time we close our eyes. We know that it is out there. We just need to find it."
+  
+################################################################
+# EXPLORATION
+################################################################
+
+ tradition_exploration:0 "Exploration"
+ tradition_exploration_desc:0 "We shall not cease from exploration, and the end of all our exploring will be to arrive where we started and know the place for the first time."
+ tr_exploration_adopt:0 "Exploration Traditions"
+ tr_exploration_adopt_desc:0 "$tradition_exploration_desc$\n\n$tr_exploration_adopt_effect$\n\n$tr_exploration_finish_effect$"
+ tr_exploration_adopt_effect:0 "§E$TRADITIONS_ADOPT$:§!\n§YShip Sublight Speed§! increased by §G+15%§!."
+
+ tr_exploration_finish:0 "Exploration Traditions Finished"
+ tr_exploration_finish_effect:0 "§E$TRADITIONS_FINISH$:§!\nAdopting all $tr_exploration_adopt$ increases our ship's §Y$MOD_SHIP_EVASION_MULT$§! by §G+15%§!."
+ 
+ tr_exploration_1:0 "Listening Outposts"
+ tr_exploration_1_desc:0 "§Y$MOD_COUNTRY_SENSOR_RANGE_MULT$§! increased by §G+25%§!."
+ tr_exploration_1_delayed:0 "Mysteries are slowly revealing themselves to our people. With that our enthusiasm has led to establishment of outposts across all the planets to listen into the void."
+ 
+ tr_exploration_2:0 "Innovative Sensor Chips"
+ tr_exploration_2_desc:0 "§E$TRADITIONS_ADOPT$:§!\n§YShip Sensor Range§! increased by §G+20%§!."
+ tr_exploration_2_delayed:0 "Establishing the system of Listening Outposts allowed us to significantly improve sensor designs and create a new generation of sensor chips."
+ 
+ tr_exploration_3:0 "Echoes of Singularity"
+ tr_exploration_3_desc:0 "Our ship's §Y$MOD_SHIP_INTERSTELLAR_SPEED_MULT$§! increased by §G+10%§!,\n§Y$MOD_SHIP_EMERGENCY_FTL$§! decreased by §G-33%§!."
+ tr_exploration_3_delayed:0 "After achieving latest breakthroughs in the area of scanning, we have started to discover strange anomalies on subspace level of our Universe. For a long time noone could understand what it is, but a new theory appeared claiming them to be a space disturbances left since the birth of Universe itself. Implementions of this theory should be able to change the very base of our FTL system."
+ 
+ tr_exploration_4:0 "Standardized Survey Protocols"
+ tr_exploration_4_desc:0 "§Y$MOD_SHIP_SCIENCE_SURVEY_SPEED$§! increased by §G+10%§! and §Y$MOD_SHIP_ANOMALY_GENERATION_CHANCE$§! increased by §G+15%§!."
+ tr_exploration_4_delayed:0 "Our methods of surveying new worlds should benefit from implementation of standardized procedures, allowing us to find hidden patterns and to not lose time on insignificant data."
+ 
+ tr_exploration_5:0 "Improved Data Analysis"
+ tr_exploration_5_desc:1 "§Y$MOD_SHIP_ANOMALY_RESEARCH_SPEED$§! increased by §G+20%§!."
+ tr_exploration_5_delayed:0 "By creating a large data bank on different systems and planets we are able to improve analysis of unknown and strange phenomena."
+ 
+ 
+################################################################
+# BUILDINGS
+################################################################
+ 
+ add_traditions_building_fleet_coordination_center:0 "Fleet Coordination Center" 
+ add_traditions_building_fleet_coordination_center_desc:0 "This massive complex of different buildings coordinates the flight of our fleets across all the space."

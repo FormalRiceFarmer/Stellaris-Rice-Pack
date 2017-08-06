@@ -1,0 +1,90 @@
+@cost = 56
+
+tr_naval_adopt = {
+	cost = { unity = @cost }
+	modifier = {
+		spaceport_ship_build_speed_mult = 0.10
+	}
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 3
+			has_ethic = ethic_fanatic_militarist
+		}		
+	}
+}
+
+tr_naval_finish = {
+	modifier = {
+		ship_combat_speed_mult = 0.10
+		ascension_perks_add = 1
+	}
+}
+# Innovative Thruster Designs
+tr_naval_1 = {
+	cost = { unity = @cost }
+
+	modifier = {
+		ship_speed_mult = 0.10
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+# Subspace Drivers
+tr_naval_2 = {
+	cost = { unity = @cost }
+	possible = {
+		has_tradition = tr_naval_1
+	}	
+	modifier = {
+		ship_interstellar_speed_mult = 0.10
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+# Large Hangars
+tr_naval_3 = {
+	cost = { unity = @cost }
+	modifier = {
+		navy_size_mult = 0.10	
+	}	
+	ai_weight = {
+		factor = 1000
+	}
+}
+# Fleet Coordination Center
+tr_naval_4 = {
+	cost = { unity = @cost }
+	possible = {
+		has_tradition = tr_naval_3
+	}
+
+	#unlocks Fleet Coordination Center
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+# Lateral Thinking
+tr_naval_5 = {
+	cost = { unity = @cost }
+	possible = {
+		has_tradition = tr_naval_4
+	}	
+	modifier = {
+		ship_weapon_damage = 0.10
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}

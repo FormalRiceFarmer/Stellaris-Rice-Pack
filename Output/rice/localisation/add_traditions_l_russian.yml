@@ -1,0 +1,178 @@
+﻿l_russian:
+
+PERKS_NEW:0 "§YСОВЕРШЕНСТВО§"
+ 
+################################################################
+# NAVAL
+################################################################
+
+ tradition_naval:0 "Флот"
+ tradition_naval_desc:0 "Когда мы вышли в космос, стало ясно, что флот будет играть главную роль в предстоящих войнах."
+ tr_naval_adopt:0 "Традиции Флота"
+ tr_naval_adopt_desc:0 "$tradition_naval_desc$\n\n$tr_naval_adopt_effect$\n\n$tr_naval_finish_effect$"
+ tr_naval_adopt_effect:0 "§E$TRADITIONS_ADOPT$:§!\n§Y$MOD_SPACEPORT_SHIP_BUILD_SPEED_MULT$§! увеличится на §G+10%§!."
+
+ tr_naval_finish:0 "Завершение Традиций Флота"
+ tr_naval_finish_effect:0 "§E$TRADITIONS_FINISH$:§!\nПриняв все $tr_naval_adopt$ мы получим увеличение параметра §Y$MOD_SHIP_COMBAT_SPEED_MULT$§! на §G+10%§!."
+ 
+ tr_naval_1:0 "Инновационный Дизайн Ускорителей"
+ tr_naval_1_desc:0 "§YДосветовая скорость§! вырастет на §G+10%§!."
+ tr_naval_1_delayed:0 "Постоянная конкуренция между нашими инженерами привела к улучшению системы калибровки кораблей."
+ 
+ tr_naval_2:0 "Сверхсветовые Двигатели"
+ tr_naval_2_desc:0 "§Y$MOD_SHIP_INTERSTELLAR_SPEED_MULT$§! возрастает на §G+10%§!."
+ tr_naval_2_delayed:0 "Наши самые талантливые ученые дошли до пересмотра всей концепции сверсветовых приводов, создав гораздо лучшую версию."
+ 
+ tr_naval_3:0 "Большие Ангары"
+ tr_naval_3_desc:0 "§Y$MOD_NAVY_SIZE_MULT$§! больше на §G+10%§!."
+ tr_naval_3_delayed:0 "Наши космопорты будут отныне спроектированы с чрезвычайно большими ангарами, что позволит содержать больше кораблей."
+ 
+ tr_naval_4:0 "Центр Координации Флота"
+ tr_naval_4_desc:0 "§HСооружение:§! $add_traditions_building_fleet_coordination_center$"
+ tr_naval_4_delayed:0 "Управление флотом - непростая задача. Мы должны построить координационный центр для её решения."
+ 
+ tr_naval_5:0 "Нестандартное Mышление"
+ tr_naval_5_desc:1 "§YУрон флота§! увеличивается на §G+10%§!."
+ tr_naval_5_delayed:0 "Совершенно новая парадигма мышления была изобретена для битв в трехмерном пространстве. Обычным людям не очень понятно, как это работает ... но это работает!"
+ 
+################################################################
+# AGGRESSION
+################################################################
+
+ tradition_aggression:0 "Агрессия"
+ tradition_aggression_desc:0 "Конкуренция - это все, что требуется для видов, которые достаточно сильны сами по себе.\n\n§RВзаимоисключительно с §YДипломатией§!.§!"
+ tr_aggression_adopt:0 "Традиции Агрессии"
+ tr_aggression_adopt_desc:0 "$tradition_aggression_desc$\n\n$tr_aggression_adopt_effect$\n\n$tr_aggression_finish_effect$"
+ tr_aggression_adopt_effect:0 "§E$TRADITIONS_ADOPT$:§!\n§Y$MOD_COUNTRY_RIVALRY_INFLUENCE_GAIN$§! увеличивается на §G+30%§!."
+
+ tr_aggression_finish:0 "Завершение Традиций Агрессии"
+ tr_aggression_finish_effect:0 "§E$TRADITIONS_FINISH$:§!\nПриняв все $tr_aggression_adopt$ мы получим увеличение параметра §Y$MOD_COUNTRY_RIVALRY_INFLUENCE_GAIN$§! на §G+20%§!."
+ 
+ tr_aggression_1:0 "Голос Силы"
+ tr_aggression_1_desc:0 "§Y$MOD_COUNTRY_MAX_RIVALRIES$§! становится больше на §G2§!."
+ tr_aggression_1_delayed:0 "Независимо от того, насколько сильны и многочисленны наши соперники, мы всегда будем побеждать."
+ 
+ tr_aggression_2:0 "Голос Неистовства"
+ tr_aggression_2_desc:0 "§Y$MOD_COUNTRY_MAX_RIVALRIES$§! становится больше на §G2§!."
+ tr_aggression_2_delayed:0 "Наш единственный истинный соперник - наши собственные возможности. Остальные же - просто препятствия на пути, они рано или поздно будут устранены."
+ 
+ tr_aggression_3:0 "Звенья Одной Цепи"
+ tr_aggression_3_desc:0 "Прирост нашего £unity §YЕдинство§! увеличивается на §G+7.5%§!."
+ tr_aggression_3_delayed:0 "Вселенная велика, и жуткие силы притаились там, ожидая единственного признака слабости. Но вместе мы будем сильны!"
+ 
+ tr_aggression_4:0 "Очищающее Пламя"
+ tr_aggression_4_desc:0 "§Y$MOD_POP_ENVIRONMENT_TOLERANCE$§! повышается на §G+5%§!,\n§Y$MOD_COUNTRY_CLEAR_BLOCKER_COST_MULT$§! сокращается на §G-33%§!."
+ tr_aggression_4_delayed:0 "Мы стоим над природой, а не она над нами. Огнем мы расчистим дорогу к величию, сжигая все, что преграждает наш путь."
+ 
+ tr_aggression_5:0 "Бескомпромиссные Переговоры"
+ tr_aggression_5_desc:1 "§Y$MOD_PLANET_UNREST_ADD$§! снижаются на §G-20§! для всех планет."
+ tr_aggression_5_delayed:0 "Наш путь ясен. Не может быть никаких компромиссов и сомнений. Те, кто выступают против нас, должны знать это."
+ 
+ tradition_diplomacy_desc:0 " Самый верный способ уничтожить ваших врагов - сделать их друзьями.\n\n§RВзаимоисключительно с §YАгрессией§!.§!"
+  
+################################################################
+# STATECRAFT
+################################################################
+
+ tradition_statecraft:0 "Государство"
+ tradition_statecraft_desc:0 "Реформация и совершенствование нашего правительства - важная задача, поскольку мы пытаемся построить идеальное общество."
+ tr_statecraft_adopt:0 "Традиции Управления"
+ tr_statecraft_adopt_desc:0 "$tradition_statecraft_desc$\n\n$tr_statecraft_adopt_effect$\n\n$tr_statecraft_finish_effect$"
+ tr_statecraft_adopt_effect:0 "§E$TRADITIONS_ADOPT$:§!\n§YСтоимость найма лидеров§! снижается на §G-10%§!."
+
+ tr_statecraft_finish:0 "Завершение Традиций Управления"
+ tr_statecraft_finish_effect:0 "§E$TRADITIONS_FINISH$:§!\nПриняв все $tr_statecraft_adopt$ мы получим §Y$MOD_COUNTRY_GOVERNMENT_CIVIC_POINTS_ADD$§! §G+2§!."
+ 
+ tr_statecraft_1:0 "Цензура"
+ tr_statecraft_1_desc:0 "§Y$MOD_COUNTRY_INFLUENCE_GAIN_ADD$§! увеличивается на §G1§!,\n§Y$MOD_PLANET_UNREST_ADD$§! снижается на §G-10§! для всех наших планет."
+ tr_statecraft_1_delayed:0 "Обеспечивая тщательную цензуру, мы можем получить больше контроля над политическими силами и поставить информационный фильтр на пути у дезинформации и неправильных идей."
+ 
+ tr_statecraft_2:0 "Публичные Обсуждения"
+ tr_statecraft_2_desc:0 "§Y$MOD_COUNTRY_FACTION_INFLUENCE_MULT$§! больше на §G+20%§!."
+ tr_statecraft_2_delayed:0 "Партии всегда должны иметь возможность озвучивать и защищать свое мнение перед массами."
+ 
+ tr_statecraft_3:0 "Правительственная Пропаганда"
+ tr_statecraft_3_desc:0 "§Y$MOD_POP_GOVERNMENT_ETHIC_ATTRACTION$§! больше на §G+15%§!"
+ tr_statecraft_3_delayed:0 "Доводя до населения правильные идеалы и информируя общество о событиях в выгодном свете, наше правительство начинает казаться намного более полезным."
+ 
+ tr_statecraft_4:0 "Большой Госаппарат"
+ tr_statecraft_4_desc:0 "§YКоличество лидеров§! увеличивается на §Y3§!."
+ tr_statecraft_4_delayed:0 "Правительство - это основа общества, которая предоставляет возможности для достижения новых горизонтов. То есть, чем больше госаппарат - тем лучше!"
+ 
+ tr_statecraft_5:0 "Контроль Над Мирами"
+ tr_statecraft_5_desc:1 "§Y$MOD_COUNTRY_BORDER_MULT$§! §G+10%§!,\n§Y$MOD_COUNTRY_CORE_SECTOR_SYSTEM_CAP$§! плюс §Y1§!."
+ tr_statecraft_5_delayed:0 "Мы избавляемся от ненужных бюрократических процедур и расширяем контроль над нашими мирами. Это также позволяет взять еще одну систему в наш основной сектор."
+ 
+################################################################
+# INSPIRATION
+################################################################
+
+ tradition_inspiration:0 "Вдохновение"
+ tradition_inspiration_desc:0 "Мечты и самоотверженность - это мощная комбинация даже сами по себе."
+ tr_inspiration_adopt:0 "Традиции Вдохновения"
+ tr_inspiration_adopt_desc:0 "$tradition_inspiration_desc$\n\n$tr_inspiration_adopt_effect$\n\n$tr_inspiration_finish_effect$"
+ tr_inspiration_adopt_effect:0 "§E$TRADITIONS_ADOPT$:§!\n§Y$MOD_COUNTRY_ALL_TECH_RESEARCH_SPEED$§! увеличится на §G+5%§!."
+
+ tr_inspiration_finish:0 "Завершение Традиций Вдохновения"
+ tr_inspiration_finish_effect:0 "§E$TRADITIONS_FINISH$:§!\nПриняв все $tr_inspiration_adopt$ мы получим §YУвеличение добычи энергии и минералов§! на §G+5%§!."
+ 
+ tr_inspiration_1:0 "Семена Цикла Жизни"
+ tr_inspiration_1_desc:0 "§Y$MOD_COUNTRY_TRUST_GROWTH$§! увеличивается на §G+15%§!,\n§Y$MOD_COUNTRY_TRUST_CAP_ADD$§! увеличивается на §G20§!."
+ tr_inspiration_1_delayed:0 "Независимо от того, принесем ли мы гибель или спасение Вселенной, все мы рождаемся как дети этого Цикла Жизни."
+ 
+ tr_inspiration_2:0 "Высшее Понимание"
+ tr_inspiration_2_desc:0 "Прирост £physics  §YФизических§!, £society  §YСоциальных§! и £engineering  §YИнженерных§! исследований увеличен на §G+10%§!."
+ tr_inspiration_2_delayed:0 "Наука заключается не в числах, уравнениях, расчетах или алгоритмах. Наука - это умение понимать."
+ 
+ tr_inspiration_3:0 "Руки Творящие"
+ tr_inspiration_3_desc:0 "§Y$MOD_PLANET_BUILDING_BUILD_SPEED_MULT$§! §G+15%§!,\n§Y$MOD_PLANET_CLEAR_BLOCKER_TIME_MULT$§! снижается на §G-15%§!."
+ tr_inspiration_3_delayed:0 "Творчество - это не хобби, а образ жизни."
+ 
+ tr_inspiration_4:0 "Рог Изобилия"
+ tr_inspiration_4_desc:0 "§Y$country_resource_food_mult$§! больше на §G+10%§!."
+ tr_inspiration_4_delayed:0 "Пища имеет важное значение для жизни, поэтому мы должны обеспечить высокие количественные и качественные показатели ее производства."
+ 
+ tr_inspiration_5:0 "Поиски Рая"
+ tr_inspiration_5_desc:1 "§Y$MOD_POP_MIGRATION_SPEED$§! §G+30%§! и §Y$MOD_COUNTRY_RESETTLEMENT_COST_MULT$§! снижается на §G-15%§!."
+ tr_inspiration_5_delayed:0 "Мы мечтаем о Рае каждый раз, когда закрываем глаза. Мы знаем, что он существует где-то в дали. Нам лишь нужно найти его."
+  
+################################################################
+# EXPLORATION
+################################################################
+
+ tradition_exploration:0 "Исследование"
+ tradition_exploration_desc:0 "Мы не прекратим исследования, конец всех наших исканий будет заключаться в том, чтобы прибыть туда, откуда мы начали - и увидеть это место новым взглядом."
+ tr_exploration_adopt:0 "Традиции Исследования"
+ tr_exploration_adopt_desc:0 "$tradition_exploration_desc$\n\n$tr_exploration_adopt_effect$\n\n$tr_exploration_finish_effect$"
+ tr_exploration_adopt_effect:0 "§E$TRADITIONS_ADOPT$:§!\n§YДосветовая скорость кораблей§! увеличится на §G+15%§!."
+
+ tr_exploration_finish:0 "Завершение Традиций Исследования"
+ tr_exploration_finish_effect:0 "§E$TRADITIONS_FINISH$:§!\nПриняв все $tr_exploration_adopt$ мы получим §Y$MOD_SHIP_EVASION_MULT$§! §G+15%§!."
+ 
+ tr_exploration_1:0 "Станции Прослушивания"
+ tr_exploration_1_desc:0 "§Y$MOD_COUNTRY_SENSOR_RANGE_MULT$§! больше на §G+25%§!."
+ tr_exploration_1_delayed:0 "Тайны медленно раскрываются перед нашим взором. В связи с этим, наш энтузиазм привел к созданию сенсорных станций по всем планетам - чтобы вслушиваться в пустоту."
+ 
+ tr_exploration_2:0 "Чувствительные Датчики"
+ tr_exploration_2_desc:0 "§E$TRADITIONS_ADOPT$:§!\n§YДальность сенсоров кораблей§! возрастает на §G+20%§!."
+ tr_exploration_2_delayed:0 "Создание системы Станций Прослушивания позволило нам значительно улучшить архитектуру чипов сенсорных датчиков и создать новое поколение действительно чувствительной электроники."
+ 
+ tr_exploration_3:0 "Эхо Сингулярности"
+ tr_exploration_3_desc:0 "§Y$MOD_SHIP_INTERSTELLAR_SPEED_MULT$§! §G+10%§!,\n§Y$MOD_SHIP_EMERGENCY_FTL$§! §G-33%§!."
+ tr_exploration_3_delayed:0 "После всех достижений в области сканирования, мы начали обнаруживать странные аномалии на уровне подпространства нашей Вселенной. Долгое время никто не мог понять, что это такое, но появилась новая теория, заявляющая, что это - пространственные возмущения оставшиеся со времен зарождения Вселенной. Приложения этой теории должны позволить изменить фундаментальные принципы наших сверхсветовых приводов."
+ 
+ tr_exploration_4:0 "Стандартизация Исследовательских Протоколов"
+ tr_exploration_4_desc:0 "§Y$MOD_SHIP_SCIENCE_SURVEY_SPEED$§! §G+10%§! и §Y$MOD_SHIP_ANOMALY_GENERATION_CHANCE$§! §G+15%§!."
+ tr_exploration_4_delayed:0 "Наши методы исследования новых миров должны выиграть от внедрения стандартизированных процедур, позволяя нам находить скрытые закономерности и не терять время на несущественные данные."
+ 
+ tr_exploration_5:0 "Улучшенный Анализ Данных"
+ tr_exploration_5_desc:1 "§Y$MOD_SHIP_ANOMALY_RESEARCH_SPEED$§! быстрее на §G+20%§!."
+ tr_exploration_5_delayed:0 "Создав обширную базу данных на различные системы и планеты, мы сможем улучшить анализ неизвестных и странных явлений."
+ 
+ 
+################################################################
+# BUILDINGS
+################################################################
+ 
+ add_traditions_building_fleet_coordination_center:0 "Центр Координации Флота" 
+ add_traditions_building_fleet_coordination_center_desc:0 "Этот массивный комплекс различных зданий координирует перемещения наших флотов в обозримом пространстве."

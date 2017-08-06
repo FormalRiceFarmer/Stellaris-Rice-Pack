@@ -1,0 +1,44 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_adopted_tradition_category_bg_statecraft"
+		textureFile = "gfx/interface/traditions/adopted_tradition_category_bg_statecraft.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_tradition_hex_bg_statecraft"
+		textureFile = "gfx/interface/traditions/tradition_hex_bg_statecraft.dds"
+	}
+	
+	corneredTileSpriteType = {
+		name = "GFX_tradition_category_tile_statecraft"
+		textureFile = "gfx/interface/tiles/tradition_category_tile_statecraft.dds"
+		borderSize = { x=140 y=140 }
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+
+	spriteType = {
+		name = "GFX_tr_statecraft_1"
+		textureFile = "gfx/interface/icons/traditions/tradition_statecraft_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_statecraft_2"
+		textureFile = "gfx/interface/icons/traditions/tradition_statecraft_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_statecraft_3"
+		textureFile = "gfx/interface/icons/traditions/tradition_statecraft_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_statecraft_4"
+		textureFile = "gfx/interface/icons/traditions/tradition_statecraft_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_statecraft_5"
+		textureFile = "gfx/interface/icons/traditions/tradition_statecraft_5.dds"
+	}
+}

@@ -1,0 +1,104 @@
+@cost = 56
+
+tr_genesis_adopt = {
+	cost = { unity = @cost }
+	modifier = {
+		category_biology_research_speed_mult = 0.10
+	}
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 1
+			has_ethic = ethic_xenophile
+		}
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_xenophile
+		}	
+	}
+}
+
+tr_genesis_finish = {
+	modifier = {
+		pop_food_req_mult = -0.10
+		ascension_perks_add = 1
+	}
+}
+
+# Radiation Studies
+tr_genesis_1 = {
+	cost = { unity = @cost }
+	modifier = {
+		pc_nuked_habitability = 0.10
+		category_materials_research_speed_mult = 0.05
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+# Natural Stimulants
+tr_genesis_2 = {
+	cost = { unity = @cost }
+	possible = {
+		has_tradition = tr_genesis_1
+	}
+	
+	modifier = {
+		pop_happiness = 0.05
+		tile_resource_energy_mult = 0.05
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+# Nature's Embrace
+tr_genesis_3 = {
+	cost = { unity = @cost }
+	modifier = {
+		pop_environment_tolerance = 0.05
+		pop_consumer_goods_mult = -0.10
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+# Genetic Enhancements
+tr_genesis_4 = {
+	cost = { unity = @cost }
+	possible = {
+		has_tradition = tr_genesis_1
+		has_tradition = tr_genesis_3
+	}
+	
+	modifier = {
+		trait_points = 2
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+# Studies of Stagnation
+tr_genesis_5 = {
+	cost = { unity = @cost }
+	possible = {
+		has_tradition = tr_genesis_3
+	}
+	modifier = {
+		pop_government_ethic_attraction = 0.05
+		tile_resource_unity_mult = 0.05
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+
