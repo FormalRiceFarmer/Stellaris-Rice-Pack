@@ -1,0 +1,103 @@
+@cost = 56
+
+tr_liberty_adopt = {
+	cost = { unity = @cost }
+	possible = {
+		has_ethic = ethic_fanatic_egalitarian
+		NOT = {
+			has_tradition = tr_tyranny_adopt
+		}
+	}		
+	
+	modifier = {
+		pop_ethic_egalitarian_attraction_mult = 0.25
+	}
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 300
+			has_ethic = ethic_fanatic_egalitarian
+		}	
+	}
+}
+
+tr_liberty_finish = {
+	modifier = {
+		ascension_perks_add = 1
+	}
+}
+
+#Egalitarian Philosophy
+tr_liberty_1 = {
+	cost = { unity = @cost }
+
+	modifier = {
+		pop_consumer_goods_mult = -0.05
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+#Egalitarian Governance
+tr_liberty_2 = {
+	cost = { unity = @cost }
+	
+	modifier = {
+		country_resource_energy_add = 5
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+#Egalitarian Principle
+tr_liberty_3 = {
+	cost = { unity = @cost }
+	possible = {
+		has_tradition = tr_liberty_1
+	}
+	
+### Unlock Building Congress
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+#Egalitarian Regency
+tr_liberty_4 = {
+	cost = { unity = @cost }
+	possible = {
+		has_tradition = tr_liberty_2
+	}
+	
+### Unlocks Monument
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+#Egalitarian Legacy
+tr_liberty_5 = {
+	cost = { unity = @cost }
+	possible = {
+		has_tradition = tr_liberty_3
+		has_tradition = tr_liberty_4
+	}
+	
+	modifier = {
+		country_resource_unity_mult = 0.1
+		
+	}
+
+### Unlocks Custom Perk
+	
+	ai_weight = {
+		factor = 1000
+	}
+}

@@ -1,0 +1,44 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_adopted_tradition_category_bg_astronomy"
+		textureFile = "gfx/interface/traditions/adopted_tradition_category_bg_astronomy.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_tradition_hex_bg_astronomy"
+		textureFile = "gfx/interface/traditions/tradition_hex_bg_astronomy.dds"
+	}
+	
+	corneredTileSpriteType = {
+		name = "GFX_tradition_category_tile_astronomy"
+		textureFile = "gfx/interface/tiles/tradition_category_tile_astronomy.dds"
+		borderSize = { x=140 y=140 }
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+
+	spriteType = {
+		name = "GFX_tr_astronomy_1"
+		textureFile = "gfx/interface/icons/traditions/tradition_astronomy_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_astronomy_2"
+		textureFile = "gfx/interface/icons/traditions/tradition_astronomy_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_astronomy_3"
+		textureFile = "gfx/interface/icons/traditions/tradition_astronomy_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_astronomy_4"
+		textureFile = "gfx/interface/icons/traditions/tradition_astronomy_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_astronomy_5"
+		textureFile = "gfx/interface/icons/traditions/tradition_astronomy_5.dds"
+	}
+}

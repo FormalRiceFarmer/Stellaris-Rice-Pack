@@ -1,0 +1,113 @@
+@cost = 56
+
+tr_collectivism_adopt = {
+	cost = { unity = @cost }
+	possible = {
+		NOT = {
+			has_tradition = tr_individualism_adopt
+		}
+	}		
+	
+	modifier = {
+		edict_influence_cost = -0.15
+	}
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			has_ethic = ethic_authoritarian
+		}
+		modifier = {
+			factor = 3
+			has_ethic = ethic_fanatic_authoritarian
+		}
+		modifier = {
+			factor = 1
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1
+			has_ethic = ethic_xenophobe
+		}
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_xenophobe
+		}		
+	}
+}
+
+tr_collectivism_finish = {
+	modifier = {
+		pop_resettlement_cost_mult = -0.5
+		ascension_perks_add = 1
+	}
+}
+#Centralised Bureaucracy
+tr_collectivism_1 = {
+	cost = { unity = @cost }
+
+	modifier = {
+	edict_length_mult = 0.20
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+#State Sponsored Parties
+tr_collectivism_2 = {
+	cost = { unity = @cost }
+	modifier = {
+		faction_surpression_cost = -0.20
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+# Central Leadership
+tr_collectivism_3 = {
+	cost = { unity = @cost }
+	possible = {
+		has_tradition = tr_collectivism_1
+		has_tradition = tr_collectivism_2
+	}	
+	
+	modifier = {
+		country_leader_cap = 2
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+#Will of our people
+tr_collectivism_4 = {
+	cost = { unity = @cost }
+
+	modifier = {
+		country_government_civic_points_add = 1
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+#Ministry of Order
+tr_collectivism_5 = {
+	cost = { unity = @cost }
+	possible = {
+		has_tradition = tr_collectivism_4
+	}	
+	
+#allows player to build the Ministry of Order
+	
+	ai_weight = {
+		factor = 1000
+	}
+}

@@ -1,0 +1,108 @@
+@cost = 56
+
+tr_individualism_adopt = {
+	cost = { unity = @cost }
+	possible = {
+		NOT = {
+			has_tradition = tr_collectivism_adopt
+		}
+	}		
+	
+	modifier = {
+		leader_influence_cost = -0.1
+	}
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			has_ethic = ethic_egalitarian
+		}
+		modifier = {
+			factor = 3
+			has_ethic = ethic_fanatic_egalitarian
+		}
+		modifier = {
+			factor = 2
+			has_ethic = ethic_xenophile
+		}
+		modifier = {
+			factor = 3
+			has_ethic = ethic_fanatic_xenophile
+		}		
+	}
+}
+
+tr_individualism_finish = {
+	modifier = {
+		country_resource_influence_add = 2
+		ascension_perks_add = 1
+	}
+}
+#Healthy Debate
+tr_individualism_1 = {
+	cost = { unity = @cost }
+
+	modifier = {
+		faction_influence_mult = 0.20
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+#Civil Society
+tr_individualism_2 = {
+	cost = { unity = @cost }
+	possible = {
+		has_tradition = tr_individualism_1
+	}
+	
+	modifier = {
+		country_government_civic_points_add = 1
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+#Diversity
+tr_individualism_3 = {
+	cost = { unity = @cost }
+	modifier = {
+		pop_other_species_happiness = 0.05
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+#Freedom of Movement
+tr_individualism_4 = {
+	cost = { unity = @cost }
+	possible = {
+		has_tradition = tr_individualism_3
+	}
+	modifier = {
+		pop_migration_speed = 0.4
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+#Work Ethic
+tr_individualism_5 = {
+	cost = { unity = @cost }
+	possible = {
+		has_tradition = tr_individualism_3
+	}
+	
+	modifier = {
+		pop_eff_wo_slaves = 0.05
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}

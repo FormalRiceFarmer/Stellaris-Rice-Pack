@@ -1,0 +1,105 @@
+@cost = 56
+
+tr_spacecraft_adopt = {
+	cost = { unity = @cost }
+	modifier = {
+		spaceport_ship_build_cost_mult = -0.05
+	}
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			has_ethic = ethic_materialist
+		}
+		modifier = {
+			factor = 3
+			has_ethic = ethic_fanatic_materialist
+		}
+		modifier = {
+			factor = 3
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 3
+			has_ethic = ethic_fanatic_militarist
+		}		
+	}
+}
+
+tr_spacecraft_finish = {
+	modifier = {
+		mod_megastructure_build_cost_mult = -0.25
+		ascension_perks_add = 1
+	}
+}
+
+#Orbital Listening Posts
+tr_spacecraft_1 = {
+	cost = { unity = @cost }
+
+	modifier = {
+		planet_sensor_range_mult = 0.15
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+#Automated Emergency Protocols
+tr_spacecraft_2 = {
+	cost = { unity = @cost }
+	possible = {
+		has_tradition = tr_spacecraft_1
+	}	
+	modifier = {
+		ship_emergency_ftl_mult = -0.30
+	}
+		
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+#Space Construction Corps
+tr_spacecraft_3 = {
+	cost = { unity = @cost }
+	modifier = {
+		shipsize_orbital_station_build_cost_mult = -0.2
+		shipclass_military_station_build_cost_mult = -0.15		
+	}	
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+#Deep space Strength
+tr_spacecraft_4 = {
+	cost = { unity = @cost }
+	possible = {
+		has_tradition = tr_spacecraft_3
+	}
+	modifier = {
+		shipclass_military_station_hit_points_mult = 0.25
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+# Deep Space Firepower
+tr_spacecraft_5 = {
+	cost = { unity = @cost }
+	possible = {
+		has_tradition = tr_spacecraft_4
+	}	
+	modifier = {
+		shipclass_military_station_damage_mult = 0.4
+	}
+	
+	ai_weight = {
+		factor = 1000
+	}
+}

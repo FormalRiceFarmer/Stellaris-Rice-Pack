@@ -1,0 +1,44 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_adopted_tradition_category_bg_neutrality"
+		textureFile = "gfx/interface/traditions/adopted_tradition_category_bg_neutrality.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_tradition_hex_bg_neutrality"
+		textureFile = "gfx/interface/traditions/tradition_hex_bg_neutrality.dds"
+	}
+	
+	corneredTileSpriteType = {
+		name = "GFX_tradition_category_tile_neutrality"
+		textureFile = "gfx/interface/tiles/tradition_category_tile_neutrality.dds"
+		borderSize = { x=140 y=140 }
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+
+	spriteType = {
+		name = "GFX_tr_neutrality_1"
+		textureFile = "gfx/interface/icons/traditions/tradition_neutrality_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_neutrality_2"
+		textureFile = "gfx/interface/icons/traditions/tradition_neutrality_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_neutrality_3"
+		textureFile = "gfx/interface/icons/traditions/tradition_neutrality_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_neutrality_4"
+		textureFile = "gfx/interface/icons/traditions/tradition_neutrality_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tr_neutrality_5"
+		textureFile = "gfx/interface/icons/traditions/tradition_neutrality_5.dds"
+	}
+}
