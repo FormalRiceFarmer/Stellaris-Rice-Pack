@@ -1,4 +1,0 @@
-NSpecies = {
-MAX_TRAIT_POINTS = 10
-MAX_TRAITS = 99
-}
