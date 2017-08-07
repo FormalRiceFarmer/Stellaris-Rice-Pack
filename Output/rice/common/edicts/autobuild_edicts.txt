@@ -1,0 +1,335 @@
+country_edict = {
+	name = no_sector
+	modifier = {
+		country_core_sector_system_cap = 900
+		pop_government_ethic_attraction = -0.1
+	}
+
+	effect = {
+		if = {
+			limit = {
+				is_ai = no
+			}
+			log = "[This.GetName] activated no sectors edict"
+		}
+	}
+
+	influence_cost = 0
+
+	potential = {
+		nand = {
+			is_ai = no
+			has_global_flag = autobuild_disable_edict
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			not = {
+				has_global_flag = autobuild_ai_allowed
+			}
+		}
+	}
+}
+
+# planet edicts
+planet_edict = {
+	name = autobuild_free_auto_update
+	influence_cost = 0
+	length = 0
+	potential = {
+		NOT = { has_modifier = free_from_auto_update }
+		NOT = { has_global_flag = hide_autobuild_planetary_edicts }
+	}
+	allow = { }
+
+	effect = {
+	#	custom_tooltip = edict_free_from_auto_update.tooltip
+		hidden_effect = {
+			add_modifier = {
+				modifier = free_from_auto_update
+				days = -1
+			}
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+planet_edict = {
+	name = autobuild_free_autobuild
+	influence_cost = 0
+	length = 0
+	potential = {
+		NOT = { has_modifier = free_from_autobuild }
+		NOT = { has_global_flag  = hide_autobuild_planetary_edicts }
+	}
+	allow = { }
+
+	effect = {
+	#	custom_tooltip = edict_free_from_autobuild.tooltip
+		hidden_effect = {
+			add_modifier = {
+				modifier = free_from_autobuild
+				days = -1
+			}
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+planet_edict = {
+	name = autobuild_clear_planetary_edicts
+	influence_cost = 0
+	length = 0
+	potential = {
+		OR = {
+			has_modifier = free_from_autobuild
+			has_modifier = free_from_auto_update
+			has_modifier = planet_labs_autobuild
+			has_modifier = planet_forge_autobuild
+			has_modifier = planet_power_plant_autobuild
+			has_modifier = planet_farms_autobuild
+			has_modifier = autobuild_planet_labs_physics
+			has_modifier = autobuild_planet_labs_engineering
+			has_modifier = autobuild_planet_labs_bio
+		}
+		NOT = { has_global_flag  = hide_autobuild_planetary_edicts }
+	}
+	effect = {
+		hidden_effect = {
+			remove_modifier = free_from_auto_update
+			remove_modifier = free_from_autobuild
+			remove_modifier = planet_labs_autobuild
+			remove_modifier = planet_forge_autobuild
+			remove_modifier = planet_power_plant_autobuild
+			remove_modifier = planet_farms_autobuild
+			remove_modifier = autobuild_planet_labs_physics
+			remove_modifier = autobuild_planet_labs_engineering
+			remove_modifier = autobuild_planet_labs_bio
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+planet_edict = {
+	name = autobuild_hide_planetary_edicts
+	influence_cost = 0
+	length = 0
+	potential = {}
+
+	effect = {
+		if = {
+			limit = {
+				has_global_flag  = hide_autobuild_planetary_edicts
+			}
+			remove_global_flag  = hide_autobuild_planetary_edicts
+			else = {
+				set_global_flag = hide_autobuild_planetary_edicts
+			}
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+planet_edict = {
+	name = autobuild_planet_forge
+	influence_cost = 0
+	length = 0
+	potential = {
+		autobuild_trigger_planet_energy = no
+		autobuild_trigger_planet_minerals = no
+		autobuild_trigger_planet_food = no
+		autobuild_trigger_planet_science = no
+		NOT = { has_global_flag  = hide_autobuild_planetary_edicts }
+	}
+	allow = { }
+
+	effect = {
+		hidden_effect = {
+			remove_modifier = free_from_auto_update
+			remove_modifier = free_from_autobuild
+			remove_modifier = planet_labs_autobuild
+			remove_modifier = planet_power_plant_autobuild
+			remove_modifier = planet_farms_autobuild
+			add_modifier = {
+				modifier = planet_forge_autobuild
+				days = -1
+			}
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+planet_edict = {
+	name = autobuild_planet_power_plant
+	influence_cost = 0
+	length = 0
+	potential = {
+		autobuild_trigger_planet_energy = no
+		autobuild_trigger_planet_minerals = no
+		autobuild_trigger_planet_food = no
+		autobuild_trigger_planet_science = no
+		NOT = { has_global_flag  = hide_autobuild_planetary_edicts }
+	}
+	allow = { }
+
+	effect = {
+		hidden_effect = {
+			remove_modifier = free_from_auto_update
+			remove_modifier = free_from_autobuild
+			remove_modifier = planet_labs_autobuild
+			remove_modifier = planet_forge_autobuild
+			remove_modifier = planet_farms_autobuild
+			add_modifier = {
+				modifier = planet_power_plant_autobuild
+				days = -1
+			}
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+planet_edict = {
+	name = autobuild_planet_labs
+	influence_cost = 0
+	length = 0
+	potential = {
+		autobuild_trigger_planet_energy = no
+		autobuild_trigger_planet_minerals = no
+		autobuild_trigger_planet_food = no
+		autobuild_trigger_planet_science = no
+		NOT = { has_global_flag  = hide_autobuild_planetary_edicts }
+	}
+	allow = { }
+
+	effect = {
+		hidden_effect = {
+			remove_modifier = free_from_auto_update
+			remove_modifier = free_from_autobuild
+			remove_modifier = planet_forge_autobuild
+			remove_modifier = planet_power_plant_autobuild
+			remove_modifier = planet_farms_autobuild
+			add_modifier = {
+				modifier = planet_labs_autobuild
+				days = -1
+			}
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+planet_edict = {
+	name = autobuild_planet_labs_physics
+	influence_cost = 0
+	length = 0
+	potential = {
+		autobuild_trigger_planet_science = yes
+		NOT = { has_global_flag  = hide_autobuild_planetary_edicts }
+	}
+	allow = { }
+
+	effect = {
+		hidden_effect = {
+			add_modifier = {
+				modifier = autobuild_planet_labs_physics
+				days = -1
+			}
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+planet_edict = {
+	name = autobuild_planet_labs_bio
+	influence_cost = 0
+	length = 0
+	potential = {
+		autobuild_trigger_planet_science = yes
+		NOT = { has_global_flag  = hide_autobuild_planetary_edicts }
+	}
+	allow = { }
+
+	effect = {
+		hidden_effect = {
+			add_modifier = {
+				modifier = autobuild_planet_labs_bio
+				days = -1
+			}
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+planet_edict = {
+	name = autobuild_planet_labs_engineering
+	influence_cost = 0
+	length = 0
+	potential = {
+		autobuild_trigger_planet_science = yes
+		NOT = { has_global_flag  = hide_autobuild_planetary_edicts }
+	}
+	allow = { }
+
+	effect = {
+		hidden_effect = {
+			add_modifier = {
+				modifier = autobuild_planet_labs_engineering
+				days = -1
+			}
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+
+planet_edict = {
+	name = autobuild_planet_farms
+	influence_cost = 0
+	length = 0
+	potential = {
+		autobuild_trigger_planet_energy = no
+		autobuild_trigger_planet_minerals = no
+		autobuild_trigger_planet_food = no
+		autobuild_trigger_planet_science = no
+		NOT = { has_global_flag  = hide_autobuild_planetary_edicts }
+	}
+	allow = { }
+
+	effect = {
+		hidden_effect = {
+			remove_modifier = free_from_auto_update
+			remove_modifier = free_from_autobuild
+			remove_modifier = planet_labs_autobuild
+			remove_modifier = planet_power_plant_autobuild
+			remove_modifier = planet_farms_autobuild
+			add_modifier = {
+				modifier = planet_farms_autobuild
+				days = -1
+			}
+		}
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
