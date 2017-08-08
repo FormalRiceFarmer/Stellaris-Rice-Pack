@@ -184,6 +184,7 @@ battleship = {
 
 	class = shipclass_military
 	required_component_set = "ftl_components"
+	required_component_set = "ai_behaviour"  #adds ai module for behaviour
 	required_component_set = "combat_computers"
 	required_component_set = "ai_behaviour"
 	required_component_set = "thruster_components"
