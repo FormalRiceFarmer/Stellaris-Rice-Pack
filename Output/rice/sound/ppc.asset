@@ -1,0 +1,7 @@
+## PPC ##
+sound =
+{
+	name = "ppc_fire"
+	file = "weapons/ppc_fire.wav"
+	volume = 0.8
+}

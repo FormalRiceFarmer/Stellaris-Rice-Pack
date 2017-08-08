@@ -1,0 +1,221 @@
+
+@exd_bloom_factor = 4
+@exd_dissolve_h = 0.75
+
+###################################################################################
+###																				###
+###									COMBAT SHIPS								###
+###																				###
+###################################################################################
+
+entity = {
+	name = "extra_dimensional_01_tfw_ed_hound_ship_entity"
+	pdxmesh = "tfw_ed_hound_mesh"
+	locator = { name = "part1" }
+	scale = 0.5
+	
+	default_state = "idle"
+	state = { name = "idle"		state_time = 5
+		event = { time = 0 particle = "extra_dimensional_small_def_ship_effect"	keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_medium_01" particle = "extradimensional_01_def_exhaust_idle"	keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_medium_02" particle = "extradimensional_01_def_exhaust_idle"	keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_01" particle = "extradimensional_01_def_exhaust_idle"	keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_02" particle = "extradimensional_01_def_exhaust_idle"	keep_particle = yes trigger_once = yes }
+		start_event = { trigger_once = yes sound = { soundeffect = "ex_corvette_hum" } }
+	}
+	state = { name = "moving"		state_time = 5
+		event = { time = 0 particle = "extra_dimensional_small_def_ship_effect"	keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_medium_01" particle = "extradimensional_01_def_exhaust_moving"	keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_medium_02" particle = "extradimensional_01_def_exhaust_moving"	keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_01" particle = "extradimensional_01_def_exhaust_moving"	keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_02" particle = "extradimensional_01_def_exhaust_moving"	keep_particle = yes trigger_once = yes }
+	}
+	
+	state = { name = "death"		state_time = 5 
+		event = { time = 0 particle = "ed_purple_medium_dissolve_effect"	keep_particle = yes trigger_once = yes }
+	}
+	
+	locator = { name = "large_gun_01" position = { 0 0 0 } }
+	locator = { name = "large_gun_02" position = { 0 0 0 } }
+	locator = { name = "large_gun_03" position = { 0 0 0 } }
+	
+	locator = { name = "large_gun_01_l" position = { 0 0 0 } }
+	locator = { name = "large_gun_01_r" position = { 0 0 0 } }		
+	locator = { name = "large_gun_02_l" position = { 0 0 0 } }
+	locator = { name = "large_gun_02_r" position = { 0 0 0 } }	
+	locator = { name = "large_gun_03_l" position = { 0 0 0 } }
+	locator = { name = "large_gun_03_r" position = { 0 0 0 } }
+	
+		game_data = {
+			uv_animation_speed 		= 0.2
+			uv_animation_direction 	= { 0.0 0.02 }
+			bloom_factor = @exd_bloom_factor
+		}
+}
+
+entity = {
+		name = "extra_dimensional_01_tfw_ed_hunter_ship_entity"
+		pdxmesh = "tfw_ed_hunter_mesh"
+		locator = { name = "part1" }
+		scale = 1.0
+		
+	default_state = "idle"
+	state = { name = "idle"		state_time = 5
+		event = { time = 0 node = "ship_effect" particle = "extra_dimensional_small_def_ship_effect"	keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_01" particle = "extradimensional_01_def_exhaust_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_02" particle = "extradimensional_01_def_exhaust_idle" keep_particle = yes trigger_once = yes }
+		start_event = { trigger_once = yes sound = { soundeffect = "ex_corvette_hum" } }
+	}
+	state = { name = "moving"		state_time = 5
+		event = { time = 0 node = "ship_effect" particle = "extra_dimensional_small_def_ship_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_01" particle = "extradimensional_01_def_exhaust_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_02" particle = "extradimensional_01_def_exhaust_moving" keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "death"		state_time = 5 
+		event = { time = 0 particle = "ed_purple_medium_dissolve_effect"	keep_particle = yes trigger_once = yes }
+	}
+	
+		
+	locator = { name = "large_gun_01" position = { 0 0 0 } }
+	locator = { name = "large_gun_02" position = { 0 0 0 } }
+	locator = { name = "large_gun_03" position = { 0 0 0 } }
+	
+	locator = { name = "large_gun_01_l" position = { 0 0 0 } }
+	locator = { name = "large_gun_01_r" position = { 0 0 0 } }		
+	locator = { name = "large_gun_02_l" position = { 0 0 0 } }
+	locator = { name = "large_gun_02_r" position = { 0 0 0 } }	
+	locator = { name = "large_gun_03_l" position = { 0 0 0 } }
+	locator = { name = "large_gun_03_r" position = { 0 0 0 } }
+	
+		game_data = {
+			uv_animation_speed 		= 0.2
+			uv_animation_direction 	= { 0.0 0.02 }
+			bloom_factor = @exd_bloom_factor
+		}
+}
+
+###################################################################################
+###																				###
+###									STATIONS									###
+###																				###
+###################################################################################
+# MILITARY
+
+entity = {
+	name = "extra_dimensional_01_tfw_ed_watcher_entity"
+	pdxmesh = "tfw_ed_watcher_mesh"	
+	locator = { name = "part1" 	position = { 0 0 0 } }
+	locator = { name = "root" 	position = { 0 0 0 } }
+	locator = { name = "death_locator" 	position = { 0 0 0 } rotation = { 45 0 0 } }
+	
+	locator = { name = "medium_gun_01" position = { 0 0 0 } }
+	locator = { name = "medium_gun_02" position = { 0 0 0 } }
+	locator = { name = "small_gun_01" position = { 0 0 0 } }
+	locator = { name = "small_gun_02" position = { 0 0 0 } }
+	locator = { name = "small_gun_03" position = { 0 0 0 } }
+	locator = { name = "small_gun_04" position = { 0 0 0 } }
+	scale = 1.0
+
+	default_state = "idle"
+	state = { name = "idle"		state_time = 5
+		event = { time = 0 particle = "extra_dimensional_large_def_station_effect"	keep_particle = yes trigger_once = yes }
+		start_event = { trigger_once = yes sound = { soundeffect = "ex_mining_station_signals" } }
+		}
+	state = { name = "moving"		state_time = 5
+		event = { time = 0 particle = "extra_dimensional_large_def_station_effect"	keep_particle = yes trigger_once = yes }
+	}
+	
+	state = { name = "death"		state_time = 5		looping = no
+		event = { time = 0 node = "death_locator" particle = "ed_purple_large_dissolve_effect"	keep_particle = yes trigger_once = yes }
+	}	
+	
+	game_data = {
+		uv_animation_speed 		= 0.2
+		uv_animation_direction 	= { 0.0 0.09 }
+		bloom_factor = @exd_bloom_factor
+	}
+}
+
+entity = {
+	name = "extra_dimensional_01_tfw_ed_keeper_entity"
+	pdxmesh = "tfw_ed_keeper_mesh"	
+	locator = { name = "part1" 	position = { 0 0 0 } }
+	locator = { name = "root" 	position = { 0 0 0 } }
+	locator = { name = "death_locator" 	position = { 0 -2 0 } rotation = { 35 0 0 } }
+	scale = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle"		state_time = 5
+		event = { time = 0 particle = "extra_dimensional_small_def_station_effect"	keep_particle = yes trigger_once = yes }
+		start_event = { trigger_once = yes sound = { soundeffect = "ex_mining_station_signals" } }
+		}
+	state = { name = "moving"		state_time = 5            
+		event = { time = 0 particle = "extra_dimensional_small_def_station_effect"	keep_particle = yes trigger_once = yes }
+	}
+	state = { name = "death"		state_time = 5            
+		event = { time = 0 node = "death_locator" particle = "ed_purple_medium_dissolve_effect"	keep_particle = yes trigger_once = yes }
+	}	
+	
+	game_data = {
+		uv_animation_speed 		= 0.2
+		uv_animation_direction 	= { 0.0 0.02 }
+		bloom_factor = @exd_bloom_factor
+	}
+}
+
+entity = {
+	name = "extra_dimensional_01_tfw_ed_overseer_entity"
+	pdxmesh = "tfw_ed_overseer_mesh"	
+	locator = { name = "part1" 	position = { 0 0 0 } }
+	locator = { name = "root" 	position = { 0 0 0 } }
+	locator = { name = "death_locator" 	position = { 0 -2 0 } rotation = { 35 0 0 } }
+	scale = 1.0
+	
+	default_state = "idle"
+	state = { name = "idle"		state_time = 5
+		event = { time = 0 particle = "extra_dimensional_small_def_station_effect"	keep_particle = yes trigger_once = yes }
+		start_event = { trigger_once = yes sound = { soundeffect = "ex_mining_station_signals" } }
+		}
+	state = { name = "moving"		state_time = 5            
+		event = { time = 0 particle = "extra_dimensional_small_def_station_effect"	keep_particle = yes trigger_once = yes }
+	}
+	state = { name = "death"		state_time = 5            
+		event = { time = 0 node = "death_locator" particle = "ed_purple_medium_dissolve_effect"	keep_particle = yes trigger_once = yes }
+	}	
+	
+	game_data = {
+		uv_animation_speed 		= 0.2
+		uv_animation_direction 	= { 0.0 0.02 }
+		bloom_factor = @exd_bloom_factor
+	}
+}
+
+### SPECIAL
+
+# Dimensional Portal
+entity = {
+	name = "extra_dimensional_01_tfw_dimensional_portal_ed_entity"
+	pdxmesh = "tfw_portal_mesh"
+	
+	locator = { name = "part1" 	position = { 0 0 0 } }
+	
+	default_state = idle
+	state = { name = "idle"		animation = "idle"		animation_blend_time = 0.3
+		start_event = { trigger_once = yes sound = { soundeffect = "ex_dimensional_portal_idle" } }
+	
+		event = { time = 0 node = "root2" particle = "portal_inner_effect_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "clock_12_locator" particle = "portal_effect_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "ex_dimensional_portal_thunder" } }
+		event = { time = 0 node = "clock_3_locator" particle = "portal_effect_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "ex_dimensional_portal_thunder" } }
+		event = { time = 0 node = "clock_6_locator" particle = "portal_effect_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "ex_dimensional_portal_thunder" } }
+		event = { time = 0 node = "clock_9_locator" particle = "portal_effect_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "ex_dimensional_portal_thunder" } }
+	}
+	
+	game_data = {
+		uv_animation_speed 		= 0.25
+	#	uv_animation_direction 	= { 0.0 -1.0 }
+	}
+	
+	scale = 20.0
+}
+

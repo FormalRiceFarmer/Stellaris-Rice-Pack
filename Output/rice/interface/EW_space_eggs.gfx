@@ -1,0 +1,56 @@
+spriteTypes{
+	spriteType = {
+		name = "GFX_EW_ship_part_amoeba_shark_1"
+		texturefile = "gfx/interface/icons/ship_parts/EW_ship_part_amoeba_shark_strike_craft_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_EW_ship_part_amoeba_shark_2"
+		texturefile = "gfx/interface/icons/ship_parts/EW_ship_part_amoeba_shark_strike_craft_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_EW_ship_part_amoeba_shark_3"
+		texturefile = "gfx/interface/icons/ship_parts/EW_ship_part_amoeba_shark_strike_craft_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_EW_ship_part_amoeba_shark_4"
+		texturefile = "gfx/interface/icons/ship_parts/EW_ship_part_amoeba_shark_strike_craft_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_EW_ship_part_amoeba_shark_5"
+		texturefile = "gfx/interface/icons/ship_parts/EW_ship_part_amoeba_shark_strike_craft_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_EW_ship_part_amoeba_shark_6"
+		texturefile = "gfx/interface/icons/ship_parts/EW_ship_part_amoeba_shark_strike_craft_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_EW_ship_part_amoeba_egg_2"
+		texturefile = "gfx/interface/icons/ship_parts/EW_ship_part_amoeba_egg_strike_craft_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_EW_ship_part_amoeba_egg_3"
+		texturefile = "gfx/interface/icons/ship_parts/EW_ship_part_amoeba_egg_strike_craft_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_EW_ship_part_amoeba_egg_4"
+		texturefile = "gfx/interface/icons/ship_parts/EW_ship_part_amoeba_egg_strike_craft_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_EW_ship_part_amoeba_egg_5"
+		texturefile = "gfx/interface/icons/ship_parts/EW_ship_part_amoeba_egg_strike_craft_5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_EW_ship_part_amoeba_egg_6"
+		texturefile = "gfx/interface/icons/ship_parts/EW_ship_part_amoeba_egg_strike_craft_6.dds"
+	}
+}

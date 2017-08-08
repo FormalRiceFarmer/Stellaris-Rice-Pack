@@ -1,0 +1,57 @@
+objectTypes = {
+
+	pdxmesh = {
+		name = "space_amoeba_shark_mesh_2"
+		file = "gfx/models/ships/other/EW_space_amoeba_shark_2.mesh"
+		
+		animation = { id = "idle"			type = "space_amoeba_idle_animation" }
+		animation = { id = "moving"			type = "space_amoeba_moving_animation" }
+		animation = { id = "death"			type = "space_amoeba_death_animation" }
+		
+		scale = 1.0
+	}
+	
+	pdxmesh = {
+		name = "space_amoeba_shark_mesh_3"
+		file = "gfx/models/ships/other/EW_space_amoeba_shark_3.mesh"
+		
+		animation = { id = "idle"			type = "space_amoeba_idle_animation" }
+		animation = { id = "moving"			type = "space_amoeba_moving_animation" }
+		animation = { id = "death"			type = "space_amoeba_death_animation" }
+		
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "space_amoeba_shark_mesh_4"
+		file = "gfx/models/ships/other/EW_space_amoeba_shark_4.mesh"
+		
+		animation = { id = "idle"			type = "space_amoeba_idle_animation" }
+		animation = { id = "moving"			type = "space_amoeba_moving_animation" }
+		animation = { id = "death"			type = "space_amoeba_death_animation" }
+		
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "space_amoeba_shark_mesh_5"
+		file = "gfx/models/ships/other/EW_space_amoeba_shark_5.mesh"
+		
+		animation = { id = "idle"			type = "space_amoeba_idle_animation" }
+		animation = { id = "moving"			type = "space_amoeba_moving_animation" }
+		animation = { id = "death"			type = "space_amoeba_death_animation" }
+		
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "space_amoeba_shark_mesh_6"
+		file = "gfx/models/ships/other/EW_space_amoeba_shark_6.mesh"
+		
+		animation = { id = "idle"			type = "space_amoeba_idle_animation" }
+		animation = { id = "moving"			type = "space_amoeba_moving_animation" }
+		animation = { id = "death"			type = "space_amoeba_death_animation" }
+		
+		scale = 1.0
+	}
+}

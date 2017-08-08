@@ -1,0 +1,132 @@
+# CoFH - Stellar Expansion - Genetics
+# Technologies
+# Author: King Lemming
+
+################################################################################
+# Tier Variables
+################################################################################
+
+@repeatableTechBaseCost = 3000
+@repeatableTechLevelCost = 1000
+
+@repeatableTechWeight = 25
+@repeatableTechFactor = 0.5
+
+################################################################################
+# Genetics
+################################################################################
+
+# Gene Drive Architecting
+tech_cofh_se_repeatable_increased_trait_points = {
+	icon = "tech_cofh_se_repeatable_increased_trait_points"
+	area = society
+	cost = @repeatableTechBaseCost
+	cost_per_level = @repeatableTechLevelCost
+	tier = 3
+	category = { biology }
+	levels = 5
+	prerequisites = { "tech_gene_expressions" }
+	weight = @repeatableTechWeight
+
+	modifier = {
+		trait_points = 1
+	}
+
+	weight_modifier = {
+		factor = @repeatableTechFactor
+
+		modifier = {
+			factor = 0.5
+			NOT = {
+				research_leader = {
+					area = society
+					has_trait = "leader_trait_expertise_biology"
+				}
+			}
+		}
+		modifier = {
+			factor = 5
+			has_ascension_perk = ap_engineered_evolution
+		}
+		modifier = {
+			factor = 5
+			has_ascension_perk = ap_evolutionary_mastery
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 2.5
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_biology"
+			}
+		}
+	}
+
+	weight_groups = {
+		repeatable
+	}
+
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+}
+
+# Biophysical Process Optimization
+tech_cofh_se_repeatable_reduced_modification_cost = {
+	icon = "tech_cofh_se_repeatable_reduced_modification_cost"
+	area = society
+	cost = @repeatableTechBaseCost
+	cost_per_level = @repeatableTechLevelCost
+	tier = 3
+	category = { biology }
+	levels = 5
+	prerequisites = { "tech_gene_expressions" }
+	weight = @repeatableTechWeight
+
+	modifier = {
+		country_society_tech_research_speed = 0.03
+		modify_species_cost_mult = -0.03
+	}
+
+	weight_modifier = {
+		factor = @repeatableTechFactor
+
+		modifier = {
+			factor = 0.5
+			NOT = {
+				research_leader = {
+					area = society
+					has_trait = "leader_trait_expertise_biology"
+				}
+			}
+		}
+		modifier = {
+			factor = 5
+			has_ascension_perk = ap_engineered_evolution
+		}
+		modifier = {
+			factor = 5
+			has_ascension_perk = ap_evolutionary_mastery
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 2.5
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_biology"
+			}
+		}
+	}
+
+	weight_groups = {
+		repeatable
+	}
+
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+}

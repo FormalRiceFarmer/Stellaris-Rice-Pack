@@ -1,0 +1,27 @@
+component_set = {
+	key = "ENERGY_LANCE_3"
+	
+	icon = "GFX_ship_part_energy_lance_3"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ENERGY_LANCE_4"
+	
+	icon = "GFX_ship_part_energy_lance_4"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ENERGY_LANCE_5"
+	
+	icon = "GFX_ship_part_energy_lance_5"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "ENERGY_LANCE_6"
+	
+	icon = "GFX_ship_part_energy_lance_6"
+	icon_frame = 1	
+}

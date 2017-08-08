@@ -1,0 +1,101 @@
+weapon_component_template = {
+	type = instant
+	
+	key = "LARGE_MASS_ACCELERATOR_3"
+	size = extra_large
+	entity = "invisible_turret_entity"
+	
+	icon = "GFX_ship_part_mass_accelerator_3"
+	icon_frame = 1
+
+	damage = { min = 141 max = 370 }
+	windup = { min = 2 max = 25 }
+
+	firing_arc = 25.0
+	min_range = 10.0
+	static_rotation = yes
+	use_ship_kill_target = no
+	
+	total_fire_time = 65
+	range = 135.0
+	accuracy = 0.9
+	tracking = 0.3
+	armor_penetration = 0.6
+	shield_damage = 1.4
+	power = -140
+	cost = 140
+	
+	prerequisites = { "EW_tech_mass_accelerator_3" }
+	component_set = "MASS_ACCELERATOR_3"
+	projectile_gfx = "adv_kinetic_artillery"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_long_range }
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "LARGE_MASS_ACCELERATOR_4"
+	size = extra_large
+	entity = "invisible_turret_entity"
+	
+	icon = "GFX_ship_part_mass_accelerator_4"
+	icon_frame = 1
+
+	damage = { min = 171 max = 400 }
+	windup = { min = 2 max = 25 }
+	
+	firing_arc = 25.0
+	min_range = 10.0
+	static_rotation = yes
+	use_ship_kill_target = no
+	
+	total_fire_time = 65
+	range = 150.0
+	accuracy = 1.0
+	tracking = 0.4
+	armor_penetration = 0.7
+	shield_damage = 1.5
+	power = -160
+	cost = 160
+	
+	prerequisites = { "EW_tech_mass_accelerator_4" }
+	component_set = "MASS_ACCELERATOR_4"
+	projectile_gfx = "adv_kinetic_artillery"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_long_range }
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "LARGE_MASS_ACCELERATOR_5"
+	size = extra_large
+	entity = "invisible_turret_entity"
+	
+	icon = "GFX_ship_part_mass_accelerator_5"
+	icon_frame = 1
+
+	damage = { min = 211 max = 440 }
+	windup = { min = 2 max = 25 }
+	
+	firing_arc = 25.0
+	min_range = 10.0
+	static_rotation = yes
+	use_ship_kill_target = no
+	
+	total_fire_time = 65
+	range = 165.0
+	accuracy = 1.0
+	tracking = 0.6
+	armor_penetration = 0.8
+	shield_damage = 1.6
+	power = -180
+	cost = 180
+	
+	prerequisites = { "EW_tech_mass_accelerator_5" }
+	component_set = "MASS_ACCELERATOR_5"
+	projectile_gfx = "adv_kinetic_artillery"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_long_range }
+}

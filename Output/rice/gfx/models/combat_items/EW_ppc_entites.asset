@@ -1,0 +1,87 @@
+entity = {
+	name = "ppc_small_entity"
+	cull_radius = 1.0
+	
+	default_state = "attack"
+	state = { name = "attack"
+		event = { time = 0 particle = "small_ppc_idle_particle" keep_particle = yes }
+		event = { time = 0 particle = "small_plasma_accelerator_idle_drops_particle" keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "ppc_medium_entity"
+	cull_radius = 1.0
+	
+	default_state = "attack"
+	state = { name = "attack"
+		event = { time = 0 particle = "medium_ppc_idle_particle" keep_particle = yes }
+		event = { time = 0 particle = "medium_plasma_accelerator_idle_drops_particle" keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "ppc_large_entity"
+	cull_radius = 1.0
+	
+	default_state = "attack"
+	state = { name = "attack"
+		event = { time = 0 particle = "large_ppc_idle_particle" keep_particle = yes }
+		event = { time = 0 particle = "large_plasma_accelerator_idle_drops_particle" keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "ppc_xlarge_entity"
+	cull_radius = 1.0
+	
+	default_state = "attack"
+	state = { name = "attack"
+		event = { time = 0 particle = "xlarge_ppc_idle_particle" keep_particle = yes }
+		event = { time = 0 particle = "large_plasma_accelerator_idle_drops_particle" keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "adv_ppc_small_entity"
+	cull_radius = 1.0
+	
+	default_state = "attack"
+	state = { name = "attack"
+		event = { time = 0 particle = "small_adv_ppc_idle_particle" keep_particle = yes }
+		event = { time = 0 particle = "small_plasma_accelerator_idle_drops_particle" keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "adv_ppc_medium_entity"
+	cull_radius = 1.0
+	
+	default_state = "attack"
+	state = { name = "attack"
+		event = { time = 0 particle = "medium_adv_ppc_idle_particle" keep_particle = yes }
+		event = { time = 0 particle = "medium_plasma_accelerator_idle_drops_particle" keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "adv_ppc_large_entity"
+	cull_radius = 1.0
+	
+	default_state = "attack"
+	state = { name = "attack"
+		event = { time = 0 particle = "large_adv_ppc_idle_particle" keep_particle = yes }
+		event = { time = 0 particle = "large_plasma_accelerator_idle_drops_particle" keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "adv_ppc_xlarge_entity"
+	cull_radius = 1.0
+	
+	default_state = "attack"
+	state = { name = "attack"
+		event = { time = 0 particle = "xlarge_adv_ppc_idle_particle" keep_particle = yes }
+		event = { time = 0 particle = "large_plasma_accelerator_idle_drops_particle" keep_particle = yes }
+	}
+}

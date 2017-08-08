@@ -1,0 +1,26 @@
+########2########
+weapon_component_template = {
+	key = "LARGE_ED_WEAPON_TFW_2"
+
+	size = large
+	entity = "large_kinetic_gun_entity"
+	damage = { min = 225.0 max = 515.0 }
+	windup = { min = 10.0 max = 25.0 }
+	total_fire_time = 80
+	range = 80.0
+	accuracy = 0.80
+	power = -180
+	cost = 220
+	shield_damage = 3.0
+	tracking = 0.05
+	
+	type = instant
+	icon = "GFX_tfw_ed_weapon_2"
+	icon_frame = 1
+	projectile_gfx = "tfw_ed_2"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_shield }
+	
+	component_set = "TFW_EXTRADIMENSIONAL_2"
+	prerequisites = { "tech_tfw_extradimensional_weapon_2" }
+}

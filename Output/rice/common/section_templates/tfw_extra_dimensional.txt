@@ -1,0 +1,325 @@
+# Extradimensional Watcher Station Section
+ship_section_template = {
+	key = "tfw_ed_watcher"
+	ship_size = tfw_ed_watcher
+	fits_on_slot = mid
+	entity = "extra_dimensional_01_tfw_ed_watcher_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	component_slot = {
+		name = "LARGE_GUN_01"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "root"
+	}	
+	component_slot = {
+		name = "LARGE_GUN_03"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "root"
+	}	
+	component_slot = {
+		name = "LARGE_GUN_05"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "root"
+	}	
+	component_slot = {
+		name = "LARGE_GUN_07"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_08"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "root"
+	}	
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "root"
+	}	
+	component_slot = {
+		name = "MEDIUM_GUN_03"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "root"
+	}	
+	component_slot = {
+		name = "MEDIUM_GUN_04"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "root"
+	}		
+	
+	large_utility_slots = 8
+	medium_utility_slots = 6
+	aux_utility_slots = 2
+}
+
+# Extradimensional Keeper Section
+ship_section_template = {
+	key = "tfw_ed_keeper"
+	ship_size = tfw_ed_keeper
+	fits_on_slot = mid
+	entity = "extra_dimensional_01_tfw_ed_keeper_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	component_slot = {
+		name = "LARGE_GUN_01"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "root"
+	}	
+	component_slot = {
+		name = "LARGE_GUN_03"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "root"
+	}	
+	component_slot = {
+		name = "LARGE_GUN_05"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "root"
+	}	
+	component_slot = {
+		name = "LARGE_GUN_07"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_08"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "root"
+	}	
+
+	large_utility_slots = 8
+	medium_utility_slots = 1
+	aux_utility_slots = 2
+}
+
+# Extradimensional Overseer Section
+ship_section_template = {
+	key = "tfw_ed_overseer"
+	ship_size = tfw_ed_overseer
+	fits_on_slot = mid
+	entity = "extra_dimensional_01_tfw_ed_overseer_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	component_slot = {
+		name = "LARGE_GUN_01"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "root"
+	}	
+	component_slot = {
+		name = "LARGE_GUN_03"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "root"
+	}	
+	component_slot = {
+		name = "LARGE_GUN_05"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "root"
+	}	
+	component_slot = {
+		name = "LARGE_GUN_07"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "root"
+	}
+	component_slot = {
+		name = "LARGE_GUN_08"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "root"
+	}	
+
+	large_utility_slots = 8
+	medium_utility_slots = 1
+	aux_utility_slots = 2
+}
+
+# Extradimensional Hunter
+ship_section_template = {
+	key = "tfw_ed_hunter"
+	ship_size = tfw_ed_hunter_ship
+	fits_on_slot = mid
+	entity = "extra_dimensional_01_tfw_ed_hunter_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	component_slot = {
+		name = "LARGE_GUN_01"
+		slot_size = large
+		slot_type = weapon
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		slot_size = medium
+		slot_type = weapon
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		slot_size = medium
+		slot_type = weapon
+		locatorname = "large_gun_01"
+	}	
+	component_slot = {
+		name = "MEDIUM_GUN_03"
+		slot_size = medium
+		slot_type = weapon
+		locatorname = "large_gun_01"
+	}		
+	component_slot = {
+		name = "MEDIUM_GUN_04"
+		slot_size = medium
+		slot_type = weapon
+		locatorname = "large_gun_01"
+	}	
+	component_slot = {
+		name = "MEDIUM_GUN_05"
+		slot_size = medium
+		slot_type = weapon
+		locatorname = "large_gun_01"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_06"
+		slot_size = medium
+		slot_type = weapon
+		locatorname = "large_gun_01"
+	}
+	large_utility_slots = 4
+	medium_utility_slots = 4
+	aux_utility_slots = 1
+}
+
+# Extradimensional Hound
+ship_section_template = {
+	key = "tfw_ed_hound"
+	ship_size = tfw_ed_hound_ship
+	fits_on_slot = mid
+	entity = "extra_dimensional_01_tfw_ed_hound_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	component_slot = {
+		name = "SMALL_GUN_01"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "large_gun_01"
+		is_side_slot = yes
+	}
+	component_slot = {
+		name = "SMALL_GUN_02"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "large_gun_01"
+		is_side_slot = yes
+	}
+	component_slot = {
+		name = "SMALL_GUN_03"
+		slot_size = small
+		slot_type = weapon
+		locatorname = "large_gun_01"
+		is_side_slot = yes
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		slot_size = medium
+		slot_type = weapon
+		locatorname = "large_gun_01"
+		is_side_slot = yes
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		slot_size = medium
+		slot_type = weapon
+		locatorname = "large_gun_01"
+		is_side_slot = yes
+	}
+	
+	medium_utility_slots = 4
+	small_utility_slots = 4
+	aux_utility_slots = 1
+}
+
+# Dimensional Portal
+ship_section_template = {
+	key = "tfw_ed_dimensional_portal_key"
+	ship_size = tfw_dimensional_portal_ed
+	fits_on_slot = mid
+	entity = "extra_dimensional_01_tfw_dimensional_portal_ed_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	medium_utility_slots = 1
+	aux_utility_slots = 2
+}

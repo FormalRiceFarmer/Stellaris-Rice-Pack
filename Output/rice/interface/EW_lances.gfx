@@ -1,0 +1,21 @@
+spriteTypes{
+	spriteType = {
+		name = "GFX_ship_part_energy_lance_3"
+		texturefile = "gfx/interface/icons/ship_parts/EW_ship_part_energy_lance_3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_energy_lance_4"
+		texturefile = "gfx/interface/icons/ship_parts/EW_ship_part_energy_lance_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_energy_lance_5"
+		texturefile = "gfx/interface/icons/ship_parts/EW_ship_part_energy_lance_5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_energy_lance_6"
+		texturefile = "gfx/interface/icons/ship_parts/EW_ship_part_energy_lance_6.dds"
+	}
+}

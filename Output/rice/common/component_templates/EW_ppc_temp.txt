@@ -1,0 +1,347 @@
+weapon_component_template = {
+	type = instant
+	
+	key = "SMALL_PPC_1"
+	size = small
+	entity = "small_laser_gun_entity"
+	min_range = 10.0
+	damage = { min = 35 max = 65 }
+	windup = { min = 20 max = 30 }
+	total_fire_time = 60
+	range = 70.0
+	accuracy = 1.0
+	tracking = 0.6
+	armor_penetration = 0.7
+	shield_damage = 1.3
+	power = -30
+	cost = 30
+	
+	icon = "GFX_ship_part_ppc_1"
+	icon_frame = 1
+
+	prerequisites = { "EW_tech_ppc_1" }
+	component_set = "PPC_1"
+	projectile_gfx = "ppc_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_long_range weapon_role_anti_armor weapon_role_anti_shield }
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "MEDIUM_PPC_1"
+	size = medium
+	entity = "medium_laser_gun_entity"
+	min_range = 20.0
+	damage = { min = 70 max = 130 }
+	windup = { min = 20 max = 30 }
+	total_fire_time = 60
+	range = 85.0
+	accuracy = 1.0
+	tracking = 0.5
+	armor_penetration = 0.8
+	shield_damage = 1.4
+	power = -60
+	cost = 60
+	
+	icon = "GFX_ship_part_ppc_1"
+	icon_frame = 1
+	
+	prerequisites = { "EW_tech_ppc_1" }
+	component_set = "PPC_1"
+	projectile_gfx = "ppc_m"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_long_range weapon_role_anti_armor weapon_role_anti_shield }	
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "LARGE_PPC_1"
+	size = large
+	entity = "large_laser_gun_entity"
+	min_range = 30.0
+	damage = { min = 140 max = 260 }
+	windup = { min = 20 max = 30 }
+	total_fire_time = 60
+	range = 100.0
+	accuracy = 1.0
+	tracking = 0.4
+	armor_penetration = 0.9
+	shield_damage = 1.5
+	power = -120
+	cost = 120
+	
+	icon = "GFX_ship_part_ppc_1"
+	icon_frame = 1
+	
+	prerequisites = { "EW_tech_ppc_1" }
+	component_set = "PPC_1"
+	projectile_gfx = "ppc_l"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_long_range weapon_role_anti_armor weapon_role_anti_shield }
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "XLARGE_PPC_1"
+	size = extra_large
+	entity = "invisible_turret_entity"
+
+	firing_arc = 25.0
+	min_range = 40.0
+	static_rotation = yes
+	use_ship_kill_target = no
+
+	damage = { min = 280 max = 520 }
+	windup = { min = 20 max = 30 }
+	total_fire_time = 70
+	range = 115.0
+	accuracy = 1.0
+	tracking = 0.3
+	armor_penetration = 1.0
+	shield_damage = 1.6
+	power = -220
+	cost = 220
+	
+	icon = "GFX_ship_part_ppc_1"
+	icon_frame = 1
+	
+	prerequisites = { "EW_tech_ppc_1" }
+	component_set = "PPC_1X"
+	projectile_gfx = "ppc_x"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_long_range weapon_role_anti_armor weapon_role_anti_shield }
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "SMALL_PPC_2"
+	size = small
+	entity = "small_laser_gun_entity"
+	min_range = 20.0
+	damage = { min = 40 max = 65 }
+	windup = { min = 20 max = 30 }
+	total_fire_time = 60
+	range = 90.0
+	accuracy = 1.0
+	tracking = 0.6
+	armor_penetration = 0.7
+	shield_damage = 1.3
+	power = -35
+	cost = 35
+	
+	icon = "GFX_ship_part_ppc_2"
+	icon_frame = 1
+
+	prerequisites = { "EW_tech_ppc_2" }
+	component_set = "PPC_2"
+	projectile_gfx = "ppc_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_long_range weapon_role_anti_armor weapon_role_anti_shield }
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "MEDIUM_PPC_2"
+	size = medium
+	entity = "medium_laser_gun_entity"
+	min_range = 35.0
+	damage = { min = 80 max = 130 }
+	windup = { min = 20 max = 30 }
+	total_fire_time = 60
+	range = 110.0
+	accuracy = 1.0
+	tracking = 0.5
+	armor_penetration = 0.8
+	shield_damage = 1.4
+	power = -70
+	cost = 70
+	
+	icon = "GFX_ship_part_ppc_2"
+	icon_frame = 1
+	
+	prerequisites = { "EW_tech_ppc_2" }
+	component_set = "PPC_2"
+	projectile_gfx = "ppc_m"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_long_range weapon_role_anti_armor weapon_role_anti_shield }	
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "LARGE_PPC_2"
+	size = large
+	entity = "large_laser_gun_entity"
+	min_range = 50.0
+	damage = { min = 160 max = 260 }
+	windup = { min = 20 max = 30 }
+	total_fire_time = 60
+	range = 130.0
+	accuracy = 1.0
+	tracking = 0.4
+	armor_penetration = 0.9
+	shield_damage = 1.5
+	power = -140
+	cost = 140
+	
+	icon = "GFX_ship_part_ppc_2"
+	icon_frame = 1
+	
+	prerequisites = { "EW_tech_ppc_2" }
+	component_set = "PPC_2"
+	projectile_gfx = "ppc_l"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_long_range weapon_role_anti_armor weapon_role_anti_shield }
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "XLARGE_PPC_2"
+	size = extra_large
+	entity = "invisible_turret_entity"
+
+	firing_arc = 25.0
+	min_range = 65.0
+	static_rotation = yes
+	use_ship_kill_target = no
+
+	damage = { min = 320 max = 520 }
+	windup = { min = 20 max = 30 }
+	total_fire_time = 70
+	range = 140.0
+	accuracy = 1.0
+	tracking = 0.3
+	armor_penetration = 1.0
+	shield_damage = 1.6
+	power = -240
+	cost = 240
+	
+	icon = "GFX_ship_part_ppc_2"
+	icon_frame = 1
+	
+	prerequisites = { "EW_tech_ppc_2" }
+	component_set = "PPC_2X"
+	projectile_gfx = "ppc_x"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_long_range weapon_role_anti_armor weapon_role_anti_shield }
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "SMALL_PPC_3"
+	size = small
+	entity = "small_laser_gun_entity"
+	damage = { min = 50 max = 70 }
+	windup = { min = 20 max = 30 }
+	total_fire_time = 60
+	range = 90.0
+	accuracy = 1.0
+	tracking = 0.6
+	armor_penetration = 1.0
+	shield_damage = 2
+	power = -40
+	cost = 40
+	
+	icon = "GFX_ship_part_ppc_3"
+	icon_frame = 1
+
+	prerequisites = { "EW_tech_ppc_3" }
+	component_set = "PPC_3"
+	projectile_gfx = "adv_ppc_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_long_range weapon_role_anti_armor weapon_role_anti_shield }
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "MEDIUM_PPC_3"
+	size = medium
+	entity = "medium_laser_gun_entity"
+	damage = { min = 100 max = 140 }
+	windup = { min = 20 max = 30 }
+	total_fire_time = 60
+	range = 110.0
+	accuracy = 1.0
+	tracking = 0.5
+	armor_penetration = 1.0
+	shield_damage = 2
+	power = -80
+	cost = 80
+	
+	icon = "GFX_ship_part_ppc_3"
+	icon_frame = 1
+	
+	prerequisites = { "EW_tech_ppc_3" }
+	component_set = "PPC_3"
+	projectile_gfx = "adv_ppc_m"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_long_range weapon_role_anti_armor weapon_role_anti_shield }	
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "LARGE_PPC_3"
+	size = large
+	entity = "large_laser_gun_entity"
+	damage = { min = 200 max = 280 }
+	windup = { min = 20 max = 30 }
+	total_fire_time = 60
+	range = 130.0
+	accuracy = 1.0
+	tracking = 0.4
+	armor_penetration = 1.0
+	shield_damage = 2
+	power = -160
+	cost = 160
+	
+	icon = "GFX_ship_part_ppc_3"
+	icon_frame = 1
+	
+	prerequisites = { "EW_tech_ppc_3" }
+	component_set = "PPC_3"
+	projectile_gfx = "adv_ppc_l"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_long_range weapon_role_anti_armor weapon_role_anti_shield }
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "XLARGE_PPC_3"
+	size = extra_large
+	entity = "invisible_turret_entity"
+
+	firing_arc = 25.0
+	min_range = 10.0
+	static_rotation = yes
+	use_ship_kill_target = no
+
+	damage = { min = 400 max = 560 }
+	windup = { min = 20 max = 30 }
+	total_fire_time = 70
+	range = 140.0
+	accuracy = 1.0
+	tracking = 0.3
+	armor_penetration = 1.0
+	shield_damage = 2
+	power = -260
+	cost = 260
+	
+	icon = "GFX_ship_part_ppc_3"
+	icon_frame = 1
+	
+	prerequisites = { "EW_tech_ppc_3" }
+	component_set = "PPC_3X"
+	projectile_gfx = "adv_ppc_x"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_long_range weapon_role_anti_armor weapon_role_anti_shield }
+}

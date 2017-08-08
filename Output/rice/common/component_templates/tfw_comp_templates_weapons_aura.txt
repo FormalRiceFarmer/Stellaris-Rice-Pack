@@ -1,0 +1,55 @@
+##################################JAMMER#################################
+utility_component_template = {
+	key = "TFW_JAMMER_LARGE"
+	icon = "GFX_tfw_jammer"
+	icon_frame = 1
+	size = aux
+	prerequisites = { "tech_tfw_active_cm" }
+	power = -120
+	cost = 120
+	
+	component_set = "TFW_JAMMER"
+	military_power = 10
+	
+	hostile_aura = {
+		name = "tfw_aura_jammer_large"
+		radius = 120
+		apply_on = ships
+		
+		stack_info = {			#A ship can only be affected by one aura of a certain id. If multiple auras have the same ID the one with the highest priority will be applied.
+			id = hostile_jammer_aura
+			priority = 25
+		}
+		
+		modifier = {
+			ship_fire_rate_mult = -0.1
+			ship_shield_regen_add_perc = -0.4
+			ship_combat_speed_mult = -0.8
+			ship_evasion_add = -10
+		}
+		
+		graphics = {
+#			area_effect = {
+#				entity = "circle_area_entity"	#removed visual effect
+#				dynamic_scale = yes
+#			}
+			ship_effect = {
+				entity = "tfw_negative_effect_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 20
+		modifier = {
+			factor = 2.0
+			OR = {
+				has_ethic = ethic_pacifist
+				has_ethic = ethic_fanatic_pacifist
+				has_ethic = ethic_xenophile
+				has_ethic = ethic_fanatic_xenophile
+			}
+		}
+	}
+}

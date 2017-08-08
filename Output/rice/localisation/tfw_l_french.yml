@@ -1,0 +1,789 @@
+﻿l_french:
+ #l_german:
+ #l_braz_por:
+ #l_polish:
+ # ###################################
+ # Reactors
+ # ###################################
+ # trying to replace some old techs
+ ZERO_POINT_REACTOR:0 "Zero-point Reactor"
+ ZERO_POINT_REACTOR_DESC:0 "These reactors extract vacuum energy, providing an infinite supply of power from 'nothing', limited only by its capacity."
+ tech_zero_point_power:0 "Zero-point Power"
+ tech_zero_point_power_desc:0 "These generators extract vacuum energy, providing a safe supply of power, but it is limited by its capacity.\n\n"
+ 
+ # new ones
+ SMALL_FUSION_REACTOR_ENERGON:0 "Small Energon Fusion Reactor"
+ MEDIUM_FUSION_REACTOR_ENERGON:0 "Medium Energon Fusion Reactor"
+ LARGE_FUSION_REACTOR_ENERGON:0 "Large Energon Fusion Reactor"
+ FUSION_REACTOR_ENERGON:0 "Energon Reactor"
+ FUSION_REACTOR_ENERGON_DESC:0 "This energy source uses special energon fuel."
+ tech_fusion_power_energon:0 "Fusion Power Energon"
+ tech_fusion_power_energon_desc:0 "We can improve our energy production by researching Energon that is a more powerful reactor fuel.\n\n "
+ 
+ SMALL_ANTIMATTER_REACTOR_OPTIMIZED:0 "Small Antimatter Fusion Reactor"
+ MEDIUM_ANTIMATTER_REACTOR_OPTIMIZED:0 "Medium Antimatter Fusion Reactor"
+ LARGE_ANTIMATTER_REACTOR_OPTIMIZED:0 "Large Antimatter Fusion Reactor"
+ ANTIMATTER_REACTOR_OPTIMIZED:0 "Antimatter Fusion Reactor"
+ ANTIMATTER_REACTOR_OPTIMIZED_DESC:0 "Uses the optimized technological processes of matter/antimatter annihilations." 
+ tech_antimatter_power_optimized:0 "Antimatter Fusion"
+ tech_antimatter_power_optimized_desc:0 "An usage of antimatter fusion processes will make our antimatter reactors more powerful than usual reactors, wich use an antimatter annihilation.\n\n"
+ 
+ SMALL_DARKMATTER_REACTOR:0 "Small Dark Matter Reactor"
+ MEDIUM_DARKMATTER_REACTOR:0 "Medium Dark Matter Reactor"
+ LARGE_DARKMATTER_REACTOR:0 "Large Dark Matter Reactor"
+ DARKMATTER_REACTOR:0 "Dark Matter Reactor"
+ DARKMATTER_REACTOR_DESC:0 "By harnessing the energy produced by dark matter annihilations, our efficiency at generating power will be orders of magnitude better than using antimatter annihilations."
+ tech_darkmatter_power:0 "Dark Matter Power"
+ tech_darkmatter_power_desc:0 "By harnessing the energy produced by dark matter annihilations, our efficiency at generating power will be orders of magnitude better than antimatter annihilations.\n\n"
+ 
+ SMALL_DARKMATTER_REACTOR_OPTIMIZED:0 "Small Optimized Dark Matter Reactor"
+ MEDIUM_DARKMATTER_REACTOR_OPTIMIZED:0 "Medium Optimized Dark Matter Reactor"
+ LARGE_DARKMATTER_REACTOR_OPTIMIZED:0 "Large Optimized Dark Matter Reactor"
+ DARKMATTER_REACTOR_OPTIMIZED:0 "Optimized Dark Matter Reactor"
+ DARKMATTER_REACTOR_OPTIMIZED_DESC:0 "Uses the optimized technological processes of dark matter annihilations." 
+ tech_darkmatter_power_optimized:0 "Optimized Dark Matter Power"
+ tech_darkmatter_power_optimized_desc:0 "Advanced extraction processes push the use of dark matter annihilations to its limit.\n\n"
+ 
+ SMALL_SINGULARITY_REACTOR:0 "Small Singularity Reactor"
+ MEDIUM_SINGULARITY_REACTOR:0 "Medium Singularity Reactor"
+ LARGE_SINGULARITY_REACTOR:0 "Large Singularity Reactor"
+ SINGULARITY_REACTOR:0 "Singularity Reactor"
+ SINGULARITY_REACTOR_DESC:0 "Imitating the function of black holes to produce massive amounts of energy. This is a very efficient but expensive way to generate large amounts of energy."
+ tech_singularity_power:0 "Singularity Power"
+ tech_singularity_power_desc:0 "Our researches in a field of black holes structure will allow us to develop a new type of energy reactors.\n\n"
+ 
+ SMALL_SINGULARITY_REACTOR_OPTIMIZED:0 "Small Trisingularity Reactor"
+ MEDIUM_SINGULARITY_REACTOR_OPTIMIZED:0 "Medium Trisingularity Reactor"
+ LARGE_SINGULARITY_REACTOR_OPTIMIZED:0 "Large Trisingularity Reactor"
+ SINGULARITY_REACTOR_OPTIMIZED:0 "Trisingularity Reactor"
+ SINGULARITY_REACTOR_OPTIMIZED_DESC:0 "Finally we have learned to design and build synchronized singularity power clusters."
+ tech_singularity_power_opt:0 "Singularity Synchronization"
+ tech_singularity_power_opt_desc:0 "After some experiments we will be able to create compact clusters of small black holes feeding the one power grid.\n\n"
+
+### ADV BIO ### 
+ SMALL_TFW_BIO_REACTOR_I:0 "Small Bio Reactor I"
+ MEDIUM_TFW_BIO_REACTOR_I:0 "Medium Bio Reactor I"
+ LARGE_TFW_BIO_REACTOR_I:0 "Large Bio Reactor I"
+ TFW_BIO_REACTOR_I:0 "Bio Reactor I"
+ TFW_BIO_REACTOR_I_DESC:0 "Produces energy from organic solutions."
+ tech_bio_power_1:0 "Biological Energy Cells"
+ tech_bio_power_1_desc:0 "Our progress in manipulations with organic material will allow us to produce large amounts of energy from organic solutions.\n\n"
+ 
+ SMALL_TFW_BIO_REACTOR_II:0 "Small Bio Reactor II"
+ MEDIUM_TFW_BIO_REACTOR_II:0 "Medium Bio Reactor II"
+ LARGE_TFW_BIO_REACTOR_II:0 "Large Bio Reactor II"
+ TFW_BIO_REACTOR_II:0 "Bio Reactor II"
+ TFW_BIO_REACTOR_II_DESC:0 "Produces even more energy from organic solutions."
+ tech_bio_power_2:0 "Advanced Energy Cells"
+ tech_bio_power_2_desc:0 "We can begin to work on a design improvement for our Energy Cells to make them more effective.\n\n"
+
+### ADV SYNTH ### 
+ SMALL_TFW_TACHYON_REACTOR:0 "Small Tachyon Reactor"
+ MEDIUM_TFW_TACHYON_REACTOR:0 "Medium Tachyon Reactor"
+ LARGE_TFW_TACHYON_REACTOR:0 "Large Tachyon Reactor"
+ TFW_TACHYON_REACTOR:0 "Tachyon Reactor"
+ TFW_TACHYON_REACTOR_DESC:0 "Attracts tachyons to power itself. This is one of the most efficient but very expensive ways to generate large amounts of energy."
+ tech_tachyon_power:0 "Tachyon Power"
+ tech_tachyon_power_desc:0 "There is a possibility to generate large amounts of energy by delaying the tachyons quanta.\n\n"
+ 
+ SMALL_TFW_WIMP_REACTOR:0 "Small WIMP Extractor"
+ MEDIUM_TFW_WIMP_REACTOR:0 "Medium WIMP Extractor"
+ LARGE_TFW_WIMP_REACTOR:0 "Large WIMP Extractor"
+ TFW_WIMP_REACTOR:0 "WIMP Extractor"
+ TFW_WIMP_REACTOR_DESC:0 "An improved version of the dark matter reactor uses WIM particles transformations instead of annihilation processes. This is one of the most efficient but very expensive ways to generate large amounts of energy."
+ tech_wimp_power:0 "Dark Matter Transformation"
+ tech_wimp_power_desc:0 "An usage of dark matter fusion processes instead of dark matter annihilation is a more efficient way to produce energy.\n\n"
+
+### ADV PSI ### 
+ SMALL_TFW_PSI_REACTOR_1:0 "Small Psi Cell"
+ MEDIUM_TFW_PSI_REACTOR_1:0 "Medium Psi Cell"
+ LARGE_TFW_PSI_REACTOR_1:0 "Large Psi Cell"
+ TFW_PSI_REACTOR_1:0 "Psi Cell"
+ TFW_PSI_REACTOR_1_DESC:0 "A psi cell containing a biological interface with great psionic powers. It is able to produce and convert psionic energy."
+ tech_psi_power_1:0 "Psi Energy Extraction"
+ tech_psi_power_1_desc:0 "By researching ways to extract and utilize psionic powers from biological psi-interfaces we will be able to create a completely new type of power reactors. Because of their psionic nature these reactors don't require several supply systems that will make them cheaper to maintain.\n\n"
+ 
+ SMALL_TFW_PSI_REACTOR_2:0 "Small Psi Hive"
+ MEDIUM_TFW_PSI_REACTOR_2:0 "Medium Psi Hive"
+ LARGE_TFW_PSI_REACTOR_2:0 "Large Psi Hive"
+ TFW_PSI_REACTOR_2:0 "Psi Hive"
+ TFW_PSI_REACTOR_2_DESC:0 "A compact cluster of synchronized psi cells that generates large amounts of energy."
+ tech_psi_power_2:0 "Synchronized Psi-flows"
+ tech_psi_power_2_desc:0 "We can improve our psi-reactors synchronizing individual psi-flows from different psi-interfaces, which are combined in one cluster.\n\n"
+ 
+ ###########################
+ # Auxiliary Power Plants
+ ###########################
+ TFW_SHIELD_PUMP_1:0 "Fusion AP Plant"
+ TFW_SHIELD_PUMP_1_DESC:0 "Auxiliary power plant is a complex system containing of a small power generator and many other devices, increasing the effectiveness of different ship modules."
+ tech_shield_pumps_1:0 "Fusion Auxiliary Power Plant"
+ tech_shield_pumps_1_desc:0 "Auxiliary power plant is a complex system containing of a small power generator and many other devices, increasing the effectiveness of different ship modules.\n\n"
+
+ TFW_SHIELD_PUMP_2:0 "Zero Point AP Plant"
+ TFW_SHIELD_PUMP_2_DESC:0 "Auxiliary power plant is a complex system containing of a small power generator and many other devices, increasing the effectiveness of different ship modules."
+ tech_shield_pumps_2:0 "Zero Point Auxiliary Power Plant"
+ tech_shield_pumps_2_desc:0 "Auxiliary power plant is a complex system containing of a small power generator and many other devices, increasing the effectiveness of different ship modules.\n\n"
+
+ TFW_SHIELD_PUMP_3:0 "Antimatter AP Plant"
+ TFW_SHIELD_PUMP_3_DESC:0 "Auxiliary power plant is a complex system containing of a small power generator and many other devices, increasing the effectiveness of different ship modules."
+ tech_shield_pumps_3:0 "Antimatter Auxiliary Power Plant"
+ tech_shield_pumps_3_desc:0 "Auxiliary power plant is a complex system containing of a small power generator and many other devices, increasing the effectiveness of different ship modules.\n\n"
+ 
+ TFW_SHIELD_PUMP_4:0 "Singularity AP Plant"
+ TFW_SHIELD_PUMP_4_DESC:0 "Auxiliary power plant is a complex system containing of a small power generator and many other devices, increasing the effectiveness of different ship modules. This one allow to recharge shields under enemy fire."
+ tech_shield_pumps_4:0 "Singularity Auxiliary Power Plant"
+ tech_shield_pumps_4_desc:0 "Auxiliary power plant is a complex system containing of a small power generator and many other devices, increasing the effectiveness of different ship modules. This one allow to recharge shields under enemy fire.\n\n"
+ 
+ TFW_SHIELD_PUMP_5:0 "Tachyon AP Plant"
+ TFW_SHIELD_PUMP_5_DESC:0 "Auxiliary power plant is a complex system containing of a small power generator and many other devices, increasing the effectiveness of different ship modules. This one allow to recharge shields under enemy fire."
+ tech_shield_pumps_5:0 "Tachyon Auxiliary Power Plant"
+ tech_shield_pumps_5_desc:0 "Auxiliary power plant is a complex system containing of a small power generator and many other devices, increasing the effectiveness of different ship modules. This one allow to recharge shields under enemy fire.\n\n"
+
+ ###########################
+ # Armors
+ ###########################
+ # Crystal-Merged
+ TFW_CRYSTAL_ARMOR_3:0 "Crystal-Merged Plating"
+ TFW_CRYSTAL_ARMOR_3_DESC:0 "This plating gives more durability to the ship's hull."
+ SMALL_TFW_CRYSTAL_ARMOR_3:0 "Small Crystal-Merged Plating"
+ MEDIUM_TFW_CRYSTAL_ARMOR_3:0 "Medium Crystal-Merged Plating"
+ LARGE_TFW_CRYSTAL_ARMOR_3:0 "Large Crystal-Merged Plating"
+ tech_tfw_crystal_armor_3:0 "Crystalline Polymetals"
+ tech_tfw_crystal_armor_3_desc:0 "Further experiments with crystalline diffusion processes will open new ways to improve our ships' durability.\n\n"
+ 
+ TFW_CRYSTAL_ARMOR_4:0 "Crystal-Interfered Plating"
+ TFW_CRYSTAL_ARMOR_4_DESC:0 "This plating gives more durability to the ship's hull."
+ SMALL_TFW_CRYSTAL_ARMOR_4:0 "Small Crystal-Interfered Plating"
+ MEDIUM_TFW_CRYSTAL_ARMOR_4:0 "Medium Crystal-Interfered Plating"
+ LARGE_TFW_CRYSTAL_ARMOR_4:0 "Large Crystal-Interfered Plating"
+ tech_tfw_crystal_armor_4:0 "Crystalline Harmonics"
+ tech_tfw_crystal_armor_4_desc:0 "Researchs of crystalline vibrations can help us to improve our crystalline plating technology and increase ships' durability.\n\n"
+
+ ###########################
+ # Advanceeed Armors
+ ###########################
+ #Mother Tech
+ tech_tfw_mother_tech_ship_armor:0 "Crystalline Combined Armors"
+ tech_tfw_mother_tech_ship_armor_desc:0 "A breakthrough in synthetic crystalline research will allow us to construct new types of combined armors with special properties.\n\n"
+ TECH_UNLOCK_SA_TITLE:0 "§HUnlocks development of:§! Advanced types of ship armor"
+ TECH_UNLOCK_SA_DESC:0 "New types of 'merged' ship armor significantly improve ship's hull integrity."
+
+ #Adv Armor
+ TFW_ARMOR_6:0 "Neutronium Alloy Armor"
+ TFW_ARMOR_6_DESC:0 "High-density neutronium grid reinforced with some alloying elements."
+ SMALL_TFW_ARMOR_6:0 "Small Neutronium Alloy Armor"
+ MEDIUM_TFW_ARMOR_6:0 "Medium Neutronium Alloy Armor"
+ LARGE_TFW_ARMOR_6:0 "Large Neutronium Alloy Armor"
+ tech_tfw_ship_armor_6:0 "Neutronium Alloys"
+ tech_tfw_ship_armor_6_desc:0 "Expanding our knowledges about technological processes with stable neutronium we can design more durable ship armor.\n\n"
+ 
+ TFW_ARMOR_7:0 "Strangelet Armor"
+ TFW_ARMOR_7_DESC:0 "Consists of several layers of tight-packed strangelet matter."
+ SMALL_TFW_ARMOR_7:0 "Small Strangelet Armor"
+ MEDIUM_TFW_ARMOR_7:0 "Medium Strangelet Armor"
+ LARGE_TFW_ARMOR_7:0 "Large Strangelet Armor"
+ tech_tfw_ship_armor_7:0 "Long-live Strangelets"
+ tech_tfw_ship_armor_7_desc:0 "Extracting of strange quarks from dark matter and assembling them into compact clusters we can create a completely new type of combined armor plates for our space fleet.\n\n"
+
+ TFW_ARMOR_8:0 "Hyperon Armor"
+ TFW_ARMOR_8_DESC:0 "More advanced type of armor that uses strange quarks advantages."
+ SMALL_TFW_ARMOR_8:0 "Small Hyperon Armor"
+ MEDIUM_TFW_ARMOR_8:0 "Medium Hyperon Armor"
+ LARGE_TFW_ARMOR_8:0 "Large Hyperon Armor"
+ tech_tfw_ship_armor_8:0 "Hyperon Matter"
+ tech_tfw_ship_armor_8_desc:0 "There is some safer but complicated ways to improve our strangelet armor, f.e. using of tight-packed hyperon atom grids.\n\n"
+
+ TFW_ARMOR_9:0 "Dybarion Armor"
+ TFW_ARMOR_9_DESC:0 "A high-durable stabilized dybarion armor."
+ SMALL_TFW_ARMOR_9:0 "Small Dybarion Armor"
+ MEDIUM_TFW_ARMOR_9:0 "Medium Dybarion Armor"
+ LARGE_TFW_ARMOR_9:0 "Large Dybarion Armor"
+ tech_tfw_ship_armor_9:0 "Dybarion Stabilization"
+ tech_tfw_ship_armor_9_desc:0 "The more complicated ways to improve ship armor is to use stabilized high-energy dybarion transformations with its strong nuclear forces.\n\n"
+
+ TFW_ARMOR_10:0 "Dybarion Alloys Armor"
+ TFW_ARMOR_10_DESC:0 "Advanced armor type that uses special dybarion alloys."
+ SMALL_TFW_ARMOR_10:0 "Small Dybarion Alloy Armor"
+ MEDIUM_TFW_ARMOR_10:0 "Medium Dybarion Alloy Armor"
+ LARGE_TFW_ARMOR_10:0 "Large Dybarion Alloy Armor"
+ tech_tfw_ship_armor_10:0 "Dybarion Alloys"
+ tech_tfw_ship_armor_10_desc:0 "Our technological progress allows us to create dybarion alloys that can be used in new types of armor.\n\n"
+
+ #####BIO ARMOR#####
+ TFW_BIOARMOR_1:0 "Bioarmor"
+ TFW_BIOARMOR_1_DESC:0 "This armor combines a fast hull regeneration with an appropriate structure strength."
+ SMALL_TFW_BIOARMOR_1:0 "Small Bioarmor"
+ MEDIUM_TFW_BIOARMOR_1:0 "Medium Bioarmor"
+ LARGE_TFW_BIOARMOR_1:0 "Large Bioarmor"
+ tech_tfw_bioarmor_1:0 "Bioarmor"
+ tech_tfw_bioarmor_1_desc:0 "Our progress in a rapid cell replication allows us to create a new type of armor that will provide us with a fast hull regeneration and an appropriate structure strength.\n\n"
+ 
+ TFW_BIOARMOR_2:0 "Improved Bioarmor"
+ TFW_BIOARMOR_2_DESC:0 "This armor combines a fast hull regeneration with an outstanding structure strength."
+ SMALL_TFW_BIOARMOR_2:0 "Small Improved Bioarmor"
+ MEDIUM_TFW_BIOARMOR_2:0 "Medium Improved Bioarmor"
+ LARGE_TFW_BIOARMOR_2:0 "Large Improved Bioarmor"
+ tech_tfw_bioarmor_2:0 "Improved Bioarmor"
+ tech_tfw_bioarmor_2_desc:0 "Further development of bioarmor allows us to improve its structure strength keeping its fast regeneration possibilities.\n\n"
+ 
+ ###########################
+ # Repair Drones
+ ###########################
+ #Standart
+ TFW_AUTO_REPAIR_1:0 "Repair Drone I"
+ TFW_AUTO_REPAIR_1_DESC:0 "These drones repair damaged ship hull and modules."
+ TFW_AUTO_REPAIR_2:0 "Repair Drone II"
+ TFW_AUTO_REPAIR_2_DESC:0 "These drones are able to repair damaged ship hull and modules faster."
+ TFW_AUTO_REPAIR_3:0 "Repair Drone III"
+ TFW_AUTO_REPAIR_3_DESC:0 "Advanced space drones that repair damaged ship hull and modules very fast."
+
+ SMALL_TFW_AUTO_REPAIR_1:0 "Small Repair Drone I"
+ MEDIUM_TFW_AUTO_REPAIR_1:0 "Medium Repair Drone I"
+ LARGE_TFW_AUTO_REPAIR_1:0 "Large Repair Drone I"
+
+ SMALL_TFW_AUTO_REPAIR_2:0 "Small Repair Drone II"
+ MEDIUM_TFW_AUTO_REPAIR_2:0 "Medium Repair Drone II"
+ LARGE_TFW_AUTO_REPAIR_2:0 "Large Repair Drone II"
+
+ SMALL_TFW_AUTO_REPAIR_3:0 "Small Repair Drone III"
+ MEDIUM_TFW_AUTO_REPAIR_3:0 "Medium Repair Drone III"
+ LARGE_TFW_AUTO_REPAIR_3:0 "Large Repair Drone III"
+
+ tfw_auto_repair_1:0 "Repair Drones"
+ tfw_auto_repair_1_desc:0 "A robotization of ship repair processes will allow us to build mobile repair platforms.\n\n"
+ tfw_auto_repair_2:0 "Improved Repair Drones"
+ tfw_auto_repair_2_desc:0 "A further progress in automation will make our repair drones more effective.\n\n"
+ tfw_auto_repair_3:0 "Advanced Repair Drones"
+ tfw_auto_repair_3_desc:0 "With more complex repair systems our drones will be able to repair damaged ships faster.\n\n"
+
+ #Psi Repair Drones
+ #MOTHER TECH
+ tfw_psi_machinery:0 "Psionic Machinery"
+ tfw_psi_machinery_desc:0 "Our psionic progress allows us to design special electronic mechanisms that will be able to receive and execute our psionic commands.\n\n"
+ TECH_UNLOCK_PD_TITLE:0 "§HUnlocks development of:§! Psi Drones"
+ TECH_UNLOCK_PD_DESC:0 "Mobile unmanned platforms percieving certain psionic flows can be applied for different ways in our spacecraft."
+
+ TFW_AUTO_REPAIR_PSI1:0 "Psi Repair Drone I"
+ TFW_AUTO_REPAIR_PSI1_DESC:0 "These drones repair damaged ship hull and modules."
+ TFW_AUTO_REPAIR_PSI2:0 "Psi Repair Drone II"
+ TFW_AUTO_REPAIR_PSI2_DESC:0 "These drones are able to repair damaged ship hull and modules faster."
+ TFW_AUTO_REPAIR_PSI3:0 "Psi Repair Drone III"
+ TFW_AUTO_REPAIR_PSI3_DESC:0 "Advanced space drones that repair damaged ship hull and modules very fast."
+
+ SMALL_TFW_AUTO_REPAIR_PSI1:0 "Small Psi Repair Drone I"
+ MEDIUM_TFW_AUTO_REPAIR_PSI1:0 "Medium Psi Repair Drone I"
+ LARGE_TFW_AUTO_REPAIR_PSI1:0 "Large Psi Repair Drone I"
+ tfw_auto_repair_psi1:0 "Psi Repair Drones"
+ tfw_auto_repair_psi1_desc:0 "Mobile repair platforms percieving certain psionic flows will be an effective way to repair our ships.\n\n"
+
+ SMALL_TFW_AUTO_REPAIR_PSI2:0 "Small Psi Repair Drone II"
+ MEDIUM_TFW_AUTO_REPAIR_PSI2:0 "Medium Psi Repair Drone II"
+ LARGE_TFW_AUTO_REPAIR_PSI2:0 "Large Psi Repair Drone II"
+ tfw_auto_repair_psi2:0 "Improved Psi Repair Drones"
+ tfw_auto_repair_psi2_desc:0 "A further progress in repair systems will make our repair processes faster.\n\n"
+
+ SMALL_TFW_AUTO_REPAIR_PSI3:0 "Small Psi Repair Drone III"
+ MEDIUM_TFW_AUTO_REPAIR_PSI3:0 "Medium Psi Repair Drone III"
+ LARGE_TFW_AUTO_REPAIR_PSI3:0 "Large Psi Repair Drone III"
+ tfw_auto_repair_psi3:0 "Advanced Psi Repair Drones"
+ tfw_auto_repair_psi3_desc:0 "With more complex psionic systems our drones will be able to repair damaged ships more effectively.\n\n"
+
+ ################################################################################
+ # WEAPONS #####
+ 
+ #Deuteron Torpedoes
+ LARGE_TFW_ENERGY_TORPEDO_3:0 "Deuteron Torpedoes"
+ TFW_ENERGY_TORPEDO_3:0 "Deuteron Torpedoes"
+ TFW_ENERGY_TORPEDO_3_DESC:0 "These torpedoes are armed with Deuteron, they are effective against atomic structures of any armor."
+ 
+ tech_energy_torpedoes_3:0 "Deuteron Torpedoes"
+ tech_energy_torpedoes_3_desc:0 "If we will be able to accelerate Deuterium nuclear substance enough, it can be effective against ship hull structures.\n\n"
+
+ #KINETIC_ARTILLERY_3
+ LARGE_TFW_KINETIC_ARTILLERY_3:0 "Gauss Artillery"
+ TFW_KINETIC_ARTILLERY_3:0 "Gauss Artillery"
+ TFW_KINETIC_ARTILLERY_3_DESC:0 "Improved Gauss-systems for large gun platforms."
+ 
+ tech_kinetic_artillery_3:0 "Gauss Artillery"
+ tech_kinetic_artillery_3_desc:0 "There are some ways to improve our Gauss-based gun systems that will make them more effective.\n\n"
+
+ #LASERSTORM
+ SMALL_TFW_LASERSTORM:0 "Small Laser Storm"
+ MEDIUM_TFW_LASERSTORM:0 "Medium Laser Storm"
+ LARGE_TFW_LASERSTORM:0 "Large Laser Storm"
+ TFW_LASERSTORM:0 "Laser Storm"
+ TFW_LASERSTORM_DESC:0 "Rapid-fire laser platform"
+ 
+ tech_laserstorm:0 "Rapid-fire Lasers"
+ tech_laserstorm_desc:0 "Researching new ways of barrel cooling will significantly increase the rate of fire of our laser platforms.\n\n"
+
+ #ADV_LASERSTORM
+ SMALL_TFW_ADV_LASERSTORM:0 "Small Laser Vortex"
+ MEDIUM_TFW_ADV_LASERSTORM:0 "Medium Laser Vortex"
+ LARGE_TFW_ADV_LASERSTORM:0 "Large Laser Vortex"
+ TFW_ADV_LASERSTORM:0 "Laser Vortex"
+ TFW_ADV_LASERSTORM_DESC:0 "Improved rapid-fire laser platform"
+ 
+ tech_adv_laserstorm:0 "Advanced Rapid-fire Lasers"
+ tech_adv_laserstorm_desc:0 "There are some ways to improve our rapid-fire laser platforms.\n\n"
+
+ #GAUSS_MORTAR
+ SMALL_TFW_GAUSS_MORTAR:0 "Small Gauss Mortar"
+ MEDIUM_TFW_GAUSS_MORTAR:0 "Medium Gauss Mortar"
+ LARGE_TFW_GAUSS_MORTAR:0 "Large Gauss Mortar"
+ TFW_GAUSS_MORTAR:0 "Gauss Mortar"
+ TFW_GAUSS_MORTAR_DESC:0 "A next generation of gauss-based weapon platforms."
+ 
+ tech_tfw_gauss_6:0 "Gauss Siege Weapons"
+ tech_tfw_gauss_6_desc:0 "Improved gauss acceleration systems will increase the speed of projectiles that will be able to overload and partially penetrate enemy energy shields.\n\n"
+
+ #GAUSS_HOWITZER
+ SMALL_TFW_GAUSS_HOWITZER:0 "Small Gauss Howitzer"
+ MEDIUM_TFW_GAUSS_HOWITZER:0 "Medium Gauss Howitzer"
+ LARGE_TFW_GAUSS_HOWITZER:0 "Large Gauss Howitzer"
+ TFW_GAUSS_HOWITZER:0 "Gauss Howitzer"
+ TFW_GAUSS_HOWITZER_DESC:0 "Anti-shield role Gauss weapon with an increased speed of projectiles."
+ 
+ tech_tfw_gauss_7:0 "Hyper Acceleration"
+ tech_tfw_gauss_7_desc:0 "Next version of Gauss Mortar will have an increased speed of projectiles that will be able to overload and penetrate enemy energy shields more effectively.\n\n"
+
+ #Neutronium Missile Launcher
+ SMALL_TFW_AS_MISSILE_1:0 "Small Neutronium Missiles"
+ MEDIUM_TFW_AS_MISSILE_1:0 "Medium Neutronium Missiles"
+ LARGE_TFW_AS_MISSILE_1:0 "Large Neutronium Missiles"
+ TFW_AS_MISSILE_1:0 "Neutronium Missiles"
+ TFW_AS_MISSILE_1_DESC:0 "These missiles have anti-shield role and uses high-density neutronium charge to overload enemy shields."
+
+ tech_tfw_as_missiles_1:0 "Neutronium Containers"
+ tech_tfw_as_missiles_1_desc:0 "Simple mass-energy transformations can be used to effectivly overload energy shields using a well-known transportation platform such as a space rocket.\n\n"
+
+ #Hyperon Missile Launcher
+ SMALL_TFW_AS_MISSILE_2:0 "Small Hyperon Missiles"
+ MEDIUM_TFW_AS_MISSILE_2:0 "Medium Hyperon Missiles"
+ LARGE_TFW_AS_MISSILE_2:0 "Large Hyperon Missiles"
+ TFW_AS_MISSILE_2:0 "Hyperon Missiles"
+ TFW_AS_MISSILE_2_DESC:0 "These the most effective anti-shield missiles use a supermassive hyperon charge to overload enemy shields."
+
+ tech_tfw_as_missiles_2:0 "Hyperon Missiles"
+ tech_tfw_as_missiles_2_desc:0 "High-density hyperon matter is the best way to destruct energy shields of enemy ships.\n\n"
+
+ #Energon Missile Launcher
+ SMALL_TFW_AA_MISSILE_1:0 "Small Energon Missiles"
+ MEDIUM_TFW_AA_MISSILE_1:0 "Medium Energon Missiles"
+ LARGE_TFW_AA_MISSILE_1:0 "Large Energon Missiles"
+ TFW_AA_MISSILE_1:0 "Energon Missiles"
+ TFW_AA_MISSILE_1_DESC:0 "These high-explosive missiles use energon explosives to destruct all possible types of armor on enemy ships."
+
+ tech_tfw_aa_missiles_1:0 "Energon Containers"
+ tech_tfw_aa_missiles_1_desc:0 "Our rocket missiles can be loaded with energon charge that will highly increase their armor penetration capabilities.\n\n"
+
+ #Grinder Missile Launcher
+ SMALL_TFW_AA_MISSILE_2:0 "Small Grinder Missiles"
+ MEDIUM_TFW_AA_MISSILE_2:0 "Medium Grinder Missiles"
+ LARGE_TFW_AA_MISSILE_2:0 "Large Grinder Missiles"
+ TFW_AA_MISSILE_2:0 "Grinder Missiles"
+ TFW_AA_MISSILE_2_DESC:0 "These the most effective anti-armor missiles uses a mix of different explosive compounds to disintegrate any armor."
+
+ tech_tfw_aa_missiles_2:0 "Grinder Missiles"
+ tech_tfw_aa_missiles_2_desc:0 "We can load our rockets with special combined charges that are consist of different high-energy explosives to penetrate armor more effectively.\n\n"
+
+ #Mother Tech for PT
+ tech_tfw_pt:0 "Plasma Containers"
+ tech_tfw_pt_desc:0 "Plasma containers are compact plasma transportation systems that will allow us to develop some new types of plasma weaponry.\n\n"
+ TECH_UNLOCK_PT_TITLE:0 "§HUnlocks development of:§! Plasma Missiles"
+ TECH_UNLOCK_PT_DESC:0 "Plasma missiles can penetrate enemy shields and cause a high damage to ship's hull with their armor penetration abilities."
+
+ #Plasma Missiles
+ SMALL_TFW_P_T1:0 "Small Plasma Missiles"
+ MEDIUM_TFW_P_T1:0 "Medium Plasma Missiles"
+ LARGE_TFW_P_T1:0 "Large Plasma Missiles"
+ TFW_P_T1:0 "Plasma Missiles"
+ TFW_P_T1_DESC:0 "Plasma missiles can penetrate enemy shields and cause a high damage to ship's hull with their armor penetration abilities."
+
+ tech_tfw_pt1:0 "Plasma Missiles"
+ tech_tfw_pt1_desc:0 "Our technological progress allows us to develop plasma missiles that will combine some benefits of plasma and missile weaponry.\n\n"
+
+ #Adv. Plasma Missiles
+ SMALL_TFW_P_T2:0 "Small QGP Missiles"
+ MEDIUM_TFW_P_T2:0 "Medium QGP Missiles"
+ LARGE_TFW_P_T2:0 "Large QGP Missiles"
+ TFW_P_T2:0 "QGP Missiles"
+ TFW_P_T2_DESC:0 "These missiles use a high-energetic plasma matter, known as a quark soup, to cause an extra-high damage." 
+ 
+ tech_tfw_pt2:0 "Quark–Gluon Plasma"
+ tech_tfw_pt2_desc:0 "Using high-energy quark-gluon plasma in our missiles, we will significantly increase their damage.\n\n" 
+
+ #Antimatter Torpedoes
+ TFW_TORPEDO_4:0 "Antimatter Torpedoes"
+ TFW_TORPEDO_4_DESC:0 "This torpedoes are armed with antimatter warheads and can penetrate enemy shields."
+ 
+ tech_tfw_torpedoes_4:0 "Antimatter Torpedoes"
+ tech_tfw_torpedoes_4_desc:0 "The further development of our torpedo weaponry with new a type of warheads using antimatter annihilation process to cause more damage to hull constructions.\n\n"
+ 
+ #Darkmatter Torpedoes
+ TFW_TORPEDO_5:0 "Darkmatter Torpedoes"
+ TFW_TORPEDO_5_DESC:0 "This torpedoes are armed with darkmatter warheads and can penetrate enemy shields."
+ 
+ tech_tfw_torpedoes_5:0 "Darkmatter Torpedoes"
+ tech_tfw_torpedoes_5_desc:0 "The further development of our torpedo weaponry with new a type of warheads using darkmatter annihilation process to cause extra damage to hull constructions.\n\n"
+ 
+ #Swarmer Missiles
+ TFW_SWARMER_MISSILE_3:0 "Typhoon Missiles"
+ TFW_SWARMER_MISSILE_3_DESC:0 "The further development of Whirlwind missile systems with enhanced warheads."
+ 
+ tech_tfw_swarmer_missiles_3:0 "Typhoon Missiles"
+ tech_tfw_swarmer_missiles_3_desc:0 "The further development of Whirlwind missile systems with enhanced warheads.\n\n"
+ 
+ #STORMFIRE PD
+ TFW_STORMFIRE_PD:0 "Bastion Point-Defense"
+ TFW_STORMFIRE_PD_DESC:0 "Improved rapid-fire defense system wich provides a greater protection against missiles and strike craft."
+ tech_tfw_stormfire_pd:0 "Bastion Point-Defense"
+ tech_tfw_stormfire_pd_desc:0 "This improved rapid-fire defense systems will provide us a greater protection against enemy missiles and strike craft.\n\n"
+ 
+ #FLAK 3
+ TFW_FLAK_3:0 "Advanced Flak Artillery"
+ TFW_FLAK_3_DESC:0 "This is an improved version of a standart Flak Artillery."
+ 
+ tech_tfw_flak_batteries_3:0 "Advanced Flak Artillery"
+ tech_tfw_flak_batteries_3_desc:0 "New barrels and supply systems for our Flak Artillery will make it more effective against enemy missiles and strike craft.\n\n"
+ 
+ #PHASERS
+ SMALL_TFW_PHASER_1:0 "Small Maser Gun"
+ MEDIUM_TFW_PHASER_1:0 "Medium Maser Gun"
+ LARGE_TFW_PHASER_1:0 "Large Maser Gun"
+ TFW_PHASER_1:0 "Maser Gun"
+ TFW_PHASER_1_DESC:0 "This weapon is extremelly effective on very short ranges." 
+ 
+ tech_tfw_phaser_1:0 "Maser Gun"
+ tech_tfw_phaser_1_desc:0 "Masers are microwave generators that theoretically can be mounted on our ships as special short-range weapons.\n\n" 
+ 
+ SMALL_TFW_PHASER_2:0 "Small Phaser Gun"
+ MEDIUM_TFW_PHASER_2:0 "Medium Phaser Gun"
+ LARGE_TFW_PHASER_2:0 "Large Phaser Gun"
+ TFW_PHASER_2:0 "Phaser Gun"
+ TFW_PHASER_2_DESC:0 "The next generation of Maser Gun systems with higher effective range." 
+ 
+ tech_tfw_phaser_2:0 "Phase Jumping"
+ tech_tfw_phaser_2_desc:0 "The developing of maser weaponry provided us some untrivial ways of microwave amplification. This one uses special phase jumping technology that grants extra high-energy pulsed emission.\n\n" 
+ 
+ SMALL_TFW_PHASER_3:0 "Small Wave Phaser"
+ MEDIUM_TFW_PHASER_3:0 "Medium Wave Phaser"
+ LARGE_TFW_PHASER_3:0 "Large Wave Phaser"
+ TFW_PHASER_3:0 "Wave Phaser"
+ TFW_PHASER_1_DESC:0 "Wave phasers are still deadly on short distances effectivly penetrating enemy shield fields." 
+ 
+ tech_tfw_phaser_3:0 "Wave Phasers"
+ tech_tfw_phaser_3_desc:0 "Applying a wave interference in our phaser weapons we can design powerful phaser guns that will be able to penetrate enemy shields very effectively.\n\n" 
+ 
+ #Phase Spear
+ MEDIUM_TFW_DARKMATTER_EMITTER:0 "Medium Phase Spear"
+ LARGE_TFW_DARKMATTER_EMITTER:0 "Large Phase Spear"
+ TFW_DARKMATTER_EMITTER:0 "Phase Spear"
+ TFW_DARKMATTER_EMITTER_DESC:0 "Emits high-coherent waves that are effective against energy fields and armor."
+ 
+ tech_darkmatter_emitter:0 "Phasic Amplification"
+ tech_darkmatter_emitter_desc:0 "The amplification of phased waves will result in a precision phase weapon that has less shield penetration but it is more effective against energy fields and armor.\n\n"
+ 
+ ################################################ADVANCED TYPES OF WEAPONS###################################################################################
+ #MOTHER TECH FOR SYNT RESEARCHES
+ tech_tfw_adv_weapons:0 "Advanced Combat Systems" 
+ tech_tfw_adv_weapons_desc:0 "Advanced space weapon systems.\n\n"
+ TECH_UNLOCK_ADV_WEAPONS_TITLE:0 "§HUnlocks development of:§! Advanced types of weapon systems."
+ TECH_UNLOCK_ADV_WEAPONS_DESC:0 "Advanced space weapons are extremelly needful to fight with extra powerful energy shields and armor."
+
+ #MOTHER TECH FOR PSI RESEARCHES
+ tech_tfw_focused_psi_flows:0 "Focused Psi Flows"
+ tech_tfw_focused_psi_flows_desc:0 "Our thoughts are material. Futhermore we can use our thoughts in battles, we just need to invent some focusing elements for our psionic energy.\n\n"
+ TECH_UNLOCK_PSI_WEAPONS_TITLE:0 "§HUnlocks development of:§! Combat psionic technologies."
+ TECH_UNLOCK_PSI_WEAPONS_DESC:0 "Our Gods blessed us with this unique weapons! It sounds incredible but focused psionic energy can be used in our weaponry systems effectively."
+
+ #MOTHER TECH FOR BIO RESEARCHES
+ tech_tfw_rapid_cell_replication:0 "Rapid Cell Replication"
+ tech_tfw_rapid_cell_replication_desc:0 "Rapid cell replication will allow us to create different types of biological weaponry using special compact bio vats that can be fitted into weapon systems on our ships.\n\n"
+ TECH_UNLOCK_BIO_WEAPONS_TITLE:0 "§HUnlocks development of:§! Combat biotechnologies."
+ TECH_UNLOCK_BIO_WEAPONS_DESC:0 "Combat biotechnologies can grant us new kinds of combat tactics that will be very useful in space and land battles. There are also some ways to develop new kinds of armor with special abilities."
+  
+ #BIOCANNON
+ SMALL_TFW_BIOCANNON:0 "Small Biocannon"
+ MEDIUM_TFW_BIOCANNON:0 "Medium Biocannon"
+ LARGE_TFW_BIOCANNON:0 "Large Biocannon"
+ TFW_BIOCANNON:0 "Biocannon"
+ TFW_BIOCANNON_DESC:0 "This weapon fires a thick clot of silicon based microorganisms that not fully penetrates enemy shields and causes a very high damage to enemy ships by quickly corroding their armor and hull structures." 
+ tech_tfw_biocannon:0 "Biological Space Weaponry"
+ tech_tfw_biocannon_desc:0 "Biocannon fires a thick clot of silicon based microorganisms that not fully penetrates enemy shields and causes a very high damage to enemy ships by quickly corroding their armor and hull structures.\n\n" 
+ 
+ #PSICANNON
+ SMALL_TFW_PSICANNON:0 "Small Psicannon"
+ MEDIUM_TFW_PSICANNON:0 "Medium Psicannon"
+ LARGE_TFW_PSICANNON:0 "Large Psicannon"
+ TFW_PSICANNON:0 "Psicannon"
+ TFW_PSICANNON_DESC:0 "This weapon generates a strong psionic field that fully penetrates enemy shields and causes a medium damage to the ship's hull." 
+ tech_tfw_psicannon:0 "Psionic Weaponry"
+ tech_tfw_psicannon_desc:0 "Psicannon generates a strong psionic field that fully penetrates enemy shields and causes a medium damage to the ship's hull.\n\n" 
+ 
+ #GRAVICANNON
+ SMALL_TFW_GRAVICANNON:0 "Small Gravicannon"
+ MEDIUM_TFW_GRAVICANNON:0 "Medium Gravicannon"
+ LARGE_TFW_GRAVICANNON:0 "Large Gravicannon"
+ TFW_GRAVICANNON:0 "Gravicannon"
+ TFW_GRAVICANNON_DESC:0 "This weapon generates a strong tachyon field that penetrates enemy shields and causes a high damage to the ship's hull." 
+ tech_tfw_gravicannon:0 "Gravitational Weaponry"
+ tech_tfw_gravicannon_desc:0 "Gravicannon generates a strong tachyon field that penetrates enemy shields and causes a high damage to the ship's hull.\n\n" 
+ 
+ #JAMMER
+ TFW_JAMMER_MEDIUM:0 "Medium EMP Emitter"
+ TFW_JAMMER_LARGE:0 "Large EMP Emitter"
+ TFW_JAMMER:0 "EMP Emitter"
+ TFW_JAMMER_DESC:0 "This emitter creates an electromagnetic interference fields that overload all improtant enemy ship systems in range. Their effect doesn't multiply due to limitation of our own ships' electromagnetic protection." 
+ tech_tfw_active_cm:0 "Electromagnetic Overload"
+ tech_tfw_active_cm_desc:0 "EMP Emitter creates an electromagnetic interference fields that overload all improtant enemy ship systems in range. Their effect doesn't multiply due to limitation of our own ships' electromagnetic protection.\n\n"
+ tfw_aura_jammer_medium:0 "Electromagnetic overload"
+ tfw_aura_jammer_large:0 "Electromagnetic overload"
+ 
+ #############NEXT TIER#######################
+ #INFECTOR
+ MEDIUM_TFW_INFECTOR:0 "Medium Devourer Torpedoes"
+ LARGE_TFW_INFECTOR:0 "Devourer Torpedoes"
+ TFW_INFECTOR:0 "Devourer Torpedoes" 
+ TFW_INFECTOR_DESC:0 "This long-range organic torpedoes are very efficient against armored ship hulls and can penetrate 100% of energy shields."
+ tech_tfw_infector:0 "Devourer Torpedoes"
+ tech_tfw_infector_desc:0 "Further researches of combat biotechnologies will provide us special long-range organic torpedoes are very efficient against armored ship hulls and can penetrate 100% of energy shields.\n\n"
+ 
+ #PSILANCE
+ TFW_PSILANCE:0 "Psi-Lance" 
+ TFW_PSILANCE_DESC:0 "Emits a high-range powerful flow of psionic nature that can penetrate enemy shields well but is not so effective against armor."
+ tech_tfw_psilance:0 "Psi-Lance"
+ tech_tfw_psilance_desc:0 "The further development of psicannons will result in a creation of high-range weapons with high shield penetration capabilities.\n\n"
+ 
+ #GRAVILANCE
+ TFW_GRAVILANCE:0 "Gravi-Lance" 
+ TFW_GRAVILANCE_DESC:0 "Emits a high-range powerful flow of gravitons that penetrates enemy shields and armor."
+ tech_tfw_gravilance:0 "Gravi-Lance"
+ tech_tfw_gravilance_desc:0 "The further development of gravicannons will result in a creation of high-range weapons with medium shield and armor penetration capabilities.\n\n"
+ 
+ #KINETIC_HAMMER
+ TFW_KINETIC_HAMMER:0 "Kinetic Hammer" 
+ TFW_KINETIC_HAMMER_DESC:0 "This extra-large cannon is the most effective weapon using the kinetic energy of special alloy projectiles."
+ tech_tfw_kinetic_hammer:0 "Kinetic Hammer"
+ tech_tfw_kinetic_hammer_desc:0 "After some researches we will be able to upgrade the acceleration systems of our Giga cannons to create a new tier of extra large kinetic weapons.\n\n"
+ 
+ #PEACEKEEPER
+ TFW_PEACEKEEPER:0 "Peacekeeper Point-Defense"
+ TFW_PEACEKEEPER_DESC:0 "Laser point-defense system with a higher effective range and combat power."
+ tech_tfw_peacekeeper:0 "Peacekeeper Point-Defense"
+ tech_tfw_peacekeeper_desc:0 "Our researches in more effective compact laser weapons will provides us with an effective laser point-defense system.\n\n"
+ 
+ #BIOTERRORISM
+ tech_tfw_bioterror:0 "Forbidden Biological Experiments"
+ tech_tfw_bioterror_desc:0 "Some biological experiments violate intergalactic laws by the develop of new kinds of deadly biological toxins and infectious agents. This biological weaponry causes high damage to enemy military troops and civilians.\n\n"
+
+ #KAMIKAZE
+ MEDIUM_TFW_KAMIKAZE:0 "Medium Suicide Drones"
+ LARGE_TFW_KAMIKAZE:0 "Large Suicide Drones"
+ TFW_KAMIKAZE:0 "Suicide Drones"
+ TFW_KAMIKAZE_DESC:0 "This organic suicide drones are able to penetrate enemy shields and find vulnerabilities in ship's armor that makes them very effective, though they are slower then ordinary torpedoes and missiles."
+ tech_tfw_kamikaze:0 "Organic Suicide Drones"
+ tech_tfw_kamikaze_desc:0 "After several genetic manipulations with hostile organic materials we will be able to create special organic suicide drones that may be useful in combat.\n\n"
+ 
+ ###########################
+ # SHIELDS
+ ###########################
+ SHIELD_VIOLET:0 "Stabilized Hyper Shields"
+ SHIELD_VIOLET_DESC:0 "Hyper shields stabilized with hard flows of protons."
+ SMALL_SHIELD_VIOLET:0 "Small Stabilized Hyper Shields"
+ MEDIUM_SHIELD_VIOLET:0 "Medium Stabilized Hyper Shields"
+ LARGE_SHIELD_VIOLET:0 "Large Stabilized Hyper Shields"
+ SHIELD_GREEN:0 "Optimized Hyper Shields"
+ SHIELD_GREEN_DESC:0 "Hyper shields optimized with hard flows of positrons."
+ SMALL_SHIELD_GREEN:0 "Small Optimized Hyper Shields"
+ MEDIUM_SHIELD_GREEN:0 "Medium Optimized Hyper Shields"
+ LARGE_SHIELD_GREEN:0 "Large Optimized Hyper Shields"
+ SHIELD_YELLOW:0 "Energon Shields"
+ SHIELD_YELLOW_DESC:0 "This shields generators use energon emitters."
+ SMALL_SHIELD_YELLOW:0 "Small Energon Shields"
+ MEDIUM_SHIELD_YELLOW:0 "Medium Energon Shields"
+ LARGE_SHIELD_YELLOW:0 "Large Energon Shields"
+ SHIELD_ORANGE:0 "Cascade Shields"
+ SHIELD_ORANGE_DESC:0 "This shields generators use cascade processes in shields maintenance."
+ SMALL_SHIELD_ORANGE:0 "Small Cascade Shields"
+ MEDIUM_SHIELD_ORANGE:0 "Medium Cascade Shields"
+ LARGE_SHIELD_ORANGE:0 "Large Cascade Shields"
+ SHIELD_RED:0 "Extradimensional Shields"
+ SHIELD_RED_DESC:0 "Attracted energy from other dimensions."
+ SMALL_SHIELD_RED:0 "Small Extradimensional Shields"
+ MEDIUM_SHIELD_RED:0 "Medium Extradimensional Shields"
+ LARGE_SHIELD_RED:0 "Large Extradimensional Shields"
+
+ tech_violet_shield:0 "Hyper Stabilization"
+ tech_violet_shield_desc:0 "There are some ways to improve shield stability by affecting them with hard flows of different particles.\n\n"
+ tech_green_shield:0 "Hyper Optimization"
+ tech_green_shield_desc:0 "Affecting hyper shields with hard flows of positrons will further improve their strength.\n\n"
+ tech_yellow_shield:0 "Energon Emission"
+ tech_yellow_shield_desc:0 "Researching Energon emitters for shields generators will significantly increase the energy capacity of our shields.\n\n"
+ tech_orange_shield:0 "Cascade Shielding"
+ tech_orange_shield_desc:0 "This type of shield generation will use stabilized cascade effects that occur in high-energetic energy fields.\n\n"
+ tech_red_shield:0 "Extradimensional Shielding"
+ tech_red_shield_desc:0 "Theoretically we can create a mobile shield generator that doesn't produce energy by itself, but uses energy attracted from other dimensions.\n\n"
+
+ ######################################################################################
+ #OTHER STUFF
+ NEW_SHIP_THRUSTER_5:0 "Antimatter Thrusters"
+ NEW_SHIP_THRUSTER_5_DESC:0 "Use antimatter plasma, which is contained in strong magnetic fields."
+ NEW_SHIP_THRUSTER_6:0 "Graviton Thrusters"
+ NEW_SHIP_THRUSTER_6_DESC:0 "Causes weak local graviton waves."
+ TFW_FIGHT_THRUSTER:0 "Forced Thrusters"
+ TFW_FIGHT_THRUSTER_DESC:0 "Specially designed for fast combat operations."
+ TFW_FIGHT_THRUSTER2:0 "Hyper Forced Thrusters"
+ TFW_FIGHT_THRUSTER2_DESC:0 "Advanced forced thrusters for faster and safer combat operations."
+ 
+ tech_new_thrusters_5:0 "Antimatter Thrusters"
+ tech_new_thrusters_5_desc:0 "Under certain conditions an antimatter plasma can be emitted with a great impulse.\n\n"
+ TECH_TFW_THRUSTER_5_TITLE:0 "§HUnlocks component:§! Antimatter Thrusters"
+ TECH_TFW_THRUSTER_5_DESC:0 "Antimatter thrusters use antimatter plasma, which is contained in strong magnetic fields."
+ 
+ tech_new_thrusters_6:0 "Graviton Motion"
+ tech_new_thrusters_6_desc:0 "New types of thrusters will be able to create weak gravity waves to move our ships.\n\n"
+ TECH_TFW_THRUSTER_6_TITLE:0 "§HUnlocks component:§! Graviton Thrusters"
+ TECH_TFW_THRUSTER_6_DESC:0 "Graviton thrusters can create weak gravity waves to move our ships."
+ 
+ tech_tfw_fight_thrusters:0 "Forced Thrusters"
+ tech_tfw_fight_thrusters_desc:0 "Forced thrusters are able to significantly increase maneuvering speed of our ships during the battle.\n\n"
+ TECH_TFW_FIGHT_THRUSTER_TITLE:0 "§HUnlocks component:§! Forced Thrusters"
+ TECH_TFW_FIGHT_THRUSTER_DESC:0 "Forced thrusters are specially designed for space battles to perform fast and safe tactical operations."
+ 
+ tech_tfw_fight_thrusters2:0 "Improved Forcing Systems"
+ tech_tfw_fight_thrusters2_desc:0 "Our forced thrusters can be improved to carry out combat operations even faster and safer.\n\n"
+ TECH_TFW_FIGHT_THRUSTER2_TITLE:0 "§HUnlocks component:§! Hyper Forced Thrusters"
+ TECH_TFW_FIGHT_THRUSTER2_DESC:0 "Advanced forced thrusters allow faster and safer combat operations."
+ 
+ #STRIKE CRAFT
+ TFW_FIGHTER_4:0 "Shock Fighter Wing"
+ TFW_FIGHTER_4_DESC:0 "These interceptors have increased operational range, speed and damage and work very effectively against small targets such as rockets and enemy strike fleets."
+ TFW_BOMBER_4:0 "Tactical Bomber Wing"
+ TFW_BOMBER_4_DESC:0 "These bombers have improved armor and cause increased damage to enemy ships hull including its armor plates."
+ TFW_DRONE_FIGHTER:0 "Drone Fighter Wing"
+ TFW_DRONE_FIGHTER_DESC:0 "These unmanned fighters are more persistent to enemy fire and have increased operational range, speed and damage to work very effectively against small targets such as rockets and enemy strike fleets."
+ TFW_DRONE_BOMBER:0 "Drone Bomber Wing"
+ TFW_DRONE_BOMBER_DESC:0 "These unmanned bombers are more persistent to enemy air defense and cause increased damage to enemy ships hull including its armor plates."
+ TFW_PSI_FIGHTER:0 "Psi Fighter Wing"
+ TFW_PSI_FIGHTER_DESC:0 "Psi fighters are slightly more persistent to enemy fire and have increased operational range, speed and damage to work very effectively against small targets such as rockets and enemy strike fleets."
+ TFW_PSI_BOMBER:0 "Psi Bomber Wing"
+ TFW_PSI_BOMBER_DESC:0 "Psi bombers are slightly more persistent to enemy fire and cause increased damage to enemy ships hull including its armor plates."
+
+ tfw_strike_craft_4:0 "Tactical Strike Craft"
+ tfw_strike_craft_4_desc:0 "Our technological progress allows us to significantly improve our strike fleets. We will significantly increase their damage and operational range.\n\n"
+
+ tfw_strike_drone:0 "Strike Drones"
+ tfw_strike_drone_desc:0 "These unmanned strike drones will receive imroved armor to be more persistent to enemy fire. We will also significantly increase their damage and operational range.\n\n"
+
+ tfw_psi_strike_craft:0 "Psi Strike Drones"
+ tfw_psi_strike_craft_desc:0 "Pilots of psi strike drones will be able to control them remotely that will allow us to improve their armor. We will also significantly increase their damage and operational range.\n\n"
+
+ #############SENSORS#################
+ TFW_OBSERVATORY_5:0 "Vortex Sensors"
+ TFW_OBSERVATORY_5_DESC:1 "This improved tachyon sensors work on wider ranges and have a higher reception accuracy."
+ TFW_OBSERVATORY_6:0 "String Sensors"
+ TFW_OBSERVATORY_6_DESC:0 "String sensors receive information analizing vibrations of nearest closed quantum strings. This perspective sensors are able to work on greater ranges."
+ TFW_OBSERVATORY_7:0 "D-Brane Sensors"
+ TFW_OBSERVATORY_7_DESC:0 "This sensors execute the deepest analyze of D-brane fluctuations and work on extremely great ranges."
+ TFW_OBSERVATORY_PSI:0 "Predictive Sensors"
+ TFW_OBSERVATORY_PSI_DESC:0 "This sensors use special psionic algorithms in data processing that allows them to work with enhanced accuracy."
+ 
+ TFW_SHIP_SENSOR_5:0 "Ship-mounted $TFW_OBSERVATORY_5$"
+ TFW_SHIP_SENSOR_5_DESC:0 "$TFW_OBSERVATORY_5_DESC$"
+ TFW_SHIP_SENSOR_6:0 "Ship-mounted $TFW_OBSERVATORY_6$"
+ TFW_SHIP_SENSOR_6_DESC:0 "$TFW_OBSERVATORY_6_DESC$"
+ TFW_SHIP_SENSOR_7:0 "Ship-mounted $TFW_OBSERVATORY_7$"
+ TFW_SHIP_SENSOR_7_DESC:0 "$TFW_OBSERVATORY_7_DESC$"
+ TFW_SHIP_PSI_SENSOR:0 "Ship-mounted $TFW_OBSERVATORY_PSI$"
+ TFW_SHIP_PSI_SENSOR_DESC:0 "$TFW_OBSERVATORY_PSI_DESC$"
+ TFW_STATION_SENSOR_5:0 "Station-mounted $TFW_OBSERVATORY_5$"
+ TFW_STATION_SENSOR_5_DESC:0 "$TFW_OBSERVATORY_5_DESC$"
+ TFW_STATION_SENSOR_6:0 "Station-mounted $TFW_OBSERVATORY_6$"
+ TFW_STATION_SENSOR_6_DESC:0 "$TFW_OBSERVATORY_6_DESC$"
+ TFW_STATION_SENSOR_7:0 "Station-mounted $TFW_OBSERVATORY_7$"
+ TFW_STATION_SENSOR_7_DESC:0 "$TFW_OBSERVATORY_7_DESC$"
+ TFW_STATION_PSI_SENSOR:0 "Station-mounted $TFW_OBSERVATORY_PSI$"
+ TFW_STATION_PSI_SENSOR_DESC:0 "$TFW_OBSERVATORY_PSI_DESC$"
+ 
+ tech_tfw_sensors_5:0 "Vortex Sensors"
+ tech_tfw_sensors_5_desc:0 "Improved tachyon sensors with advanced effective arrays will work on wider ranges and have a higher reception accuracy.\n\n" 
+ tech_tfw_sensors_6:0 "String Analyze"
+ tech_tfw_sensors_6_desc:0 "The development of string theory opens us some new ways in sensor design with advanced capabilities.\n\n"
+ tech_tfw_sensors_7:0 "D-Brane Analyze"
+ tech_tfw_sensors_7_desc:0 "Our deep understanding of M-theory allows us to develop advanced sensors that work perfectly on much greater ranges.\n\n"
+ tech_tfw_psi_sensors:0 "Predictive Sensors"
+ tech_tfw_psi_sensors_desc:0 "Predictive sensors will use special psionic algorithms in data processing. This will result in their enhanced accuracy bonus.\n\n"
+ 
+ TECH_UNLOCK_TFW_OBSERVATORY_5_TITLE:0 "§HUnlocks Component:§! $TFW_OBSERVATORY_5$"
+ TECH_UNLOCK_TFW_OBSERVATORY_5_DESC:0 "§H$TFW_OBSERVATORY_5$§!\n$TFW_OBSERVATORY_5_DESC$"
+ TECH_UNLOCK_TFW_OBSERVATORY_6_TITLE:0 "§HUnlocks Component:§! $TFW_OBSERVATORY_6$"
+ TECH_UNLOCK_TFW_OBSERVATORY_6_DESC:0 "§H$TFW_OBSERVATORY_6$§!\n$TFW_OBSERVATORY_6_DESC$"
+ TECH_UNLOCK_TFW_OBSERVATORY_7_TITLE:0 "§HUnlocks Component:§! $TFW_OBSERVATORY_7$"
+ TECH_UNLOCK_TFW_OBSERVATORY_7_DESC:0 "§H$TFW_OBSERVATORY_7$§!\n$TFW_OBSERVATORY_7_DESC$"
+ TECH_UNLOCK_TFW_OBSERVATORY_PSI_TITLE:0 "§HUnlocks Component:§! $TFW_OBSERVATORY_PSI$"
+ TECH_UNLOCK_TFW_OBSERVATORY_PSI_DESC:0 "§H$TFW_OBSERVATORY_PSI$§!\n$TFW_OBSERVATORY_PSI_DESC$"
+ 
+ ###################################
+ ###########EXD STUFF###############
+ ###################################
+ tech_tfw_exd_altion:0 "Altions"
+ tech_tfw_exd_altion_desc:0 " Altions are massive extra high-energy particles with a peculiar structure, so they could not be gained in our standart particle accelerators. A new type of strong interactions prevents their fast decay.\n\n"
+ TFW_EXTRADIMENSIONAL_2:0 "Altions Emitter"
+ TFW_EXTRADIMENSIONAL_2_DESC:0 "This bulky weapon has a smaller effective range but is very powerful against shields."
+ LARGE_ED_WEAPON_TFW_2:0 "Altions Emitter"
+ tech_tfw_extradimensional_weapon_2:0 "Combat Altions Emitter"
+ tech_tfw_extradimensional_weapon_2_desc:0 "We can develop a combat version of altion emitter. This bulky weapon has a smaller effective range but is very powerful against shields.\n\n"
+ 
+ TFW_EXTRADIMENSIONAL_3:0 "EXD Emitter"
+ TFW_EXTRADIMENSIONAL_3_DESC:0 ""
+ SMALL_ED_WEAPON_TFW_3:0 "Small EXD Emitter"
+ MEDIUM_ED_WEAPON_TFW_3:0 "Medium EXD Emitter"
+ LARGE_ED_WEAPON_TFW_3:0 "Large EXD Emitter"
+ tech_tfw_extradimensional_weapon_3:0 "Extradimensional Emitter"
+ tech_tfw_extradimensional_weapon_3_desc:0 ".\n\n"
+ 
+ TFW_EXD_REACTOR:0 "Extradimensional Core"
+ TFW_EXD_REACTOR_DESC:0 "This power source has an extraordinary nature and generates large amounts of energy.\n\n"
+ SMALL_TFW_EXD_REACTOR:0 "Small Extradimensional Core"
+ MEDIUM_TFW_EXD_REACTOR:0 "Medium Extradimensional Core"
+ LARGE_TFW_EXD_REACTOR:0  "Large Extradimensional Core"
+ tech_tfw_exd_reactor:0 "Extradimensional Power Core"
+ tech_tfw_exd_reactordesc:0 "After some manipulations with extradimensional wrecks we can extract their power cores and try to mount them directly in our generating systems.\n\n"
+ 
+ BODY_TFW_EXD:0 "Extradimensional Shell"
+ BODY_TFW_EXD_DESC:0 ""
+ SMALL_BODY_TFW_EXD:0 "Small Extradimensional Shell"
+ MEDIUM_BODY_TFW_EXD:0 "Medium Extradimensional Shell"
+ LARGE_BODY_TFW_EXD:0 "Large Extradimensional Shell"
+ 
+ TFW_EXD_THRUSTER_1:0 "Extradimensional Thruster"
+ TFW_EXD_THRUSTER_1_DESC:0 ""
+ TFW_EXD_SENSOR_1:0 "Extradimensional Sensor"
+ TFW_EXD_SENSOR_1_DESC:0 ""
+ TFW_EXD_SHIELD_RECHARGER:0 "Extradimensional Shield Condencer"
+ TFW_EXD_SHIELD_RECHARGER_DESC:0 ""
+ 
+ ######################################MISC###################################
+ army_attachment_tfw_bio_weapon:0 "Infectious Ammo"
+ army_attachment_tfw_bio_weapon_desc:0 "§LSpecial ammo containing selected deadly biological toxins and infectious agents will significantly increase efficiency of our armies in land combats. Enemy troops will die in torment fast, but this ammo must be kept with extreme caution so it's expensive to maintain.§!"
+ 
+ opinion_researching_bt:1 "Forbidden Xeno Experiments"
+ opinion_researching_bt2:1 "Cruel Experimenter" 
+ opinion_researching_bt3:1 "Ruthless Experimenter"
+ opinion_researching_bt_fallen:1 "Bioterrorism"
+ 
+ pop_bioterror_neg:0 "Cruel Xeno Experiments"
+ pop_bioterror:0 "Cruel Xeno Experiments"
+ 
+ tfw.05.name:0 "Communication from §H[From.GetName]§!"
+ tfw.05.desc:0 "Your experiments with organic life have exceed reasonable limits, [Root.GetSpeciesName]. We have observed your awkward attempts at bioweapons development and come to the conclusion that you are headed down the path of destruction. Terminate all native interferences immediately or we will MAKE you!"
+ tfw.05.a:0 "We have no choice but to accept... Terminate all programs!"
+ tfw.05.b:0 "The scientific progress of [Root.GetName] will not be stopped!"
+ tfw.05.a.tooltip:0 "§H$policy_interference$§! policy will be set to §H$interference_passive$§!."
+ 
+ tfw_building_bioweaponry_lab:0 "Bioweapon Lab"
+ tfw_building_bioweaponry_lab_desc:1 "This secret laboratory specializes on the development of different types of deadly experimental weapons for our troops."
+ requires_policy_interference_tfw:0 "§RNative interference must be unrestricted.§!"
+ 
+ 

@@ -1,0 +1,49 @@
+#Triggered on game start, no scope
+on_game_start = {
+    events = {
+        tfw_bosp_flag.1 #Allows Modders to know if Bunch of Ship Parts is active.
+    }
+}
+
+# Triggers when the tech is researched
+on_tech_increased = {
+	events = {
+		tfw.01
+		tfw_crisis.1000
+	}
+}
+
+# No scope, like on_game_start
+on_monthly_pulse = {
+	events = {
+		tfw_crisis.1400
+	}
+}
+
+# This = owner of fleet 1 (destroyed)
+# From = owner of fleet 2 (combatant)
+# FromFrom = fleet 1
+# FromFromFrom = fleet 2
+on_fleet_destroyed_victim = {
+	events = {
+		tfw_crisis.1600
+		tfw_crisis.1610
+		tfw_crisis.1620
+	}
+}
+
+#This = Country scope
+on_country_destroyed = {
+	events = {
+		tfw_crisis.1500
+	}
+}
+
+# Planet has reached 0 health
+# This = Planet
+# From = Bombarder
+on_planet_zero_health = {
+	events = {
+		tfw_crisis.1700
+	}
+}

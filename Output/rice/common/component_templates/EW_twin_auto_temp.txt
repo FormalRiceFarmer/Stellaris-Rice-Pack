@@ -1,0 +1,233 @@
+weapon_component_template = {
+	type = instant
+	
+	key = "SMALL_TWIN_AUTOCANNON_1"
+	size = small
+	entity = "small_kinetic_gun_entity"
+	damage = { min = 3 max = 15 }
+	windup = { min = 2 max = 8 }
+	total_fire_time = 8
+	range = 30.0
+	accuracy = 0.9
+	tracking = 0.85
+	armor_penetration = 0.1
+	power = -15
+	cost = 15
+	
+	icon = "GFX_ship_part_twin_autocannon_1"
+	icon_frame = 1
+
+	prerequisites = { "EW_tech_twin_autocannons_1" }
+	component_set = "TWIN_AUTOCANNON_1"
+	projectile_gfx = "auto_cannons_s"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_short_range }
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "MEDIUM_TWIN_AUTOCANNON_1"
+	size = medium
+	entity = "medium_kinetic_gun_entity"
+	damage = { min = 6 max = 31 }
+	windup = { min = 2 max = 8 }
+	total_fire_time = 8
+	range = 50.0
+	accuracy = 0.85
+	tracking = 0.65
+	armor_penetration = 0.2
+	power = -30
+	cost = 30
+	
+	icon = "GFX_ship_part_twin_autocannon_1"
+	icon_frame = 1
+	
+	prerequisites = { "EW_tech_twin_autocannons_1" }
+	component_set = "TWIN_AUTOCANNON_1"
+	projectile_gfx = "auto_cannons_m"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_short_range }	
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "LARGE_TWIN_AUTOCANNON_1"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	damage = { min = 16 max = 66 }
+	windup = { min = 2 max = 8 }
+	total_fire_time = 8
+	range = 70.0
+	accuracy = 0.8
+	tracking = 0.55
+	armor_penetration = 0.3
+	power = -60
+	cost = 60
+	
+	icon = "GFX_ship_part_twin_autocannon_1"
+	icon_frame = 1
+	
+	prerequisites = { "EW_tech_twin_autocannons_1" }
+	component_set = "TWIN_AUTOCANNON_1"
+	projectile_gfx = "auto_cannons_l"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_short_range }
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "SMALL_TWIN_AUTOCANNON_2"
+	size = small
+	entity = "small_kinetic_gun_entity"
+	damage = { min = 4 max = 16 }
+	windup = { min = 2 max = 8 }
+	total_fire_time = 8
+	range = 30.0
+	accuracy = 0.9
+	tracking = 0.85
+	armor_penetration = 0.15
+	power = -16
+	cost = 16
+	
+	icon = "GFX_ship_part_twin_autocannon_2"
+	icon_frame = 1
+	
+	prerequisites = { "EW_tech_twin_autocannons_2" }
+	component_set = "TWIN_AUTOCANNON_2"
+	projectile_gfx = "ripper_auto_cannons_s"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_short_range }
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "MEDIUM_TWIN_AUTOCANNON_2"
+	size = medium
+	entity = "medium_kinetic_gun_entity"
+	damage = { min = 8 max = 33 }
+	windup = { min = 2 max = 8 }
+	total_fire_time = 8
+	range = 50.0
+	accuracy = 0.85
+	tracking = 0.65
+	armor_penetration = 0.25
+	power = -32.5
+	cost = 32.5
+	
+	icon = "GFX_ship_part_twin_autocannon_2"
+	icon_frame = 1
+	
+	prerequisites = { "EW_tech_twin_autocannons_2" }
+	component_set = "TWIN_AUTOCANNON_2"
+	projectile_gfx = "ripper_auto_cannons_m"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_short_range }	
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "LARGE_TWIN_AUTOCANNON_2"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	damage = { min = 21 max = 67 }
+	windup = { min = 2 max = 8 }
+	total_fire_time = 8
+	range = 70.0
+	accuracy = 0.8
+	tracking = 0.55
+	armor_penetration = 0.4
+	power = -65
+	cost = 65
+	
+	icon = "GFX_ship_part_twin_autocannon_2"
+	icon_frame = 1
+	
+	prerequisites = { "EW_tech_twin_autocannons_2" }
+	component_set = "TWIN_AUTOCANNON_2"
+	projectile_gfx = "ripper_auto_cannons_l"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_short_range }
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "SMALL_TWIN_AUTOCANNON_3"
+	size = small
+	entity = "small_kinetic_gun_entity"
+	damage = { min = 5 max = 17 }
+	windup = { min = 2 max = 8 }
+	total_fire_time = 8
+	range = 30.0
+	accuracy = 0.9
+	tracking = 0.85
+	armor_penetration = 0.3
+	power = -17.5
+	cost = 17.5
+	
+	icon = "GFX_ship_part_twin_autocannon_3"
+	icon_frame = 1
+	
+	prerequisites = { "EW_tech_twin_autocannons_3" }
+	component_set = "TWIN_AUTOCANNON_3"
+	projectile_gfx = "ripper_auto_cannons_s"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_short_range }
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "MEDIUM_TWIN_AUTOCANNON_3"
+	size = medium
+	entity = "medium_kinetic_gun_entity"
+	damage = { min = 10 max = 35 }
+	windup = { min = 2 max = 8 }
+	total_fire_time = 8
+	range = 50.0
+	accuracy = 0.85
+	tracking = 0.65
+	armor_penetration = 0.4
+	power = -35
+	cost = 35
+	
+	icon = "GFX_ship_part_twin_autocannon_3"
+	icon_frame = 1
+	
+	prerequisites = { "EW_tech_twin_autocannons_3" }
+	component_set = "TWIN_AUTOCANNON_3"
+	projectile_gfx = "ripper_auto_cannons_m"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_short_range }	
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "LARGE_TWIN_AUTOCANNON_3"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	damage = { min = 26 max = 70 }
+	windup = { min = 2 max = 8 }
+	total_fire_time = 8
+	range = 70.0
+	accuracy = 0.8
+	tracking = 0.55
+	armor_penetration = 0.5
+	power = -70
+	cost = 70
+	
+	icon = "GFX_ship_part_twin_autocannon_3"
+	icon_frame = 1
+	
+	prerequisites = { "EW_tech_twin_autocannons_3" }
+	component_set = "TWIN_AUTOCANNON_3"
+	projectile_gfx = "ripper_auto_cannons_l"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_short_range }
+}

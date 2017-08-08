@@ -1,0 +1,373 @@
+# Flaks for Advanced Weapons.
+
+##################
+### TECH COSTS ###
+##################
+#If you change any of these, use replace in files so the values are the same across all files
+
+@tier1cost1 = 240
+@tier1cost2 = 360
+@tier1cost3 = 480
+@tier1cost4 = 600
+
+@tier2cost1 = 900
+@tier2cost2 = 1200
+@tier2cost3 = 1500
+@tier2cost4 = 1800
+
+@tier3cost1 = 2320
+@tier3cost2 = 2840
+@tier3cost3 = 3360
+@tier3cost4 = 3880
+@tier3cost5 = 4000
+@tier3cost6 = 4240
+
+####################
+### TECH WEIGHTS ###
+####################
+
+
+@tier1weight1 = 100
+@tier1weight2 = 95
+@tier1weight3 = 90
+@tier1weight4 = 85
+
+@tier2weight1 = 75
+@tier2weight2 = 70
+@tier2weight3 = 65
+@tier2weight4 = 60
+
+@tier3weight1 = 50
+@tier3weight2 = 45
+@tier3weight3 = 40
+@tier3weight4 = 35
+
+EW_tech_flak_batteries_3 = {
+	area = engineering
+	cost = @tier3cost2
+	tier = 3
+	category = { materials }
+	ai_update_type = military	
+	prerequisites = { "tech_flak_batteries_2" }
+	weight = @tier3weight2
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.65
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 0.8
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}	
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 0.65
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 0.8
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}
+
+EW_tech_heavy_flak = {
+	area = engineering
+	cost = @tier3cost1
+	tier = 3
+	category = { materials }
+	is_reverse_engineerable = no
+	ai_update_type = military	
+	prerequisites = { "EW_tech_flak_batteries_3" }
+	weight = @tier3weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.65
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 0.8
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}	
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 0.65
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 0.8
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}
+
+EW_tech_flak_batteries_4 = {
+	area = engineering
+	cost = @tier3cost4
+	tier = 3
+	is_rare = yes
+	category = { psionics }
+	is_reverse_engineerable = no
+	ai_update_type = military	
+	prerequisites = { "EW_tech_heavy_flak" "tech_precognition_interface" }
+	weight = @tier3weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.9
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 0.8
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 1.1
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.2
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.3
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_spiritualist
+		}
+		modifier = {
+			factor = 2.0
+			has_ethic = ethic_fanatic_spiritualist
+		}
+
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_psionics"
+			}
+		}
+
+		modifier = {
+			factor = 0
+			AND = {
+				OR = {
+					has_ethic = "ethic_materialist"
+					has_ethic = "ethic_fanatic_materialist"
+				}
+				NOT = {
+					research_leader = {
+						area = society
+						has_trait = "leader_trait_expertise_psionics"
+					}
+				}
+				NOT = { has_trait = trait_natural_psionics }
+				OR = {
+					NOT = {
+						any_owned_pop = {
+							NOT = { is_same_species = root }
+							pop_has_trait = trait_natural_psionics
+						}
+					}
+					has_ethic = ethic_fanatic_xenophobe
+				}
+			}
+		}		
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 0.65
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 0.8
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.2
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_curator"
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_psionics"
+			}
+		}
+	}
+}
+
+EW_tech_flak_batteries_5 = {
+	area = engineering
+	cost = @tier3cost4
+	tier = 3
+	is_rare = yes
+	category = { computing }
+	is_reverse_engineerable = no
+	ai_update_type = military	
+	prerequisites = { "EW_tech_heavy_flak" "tech_sentient_ai" }
+	weight = @tier3weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 2.0
+			has_ethic = ethic_fanatic_materialist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_materialist
+		}
+		modifier = {
+			factor = 0.9
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 0.8
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 1.1
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.2
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.3
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 0.2
+			has_ethic = ethic_spiritualist
+		}
+		modifier = {
+			factor = 0
+			has_ethic = ethic_fanatic_spiritualist
+		}
+		modifier = {
+			factor = 1.2
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_curator"
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}	
+	}
+	
+	ai_weight = {
+		factor = 2		#weapons are good
+		modifier = {
+			factor = 0.65
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 0.8
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}

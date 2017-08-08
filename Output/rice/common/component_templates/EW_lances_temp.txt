@@ -1,0 +1,124 @@
+weapon_component_template = {
+	key = "LARGE_ENERGY_LANCE_3"
+	size = extra_large
+	entity = "invisible_turret_entity"
+	type = instant	
+	
+	firing_arc = 25.0
+	min_range = 10.0
+	static_rotation = yes
+	use_ship_kill_target = no
+
+	damage = { min = 200 max = 350 }
+	windup = { min = 22 max = 35 }
+	total_fire_time = 60
+	range = 120.0
+	accuracy = 0.9
+	shield_damage = 0.67
+	armor_penetration = 0.9
+	tracking = 0.3
+	power = -140
+	cost = 140
+	
+	icon = "GFX_ship_part_energy_lance_3"
+	icon_frame = 1
+
+	prerequisites = { "EW_tech_energy_lance_3" }	
+	component_set = "ENERGY_LANCE_3"
+	projectile_gfx = "plasma_lance"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_long_range weapon_role_anti_armor }
+}
+
+weapon_component_template = {
+	key = "LARGE_ENERGY_LANCE_4"
+	size = extra_large
+	entity = "invisible_turret_entity"
+	type = instant	
+	
+	firing_arc = 25.0
+	min_range = 10.0
+	static_rotation = yes
+
+	damage = { min = 240 max = 400 }
+	windup = { min = 22 max = 35 }
+	total_fire_time = 50
+	range = 140.0
+	accuracy = 0.9
+	armor_penetration = 0.8
+	shield_penetration = 0.5
+	tracking = 0.3
+	power = -180
+	cost = 180
+	
+	icon = "GFX_ship_part_energy_lance_4"
+	icon_frame = 1
+
+	prerequisites = { "EW_tech_energy_lance_4" }	
+	component_set = "ENERGY_LANCE_4"
+	projectile_gfx = "md_lance"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_long_range weapon_role_anti_shield }
+}
+
+weapon_component_template = {
+	key = "LARGE_ENERGY_LANCE_5"
+	size = extra_large
+	entity = "invisible_turret_entity"
+	type = instant	
+	
+	firing_arc = 25.0
+	min_range = 10.0
+	static_rotation = yes
+
+	damage = { min = 320 max = 450 }
+	windup = { min = 22 max = 35 }
+	total_fire_time = 40
+	range = 160.0
+	accuracy = 1
+	armor_penetration = 1.0
+	shield_damage = 2.5
+	tracking = 0.4
+	power = -300
+	cost = 300
+	
+	icon = "GFX_ship_part_energy_lance_5"
+	icon_frame = 1
+
+	prerequisites = { "EW_tech_energy_lance_5" }	
+	component_set = "ENERGY_LANCE_5"
+	projectile_gfx = "annihilator_lance"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_long_range weapon_role_anti_armor }
+}
+
+weapon_component_template = {
+	key = "LARGE_ENERGY_LANCE_6"
+	size = extra_large
+	entity = "invisible_turret_entity"
+	type = instant	
+	
+	firing_arc = 25.0
+	min_range = 20.0
+	static_rotation = yes
+
+	damage = { min = 1800 max = 2200 }
+	windup = { min = 30 max = 45 }
+	total_fire_time = 80
+	range = 180.0
+	accuracy = 1
+	armor_penetration = 1.0
+	shield_damage = 3.0
+	tracking = 0.4
+	power = -500
+	cost = 800
+	
+	icon = "GFX_ship_part_energy_lance_6"
+	icon_frame = 1
+
+	prerequisites = { "EW_tech_energy_lance_6" }	
+	component_set = "ENERGY_LANCE_6"
+	projectile_gfx = "white_lance"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_long_range weapon_role_anti_armor }
+}

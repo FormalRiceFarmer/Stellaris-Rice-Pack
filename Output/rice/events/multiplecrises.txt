@@ -1,0 +1,23 @@
+############################
+#
+# Multiple Crisis
+#
+# Written by Ryuichiro
+#
+############################
+
+namespace = multiplecrises
+
+# Remove "galactic_crisis_happened" flag each month
+event = {
+	id = multiplecrises.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_country = {
+			limit = { has_global_flag = galactic_crisis_happened }
+			remove_global_flag = galactic_crisis_happened
+		}
+	}
+}

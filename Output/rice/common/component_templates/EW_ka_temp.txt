@@ -1,0 +1,87 @@
+weapon_component_template = {
+	type = instant
+	damage = { min = 106 max = 218 }
+	windup = { min = 2 max = 18 }
+	firing_arc = 25.0
+	min_range = 10.0
+	total_fire_time = 40
+	range = 100.0
+	accuracy = 0.7
+	shield_damage = 1.4
+	armor_penetration = 0.2
+	tracking = 0.2
+	power = -90
+	cost = 110
+	
+	key = "LARGE_KINETIC_ARTILLERY_3"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_kinetic_artillery_3"
+	icon_frame = 1
+	
+	prerequisites = { "EW_tech_kinetic_artillery_3" }
+	component_set = "KINETIC_ARTILLERY_3"
+	projectile_gfx = "kinetic_artillery"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_long_range }
+}
+
+weapon_component_template = {
+	type = instant
+	damage = { min = 111 max = 230 }
+	windup = { min = 2 max = 18 }
+	firing_arc = 25.0
+	min_range = 10.0
+	total_fire_time = 40
+	range = 110.0
+	accuracy = 0.7
+	tracking = 0.15
+	shield_damage = 1.5
+	armor_penetration = 0.3
+	tracking = 0.3
+	power = -100
+	cost = 120
+	
+	key = "LARGE_KINETIC_ARTILLERY_4"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_kinetic_artillery_4"
+	icon_frame = 1
+	
+	prerequisites = { "EW_tech_kinetic_artillery_4" }
+	component_set = "KINETIC_ARTILLERY_4"
+	projectile_gfx = "kinetic_artillery"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_long_range }
+}
+
+weapon_component_template = {
+	type = instant
+	damage = { min = 120 max = 240 }
+	windup = { min = 2 max = 18 }
+	firing_arc = 25.0
+	min_range = 10.0
+	total_fire_time = 40
+	range = 120.0
+	accuracy = 0.8
+	tracking = 0.4
+	shield_damage = 1.5
+	armor_penetration = 0.4
+	power = -120
+	cost = 140
+	
+	key = "LARGE_KINETIC_ARTILLERY_5"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	
+	icon = "GFX_ship_part_kinetic_artillery_5"
+	icon_frame = 1
+	
+	prerequisites = { "EW_tech_kinetic_artillery_5" }
+	component_set = "KINETIC_ARTILLERY_5"
+	projectile_gfx = "kinetic_artillery"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_long_range }
+}

@@ -1,0 +1,2206 @@
+namespace = tfw_crisis
+
+### EXTRADIMENSIONALS
+
+# Extradimensional Invasion Begins (HIDDEN)
+country_event = {
+	id = tfw_crisis.1000
+	hide_window = yes
+	fire_only_once = yes
+	
+	trigger = {
+		is_crises_allowed = yes
+		NOT = { 
+			has_global_flag = extradimensional_invasion_happened
+		#	has_global_flag = galactic_crisis_happened
+		}
+		#is_ai = no
+		is_country_type = default
+		#exists = capital_scope
+		#capital_scope = { colony_age > 1800 }
+		last_increased_tech = "tech_red_shield"
+	}
+	
+	immediate = {
+		if = {
+			limit = { is_difficulty = 2 }
+				country_event = { id = tfw_crisis.1100 days = 180 } 
+				country_event = { id = tfw_crisis.1200 days = 360 } 
+				country_event = { id = tfw_crisis.1300 days = 560 } 
+			else = { 
+				if = {
+					limit = { is_difficulty = 1 }
+						country_event = { id = tfw_crisis.1100 days = 360 } 
+						country_event = { id = tfw_crisis.1200 days = 560 } 
+						else = { 
+							country_event = { id = tfw_crisis.1100 days = 560 }
+							country_event = { id = tfw_crisis.1200 days = 800 } 
+					}
+				}
+			}
+		}
+	}
+}
+
+#First Arrival			
+country_event = {
+	id = tfw_crisis.1100
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		random_system = {
+			limit = {
+				NOT = {
+					any_country = {
+						OR = {
+							is_country_type = fallen_empire
+							is_country_type = awakened_fallen_empire
+						}
+						any_system_within_border = {
+							is_same_value = prev
+						}
+					}
+				}
+			}
+			set_star_flag = tfw_ed_hunters_system_first
+			save_event_target_as = extradimensional_system
+			random_system_planet = {
+				save_event_target_as = exd_rndm_planet			
+				create_species = {
+					name = "Extradimensional Invaders"
+					class = EXD
+					portrait = exd1
+					traits = random
+				}
+				create_country = {
+					name = "Extradimensional Invaders"
+					type = "tfw_ed"
+					species = last_created
+					name_list = "Extradimensional"
+					flag = {
+						icon= {
+							category = "special"
+							file = "extradimensional_01.dds"
+						}
+						background= {
+							category = "backgrounds"
+							file = "circle.dds"
+						}
+						colors={
+							"red"
+							"black"
+							"null"
+							"null"
+						}
+					}
+				}
+				last_created_species = { save_event_target_as = extradimensional_species }
+				last_created_country = {
+					# Lets do Full Bombardment
+					set_policy = {
+						policy = orbital_bombardment
+						option = orbital_bombardment_full
+						cooldown = no
+					}
+					# Beef up ED depending on difficulty
+					if = {
+						limit = {
+							is_difficulty = 2
+						}
+						add_modifier = {
+							modifier = tfw_exd_strength_insane
+						}
+						else = {
+							if = {
+								limit = {
+									is_difficulty = 1
+								}
+								add_modifier = {
+									modifier = tfw_exd_strength_hard
+									days = -1
+								}
+								else = {
+									add_modifier = {
+										modifier = tfw_exd_strength
+										days = -1
+									}	
+								}
+							}
+						}
+					}
+					save_event_target_as = extradimensionals
+					create_fleet = {
+						name = "Dimensional Portal"
+						effect = {
+							set_owner = PREV
+							create_ship = {
+								name = random
+								design = "Unbidden Portal"
+								graphical_culture = "extra_dimensional_01"
+							}
+							set_location = {
+								target = PREVPREV
+								distance = 40
+								angle = random
+							}
+							save_event_target_as = dimensional_portal_1
+							fleet_event = { id = tfw_crisis.1110 days = 30 } # First Fleet Arrives
+							fleet_event = { id = tfw_crisis.1110 days = 60 } # Second Fleet Arrives
+							fleet_event = { id = tfw_crisis.1110 days = 90 } # Third Fleet Arrives
+							fleet_event = { id = tfw_crisis.1110 days = 120 } # Fourth Fleet Arrives
+							fleet_event = { id = tfw_crisis.1110 days = 150 } # Fifth Fleet Arrives
+							fleet_event = { id = tfw_crisis.1120 days = 152 } # Closing Portal
+						}
+					}
+					create_fleet = {
+						effect = {
+							set_owner = event_target:extradimensionals
+							create_ship = {
+								name = random
+								design = "EXD Sentinel"
+								graphical_culture = "extra_dimensional_01"
+							}
+							set_location = {
+								target = event_target:dimensional_portal_1
+								distance = 0
+								angle = random
+							}
+						}
+					}
+				}
+			}
+		}
+		every_country = {
+			limit = {
+				is_country_type = default
+				intel_level = { 
+					level = high
+					system = event_target:extradimensional_system
+				}
+			}
+			country_event = { id = tfw_crisis.1130 }
+			establish_communications_no_message = event_target:extradimensionals
+		}
+		every_country = {
+			limit = {
+				is_country_type = default
+				NOT = {
+					intel_level = { 
+						level = high
+						system = event_target:extradimensional_system
+					}
+				}
+			}
+			country_event = { id = tfw_crisis.1140 }
+		}
+	}		
+}
+
+# Fleet Reinforcements
+fleet_event = {
+	id = tfw_crisis.1110 
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		event_target:extradimensionals = {
+			random_list = {
+				25 = {
+					create_leader = {
+						type = admiral
+						species = event_target:extradimensional_species
+						name = random
+						skill = 1000
+						traits = {
+							trait = leader_trait_ethereal
+						}
+					}
+				}
+				25 = {
+					create_leader = {
+						type = admiral
+						species = event_target:extradimensional_species
+						name = random
+						skill = 1000
+						traits = {
+							trait = leader_trait_dimensional_stutter
+						}
+					}
+				}
+				50 = {
+					create_leader = {
+						type = admiral
+						species = event_target:extradimensional_species
+						name = random
+						skill = 500
+					}
+				}
+			}
+			create_fleet = {
+				effect = {
+					set_owner = PREV
+					create_ship = {
+						name = random
+						design = "EXD Persecutor"
+						graphical_culture = "extra_dimensional_01"
+					}
+					assign_leader = last_created_leader
+					while = {
+						count = 13
+						create_ship = {
+							name = random
+							design = "EXD Persecutor"
+							graphical_culture = "extra_dimensional_01"
+						}
+					}
+					while = {
+						count = 20
+						create_ship = {
+							name = random
+							design = "EXD Scout"
+							graphical_culture = "extra_dimensional_01"
+						}	
+					}
+					set_location = {
+						target = ROOT
+						distance = 5
+						angle = random
+					}
+					set_fleet_stance = aggressive
+					set_aggro_range = 1000
+					set_aggro_range_measure_from = self
+				}
+			}
+		}
+	}
+}
+
+# First portal is closing
+fleet_event = {
+	id = tfw_crisis.1120
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		ROOT = { dismantle = yes }	#dismantle = yes or destroy_fleet = this ####reduce_hp_percent = 100 works with ships only
+		every_country = {
+			limit = {
+				is_country_type = default
+				has_event_chain = tfw_ed_chain
+			}
+			country_event = { id = tfw_crisis.1121 days = 2 }
+		}
+	}
+}
+
+#Message about Portal 1
+country_event = {
+	id = tfw_crisis.1121
+	title = "tfw_crisis.1121.name"
+	desc = "tfw_crisis.1121.desc"
+	picture = GFX_evt_wormhole
+	show_sound = event_alien_signal
+	location = event_target:extradimensional_system
+	
+	is_triggered_only = yes
+
+	option = {
+		name = tfw_crisis.1121.a
+		event_target:exd_rndm_planet = {
+			enable_special_project = {
+				name = "TFW_CRIS"
+				location = event_target:exd_rndm_planet
+				owner = ROOT
+			}
+		}
+	}
+}
+
+# First Portal (High Intel)
+country_event = {
+	id = tfw_crisis.1130
+	title = "tfw_crisis.1130.name"
+	desc = "tfw_crisis.1130.desc"
+	picture = GFX_evt_wormhole
+	show_sound = event_ex_started
+	location = event_target:extradimensional_system
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_global_flag = tfw_ed_first_base_appeared	
+	}
+	
+	option = {
+		name = tfw_crisis.1130.a
+		trigger = {
+			has_spiritualist_government = yes
+			NOT = {
+				has_ethic = "ethic_fanatic_egalitarian"
+				has_ethic = "ethic_fanatic_authoritarian"
+				has_ethic = "ethic_fanatic_xenophile"
+				has_ethic = "ethic_fanatic_xenophobe"
+			}
+		}
+		begin_event_chain = {
+			event_chain = "tfw_ed_chain"
+			target = ROOT
+		}
+		create_point_of_interest = {
+			id = tfw_ed_poi.1
+			name = "tfw_ed_poi_1"
+			desc = "tfw_ed_poi_1_desc"
+			event_chain = "tfw_ed_chain"
+			location = event_target:extradimensional_system
+		}
+	}
+	option = {
+		name = tfw_crisis.1130.b
+		trigger = {
+			has_militarist_government = yes
+			NOT = {
+				has_ethic = "ethic_fanatic_egalitarian"
+				has_ethic = "ethic_fanatic_authoritarian"
+				has_ethic = "ethic_fanatic_xenophile"
+				has_ethic = "ethic_fanatic_xenophobe"
+			}
+		}
+		begin_event_chain = {
+			event_chain = "tfw_ed_chain"
+			target = ROOT
+		}
+		create_point_of_interest = {
+			id = tfw_ed_poi.1
+			name = "tfw_ed_poi_1"
+			desc = "tfw_ed_poi_1_desc"
+			event_chain = "tfw_ed_chain"
+			location = event_target:extradimensional_system
+		}
+	}
+	option = {
+		name = tfw_crisis.1130.c
+		trigger = {
+			has_materialist_government = yes
+			NOT = {
+				has_ethic = "ethic_fanatic_egalitarian"
+				has_ethic = "ethic_fanatic_authoritarian"
+				has_ethic = "ethic_fanatic_xenophile"
+				has_ethic = "ethic_fanatic_xenophobe"
+			}
+		}
+		begin_event_chain = {
+			event_chain = "tfw_ed_chain"
+			target = ROOT
+		}
+		create_point_of_interest = {
+			id = tfw_ed_poi.1
+			name = "tfw_ed_poi_1"
+			desc = "tfw_ed_poi_1_desc"
+			event_chain = "tfw_ed_chain"
+			location = event_target:extradimensional_system
+		}
+	}
+	option = {
+		name = tfw_crisis.1130.d
+		trigger = {
+			has_pacifist_government = yes
+			NOT = {
+				has_ethic = "ethic_fanatic_egalitarian"
+				has_ethic = "ethic_fanatic_authoritarian"
+				has_ethic = "ethic_fanatic_xenophile"
+				has_ethic = "ethic_fanatic_xenophobe"
+			}
+		}
+		begin_event_chain = {
+			event_chain = "tfw_ed_chain"
+			target = ROOT
+		}
+		create_point_of_interest = {
+			id = tfw_ed_poi.1
+			name = "tfw_ed_poi_1"
+			desc = "tfw_ed_poi_1_desc"
+			event_chain = "tfw_ed_chain"
+			location = event_target:extradimensional_system
+		}
+	}
+	option = {
+		name = tfw_crisis.1130.e
+		trigger = {
+			has_government = gov_megacorporation
+			NOT = {
+				has_ethic = "ethic_fanatic_egalitarian"
+				has_ethic = "ethic_fanatic_authoritarian"
+				has_ethic = "ethic_fanatic_xenophile"
+				has_ethic = "ethic_fanatic_xenophobe"
+			}
+		}
+		begin_event_chain = {
+			event_chain = "tfw_ed_chain"
+			target = ROOT
+		}
+		create_point_of_interest = {
+			id = tfw_ed_poi.1
+			name = "tfw_ed_poi_1"
+			desc = "tfw_ed_poi_1_desc"
+			event_chain = "tfw_ed_chain"
+			location = event_target:extradimensional_system
+		}
+	}
+	option = {
+		name = tfw_crisis.1130.f
+		trigger = {
+			OR = {
+				has_generic_government = yes
+				has_government = gov_enlightened_monarchy
+				has_government = gov_enlightened_dictatorship
+				has_government = gov_hive_mind
+			}
+			NOT = {
+				has_ethic = "ethic_fanatic_egalitarian"
+				has_ethic = "ethic_fanatic_authoritarian"
+				has_ethic = "ethic_fanatic_xenophile"
+				has_ethic = "ethic_fanatic_xenophobe"
+			}
+		}
+		begin_event_chain = {
+			event_chain = "tfw_ed_chain"
+			target = ROOT
+		}
+		create_point_of_interest = {
+			id = tfw_ed_poi.1
+			name = "tfw_ed_poi_1"
+			desc = "tfw_ed_poi_1_desc"
+			event_chain = "tfw_ed_chain"
+			location = event_target:extradimensional_system
+		}
+	}
+	option = {
+		name = tfw_crisis.1130.g
+		trigger = {
+			has_ethic = "ethic_fanatic_xenophobe"
+		}
+		begin_event_chain = {
+			event_chain = "tfw_ed_chain"
+			target = ROOT
+		}
+		create_point_of_interest = {
+			id = tfw_ed_poi.1
+			name = "tfw_ed_poi_1"
+			desc = "tfw_ed_poi_1_desc"
+			event_chain = "tfw_ed_chain"
+			location = event_target:extradimensional_system
+		}
+	}
+	option = {
+		name = tfw_crisis.1130.h
+		trigger = {
+			has_ethic = "ethic_fanatic_xenophile"
+		}
+		begin_event_chain = {
+			event_chain = "tfw_ed_chain"
+			target = ROOT
+		}
+		create_point_of_interest = {
+			id = tfw_ed_poi.1
+			name = "tfw_ed_poi_1"
+			desc = "tfw_ed_poi_1_desc"
+			event_chain = "tfw_ed_chain"
+			location = event_target:extradimensional_system
+		}
+	}
+	option = {
+		name = tfw_crisis.1130.i
+		trigger = {
+			has_ethic = "ethic_fanatic_authoritarian"
+		}
+		begin_event_chain = {
+			event_chain = "tfw_ed_chain"
+			target = ROOT
+		}
+		create_point_of_interest = {
+			id = tfw_ed_poi.1
+			name = "tfw_ed_poi_1"
+			desc = "tfw_ed_poi_1_desc"
+			event_chain = "tfw_ed_chain"
+			location = event_target:extradimensional_system
+		}
+	}
+	option = {
+		name = tfw_crisis.1130.j
+		trigger = {
+			has_ethic = "ethic_fanatic_egalitarian"
+		}
+		begin_event_chain = {
+			event_chain = "tfw_ed_chain"
+			target = ROOT
+		}
+		create_point_of_interest = {
+			id = tfw_ed_poi.1
+			name = "tfw_ed_poi_1"
+			desc = "tfw_ed_poi_1_desc"
+			event_chain = "tfw_ed_chain"
+			location = event_target:extradimensional_system
+		}
+	}
+}
+
+# Inter-notification
+country_event = {
+	id = tfw_crisis.1140
+	title = "tfw_crisis.1140.name"
+	desc = "tfw_crisis.1140.desc"
+	picture = GFX_evt_physics_research
+	show_sound = event_alien_signal
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tfw_crisis.1140.a
+		hidden_effect = { 
+			country_event = { id = tfw_crisis.1141 days = 30 }
+			country_event = { id = tfw_crisis.1142 days = 29 }
+		}
+	}
+}
+
+# Establishing communications (HIDDEN)
+country_event = {
+	id = tfw_crisis.1142
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		establish_communications_no_message = event_target:extradimensionals
+	}
+}
+	
+# First Portal - Threat Identified (Not so High Intel)
+country_event = {
+	id = tfw_crisis.1141
+	title = "tfw_crisis.1141.name"
+	desc = "tfw_crisis.1141.desc"
+	picture = GFX_evt_wormhole
+	show_sound = event_alien_signal
+	location = event_target:extradimensional_system
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_global_flag = tfw_ed_first_base_appeared	
+	}
+	
+	option = {
+		name = tfw_crisis.1130.a
+		trigger = {
+			has_spiritualist_government = yes
+			NOT = {
+				has_ethic = "ethic_fanatic_egalitarian"
+				has_ethic = "ethic_fanatic_authoritarian"
+				has_ethic = "ethic_fanatic_xenophile"
+				has_ethic = "ethic_fanatic_xenophobe"
+			}
+		}
+		begin_event_chain = {
+			event_chain = "tfw_ed_chain"
+			target = ROOT
+		}
+		create_point_of_interest = {
+			id = tfw_ed_poi.1
+			name = "tfw_ed_poi_1"
+			desc = "tfw_ed_poi_1_desc"
+			event_chain = "tfw_ed_chain"
+			location = event_target:extradimensional_system
+		}
+	}
+	option = {
+		name = tfw_crisis.1130.b
+		trigger = {
+			has_militarist_government = yes
+			NOT = {
+				has_ethic = "ethic_fanatic_egalitarian"
+				has_ethic = "ethic_fanatic_authoritarian"
+				has_ethic = "ethic_fanatic_xenophile"
+				has_ethic = "ethic_fanatic_xenophobe"
+			}
+		}
+		begin_event_chain = {
+			event_chain = "tfw_ed_chain"
+			target = ROOT
+		}
+		create_point_of_interest = {
+			id = tfw_ed_poi.1
+			name = "tfw_ed_poi_1"
+			desc = "tfw_ed_poi_1_desc"
+			event_chain = "tfw_ed_chain"
+			location = event_target:extradimensional_system
+		}
+	}
+	option = {
+		name = tfw_crisis.1130.c
+		trigger = {
+			has_materialist_government = yes
+			NOT = {
+				has_ethic = "ethic_fanatic_egalitarian"
+				has_ethic = "ethic_fanatic_authoritarian"
+				has_ethic = "ethic_fanatic_xenophile"
+				has_ethic = "ethic_fanatic_xenophobe"
+			}
+		}
+		begin_event_chain = {
+			event_chain = "tfw_ed_chain"
+			target = ROOT
+		}
+		create_point_of_interest = {
+			id = tfw_ed_poi.1
+			name = "tfw_ed_poi_1"
+			desc = "tfw_ed_poi_1_desc"
+			event_chain = "tfw_ed_chain"
+			location = event_target:extradimensional_system
+		}	
+	}
+	option = {
+		name = tfw_crisis.1130.d
+		trigger = {
+			has_pacifist_government = yes
+			NOT = {
+				has_ethic = "ethic_fanatic_egalitarian"
+				has_ethic = "ethic_fanatic_authoritarian"
+				has_ethic = "ethic_fanatic_xenophile"
+				has_ethic = "ethic_fanatic_xenophobe"
+			}
+		}
+		begin_event_chain = {
+			event_chain = "tfw_ed_chain"
+			target = ROOT
+		}
+		create_point_of_interest = {
+			id = tfw_ed_poi.1
+			name = "tfw_ed_poi_1"
+			desc = "tfw_ed_poi_1_desc"
+			event_chain = "tfw_ed_chain"
+			location = event_target:extradimensional_system
+		}	
+	}
+	option = {
+		name = tfw_crisis.1130.e
+		trigger = {
+			has_government = gov_megacorporation
+			NOT = {
+				has_ethic = "ethic_fanatic_egalitarian"
+				has_ethic = "ethic_fanatic_authoritarian"
+				has_ethic = "ethic_fanatic_xenophile"
+				has_ethic = "ethic_fanatic_xenophobe"
+			}
+		}
+		begin_event_chain = {
+			event_chain = "tfw_ed_chain"
+			target = ROOT
+		}
+		create_point_of_interest = {
+			id = tfw_ed_poi.1
+			name = "tfw_ed_poi_1"
+			desc = "tfw_ed_poi_1_desc"
+			event_chain = "tfw_ed_chain"
+			location = event_target:extradimensional_system
+		}	
+	}
+	option = {
+		name = tfw_crisis.1130.f
+		trigger = {
+			OR = {
+				has_generic_government = yes
+				has_government = gov_enlightened_monarchy
+				has_government = gov_enlightened_dictatorship
+				has_government = gov_hive_mind
+			}
+			NOT = {
+				has_ethic = "ethic_fanatic_egalitarian"
+				has_ethic = "ethic_fanatic_authoritarian"
+				has_ethic = "ethic_fanatic_xenophile"
+				has_ethic = "ethic_fanatic_xenophobe"
+			}
+		}
+		begin_event_chain = {
+			event_chain = "tfw_ed_chain"
+			target = ROOT
+		}
+		create_point_of_interest = {
+			id = tfw_ed_poi.1
+			name = "tfw_ed_poi_1"
+			desc = "tfw_ed_poi_1_desc"
+			event_chain = "tfw_ed_chain"
+			location = event_target:extradimensional_system
+		}	
+	}
+	option = {
+		name = tfw_crisis.1130.g
+		trigger = {
+			has_ethic = "ethic_fanatic_xenophobe"
+		}
+		begin_event_chain = {
+			event_chain = "tfw_ed_chain"
+			target = ROOT
+		}
+		create_point_of_interest = {
+			id = tfw_ed_poi.1
+			name = "tfw_ed_poi_1"
+			desc = "tfw_ed_poi_1_desc"
+			event_chain = "tfw_ed_chain"
+			location = event_target:extradimensional_system
+		}
+	}
+	option = {
+		name = tfw_crisis.1130.h
+		trigger = {
+			has_ethic = "ethic_fanatic_xenophile"
+		}
+		begin_event_chain = {
+			event_chain = "tfw_ed_chain"
+			target = ROOT
+		}
+		create_point_of_interest = {
+			id = tfw_ed_poi.1
+			name = "tfw_ed_poi_1"
+			desc = "tfw_ed_poi_1_desc"
+			event_chain = "tfw_ed_chain"
+			location = event_target:extradimensional_system
+		}
+	}
+	option = {
+		name = tfw_crisis.1130.i
+		trigger = {
+			has_ethic = "ethic_fanatic_authoritarian"
+		}
+		begin_event_chain = {
+			event_chain = "tfw_ed_chain"
+			target = ROOT
+		}
+		create_point_of_interest = {
+			id = tfw_ed_poi.1
+			name = "tfw_ed_poi_1"
+			desc = "tfw_ed_poi_1_desc"
+			event_chain = "tfw_ed_chain"
+			location = event_target:extradimensional_system
+		}
+	}
+	option = {
+		name = tfw_crisis.1130.j
+		trigger = {
+			has_ethic = "ethic_fanatic_egalitarian"
+		}
+		begin_event_chain = {
+			event_chain = "tfw_ed_chain"
+			target = ROOT
+		}
+		create_point_of_interest = {
+			id = tfw_ed_poi.1
+			name = "tfw_ed_poi_1"
+			desc = "tfw_ed_poi_1_desc"
+			event_chain = "tfw_ed_chain"
+			location = event_target:extradimensional_system
+		}
+	}
+}
+
+#Second Arrival
+country_event = {
+	id = tfw_crisis.1200
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		random_system = {
+			limit = {
+				NOT = {
+					any_country = {
+						OR = {
+							is_country_type = fallen_empire
+							is_country_type = awakened_fallen_empire
+						}
+						any_system_within_border = {
+							is_same_value = prev
+						}
+					}
+				}
+			}
+			set_star_flag = tfw_ed_hunters_system_second
+			save_event_target_as = second_extradimensional_system
+				random_system_planet = {
+					every_country = {
+						limit = { is_country_type = tfw_ed }
+					save_event_target_as = extradimensionals
+					create_fleet = {
+						name = "Dimensional Portal"
+						effect = {
+							set_owner = PREV
+							create_ship = {
+								name = random
+								design = "Unbidden Portal"
+								graphical_culture = "extra_dimensional_01"
+							}
+							set_location = {
+								target = PREVPREV
+								distance = 40
+								angle = random
+							}
+							save_event_target_as = dimensional_portal_2
+							fleet_event = { id = tfw_crisis.1210 days = 30 } # First Fleet Arrives
+							fleet_event = { id = tfw_crisis.1210 days = 60 } # Second Fleet Arrives
+							fleet_event = { id = tfw_crisis.1210 days = 90 } # Third Fleet Arrives
+							fleet_event = { id = tfw_crisis.1210 days = 120 } # Fourth Fleet Arrives
+							fleet_event = { id = tfw_crisis.1210 days = 150 } # Fifth Fleet Arrives	
+							fleet_event = { id = tfw_crisis.1220 days = 152 } # Closing Portal							
+						}
+					}
+					create_fleet = {
+						effect = {
+							set_owner = event_target:extradimensionals
+							create_ship = {
+								name = random
+								design = "EXD Gatekeeper"
+								graphical_culture = "extra_dimensional_01"
+							}
+							set_location = {
+								target = event_target:dimensional_portal_2
+								distance = 0
+								angle = random
+							}
+						}
+					}
+				}
+			}
+		}
+		every_country = {
+			limit = {
+				is_country_type = default
+				has_event_chain = tfw_ed_chain
+			}
+			country_event = { id = tfw_crisis.1230 }
+		}	
+	}		
+}
+
+# Fleet Reinforcements
+fleet_event = {
+	id = tfw_crisis.1210 
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		event_target:extradimensionals = {
+			random_list = {
+				25 = {
+					create_leader = {
+						type = admiral
+						species = event_target:extradimensional_species
+						name = random
+						skill = 1000
+						traits = {
+							trait = leader_trait_ethereal
+						}
+					}
+				}
+				25 = {
+					create_leader = {
+						type = admiral
+						species = event_target:extradimensional_species
+						name = random
+						skill = 1000
+						traits = {
+							trait = leader_trait_dimensional_stutter
+						}
+					}
+				}
+				50 = {
+					create_leader = {
+						type = admiral
+						species = event_target:extradimensional_species
+						name = random
+						skill = 500
+					}
+				}
+			}
+			create_fleet = {
+				effect = {
+					set_owner = PREV
+					create_ship = {
+						name = random
+						design = "EXD Persecutor"
+						graphical_culture = "extra_dimensional_01"
+					}
+					assign_leader = last_created_leader
+					while = {
+						count = 10
+						create_ship = {
+							name = random
+							design = "EXD Persecutor"
+							graphical_culture = "extra_dimensional_01"
+						}
+					}
+					while = {
+						count = 26
+						create_ship = {
+							name = random
+							design = "EXD Scout"
+							graphical_culture = "extra_dimensional_01"
+						}	
+					}
+					set_location = {
+						target = ROOT
+						distance = 5
+						angle = random
+					}
+					set_fleet_stance = aggressive
+					set_aggro_range = 1000
+					set_aggro_range_measure_from = self
+				}
+			}
+		}
+	}
+}
+
+#Second portal is closing
+fleet_event = {
+	id = tfw_crisis.1220
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		ROOT = { dismantle = yes }	#dismantle = yes or destroy_fleet = this ####reduce_hp_percent = 100 works with ships only
+		every_country = {
+			limit = {
+				is_country_type = default
+			}
+			country_event = { id = tfw_crisis.1221 days = 2 }
+		}
+		
+	}
+}
+
+#Message about Portal 2
+country_event = {
+	id = tfw_crisis.1221
+	title = "tfw_crisis.1221.name"
+	desc = "tfw_crisis.1221.desc"
+	picture = GFX_evt_wormhole
+	show_sound = event_alien_signal
+	location = event_target:second_extradimensional_system
+	
+	is_triggered_only = yes
+
+	option = {
+			name = tfw_crisis.1221.a
+	}
+}
+
+# Second Portal (High and Low Intel)
+country_event = {
+	id = tfw_crisis.1230
+	title = "tfw_crisis.1230.name"
+	desc = "tfw_crisis.1230.desc"
+	picture = GFX_evt_wormhole
+	show_sound = event_ex_started
+	location = event_target:second_extradimensional_system
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_global_flag = tfw_ed_second_base_appeared		
+	}
+	
+	option = {
+		name = tfw_crisis.1230.a
+		trigger = {
+			has_spiritualist_government = yes
+			NOT = {
+				has_ethic = "ethic_fanatic_egalitarian"
+				has_ethic = "ethic_fanatic_authoritarian"
+				has_ethic = "ethic_fanatic_xenophile"
+				has_ethic = "ethic_fanatic_xenophobe"
+			}
+		}
+		create_point_of_interest = {
+			id = tfw_ed_poi.2
+			name = "tfw_ed_poi_2"
+			desc = "tfw_ed_poi_2_desc"
+			event_chain = "tfw_ed_chain"
+			location = event_target:second_extradimensional_system
+		}
+	}
+	option = {
+		name = tfw_crisis.1230.b
+		trigger = {
+			has_militarist_government = yes
+			NOT = {
+				has_ethic = "ethic_fanatic_egalitarian"
+				has_ethic = "ethic_fanatic_authoritarian"
+				has_ethic = "ethic_fanatic_xenophile"
+				has_ethic = "ethic_fanatic_xenophobe"
+			}
+		}
+		create_point_of_interest = {
+			id = tfw_ed_poi.2
+			name = "tfw_ed_poi_2"
+			desc = "tfw_ed_poi_2_desc"
+			event_chain = "tfw_ed_chain"
+			location = event_target:second_extradimensional_system
+		}
+	}
+	option = {
+		name = tfw_crisis.1230.c
+		trigger = {
+			has_materialist_government = yes
+			NOT = {
+				has_ethic = "ethic_fanatic_egalitarian"
+				has_ethic = "ethic_fanatic_authoritarian"
+				has_ethic = "ethic_fanatic_xenophile"
+				has_ethic = "ethic_fanatic_xenophobe"
+			}
+		}
+		create_point_of_interest = {
+			id = tfw_ed_poi.2
+			name = "tfw_ed_poi_2"
+			desc = "tfw_ed_poi_2_desc"
+			event_chain = "tfw_ed_chain"
+			location = event_target:second_extradimensional_system
+		}
+	}
+	option = {
+		name = tfw_crisis.1230.d
+		trigger = {
+			has_pacifist_government = yes
+			NOT = {
+				has_ethic = "ethic_fanatic_egalitarian"
+				has_ethic = "ethic_fanatic_authoritarian"
+				has_ethic = "ethic_fanatic_xenophile"
+				has_ethic = "ethic_fanatic_xenophobe"
+			}
+		}
+		create_point_of_interest = {
+			id = tfw_ed_poi.2
+			name = "tfw_ed_poi_2"
+			desc = "tfw_ed_poi_2_desc"
+			event_chain = "tfw_ed_chain"
+			location = event_target:second_extradimensional_system
+		}
+	}
+	option = {
+		name = tfw_crisis.1230.e
+		trigger = {
+			has_government = gov_megacorporation
+			NOT = {
+				has_ethic = "ethic_fanatic_egalitarian"
+				has_ethic = "ethic_fanatic_authoritarian"
+				has_ethic = "ethic_fanatic_xenophile"
+				has_ethic = "ethic_fanatic_xenophobe"
+			}
+		}
+		create_point_of_interest = {
+			id = tfw_ed_poi.2
+			name = "tfw_ed_poi_2"
+			desc = "tfw_ed_poi_2_desc"
+			event_chain = "tfw_ed_chain"
+			location = event_target:second_extradimensional_system
+		}
+	}
+	option = {
+		name = tfw_crisis.1230.f
+		trigger = {
+			OR = {
+				has_generic_government = yes
+				has_government = gov_enlightened_monarchy
+				has_government = gov_enlightened_dictatorship
+				has_government = gov_hive_mind
+			}
+			NOT = {
+				has_ethic = "ethic_fanatic_egalitarian"
+				has_ethic = "ethic_fanatic_authoritarian"
+				has_ethic = "ethic_fanatic_xenophile"
+				has_ethic = "ethic_fanatic_xenophobe"
+			}
+		}
+		create_point_of_interest = {
+			id = tfw_ed_poi.2
+			name = "tfw_ed_poi_2"
+			desc = "tfw_ed_poi_2_desc"
+			event_chain = "tfw_ed_chain"
+			location = event_target:second_extradimensional_system
+		}
+	}
+	option = {
+		name = tfw_crisis.1230.g
+		trigger = {
+			has_ethic = "ethic_fanatic_xenophobe"
+		}
+		create_point_of_interest = {
+			id = tfw_ed_poi.2
+			name = "tfw_ed_poi_2"
+			desc = "tfw_ed_poi_2_desc"
+			event_chain = "tfw_ed_chain"
+			location = event_target:second_extradimensional_system
+		}
+	}
+	option = {
+		name = tfw_crisis.1230.h
+		trigger = {
+			has_ethic = "ethic_fanatic_xenophile"
+		}
+		create_point_of_interest = {
+			id = tfw_ed_poi.2
+			name = "tfw_ed_poi_2"
+			desc = "tfw_ed_poi_2_desc"
+			event_chain = "tfw_ed_chain"
+			location = event_target:second_extradimensional_system
+		}
+	}
+	option = {
+		name = tfw_crisis.1230.i
+		trigger = {
+			has_ethic = "ethic_fanatic_authoritarian"
+		}
+		create_point_of_interest = {
+			id = tfw_ed_poi.2
+			name = "tfw_ed_poi_2"
+			desc = "tfw_ed_poi_2_desc"
+			event_chain = "tfw_ed_chain"
+			location = event_target:second_extradimensional_system
+		}
+	}
+	option = {
+		name = tfw_crisis.1230.j
+		trigger = {
+			has_ethic = "ethic_fanatic_egalitarian"
+		}
+		create_point_of_interest = {
+			id = tfw_ed_poi.2
+			name = "tfw_ed_poi_2"
+			desc = "tfw_ed_poi_2_desc"
+			event_chain = "tfw_ed_chain"
+			location = event_target:second_extradimensional_system
+		}
+	}
+}
+
+#Third Arrival
+country_event = {
+	id = tfw_crisis.1300
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		random_system = {
+			limit = {
+				NOT = {
+					any_country = {
+						OR = {
+							is_country_type = fallen_empire
+							is_country_type = awakened_fallen_empire
+						}
+						any_system_within_border = {
+							is_same_value = prev
+						}
+					}
+				}
+			}
+			set_star_flag = tfw_ed_hunters_system_third
+			save_event_target_as = third_extradimensional_system
+				random_system_planet = {
+					every_country = {
+						limit = { is_country_type = tfw_ed }
+					save_event_target_as = extradimensionals
+					create_fleet = {
+						name = "Dimensional Portal"
+						effect = {
+							set_owner = PREV
+							create_ship = {
+								name = random
+								design = "Unbidden Portal"
+								graphical_culture = "extra_dimensional_01"
+							}
+							set_location = {
+								target = PREVPREV
+								distance = 40
+								angle = random
+							}
+							save_event_target_as = dimensional_portal_3
+							fleet_event = { id = tfw_crisis.1310 days = 30 } # First Fleet Arrives
+							fleet_event = { id = tfw_crisis.1310 days = 60 } # Second Fleet Arrives
+							fleet_event = { id = tfw_crisis.1310 days = 90 } # Third Fleet Arrives
+							fleet_event = { id = tfw_crisis.1310 days = 120 } # Fourth Fleet Arrives
+							fleet_event = { id = tfw_crisis.1310 days = 150 } # Fifth Fleet Arrives
+							fleet_event = { id = tfw_crisis.1320 days = 152 } # Closing Portal
+						}
+					}
+					create_fleet = {
+						effect = {
+							set_owner = event_target:extradimensionals
+							create_ship = {
+								name = random
+								design = "EXD Overseer"
+								graphical_culture = "extra_dimensional_01"
+							}
+							set_location = {
+								target = event_target:dimensional_portal_3
+								distance = 0
+								angle = random
+							}
+						}
+					}
+				}
+			}
+		}
+		every_country = {
+			limit = {
+				is_country_type = default
+				has_event_chain = tfw_ed_chain
+			}
+			country_event = { id = tfw_crisis.1330 }
+		}	
+	}		
+}
+
+# Fleet Reinforcements
+fleet_event = {
+	id = tfw_crisis.1310 
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		event_target:extradimensionals = {
+			random_list = {
+				25 = {
+					create_leader = {
+						type = admiral
+						species = event_target:extradimensional_species
+						name = random
+						skill = 1000
+						traits = {
+							trait = leader_trait_ethereal
+						}
+					}
+				}
+				25 = {
+					create_leader = {
+						type = admiral
+						species = event_target:extradimensional_species
+						name = random
+						skill = 1000
+						traits = {
+							trait = leader_trait_dimensional_stutter
+						}
+					}
+				}
+				50 = {
+					create_leader = {
+						type = admiral
+						species = event_target:extradimensional_species
+						name = random
+						skill = 500
+					}
+				}
+			}
+			create_fleet = {
+				effect = {
+					set_owner = PREV
+					create_ship = {
+						name = random
+						design = "EXD Persecutor"
+						graphical_culture = "extra_dimensional_01"
+					}
+					assign_leader = last_created_leader
+					while = {
+						count = 15
+						create_ship = {
+							name = random
+							design = "EXD Persecutor"
+							graphical_culture = "extra_dimensional_01"
+						}
+					}
+					while = {
+						count = 30
+						create_ship = {
+							name = random
+							design = "EXD Scout"
+							graphical_culture = "extra_dimensional_01"
+						}	
+					}
+					set_location = {
+						target = ROOT
+						distance = 5
+						angle = random
+					}
+					set_fleet_stance = aggressive
+					set_aggro_range = 1000
+					set_aggro_range_measure_from = self
+				}
+			}
+		}
+	}
+}
+
+#Third portal is closing
+fleet_event = {
+	id = tfw_crisis.1320
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		ROOT = { dismantle = yes }	#dismantle = yes or destroy_fleet = this ####reduce_hp_percent = 100 works with ships only
+		every_country = {
+			limit = {
+				is_country_type = default
+			}
+			country_event = { id = tfw_crisis.1321 days = 2 }
+		}
+	}
+}
+
+#Message about Portal 3
+country_event = {
+	id = tfw_crisis.1321
+	title = "tfw_crisis.1321.name"
+	desc = "tfw_crisis.1321.desc"
+	picture = GFX_evt_wormhole
+	show_sound = event_alien_signal
+	location = event_target:third_extradimensional_system
+	
+	is_triggered_only = yes
+
+	option = {
+			name = tfw_crisis.1321.a
+	}
+}
+
+# Third Portal (High and Low Intel)
+country_event = {
+	id = tfw_crisis.1330
+	title = "tfw_crisis.1330.name"
+	desc = "tfw_crisis.1330.desc"
+	picture = GFX_evt_wormhole
+	show_sound = event_ex_started
+	location = event_target:third_extradimensional_system
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_global_flag = tfw_ed_third_base_appeared	
+	}
+	
+	option = {
+		name = tfw_crisis.1330.a
+		trigger = {
+			has_spiritualist_government = yes
+			NOT = {
+				has_ethic = "ethic_fanatic_egalitarian"
+				has_ethic = "ethic_fanatic_authoritarian"
+				has_ethic = "ethic_fanatic_xenophile"
+				has_ethic = "ethic_fanatic_xenophobe"
+			}
+		}
+		create_point_of_interest = {
+			id = tfw_ed_poi.3
+			name = "tfw_ed_poi_3"
+			desc = "tfw_ed_poi_3_desc"
+			event_chain = "tfw_ed_chain"
+			location = event_target:third_extradimensional_system
+		}
+	}
+	option = {
+		name = tfw_crisis.1330.b
+		trigger = {
+			has_militarist_government = yes
+			NOT = {
+				has_ethic = "ethic_fanatic_egalitarian"
+				has_ethic = "ethic_fanatic_authoritarian"
+				has_ethic = "ethic_fanatic_xenophile"
+				has_ethic = "ethic_fanatic_xenophobe"
+			}
+		}
+		create_point_of_interest = {
+			id = tfw_ed_poi.3
+			name = "tfw_ed_poi_3"
+			desc = "tfw_ed_poi_3_desc"
+			event_chain = "tfw_ed_chain"
+			location = event_target:third_extradimensional_system
+		}
+	}
+	option = {
+		name = tfw_crisis.1330.c
+		trigger = {
+			has_materialist_government = yes
+			NOT = {
+				has_ethic = "ethic_fanatic_egalitarian"
+				has_ethic = "ethic_fanatic_authoritarian"
+				has_ethic = "ethic_fanatic_xenophile"
+				has_ethic = "ethic_fanatic_xenophobe"
+			}
+		}
+		create_point_of_interest = {
+			id = tfw_ed_poi.3
+			name = "tfw_ed_poi_3"
+			desc = "tfw_ed_poi_3_desc"
+			event_chain = "tfw_ed_chain"
+			location = event_target:third_extradimensional_system
+		}
+	}
+	option = {
+		name = tfw_crisis.1330.d
+		trigger = {
+			has_pacifist_government = yes
+			NOT = {
+				has_ethic = "ethic_fanatic_egalitarian"
+				has_ethic = "ethic_fanatic_authoritarian"
+				has_ethic = "ethic_fanatic_xenophile"
+				has_ethic = "ethic_fanatic_xenophobe"
+			}
+		}
+		create_point_of_interest = {
+			id = tfw_ed_poi.3
+			name = "tfw_ed_poi_3"
+			desc = "tfw_ed_poi_3_desc"
+			event_chain = "tfw_ed_chain"
+			location = event_target:third_extradimensional_system
+		}
+	}
+	option = {
+		name = tfw_crisis.1330.e
+		trigger = {
+			has_government = gov_megacorporation
+			NOT = {
+				has_ethic = "ethic_fanatic_egalitarian"
+				has_ethic = "ethic_fanatic_authoritarian"
+				has_ethic = "ethic_fanatic_xenophile"
+				has_ethic = "ethic_fanatic_xenophobe"
+			}
+		}
+		create_point_of_interest = {
+			id = tfw_ed_poi.3
+			name = "tfw_ed_poi_3"
+			desc = "tfw_ed_poi_3_desc"
+			event_chain = "tfw_ed_chain"
+			location = event_target:third_extradimensional_system
+		}
+	}
+	option = {
+		name = tfw_crisis.1330.f
+		trigger = {
+			OR = {
+				has_generic_government = yes
+				has_government = gov_enlightened_monarchy
+				has_government = gov_enlightened_dictatorship
+				has_government = gov_hive_mind
+			}
+			NOT = {
+				has_ethic = "ethic_fanatic_egalitarian"
+				has_ethic = "ethic_fanatic_authoritarian"
+				has_ethic = "ethic_fanatic_xenophile"
+				has_ethic = "ethic_fanatic_xenophobe"
+			}
+		}
+		create_point_of_interest = {
+			id = tfw_ed_poi.3
+			name = "tfw_ed_poi_3"
+			desc = "tfw_ed_poi_3_desc"
+			event_chain = "tfw_ed_chain"
+			location = event_target:third_extradimensional_system
+		}
+	}
+	option = {
+		name = tfw_crisis.1330.g
+		trigger = {
+			has_ethic = "ethic_fanatic_xenophobe"
+		}
+		create_point_of_interest = {
+			id = tfw_ed_poi.3
+			name = "tfw_ed_poi_3"
+			desc = "tfw_ed_poi_3_desc"
+			event_chain = "tfw_ed_chain"
+			location = event_target:third_extradimensional_system
+		}
+	}
+	option = {
+		name = tfw_crisis.1330.h
+		trigger = {
+			has_ethic = "ethic_fanatic_xenophile"
+		}
+		create_point_of_interest = {
+			id = tfw_ed_poi.3
+			name = "tfw_ed_poi_3"
+			desc = "tfw_ed_poi_3_desc"
+			event_chain = "tfw_ed_chain"
+			location = event_target:third_extradimensional_system
+		}
+	}
+	option = {
+		name = tfw_crisis.1330.i
+		trigger = {
+			has_ethic = "ethic_fanatic_authoritarian"
+		}
+		create_point_of_interest = {
+			id = tfw_ed_poi.3
+			name = "tfw_ed_poi_3"
+			desc = "tfw_ed_poi_3_desc"
+			event_chain = "tfw_ed_chain"
+			location = event_target:third_extradimensional_system
+		}
+	}
+	option = {
+		name = tfw_crisis.1330.j
+		trigger = {
+			has_ethic = "ethic_fanatic_egalitarian"
+		}
+		create_point_of_interest = {
+			id = tfw_ed_poi.3
+			name = "tfw_ed_poi_3"
+			desc = "tfw_ed_poi_3_desc"
+			event_chain = "tfw_ed_chain"
+			location = event_target:third_extradimensional_system
+		}
+	}
+}
+
+# Colony was Bombarded
+planet_event = {
+	id = tfw_crisis.1700
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = { is_country_type = tfw_ed }
+	}
+	
+	immediate = {
+		save_event_target_as = tfw_bombed_planet
+		add_threat = {
+			who = controller
+			amount = 1 # scales to pops
+		}
+		controller = { 
+			country_event = { id = tfw_crisis.1701 }
+		}
+		set_planet_max_health = 0
+		random_list = {
+			50 = { change_pc = pc_barren }
+			50 = { change_pc = pc_barren_cold }
+		}
+		add_modifier = { modifier = "terraforming_candidate" days = -1 }
+		while = {
+			limit = {
+				any_tile = {
+					has_blocker = tb_tribal_settlement
+				}
+			}
+			random_tile = {
+				limit = {
+					has_blocker = tb_tribal_settlement
+				}
+				remove_blocker = yes
+			}
+		}
+		destroy_colony = { keep_buildings = no }
+	}
+}
+
+country_event = {
+	id = tfw_crisis.1701
+	title = "tfw_crisis.1700.name"
+	desc = "tfw_crisis.1700.desc"
+	picture = GFX_evt_nuclear_explosion
+	show_sound = event_ghost_town
+	location = event_target:tfw_bombed_planet
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tfw_crisis.1700.a
+		trigger = {
+			NOT = {
+				OR = {
+					has_ethic = "ethic_fanatic_pacifist"
+					has_ethic = "ethic_pacifist"
+					has_ethic = "ethic_fanatic_xenophile"
+					has_ethic = "ethic_xenophile"
+				}
+			}
+		}
+	}
+	option = {
+		name = tfw_crisis.1700.b
+		trigger = {
+			OR = {
+				has_ethic = "ethic_fanatic_pacifist"
+				has_ethic = "ethic_pacifist"
+				has_ethic = "ethic_fanatic_xenophile"
+				has_ethic = "ethic_xenophile"
+			}
+		}	
+	}
+}
+
+# Watcher destroyed (HIDDEN)
+# This = owner of fleet 1 (destroyed)
+# From = owner of fleet 2 (combatant)
+# FromFrom = fleet 1
+# FromFromFrom = fleet 2
+country_event = {
+	id = tfw_crisis.1600
+	hide_window = yes
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		is_country_type = tfw_ed
+		FROMFROM = { is_ship_size = tfw_ed_watcher }
+	}
+	
+	immediate = {
+		set_global_flag = tfw_ed_watcher_destroyed_flag
+		every_country = {
+			limit = {
+				is_country_type = default
+				has_communications = FROM
+			}
+			add_opinion_modifier = {
+				who = FROM
+				modifier = opinion_destroyed_watcher
+			}
+		}
+		FROM = { country_event = { id = tfw_crisis.1601 }
+		}
+		every_country = { 
+			limit = {
+				is_country_type = default
+				NOT = { is_same_empire = FROM }
+			}
+			country_event = { id = tfw_crisis.1602 }
+		}
+	}
+}
+
+# Watcher Destroyed by Player
+country_event = {
+	id = tfw_crisis.1601
+	title = "tfw_crisis.1601.name"
+	desc = "tfw_crisis.1601.desc"
+	picture = GFX_evt_wormhole
+	show_sound = event_super_explosion
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		random_system = {
+			limit = { has_star_flag = tfw_ed_hunters_system_first }
+			save_event_target_as = extradimensional_system
+		}
+		remove_point_of_interest = tfw_ed_poi.1
+	}
+	
+	option = {
+		name = tfw_crisis.1601.a
+	}
+}
+
+# Watcher Destroyed 
+country_event = {
+	id = tfw_crisis.1602
+	title = "tfw_crisis.1602.name"
+	desc = "tfw_crisis.1602.desc"
+	picture = GFX_evt_wormhole
+	show_sound = event_super_explosion
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		random_system = {
+			limit = { has_star_flag = tfw_ed_hunters_system_first }
+			save_event_target_as = extradimensional_system
+		}
+		remove_point_of_interest = tfw_ed_poi.1
+	}
+	
+	option = {
+		name = tfw_crisis.1602.a
+		trigger = {
+			NOT = {
+				OR = {
+					has_ethic = "ethic_fanatic_pacifist"
+					has_ethic = "ethic_pacifist"
+					has_ethic = "ethic_fanatic_xenophile"
+					has_ethic = "ethic_xenophile"
+				}
+			}	
+		}
+	}
+	option = {
+		name = tfw_crisis.1602.b
+		trigger = {
+			OR = {
+				has_ethic = "ethic_fanatic_pacifist"
+				has_ethic = "ethic_pacifist"
+				has_ethic = "ethic_fanatic_xenophile"
+				has_ethic = "ethic_xenophile"
+			}
+		}	
+	}
+}
+
+# Keeper Destroyed (HIDDEN)
+country_event = {
+	id = tfw_crisis.1610
+	hide_window = yes
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		is_country_type = tfw_ed
+		FROMFROM = { is_ship_size = tfw_ed_keeper }
+	}
+	
+	immediate = {
+		set_global_flag = tfw_ed_keeper_destroyed_flag
+		every_country = {
+			limit = {
+				is_country_type = default
+				has_communications = FROM
+			}
+			add_opinion_modifier = {
+				who = FROM
+				modifier = opinion_destroyed_keeper
+			}
+		}
+		FROM = { country_event = { id = tfw_crisis.1611 }
+		}
+		every_country = { 
+			limit = {
+				is_country_type = default
+				NOT = { is_same_empire = FROM }
+			}
+			country_event = { id = tfw_crisis.1612 }
+		}
+	}
+}
+
+# Keeper Destroyed by Player
+country_event = {
+	id = tfw_crisis.1611
+	title = "tfw_crisis.1611.name"
+	desc = "tfw_crisis.1611.desc"
+	picture = GFX_evt_wormhole
+	show_sound = event_super_explosion
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		random_system = {
+			limit = { has_star_flag = tfw_ed_hunters_system_second }
+			save_event_target_as = second_extradimensional_system
+		}
+		remove_point_of_interest = tfw_ed_poi.2
+		set_country_flag = tfw_ed_stop_flag
+	}
+	
+	option = {
+		name = tfw_crisis.1611.a
+	}
+}
+
+# Keeper Destroyed 
+country_event = {
+	id = tfw_crisis.1612
+	title = "tfw_crisis.1612.name"
+	desc = "tfw_crisis.1612.desc"
+	picture = GFX_evt_wormhole
+	show_sound = event_super_explosion
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		random_system = {
+			limit = { has_star_flag = tfw_ed_hunters_system_second }
+			save_event_target_as = second_extradimensional_system
+		}
+		remove_point_of_interest = tfw_ed_poi.2
+		set_country_flag = tfw_ed_stop_flag
+	}
+	
+	option = {
+		name = tfw_crisis.1612.a
+	}
+}
+
+# Overseer Destroyed (HIDDEN)
+country_event = {
+	id = tfw_crisis.1620
+	hide_window = yes
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		is_country_type = tfw_ed
+		FROMFROM = { is_ship_size = tfw_ed_overseer }
+	}
+	
+	immediate = {
+		set_global_flag = tfw_ed_overseer_destroyed_flag
+		every_country = {
+			limit = {
+				is_country_type = default
+				has_communications = FROM
+			}
+			add_opinion_modifier = {
+				who = FROM
+				modifier = opinion_destroyed_overseer
+			}
+		}
+		FROM = { country_event = { id = tfw_crisis.1621 }
+		}
+		every_country = { 
+			limit = {
+				is_country_type = default
+				NOT = { is_same_empire = FROM }
+			}
+			country_event = { id = tfw_crisis.1622 }
+		}
+	}
+}
+
+# Overseer Destroyed by Player
+country_event = {
+	id = tfw_crisis.1621
+	title = "tfw_crisis.1621.name"
+	desc = "tfw_crisis.1621.desc"
+	picture = GFX_evt_wormhole
+	show_sound = event_super_explosion
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		random_system = {
+			limit = { has_star_flag = tfw_ed_hunters_system_third }
+			save_event_target_as = third_extradimensional_system
+		}
+		remove_point_of_interest = tfw_ed_poi.3
+		set_country_flag = tfw_ed_stop_flag
+	}
+	
+	option = {
+		name = tfw_crisis.1621.a
+	}
+}
+
+# Overseer Destroyed 
+country_event = {
+	id = tfw_crisis.1622
+	title = "tfw_crisis.1622.name"
+	desc = "tfw_crisis.1622.desc"
+	picture = GFX_evt_wormhole
+	show_sound = event_super_explosion
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		random_system = {
+			limit = { has_star_flag = tfw_ed_hunters_system_third }
+			save_event_target_as = third_extradimensional_system
+		}
+		remove_point_of_interest = tfw_ed_poi.3
+		set_country_flag = tfw_ed_stop_flag
+	}
+	
+	option = {
+		name = tfw_crisis.1622.a
+	}
+}
+
+# All bases are destroyed but there are some fleets 
+country_event = {
+	id = tfw_crisis.1630
+	title = "tfw_crisis.1630.name"
+	desc = "tfw_crisis.1630.desc"
+	picture = GFX_evt_hangar_bay
+	show_sound = event_ex_started
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		AND = {
+			any_country = { 
+				has_global_flag = tfw_ed_watcher_destroyed_flag
+				has_global_flag = tfw_ed_keeper_destroyed_flag
+				has_global_flag = tfw_ed_overseer_destroyed_flag
+			}
+			any_country = { 
+				is_country_type = tfw_ed
+				num_ships > 6
+			}
+		}
+	}
+	
+	immediate = {
+		if = {
+			limit = { is_difficulty = 2 }
+				every_country = {
+					limit = { is_country_type = tfw_ed }
+						add_modifier = { modifier = tfw_exd_strength_bases_destroyed_1 days = -1 }
+				}
+			else = {
+				if = { 
+					limit = { is_difficulty = 1 }
+						every_country = {
+							limit = { is_country_type = tfw_ed }
+								add_modifier = { modifier = tfw_exd_strength_bases_destroyed_2 days = -1 }
+						}				
+					else = {
+						every_country = {
+							limit = { is_country_type = tfw_ed }
+								add_modifier = { modifier = tfw_exd_strength_bases_destroyed_3 days = -1 }
+						}	
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = tfw_crisis.1630.a
+		trigger = {
+			NOT = {
+				OR = {
+				has_ethic = "ethic_fanatic_pacifist"
+				has_ethic = "ethic_pacifist"
+				has_ethic = "ethic_fanatic_xenophile"
+				has_ethic = "ethic_xenophile"
+				}
+			}
+		}
+	}
+	option = {
+		name = tfw_crisis.1630.b
+		trigger = {
+			OR = {
+				has_ethic = "ethic_fanatic_pacifist"
+				has_ethic = "ethic_pacifist"
+				has_ethic = "ethic_fanatic_xenophile"
+				has_ethic = "ethic_xenophile"
+			}
+		}
+	}
+}
+
+# Destroy EXDs if no bases and only 6 or less ships remain
+# On monthly pulse
+country_event = {
+	id = tfw_crisis.1400
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		any_country = { is_country_type = tfw_ed }
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				any_country = { 
+					is_country_type = tfw_ed
+					OR = {
+						AND = {
+							has_global_flag = tfw_ed_watcher_destroyed_flag
+							NOT = { has_global_flag = tfw_ed_second_base_appeared }
+							NOT = { has_global_flag = tfw_ed_third_base_appeared }
+						}
+						AND = {
+							has_global_flag = tfw_ed_watcher_destroyed_flag
+							has_global_flag = tfw_ed_keeper_destroyed_flag
+							NOT = { has_global_flag = tfw_ed_third_base_appeared }
+						}
+						AND = {
+							has_global_flag = tfw_ed_watcher_destroyed_flag
+							has_global_flag = tfw_ed_keeper_destroyed_flag
+							has_global_flag = tfw_ed_overseer_destroyed_flag
+						}
+					}
+
+					num_ships < 6
+
+#					NOT = {
+#						any_owned_ship = { 
+#							AND = { 
+#								is_ship_size = tfw_ed_watcher 
+#								is_ship_size = tfw_ed_keeper
+#								is_ship_size = tfw_ed_overseer
+#							}
+#						}
+#					}
+				}
+			}
+
+			every_country = {
+				limit = { is_country_type = tfw_ed }
+					destroy_country = yes
+			}
+		}
+	}
+}
+
+#ED destroyed (HIDDEN)
+country_event = {
+	id = tfw_crisis.1500
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {	is_country_type = tfw_ed }
+
+	immediate = {
+		every_country = {
+			limit = {
+				OR = {
+					is_country_type = default
+					is_country_type = fallen_empire
+					}
+			}
+			country_event = { id = tfw_crisis.1510 }
+			end_event_chain = "tfw_ed_chain"
+		}
+		every_country = {
+			limit = { is_country_type = default }
+			add_modifier = {
+				modifier = "tfw_ed_defeated"					
+				days = 360
+			}
+		}		
+	}
+}
+
+# ED Defeated
+country_event = {
+	id = tfw_crisis.1510
+	title = "tfw_crisis.1520.name"
+	desc = "tfw_crisis.1520.desc"
+	picture = GFX_evt_news_room
+	show_sound = event_celebration
+	
+	is_triggered_only = yes
+	
+	option = { # Spiritualist Response
+		name = tfw_crisis.1520.a
+		trigger = {
+			has_spiritualist_government = yes
+			NOT = {
+				has_ethic = "ethic_fanatic_xenophile"
+				has_ethic = "ethic_fanatic_xenophobe"
+			}
+		}
+	}
+	option = { # Militarist Response
+		name = tfw_crisis.1520.b
+		trigger = {
+			has_militarist_government = yes
+			NOT = {
+				has_ethic = "ethic_fanatic_xenophile"
+				has_ethic = "ethic_fanatic_xenophobe"
+			}
+		}
+	}
+	option = { # Materialist Response
+		name = tfw_crisis.1520.c
+		trigger = {
+			has_materialist_government = yes
+			NOT = {
+				has_ethic = "ethic_fanatic_xenophile"
+				has_ethic = "ethic_fanatic_xenophobe"
+			}
+		}
+	}
+	option = { # Pacifist Response
+		name = tfw_crisis.1520.d
+		trigger = {
+			has_pacifist_government = yes
+			NOT = {
+				has_ethic = "ethic_fanatic_xenophile"
+				has_ethic = "ethic_fanatic_xenophobe"
+			}
+		}
+	}
+	option = { # Corporate Response
+		name = tfw_crisis.1520.e
+		trigger = {
+			has_government = gov_megacorporation
+			NOT = {
+				has_ethic = "ethic_fanatic_xenophile"
+				has_ethic = "ethic_fanatic_xenophobe"
+			}
+		}
+	}
+	option = { # Default Response
+		name = tfw_crisis.1520.f
+		trigger = {
+			OR = {
+				has_generic_government = yes
+				has_government = gov_enlightened_monarchy
+				has_government = gov_enlightened_dictatorship
+				has_government = gov_hive_mind
+			}
+			NOT = {
+				has_ethic = "ethic_fanatic_xenophile"
+				has_ethic = "ethic_fanatic_xenophobe"
+			}
+		}
+	}
+	option = { # Xenophobe Response
+		name = tfw_crisis.1520.g
+		trigger = {
+			has_ethic = "ethic_fanatic_xenophobe"
+		}
+	}
+	option = { # Xenophile Response
+		name = tfw_crisis.1520.h
+		trigger = {
+			has_ethic = "ethic_fanatic_xenophile"
+		}
+	}
+}
+
+#Getting technology
+ship_event = {
+	id = tfw_crisis.1800
+	title = tfw_crisis.1800.name
+	desc = tfw_crisis.1800.desc
+	picture = GFX_evt_ship_in_orbit
+	show_sound = event_ai_started
+	location = event_target:exd_rndm_planet
+	is_triggered_only = yes
+
+	immediate = {
+		owner = {
+			give_technology = { tech = tech_tfw_exd_altion }
+		}
+	}
+	option = {
+		name = tfw_crisis.1800.a
+	}
+}
+
+#Failed getting technology
+country_event = {
+	id = tfw_crisis.1810
+	title = tfw_crisis.1810.name
+	desc = tfw_crisis.1810.desc
+	picture = GFX_evt_ship_in_orbit
+	show_sound = event_ai_started
+	location = event_target:exd_rndm_planet
+	is_triggered_only = yes
+
+	option = {
+		name = tfw_crisis.1810.a
+	}
+}

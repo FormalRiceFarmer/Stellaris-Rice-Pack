@@ -1,0 +1,201 @@
+# ####################
+#  	Gauss Mortar	 #
+# ####################
+
+weapon_component_template = {
+	type = instant
+	key = "SMALL_TFW_GAUSS_MORTAR"
+	size = small
+	entity = "small_kinetic_gun_entity"
+	damage = { min = 14.0 max = 28.0 }
+	windup = { min = 2.0 max = 18.0 }
+	total_fire_time = 32
+	range = 40.0
+	accuracy = 0.78
+	type = instant
+	power = -15
+	cost = 15
+	shield_damage = 1.4
+	armor_penetration = 0.05
+	tracking = 0.6
+	
+	icon = "GFX_tfw_gauss_6"
+	icon_frame = 1
+	prerequisites = { "tech_tfw_gauss_6" }
+	component_set = "TFW_GAUSS_MORTAR"
+	projectile_gfx = "tfw_gauss_6_small"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield weapon_role_short_range }
+	upgrades_to = "SMALL_TFW_GAUSS_HOWITZER"
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "MEDIUM_TFW_GAUSS_MORTAR"
+	size = medium
+	entity = "medium_kinetic_gun_entity"
+	damage = { min = 29.0 max = 57.0 }
+	windup = { min = 2.0 max = 18.0 }
+	total_fire_time = 32
+	range = 60.0
+	accuracy = 0.74
+	type = instant
+	power = -30
+	cost = 30
+	shield_damage = 1.4
+	armor_penetration = 0.20
+	tracking = 0.3
+	
+	icon = "GFX_tfw_gauss_6"
+	icon_frame = 1
+	prerequisites = { "tech_tfw_gauss_6" }
+	component_set = "TFW_GAUSS_MORTAR"
+	projectile_gfx = "tfw_gauss_6_medium"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield weapon_role_short_range }
+	upgrades_to = "MEDIUM_TFW_GAUSS_HOWITZER"
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "LARGE_TFW_GAUSS_MORTAR"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	damage = { min = 60.0 max = 121.0 }
+	windup = { min = 2.0 max = 18.0 }
+	total_fire_time = 32
+	range = 80.0
+	accuracy = 0.7
+	type = instant
+	power = -60
+	cost = 60
+	shield_damage = 1.4
+	armor_penetration = 0.35
+	tracking = 0.05
+	
+	icon = "GFX_tfw_gauss_6"
+	icon_frame = 1
+	prerequisites = { "tech_tfw_gauss_6" }
+	component_set = "TFW_GAUSS_MORTAR"
+	projectile_gfx = "tfw_gauss_6_large"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield weapon_role_short_range }
+	upgrades_to = "LARGE_TFW_GAUSS_HOWITZER"
+}
+
+# ####################
+#  	Gauss Howitz	 #
+# ####################
+
+weapon_component_template = {
+	type = instant
+	key = "SMALL_TFW_GAUSS_HOWITZER"
+	size = small
+	entity = "small_kinetic_gun_entity"
+	damage = { min = 17.0 max = 30.0 }
+	windup = { min = 2.0 max = 18.0 }
+	total_fire_time = 32
+	range = 40.0
+	accuracy = 0.78
+	type = instant
+	power = -20
+	cost = 20
+	shield_damage = 1.4
+	armor_penetration = 0.05
+	tracking = 0.6
+	
+	icon = "GFX_tfw_gauss_7"
+	icon_frame = 1
+	prerequisites = { "tech_tfw_gauss_7" }
+	component_set = "TFW_GAUSS_HOWITZER"
+	projectile_gfx = "tfw_gauss_7_small"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield weapon_role_short_range }
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "MEDIUM_TFW_GAUSS_HOWITZER"
+	size = medium
+	entity = "medium_kinetic_gun_entity"
+	damage = { min = 32.0 max = 64.0 }
+	windup = { min = 2.0 max = 18.0 }
+	total_fire_time = 32
+	range = 60.0
+	accuracy = 0.74
+	type = instant
+	power = -40
+	cost = 40
+	shield_damage = 1.4
+	armor_penetration = 0.20
+	tracking = 0.3
+	
+	icon = "GFX_tfw_gauss_7"
+	icon_frame = 1
+	prerequisites = { "tech_tfw_gauss_7" }
+	component_set = "TFW_GAUSS_HOWITZER"
+	projectile_gfx = "tfw_gauss_7_medium"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield weapon_role_short_range }
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "LARGE_TFW_GAUSS_HOWITZER"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	damage = { min = 66.0 max = 137.0 }
+	windup = { min = 2.0 max = 18.0 }
+	total_fire_time = 32
+	range = 80.0
+	accuracy = 0.7
+	type = instant
+	power = -80
+	cost = 80
+	shield_damage = 1.4
+	armor_penetration = 0.35
+	tracking = 0.05
+	
+	icon = "GFX_tfw_gauss_7"
+	icon_frame = 1
+	prerequisites = { "tech_tfw_gauss_7" }
+	component_set = "TFW_GAUSS_HOWITZER"
+	projectile_gfx = "tfw_gauss_7_large"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield weapon_role_short_range }
+}
+
+# ####################
+#  Kinetic Artillery 3
+# ####################
+
+weapon_component_template = {
+	type = instant
+	
+	key = "LARGE_TFW_KINETIC_ARTILLERY_3"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	damage = { min = 139.0 max = 264.0 }
+	windup = { min = 2.0 max = 18.0 }
+	total_fire_time = 70
+	range = 100.0
+	accuracy = 0.70
+	type = instant
+	power = -70
+	cost = 70.00
+	tracking = 0.05
+	armor_penetration = 0.20
+	shield_damage = 1.33
+	
+	icon = "GFX_kinetic_artillery_3"
+	icon_frame = 1
+	prerequisites = { "tech_kinetic_artillery_3" }
+	component_set = "TFW_KINETIC_ARTILLERY_3"
+	projectile_gfx = "kinetic_artillery_3"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_long_range }
+}

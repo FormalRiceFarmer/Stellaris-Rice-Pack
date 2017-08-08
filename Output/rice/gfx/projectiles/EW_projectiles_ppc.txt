@@ -1,0 +1,151 @@
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "ppc_s"
+	color = { 1.0	1.0		1.0		1.0 }
+	hit_entity = "plasma_accelerator_small_hit_entity"
+	shield_hit_entity = "plasma_accelerator_small_shield_hit_entity"
+	muzzle_flash_entity = "plasma_accelerator_small_muzzle_flash_entity"
+	
+	#ballistic specific
+	entity = "ppc_small_entity"
+	speed = 160.0			#preferred speed of the projectile
+	max_duration = 2.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+	
+	shield_impact = {
+		size = small
+		delay = 0.0
+	}
+}
+
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "ppc_m"
+	color = { 1.0	1.0		1.0		1.0 }
+	hit_entity = "plasma_accelerator_medium_hit_entity"
+	shield_hit_entity = "plasma_accelerator_medium_shield_hit_entity"
+	muzzle_flash_entity = "plasma_accelerator_medium_muzzle_flash_entity"
+	
+	#ballistic specific
+	entity = "ppc_medium_entity"
+	speed = 160.0			#preferred speed of the projectile
+	max_duration = 2.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+	
+	shield_impact = {
+		size = medium
+		delay = 0.0
+	}
+}
+
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "ppc_l"
+	color = { 1.0	1.0		1.0		1.0 }
+	hit_entity = "plasma_accelerator_large_hit_entity"
+	shield_hit_entity = "plasma_accelerator_large_shield_hit_entity"
+	muzzle_flash_entity = "plasma_accelerator_large_muzzle_flash_entity"
+	
+	#ballistic specific
+	entity = "ppc_large_entity"
+	speed = 160.0			#preferred speed of the projectile
+	max_duration = 2.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+	
+	shield_impact = {
+		size = large
+		delay = 0.0
+	}
+}
+
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "ppc_x"
+	color = { 1.0	1.0		1.0		1.0 }
+	hit_entity = "plasma_accelerator_large_hit_entity"
+	shield_hit_entity = "plasma_accelerator_large_shield_hit_entity"
+	muzzle_flash_entity = "plasma_accelerator_large_muzzle_flash_entity"
+	
+	#ballistic specific
+	entity = "ppc_xlarge_entity"
+	speed = 160.0			#preferred speed of the projectile
+	max_duration = 2.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+	
+	shield_impact = {
+		size = large
+		delay = 0.0
+	}
+}
+
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "adv_ppc_s"
+	color = { 1.0	1.0		1.0		1.0 }
+	hit_entity = "plasma_accelerator_small_hit_entity"
+	shield_hit_entity = "plasma_accelerator_small_shield_hit_entity"
+	muzzle_flash_entity = "plasma_accelerator_small_muzzle_flash_entity"
+	
+	#ballistic specific
+	entity = "adv_ppc_small_entity"
+	speed = 160.0			#preferred speed of the projectile
+	max_duration = 2.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+	
+	shield_impact = {
+		size = small
+		delay = 0.0
+	}
+}
+
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "adv_ppc_m"
+	color = { 1.0	1.0		1.0		1.0 }
+	hit_entity = "plasma_accelerator_medium_hit_entity"
+	shield_hit_entity = "plasma_accelerator_medium_shield_hit_entity"
+	muzzle_flash_entity = "plasma_accelerator_medium_muzzle_flash_entity"
+	
+	#ballistic specific
+	entity = "adv_ppc_medium_entity"
+	speed = 160.0			#preferred speed of the projectile
+	max_duration = 2.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+	
+	shield_impact = {
+		size = medium
+		delay = 0.0
+	}
+}
+
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "adv_ppc_l"
+	color = { 1.0	1.0		1.0		1.0 }
+	hit_entity = "plasma_accelerator_large_hit_entity"
+	shield_hit_entity = "plasma_accelerator_large_shield_hit_entity"
+	muzzle_flash_entity = "plasma_accelerator_large_muzzle_flash_entity"
+	
+	#ballistic specific
+	entity = "adv_ppc_large_entity"
+	speed = 160.0			#preferred speed of the projectile
+	max_duration = 2.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+	
+	shield_impact = {
+		size = large
+		delay = 0.0
+	}
+}
+
+projectile_gfx_ballistic = {
+	#common for all types of projectiles
+	name = "adv_ppc_x"
+	color = { 1.0	1.0		1.0		1.0 }
+	hit_entity = "plasma_accelerator_large_hit_entity"
+	shield_hit_entity = "plasma_accelerator_large_shield_hit_entity"
+	muzzle_flash_entity = "plasma_accelerator_large_muzzle_flash_entity"
+	
+	#ballistic specific
+	entity = "adv_ppc_xlarge_entity"
+	speed = 160.0			#preferred speed of the projectile
+	max_duration = 2.0		#Speed of projectile might be scaled up in order to guarantee reaching the target within <max_duration> seconds
+	
+	shield_impact = {
+		size = large
+		delay = 0.0
+	}
+}

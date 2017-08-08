@@ -1,0 +1,43 @@
+###WEAPONS ED###
+
+component_set = {
+	key = "TFW_EXTRADIMENSIONAL_2"  #localisation and link to component_templates
+	icon = "GFX_tfw_ed_weapon_2"    #linked to icon with */interface
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_EXTRADIMENSIONAL_3"  #localisation and link to component_templates
+	icon = "GFX_tfw_ed_weapon_3"    #linked to icon with */interface
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_EXD_REACTOR"  #localisation and link to component_templates
+	icon = "GFX_ship_part_tfw_exd_reactor"    #linked to icon with */interface
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "BODY_TFW_EXD"  #localisation and link to component_templates
+	icon = "GFX_ship_part_body_tfw_exd"    #linked to icon with */interface
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_EXD_THRUSTER_1"  #localisation and link to component_templates
+	icon = "GFX_tfw_exd_thruster_1"    #linked to icon with */interface
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_EXD_SENSOR_1"  #localisation and link to component_templates
+	icon = "TFW_EXD_SENSOR_1"    #linked to icon with */interface
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "TFW_EXD_SHIELD_RECHARGER"  #localisation and link to component_templates
+	icon = "GFX_tfw_exd_shield_recharger"    #linked to icon with */interface
+	icon_frame = 1	
+}

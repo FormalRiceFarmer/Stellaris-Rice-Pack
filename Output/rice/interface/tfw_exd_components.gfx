@@ -1,0 +1,28 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_ship_part_tfw_exd_reactor"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_exd_reactor.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_body_tfw_exd"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_exd_body.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tfw_exd_thruster_1"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_thruster_exd.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tfw_exd_sensor_1"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_sensor_exd.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_tfw_exd_shield_recharger"
+		texturefile = "gfx/interface/icons/ship_parts/tfw_exd_shield_recharger.dds"
+	}	
+	
+}

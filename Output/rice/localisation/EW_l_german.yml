@@ -1,0 +1,182 @@
+﻿l_german:
+
+ #Description Twin-Autocannons
+ TWIN_AUTOCANNON_1:0 "Dopplerkanone"
+ TWIN_AUTOCANNON_1_DESC:0 "Eine erweiterte Version der Autokanonen, mit zwei rotierenden Läufen."
+ SMALL_TWIN_AUTOCANNON_1:0 "Kleine Dopplerkanone"
+ MEDIUM_TWIN_AUTOCANNON_1:0 "Mittlere Dopplerkanone"
+ LARGE_TWIN_AUTOCANNON_1:0 "Große Dopplerkanone"
+ 
+ TWIN_AUTOCANNON_2:0 "Höllenregen Dopplerkanone"
+ TWIN_AUTOCANNON_2_DESC:0 "Die 'Höllenregen' Dopplerkanone kann dank verbesserter Schockdämpfer schwerere Projektile verschießen."
+ SMALL_TWIN_AUTOCANNON_2:0 "Kleine Höllenregen Dopplerkanone"
+ MEDIUM_TWIN_AUTOCANNON_2:0 "Mittlere Höllenregen Dopplerkanone"
+ LARGE_TWIN_AUTOCANNON_2:0 "Große Höllenregen Dopplerkanone"
+ 
+ TWIN_AUTOCANNON_3:0 "Kodiak Dopplerkanone"
+ TWIN_AUTOCANNON_3_DESC:0 "Durch Gauß-Beschleuniger Technologie verbessert, stellt die Kodiak Dopplerkanone die wohl gefährlichste Kinetikwaffe dar."
+ SMALL_TWIN_AUTOCANNON_3:0 "Kleine Kodiak Dopplerkanone"
+ MEDIUM_TWIN_AUTOCANNON_3:0 "Mittlere Kodiak Dopplerkanone"
+ LARGE_TWIN_AUTOCANNON_3:0 "Große Kodiak Dopplerkanone"
+ #Tech Twin-Autocannons
+ EW_tech_twin_autocannons_1:0 "Synchronisierte Geschützmechanik"
+ EW_tech_twin_autocannons_1_desc:0 "Die Leistung bisheriger Autokanonen lässt sich durch einen zweiten Lauf und neuartige, synchronisierte Lade\Feuermechanismen stark verbessern."
+ EW_tech_twin_autocannons_2:0 "Stoßfänger Analyse"
+ EW_tech_twin_autocannons_2_desc:0 "Verbesserte Stoß- und Schockfänger erlauben den Einsatz von großkalibrigen Geschossen bei hohen Feuerraten."
+ EW_tech_twin_autocannons_3:0 "Gestaffelte Kondensatoren"
+ EW_tech_twin_autocannons_3_desc:0 "Um das Gauß-Prinzip auf Autokanonen anwenden zu können, werden multi-gestaffelte Ladungskondensatoren benötigt um die nötige Leistung für die rotierenden Läufe bereitzustellen. Somit lässt sich der Rückstoß weiter minimirenen weil keine Treibladungen benötigt werden und gleichzeitig die Feuerkraft erhöhen."
+
+ #Description Twin Barrel Battery
+ KINETIC_ARTILLERY_3:0 "Doppelläufige Kinetikbatterie"
+ KINETIC_ARTILLERY_3_DESC:0 "Hinter der recht einfachen Idee eines simplen zweiten Laufs, verstecken sich hier komplexeste Feuer- und Lademechanismen."
+ LARGE_KINETIC_ARTILLERY_3:0 "Zwillings Kinetikbatterie"
+ 
+ KINETIC_ARTILLERY_4:0 "Doppelläufige Kinetische Artillerie"
+ KINETIC_ARTILLERY_4_DESC:0 "Das bessere Verstehen von Rückstoß-Kräften erlaubt uns, die Feuerkraft und Reichweite der Kinetischen Artillerie weiter zu steigern."
+ LARGE_KINETIC_ARTILLERY_4:0 "Zwillings Kinetikartillerie"
+ 
+ KINETIC_ARTILLERY_5:0 "Doppelläufige Kinetik Haubitze"
+ KINETIC_ARTILLERY_5_DESC:0 "Durch den Einsatz von Railgun Technologie können diese Kinetkhaubitzen tonnenschwere Geschosse, bei höchster Präzision, auf unglaubliche Geschwindigkeiten beschleunigen."
+ LARGE_KINETIC_ARTILLERY_5:0 "Zwillings Kinetikhaubitze"
+ #Tech Twin-Barrel Batteries
+ EW_tech_kinetic_artillery_3:0 "Großkaliber synchronisierte Geschützmechanik"
+ EW_tech_kinetic_artillery_3_desc:0 "Mit den Erfahrungen in der synchronisation der Geschützmechanik bei Autokanonen, lässt sich das Prinzip auch auf Großkaliber-Waffen anwenden."
+ EW_tech_kinetic_artillery_4:0 "Großkaliber Stoßfänger Analyse"
+ EW_tech_kinetic_artillery_4_desc:0 "Das bessere Verständnis von Rückstoß-Kräften lässt eine Anwendung besserer Stoßfänger auch bei Großkaliber-Geschützen zu."
+ EW_tech_kinetic_artillery_5:0 "Railgun Artillerie"
+ EW_tech_kinetic_artillery_5_desc:0 "Fortschritte in der Materialforschung erlauben die Konstruktion von Supraleitenden Geschützschienen für Railguns im Artillerie-Kaliber. Dies minimiert den Rückstoß und vervielfacht die Reichweite und Schadenswirkung der Kinetischen Artillerie."
+
+ #Description T3-5 Lances
+ LARGE_ENERGY_LANCE_3:0 "Plasma Lanze"
+ LARGE_ENERGY_LANCE_3_DESC:0 "Durch magnetstabilisierte, zielgerichtete Plasma-Emission können wir das tödliche Potenzial der Energielanzen Waffen erheblich steigern."
+ ENERGY_LANCE_3_DESC:0 "Durch magnetstabilisierte, zielgerichtete Plasma-Emission können wir das tödliche Potenzial der Energielanzen Waffen erheblich steigern."
+ ENERGY_LANCE_3:0 "Plasma Lanze"
+ 
+ LARGE_ENERGY_LANCE_4:0 "Disintegrator Lanze"
+ LARGE_ENERGY_LANCE_4_DESC:0 "Mithilfe des Wissens über die Extradimensionalen Materie-Disintegratoren lässt sich die schneidende Wirkung der Energielanzen weiter verbessern."
+ ENERGY_LANCE_4_DESC:0 "Mithilfe des Wissens über die Extradimensionalen Materie-Disintegratoren lässt sich die schneidende Wirkung der Energielanzen weiter verbessern."
+ ENERGY_LANCE_4:0 "Disintegrator Lanze"
+ 
+ LARGE_ENERGY_LANCE_5:0 "Annihilator Lanze"
+ LARGE_ENERGY_LANCE_5_DESC:0 "Mit unserem Wissen zur Dunkle-Materie Technologie und der Erforschung schwarzer Löcher haben wir auch einen Weg gefunden Ein Objekt gezielt mit Gravitonen zu beschießen. Die Energie-Emissionen dieser Waffe sind so gewaltig, das man sie wohl noch am anderen Ende der Galaxie messen kann."
+ ENERGY_LANCE_5_DESC:0 "Mit unserem Wissen zur Dunkle-Materie Technologie und der Erforschung schwarzer Löcher haben wir auch einen Weg gefunden Ein Objekt gezielt mit Gravitonen zu beschießen. Die Energie-Emissionen dieser Waffe sind so gewaltig, das man sie wohl noch am anderen Ende der Galaxie messen kann."
+ ENERGY_LANCE_5:0 "Annihilator Lanze"
+ #Tech Lances
+ TECH_UNLOCK_EW_ENERGY_LANCE_3_TITLE:0 "Plasma Lanze"
+ TECH_UNLOCK_EW_ENERGY_LANCE_3_DESC:0 "Durch magnetstabilisierte, zielgerichtete Plasma-Emission können wir das tödliche Potenzial der Energielanzen Waffen erheblich steigern."
+ 
+ TECH_UNLOCK_EW_ENERGY_LANCE_4_TITLE:0 "Disintegrator Lanze"
+ TECH_UNLOCK_EW_ENERGY_LANCE_4_DESC:0 "Mithilfe des Wissens über die Extradimensionalen Materie-Disintegratoren lässt sich die schneidende Wirkung der Energielanzen weiter verbessern."
+ 
+ TECH_UNLOCK_EW_ENERGY_LANCE_5_TITLE:0 "Annihilator Lanze"
+ TECH_UNLOCK_EW_ENERGY_LANCE_5_DESC:0 "Mit unserem Wissen zur Dunkle-Materie Technologie und der Erforschung schwarzer Löcher haben wir auch einen Weg gefunden Ein Objekt gezielt mit Gravitonen zu beschießen. Die Energie-Emissionen dieser Waffe sind so gewaltig, das man sie wohl noch am anderen Ende der Galaxie messen kann."
+ 
+ EW_tech_energy_lance_3:0 "Plasma-Strahl Fokussierung"
+ EW_tech_energy_lance_3_desc:0 "Durch Anfügen eines Elektromagnetischen Feldes and die Plasma-Emitter, lässt sich das voher tropfenförmige, instabile Projektil in einen fokussierten Strahl unglaublicher Zerstörungskraft verwandeln."
+
+ EW_tech_energy_lance_4:0 "Antimaterie Emission"
+ EW_tech_energy_lance_4_desc:0 "Durch Rückschlüsse auf die Extradimensionalen Materie Disintegratoren könnten wir theoretisch Antimaterie als konzentrierten Strahl verschießen."
+
+ EW_tech_energy_lance_5:0 "Gravitonen Manipulation"
+ EW_tech_energy_lance_5_desc:0 "Das Wissen über verbesserte Lanzen und Fortschritte in der Erforschung von schwarzen Löchern lassen auf eine noch weiter entwickelte Lanze hoffen. Durch konzentrierten Beschuss mit Gravitonen lassen sich feindliche Schiffsrümpfe problemlos zerschneiden. Das erzeugen, beschleunigen und fokussieren von Gravitonen benötigt jedoch gewaltige Mengen Energie."
+ 
+ #Particle Cannons
+ PPC_1:0 "Partikelkanone"
+ PPC_1_DESC:0 "Als eine Mischung aus Plasmabeschleuniger und Ionengeschütz gilt die Partikelkanone als die ultimative Energiewaffe. Die Hybridprojektile der 'PPC' aus Plasma und ionisierter Materie richten am Zeil sowohl energetischen als auch kinetischen Schaden an."
+ PPC_X:0 "Mega Partikelkanone"
+ PPC_X_DESC:0 "Eine überdimensionierte Version der Standart PPC, die ihrer größe wegen nur fest auf Schlachtschiffen oder größerem montiert werden kann. Die Hybridprojektile der 'PPC' aus Plasma und ionisierter Materie richten am Zeil sowohl energetischen als auch kinetischen Schaden an."
+ SMALL_PPC_1:0 "Kleine PPC"
+ MEDIUM_PPC_1:0 "Mittlere PPC"
+ LARGE_PPC_1:0 "Große PPC"
+ XLARGE_PPC_1:0 "Mega Partikelkanone"
+ #Tech PPC
+ EW_tech_ppc:0 "Partikelgeschosse"
+ EW_tech_ppc_desc:0 "Unsere Wissenschaftler glauben einen Weg gefunden zu haben um die vernichtenden Wirkungen von Plasmabeschleunigern und Ionenkanonen zu vereinen. Sollte dies gelingen leiße sich damit eine hocheffiziente Super-Energiewaffe bauen."
+ 
+ #Heavy FLAK
+ FLAK_BATTERY_3:0 "Gauß FLAK"
+ FLAK_BATTERY_3_DESC:0 "Diese FLAK-Geschütze beschleunigen hochexplosive Geschosse mit hilfe von Gauß Technologie, was zu mehr Schadenspotenzial und erhöhter Feuerrate führt."
+ H_FLAK_BATTERY_3:0 "Schwere Gauß FLAK"
+ H_FLAK_BATTERY_3_DESC:0 "Auf einer eignetlich überdimensionierten Lafette stationiert, lässt sich aus dieser Form der Gauß FLAK noch mehr Schadenspotenzial herauskitzeln."
+ FLAK_BATTERY_4:0 "Psi-FLAK"
+ FLAK_BATTERY_4_DESC:0 "Durch psionisches aufladen der Geschosse dieser FLAK Variante, erzeugen die Explosionen Mikrostörungen im Realitätsgewebe, welche gegnerische Schilde schwer beschädigen."
+ H_FLAK_BATTERY_4:0 "Schwere Psi-FLAK"
+ H_FLAK_BATTERY_4_DESC:0 "Auf einer eignetlich überdimensionierten Lafette stationiert, lässt sich aus dieser Form der Psi-FLAK noch mehr Schadenspotenzial herauskitzeln."
+ FLAK_BATTERY_5:0 "KI-FLAK"
+ FLAK_BATTERY_5_DESC:0 "Nicht länger an die Limitationen einer Crew gebunden, kann diese KI-FLAK Feinde mit höchster Effizienz orten und mit absoluter Genauigkeit beschießen."
+ H_FLAK_BATTERY_5:0 "Schwere KI-FLAK"
+ H_FLAK_BATTERY_5_DESC:0 "Auf einer eignetlich überdimensionierten Lafette stationiert, lässt sich aus dieser Form der KI-FLAK noch mehr Schadenspotenzial herauskitzeln. Durch ihre größe ist deise KI-FLAK etwas langsamer als ihr Standart Vorgänger."
+ #Tech Heavy FLAK
+ EW_tech_flak_batteries_3:0 "Verbesserte FLAK-Geschütze"
+ EW_tech_flak_batteries_3_desc:0 "Durch Gauß Technologie lassen sich auch bei FLAK-Geschützen Ladezeiten veringern und durch das wegfallen von Treibladungen auch schwerere Geschosse verschießen."
+ EW_tech_heavy_flak:0 "Schwere Lafette"
+ EW_tech_heavy_flak_desc:0 "Unsere Ingenieure arbeiten an einem Entwurf für eine schwere FLAK Lafette, um noch wirkungsvollere FLAK-Geschütze montieren zu können."
+ EW_tech_flak_batteries_4:0 "Psionische Geschossaufladung"
+ EW_tech_flak_batteries_4_desc:0 "Unsere Wissentschaftler experimentieren schon lange am Einfluss von Psi-Energien und dere realitätsverändernden Kräften auf kinetische Geschosse. Vielleicht sieße sich damit unsere FLAK verbessern."
+ EW_tech_flak_batteries_5:0 "Kampf-KI Reaktions-Tuning"
+ EW_tech_flak_batteries_5_desc:0 "Eine FLAK anstatt mit Crew mit einer bewussten KI auszustatten könnte sich als äußerst effizient erweisen..."
+ 
+ #Advanced PDS Description
+ PD_AEGIS_1:0 "Aegis Punktverteidigung"
+ PD_AEGIS_1_DESC:0 "Intelligente, fernzündbare Munition und verbesserte Tracking Algorithmen erlauben ein neuartiges Punktverteidigungs-System das anfliegende Flugobjekte schon auf große Entfernungen abwehrt."
+ 
+ PD_AEGIS_2:0 "Wespe Punktverteidigung"
+ PD_AEGIS_2_DESC:0 "Weiterentwickelte Zielerfassungs und Tracking Systeme erlauben der Wespe Punktverteidigung noch entferntere Ziele Abzufangen."
+ 
+ PD_AEGIS_3:0 "Schakal Punktverteidigung"
+ PD_AEGIS_3_DESC:0 "Das Schakal Punktverteidigungs-System bietet bisher Unerreichte Reichweite und Feuerkraft und kann, dank modernster Munition, im Notfall auch direkt gegen Schiffe eingesetzt werden."
+
+ SMALL_PD_AEGIS_1:0 "Kleine Aegis Punktverteidigung"
+ MEDIUM_PD_AEGIS_1:0 "Mittlere Aegis Punktverteidigung"
+
+ SMALL_PD_AEGIS_2:0 "Kleine Wespe Punktverteidigung"
+ MEDIUM_PD_AEGIS_2:0 "Mittlere Wespe Punktverteidigung"
+
+ SMALL_PD_AEGIS_3:0 "Kleine Schakal Punktverteidigung"
+ MEDIUM_PD_AEGIS_3:0 "Mittlere Schakal Punktverteidigung"
+
+ #Tech Medium PDS
+ EW_tech_pd_aegis_1:0 "Aegis Punktverteidigung"
+ EW_tech_pd_aegis_1_desc:0 "Intelligente, fernzündbare Sprengmunition und verbesserte Tracking-Algorithmen sind in greifbarer Nähe. Dies sollte uns die Konstruktion eines neuartigen Punktverteidigungs-Systems ermöglichen."
+ EW_tech_pd_aegis_2:0 "Verfeinerte Sensorik"
+ EW_tech_pd_aegis_2_desc:0 "Verfeinerte Sensoren und voraussagende Algorithmen verbessern das Aegis System weiter."
+ EW_tech_pd_aegis_3:0 "Schakal Prototyp"
+ EW_tech_pd_aegis_3_desc:0 "Verbesserte intelligente Munition und ausgereifte Tracking-Systeme erlauben den Bau einer noch efektiveren Version des Aegis Punktverteidigungs-Systems."
+ 
+ #Amoeba Fighters
+ AMOEBA_SHARK_STRIKE_CRAFT_1:0 "Jägeramöbe"
+ AMOEBA_SHARK_STRIKE_CRAFT_2:0 "Gelbe Jägeramöbe"
+ AMOEBA_SHARK_STRIKE_CRAFT_3:0 "Orange Jägeramöbe"
+ AMOEBA_SHARK_STRIKE_CRAFT_4:0 "Rote Jägeramöbe"
+ AMOEBA_SHARK_STRIKE_CRAFT_5:0 "Blaue Jägeramöbe"
+ AMOEBA_SHARK_STRIKE_CRAFT_6:0 "'Scharzer Tod' Jägeramöbe"
+ AMOEBA_SHARK_STRIKE_CRAFT_1_DESC:0 "Diese genmodifizierte Variante der Amöbengeißeln, auch Jägeramöbe genannt, ist weitaus besser für den Kampf gegen kleinere Ziele geeignet und fungiert als Raumjäger."
+ AMOEBA_SHARK_STRIKE_CRAFT_2_DESC:0 "Gelbe Jägeramöben sind agressiver, was ihre Geschwindigkeit und Kampfkraft erhöht."
+ AMOEBA_SHARK_STRIKE_CRAFT_3_DESC:0 "Orange Jägeramöben sind noch agressiver als ihre gelben Vorgänger, mit noch mehr Kampfkraft."
+ AMOEBA_SHARK_STRIKE_CRAFT_4_DESC:0 "Rote Jägeramöben sind so extrem agressiv, das sie mit speziellen Naniten gesteuert werden müssen, um ihre extreme Agressivität gezielt lenken zu können. Allerdings neigen sie zu Kanibalismus in den Brutkammern der Mutterschiffe. Auch angriffe auf Wartungsarbeiter und die Neststruktur wurden beobachtet."
+ AMOEBA_SHARK_STRIKE_CRAFT_5_DESC:0 "Anders als bei ihren Vorgängern, liegt der Fokus der Genmodifikation bei blauen Jägeramöben eher auf Intelligenz und Sensorik anstatt blinder Agressivität. So sind sie leichter zu händeln und neigen nicht zu Kanibalismus und Gewaltausbrüchen in den Brutkammern. Zudem konnte in sie ein miniatur Schildgenerator eingepflegt werden, der die Amöben vor Schrapnell schützt."
+ AMOEBA_SHARK_STRIKE_CRAFT_6_DESC:0 "Die schwarze Jägeramöbe, von den Crews auch 'Black Death' genannt, ist die ultimative Biowaffe. Sie verfügen über ein Semi-Bewusstsein, lernen aktiv und nutzen die schwächen eines Gegners präzise aus. Auch sie tragen Schilde."
+ #Amoeba Bombers
+ AMOEBA_EGG_STRIKE_CRAFT_2:0 "Gelbe Bomberamöbe"
+ AMOEBA_EGG_STRIKE_CRAFT_3:0 "Orange Bomberamöbe"
+ AMOEBA_EGG_STRIKE_CRAFT_4:0 "Rote Bomberamöbe"
+ AMOEBA_EGG_STRIKE_CRAFT_5:0 "Blaue Bomberamöbe"
+ AMOEBA_EGG_STRIKE_CRAFT_6:0 "'Schwarzer Tod' Bomberamöbe"
+ AMOEBA_EGG_STRIKE_CRAFT_2_DESC:0 "Gelbe Bomberamöben sind agressiver, was ihre Geschwindigkeit und Kampfkraft erhöht."
+ AMOEBA_EGG_STRIKE_CRAFT_3_DESC:0 "Orange Bomberamöben sind noch agressiver als ihre gelben Vorgänger, mit noch mehr Kampfkraft."
+ AMOEBA_EGG_STRIKE_CRAFT_4_DESC:0 "Rote Bomberamöben sind so extrem agressiv, das sie mit speziellen Naniten gesteuert werden müssen, um ihre extreme Agressivität gezielt lenken zu können. Allerdings neigen sie zu Kanibalismus in den Brutkammern der Mutterschiffe. Auch angriffe auf Wartungsarbeiter und die Neststruktur wurden beobachtet."
+ AMOEBA_EGG_STRIKE_CRAFT_5_DESC:0 "Anders als bei ihren Vorgängern, liegt der Fokus der Genmodifikation bei blauen Bomberamöben eher auf Intelligenz und Sensorik anstatt blinder Agressivität. So sind sie leichter zu händeln und neigen nicht zu Kanibalismus und Gewaltausbrüchen in den Brutkammern. Zudem konnte in sie ein miniatur Schildgenerator eingepflegt werden, der die Amöben vor Schrapnell schützt."
+ AMOEBA_EGG_STRIKE_CRAFT_6_DESC:0 "Die schwarze Bomberamöbe, von den Crews auch 'Black Death' genannt, ist die ultimative Biowaffe. Sie verfügen über ein Semi-Bewusstsein, lernen aktiv und nutzen die schwächen eines Gegners präzise aus. Auch sie tragen Schilde."
+ #Tech Amoeba Spacecraft
+ EW_tech_space_egg_1:0 "Amöben Genmodifikation"
+ EW_tech_space_egg_2:0 "Typ 'GELB' Amöbenbrut"
+ EW_tech_space_egg_3:0 "Typ 'ORANGE' Amöbenbrut"
+ EW_tech_space_egg_4:0 "Verhaltensstabilisierer Prototyp"
+ EW_tech_space_egg_5:0 "Typ 'BLAU' Amöbenbrut"
+ EW_tech_space_egg_6:0 "Typ 'SCHWARZ' Amöbenbrut"
+ EW_tech_space_egg_1_desc:0 "Alternative Genmodifikation von Amöbengeißeln erlaubt es uns eine Art 'Jägervariante' zu erstellen."
+ EW_tech_space_egg_2_desc:0 "Weitere Genmodifikationen und Hormonpräparate erhöhen die Agressivität unserer Amöbenbrut."
+ EW_tech_space_egg_3_desc:0 "Die Typ 'ORANGE' Genmod legt noch mehr Fokus auf Agressivität bei unseren Amöben."
+ EW_tech_space_egg_4_desc:0 "Nach unzähligen Unfällen mit den Prototypen des 'ROT' Typs arbeiten unsere Wissentschaftler an einem Nanitenbasierten Verhaltens-Stabilisierer zur Kontrolle diser Killermaschinen."
+ EW_tech_space_egg_5_desc:0 "Das steigern der Agressivität unserer Amöben ist eine Sackgasse. Wir sollten doch ehr ihre Intelligenz fördern um besser Kampfleistungen zu erzielen und weiger Unfälle zu riskieren.\nEinige Wissenschaftler theorisieren zudem stoffwechselbetriebene Miniaturschilde für Amöben."
+ EW_tech_space_egg_6_desc:0 "Der Amöbenbrut eine Semi-Schwarmintelligenz zu geben sollte sich als die ultimative Verbesserung erweisen...Solange sie sich nicht erheben..."

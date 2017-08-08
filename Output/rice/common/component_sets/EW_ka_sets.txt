@@ -1,0 +1,20 @@
+component_set = {
+	key = "KINETIC_ARTILLERY_3"
+	
+	icon = "GFX_ship_part_kinetic_artillery_3"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "KINETIC_ARTILLERY_4"
+	
+	icon = "GFX_ship_part_kinetic_artillery_4"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "KINETIC_ARTILLERY_5"
+	
+	icon = "GFX_ship_part_kinetic_artillery_5"
+	icon_frame = 1	
+}

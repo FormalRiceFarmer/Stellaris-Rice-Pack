@@ -1,0 +1,122 @@
+objectTypes = {
+
+	pdxparticle = {
+		name = "plasma_lance_hit_effect"
+		type = "plasma_lance_hit_effect"
+		
+		scale = 1.15
+	}
+	
+	pdxparticle = {
+		name = "plasma_lance_muzzle_particle"
+		type = "plasma_lance_muzzle"
+		
+		scale = 1.5
+	}
+
+	pdxparticle = {
+		name = "plasma_lance_windup_effect"
+		type = "plasma_lance_windup_effect"
+		
+		scale = 1.5
+	}
+
+	pdxparticle = {
+		name = "plasma_lance_muzzle_windup_effect"
+		type = "plasma_lance_muzzle_windup_effect"
+		
+		scale = 1.5
+	}
+	
+	pdxparticle = {
+		name = "md_lance_hit_effect"
+		type = "md_lance_hit_effect"
+		
+		scale = 1.15
+	}
+	
+	pdxparticle = {
+		name = "md_lance_muzzle_particle"
+		type = "md_lance_muzzle"
+		
+		scale = 1.5
+	}
+	
+	pdxparticle = {
+		name = "md_lance_windup_effect"
+		type = "md_lance_windup_effect"
+		
+		scale = 1.5
+	}
+
+	pdxparticle = {
+		name = "md_lance_muzzle_windup_effect"
+		type = "md_lance_muzzle_windup_effect"
+		
+		scale = 1.5
+	}
+	
+	pdxparticle = {
+		name = "annihilator_lance_hit_effect"
+		type = "annihilator_lance_hit_effect"
+		
+		scale = 1.15
+	}
+	
+	pdxparticle = {
+		name = "annihilator_lance_muzzle_particle"
+		type = "annihilator_lance_muzzle"
+		
+		scale = 1.5
+	}
+
+	pdxparticle = {
+		name = "annihilator_lance_windup_effect"
+		type = "annihilator_lance_windup_effect"
+		
+		scale = 1.5
+	}
+
+	pdxparticle = {
+		name = "annihilator_lance_muzzle_windup_effect"
+		type = "annihilator_lance_muzzle_windup_effect"
+		
+		scale = 1.4
+	}
+	
+	pdxparticle = {
+		name = "white_lance_hit_effect"
+		type = "white_lance_hit_effect"
+		
+		scale = 1.4
+	}
+	
+	pdxparticle = {
+		name = "white_lance_muzzle_particle"
+		type = "white_lance_muzzle"
+		
+		scale = 1.4
+	}
+
+	pdxparticle = {
+		name = "white_lance_windup_effect"
+		type = "white_lance_windup_effect"
+		
+		scale = 1.4
+	}
+
+	pdxparticle = {
+		name = "white_lance_muzzle_windup_effect"
+		type = "white_lance_muzzle_windup_effect"
+		
+		scale = 1.4
+	}
+	
+	pdxparticle = {
+		name = "white_lance_shield_hit_effect"
+		type = "white_lance_shield_hit_effect"
+		
+		scale = 1.4
+	}
+
+}

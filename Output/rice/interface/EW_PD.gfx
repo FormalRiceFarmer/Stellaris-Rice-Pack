@@ -1,0 +1,16 @@
+spriteTypes{
+	spriteType = {
+		name = "GFX_ship_part_PD_AEGIS_1"
+		texturefile = "gfx/interface/icons/ship_parts/EW_ship_part_PD_aegis_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_PD_AEGIS_2"
+		texturefile = "gfx/interface/icons/ship_parts/EW_ship_part_PD_aegis_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_PD_AEGIS_3"
+		texturefile = "gfx/interface/icons/ship_parts/EW_ship_part_PD_aegis_3.dds"
+	}
+}

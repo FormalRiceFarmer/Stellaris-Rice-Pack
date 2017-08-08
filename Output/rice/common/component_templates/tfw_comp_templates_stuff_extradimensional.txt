@@ -1,0 +1,176 @@
+######################################################################
+@power_S12expow = 180
+@power_M12expow = 360
+@power_L12expow = 720
+
+@cost_S12expow = 220
+@cost_M12expow = 440
+@cost_L12expow = 880
+
+
+@cost_S12exshi = 120
+@cost_M12exshi = 240
+@cost_L12exshi = 480
+
+@power_S12exshi = -48
+@power_M12exshi = -96
+@power_L12exshi = -192
+
+@shield_S12exshi = 700
+@shield_M12exshi = 1400
+@shield_L12exshi = 2800
+
+#########################EXD REACTORS################################
+# EXD Reactors
+utility_component_template = {
+	key = "SMALL_TFW_EXD_REACTOR"
+	size = medium
+	icon = "GFX_ship_part_tfw_exd_reactor"
+	icon_frame = 1
+	power = @power_S12expow
+	cost = @cost_S12expow
+	
+	prerequisites = { "tech_tfw_exd_reactor" }
+	component_set = "TFW_EXD_REACTOR"
+}
+
+utility_component_template = {
+	key = "MEDIUM_TFW_EXD_REACTOR"
+	size = medium
+	icon = "GFX_ship_part_tfw_exd_reactor"
+	icon_frame = 1
+	power = @power_M12expow
+	cost = @cost_M12expow
+	
+	prerequisites = { "tech_tfw_exd_reactor" }
+	component_set = "TFW_EXD_REACTOR"
+}
+
+utility_component_template = {
+	key = "LARGE_TFW_EXD_REACTOR"
+	size = large
+	icon = "GFX_ship_part_tfw_exd_reactor"
+	icon_frame = 1
+	power = @power_L12expow
+	cost = @cost_L12expow
+	
+	prerequisites = { "tech_tfw_exd_reactor" }
+	component_set = "TFW_EXD_REACTOR"
+}
+
+########################EXD SHIELDS###################################
+utility_component_template = {
+	key = "SMALL_BODY_TFW_EXD"
+	size = small
+	icon = "GFX_ship_part_body_tfw_exd"
+	icon_frame = 1
+	power = @power_S12exshi
+	cost = @cost_S12exshi
+	modifier = {
+		ship_shield_hp_add = @shield_S12exshi
+		ship_shield_regen_add = 5.0
+	}
+	prerequisites = { "tech_tfw_body_exd" }
+	component_set = "BODY_TFW_EXD"
+}
+
+utility_component_template = {
+	key = "MEDIUM_BODY_TFW_EXD"
+	size = medium
+	icon = "GFX_ship_part_body_tfw_exd"
+	icon_frame = 1
+	power = @power_M12exshi
+	cost = @cost_M12exshi
+	modifier = {
+		ship_shield_hp_add = @shield_M12exshi
+		ship_shield_regen_add = 7.4
+	}
+	prerequisites = { "tech_tfw_body_exd" }
+	component_set = "BODY_TFW_EXD"
+}
+
+utility_component_template = {
+	key = "LARGE_BODY_TFW_EXD"
+	size = large
+	icon = "GFX_ship_part_body_tfw_exd"
+	icon_frame = 1
+	power = @power_L12exshi
+	cost = @cost_L12exshi
+	modifier = {
+		ship_shield_hp_add = @shield_L12exshi
+		ship_shield_regen_add = 9.8
+	}
+	prerequisites = { "tech_tfw_body_exd" }
+	component_set = "BODY_TFW_EXD"
+}
+
+#############EXD THRUSTERS#################
+
+utility_component_template = {
+	key = "TFW_EXD_THRUSTER_1"
+	size = small
+	icon = "GFX_tfw_exd_thruster_1"
+	icon_frame = 1
+	power = -50
+	cost = 50
+	modifier = {
+		ship_speed_mult = 0.8
+		ship_evasion_add = 14
+		ship_combat_speed_mult = 1.1
+	}
+
+	prerequisites = { "tech_tfw_thruster_exd" }
+	component_set = "TFW_EXD_THRUSTER_1"
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+#########################EXD SENSORS################################
+utility_component_template = {
+	key = "TFW_EXD_SENSOR_1"
+	size = medium
+	icon = "GFX_tfw_exd_sensor_1"
+	icon_frame = 1
+	power = -30
+	cost = 60
+	sensor_range = 140
+	
+	ship_modifier = {
+		ship_tracking_add = 15
+	}
+	
+	prerequisites = { "tech_tfw_sensors_exd" }
+	component_set = "TFW_EXD_SENSOR_1"
+	
+	ai_weight = {
+		weight = 5000
+	}	
+}
+
+########################EXD_RECHARGER#####################################
+utility_component_template = {
+	can_recharge_shield = yes
+	key = "TFW_EXD_SHIELD_RECHARGER"
+	size = aux
+	icon = "GFX_tfw_exd_shield_recharger"
+	icon_frame = 1
+	power = -60
+	cost = 60
+	
+	prerequisites = { "tech_tfw_exd_shield_recharger" }
+	component_set = "TFW_EXD_SHIELD_RECHARGER"
+	
+	modifier = {
+		ship_shield_regen_mult = 0.8 #Regeneration per day
+	}
+	
+	ai_weight = {
+		weight = 20
+		modifier = {
+			factor = 2.0
+			is_preferred_weapons = energy
+		}
+	}
+}

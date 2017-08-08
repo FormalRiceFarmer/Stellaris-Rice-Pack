@@ -1,0 +1,77 @@
+weapon_component_template = {
+	key = "MEDIUM_PD_AEGIS_1"
+	size = point_defence
+	entity = "turret_point_defence_entity"
+	
+	icon = "GFX_ship_part_PD_AEGIS_1"
+	icon_frame = 1
+	
+	prerequisites = { "EW_tech_pd_aegis_1" }
+	component_set = "PD_AEGIS_1"
+	type = point_defence
+	projectile_gfx = "red_laser_pd"
+	tags = { weapon_type_point_defense weapon_type_kinetic }
+	ai_tags = { weapon_role_point_defense }
+
+	damage = { min = 2 max = 2 }
+	windup = { min = 1 max = 3 }
+	total_fire_time = 4
+	range = 50
+	accuracy = 0.8
+	tracking = 0.4
+	shield_damage = 0.2
+	power = -15
+	cost = 15
+}
+
+weapon_component_template = {
+	key = "MEDIUM_PD_AEGIS_2"
+	size = point_defence
+	entity = "turret_point_defence_entity"	
+	
+	icon = "GFX_ship_part_PD_AEGIS_2"
+	icon_frame = 1
+	
+	prerequisites = { "EW_tech_pd_aegis_2" }
+	component_set = "PD_AEGIS_2"
+	type = point_defence
+	projectile_gfx = "blue_laser_pd"
+	tags = { weapon_type_point_defense weapon_type_kinetic }
+	ai_tags = { weapon_role_point_defense }
+
+	damage = { min = 2 max = 3 }
+	windup = { min = 1 max = 3 }
+	total_fire_time = 4
+	range = 60
+	accuracy = 0.9
+	tracking = 0.6
+	shield_damage = 0.4
+	power = -20
+	cost = 20
+}
+
+weapon_component_template = {
+	key = "MEDIUM_PD_AEGIS_3"
+	size = point_defence
+	entity = "turret_point_defence_entity"	
+	
+	icon = "GFX_ship_part_PD_AEGIS_3"
+	icon_frame = 1
+	
+	prerequisites = { "EW_tech_pd_aegis_3" }
+	component_set = "PD_AEGIS_3"
+	type = point_defence
+	projectile_gfx = "white_laser_pd"
+	tags = { weapon_type_point_defense weapon_type_kinetic }
+	ai_tags = { weapon_role_point_defense }
+
+	damage = { min = 3 max = 3 }
+	windup = { min = 1 max = 3 }
+	total_fire_time = 4
+	range = 70
+	accuracy = 1.0
+	tracking = 0.8
+	shield_damage = 0.6
+	power = -25
+	cost = 25
+}

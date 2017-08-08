@@ -1,0 +1,881 @@
+# ####################
+#  	Missiles	     #
+# ####################
+#ANTI-SHIELD
+### Neutronium Missile Launcher
+weapon_component_template = {
+	key = "SMALL_TFW_AS_MISSILE_1"
+	size = small
+	entity = "turret_missile_small_entity"
+	damage = { min = 15.0 max = 24.0 }
+	windup = { min = 20.0 max = 30.0 }
+	total_fire_time = 30
+	range = 70.0
+	accuracy = 1.00
+	missile_speed = 5.50
+	missile_evasion = 0.50
+	missile_health = 6.0
+
+	power = -15
+	cost = 15
+	shield_damage = 2.0
+	tracking = 0.70
+	
+	icon = "GFX_tfw_missile_as_1"
+	icon_frame = 1
+	static_rotation = no
+	type = missile
+	
+	prerequisites = { "tech_tfw_as_missiles_1" }
+	component_set = "TFW_AS_MISSILE_1"
+	projectile_gfx = "small_missile_tfw_as"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_long_range weapon_role_anti_shield }
+	upgrades_to = "SMALL_TFW_AS_MISSILE_2"
+}
+
+### Neutronium Missile Launcher
+weapon_component_template = {
+	key = "MEDIUM_TFW_AS_MISSILE_1"
+	size = medium
+	entity = "turret_missile_medium_entity"
+	damage = { min = 20.0 max = 58.0 }
+	windup = { min = 20.0 max = 30.0 }
+	total_fire_time = 30
+	range = 90.0
+	accuracy = 1.00
+	missile_speed = 5.50
+	missile_evasion = 0.50
+	missile_health = 6.0
+
+	power = -30
+	cost = 30
+	shield_damage = 2.0
+	tracking = 0.70
+	
+	icon = "GFX_tfw_missile_as_1"
+	icon_frame = 1
+	static_rotation = no
+	type = missile
+	
+	prerequisites = { "tech_tfw_as_missiles_1" }
+	component_set = "TFW_AS_MISSILE_1"
+	projectile_gfx = "medium_missile_tfw_as"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_long_range weapon_role_anti_shield }
+	upgrades_to = "MEDIUM_TFW_AS_MISSILE_2"
+}
+
+### Neutronium Missile Launcher
+weapon_component_template = {
+	key = "LARGE_TFW_AS_MISSILE_1"
+	size = large
+	entity = "turret_missile_large_entity"
+	damage = { min = 57.0 max = 99.0 }
+	windup = { min = 20.0 max = 30.0 }
+	total_fire_time = 30
+	range = 110.0
+	accuracy = 1.00
+	missile_speed = 5.50
+	missile_evasion = 0.50
+	missile_health = 6.0
+
+	power = -60
+	cost = 60
+	shield_damage = 2.0
+	tracking = 0.70
+	
+	icon = "GFX_tfw_missile_as_1"
+	icon_frame = 1
+	static_rotation = no
+	type = missile
+	
+	prerequisites = { "tech_tfw_as_missiles_1" }
+	component_set = "TFW_AS_MISSILE_1"
+	projectile_gfx = "large_missile_tfw_as"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_long_range weapon_role_anti_shield }
+	upgrades_to = "LARGE_TFW_AS_MISSILE_2"
+}
+
+### Hyperon Missile Launcher
+weapon_component_template = {
+	key = "SMALL_TFW_AS_MISSILE_2"
+	size = small
+	entity = "turret_missile_small_entity"
+	damage = { min = 17.0 max = 30.0 }
+	windup = { min = 20.0 max = 30.0 }
+	total_fire_time = 30
+	range = 70.0
+	accuracy = 1.00
+	missile_speed = 6.00
+	missile_evasion = 0.50
+	missile_health = 7.0
+
+	power = -17.5
+	cost = 17.5
+	shield_damage = 2.0
+	tracking = 0.70
+	
+	icon = "GFX_tfw_missile_as_2"
+	icon_frame = 1
+	static_rotation = no
+	type = missile
+	
+	prerequisites = { "tech_tfw_as_missiles_2" }
+	component_set = "TFW_AS_MISSILE_2"
+	projectile_gfx = "small_missile_tfw_as"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_long_range weapon_role_anti_shield }
+}
+
+### Hyperon Missile Launcher
+weapon_component_template = {
+	key = "MEDIUM_TFW_AS_MISSILE_2"
+	size = medium
+	entity = "turret_missile_medium_entity"
+	damage = { min = 28.0 max = 66.0 }
+	windup = { min = 20.0 max = 30.0 }
+	total_fire_time = 30
+	range = 90.0
+	accuracy = 1.00
+	missile_speed = 6.00
+	missile_evasion = 0.50
+	missile_health = 7.0
+
+	power = -35
+	cost = 35
+	shield_damage = 2.0
+	tracking = 0.70
+	
+	icon = "GFX_tfw_missile_as_2"
+	icon_frame = 1
+	static_rotation = no
+	type = missile
+	
+	prerequisites = { "tech_tfw_as_missiles_2" }
+	component_set = "TFW_AS_MISSILE_2"
+	projectile_gfx = "medium_missile_tfw_as"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_long_range weapon_role_anti_shield }
+}
+
+### Hyperon Missile Launcher
+weapon_component_template = {
+	key = "LARGE_TFW_AS_MISSILE_2"
+	size = large
+	entity = "turret_missile_large_entity"
+	damage = { min = 66.0 max = 122.0 }
+	windup = { min = 20.0 max = 30.0 }
+	total_fire_time = 30
+	range = 110.0
+	accuracy = 1.00
+	missile_speed = 6.00
+	missile_evasion = 0.50
+	missile_health = 7.0
+
+	power = -70
+	cost = 70
+	shield_damage = 2.0
+	tracking = 0.70
+	
+	icon = "GFX_tfw_missile_as_2"
+	icon_frame = 1
+	static_rotation = no
+	type = missile
+	
+	prerequisites = { "tech_tfw_as_missiles_2" }
+	component_set = "TFW_AS_MISSILE_2"
+	projectile_gfx = "large_missile_tfw_as"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_long_range weapon_role_anti_shield }
+}
+
+#ANTI-ARMOR
+### Energon Missile Launcher
+weapon_component_template = {
+	key = "SMALL_TFW_AA_MISSILE_1"
+	size = small
+	entity = "turret_missile_small_entity"
+	damage = { min = 15.0 max = 24.0 }
+	windup = { min = 20.0 max = 30.0 }
+	total_fire_time = 30
+	range = 70.0
+	accuracy = 1.00
+	missile_speed = 5.50
+	missile_evasion = 0.50
+	missile_health = 6.0
+
+	power = -15
+	cost = 15
+	armor_penetration = 0.4
+	tracking = 0.70
+	
+	icon = "GFX_tfw_missile_aa_1"
+	icon_frame = 1
+	static_rotation = no
+	type = missile
+	
+	prerequisites = { "tech_tfw_aa_missiles_1" }
+	component_set = "TFW_AA_MISSILE_1"
+	projectile_gfx = "small_missile_tfw_aa"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_long_range weapon_role_anti_armor }
+	upgrades_to = "SMALL_TFW_AA_MISSILE_2"
+}
+
+### Energon Missile Launcher
+weapon_component_template = {
+	key = "MEDIUM_TFW_AA_MISSILE_1"
+	size = medium
+	entity = "turret_missile_medium_entity"
+	damage = { min = 20.0 max = 58.0 }
+	windup = { min = 20.0 max = 30.0 }
+	total_fire_time = 30
+	range = 90.0
+	accuracy = 1.00
+	missile_speed = 5.50
+	missile_evasion = 0.50
+	missile_health = 6.0
+
+	power = -30
+	cost = 30
+	armor_penetration = 0.4
+	tracking = 0.70
+	
+	icon = "GFX_tfw_missile_aa_1"
+	icon_frame = 1
+	static_rotation = yes
+	type = missile
+	
+	prerequisites = { "tech_tfw_aa_missiles_1" }
+	component_set = "TFW_AA_MISSILE_1"
+	projectile_gfx = "medium_missile_tfw_aa"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_long_range weapon_role_anti_armor }
+	upgrades_to = "MEDIUM_TFW_AA_MISSILE_2"
+}
+
+### Energon Missile Launcher
+weapon_component_template = {
+	key = "LARGE_TFW_AA_MISSILE_1"
+	size = large
+	entity = "turret_missile_large_entity"
+	damage = { min = 57.0 max = 99.0 }
+	windup = { min = 20.0 max = 30.0 }
+	total_fire_time = 30
+	range = 110.0
+	accuracy = 1.00
+	missile_speed = 5.50
+	missile_evasion = 0.50
+	missile_health = 6.0
+
+	power = -60
+	cost = 60
+	armor_penetration = 0.4
+	tracking = 0.70
+	
+	icon = "GFX_tfw_missile_as_1"
+	icon_frame = 1
+	static_rotation = yes
+	type = missile
+	
+	prerequisites = { "tech_tfw_aa_missiles_1" }
+	component_set = "TFW_AA_MISSILE_1"
+	projectile_gfx = "large_missile_tfw_aa"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_long_range weapon_role_anti_armor }
+	upgrades_to = "LARGE_TFW_AA_MISSILE_2"
+}
+
+### Grinder Missile Launcher
+weapon_component_template = {
+	key = "SMALL_TFW_AA_MISSILE_2"
+	size = small
+	entity = "turret_missile_small_entity"
+	damage = { min = 17.0 max = 30.0 }
+	windup = { min = 20.0 max = 30.0 }
+	total_fire_time = 30
+	range = 70.0
+	accuracy = 1.00
+	missile_speed = 6.00
+	missile_evasion = 0.50
+	missile_health = 7.0
+
+	power = -17.5
+	cost = 17.5
+	armor_penetration = 0.4
+	tracking = 0.70
+	
+	icon = "GFX_tfw_missile_aa_2"
+	icon_frame = 1
+	static_rotation = yes
+	type = missile
+	
+	prerequisites = { "tech_tfw_aa_missiles_2" }
+	component_set = "TFW_AA_MISSILE_2"
+	projectile_gfx = "small_missile_tfw_aa"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_long_range weapon_role_anti_armor }
+}
+
+### Grinder Missile Launcher
+weapon_component_template = {
+	key = "MEDIUM_TFW_AA_MISSILE_2"
+	size = medium
+	entity = "turret_missile_medium_entity"
+	damage = { min = 28.0 max = 66.0 }
+	windup = { min = 20.0 max = 30.0 }
+	total_fire_time = 30
+	range = 90.0
+	accuracy = 1.00
+	missile_speed = 6.00
+	missile_evasion = 0.50
+	missile_health = 7.0
+
+	power = -35
+	cost = 35
+	armor_penetration = 0.4
+	tracking = 0.70
+	
+	icon = "GFX_tfw_missile_aa_2"
+	icon_frame = 1
+	static_rotation = yes
+	type = missile
+	
+	prerequisites = { "tech_tfw_aa_missiles_2" }
+	component_set = "TFW_AA_MISSILE_2"
+	projectile_gfx = "medium_missile_tfw_aa"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_long_range weapon_role_anti_armor }
+}
+
+### Grinder Missile Launcher
+weapon_component_template = {
+	key = "LARGE_TFW_AA_MISSILE_2"
+	size = large
+	entity = "turret_missile_large_entity"
+	damage = { min = 66.0 max = 122.0 }
+	windup = { min = 20.0 max = 30.0 }
+	total_fire_time = 30
+	range = 110.0
+	accuracy = 1.00
+	missile_speed = 6.00
+	missile_evasion = 0.50
+	missile_health = 7.0
+
+	power = -70
+	cost = 70
+	armor_penetration = 0.4
+	tracking = 0.70
+	
+	icon = "GFX_tfw_missile_aa_2"
+	icon_frame = 1
+	static_rotation = yes
+	type = missile
+	
+	prerequisites = { "tech_tfw_aa_missiles_2" }
+	component_set = "TFW_AA_MISSILE_2"
+	projectile_gfx = "large_missile_tfw_aa"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_long_range weapon_role_anti_armor }
+}
+
+# #######################
+#  Convential Torpedoes	#
+# #######################
+
+### Antimatter Torpedoes
+weapon_component_template = {
+	key = "TFW_TORPEDO_4"
+	size = torpedo
+	entity = "turret_torpedo_entity"
+	
+	icon = "GFX_tfw_torpedo_4"
+	icon_frame = 1
+	type = missile
+	damage = { min = 220.0 max = 390.0 }
+	windup = { min = 2.0 max = 15.0 }
+	total_fire_time = 200
+	range = 60.0
+	accuracy = 1.00
+	missile_speed = 5.00
+	missile_evasion = 0.0
+	missile_health = 8.0
+
+	power = -25
+	cost = 25
+	shield_damage = 1.0
+	shield_penetration = 1.0
+	armor_penetration = 0.5
+	tracking = 0.50	
+	
+	prerequisites = { "tech_tfw_torpedoes_4" }
+	component_set = "TFW_TORPEDO_4"
+	projectile_gfx = "large_tfw_torpedo_04"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_anti_shield }
+	
+	target_weights = {
+		npc_warship_01 = 5000
+		space_dragon_baby = 5000	
+		massive_ship_fallen_empire = 5000
+		large_ship_fallen_empire = 5000	
+		battleship = 5000
+		cruiser = 2500
+		destroyer = 1000
+		small_ship_fallen_empire = 1000	
+	}
+}
+
+### Darkmatter Torpedoes
+weapon_component_template = {
+	key = "TFW_TORPEDO_5"
+	size = torpedo
+	entity = "turret_torpedo_entity"
+	
+	icon = "GFX_tfw_torpedo_5"
+	icon_frame = 1
+	type = missile
+	damage = { min = 300.0 max = 430.0 }
+	windup = { min = 2.0 max = 15.0 }
+	total_fire_time = 200
+	range = 60.0
+	accuracy = 1.00
+	missile_speed = 5.00
+	missile_evasion = 0.0
+	missile_health = 10.0
+
+	power = -30
+	cost = 30
+	shield_damage = 1.0
+	shield_penetration = 1.0
+	armor_penetration = 0.5
+	tracking = 0.50	
+	
+	prerequisites = { "tech_tfw_torpedoes_5" }
+	component_set = "TFW_TORPEDO_5"
+	projectile_gfx = "large_tfw_torpedo_05"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_anti_shield }
+	
+	target_weights = {
+		npc_warship_01 = 5000
+		space_dragon_baby = 5000	
+		massive_ship_fallen_empire = 5000
+		large_ship_fallen_empire = 5000	
+		battleship = 5000
+		cruiser = 2500
+		destroyer = 1000
+		small_ship_fallen_empire = 1000		
+	}
+}
+
+# ####################
+#  Energy Torpedoes
+# ####################
+
+# ## Energy Torpedoes III
+weapon_component_template = {
+	key = "LARGE_TFW_ENERGY_TORPEDO_3"
+	size = torpedo
+	entity = "large_laser_gun_entity"
+	damage = { min = 240.0 max = 430.0 }
+	windup = { min = 2.0 max = 23.0 }
+	total_fire_time = 200
+	range = 70.0
+	accuracy = 0.90
+	type = instant
+	power = -80
+	cost = 80
+	shield_damage = 3.0
+	tracking = 0.0
+	
+	icon = "GFX_energy_torpedo_3"
+	icon_frame = 1
+	prerequisites = { "tech_energy_torpedoes_3" }
+	component_set = "TFW_ENERGY_TORPEDO_3"
+	projectile_gfx = "darkmatter_torpedoes"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_shield weapon_role_long_range }
+
+	target_weights = {
+		npc_warship_01 = 5000
+		space_dragon_baby = 5000	
+		massive_ship_fallen_empire = 5000
+		large_ship_fallen_empire = 5000	
+		battleship = 5000
+		cruiser = 2500
+		destroyer = 1000
+		small_ship_fallen_empire = 1000	
+	}	
+}
+
+# ####################
+#  	Plasma Missiles  #
+# ####################
+# Small
+weapon_component_template = {
+	key = "SMALL_TFW_P_T1"
+	size = small
+	entity = "turret_missile_small_entity"
+	damage = { min = 38.0 max = 45.0 }
+	windup = { min = 2.0 max = 18.0 }
+	total_fire_time = 100
+	range = 70.0
+	accuracy = 1.0
+	missile_speed = 6.0
+	missile_evasion = 0.5
+	missile_health = 2.0	
+
+	power = -17.5
+	cost = 17.5
+	shield_damage = 0.8
+	armor_penetration = 0.4
+	tracking = 0.7
+	
+	icon = "GFX_tfw_pt1"
+	icon_frame = 1
+	type = missile
+	
+	prerequisites = { "tech_tfw_pt1" }
+	component_set = "TFW_P_T1"
+	projectile_gfx = "tfw_pt1_small"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_anti_armor weapon_role_anti_shield }
+	upgrades_to = "SMALL_TFW_P_T2"
+}
+
+# Medium
+weapon_component_template = {
+	key = "MEDIUM_TFW_P_T1"
+	size = medium
+	entity = "turret_missile_medium_entity"
+	damage = { min = 78.0 max = 88.0 }
+	windup = { min = 2.0 max = 18.0 }
+	total_fire_time = 100
+	range = 90.0
+	accuracy = 1.0
+	missile_speed = 6.0
+	missile_evasion = 0.5
+	missile_health = 4.0
+
+	power = -35.0
+	cost = 35.0
+	shield_damage = 0.9
+	armor_penetration = 0.5
+	tracking = 0.7
+	
+	icon = "GFX_tfw_pt1"
+	icon_frame = 1
+	type = missile
+	
+	prerequisites = { "tech_tfw_pt1" }
+	component_set = "TFW_P_T1"
+	projectile_gfx = "tfw_pt1_medium"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_anti_armor weapon_role_anti_shield }
+	upgrades_to = "MEDIUM_TFW_P_T2"
+}
+
+# Large
+weapon_component_template = {
+	key = "LARGE_TFW_P_T1"
+	size = large
+	entity = "turret_missile_large_entity"
+	damage = { min = 162.0 max = 170.0 }
+	windup = { min = 2.0 max = 18.0 }
+	total_fire_time = 100
+	range = 110.0
+	accuracy = 1.0
+	missile_speed = 6.0
+	missile_evasion = 0.5
+	missile_health = 8.0
+	tracking = 0.7
+	
+	power = -70.0
+	cost = 70.0
+	shield_damage = 1.0
+	armor_penetration = 0.6
+	
+	icon = "GFX_tfw_pt1"
+	icon_frame = 1
+	type = missile
+	
+	prerequisites = { "tech_tfw_pt1" }
+	component_set = "TFW_P_T1"
+	projectile_gfx = "tfw_pt1_large"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_anti_armor weapon_role_anti_shield }
+	upgrades_to = "LARGE_TFW_P_T2"
+}
+
+# ########################
+#  	Adv. Plasma Missiles #
+# ########################
+# Small
+weapon_component_template = {
+	key = "SMALL_TFW_P_T2"
+	size = small
+	entity = "turret_missile_small_entity"
+	damage = { min = 42.0 max = 56.0 }
+	windup = { min = 2.0 max = 18.0 }
+	total_fire_time = 100
+	range = 70.0
+	accuracy = 1.0
+	missile_speed = 7.00
+	missile_evasion = 0.5
+	missile_health = 3.0
+	tracking = 0.7
+
+	power = -20
+	cost = 20
+	shield_damage = 0.8
+	armor_penetration = 0.4
+	
+	icon = "GFX_tfw_pt2"
+	icon_frame = 1
+	type = missile
+	
+	prerequisites = { "tech_tfw_pt2" }
+	component_set = "TFW_P_T2"
+	projectile_gfx = "tfw_pt2_small"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_anti_armor weapon_role_anti_shield }
+}
+
+# Medium
+weapon_component_template = {
+	key = "MEDIUM_TFW_P_T2"
+	size = medium
+	entity = "turret_missile_medium_entity"
+	damage = { min = 88.0 max = 108.0 }
+	windup = { min = 2.0 max = 18.0 }
+	total_fire_time = 100
+	range = 90.0
+	accuracy = 1.0
+	missile_speed = 7.00
+	missile_evasion = 0.5
+	missile_health = 6.0
+	tracking = 0.7
+
+	power = -40.0
+	cost = 40.0
+	shield_damage = 0.9
+	armor_penetration = 0.5
+	
+	icon = "GFX_tfw_pt2"
+	icon_frame = 1
+	type = missile
+	
+	prerequisites = { "tech_tfw_pt2" }
+	component_set = "TFW_P_T2"
+	projectile_gfx = "tfw_pt2_medium"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_anti_armor weapon_role_anti_shield }
+}
+
+# Large
+weapon_component_template = {
+	key = "LARGE_TFW_P_T2"
+	size = large
+	entity = "turret_missile_large_entity"
+	damage = { min = 187.0 max = 205.0 }
+	windup = { min = 2.0 max = 18.0 }
+	total_fire_time = 100
+	range = 110.0
+	accuracy = 1.0
+	missile_speed = 7.00
+	missile_evasion = 0.5
+	missile_health = 9.0
+	tracking = 0.7
+
+	power = -80.0
+	cost = 80.0
+	shield_damage = 1.0
+	armor_penetration = 0.6
+	
+	icon = "GFX_tfw_pt2"
+	icon_frame = 1
+	type = missile
+	
+	prerequisites = { "tech_tfw_pt2" }
+	component_set = "TFW_P_T2"
+	projectile_gfx = "tfw_pt2_large"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_anti_armor weapon_role_anti_shield }
+}
+
+# ####################### #
+#  	TYPHOON_MISSILES_3 	  #
+# ####################### #
+### Advanced Swarmer Missile Launcher
+weapon_component_template = {
+	key = "TFW_SWARMER_MISSILE_3"
+	size = medium
+	entity = "turret_missile_large_entity"
+	damage = { min = 13.0 max = 19.0 }
+	windup = { min = 2.0 max = 8.0 }
+	total_fire_time = 16
+	range = 50.0
+	accuracy = 1.0
+	missile_speed = 6.00
+	missile_evasion = 2.0
+	missile_health = 1.0
+	tracking = 0.7
+	
+	power = -30.0
+	cost = 30.0
+	
+	icon = "GFX_tfw_swarmer_missile_3"
+	icon_frame = 1
+	static_rotation = no
+	type = missile
+	
+	prerequisites = { "tech_tfw_swarmer_missiles_3" }
+	component_set = "TFW_SWARMER_MISSILE_3"
+	projectile_gfx = "tfw_swarmer_missiles_03"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_long_range }
+}
+
+###################################ADVANCED###################################
+#############NEXT TIER#######################
+##############################
+#  	DEVOURER TORPEDOES		 #
+##############################
+
+# Large
+weapon_component_template = {
+	key = "LARGE_TFW_INFECTOR"
+	size = torpedo
+	entity = "turret_missile_large_entity"
+	damage = { min = 142.0 max = 261.0 }
+	windup = { min = 5.0 max = 25.0 }
+	type = missile
+	total_fire_time = 85
+	range = 140.0
+	accuracy = 1.0
+	missile_speed = 7.00
+	missile_health = 30.0
+	
+	power = -80.0
+	cost = 80.0
+	armor_penetration = 0.9
+	shield_penetration = 1.0
+	shield_damage = 0.0
+	tracking = 0.0
+	
+	icon = "GFX_infector"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_infector" }
+	component_set = "TFW_INFECTOR"
+	projectile_gfx = "tfw_infector_large"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_anti_armor weapon_role_anti_shield weapon_role_long_range }
+
+	target_weights = {
+		npc_warship_01 = 5000
+		space_dragon_baby = 5000	
+		massive_ship_fallen_empire = 5000
+		large_ship_fallen_empire = 5000	
+		battleship = 5000
+		cruiser = 2500
+		destroyer = 1000
+		small_ship_fallen_empire = 1000	
+	}	
+}
+
+# ####################
+#  	Kamikaze Drone	 #
+# ####################
+# Medium
+weapon_component_template = {
+	key = "MEDIUM_TFW_KAMIKAZE"
+	size = medium
+	entity = "turret_missile_medium_entity"
+	damage = { min = 266.0 max = 418.0 }
+	windup = { min = 1.0 max = 5.0 }
+	total_fire_time = 150
+	range = 140.0
+	accuracy = 1.0
+	missile_speed = 2.5
+	missile_evasion = 1.5
+	missile_health = 15.0
+	missile_armor = 4.0
+	
+	type = missile
+	power = -60.0
+	cost = 60.0
+	armor_penetration = 1.0
+	shield_penetration = 1.0
+	shield_damage = 0.0
+	
+	static_rotation = no
+	tracking = 0.0
+	
+	icon = "GFX_tfw_kamikaze"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_kamikaze" }
+	component_set = "TFW_KAMIKAZE"
+	projectile_gfx = "tfw_kamikaze_medium"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_anti_armor weapon_role_anti_shield weapon_role_long_range }
+	target_weights = {
+		npc_warship_01 = 5000
+		space_dragon_baby = 5000	
+		massive_ship_fallen_empire = 5000
+		large_ship_fallen_empire = 5000	
+		battleship = 5000
+		cruiser = 2500
+		destroyer = 1000
+		small_ship_fallen_empire = 1000	
+	}
+}
+
+# Large
+weapon_component_template = {
+	key = "LARGE_TFW_KAMIKAZE"
+	size = large
+	entity = "turret_missile_large_entity"
+	damage = { min = 300.0 max = 452.0 }
+	windup = { min = 1.0 max = 5.0 }
+	total_fire_time = 150
+	range = 140.0
+	accuracy = 1.0
+	missile_speed = 2.5
+	missile_evasion = 1.5
+	missile_health = 30.0
+	missile_armor = 8.0
+	
+	type = missile
+	power = -80.0
+	cost = 80.0
+	armor_penetration = 1.0
+	shield_penetration = 1.0
+	shield_damage = 0.0
+	
+	static_rotation = no
+	tracking = 0.0
+	
+	icon = "GFX_tfw_kamikaze"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_kamikaze" }
+	component_set = "TFW_KAMIKAZE"
+	projectile_gfx = "tfw_kamikaze_large"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_anti_armor weapon_role_anti_shield weapon_role_long_range }
+	target_weights = {
+		npc_warship_01 = 5000
+		space_dragon_baby = 5000	
+		massive_ship_fallen_empire = 5000
+		large_ship_fallen_empire = 5000	
+		battleship = 5000
+		cruiser = 2500
+		destroyer = 1000
+		small_ship_fallen_empire = 1000	
+	}
+}

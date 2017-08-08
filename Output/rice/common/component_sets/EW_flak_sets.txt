@@ -1,0 +1,20 @@
+component_set = {
+	key = "FLAK_BATTERY_3"
+	
+	icon = "GFX_ship_part_flak_batteries_3"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "FLAK_BATTERY_4"
+	
+	icon = "GFX_ship_part_flak_batteries_4"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "FLAK_BATTERY_5"
+	
+	icon = "GFX_ship_part_flak_batteries_5"
+	icon_frame = 1	
+}

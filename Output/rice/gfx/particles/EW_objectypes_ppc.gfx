@@ -1,0 +1,58 @@
+objectTypes = {
+
+	pdxparticle = {
+		name = "small_ppc_idle_particle"
+		type = "ppc_idle_file"
+		
+		scale = 0.5
+	}
+	
+	pdxparticle = {
+		name = "medium_ppc_idle_particle"
+		type = "ppc_idle_file"
+		
+		scale = 1.0
+	}
+
+	pdxparticle = {
+		name = "large_ppc_idle_particle"
+		type = "ppc_idle_file"
+		
+		scale = 1.5
+	}
+	
+	pdxparticle = {
+		name = "xlarge_ppc_idle_particle"
+		type = "ppc_idle_file"
+		
+		scale = 3.0
+	}
+
+	pdxparticle = {
+		name = "small_adv_ppc_idle_particle"
+		type = "adv_ppc_idle_file"
+		
+		scale = 0.5
+	}
+	
+	pdxparticle = {
+		name = "medium_adv_ppc_idle_particle"
+		type = "adv_ppc_idle_file"
+		
+		scale = 1.0
+	}
+
+	pdxparticle = {
+		name = "large_adv_ppc_idle_particle"
+		type = "adv_ppc_idle_file"
+		
+		scale = 1.5
+	}
+	
+	pdxparticle = {
+		name = "xlarge_adv_ppc_idle_particle"
+		type = "adv_ppc_idle_file"
+		
+		scale = 3.0
+	}
+}

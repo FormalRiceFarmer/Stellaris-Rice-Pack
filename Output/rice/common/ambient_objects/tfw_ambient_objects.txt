@@ -1,0 +1,10 @@
+
+# Portal
+ambient_object = {
+	name = "tfw_portal_unbidd"
+	entity = "extra_dimensional_01_tfw_dimensional_portal_ed_entity"
+	selectable = yes
+	show_name = yes
+	tooltip = "tfw_portal_unbidd_tooltip"
+	description = "tfw_portal_unbidd_desc"
+}

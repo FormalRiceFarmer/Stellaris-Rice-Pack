@@ -1,0 +1,134 @@
+# ####################
+#  	PSI LANCE		 #
+# ####################
+# Large
+weapon_component_template = {
+	key = "TFW_PSILANCE"
+	size = extra_large
+	entity = "invisible_turret_entity"
+	damage = { min = 188.0 max = 351.0 }
+	windup = { min = 22.0 max = 35.0 }
+	total_fire_time = 60
+	range = 120.0
+	accuracy = 0.95
+	type = instant
+	power = -120.0
+	cost = 120.0
+	armor_penetration = 0.6
+	shield_damage = 1.0
+
+	firing_arc = 25.0
+	min_range = 10.0
+	static_rotation = yes
+	use_ship_kill_target = no
+	
+	icon = "GFX_psilance"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_psilance" }
+	component_set = "TFW_PSILANCE"
+	projectile_gfx = "tfw_psilance_large"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor weapon_role_anti_shield weapon_role_long_range }
+
+	target_weights = {
+		npc_warship_01 = 5000
+		space_dragon_baby = 5000	
+		massive_ship_fallen_empire = 5000
+		large_ship_fallen_empire = 5000	
+		battleship = 5000
+		cruiser = 2500
+		destroyer = 1000
+		small_ship_fallen_empire = 1000	
+	}
+}
+
+# ####################
+#  	GRAVI LANCE		 #
+# ####################
+# Large
+weapon_component_template = {
+	key = "TFW_GRAVILANCE"
+	size = extra_large
+	entity = "invisible_turret_entity"
+	damage = { min = 192.0 max = 358.0 }
+	windup = { min = 22.0 max = 35.0 }
+	total_fire_time = 60
+	range = 120.0
+	accuracy = 0.93
+	type = instant
+	power = -130.0
+	cost = 130.0
+	armor_penetration = 0.90
+	shield_damage = 0.67
+
+	firing_arc = 25.0
+	min_range = 10.0
+	static_rotation = yes
+	use_ship_kill_target = no
+	
+	icon = "GFX_gravilance"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_gravilance" }
+	component_set = "TFW_GRAVILANCE"
+	projectile_gfx = "tfw_gravilance_large"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor weapon_role_long_range }
+	
+	target_weights = {
+		npc_warship_01 = 5000
+		space_dragon_baby = 5000	
+		massive_ship_fallen_empire = 5000
+		large_ship_fallen_empire = 5000	
+		battleship = 5000
+		cruiser = 2500
+		destroyer = 1000
+		small_ship_fallen_empire = 1000	
+	}
+}
+
+# ####################
+#  	KINETIC HAMMER	 #
+# ####################
+# Large
+weapon_component_template = {
+	key = "TFW_KINETIC_HAMMER"
+	size = extra_large
+	entity = "invisible_turret_entity"
+	damage = { min = 146.0 max = 420.0 }
+	windup = { min = 2.0 max = 25.0 }
+	total_fire_time = 65
+	range = 120.0
+	accuracy = 0.90
+	type = instant
+	power = -140.0
+	cost = 140.0
+	armor_penetration = 0.50
+	shield_damage = 1.33
+
+	firing_arc = 25.0
+	min_range = 10.0
+	static_rotation = yes
+	use_ship_kill_target = no
+	
+	icon = "GFX_tfw_kinetic_hammer"
+	icon_frame = 1
+	
+	prerequisites = { "tech_tfw_kinetic_hammer" }
+	component_set = "TFW_KINETIC_HAMMER"
+	projectile_gfx = "tfw_kinetic_hammer"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_armor weapon_role_anti_shield weapon_role_long_range }
+	
+	target_weights = {
+		npc_warship_01 = 5000
+		space_dragon_baby = 5000	
+		massive_ship_fallen_empire = 5000
+		large_ship_fallen_empire = 5000	
+		battleship = 5000
+		cruiser = 2500
+		destroyer = 1000
+		small_ship_fallen_empire = 1000	
+	}
+}

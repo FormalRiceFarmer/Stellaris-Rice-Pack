@@ -1,0 +1,76 @@
+component_set = {
+	key = "AMOEBA_SHARK_STRIKE_CRAFT_1"
+	
+	icon = "GFX_EW_ship_part_amoeba_shark_1"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "AMOEBA_SHARK_STRIKE_CRAFT_2"
+	
+	icon = "GFX_EW_ship_part_amoeba_shark_2"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "AMOEBA_SHARK_STRIKE_CRAFT_3"
+	
+	icon = "GFX_EW_ship_part_amoeba_shark_3"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "AMOEBA_SHARK_STRIKE_CRAFT_4"
+	
+	icon = "GFX_EW_ship_part_amoeba_shark_4"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "AMOEBA_SHARK_STRIKE_CRAFT_5"
+	
+	icon = "GFX_EW_ship_part_amoeba_shark_5"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "AMOEBA_SHARK_STRIKE_CRAFT_6"
+	
+	icon = "GFX_EW_ship_part_amoeba_shark_6"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "AMOEBA_EGG_STRIKE_CRAFT_2"
+	
+	icon = "GFX_EW_ship_part_amoeba_egg_2"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "AMOEBA_EGG_STRIKE_CRAFT_3"
+	
+	icon = "GFX_EW_ship_part_amoeba_egg_3"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "AMOEBA_EGG_STRIKE_CRAFT_4"
+	
+	icon = "GFX_EW_ship_part_amoeba_egg_4"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "AMOEBA_EGG_STRIKE_CRAFT_5"
+	
+	icon = "GFX_EW_ship_part_amoeba_egg_5"
+	icon_frame = 1	
+}
+
+component_set = {
+	key = "AMOEBA_EGG_STRIKE_CRAFT_6"
+	
+	icon = "GFX_EW_ship_part_amoeba_egg_6"
+	icon_frame = 1	
+}

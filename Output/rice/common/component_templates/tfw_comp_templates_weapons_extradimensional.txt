@@ -1,0 +1,88 @@
+# ####################
+#  New Extradimensional Weapons
+# ####################
+
+########3#########
+weapon_component_template = {
+	key = "SMALL_ED_WEAPON_TFW_3"
+
+	size = small
+	entity = "small_kinetic_gun_entity"
+	damage = { min = 20.0 max = 42.0 }
+	windup = { min = 2.0 max = 25.0 }
+	total_fire_time = 40
+	range = 40.0
+	accuracy = 0.78
+	power = -20
+	cost = 20
+	shield_damage = 1.0
+	shield_penetration = 0.5
+	armor_penetration = 0.5
+	tracking = 0.6
+	
+	type = instant
+	icon = "GFX_tfw_ed_weapon_3"
+	icon_frame = 1
+	projectile_gfx = "tfw_ed_3_small"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_shield }
+	
+	component_set = "TFW_EXTRADIMENSIONAL_3"
+	prerequisites = { "tech_tfw_extradimensional_weapon_3" }
+}
+
+weapon_component_template = {
+	key = "MEDIUM_ED_WEAPON_TFW_3"
+
+	size = medium
+	entity = "medium_kinetic_gun_entity"
+	damage = { min = 45.0 max = 88.0 }
+	windup = { min = 2.0 max = 25.0 }
+	total_fire_time = 40
+	range = 60.0
+	accuracy = 0.75
+	power = -40
+	cost = 40
+	shield_damage = 1.0
+	shield_penetration = 0.5
+	armor_penetration = 0.5
+	tracking = 0.3
+	
+	type = instant
+	icon = "GFX_tfw_ed_weapon_3"
+	icon_frame = 1
+	projectile_gfx = "tfw_ed_3_medium"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_shield }
+	
+	component_set = "TFW_EXTRADIMENSIONAL_3"
+	prerequisites = { "tech_tfw_extradimensional_weapon_3" }
+}
+
+weapon_component_template = {
+	key = "LARGE_ED_WEAPON_TFW_3"
+
+	size = large
+	entity = "large_kinetic_gun_entity"
+	damage = { min = 92.0 max = 196.0 }
+	windup = { min = 2.0 max = 25.0 }
+	total_fire_time = 40
+	range = 80.0
+	accuracy = 0.74
+	power = -80
+	cost = 80
+	shield_damage = 1.0
+	shield_penetration = 0.5
+	armor_penetration = 0.5
+	tracking = 0.05
+	
+	type = instant
+	icon = "GFX_tfw_ed_weapon_3"
+	icon_frame = 1
+	projectile_gfx = "tfw_ed_3_large"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_shield }
+	
+	component_set = "TFW_EXTRADIMENSIONAL_3"
+	prerequisites = { "tech_tfw_extradimensional_weapon_3" }
+}
