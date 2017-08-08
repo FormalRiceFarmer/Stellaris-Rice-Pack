@@ -1,0 +1,187 @@
+#########################################################################
+# SNOWYAMUR OPINION MODIFIERS
+##########################################################################
+
+##########################################################################
+# HARD FIXED STATE - DO NOT REMOVE OR RENAME ANY OF THESE
+##########################################################################
+
+opinion_cheat = {
+	opinion = {
+		base = 1
+	}
+}
+
+##########################################################################
+# HARD TIMED - DO NOT REMOVE OR RENAME ANY OF THESE
+##########################################################################
+
+#Benign
+opinion_benign_species = {
+	opinion = {
+		base = 0
+		modifier = {
+			add = 10
+			FROM = {
+				exists = ruler
+				ruler = {
+					species = {
+						has_trait = "trait_snowyamur_benign"
+					}
+				}
+			}
+		}
+	}
+}
+
+#Malevolent
+opinion_malevolent_species = {
+	opinion = {
+		base = 0
+		modifier = {
+			add = -20
+			FROM = {
+				exists = ruler
+				ruler = {
+					species = {
+						has_trait = "trait_snowyamur_malevolent"
+					}
+				}
+			}
+		}
+	}
+}
+
+#Natural Speaker
+opinion_natural_speaker_species = {
+	opinion = {
+		base = 0
+		modifer = {
+			add = 15
+			FROM = {
+				exists = ruler
+				ruler = {
+					species = {
+						has_trait = "trait_snowyamur_natural_speaker"
+					}
+				}
+			}
+		}
+	}
+}
+
+#Profound Linguist
+opinion_profound_linguist_species = {
+	opinion = {
+		base = 0
+		modifier = {
+			add = 30
+			FROM = {
+				exists = ruler
+				ruler = {
+					species = {
+						has_trait = "trait_snowyamur_profound_linguist"
+					}
+				}
+			}
+		}
+	}
+}
+
+#Tongue of the T'vai
+opinion_tongue_of_the_tvai_species = {
+	opinion = {
+		base =0
+		modifier = {
+			add = 45
+			FROM = {
+				exists = ruler
+				ruler = {
+					species = {
+						has_trait = "trait_snowyamur_tongue_of_the_tvai"
+					}
+				}
+			}
+		}
+	}
+}
+
+#Congenial
+opinion_congenial_species = {
+	base = 0
+	modifier = {
+		add = 15
+		FROM = {
+			exists = ruler
+			ruler = {
+				species = {
+					has_trait = "trait_snowyamur_congenial"
+				}
+			}
+		}
+	}
+}
+
+#Vile
+opinion_vile_species = {
+	base = 0
+	modifier = {
+		add = -30
+		FROM = {
+			exists = ruler
+			ruler = {
+				species = {
+					has_trait = "trait_snowyamur_vile"
+				}
+			}
+		}
+	}
+}
+
+#Cold-Hearted
+opinion_cold_hearted_species = {
+	base = 0
+	modifier = {
+		add = -25
+		FROM = {
+			exists = ruler
+			ruler = {
+				species = {
+					has_trait = "trait_snowyamur_cold_hearted"
+				}
+			}
+		}
+	}
+}
+
+#Arrogant
+opinion_arrogant_species = {
+	base = 0
+	modifier = {
+		add = -15
+		FROM = {
+			exists = ruler
+			ruler = {
+				spcies = {
+					has_trait = "trait_snowyamur_arrogant"
+				}
+			}
+		}
+	}
+}
+
+#Tranquil
+opinion_tranquil_species = {
+	base = 0
+	modifier = {
+		add = 15
+		FROM = {
+			exists = ruler
+			ruler = {
+				spcies = {
+					has_trait = "trait_snowyamur_tranquil"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,188 @@
+# Icons set here are the ones show in the actual slot. The reason is so that we can support different icons for different sizes. 
+
+#Updated Range on these
+
+# DEFAULT VALUES:
+# is_missile = no
+# is_beam = no
+# is_point_defence = no
+
+# ####################
+#  Mass Driver
+# ####################
+
+# ## Mass Driver 6
+weapon_component_template = {
+	type = instant
+	
+	key = "C_SMALL_MASS_DRIVER_6"
+	size = small
+	entity = "small_kinetic_gun_entity"
+	
+	damage = { min = 19.2 max = 60 }
+	windup = { min = 2 max = 18 }
+	total_fire_time = 60  # was 25
+	range = 45.0
+	accuracy = 0.76
+	tracking = 0.60
+	#armor_penetration = 0.00
+	shield_damage = 1.33
+	power = -15
+	cost = 15
+	
+	icon = "GFX_C_ship_part_mass_driver_6"
+	icon_frame = 1
+	
+	prerequisites = { "tech_c_mass_drivers_6" }
+	component_set = "C_MASS_DRIVER_6"
+	projectile_gfx = "gauss_cannon_s"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield }
+	
+	upgrades_to = "C_SMALL_MASS_DRIVER_7"
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "C_MEDIUM_MASS_DRIVER_6"
+	size = medium
+	entity = "medium_kinetic_gun_entity"
+	
+	damage = { min = 40.8 max = 127.2 }
+	windup = { min = 2 max = 18 }
+	total_fire_time = 60  # was 25
+	range = 65.0
+	accuracy = 0.72
+	tracking = 0.30
+	armor_penetration = 0.15
+	shield_damage = 1.33
+	power = -30
+	cost = 30
+	
+	icon = "GFX_C_ship_part_mass_driver_6"
+	icon_frame = 1
+	
+	prerequisites = { "tech_c_mass_drivers_6" }
+	component_set = "C_MASS_DRIVER_6"
+	projectile_gfx = "gauss_cannon_m"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield }
+	
+	upgrades_to = "C_MEDIUM_MASS_DRIVER_7"
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "C_LARGE_MASS_DRIVER_6"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	
+	damage = { min = 98.4 max = 261.6 }
+	windup = { min = 2 max = 18 }
+	total_fire_time = 60  # was 25
+	range = 85.0
+	accuracy = 0.67
+	tracking = 0.05
+	armor_penetration = 0.30
+	shield_damage = 1.33
+	power = -60
+	cost = 60
+	
+	icon = "GFX_C_ship_part_mass_driver_6"
+	icon_frame = 1
+	
+	prerequisites = { "tech_c_mass_drivers_6" }
+	component_set = "C_MASS_DRIVER_6"
+	projectile_gfx = "gauss_cannon_l"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield }
+	
+	upgrades_to = "C_LARGE_MASS_DRIVER_7"
+}
+
+# ## Mass Driver 7
+weapon_component_template = {
+	type = instant
+	
+	key = "C_SMALL_MASS_DRIVER_7"
+	size = small
+	entity = "small_kinetic_gun_entity"
+	
+	damage = { min = 23 max = 72 }
+	windup = { min = 2 max = 18 }
+	total_fire_time = 60  # was 25
+	range = 45.0
+	accuracy = 0.76
+	tracking = 0.60
+	#armor_penetration = 0.00
+	shield_damage = 1.33
+	power = -17.5
+	cost = 17.5
+	
+	icon = "GFX_C_ship_part_mass_driver_7"
+	icon_frame = 1
+	
+	prerequisites = { "tech_c_mass_drivers_7" }
+	component_set = "C_MASS_DRIVER_7"
+	projectile_gfx = "gauss_cannon_s"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield }
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "C_MEDIUM_MASS_DRIVER_7"
+	size = medium
+	entity = "medium_kinetic_gun_entity"
+	
+	damage = { min = 49 max = 152.6 }
+	windup = { min = 2 max = 18 }
+	total_fire_time = 60  # was 25
+	range = 65.0
+	accuracy = 0.72
+	tracking = 0.30
+	armor_penetration = 0.15
+	shield_damage = 1.33
+	power = -35
+	cost = 35
+	
+	icon = "GFX_C_ship_part_mass_driver_7"
+	icon_frame = 1
+	
+	prerequisites = { "tech_c_mass_drivers_7" }
+	component_set = "C_MASS_DRIVER_7"
+	projectile_gfx = "gauss_cannon_m"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield }
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "C_LARGE_MASS_DRIVER_7"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	
+	damage = { min = 118 max = 314 }
+	windup = { min = 2 max = 18 }
+	total_fire_time = 60  # was 25
+	range = 85.0
+	accuracy = 0.67
+	tracking = 0.05
+	armor_penetration = 0.30
+	shield_damage = 1.33
+	power = -75
+	cost = 75
+	
+	icon = "GFX_C_ship_part_mass_driver_7"
+	icon_frame = 1
+	
+	prerequisites = { "tech_c_mass_drivers_7" }
+	component_set = "C_MASS_DRIVER_7"
+	projectile_gfx = "gauss_cannon_l"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_anti_shield }
+}

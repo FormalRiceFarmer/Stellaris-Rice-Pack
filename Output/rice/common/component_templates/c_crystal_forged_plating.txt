@@ -1,0 +1,120 @@
+#############
+#	COST	#
+#############
+
+@cost_6S = 10
+@cost_6M = 20
+@cost_6L = 40
+
+@cost_7S = 20
+@cost_7M = 40
+@cost_7L = 80
+
+@cost_8S = 30
+@cost_8M = 60
+@cost_8L = 120
+
+@cost_9S = 40
+@cost_9M = 80
+@cost_9L = 160
+
+#############
+#	HEALTH	#
+#############
+
+@hp_1 = 0.10
+@hp_2 = 0.20
+@hp_3 = 0.30
+@hp_4 = 0.40
+@hp_5 = 0.50
+
+# ####################
+#  plating mods
+# ####################
+
+# Crystal-Forged Plating II
+utility_component_template = {
+	key = "C_SMALL_CRYSTAL_ARMOR_3"
+	size = aux
+	icon = "GFX_C_ship_part_crystal_armor_3"
+	icon_frame = 1
+	power = 0
+	cost = @cost_6S
+	
+	modifier = {
+		ship_hitpoints_mult = @hp_2
+	}
+	
+	ai_weight = {
+		weight = 30
+	}
+	
+	prerequisites = { "tech_c_crystal_armor_3" }
+	component_set = "C_CRYSTAL_ARMOR_3"
+	upgrades_to = "C_SMALL_CRYSTAL_ARMOR_4"
+}
+
+# Crystal-Forged Plating III
+utility_component_template = {
+	key = "C_SMALL_CRYSTAL_ARMOR_4"
+	size = aux
+	icon = "GFX_C_ship_part_crystal_armor_4"
+	icon_frame = 1
+	power = 0
+	cost = @cost_7S
+	
+	modifier = {
+		ship_hitpoints_mult = @hp_3
+	}
+	
+	ai_weight = {
+		weight = 35
+	}
+	
+	prerequisites = { "tech_c_crystal_armor_4" }
+	component_set = "C_CRYSTAL_ARMOR_4"
+	upgrades_to = "C_SMALL_CRYSTAL_ARMOR_5"
+}
+
+# Crystal-Forged Plating IV
+utility_component_template = {
+	key = "C_SMALL_CRYSTAL_ARMOR_5"
+	size = aux
+	icon = "GFX_C_ship_part_crystal_armor_5"
+	icon_frame = 1
+	power = 0
+	cost = @cost_8S
+	
+	modifier = {
+		ship_hitpoints_mult = @hp_4
+	}
+	
+	ai_weight = {
+		weight = 40
+	}
+	
+	prerequisites = { "tech_c_crystal_armor_5" }
+	component_set = "C_CRYSTAL_ARMOR_5"
+	upgrades_to = "C_SMALL_CRYSTAL_ARMOR_6"
+}
+
+# Crystal-Forged Plating V
+utility_component_template = {
+	key = "C_SMALL_CRYSTAL_ARMOR_6"
+	size = aux
+	icon = "GFX_C_ship_part_crystal_armor_6"
+	icon_frame = 1
+	power = 0
+	cost = @cost_9S
+	
+	modifier = {
+		ship_hitpoints_mult = @hp_5
+	}
+	
+	ai_weight = {
+		weight = 45
+	}
+	
+	prerequisites = { "tech_c_crystal_armor_6" }
+	component_set = "C_CRYSTAL_ARMOR_6"
+}

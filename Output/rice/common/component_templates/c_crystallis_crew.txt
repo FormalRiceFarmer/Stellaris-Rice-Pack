@@ -1,0 +1,704 @@
+#############
+#	COST	#
+#############
+@cost_L1 = 20
+@cost_L2 = 35
+@cost_L3 = 50
+@cost_L4 = 65
+@cost_L5 = 80
+
+@cost_L1_CHEAP = 10
+@cost_L2_CHEAP = 25
+@cost_L3_CHEAP = 40
+@cost_L4_CHEAP = 55
+@cost_L5_CHEAP = 70
+
+#############
+#	SPEED	#
+#############
+@speed_1 = 0.04
+@speed_2 = 0.08
+@speed_3 = 0.12
+
+
+#####################
+#	COMBAT_SPEED	#
+#####################
+@c_speed_1 = 0.04
+@c_speed_2 = 0.08
+@c_speed_3 = 0.12
+
+
+#################
+#	ARMOR_MULTI	#
+#################
+@armor_1 = 0.04
+@armor_2 = 0.08
+@armor_3 = 0.12
+
+
+#################
+#	HP_MULTI	#
+#################
+@hp_1 = 0.04
+@hp_2 = 0.08
+@hp_3 = 0.12
+
+
+#####################
+#	SHIELD_MULTI	#
+#####################
+@shield_1 = 0.04
+@shield_2 = 0.08
+@shield_3 = 0.12
+
+###############
+#	EVASION	  #
+###############
+@evasion_1 = 0.04
+@evasion_2 = 0.08
+@evasion_3 = 0.12
+
+
+#################
+#	FIRERATE	#
+#################
+@firerate_1 = 0.04
+@firerate_2 = 0.08
+@firerate_3 = 0.12
+
+#############
+# DAMAGA	#
+#############
+@damage_1 = 0.05
+@damage_2 = 0.075
+@damage_3 = 0.1
+
+
+
+# # Robotic crew
+# utility_component_template = {
+	# key = "C_LARGE_CREW_1"
+	# size = aux
+	# icon = "GFX_C_ship_part_crew_1"
+	# icon_frame = 1
+	# power = 0
+	# cost = @cost_L1
+	# modifier = {
+		# ship_speed_mult = @speed_1
+		# ship_combat_speed_mult = @c_speed_1
+		# ship_hitpoints_mult = @hp_1
+		# ship_shield_hp_mult = @shield_1
+		# ship_armor_mult = @armor_1
+		# ship_evasion_mult = @evasion_1
+	# }
+	
+	# prerequisites = { "tech_c_robot_crew" }
+	# component_set = "C_CREW_1"
+	
+	# ai_weight = {
+		# weight = 35
+	# }
+	# upgrades_to = "C_LARGE_CREW_2"
+# }
+
+# # Droid crew
+# utility_component_template = {
+	# key = "C_LARGE_CREW_2"
+	# size = aux
+	# icon = "GFX_C_ship_part_crew_2"
+	# icon_frame = 1
+	# power = 0
+	# cost = @cost_L2
+	# modifier = {
+		# ship_speed_mult = @speed_2
+		# ship_combat_speed_mult = @c_speed_2
+		# ship_hitpoints_mult = @hp_2
+		# ship_shield_hp_mult = @shield_2
+		# ship_armor_mult = @armor_2
+		# ship_evasion_mult = @evasion_2
+	# }
+	
+	# prerequisites = { "tech_c_droid_crew" }
+	# component_set = "C_CREW_2"
+	
+	# ai_weight = {
+		# weight = 40
+	# }
+	# upgrades_to = "C_LARGE_CREW_3"
+# }
+
+# Synth crew
+utility_component_template = {
+	key = "C_LARGE_CREW_3"
+	size = aux
+	icon = "GFX_C_ship_part_crew_3"
+	icon_frame = 1
+	power = 0
+	cost = @cost_L1
+	modifier = {
+		ship_speed_mult = @speed_1
+		ship_combat_speed_mult = @c_speed_1
+		ship_hitpoints_mult = @hp_1
+		ship_shield_hp_mult = @shield_1
+		ship_armor_mult = @armor_1
+		ship_evasion_mult = @evasion_1
+	}
+	
+	prerequisites = { "tech_c_synth_crew" }
+	component_set = "C_CREW_3"
+	
+	ai_weight = {
+		weight = 35
+	}
+}
+
+# PSI crew
+# PSI 1
+utility_component_template = {
+	key = "C_LARGE_CREW_4"
+	size = aux
+	icon = "GFX_C_ship_part_crew_4"
+	icon_frame = 1
+	power = 0
+	cost = @cost_L1
+	modifier = {
+		ship_speed_mult = @speed_1
+		ship_combat_speed_mult = @c_speed_1
+		ship_hitpoints_mult = @hp_1
+		ship_shield_hp_mult = @shield_1
+		ship_armor_mult = @armor_1
+	}
+	ship_modifier = {
+		ship_sensor_range_mult = 0.15
+	}
+	
+	prerequisites = { "tech_c_psionic_crew_1" }
+	component_set = "C_CREW_4"
+	
+	ai_weight = {
+		weight = 35
+	}
+	upgrades_to = "C_LARGE_CREW_5"
+}
+# # PSI 2
+# utility_component_template = {
+	# key = "C_LARGE_CREW_5"
+	# size = aux
+	# icon = "GFX_C_ship_part_crew_5"
+	# icon_frame = 1
+	# power = 0
+	# cost = @cost_L2
+	# modifier = {
+		# ship_speed_mult = @speed_2
+		# ship_combat_speed_mult = @c_speed_2
+		# ship_hitpoints_mult = @hp_2
+		# ship_shield_hp_mult = @shield_2
+		# ship_armor_mult = @armor_2
+	# }
+	# ship_modifier = {
+		# ship_sensor_range_mult = 0.20
+	# }
+	
+	# prerequisites = { "tech_c_psionic_crew_2" }
+	# component_set = "C_CREW_5"
+	
+	# ai_weight = {
+		# weight = 40
+	# }
+	# upgrades_to = "C_LARGE_CREW_6"
+# }
+# # PSI 3
+# utility_component_template = {
+	# key = "C_LARGE_CREW_6"
+	# size = aux
+	# icon = "GFX_C_ship_part_crew_6"
+	# icon_frame = 1
+	# power = 0
+	# cost = @cost_L3
+	# modifier = {
+		# ship_speed_mult = @speed_3
+		# ship_combat_speed_mult = @c_speed_3
+		# ship_hitpoints_mult = @hp_3
+		# ship_shield_hp_mult = @shield_3
+		# ship_armor_mult = @armor_3
+	# }
+	# ship_modifier = {
+		# ship_sensor_range_mult = 0.25
+	# }
+	
+	# prerequisites = { "tech_c_psionic_crew_3" }
+	# component_set = "C_CREW_6"
+	
+	# ai_weight = {
+		# weight = 45
+	# }
+# }
+
+# Clone crew
+# Clone 1
+utility_component_template = {
+	key = "C_LARGE_CREW_7"
+	size = aux
+	icon = "GFX_C_ship_part_crew_7"
+	icon_frame = 1
+	power = 0
+	cost = @cost_L1_CHEAP
+	modifier = {
+		ship_upkeep_mult = -0.03
+		ship_speed_mult = @speed_1
+		ship_combat_speed_mult = @c_speed_1
+		ship_hitpoints_mult = @hp_1
+		ship_shield_hp_mult = @shield_1
+		ship_armor_mult = @armor_1
+	}
+	
+	prerequisites = { "tech_c_clone_crew_1" }
+	component_set = "C_CREW_7"
+	
+	ai_weight = {
+		weight = 35
+	}
+	upgrades_to = "C_LARGE_CREW_8"
+}
+# # Clone 2
+# utility_component_template = {
+	# key = "C_LARGE_CREW_8"
+	# size = aux
+	# icon = "GFX_C_ship_part_crew_8"
+	# icon_frame = 1
+	# power = 0
+	# cost = @cost_L2_CHEAP
+	# modifier = {
+		# ship_upkeep_mult = -0.06
+		# ship_speed_mult = @speed_2
+		# ship_combat_speed_mult = @c_speed_2
+		# ship_hitpoints_mult = @hp_2
+		# ship_shield_hp_mult = @shield_2
+		# ship_armor_mult = @armor_2
+	# }
+	
+	# prerequisites = { "tech_c_clone_crew_2" }
+	# component_set = "C_CREW_8"
+	
+	# ai_weight = {
+		# weight = 45
+	# }
+	# upgrades_to = "C_LARGE_CREW_9"
+# }
+# # Clone 3
+# utility_component_template = {
+	# key = "C_LARGE_CREW_9"
+	# size = aux
+	# icon = "GFX_C_ship_part_crew_9"
+	# icon_frame = 1
+	# power = 0
+	# cost = @cost_L3_CHEAP
+	# modifier = {
+		# ship_upkeep_mult = -0.09
+		# ship_speed_mult = @speed_3
+		# ship_combat_speed_mult = @c_speed_3
+		# ship_hitpoints_mult = @hp_3
+		# ship_shield_hp_mult = @shield_3
+		# ship_armor_mult = @armor_3
+	# }
+	
+	# prerequisites = { "tech_c_clone_crew_3" }
+	# component_set = "C_CREW_9"
+	
+	# ai_weight = {
+		# weight = 50
+	# }
+# }
+
+# Purifier crew
+# Purifier 1
+utility_component_template = {
+	key = "C_LARGE_CREW_10"
+	size = aux
+	icon = "GFX_C_ship_part_crew_10"
+	icon_frame = 1
+	power = 0
+	cost = @cost_L1
+	modifier = {
+		ship_speed_mult = @speed_1
+		ship_combat_speed_mult = @c_speed_1
+		ship_hitpoints_mult = @hp_1
+		ship_shield_hp_mult = @shield_1
+		ship_armor_mult = @armor_1
+		ship_weapon_damage = @damage_1
+	}
+	
+	prerequisites = { "tech_c_purifier_crew_1" }
+	component_set = "C_CREW_10"
+	
+	ai_weight = {
+		weight = 35
+	}
+	upgrades_to = "C_LARGE_CREW_11"
+}
+# # Purifier 2
+# utility_component_template = {
+	# key = "C_LARGE_CREW_11"
+	# size = aux
+	# icon = "GFX_C_ship_part_crew_11"
+	# icon_frame = 1
+	# power = 0
+	# cost = @cost_L2
+	# modifier = {
+		# ship_speed_mult = @speed_2
+		# ship_combat_speed_mult = @c_speed_2
+		# ship_hitpoints_mult = @hp_2
+		# ship_shield_hp_mult = @shield_2
+		# ship_armor_mult = @armor_2
+		# ship_weapon_damage = @damage_2
+	# }
+	
+	# prerequisites = { "tech_c_purifier_crew_2" }
+	# component_set = "C_CREW_11"
+	
+	# ai_weight = {
+		# weight = 40
+	# }
+	# upgrades_to = "C_LARGE_CREW_12"
+# }
+# # Purifier 3
+# utility_component_template = {
+	# key = "C_LARGE_CREW_12"
+	# size = aux
+	# icon = "GFX_C_ship_part_crew_12"
+	# icon_frame = 1
+	# power = 0
+	# cost = @cost_L3
+	# modifier = {
+		# ship_speed_mult = @speed_3
+		# ship_combat_speed_mult = @c_speed_3
+		# ship_hitpoints_mult = @hp_3
+		# ship_shield_hp_mult = @shield_3
+		# ship_armor_mult = @armor_3
+		# ship_weapon_damage = @damage_3
+	# }
+	
+	# prerequisites = { "tech_c_purifier_crew_3" }
+	# component_set = "C_CREW_12"
+	
+	# ai_weight = {
+		# weight = 45
+	# }
+# }
+
+# Alien crew
+# Alien 1
+utility_component_template = {
+	key = "C_LARGE_CREW_13"
+	size = aux
+	icon = "GFX_C_ship_part_crew_13"
+	icon_frame = 1
+	power = 0
+	cost = @cost_L1
+	modifier = {
+		ship_winddown_mult = -0.25
+		ship_speed_mult = @speed_1
+		ship_combat_speed_mult = @c_speed_1
+		ship_hitpoints_mult = @hp_1
+		ship_shield_hp_mult = @shield_1
+		ship_armor_mult = @armor_1
+	}
+	
+	prerequisites = { "tech_c_alien_crew_1" }
+	component_set = "C_CREW_13"
+	
+	ai_weight = {
+		weight = 35
+	}
+	upgrades_to = "C_LARGE_CREW_14"
+}
+# # Alien 2
+# utility_component_template = {
+	# key = "C_LARGE_CREW_14"
+	# size = aux
+	# icon = "GFX_C_ship_part_crew_14"
+	# icon_frame = 1
+	# power = 0
+	# cost = @cost_L2
+	# modifier = {
+		# ship_winddown_mult = -0.5
+		# ship_speed_mult = @speed_2
+		# ship_combat_speed_mult = @c_speed_2
+		# ship_hitpoints_mult = @hp_2
+		# ship_shield_hp_mult = @shield_2
+		# ship_armor_mult = @armor_2
+	# }
+	
+	# prerequisites = { "tech_c_alien_crew_2" }
+	# component_set = "C_CREW_14"
+	
+	# ai_weight = {
+		# weight = 40
+	# }
+	# upgrades_to = "C_LARGE_CREW_15"
+# }
+# # Alien 3
+# utility_component_template = {
+	# key = "C_LARGE_CREW_15"
+	# size = aux
+	# icon = "GFX_C_ship_part_crew_15"
+	# icon_frame = 1
+	# power = 0
+	# cost = @cost_L3
+	# modifier = {
+		# ship_winddown_mult = -0.75
+		# ship_speed_mult = @speed_3
+		# ship_combat_speed_mult = @c_speed_3
+		# ship_hitpoints_mult = @hp_3
+		# ship_shield_hp_mult = @shield_3
+		# ship_armor_mult = @armor_3
+	# }
+	
+	# prerequisites = { "tech_c_alien_crew_3" }
+	# component_set = "C_CREW_15"
+	
+	# ai_weight = {
+		# weight = 45
+	# }
+# }
+
+# Civilian crew
+# Civilian 1
+utility_component_template = {
+	key = "C_LARGE_CREW_16"
+	size = aux
+	icon = "GFX_C_ship_part_crew_16"
+	icon_frame = 1
+	power = 0
+	cost = 100
+	modifier = {
+		ship_reparation_speed_mult = 0.25
+		ship_speed_mult = @speed_1
+		ship_combat_speed_mult = @c_speed_1
+		ship_hitpoints_mult = @hp_1
+		ship_shield_hp_mult = @shield_1
+		ship_armor_mult = @armor_1
+	}
+	
+	prerequisites = { "tech_c_civilian_crew_1" }
+	component_set = "C_CREW_16"
+	
+	ai_weight = {
+		weight = 35
+	}
+	upgrades_to = "C_LARGE_CREW_17"
+}
+# # Civilian 2
+# utility_component_template = {
+	# key = "C_LARGE_CREW_17"
+	# size = aux
+	# icon = "GFX_C_ship_part_crew_17"
+	# icon_frame = 1
+	# power = 0
+	# cost = 200
+	# modifier = {
+		# ship_reparation_speed_mult = 0.5
+		# ship_speed_mult = @speed_2
+		# ship_combat_speed_mult = @c_speed_2
+		# ship_hitpoints_mult = @hp_2
+		# ship_shield_hp_mult = @shield_2
+		# ship_armor_mult = @armor_2
+	# }
+	
+	# prerequisites = { "tech_c_civilian_crew_2" }
+	# component_set = "C_CREW_17"
+	
+	# ai_weight = {
+		# weight = 40
+	# }
+	# upgrades_to = "C_LARGE_CREW_18"
+# }
+# # Civilian 3
+# utility_component_template = {
+	# key = "C_LARGE_CREW_18"
+	# size = aux
+	# icon = "GFX_C_ship_part_crew_18"
+	# icon_frame = 1
+	# power = 0
+	# cost = 300
+	# modifier = {
+		# ship_reparation_speed_mult = 3
+		# ship_speed_mult = @speed_3
+		# ship_combat_speed_mult = @c_speed_3
+		# ship_hitpoints_mult = @hp_3
+		# ship_shield_hp_mult = @shield_3
+		# ship_armor_mult = @armor_3
+	# }
+	
+	# prerequisites = { "tech_c_civilian_crew_3" }
+	# component_set = "C_CREW_18"
+	
+	# ai_weight = {
+		# weight = 45
+	# }
+# }
+
+# # Volunteer crew
+# # Volunteer 1
+# utility_component_template = {
+	# key = "C_LARGE_CREW_19"
+	# size = aux
+	# icon = "GFX_C_ship_part_crew_19"
+	# icon_frame = 1
+	# power = 0
+	# cost = 0
+	# modifier = {
+		# ship_speed_mult = @speed_1
+		# ship_combat_speed_mult = @c_speed_1
+		# ship_hitpoints_mult = @hp_1
+		# ship_shield_hp_mult = @shield_1
+		# ship_armor_mult = @armor_1
+	# }
+	# ship_modifier = {
+		# ship_ftl_wormhole_range_mult = 0.15
+		# ship_ftl_jumpdrive_range_mult = 0.15
+		# ship_ftl_warp_range_mult = 0.15
+	# }
+	
+	# prerequisites = { "tech_c_volunteer_crew_1" }
+	# component_set = "C_CREW_19"
+	
+	# ai_weight = {
+		# weight = 35
+	# }
+	# upgrades_to = "C_LARGE_CREW_20"
+# }
+# # Volunteer 2
+# utility_component_template = {
+	# key = "C_LARGE_CREW_20"
+	# size = aux
+	# icon = "GFX_C_ship_part_crew_20"
+	# icon_frame = 1
+	# power = 0
+	# cost = 0
+	# modifier = {
+		# ship_speed_mult = @speed_2
+		# ship_combat_speed_mult = @c_speed_2
+		# ship_hitpoints_mult = @hp_2
+		# ship_shield_hp_mult = @shield_2
+		# ship_armor_mult = @armor_2
+	# }
+	# ship_modifier = {
+		# ship_ftl_wormhole_range_mult = 0.25
+		# ship_ftl_jumpdrive_range_mult = 0.25
+		# ship_ftl_warp_range_mult = 0.25
+	# }
+	
+	# prerequisites = { "tech_c_volunteer_crew_2" }
+	# component_set = "C_CREW_20"
+	
+	# ai_weight = {
+		# weight = 40
+	# }
+	# upgrades_to = "C_LARGE_CREW_21"
+# }
+# # Volunteer 3
+# utility_component_template = {
+	# key = "C_LARGE_CREW_21"
+	# size = aux
+	# icon = "GFX_C_ship_part_crew_21"
+	# icon_frame = 1
+	# power = 0
+	# cost = 0
+	# modifier = {
+		# ship_speed_mult = @speed_3
+		# ship_combat_speed_mult = @c_speed_3
+		# ship_hitpoints_mult = @hp_3
+		# ship_shield_hp_mult = @shield_3
+		# ship_armor_mult = @armor_3
+	# }
+	# ship_modifier = {
+		# ship_ftl_wormhole_range_mult = 0.35
+		# ship_ftl_jumpdrive_range_mult = 0.35
+		# ship_ftl_warp_range_mult = 0.35
+	# }
+	
+	# prerequisites = { "tech_c_volunteer_crew_3" }
+	# component_set = "C_CREW_21"
+	
+	# ai_weight = {
+		# weight = 45
+	# }
+# }
+
+# Slave crew
+# Slave 1
+utility_component_template = {
+	key = "C_LARGE_CREW_22"
+	size = aux
+	icon = "GFX_C_ship_part_crew_22"
+	icon_frame = 1
+	power = 0
+	cost = 0
+	modifier = {
+		ship_speed_mult = @speed_1
+		ship_combat_speed_mult = @c_speed_1
+		ship_hitpoints_mult = @hp_1
+		ship_shield_hp_mult = @shield_1
+		ship_armor_mult = @armor_1
+		ship_fire_rate_mult = @firerate_1
+	}
+	
+	prerequisites = { "tech_c_slave_crew_1" }
+	component_set = "C_CREW_22"
+	
+	ai_weight = {
+		weight = 35
+	}
+	upgrades_to = "C_LARGE_CREW_23"
+}
+# # Slave 2
+# utility_component_template = {
+	# key = "C_LARGE_CREW_23"
+	# size = aux
+	# icon = "GFX_C_ship_part_crew_23"
+	# icon_frame = 1
+	# power = 0
+	# cost = 0
+	# modifier = {
+		# ship_speed_mult = @speed_2
+		# ship_combat_speed_mult = @c_speed_2
+		# ship_hitpoints_mult = @hp_2
+		# ship_shield_hp_mult = @shield_2
+		# ship_armor_mult = @armor_2
+		# ship_fire_rate_mult = @firerate_2
+	# }
+	
+	# prerequisites = { "tech_c_slave_crew_2" }
+	# component_set = "C_CREW_23"
+	
+	# ai_weight = {
+		# weight = 40
+	# }
+	# upgrades_to = "C_LARGE_CREW_24"
+# }
+# # Slave 3
+# utility_component_template = {
+	# key = "C_LARGE_CREW_24"
+	# size = aux
+	# icon = "GFX_C_ship_part_crew_24"
+	# icon_frame = 1
+	# power = 0
+	# cost = 0
+	# modifier = {
+		# ship_speed_mult = @speed_3
+		# ship_combat_speed_mult = @c_speed_3
+		# ship_hitpoints_mult = @hp_3
+		# ship_shield_hp_mult = @shield_3
+		# ship_armor_mult = @armor_3
+		# ship_fire_rate_mult = @firerate_3
+	# }
+	
+	# prerequisites = { "tech_c_slave_crew_3" }
+	# component_set = "C_CREW_24"
+	
+	# ai_weight = {
+		# weight = 45
+	# }
+# }

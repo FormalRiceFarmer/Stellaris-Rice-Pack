@@ -1,0 +1,272 @@
+#All traits are property, owned, and created by Snowyamur alone, unless specified otherwise. Copyright© Snowyamur 2016-2017
+# All leaders will have a common trait-point value set in defines, which they use to grab traits
+
+# leader_trait = yes - this tags the trait as a leader-trait and not a species-trait
+# initial = no - if set to no, this trait can not be granted to leaders when they are generated
+# leader_class = { admiral scientist }  -- OR  - if not set, it can be given to all leader-types except Rulers
+# requires_traits = { trait_psionic } -- AND - leader-trait can only be randomly given on generation if the leaders species has this trait
+# requires_governments = { despotic_hegemony ai_overlordship } -- OR - leader-trait can only be randomly given on generation if the Empire has this type of government form
+# prerequisites = { tech_psionic_theory } - AND - leader-trait can only be given if the technology specified has been researched by the Empire
+# ai_categories = { survey engineering physics society }
+# ai_weight - standard drop weight modifier, scope = country
+
+###########
+# Balance #
+###########
+#effects on research traits
+@categorybonus = 0.10
+
+###############################
+# Snowyamur Scientist Traits  #
+###############################
+
+#5 Scientist Traits
+
+leader_trait_snowyamur_deranged = {
+	cost = 1
+	modification = yes
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_snowyamur_deranged.dds"
+	modifier = {
+		science_ship_survey_speed = 0.25
+		all_technology_research_speed = -0.05
+	}
+	leader_trait = yes
+	leader_class = { scientist }
+	opposites = {
+		"trait_charismatic"
+	}
+	
+	ai_categories = {
+		survey
+		physics
+		society
+		engineering
+	}
+	
+	ai_weight = {
+		weight = 25
+	}
+}
+
+leader_trait_snowyamur_resolute_scientist = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_snowyamur_resolute_scientist.dds"
+	modifier = {
+		leader_age = 25
+		all_technology_research_speed = 0.10
+	}
+	leader_trait = yes
+	leader_class = { scientist }
+	opposites = {
+		"leader_trait_snowyamur_deranged"
+		"trait_snowyamur_genetic_decay"
+	}
+	
+	ai_categories = {
+		physics
+		society
+		engineering
+	}
+	
+	ai_weight = {
+		weight = 75
+	}
+}
+
+leader_trait_snowyamur_ancient_taste = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_snowyamur_ancient_taste.dds"
+	custom_tooltip = leader_trait_snowyamur_ancient_taste_tooltip
+		self_modifier = {
+			
+			# Every Precursor anomaly category needs to be listed here
+			vultaum_1_cat_research_speed_mult = 0.70
+			vultaum_1_cat_research_fail_risk_add = -0.50
+			vultaum_2_cat_research_speed_mult = 0.70
+			vultaum_2_cat_research_fail_risk_add = -0.50
+			vultaum_3_cat_research_speed_mult = 0.70
+			vultaum_3_cat_research_fail_risk_add = -0.50
+			vultaum_4_cat_research_speed_mult = 0.70
+			vultaum_4_cat_research_fail_risk_add = -0.50
+			vultaum_70_cat_research_speed_mult = 0.70
+			vultaum_70_cat_research_fail_risk_add = -0.50
+			vultaum_6_cat_research_speed_mult = 0.70
+			vultaum_6_cat_research_fail_risk_add = -0.50
+			vultaum_7_cat_research_speed_mult = 0.70
+			vultaum_7_cat_research_fail_risk_add = -0.50
+			vultaum_8_cat_research_speed_mult = 0.70
+			vultaum_8_cat_research_fail_risk_add = -0.50
+			vultaum_9_cat_research_speed_mult = 0.70
+			vultaum_9_cat_research_fail_risk_add = -0.50
+			vultaum_10_cat_research_speed_mult = 0.70
+			vultaum_10_cat_research_fail_risk_add = -0.50
+			vultaum_11_cat_research_speed_mult = 0.70
+			vultaum_11_cat_research_fail_risk_add = -0.50
+
+			yuht_1_cat_research_speed_mult = 0.70
+			yuht_1_cat_research_fail_risk_add = -0.50
+			yuht_2_cat_research_speed_mult = 0.70
+			yuht_2_cat_research_fail_risk_add = -0.50
+			yuht_3_cat_research_speed_mult = 0.70
+			yuht_3_cat_research_fail_risk_add = -0.50
+			yuht_4_cat_research_speed_mult = 0.70
+			yuht_4_cat_research_fail_risk_add = -0.50
+			yuht_70_cat_research_speed_mult = 0.70
+			yuht_70_cat_research_fail_risk_add = -0.50
+			yuht_6_cat_research_speed_mult = 0.70
+			yuht_6_cat_research_fail_risk_add = -0.50
+			yuht_7_cat_research_speed_mult = 0.70
+			yuht_7_cat_research_fail_risk_add = -0.50
+			yuht_8_cat_research_speed_mult = 0.70
+			yuht_8_cat_research_fail_risk_add = -0.50
+			yuht_9_cat_research_speed_mult = 0.70
+			yuht_9_cat_research_fail_risk_add = -0.50
+			
+			league_1_cat_research_speed_mult = 0.70
+			league_1_cat_research_fail_risk_add = -0.50
+			league_2_cat_research_speed_mult = 0.70
+			league_2_cat_research_fail_risk_add = -0.50
+			league_3_cat_research_speed_mult = 0.70
+			league_3_cat_research_fail_risk_add = -0.50
+			league_4_cat_research_speed_mult = 0.70
+			league_4_cat_research_fail_risk_add = -0.50
+			league_70_cat_research_speed_mult = 0.70
+			league_70_cat_research_fail_risk_add = -0.50
+			league_6_cat_research_speed_mult = 0.70
+			league_6_cat_research_fail_risk_add = -0.50
+			league_7_cat_research_speed_mult = 0.70
+			league_7_cat_research_fail_risk_add = -0.50
+			league_8_cat_research_speed_mult = 0.70
+			league_8_cat_research_fail_risk_add = -0.50
+			league_9_cat_research_speed_mult = 0.70
+			league_9_cat_research_fail_risk_add = -0.50
+			league_10_cat_research_speed_mult = 0.70
+			league_10_cat_research_fail_risk_add = -0.50
+			league_11_cat_research_speed_mult = 0.70
+			league_11_cat_research_fail_risk_add = -0.50
+			league_12_cat_research_speed_mult = 0.70
+			league_12_cat_research_fail_risk_add = -0.50
+			league_13_cat_research_speed_mult = 0.70
+			league_13_cat_research_fail_risk_add = -0.50
+			league_14_cat_research_speed_mult = 0.70
+			league_14_cat_research_fail_risk_add = -0.50
+			
+			irassian_1_cat_research_speed_mult = 0.70
+			irassian_1_cat_research_fail_risk_add = -0.50
+			irassian_2_cat_research_speed_mult = 0.70
+			irassian_2_cat_research_fail_risk_add = -0.50
+			irassian_3_cat_research_speed_mult = 0.70
+			irassian_3_cat_research_fail_risk_add = -0.50
+			irassian_4_cat_research_speed_mult = 0.70
+			irassian_4_cat_research_fail_risk_add = -0.50
+			irassian_70_cat_research_speed_mult = 0.70
+			irassian_70_cat_research_fail_risk_add = -0.50
+			irassian_6_cat_research_speed_mult = 0.70
+			irassian_6_cat_research_fail_risk_add = -0.50
+			irassian_7_cat_research_speed_mult = 0.70
+			irassian_7_cat_research_fail_risk_add = -0.50
+			irassian_8_cat_research_speed_mult = 0.70
+			irassian_8_cat_research_fail_risk_add = -0.50
+			irassian_9_cat_research_speed_mult = 0.70
+			irassian_9_cat_research_fail_risk_add = -0.50
+			irassian_10_cat_research_speed_mult = 0.70
+			irassian_10_cat_research_fail_risk_add = -0.50
+			irassian_11_cat_research_speed_mult = 0.70
+			irassian_11_cat_research_fail_risk_add = -0.50
+			
+			cybrex_1_cat_research_speed_mult = 0.70
+			cybrex_1_cat_research_fail_risk_add = -0.50
+			cybrex_2_cat_research_speed_mult = 0.70
+			cybrex_2_cat_research_fail_risk_add = -0.50
+			cybrex_3_cat_research_speed_mult = 0.70
+			cybrex_3_cat_research_fail_risk_add = -0.50
+			cybrex_4_cat_research_speed_mult = 0.70
+			cybrex_4_cat_research_fail_risk_add = -0.50
+			cybrex_70_cat_research_speed_mult = 0.70
+			cybrex_70_cat_research_fail_risk_add = -0.50
+			cybrex_6_cat_research_speed_mult = 0.70
+			cybrex_6_cat_research_fail_risk_add = -0.50
+			cybrex_7_cat_research_speed_mult = 0.70
+			cybrex_7_cat_research_fail_risk_add = -0.50
+			cybrex_8_cat_research_speed_mult = 0.70
+			cybrex_8_cat_research_fail_risk_add = -0.50
+			cybrex_9_cat_research_speed_mult = 0.70
+			cybrex_9_cat_research_fail_risk_add = -0.50
+			cybrex_10_cat_research_speed_mult = 0.70
+			cybrex_10_cat_research_fail_risk_add = -0.50
+			cybrex_11_cat_research_speed_mult = 0.70
+			cybrex_11_cat_research_fail_risk_add = -0.50
+			
+			VULTAUMAR_research_speed_mult = 0.70
+			VULTAUMAR_research_fail_risk_add = -0.50
+			YUHTAAN_research_speed_mult = 0.70
+			YUHTAAN_research_fail_risk_add = -0.50
+			FEN_HABBANIS_research_speed_mult = 0.70
+			FEN_HABBANIS_research_fail_risk_add = -0.50
+			IRASSIA_research_speed_mult = 0.70
+			IRASSIA_research_fail_risk_add = -0.50
+		}
+	leader_trait = yes
+	leader_class = { scientist }
+	
+	ai_categories = {
+		survey
+	}
+	
+	ai_weight = {
+		weight = 100
+	}
+}
+
+leader_trait_snowyamur_decouvcentre_researcher = {
+	cost = 3
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_snowyamur_decouvcentre_researcher.dds"
+	modifier = {
+		all_technology_research_speed = 0.20
+		science_ship_survey_speed = 0.50
+		ship_anomaly_generation_chance_mult = 0.75
+	}
+	leader_trait = yes
+	leader_class = { scientist }
+	opposites = {
+		"leader_trait_snowyamur_deranged"
+		"trait_snowyamur_decimated_mind_state"
+	}
+	
+	ai_categories = {
+		survey
+		physics
+		society
+		engineering
+	}
+	
+	ai_weight = {
+		weight = 105
+	}
+}
+
+leader_trait_snowyamur_impatient = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_snowyamur_resolute_scientist.dds"
+	modifier = {
+		science_ship_survey_speed = 0.50
+		ship_anomaly_generation_chance_mult = -0.15
+	}
+	leader_trait = yes
+	leader_class = { scientist }
+	opposites = {
+		"leader_trait_snowyamur_resolute_scientist"
+	}
+	
+	ai_categories = {
+		survey
+	}
+	
+	ai_weight = {
+		weight = 55
+	}
+}

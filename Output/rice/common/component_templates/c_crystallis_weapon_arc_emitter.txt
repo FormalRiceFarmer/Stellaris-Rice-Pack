@@ -1,0 +1,92 @@
+# ####################
+#  Arc Emitter
+# ####################
+
+# ## Arc Emitter 3
+weapon_component_template = {
+	key = "C_LARGE_ARC_EMITTER_3"
+	size = extra_large
+	entity = "invisible_turret_entity"
+	type = instant
+	
+	icon = "GFX_C_ship_part_arc_emitter_3"
+	icon_frame = 1
+	
+	firing_arc = 25.0
+	min_range = 10.0
+	static_rotation = yes
+	use_ship_kill_target = no
+	
+	damage = { min = 1 max = 265.2 }
+	windup = { min = 22 max = 30 }
+	total_fire_time = 60
+	range = 110.0
+	accuracy = 1
+	tracking = 1
+	armor_penetration = 1
+	shield_penetration = 1
+	power = -130
+	cost = 130
+	
+	prerequisites = { "tech_c_arc_emitter_3" }
+	component_set = "C_ARC_EMITTER_3"
+	projectile_gfx = "c_focused_arc_emitter_3"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_long_range weapon_role_anti_shield }
+	
+	target_weights = {
+		npc_warship_01 = 5000
+		space_dragon_baby = 5000	
+		massive_ship_fallen_empire = 5000
+		large_ship_fallen_empire = 5000	
+		battleship = 5000
+		cruiser = 2500
+		destroyer = 1000
+		small_ship_fallen_empire = 1000	
+	}
+	upgrades_to = "C_LARGE_ARC_EMITTER_4"
+}
+
+# ## Arc Emitter 4
+weapon_component_template = {
+	key = "C_LARGE_ARC_EMITTER_4"
+	size = extra_large
+	entity = "invisible_turret_entity"
+	type = instant
+	
+	icon = "GFX_C_ship_part_arc_emitter_4"
+	icon_frame = 1
+	
+	firing_arc = 25.0
+	min_range = 10.0
+	static_rotation = yes
+	use_ship_kill_target = no
+	
+	damage = { min = 1 max = 318.2 }
+	windup = { min = 22 max = 30 }
+	total_fire_time = 60
+	range = 110.0
+	accuracy = 1
+	tracking = 1
+	armor_penetration = 1
+	shield_penetration = 1
+	power = -140
+	cost = 140
+	
+	prerequisites = { "tech_c_arc_emitter_4" }
+	component_set = "C_ARC_EMITTER_4"
+	projectile_gfx = "c_focused_arc_emitter_4"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_long_range weapon_role_anti_shield }
+	
+	target_weights = {
+		npc_warship_01 = 5000
+		space_dragon_baby = 5000	
+		massive_ship_fallen_empire = 5000
+		large_ship_fallen_empire = 5000	
+		battleship = 5000
+		cruiser = 2500
+		destroyer = 1000
+		small_ship_fallen_empire = 1000	
+	}
+}

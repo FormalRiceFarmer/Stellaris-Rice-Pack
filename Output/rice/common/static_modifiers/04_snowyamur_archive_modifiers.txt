@@ -1,0 +1,59 @@
+# All global modifiers are here.  They are applied from certain game-features
+#
+# Modifiers here will apply to all traits whose modifiers can only be triggered by Events
+#
+# Effects are fully scriptable here
+# Overpowered modifiers are forbidden to be scripted here to prevent AI overload
+# Global modifiers here to trigger them upon game start
+#
+# The names can NOT be removed or changed since the code references them
+
+#####################################################
+# Snowyamur Modifiers                               #
+#####################################################
+
+amur_decimated_mind_state = {
+	all_technology_research_speed = -0.20
+}
+
+amur_organized = {
+	navy_size_add = 10
+}
+
+amur_grasp_of_the_nether_veil = {
+	planet_sensor_range_mult = 0.40
+	planet_border_mult = 0.25
+}
+
+amur_electrovorous = {
+	max_energy = 1000
+}
+
+amur_lithovorous = {
+	max_minerals = 1000
+}
+
+amur_knowledge_of_xayn = {
+	all_technology_research_speed = 0.25
+	num_tech_alternatives_add = 2
+}
+
+amur_inquiring = {
+	num_tech_alternatives_add = 1
+}
+
+amur_committed_researchers = {
+	all_technology_research_speed = 0.10
+}
+
+amur_persuasive = {
+	country_resource_influence_add = 1
+}
+
+amur_unconvincing = {
+	country_resource_influence_add = -1
+}
+
+amur_innovative = {
+	all_technology_research_speed = 0.15
+}

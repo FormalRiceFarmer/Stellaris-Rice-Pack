@@ -1,0 +1,86 @@
+
+
+### Armored Torpedoes
+weapon_component_template = {
+	key = "C_TORPEDO_4"
+	size = torpedo
+	entity = "turret_torpedo_entity"
+	
+	icon = "GFX_C_ship_part_torpedo_4"
+	icon_frame = 1
+	type = missile
+	
+	prerequisites = { "tech_c_torpedoes_4" }
+	component_set = "C_TORPEDO_4"
+	projectile_gfx = "large_torpedo_02"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_anti_shield }
+	upgrades_to = "C_TORPEDO_5"
+	
+	damage = { min = 216 max = 408 }
+	windup = { min = 2 max = 15 }
+	total_fire_time = 200
+	range = 130.0
+	accuracy = 1.00
+	missile_speed = 6.00
+	missile_health = 10.00
+	shield_damage = 1.00
+	shield_penetration = 1.00
+	armor_penetration = 0.50
+	power = -80
+	cost = 80
+	
+	target_weights = {
+		npc_warship_01 = 5000
+		space_dragon_baby = 5000	
+		massive_ship_fallen_empire = 5000
+		large_ship_fallen_empire = 5000	
+		battleship = 5000
+		cruiser = 2500
+		destroyer = 1000
+		small_ship_fallen_empire = 1000	
+	}
+	
+	upgrades_to = "C_TORPEDO_5"
+}
+
+### Devastator Torpedoes
+weapon_component_template = {
+	key = "C_TORPEDO_5"
+	size = torpedo
+	entity = "turret_torpedo_entity"
+	
+	icon = "GFX_C_ship_part_torpedo_5"
+	icon_frame = 1
+	type = missile
+	
+	prerequisites = { "tech_c_torpedoes_5" }
+	component_set = "C_TORPEDO_5"
+	projectile_gfx = "large_torpedo_03"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_anti_shield }
+	
+	damage = { min = 259.2 max = 489.6 }
+	windup = { min = 2 max = 15 }
+	total_fire_time = 200
+	range = 150.0
+	accuracy = 1.00
+	missile_speed = 7.00
+	missile_health = 12.00
+	shield_damage = 1.00
+	shield_penetration = 1.00
+	armor_penetration = 0.50
+	power = -100
+	cost = 100
+	
+	target_weights = {
+		npc_warship_01 = 5000
+		space_dragon_baby = 5000	
+		massive_ship_fallen_empire = 5000
+		large_ship_fallen_empire = 5000	
+		battleship = 5000
+		cruiser = 2500
+		destroyer = 1000
+		small_ship_fallen_empire = 1000	
+	}
+}

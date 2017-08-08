@@ -1,0 +1,424 @@
+##################
+### TECH COSTS ###
+##################
+#If you change any of these, use replace in files so the values are the same across all files
+
+@tier1cost1 = 400
+@tier1cost2 = 600
+@tier1cost3 = 840
+@tier1cost4 = 1000
+
+@tier2cost1 = 1500
+@tier2cost2 = 2000
+@tier2cost3 = 2500
+@tier2cost4 = 3000
+
+@tier3cost1 = 4040
+@tier3cost2 = 5000
+@tier3cost3 = 6500
+@tier3cost4 = 7500
+
+@tier4cost1 = 8500
+@tier4cost2 = 9500
+@tier4cost3 = 11000
+@tier4cost4 = 14000
+
+####################
+### TECH WEIGHTS ###
+####################
+
+@tier1weight1 = 36
+@tier1weight2 = 33
+@tier1weight3 = 30
+@tier1weight4 = 27
+
+@tier2weight1 = 24
+@tier2weight2 = 21
+@tier2weight3 = 18
+@tier2weight4 = 15
+
+@tier3weight1 = 24
+@tier3weight2 = 18
+@tier3weight3 = 12
+@tier3weight4 = 9
+
+#Crystal-Forged Plating
+tech_crystal_armor_2 = {
+	area = engineering
+	cost = @tier3cost2
+	tier = 2
+	is_rare = yes
+	category = { materials }
+	ai_update_type = all
+	prerequisites = { "tech_crystal_armor_1" }
+	weight = @tier3weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			years_passed < 50
+		}
+		modifier = {
+			factor = 1.25
+			years_passed > 55
+		}
+		modifier = {
+			factor = 2
+			years_passed > 60
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				has_megastructure = think_tank_3
+				has_megastructure = think_tank_4
+				has_megastructure = think_tank_restored
+			}	
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}	
+	
+	ai_weight = {
+		factor = 3 # rush component!
+		modifier = {
+			factor = 0
+			years_passed < 50
+		}
+		modifier = {
+			factor = 1.25
+			years_passed > 55
+		}
+		modifier = {
+			factor = 2
+			years_passed > 60
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				has_megastructure = think_tank_3
+				has_megastructure = think_tank_4
+				has_megastructure = think_tank_restored
+			}	
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}
+
+#Crystal-Forged Plating II
+tech_c_crystal_armor_3 = {
+	area = engineering
+	cost = @tier2cost3
+	tier = 2
+	is_rare = no
+	category = { materials }
+	ai_update_type = military
+	prerequisites = { "tech_crystal_armor_2" }
+	weight = @tier2weight2
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			years_passed < 60
+		}
+		modifier = {
+			factor = 1.25
+			years_passed > 65
+		}
+		modifier = {
+			factor = 2
+			years_passed > 70
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				has_megastructure = think_tank_3
+				has_megastructure = think_tank_4
+				has_megastructure = think_tank_restored
+			}	
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}	
+	
+	ai_weight = {
+		factor = 3 # rush component!
+		modifier = {
+			factor = 0
+			years_passed < 60
+		}
+		modifier = {
+			factor = 1.25
+			years_passed > 65
+		}
+		modifier = {
+			factor = 2
+			years_passed > 70
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				has_megastructure = think_tank_3
+				has_megastructure = think_tank_4
+				has_megastructure = think_tank_restored
+			}	
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}
+
+#Crystal-Forged Plating III
+tech_c_crystal_armor_4 = {
+	area = engineering
+	cost = @tier2cost4
+	tier = 2
+	is_rare = no
+	category = { materials }
+	ai_update_type = military
+	prerequisites = { "tech_c_crystal_armor_3" }
+	weight = @tier2weight4
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			years_passed < 70
+		}
+		modifier = {
+			factor = 1.25
+			years_passed > 75
+		}
+		modifier = {
+			factor = 2
+			years_passed > 80
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				has_megastructure = think_tank_3
+				has_megastructure = think_tank_4
+				has_megastructure = think_tank_restored
+			}	
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}	
+	
+	ai_weight = {
+		factor = 3 # rush component!
+		modifier = {
+			factor = 0
+			years_passed < 70
+		}
+		modifier = {
+			factor = 1.25
+			years_passed > 75
+		}
+		modifier = {
+			factor = 2
+			years_passed > 80
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				has_megastructure = think_tank_3
+				has_megastructure = think_tank_4
+				has_megastructure = think_tank_restored
+			}	
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}
+
+#Crystal-Forged Plating IV
+tech_c_crystal_armor_5 = {
+	area = engineering
+	cost = @tier3cost1
+	tier = 3
+	is_rare = yes
+	category = { materials }
+	ai_update_type = military
+	prerequisites = { "tech_c_crystal_armor_4" }
+	weight = @tier3weight2
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			years_passed < 80
+		}
+		modifier = {
+			factor = 1.25
+			years_passed > 85
+		}
+		modifier = {
+			factor = 2
+			years_passed > 90
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				has_megastructure = think_tank_3
+				has_megastructure = think_tank_4
+				has_megastructure = think_tank_restored
+			}	
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}	
+	
+	ai_weight = {
+		factor = 3 # rush component!
+		modifier = {
+			factor = 0
+			years_passed < 80
+		}
+		modifier = {
+			factor = 1.25
+			years_passed > 85
+		}
+		modifier = {
+			factor = 2
+			years_passed > 90
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				has_megastructure = think_tank_3
+				has_megastructure = think_tank_4
+				has_megastructure = think_tank_restored
+			}	
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}
+
+#Crystal-Forged Plating V
+tech_c_crystal_armor_6 = {
+	area = engineering
+	cost = @tier3cost2
+	tier = 3
+	is_rare = yes
+	is_dangerous = yes
+	category = { materials }
+	ai_update_type = military
+	prerequisites = { "tech_c_crystal_armor_5" }
+	weight = @tier3weight4
+	
+	is_reverse_engineerable = no
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			years_passed < 100
+		}
+		modifier = {
+			factor = 1.25
+			years_passed > 120
+		}
+		modifier = {
+			factor = 2.5
+			years_passed > 130
+		}
+		modifier = {
+			factor = 5
+			years_passed > 150
+		}
+		modifier = {
+			factor = 0
+			AND = {
+				host_has_dlc = "Utopia"
+				NOT = {
+					OR = {
+						has_megastructure = think_tank_3
+						has_megastructure = think_tank_4
+						has_megastructure = think_tank_restored
+					}	
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}	
+	
+	ai_weight = {
+		factor = 3 # rush component!
+		modifier = {
+			factor = 0
+			years_passed < 100
+		}
+		modifier = {
+			factor = 1.25
+			years_passed > 120
+		}
+		modifier = {
+			factor = 2.5
+			years_passed > 130
+		}
+		modifier = {
+			factor = 5
+			years_passed > 150
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				has_megastructure = think_tank_3
+				has_megastructure = think_tank_4
+				has_megastructure = think_tank_restored
+			}	
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_materials"
+			}
+		}
+	}
+}

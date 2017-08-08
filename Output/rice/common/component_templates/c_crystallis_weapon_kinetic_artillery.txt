@@ -1,0 +1,62 @@
+# ####################
+#  Kinetic Artillery
+# ####################
+
+# ## Kinetic Artillery 3
+weapon_component_template = {
+	type = instant
+	
+	key = "C_LARGE_KINETIC_ARTILLERY_3"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	
+	icon = "GFX_C_ship_part_kinetic_artillery_3"
+	icon_frame = 1
+	
+	damage = { min = 145.2 max = 286.8 }
+	windup = { min = 2 max = 18 }
+	total_fire_time = 70
+	range = 100.0
+	accuracy = 0.70
+	tracking = 0.05
+	shield_damage = 1.33
+	armor_penetration = 0.20
+	power = -80
+	cost = 80
+	
+	prerequisites = { "tech_c_kinetic_artillery_3" }
+	component_set = "C_KINETIC_ARTILLERY_3"
+	projectile_gfx = "kinetic_artillery"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_long_range }
+	upgrades_to = "C_LARGE_KINETIC_ARTILLERY_4"
+}
+
+# ## Kinetic Artillery 4
+weapon_component_template = {
+	type = instant
+	
+	key = "C_LARGE_KINETIC_ARTILLERY_4"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	
+	icon = "GFX_C_ship_part_kinetic_artillery_4"
+	icon_frame = 1
+	
+	damage = { min = 174.2 max = 344.2 }
+	windup = { min = 2 max = 18 }
+	total_fire_time = 70
+	range = 100.0
+	accuracy = 0.70
+	tracking = 0.05
+	shield_damage = 1.33
+	armor_penetration = 0.20
+	power = -100
+	cost = 100
+	
+	prerequisites = { "tech_c_kinetic_artillery_4" }
+	component_set = "C_KINETIC_ARTILLERY_4"
+	projectile_gfx = "adv_kinetic_artillery"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_long_range }
+}

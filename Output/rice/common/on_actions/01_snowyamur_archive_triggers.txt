@@ -1,0 +1,72 @@
+#Triggers on game start
+on_game_start = {
+	events = {
+		samur_traits.1 #Shattered Mind
+		samur_traits.2 #Organized
+		samur_traits.3 #Grasp of the Nether Veil
+		samur_traits.4 #Electrovorous
+		samur_traits.5 #Lithovorous
+		samur_traits.6 #Knowledge of Xayn
+		samur_traits.7 #Inquiring
+		samur_traits.8 #Committed Researchers
+		samur_traits.9 #Persuasive
+		samur_traits.10 #Unconvincing
+		samur_traits.11 #Innovative
+	}
+}
+
+on_modfication_complete = {
+	events = {
+		samur_traits.1 #Shattered Mind
+		samur_traits.2 #Organized
+		samur_traits.3 #Grasp of the Nether Veil
+		samur_traits.4 #Electrovorous
+		samur_traits.5 #Lithovorous
+		samur_traits.6 #Knowledge of Xayn
+		samur_traits.7 #Inquiring
+		samur_traits.8 #Committed Researchers
+		samur_traits.9 #Persuasive
+		samur_traits.10 #Unconvincing
+		samur_traits.11 #Innovative
+#
+		samur_traits_rem.1 #Shattered Mind
+		samur_traits_rem.2 #Organized
+		samur_traits_rem.3 #Grasp of the Nether Veil
+		samur_traits_rem.4 #Electrovorous
+		samur_traits_rem.5 #Lithovorous
+		samur_traits_rem.6 #Knowledge of Xayn
+		samur_traits_rem.7 #Inquiring
+		samur_traits_rem.8 #Committed Researchers
+		samur_traits_rem.9 #Persuasive
+		samur_traits_rem.10 #Unconvincing
+		samur_traits_rem.11 #Innovative
+	}
+}
+
+on_yearly_pulse = {
+	events = {
+		samur_traits.1 #Shattered Mind
+		samur_traits.2 #Organized
+		samur_traits.3 #Grasp of the Nether Veil
+		samur_traits.4 #Electrovorous
+		samur_traits.5 #Lithovorous
+		samur_traits.6 #Knowledge of Xayn
+		samur_traits.7 #Inquiring
+		samur_traits.8 #Committed Researchers
+		samur_traits.9 #Persuasive
+		samur_traits.10 #Unconvincing
+		samur_traits.11 #Innovative
+#
+		samur_traits_rem.1 #Shattered Mind
+		samur_traits_rem.2 #Organized
+		samur_traits_rem.3 #Grasp of the Nether Veil
+		samur_traits_rem.4 #Electrovorous
+		samur_traits_rem.5 #Lithovorous
+		samur_traits_rem.6 #Knowledge of Xayn
+		samur_traits_rem.7 #Inquiring
+		samur_traits_rem.8 #Committed Researchers
+		samur_traits_rem.9 #Persuasive
+		samur_traits_rem.10 #Unconvincing
+		samur_traits_rem.11 #Innovative
+	}
+}		

@@ -1,0 +1,241 @@
+#All traits are property, owned, and created by Snowyamur alone, unless specified otherwise. Copyright© Snowyamur 2016-2017
+# All leaders will have a common trait-point value set in defines, which they use to grab traits
+
+# leader_trait = yes - this tags the trait as a leader-trait and not a species-trait
+# initial = no - if set to no, this trait can not be granted to leaders when they are generated
+# leader_class = { admiral scientist }  -- OR  - if not set, it can be given to all leader-types except Rulers
+# requires_traits = { trait_psionic } -- AND - leader-trait can only be randomly given on generation if the leaders species has this trait
+# requires_governments = { despotic_hegemony ai_overlordship } -- OR - leader-trait can only be randomly given on generation if the Empire has this type of government form
+# prerequisites = { tech_psionic_theory } - AND - leader-trait can only be given if the technology specified has been researched by the Empire
+
+#All traits are property, owned, and created by Snowyamur alone, unless specified otherwise. Copyright© Snowyamur 2016-2017
+#No Tier Trees
+
+############################
+#Snowyamur Admiral Traits  #
+############################
+
+#15 Admiral Traits
+#Scripting for the actual traits
+
+leader_trait_snowyamur_snowfire_training = {
+	cost = 3
+	icon="gfx/interface/icons/traits/leader_traits/leader_trait_snowyamur_snowfire_training.dds"
+	modification = no
+	modifier = {
+		ship_combat_speed_mult = 0.50
+		ship_weapon_damage = 0.30
+		ship_weapon_range_mult = 0.25
+	}
+	leader_trait = yes
+	leader_class = { admiral }
+	opposites = {
+		"leader_trait_snowyamur_veteran_of_the_auorvale_crisis"
+	}
+}
+
+leader_trait_snowyamur_swift = {
+	cost = 1
+	icon="gfx/interface/icons/traits/leader_traits/leader_trait_snowyamur_swift.dds"
+	modification = no
+	modifier = {
+		ship_speed_mult = 0.15
+		ship_evasion_mult = 0.15
+	}
+	leader_trait = yes
+	leader_class = { admiral }
+}
+
+leader_trait_snowyamur_disciplined = {
+	cost = 1
+	icon="gfx/interface/icons/traits/leader_traits/leader_trait_snowyamur_disciplined.dds"
+	modification = no
+	modifier = {
+		ship_emergency_ftl_mult = -0.20
+		ship_combat_speed_mult = 0.20
+	}
+	leader_trait = yes
+	leader_class = { admiral }
+	opposites = {
+		"leader_trait_snowyamur_coward"
+		"leader_trait_snowyamur_anxious"
+	}
+}
+
+leader_trait_snowyamur_veteran_of_the_auorvale_crisis = {
+	cost = 3
+	icon="gfx/interface/icons/traits/leader_traits/leader_trait_snowyamur_veteran_of_the_auorvale_crisis.dds"
+	modification = no
+	modifier = {
+		ship_hitpoints_mult = 1.00
+		leader_skill_levels = 2
+		leader_age = 50
+	}
+	leader_trait = yes
+	leader_class = { admiral }
+	opposites = {
+		"leader_trait_snowyamur_snowfire_training"
+	}
+}
+
+leader_trait_snowyamur_observant = {
+	cost = 1
+	icon="gfx/interface/icons/traits/leader_traits/leader_trait_snowyamur_observant.dds"
+	modification = no
+	modifier = {
+		ship_sensor_range_mult = 0.30
+	}
+	leader_trait = yes
+	leader_class = { admiral }
+}
+
+leader_trait_snowyamur_ingenious_comprehension = {
+	cost = 1
+	icon="gfx/interface/icons/traits/leader_traits/leader_trait_snowyamur_ingenious_comprehension.dds"
+	modification = no
+	modifier = {
+		ship_upkeep_mult = -0.25
+	}
+	leader_trait = yes
+	leader_class = { admiral }
+	opposites = {
+		"trait_snowyamur_decimated_mind_state"
+	}
+}
+
+leader_trait_snowyamur_cowardly = {
+	cost = 1
+	icon="gfx/interface/icons/traits/leader_traits/leader_trait_snowyamur_cowardly.dds"
+	modification = no
+	modifier = {
+		ship_combat_speed_mult = -0.15
+	}
+	leader_trait = yes
+	leader_class = { admiral }
+	opposites = {
+		"leader_trait_snowyamur_disciplined"
+		"trait_snowyamur_selfless"
+		"trait_snowyamur_valiant"
+	}
+}
+
+leader_trait_snowyamur_anxious = {
+	cost = 1
+	icon="gfx/interface/icons/traits/leader_traits/leader_trait_snowyamur_anxious.dds"
+	modification = no
+	modifier = {
+		ship_weapon_damage = -0.15
+		ship_speed_mult = -0.15
+	}
+	leader_trait = yes
+	leader_class = { admiral }
+	opposites = {
+		"leader_trait_snowyamur_disciplined"
+	}
+}
+
+leader_trait_snowyamur_armor_mentality = {
+	cost = 1
+	icon="gfx/interface/icons/traits/leader_traits/leader_trait_snowyamur_armor_mentality.dds"
+	modification = no
+	modifier = {
+		ship_armor_add = 15
+		ship_shield_hp_mult = -0.50
+	}
+	leader_trait = yes
+	leader_class = { admiral }
+	opposites = {
+		"leader_trait_snowyamur_shield_mentality"
+	}
+}
+
+leader_trait_snowyamur_shield_mentality = {
+	cost = 1
+	icon="gfx/interface/icons/traits/leader_traits/leader_trait_snowyamur_shield_mentality.dds"
+	modification = no
+	modifier = {
+		ship_shield_hp_mult = 0.50
+		ship_armor_add = -15
+	}
+	leader_trait = yes
+	leader_class = { admiral }
+	opposites = {
+		"leader_trait_snowyamur_armor_mentality"
+	}
+}
+
+leader_trait_snowyamur_hailfire_munitions = {
+	cost = 1
+	icon="gfx/interface/icons/traits/leader_traits/leader_trait_snowyamur_hailfire_munitions.dds"
+	modification = no
+	modifier = {
+		ship_fire_rate_mult = 0.50
+	}
+	leader_trait = yes
+	leader_class = { admiral }
+	opposites = {
+		"leader_trait_snowyamur_bombardment_munitions"
+		"leader_trait_snowyamur_precision_munitions"
+	}
+}
+
+leader_trait_snowyamur_precision_munitions = {
+	cost = 1
+	icon="gfx/interface/icons/traits/leader_traits/leader_trait_snowyamur_precision_munitions.dds"
+	modification = no
+	modifier = {
+		ship_weapon_range_mult = 0.30
+	}
+	leader_trait = yes
+	leader_class = { admiral }
+	opposites = {
+		"leader_trait_snowyamur_bombardment_munitions"
+		"leader_trait_snowyamur_hailfire_munitions"
+	}
+}
+
+leader_trait_snowyamur_bombardment_munitions = {
+	cost = 1
+	icon="gfx/interface/icons/traits/leader_traits/leader_trait_snowyamur_bombardment_munitions.dds"
+	modification = no
+	modifier = {
+		ship_weapon_damage = 0.50
+	}
+	leader_trait = yes
+	leader_class = { admiral }
+	opposites = {
+		"leader_trait_snowyamur_precision_munitions"
+		"leader_trait_snowyamur_hailfire_munitions"
+	}
+}
+
+leader_trait_snowyamur_uncommunicative = {
+	cost = 1
+	icon="gfx/interface/icons/traits/leader_traits/leader_trait_snowyamur_uncommunicative.dds"
+	modification = no
+	modifier = {
+		ship_upkeep_mult = -0.15
+		ship_sensor_range_mult = -0.30
+	}
+	leader_trait = yes
+	leader_class = { admiral }
+	opposites = {
+		"trait_communal"
+		"trait_charismatic"
+	}
+}
+
+leader_trait_snowyamur_steadfast = {
+	cost = 1
+	icon="gfx/interface/icons/traits/leader_traits/leader_trait_snowyamur_steadfast.dds"
+	modification = no
+	modifier = {
+		ship_armor_add = 10
+		ship_hitpoints_mult = 0.50
+	}
+	leader_trait = yes
+	leader_class = { admiral }
+	opposites = {
+		"leader_trait_snowyamur_coward"
+	}
+}

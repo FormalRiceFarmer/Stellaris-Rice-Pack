@@ -1,0 +1,60 @@
+# ####################
+#  Flak Battery
+# ####################
+
+# ## Flak Battery 3
+weapon_component_template = {
+	type = point_defence
+	
+	key = "C_FLAK_BATTERY_3"
+	size = medium
+	entity = "medium_kinetic_gun_entity"
+	
+	icon = "GFX_C_ship_part_flak_batteries_3"
+	icon_frame = 1
+	
+	damage = { min = 9.6 max = 30 }
+	windup = { min = 2 max = 18 }
+	total_fire_time = 17
+	range = 40.0
+	accuracy = 0.75
+	tracking = 0.50
+	shield_damage = 1
+	power = -30
+	cost = 30
+	
+	prerequisites = { "tech_c_flak_batteries_3" }
+	component_set = "C_FLAK_BATTERY_3"
+	projectile_gfx = "mass_driver_m"
+	tags = { weapon_type_point_defense weapon_type_kinetic }
+	ai_tags = { weapon_role_point_defense weapon_role_short_range }
+	upgrades_to = "C_FLAK_BATTERY_4"
+}
+
+# ## Flak Battery 4
+weapon_component_template = {
+	type = point_defence
+	
+	key = "C_FLAK_BATTERY_4"
+	size = medium
+	entity = "medium_kinetic_gun_entity"
+	
+	icon = "GFX_C_ship_part_flak_batteries_4"
+	icon_frame = 1
+	
+	damage = { min = 11.5 max = 36 }
+	windup = { min = 2 max = 18 }
+	total_fire_time = 16
+	range = 45.0
+	accuracy = 0.75
+	tracking = 0.50
+	shield_damage = 1
+	power = -40
+	cost = 40
+	
+	prerequisites = { "tech_c_flak_batteries_4" }
+	component_set = "C_FLAK_BATTERY_4"
+	projectile_gfx = "mass_driver_m"
+	tags = { weapon_type_point_defense weapon_type_kinetic }
+	ai_tags = { weapon_role_point_defense weapon_role_short_range }
+}

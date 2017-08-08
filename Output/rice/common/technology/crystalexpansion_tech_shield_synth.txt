@@ -1,0 +1,535 @@
+##################
+### TECH COSTS ###
+##################
+#If you change any of these, use replace in files so the values are the same across all files
+
+@tier1cost1 = 400
+@tier1cost2 = 600
+@tier1cost3 = 840
+@tier1cost4 = 1000
+
+@tier2cost1 = 1500
+@tier2cost2 = 2000
+@tier2cost3 = 2500
+@tier2cost4 = 3000
+
+@tier3cost1 = 4040
+@tier3cost2 = 5000
+@tier3cost3 = 6500
+@tier3cost4 = 7500
+
+@tier4cost1 = 8500
+@tier4cost2 = 9500
+@tier4cost3 = 11000
+@tier4cost4 = 14000
+
+####################
+### TECH WEIGHTS ###
+####################
+
+@tier1weight1 = 36
+@tier1weight2 = 33
+@tier1weight3 = 30
+@tier1weight4 = 27
+
+@tier2weight1 = 24
+@tier2weight2 = 21
+@tier2weight3 = 18
+@tier2weight4 = 15
+
+@tier3weight1 = 24
+@tier3weight2 = 18
+@tier3weight3 = 12
+@tier3weight4 = 9
+
+#Synth Shield Array VI
+tech_c_shields_synth_6 = {
+	area = physics
+	cost = @tier3cost4
+	tier = 3
+	is_rare = yes
+	category = { field_manipulation }
+	ai_update_type = military
+	prerequisites = { "tech_shields_5" }
+	weight = @tier3weight4
+	
+	modifier = {
+		planet_fortification_strength = 0.2
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					has_ethic = ethic_materialist
+					has_ethic = ethic_fanatic_materialist
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			years_passed < 100
+		}
+		modifier = {
+			factor = 1.25
+			years_passed > 120
+		}
+		modifier = {
+			factor = 2
+			years_passed > 140
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				has_megastructure = think_tank_3
+				has_megastructure = think_tank_4
+				has_megastructure = think_tank_restored
+			}	
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}	
+	
+	ai_weight = {
+		factor = 3 # rush component!
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					has_ethic = ethic_materialist
+					has_ethic = ethic_fanatic_materialist
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			years_passed < 100
+		}
+		modifier = {
+			factor = 1.25
+			years_passed > 120
+		}
+		modifier = {
+			factor = 2
+			years_passed > 140
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				has_megastructure = think_tank_3
+				has_megastructure = think_tank_4
+				has_megastructure = think_tank_restored
+			}	
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+}
+
+#Synth Shield Array VII
+tech_c_shields_synth_7 = {
+	area = physics
+	cost = @tier4cost1
+	tier = 3
+	is_rare = yes
+	category = { field_manipulation }
+	ai_update_type = military
+	prerequisites = { "tech_c_shields_synth_6" }
+	weight = @tier3weight4
+	
+	modifier = {
+		planet_fortification_strength = 0.2
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					has_ethic = ethic_materialist
+					has_ethic = ethic_fanatic_materialist
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			years_passed < 120
+		}
+		modifier = {
+			factor = 1.25
+			years_passed > 140
+		}
+		modifier = {
+			factor = 2
+			years_passed > 160
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				has_megastructure = think_tank_3
+				has_megastructure = think_tank_4
+				has_megastructure = think_tank_restored
+			}	
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}	
+	
+	ai_weight = {
+		factor = 3 # rush component!
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					has_ethic = ethic_materialist
+					has_ethic = ethic_fanatic_materialist
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			years_passed < 120
+		}
+		modifier = {
+			factor = 1.25
+			years_passed > 140
+		}
+		modifier = {
+			factor = 2
+			years_passed > 160
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				has_megastructure = think_tank_3
+				has_megastructure = think_tank_4
+				has_megastructure = think_tank_restored
+			}	
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+}
+
+#Synth Shield Array VIII
+tech_c_shields_synth_8 = {
+	area = physics
+	cost = @tier4cost2
+	tier = 3
+	is_rare = yes
+	category = { field_manipulation }
+	ai_update_type = military
+	prerequisites = { "tech_c_shields_synth_7" }
+	weight = @tier3weight4
+	
+	modifier = {
+		planet_fortification_strength = 0.2
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					has_ethic = ethic_materialist
+					has_ethic = ethic_fanatic_materialist
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			years_passed < 140
+		}
+		modifier = {
+			factor = 1.25
+			years_passed > 160
+		}
+		modifier = {
+			factor = 2
+			years_passed > 180
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				has_megastructure = think_tank_3
+				has_megastructure = think_tank_4
+				has_megastructure = think_tank_restored
+			}	
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}	
+	
+	ai_weight = {
+		factor = 3 # rush component!
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					has_ethic = ethic_materialist
+					has_ethic = ethic_fanatic_materialist
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			years_passed < 140
+		}
+		modifier = {
+			factor = 1.25
+			years_passed > 160
+		}
+		modifier = {
+			factor = 2
+			years_passed > 180
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				has_megastructure = think_tank_3
+				has_megastructure = think_tank_4
+				has_megastructure = think_tank_restored
+			}	
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+}
+
+#Synth Shield Array IX
+tech_c_shields_synth_9 = {
+	area = physics
+	cost = @tier4cost3
+	tier = 3
+	is_rare = yes
+	category = { field_manipulation }
+	ai_update_type = military
+	prerequisites = { "tech_c_shields_synth_8" }
+	weight = @tier3weight4
+	
+	modifier = {
+		planet_fortification_strength = 0.2
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					has_ethic = ethic_materialist
+					has_ethic = ethic_fanatic_materialist
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			years_passed < 160
+		}
+		modifier = {
+			factor = 1.25
+			years_passed > 180
+		}
+		modifier = {
+			factor = 2
+			years_passed > 200
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				has_megastructure = think_tank_3
+				has_megastructure = think_tank_4
+				has_megastructure = think_tank_restored
+			}	
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}	
+	
+	ai_weight = {
+		factor = 3 # rush component!
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					has_ethic = ethic_materialist
+					has_ethic = ethic_fanatic_materialist
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			years_passed < 160
+		}
+		modifier = {
+			factor = 1.25
+			years_passed > 180
+		}
+		modifier = {
+			factor = 2
+			years_passed > 200
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				has_megastructure = think_tank_3
+				has_megastructure = think_tank_4
+				has_megastructure = think_tank_restored
+			}	
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+}
+
+#Synth Shield Array X
+tech_c_shields_synth_10 = {
+	area = physics
+	cost = @tier4cost4
+	tier = 3
+	is_rare = yes
+	is_dangerous = yes
+	category = { field_manipulation }
+	ai_update_type = military
+	prerequisites = { "tech_c_shields_synth_9" }
+	weight = @tier3weight4
+	
+	is_reverse_engineerable = no
+	
+	modifier = {
+		planet_fortification_strength = 0.2
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					has_ethic = ethic_materialist
+					has_ethic = ethic_fanatic_materialist
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			years_passed < 180
+		}
+		modifier = {
+			factor = 1.25
+			years_passed > 200
+		}
+		modifier = {
+			factor = 2.5
+			years_passed > 220
+		}
+		modifier = {
+			factor = 5
+			years_passed > 240
+		}
+		modifier = {
+			factor = 0
+			AND = {
+				host_has_dlc = "Utopia"
+				NOT = {
+					OR = {
+						has_megastructure = think_tank_3
+						has_megastructure = think_tank_4
+						has_megastructure = think_tank_restored
+					}	
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}	
+	
+	ai_weight = {
+		factor = 3 # rush component!
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					has_ethic = ethic_materialist
+					has_ethic = ethic_fanatic_materialist
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			years_passed < 180
+		}
+		modifier = {
+			factor = 1.25
+			years_passed > 200
+		}
+		modifier = {
+			factor = 2.5
+			years_passed > 220
+		}
+		modifier = {
+			factor = 5
+			years_passed > 240
+		}
+		modifier = {
+			factor = 5
+			OR = {
+				has_megastructure = think_tank_3
+				has_megastructure = think_tank_4
+				has_megastructure = think_tank_restored
+			}	
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_field_manipulation"
+			}
+		}
+	}
+}
+

@@ -1,0 +1,77 @@
+#All traits are property, owned, and created by Snowyamur alone, unless specified otherwise. Copyright© Snowyamur 2016-2017
+# All leaders will have a common trait-point value set in defines, which they use to grab traits
+
+# leader_trait = yes - this tags the trait as a leader-trait and not a species-trait
+# initial = no - if set to no, this trait can not be granted to leaders when they are generated
+# leader_class = { admiral scientist }  -- OR  - if not set, it can be given to all leader-types except Rulers
+# requires_traits = { trait_psionic } -- AND - leader-trait can only be randomly given on generation if the leaders species has this trait
+# requires_governments = { despotic_hegemony ai_overlordship } -- OR - leader-trait can only be randomly given on generation if the Empire has this type of government form
+# prerequisites = { tech_psionic_theory } - AND - leader-trait can only be given if the technology specified has been researched by the Empire
+
+##############################
+# Snowyamur Governor Traits  #
+##############################
+
+leader_trait_snowyamur_motivated_excavator = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_snowyamur_motivated_excavator.dds"
+	modifier = {
+		planet_clear_blocker_cost_mult = -0.30
+		planet_clear_blocker_time_mult = -0.15
+	}
+	leader_trait = yes
+	leader_class = { governor }
+}
+
+leader_trait_snowyamur_foundation_expert = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_snowyamur_foundation_expert.dds"
+	modifier = {
+		planet_building_cost_mult = -0.15
+		planet_building_upkeep_mult = -0.20
+	}
+	leader_trait = yes
+	leader_class = { governor }
+}
+
+leader_trait_snowyamur_rejuvenating_intelligence = {
+	cost = 2
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_snowyamur_rejuvenating_intelligence.dds"
+	modifier = {
+		leader_skill_levels = 2
+		leader_age = 30
+	}
+	leader_trait = yes
+	leader_class = { governor }
+}
+
+leader_trait_snowyamur_watchful = {
+	cost = 1
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_snowyamur_watchful.dds"
+	modifier = {
+		tile_resource_energy_mult = 0.20
+		tile_resource_minerals_mult = 0.20
+		tile_resource_food_mult = 0.20
+		pop_happiness = -0.10
+	}
+	leader_trait = yes
+	leader_class = { governor }
+}
+
+leader_trait_snowyamur_tyrhallow_vigilance = {
+	cost = 3
+	modification = no
+	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_snowyamur_tyrhallow_vigilance.dds"
+	modifier = {
+		ship_upkeep_mult = -0.30
+		planet_fortification_strength = 0.80
+		planet_army_build_speed_mult = 0.50
+		planet_ship_build_speed_mult = 0.40
+	}
+	leader_trait = yes
+	leader_class = { governor }
+}

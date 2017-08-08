@@ -1,0 +1,78 @@
+# ####################
+#  Energy Torpedoes
+# ####################
+
+# ## Energy Torpedoes
+weapon_component_template = {
+	key = "C_TORP_ENERGY_TORPEDO_3"
+	size = torpedo
+	entity = "turret_energy_torpedo_entity"
+	type = instant
+	
+	icon = "GFX_C_ship_part_energy_torpedo_3"
+	icon_frame = 1
+	
+	prerequisites = { "tech_c_energy_torpedoes_3" }
+	component_set = "C_ENERGY_TORPEDO_3"
+	projectile_gfx = "proton_torpedoes"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_shield }
+	upgrades_to = "C_TORP_ENERGY_TORPEDO_4"
+	
+	damage = { min = 216 max = 396 }
+	windup = { min = 2 max = 23 }
+	total_fire_time = 200
+	range = 90.0
+	accuracy = 0.90
+	shield_damage = 3.00
+	power = -80
+	cost = 80
+	
+	target_weights = {
+		npc_warship_01 = 5000
+		space_dragon_baby = 5000	
+		massive_ship_fallen_empire = 5000
+		large_ship_fallen_empire = 5000	
+		battleship = 5000
+		cruiser = 2500
+		destroyer = 1000
+		small_ship_fallen_empire = 1000	
+	}
+	upgrades_to = "C_TORP_ENERGY_TORPEDO_4"
+}
+
+weapon_component_template = {
+	key = "C_TORP_ENERGY_TORPEDO_4"
+	size = torpedo
+	entity = "turret_energy_torpedo_entity"
+	type = instant
+	
+	icon = "GFX_C_ship_part_energy_torpedo_4"
+	icon_frame = 1
+	
+	prerequisites = { "tech_c_energy_torpedoes_4" }
+	component_set = "C_ENERGY_TORPEDO_4"
+	projectile_gfx = "neutron_torpedoes"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_shield }
+	
+	damage = { min = 259.2 max = 442.8 }
+	windup = { min = 2 max = 23 }
+	total_fire_time = 200
+	range = 110.0
+	accuracy = 0.90
+	shield_damage = 3.00
+	power = -100
+	cost = 100
+	
+	target_weights = {
+		npc_warship_01 = 5000
+		space_dragon_baby = 5000	
+		massive_ship_fallen_empire = 5000
+		large_ship_fallen_empire = 5000	
+		battleship = 5000
+		cruiser = 2500
+		destroyer = 1000
+		small_ship_fallen_empire = 1000	
+	}
+}

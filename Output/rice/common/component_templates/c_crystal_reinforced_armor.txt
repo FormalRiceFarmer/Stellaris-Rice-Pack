@@ -1,0 +1,369 @@
+
+#############
+#	COST	#
+#############
+
+@cost_6S = 12
+@cost_6M = 24
+@cost_6L = 48
+
+@cost_7S = 14
+@cost_7M = 28
+@cost_7L = 56
+
+@cost_8S = 16
+@cost_8M = 32
+@cost_8L = 64
+
+@cost_9S = 18
+@cost_9M = 36
+@cost_9L = 72
+
+@cost_10S = 20
+@cost_10M = 40
+@cost_10L = 80
+
+#############
+#	ARMOR	#
+#############
+
+@armor_6S = 5
+@armor_6M = 10
+@armor_6L = 20
+
+@armor_7S = 5.5
+@armor_7M = 11
+@armor_7L = 22
+
+@armor_8S = 6
+@armor_8M = 12
+@armor_8L = 24
+
+@armor_9S = 6.5
+@armor_9M = 13
+@armor_9L = 26
+
+@armor_10S = 7
+@armor_10M = 14
+@armor_10L = 28
+
+#############
+#	REGEN	#
+#############
+
+@regen_6S = 0.002
+@regen_6M = 0.004
+@regen_6L = 0.008
+
+@regen_7S = 0.004
+@regen_7M = 0.008
+@regen_7L = 0.016
+
+@regen_8S = 0.006
+@regen_8M = 0.012
+@regen_8L = 0.024
+
+@regen_9S = 0.008
+@regen_9M = 0.016
+@regen_9L = 0.032
+
+@regen_10S = 0.01
+@regen_10M = 0.02
+@regen_10L = 0.04
+
+#############
+#	hp		#
+#############
+
+@hp_S6 = 10
+@hp_M6 = 20
+@hp_L6 = 40
+
+@hp_S7 = 20
+@hp_M7 = 40
+@hp_L7 = 80
+
+@hp_S8 = 30
+@hp_M8 = 60
+@hp_L8 = 120
+
+@hp_S9 = 40
+@hp_M9 = 80
+@hp_L9 = 160
+
+@hp_S10 = 50
+@hp_M10 = 100
+@hp_L10 = 200
+
+
+# Plasteel Armor
+utility_component_template = {
+	key = "C_SMALL_ARMOR_6"
+	size = small
+	icon = "GFX_C_ship_part_armor_6"
+	icon_frame = 1
+	power = 0
+	cost = @cost_6S
+	armor_value = @armor_6S
+	
+	modifier = {
+		ship_hitpoints_add = @hp_S6
+	}
+	
+	prerequisites = { "tech_c_ship_armor_6" }
+	component_set = "C_ARMOR_6"
+	upgrades_to = "C_SMALL_ARMOR_7"
+}
+
+utility_component_template = {
+	key = "C_MEDIUM_ARMOR_6"
+	size = medium
+	icon = "GFX_C_ship_part_armor_6"
+	icon_frame = 1
+	power = 0
+	cost = @cost_6M
+	armor_value = @armor_6M
+	
+	modifier = {
+		ship_hitpoints_add = @hp_M6
+	}
+	
+	prerequisites = { "tech_c_ship_armor_6" }
+	component_set = "C_ARMOR_6"
+	upgrades_to = "C_MEDIUM_ARMOR_7"
+}
+
+utility_component_template = {
+	key = "C_LARGE_ARMOR_6"
+	size = large
+	icon = "GFX_C_ship_part_armor_6"
+	icon_frame = 1
+	power = 0
+	cost = @cost_6L
+	armor_value = @armor_6L
+	
+	modifier = {
+		ship_hitpoints_add = @hp_L6
+	}
+	
+	prerequisites = { "tech_c_ship_armor_6" }
+	component_set = "C_ARMOR_6"
+	upgrades_to = "C_LARGE_ARMOR_7"
+}
+
+# Durasteel Armor
+utility_component_template = {
+	key = "C_SMALL_ARMOR_7"
+	size = small
+	icon = "GFX_C_ship_part_armor_7"
+	icon_frame = 1
+	power = 0
+	cost = @cost_7S
+	armor_value = @armor_7S
+	
+	modifier = {
+		ship_hitpoints_add = @hp_S7
+	}
+	
+	prerequisites = { "tech_c_ship_armor_7" }
+	component_set = "C_ARMOR_7"
+	upgrades_to = "C_SMALL_ARMOR_8"
+}
+
+utility_component_template = {
+	key = "C_MEDIUM_ARMOR_7"
+	size = medium
+	icon = "GFX_C_ship_part_armor_7"
+	icon_frame = 1
+	power = 0
+	cost = @cost_7M
+	armor_value = @armor_7M
+	
+	modifier = {
+		ship_hitpoints_add = @hp_M7
+	}
+	
+	prerequisites = { "tech_c_ship_armor_7" }
+	component_set = "C_ARMOR_7"
+	upgrades_to = "C_MEDIUM_ARMOR_8"
+}
+
+utility_component_template = {
+	key = "C_LARGE_ARMOR_7"
+	size = large
+	icon = "GFX_C_ship_part_armor_7"
+	icon_frame = 1
+	power = 0
+	cost = @cost_7L
+	armor_value = @armor_7L
+	
+	modifier = {
+		ship_hitpoints_add = @hp_L7
+	}
+	
+	prerequisites = { "tech_c_ship_armor_7" }
+	component_set = "C_ARMOR_7"
+	upgrades_to = "C_LARGE_ARMOR_8"
+}
+
+# Ceramo-Metal Armor
+utility_component_template = {
+	key = "C_SMALL_ARMOR_8"
+	size = small
+	icon = "GFX_C_ship_part_armor_8"
+	icon_frame = 1
+	power = 0
+	cost = @cost_8S
+	armor_value = @armor_8S
+	
+	modifier = {
+		ship_hitpoints_add = @hp_S8
+	}
+	
+	prerequisites = { "tech_c_ship_armor_8" }
+	component_set = "C_ARMOR_8"
+	upgrades_to = "C_SMALL_ARMOR_9"
+}
+
+utility_component_template = {
+	key = "C_MEDIUM_ARMOR_8"
+	size = medium
+	icon = "GFX_C_ship_part_armor_8"
+	icon_frame = 1
+	power = 0
+	cost = @cost_8M
+	armor_value = @armor_8M
+	
+	modifier = {
+		ship_hitpoints_add = @hp_M8
+	}
+	
+	prerequisites = { "tech_c_ship_armor_8" }
+	component_set = "C_ARMOR_8"
+	upgrades_to = "C_MEDIUM_ARMOR_9"
+}
+
+utility_component_template = {
+	key = "C_LARGE_ARMOR_8"
+	size = large
+	icon = "GFX_C_ship_part_armor_8"
+	icon_frame = 1
+	power = 0
+	cost = @cost_8L
+	armor_value = @armor_8L
+	
+	modifier = {
+		ship_hitpoints_add = @hp_L8
+	}
+	
+	prerequisites = { "tech_c_ship_armor_8" }
+	component_set = "C_ARMOR_8"
+	upgrades_to = "C_LARGE_ARMOR_9"
+}
+
+# Nanocomposite Armor
+utility_component_template = {
+	key = "C_SMALL_ARMOR_9"
+	size = small
+	icon = "GFX_C_ship_part_armor_9"
+	icon_frame = 1
+	power = 0
+	cost = @cost_9S
+	armor_value = @armor_9S
+	
+	modifier = {
+		ship_hitpoints_add = @hp_S9
+	}
+	
+	prerequisites = { "tech_c_ship_armor_9" }
+	component_set = "C_ARMOR_9"
+	upgrades_to = "C_SMALL_ARMOR_10"
+}
+
+utility_component_template = {
+	key = "C_MEDIUM_ARMOR_9"
+	size = medium
+	icon = "GFX_C_ship_part_armor_9"
+	icon_frame = 1
+	power = 0
+	cost = @cost_9M
+	armor_value = @armor_9M
+	
+	modifier = {
+		ship_hitpoints_add = @hp_M9
+	}
+	
+	prerequisites = { "tech_c_ship_armor_9" }
+	component_set = "C_ARMOR_9"
+	upgrades_to = "C_MEDIUM_ARMOR_10"
+}
+
+utility_component_template = {
+	key = "C_LARGE_ARMOR_9"
+	size = large
+	icon = "GFX_C_ship_part_armor_9"
+	icon_frame = 1
+	power = 0
+	cost = @cost_9L
+	armor_value = @armor_9L
+	
+	modifier = {
+		ship_hitpoints_add = @hp_L9
+	}
+	
+	prerequisites = { "tech_c_ship_armor_9" }
+	component_set = "C_ARMOR_9"
+	upgrades_to = "C_LARGE_ARMOR_10"
+}
+
+# Neutronium Armor
+utility_component_template = {
+	key = "C_SMALL_ARMOR_10"
+	size = small
+	icon = "GFX_C_ship_part_armor_10"
+	icon_frame = 1
+	power = 0
+	cost = @cost_10S
+	armor_value = @armor_10S
+	
+	modifier = {
+		ship_hitpoints_add = @hp_S10
+	}
+	
+	prerequisites = { "tech_c_ship_armor_10" }
+	component_set = "C_ARMOR_10"
+}
+
+utility_component_template = {
+	key = "C_MEDIUM_ARMOR_10"
+	size = medium
+	icon = "GFX_C_ship_part_armor_10"
+	icon_frame = 1
+	power = 0
+	cost = @cost_10M
+	armor_value = @armor_10M
+	
+	modifier = {
+		ship_hitpoints_add = @hp_M10
+	}
+	
+	prerequisites = { "tech_c_ship_armor_10" }
+	component_set = "C_ARMOR_10"
+}
+
+utility_component_template = {
+	key = "C_LARGE_ARMOR_10"
+	size = large
+	icon = "GFX_C_ship_part_armor_10"
+	icon_frame = 1
+	power = 0
+	cost = @cost_10L
+	armor_value = @armor_10L
+	
+	modifier = {
+		ship_hitpoints_add = @hp_L10
+	}
+	
+	prerequisites = { "tech_c_ship_armor_10" }
+	component_set = "C_ARMOR_10"
+}

@@ -1,0 +1,179 @@
+# ####################
+#  Laser
+# ####################
+
+### Laser 6
+weapon_component_template = {
+	key = "C_SMALL_LASER_6"
+	size = small
+	entity = "small_laser_gun_entity"
+	type = instant
+	
+	damage = { min = 30.4 max = 41.6 } #+4 +8
+	windup = { min = 2 max = 23 }
+	total_fire_time = 50
+	range = 30.0
+	accuracy = 0.90
+	tracking = 0.60
+	armor_penetration = 0.15
+	shield_damage = 0.80
+	power = -15
+	cost = 15
+	
+	icon = "GFX_C_ship_part_laser_6"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+	
+	prerequisites = { "tech_c_lasers_6" }
+	component_set = "C_LASER_6"
+	projectile_gfx = "c_laser_6_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	
+	upgrades_to = "C_SMALL_LASER_7"
+}
+
+weapon_component_template = {
+	key = "C_MEDIUM_LASER_6"
+	size = medium
+	entity = "medium_laser_gun_entity"
+	type = instant
+	
+	damage = { min = 53.6 max = 95.2 } #+8 +16
+	windup = { min = 2 max = 23 }
+	total_fire_time = 50
+	range = 50.0
+	accuracy = 0.85
+	tracking = 0.30
+	armor_penetration = 0.30
+	shield_damage = 0.80
+	power = -30
+	cost = 30
+	
+	icon = "GFX_C_ship_part_laser_6"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+	
+	prerequisites = { "tech_c_lasers_6" }
+	component_set = "C_LASER_6"
+	projectile_gfx = "c_laser_6_m"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	
+	upgrades_to = "C_MEDIUM_LASER_7"
+}
+
+weapon_component_template = {
+	key = "C_LARGE_LASER_6"
+	size = large
+	entity = "large_laser_gun_entity"
+	type = instant
+	
+	damage = { min = 116.8	max = 202.4 } #+16 +32
+	windup = { min = 2 max = 23 }
+	total_fire_time = 50
+	range = 70.0
+	accuracy = 0.80
+	tracking = 0.05
+	armor_penetration = 0.60
+	shield_damage = 0.80
+	power = -60
+	cost = 60
+	
+	icon = "GFX_C_ship_part_laser_6"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+	
+	prerequisites = { "tech_c_lasers_6" }
+	component_set = "C_LASER_6"
+	projectile_gfx = "c_laser_6_l"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	
+	upgrades_to = "C_LARGE_LASER_7"
+}
+
+### Laser 7
+weapon_component_template = {
+	key = "C_SMALL_LASER_7"
+	size = small
+	entity = "small_laser_gun_entity"
+	type = instant
+	
+	damage = { min = 36.4 max = 48.4 } #+4 +8
+	windup = { min = 2 max = 23 }
+	total_fire_time = 50
+	range = 30.0
+	accuracy = 0.90
+	tracking = 0.60
+	armor_penetration = 0.15
+	shield_damage = 0.80
+	power = -17.5
+	cost = 17.5
+	
+	icon = "GFX_C_ship_part_laser_7"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+	
+	prerequisites = { "tech_c_lasers_7" }
+	component_set = "C_LASER_7"
+	projectile_gfx = "c_laser_7_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+}
+
+weapon_component_template = {
+	key = "C_MEDIUM_LASER_7"
+	size = medium
+	entity = "medium_laser_gun_entity"
+	type = instant
+	
+	damage = { min = 62.8 max = 111 } #+8 +16
+	windup = { min = 2 max = 23 }
+	total_fire_time = 50
+	range = 50.0
+	accuracy = 0.85
+	tracking = 0.30
+	armor_penetration = 0.30
+	shield_damage = 0.80
+	power = -35
+	cost = 35
+	
+	icon = "GFX_C_ship_part_laser_7"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+	
+	prerequisites = { "tech_c_lasers_7" }
+	component_set = "C_LASER_7"
+	projectile_gfx = "c_laser_7_m"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+}
+
+weapon_component_template = {
+	key = "C_LARGE_LASER_7"
+	size = large
+	entity = "large_laser_gun_entity"
+	type = instant
+	
+	damage = { min = 137 max = 236.4 } #+16 +32
+	windup = { min = 2 max = 23 }
+	total_fire_time = 50
+	range = 70.0
+	accuracy = 0.80
+	tracking = 0.05
+	armor_penetration = 0.60
+	shield_damage = 0.80
+	power = -70
+	cost = 70
+	
+	icon = "GFX_C_ship_part_laser_7"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+	
+	prerequisites = { "tech_c_lasers_7" }
+	component_set = "C_LASER_7"
+	projectile_gfx = "c_laser_7_l"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+}

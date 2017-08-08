@@ -1,0 +1,179 @@
+# ####################
+#  Plasma
+# ####################
+
+# ## Plasma 4
+weapon_component_template = {
+	key = "C_SMALL_PLASMA_4"
+	size = small
+	entity = "small_laser_gun_entity"
+	type = instant
+	
+	damage = { min = 26.4 max = 45.6 }
+	windup = { min = 2 max = 25 }
+	total_fire_time = 60
+	range = 40.0
+	accuracy = 0.85
+	tracking = 0.40
+	armor_penetration = 0.60
+	shield_damage = 0.80
+	power = -15
+	cost = 15
+	
+	icon = "GFX_C_ship_part_plasma_4"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+	
+	prerequisites = { "tech_c_plasma_4" }
+	component_set = "C_PLASMA_4"
+	projectile_gfx = "c_plasma_4_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	
+	upgrades_to = "C_SMALL_PLASMA_5"
+}
+
+weapon_component_template = {
+	key = "C_MEDIUM_PLASMA_4"
+	size = medium
+	entity = "medium_laser_gun_entity"
+	type = instant
+	
+	damage = { min = 57.6 max = 91.2 }
+	windup = { min = 2 max = 25 }
+	total_fire_time = 60
+	range = 60.0
+	accuracy = 0.80
+	tracking = 0.20
+	armor_penetration = 0.80
+	shield_damage = 0.80
+	power = -30
+	cost = 30
+	
+	icon = "GFX_C_ship_part_plasma_4"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+	
+	prerequisites = { "tech_c_plasma_4" }
+	component_set = "C_PLASMA_4"
+	projectile_gfx = "c_plasma_4_m"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	
+	upgrades_to = "C_MEDIUM_PLASMA_5"
+}
+
+weapon_component_template = {
+	key = "C_LARGE_PLASMA_4"
+	size = large
+	entity = "large_laser_gun_entity"
+	type = instant
+	
+	damage = { min = 115.2 max = 199.2 }
+	windup = { min = 2 max = 25 }
+	total_fire_time = 60
+	range = 80.0
+	accuracy = 0.75
+	tracking = 0.05
+	armor_penetration = 0.90
+	shield_damage = 0.80
+	power = -60
+	cost = 60
+	
+	icon = "GFX_C_ship_part_plasma_4"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+	
+	prerequisites = { "tech_c_plasma_4" }
+	component_set = "C_PLASMA_4"
+	projectile_gfx = "c_plasma_4_l"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+	
+	upgrades_to = "C_LARGE_PLASMA_5"
+}
+
+# ## Plasma 5
+weapon_component_template = {
+	key = "C_SMALL_PLASMA_5"
+	size = small
+	entity = "small_laser_gun_entity"
+	type = instant
+	
+	damage = { min = 31.6 max = 54.8 }
+	windup = { min = 2 max = 25 }
+	total_fire_time = 60
+	range = 40.0
+	accuracy = 0.85
+	tracking = 0.40
+	armor_penetration = 0.60
+	shield_damage = 0.80
+	power = -17.50
+	cost = 17.50
+	
+	icon = "GFX_C_ship_part_plasma_5"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+	
+	prerequisites = { "tech_c_plasma_5" }
+	component_set = "C_PLASMA_5"
+	projectile_gfx = "c_plasma_5_s"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+}
+
+weapon_component_template = {
+	key = "C_MEDIUM_PLASMA_5"
+	size = medium
+	entity = "medium_laser_gun_entity"
+	type = instant
+	
+	damage = { min = 69.2 max = 109.4 }
+	windup = { min = 2 max = 25 }
+	total_fire_time = 60
+	range = 60.0
+	accuracy = 0.80
+	tracking = 0.20
+	armor_penetration = 0.80
+	shield_damage = 0.80
+	power = -35
+	cost = 35
+	
+	icon = "GFX_C_ship_part_plasma_5"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+	
+	prerequisites = { "tech_c_plasma_5" }
+	component_set = "C_PLASMA_5"
+	projectile_gfx = "c_plasma_5_m"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+}
+
+weapon_component_template = {
+	key = "C_LARGE_PLASMA_5"
+	size = large
+	entity = "large_laser_gun_entity"
+	type = instant
+	
+	damage = { min = 138.2 max = 239 }
+	windup = { min = 2 max = 25 }
+	total_fire_time = 60
+	range = 80.0
+	accuracy = 0.75
+	tracking = 0.05
+	armor_penetration = 0.90
+	shield_damage = 0.80
+	power = -70
+	cost = 70
+	
+	icon = "GFX_C_ship_part_plasma_5"
+	icon_frame = 1
+	#color = { 0.1 1.0 0.1 1 }
+	
+	prerequisites = { "tech_c_plasma_5" }
+	component_set = "C_PLASMA_5"
+	projectile_gfx = "c_plasma_5_l"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_anti_armor }
+}

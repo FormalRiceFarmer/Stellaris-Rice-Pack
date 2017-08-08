@@ -1,0 +1,216 @@
+utility_component_template = {
+	key = "POWAH_REACTOR_40_1"
+	size = small
+	icon = "GFX_ship_part_reactor_1"
+	icon_frame = 1
+	cost = 100
+	power = 200
+	ai_weight = { weight = 1 }
+	size_restriction = {  battleship battleshipNSC Carrier st_battleship_02 st_R_battleship_02  }
+	prerequisites = { "tech_powah_1" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_40_2"
+	size = small
+	icon = "GFX_ship_part_reactor_2"
+	icon_frame = 1
+	cost = 200
+	power = 300
+	ai_weight = { weight = 2 }
+	size_restriction = {  battleship battleshipNSC Carrier st_battleship_02 st_R_battleship_02  }
+	prerequisites = { "tech_powah_2" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_40_3"
+	size = small
+	icon = "GFX_ship_part_reactor_3"
+	icon_frame = 1
+	cost = 300
+	power = 400
+	ai_weight = { weight = 3 }
+	size_restriction = {  battleship battleshipNSC Carrier st_battleship_02 st_R_battleship_02  }
+	prerequisites = { "tech_powah_3" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_40_4"
+	size = small
+	icon = "GFX_ship_part_reactor_4"
+	icon_frame = 1
+	cost = 400
+	power = 500
+	ai_weight = { weight = 4 }
+	size_restriction = {  battleship battleshipNSC Carrier st_battleship_02 st_R_battleship_02  }
+	prerequisites = { "tech_powah_4" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_40_5"
+	size = small
+	icon = "GFX_ship_part_reactor_5"
+	icon_frame = 1
+	cost = 500
+	power = 600
+	ai_weight = { weight = 5 }
+	size_restriction = {  battleship battleshipNSC Carrier st_battleship_02 st_R_battleship_02  }
+	prerequisites = { "tech_powah_5" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_40_6"
+	size = small
+	icon = "GFX_ship_part_reactor_r6"
+	icon_frame = 1
+	cost = 610
+	power = 700
+	ai_weight = { weight = 6 }
+	size_restriction = {  battleship battleshipNSC Carrier st_battleship_02 st_R_battleship_02  }
+	prerequisites = { "tech_fusion_power_energon" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_40_7"
+	size = small
+	icon = "GFX_ship_part_reactor_nhsc_6"
+	icon_frame = 1
+	cost = 600
+	power = 700
+	ai_weight = { weight = 7 }
+	size_restriction = {  battleship battleshipNSC Carrier st_battleship_02 st_R_battleship_02  }
+	prerequisites = { "nhsc_tech_advzeropointreactor_1_fake" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_40_8"
+	size = small
+	icon = "GFX_ship_part_enigmatic_power_core"
+	icon_frame = 1
+	cost = 600
+	power = 700
+	ai_weight = { weight = 8 }
+	size_restriction = {  battleship battleshipNSC Carrier st_battleship_02 st_R_battleship_02  }
+	prerequisites = { "tech_powah_6" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_40_9"
+	size = small
+	icon = "GFX_ship_part_reactor_r7"
+	icon_frame = 1
+	cost = 700
+	power = 800
+	ai_weight = { weight = 9 }
+	size_restriction = {  battleship battleshipNSC Carrier st_battleship_02 st_R_battleship_02  }
+	prerequisites = { "tech_antimatter_power_optimized" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_40_10"
+	size = small
+	icon = "GFX_ship_part_reactor_nhsc_7"
+	icon_frame = 1
+	cost = 800
+	power = 900
+	ai_weight = { weight = 10 }
+	size_restriction = {  battleship battleshipNSC Carrier st_battleship_02 st_R_battleship_02  }
+	prerequisites = { "nhsc_tech_advzeropointreactor_2_fake" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_40_11"
+	size = small
+	icon = "GFX_ship_part_reactor_r8"
+	icon_frame = 1
+	cost = 800
+	power = 900
+	ai_weight = { weight = 11 }
+	size_restriction = {  battleship battleshipNSC Carrier st_battleship_02 st_R_battleship_02  }
+	prerequisites = { "tech_darkmatter_power" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_40_12"
+	size = small
+	icon = "GFX_ship_part_reactor_r9"
+	icon_frame = 1
+	cost = 900
+	power = 1000
+	ai_weight = { weight = 12 }
+	size_restriction = {  battleship battleshipNSC Carrier st_battleship_02 st_R_battleship_02  }
+	prerequisites = { "tech_darkmatter_power_optimized" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_40_13"
+	size = small
+	icon = "GFX_ship_part_nhsc_enigmatic_core_2"
+	icon_frame = 1
+	cost = 900
+	power = 1000
+	ai_weight = { weight = 13 }
+	size_restriction = {  battleship battleshipNSC Carrier st_battleship_02 st_R_battleship_02  }
+	prerequisites = { "nhsc_tech_enigmatic_power_2_fake" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_40_14"
+	size = small
+	icon = "GFX_ship_part_reactor_adv_zero_point_power"
+	icon_frame = 1
+	cost = 900
+	power = 1000
+	ai_weight = { weight = 14 }
+	size_restriction = {  battleship battleshipNSC Carrier st_battleship_02 st_R_battleship_02  }
+	prerequisites = { "tech_adv_zero_point_power_fake" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_40_15"
+	size = small
+	icon = "GFX_ship_part_reactor_nhsc_8"
+	icon_frame = 1
+	cost = 990
+	power = 1100
+	ai_weight = { weight = 15 }
+	size_restriction = {  battleship battleshipNSC Carrier st_battleship_02 st_R_battleship_02  }
+	prerequisites = { "nhsc_tech_advzeropointreactor_3_fake" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_40_16"
+	size = small
+	icon = "GFX_ship_part_reactor_r10"
+	icon_frame = 1
+	cost = 1100
+	power = 1200
+	ai_weight = { weight = 16 }
+	size_restriction = {  battleship battleshipNSC Carrier st_battleship_02 st_R_battleship_02  }
+	prerequisites = { "tech_singularity_power" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_40_17"
+	size = small
+	icon = "GFX_ship_part_reactor_r11"
+	icon_frame = 1
+	cost = 1400
+	power = 1500
+	ai_weight = { weight = 17 }
+	size_restriction = {  battleship battleshipNSC Carrier st_battleship_02 st_R_battleship_02  }
+	prerequisites = { "tech_tachyon_power" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_40_18"
+	size = small
+	icon = "GFX_ship_part_reactor_r12"
+	icon_frame = 1
+	cost = 1600
+	power = 1700
+	ai_weight = { weight = 18 }
+	size_restriction = {  battleship battleshipNSC Carrier st_battleship_02 st_R_battleship_02  }
+	prerequisites = { "tech_wimp_power" }
+	component_set = "powerstation_components"
+}

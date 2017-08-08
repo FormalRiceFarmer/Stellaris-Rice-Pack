@@ -1,0 +1,216 @@
+utility_component_template = {
+	key = "POWAH_REACTOR_24_1"
+	size = small
+	icon = "GFX_ship_part_reactor_1"
+	icon_frame = 1
+	cost = 60
+	power = 120
+	ai_weight = { weight = 1 }
+	size_restriction = {  cruiser cruiserNSC rs_support_cruiser rs_ea_cruiser st_R_Carrier_01 st_R_Cruiser_02 st_R_Cruiser_01 LightCarrier st_Carrier_01 st_Cruiser_01 st_Cruiser_02  }
+	prerequisites = { "tech_powah_1" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_24_2"
+	size = small
+	icon = "GFX_ship_part_reactor_2"
+	icon_frame = 1
+	cost = 120
+	power = 180
+	ai_weight = { weight = 2 }
+	size_restriction = {  cruiser cruiserNSC rs_support_cruiser rs_ea_cruiser st_R_Carrier_01 st_R_Cruiser_02 st_R_Cruiser_01 LightCarrier st_Carrier_01 st_Cruiser_01 st_Cruiser_02  }
+	prerequisites = { "tech_powah_2" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_24_3"
+	size = small
+	icon = "GFX_ship_part_reactor_3"
+	icon_frame = 1
+	cost = 180
+	power = 240
+	ai_weight = { weight = 3 }
+	size_restriction = {  cruiser cruiserNSC rs_support_cruiser rs_ea_cruiser st_R_Carrier_01 st_R_Cruiser_02 st_R_Cruiser_01 LightCarrier st_Carrier_01 st_Cruiser_01 st_Cruiser_02  }
+	prerequisites = { "tech_powah_3" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_24_4"
+	size = small
+	icon = "GFX_ship_part_reactor_4"
+	icon_frame = 1
+	cost = 240
+	power = 300
+	ai_weight = { weight = 4 }
+	size_restriction = {  cruiser cruiserNSC rs_support_cruiser rs_ea_cruiser st_R_Carrier_01 st_R_Cruiser_02 st_R_Cruiser_01 LightCarrier st_Carrier_01 st_Cruiser_01 st_Cruiser_02  }
+	prerequisites = { "tech_powah_4" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_24_5"
+	size = small
+	icon = "GFX_ship_part_reactor_5"
+	icon_frame = 1
+	cost = 300
+	power = 360
+	ai_weight = { weight = 5 }
+	size_restriction = {  cruiser cruiserNSC rs_support_cruiser rs_ea_cruiser st_R_Carrier_01 st_R_Cruiser_02 st_R_Cruiser_01 LightCarrier st_Carrier_01 st_Cruiser_01 st_Cruiser_02  }
+	prerequisites = { "tech_powah_5" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_24_6"
+	size = small
+	icon = "GFX_ship_part_reactor_r6"
+	icon_frame = 1
+	cost = 370
+	power = 420
+	ai_weight = { weight = 6 }
+	size_restriction = {  cruiser cruiserNSC rs_support_cruiser rs_ea_cruiser st_R_Carrier_01 st_R_Cruiser_02 st_R_Cruiser_01 LightCarrier st_Carrier_01 st_Cruiser_01 st_Cruiser_02  }
+	prerequisites = { "tech_fusion_power_energon" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_24_7"
+	size = small
+	icon = "GFX_ship_part_reactor_nhsc_6"
+	icon_frame = 1
+	cost = 360
+	power = 420
+	ai_weight = { weight = 7 }
+	size_restriction = {  cruiser cruiserNSC rs_support_cruiser rs_ea_cruiser st_R_Carrier_01 st_R_Cruiser_02 st_R_Cruiser_01 LightCarrier st_Carrier_01 st_Cruiser_01 st_Cruiser_02  }
+	prerequisites = { "nhsc_tech_advzeropointreactor_1_fake" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_24_8"
+	size = small
+	icon = "GFX_ship_part_enigmatic_power_core"
+	icon_frame = 1
+	cost = 360
+	power = 420
+	ai_weight = { weight = 8 }
+	size_restriction = {  cruiser cruiserNSC rs_support_cruiser rs_ea_cruiser st_R_Carrier_01 st_R_Cruiser_02 st_R_Cruiser_01 LightCarrier st_Carrier_01 st_Cruiser_01 st_Cruiser_02  }
+	prerequisites = { "tech_powah_6" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_24_9"
+	size = small
+	icon = "GFX_ship_part_reactor_r7"
+	icon_frame = 1
+	cost = 415
+	power = 480
+	ai_weight = { weight = 9 }
+	size_restriction = {  cruiser cruiserNSC rs_support_cruiser rs_ea_cruiser st_R_Carrier_01 st_R_Cruiser_02 st_R_Cruiser_01 LightCarrier st_Carrier_01 st_Cruiser_01 st_Cruiser_02  }
+	prerequisites = { "tech_antimatter_power_optimized" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_24_10"
+	size = small
+	icon = "GFX_ship_part_reactor_nhsc_7"
+	icon_frame = 1
+	cost = 480
+	power = 540
+	ai_weight = { weight = 10 }
+	size_restriction = {  cruiser cruiserNSC rs_support_cruiser rs_ea_cruiser st_R_Carrier_01 st_R_Cruiser_02 st_R_Cruiser_01 LightCarrier st_Carrier_01 st_Cruiser_01 st_Cruiser_02  }
+	prerequisites = { "nhsc_tech_advzeropointreactor_2_fake" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_24_11"
+	size = small
+	icon = "GFX_ship_part_reactor_r8"
+	icon_frame = 1
+	cost = 480
+	power = 540
+	ai_weight = { weight = 11 }
+	size_restriction = {  cruiser cruiserNSC rs_support_cruiser rs_ea_cruiser st_R_Carrier_01 st_R_Cruiser_02 st_R_Cruiser_01 LightCarrier st_Carrier_01 st_Cruiser_01 st_Cruiser_02  }
+	prerequisites = { "tech_darkmatter_power" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_24_12"
+	size = small
+	icon = "GFX_ship_part_reactor_r9"
+	icon_frame = 1
+	cost = 540
+	power = 600
+	ai_weight = { weight = 12 }
+	size_restriction = {  cruiser cruiserNSC rs_support_cruiser rs_ea_cruiser st_R_Carrier_01 st_R_Cruiser_02 st_R_Cruiser_01 LightCarrier st_Carrier_01 st_Cruiser_01 st_Cruiser_02  }
+	prerequisites = { "tech_darkmatter_power_optimized" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_24_13"
+	size = small
+	icon = "GFX_ship_part_nhsc_enigmatic_core_2"
+	icon_frame = 1
+	cost = 540
+	power = 600
+	ai_weight = { weight = 13 }
+	size_restriction = {  cruiser cruiserNSC rs_support_cruiser rs_ea_cruiser st_R_Carrier_01 st_R_Cruiser_02 st_R_Cruiser_01 LightCarrier st_Carrier_01 st_Cruiser_01 st_Cruiser_02  }
+	prerequisites = { "nhsc_tech_enigmatic_power_2_fake" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_24_14"
+	size = small
+	icon = "GFX_ship_part_reactor_adv_zero_point_power"
+	icon_frame = 1
+	cost = 540
+	power = 600
+	ai_weight = { weight = 14 }
+	size_restriction = {  cruiser cruiserNSC rs_support_cruiser rs_ea_cruiser st_R_Carrier_01 st_R_Cruiser_02 st_R_Cruiser_01 LightCarrier st_Carrier_01 st_Cruiser_01 st_Cruiser_02  }
+	prerequisites = { "tech_adv_zero_point_power_fake" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_24_15"
+	size = small
+	icon = "GFX_ship_part_reactor_nhsc_8"
+	icon_frame = 1
+	cost = 600
+	power = 660
+	ai_weight = { weight = 15 }
+	size_restriction = {  cruiser cruiserNSC rs_support_cruiser rs_ea_cruiser st_R_Carrier_01 st_R_Cruiser_02 st_R_Cruiser_01 LightCarrier st_Carrier_01 st_Cruiser_01 st_Cruiser_02  }
+	prerequisites = { "nhsc_tech_advzeropointreactor_3_fake" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_24_16"
+	size = small
+	icon = "GFX_ship_part_reactor_r10"
+	icon_frame = 1
+	cost = 660
+	power = 720
+	ai_weight = { weight = 16 }
+	size_restriction = {  cruiser cruiserNSC rs_support_cruiser rs_ea_cruiser st_R_Carrier_01 st_R_Cruiser_02 st_R_Cruiser_01 LightCarrier st_Carrier_01 st_Cruiser_01 st_Cruiser_02  }
+	prerequisites = { "tech_singularity_power" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_24_17"
+	size = small
+	icon = "GFX_ship_part_reactor_r11"
+	icon_frame = 1
+	cost = 840
+	power = 900
+	ai_weight = { weight = 17 }
+	size_restriction = {  cruiser cruiserNSC rs_support_cruiser rs_ea_cruiser st_R_Carrier_01 st_R_Cruiser_02 st_R_Cruiser_01 LightCarrier st_Carrier_01 st_Cruiser_01 st_Cruiser_02  }
+	prerequisites = { "tech_tachyon_power" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_24_18"
+	size = small
+	icon = "GFX_ship_part_reactor_r12"
+	icon_frame = 1
+	cost = 960
+	power = 1020
+	ai_weight = { weight = 18 }
+	size_restriction = {  cruiser cruiserNSC rs_support_cruiser rs_ea_cruiser st_R_Carrier_01 st_R_Cruiser_02 st_R_Cruiser_01 LightCarrier st_Carrier_01 st_Cruiser_01 st_Cruiser_02  }
+	prerequisites = { "tech_wimp_power" }
+	component_set = "powerstation_components"
+}

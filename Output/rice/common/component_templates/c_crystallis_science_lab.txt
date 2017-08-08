@@ -1,0 +1,268 @@
+#############
+#	COST	#
+#############
+
+@cost_S1 = 5
+@cost_M1 = 10
+@cost_L1 = 20
+
+@cost_S2 = 10
+@cost_M2 = 20
+@cost_L2 = 40
+
+@cost_S3 = 15
+@cost_M3 = 30
+@cost_L3 = 60
+
+@cost_S4 = 20
+@cost_M4 = 40
+@cost_L4 = 80
+
+@cost_S5 = 25
+@cost_M5 = 50
+@cost_L5 = 100
+
+@cost_S6 = 30
+@cost_M6 = 60
+@cost_L6 = 120
+
+@cost_S7 = 35
+@cost_M7 = 70
+@cost_L7 = 140
+
+@cost_S8 = 40
+@cost_M8 = 80
+@cost_L8 = 160
+
+@cost_S9 = 45
+@cost_M9 = 90
+@cost_L9 = 180
+
+@cost_S10 = 50
+@cost_M10 = 100
+@cost_L10 = 200
+
+#############
+#	POWER	#
+#############
+
+@power_S1 = -5
+@power_M1 = -10
+@power_L1 = -20
+             
+@power_S2 = -7.5
+@power_M2 = -15
+@power_L2 = -30
+             
+@power_S3 = -10
+@power_M3 = -20
+@power_L3 = -40
+             
+@power_S4 = -12.5
+@power_M4 = -25
+@power_L4 = -50
+             
+@power_S5 = -15
+@power_M5 = -30
+@power_L5 = -60
+
+@power_S6 = -17.5
+@power_M6 = -35
+@power_L6 = -70
+             
+@power_S7 = -20
+@power_M7 = -40
+@power_L7 = -80
+             
+@power_S8 = -22.5
+@power_M8 = -45
+@power_L8 = -90
+             
+@power_S9 = -25
+@power_M9 = -50
+@power_L9 = -100
+             
+@power_S10 = -27.5
+@power_M10 = -55
+@power_L10 = -110
+
+#############
+#	SHIELD_MULTI	#
+#############
+
+@shield_1 = 0.25
+@shield_2 = 0.50
+@shield_3 = 0.75   
+@shield_4 = 1.00
+@shield_5 = 1.50
+
+#############
+#	SHIELD_REG    #
+#############
+
+@regen_1 = 0.25
+@regen_2 = 0.50
+@regen_3 = 0.75   
+@regen_4 = 1.00
+@regen_5 = 1.50
+
+#############
+#	FAIL_CHANCE  #
+#############
+
+@fail_1 = -0.02
+@fail_2 = -0.04
+@fail_3 = -0.06
+@fail_4 = -0.08
+@fail_5 = -0.10
+
+#############
+#	DISCOVER       #
+#############
+
+@discover_1 = 0.02
+@discover_2 = 0.04
+@discover_3 = 0.06
+@discover_4 = 0.08
+@discover_5 = 0.10
+
+#############
+#	SURV_SPEED   #
+#############
+
+@speed_1 = 0.05
+@speed_2 = 0.10
+@speed_3 = 0.15
+@speed_4 = 0.25
+@speed_5 = 0.35
+
+utility_component_template = {
+	key = "C_MEDIUM_SCIENCE_LAB_1"
+	size = medium
+	icon = "GFX_C_ship_part_science_lab_1"
+	icon_frame = 1
+	power = @power_S1
+	cost = @cost_S3
+	science_lab_speed = 1
+	science_lab_level = 1
+	class_restriction = { shipclass_science_ship }
+	ship_modifier = {
+		ship_shield_hp_mult = @shield_1
+		ship_shield_regen_add_perc = @regen_1
+		ship_anomaly_research_speed_mult = @speed_1
+	}
+	
+	prerequisites = { tech_c_deep_space_lab_1 }
+	component_set = "science_labs"
+	
+	ai_weight = {
+		weight = 100
+	}
+	upgrades_to = "C_MEDIUM_SCIENCE_LAB_2"
+}
+
+utility_component_template = {
+	key = "C_MEDIUM_SCIENCE_LAB_2"
+	size = medium
+	icon = "GFX_C_ship_part_science_lab_2"
+	icon_frame = 1
+	power = @power_M1
+	cost = @cost_S4
+	science_lab_speed = 1
+	science_lab_level = 1
+	class_restriction = { shipclass_science_ship }
+	ship_modifier = {
+		ship_shield_hp_mult = @shield_2
+		ship_shield_regen_add_perc = @regen_2
+		ship_anomaly_generation_chance_mult = @discover_2
+		ship_anomaly_research_speed_mult = @speed_2
+	}
+	
+	prerequisites = { tech_c_deep_space_lab_2 }
+	component_set = "science_labs"
+	
+	ai_weight = {
+		weight = 110
+	}
+	upgrades_to = "C_MEDIUM_SCIENCE_LAB_3"
+}
+
+utility_component_template = {
+	key = "C_MEDIUM_SCIENCE_LAB_3"
+	size = medium
+	icon = "GFX_C_ship_part_science_lab_3"
+	icon_frame = 1
+	power = @power_M2
+	cost = @cost_S5
+	science_lab_speed = 1
+	science_lab_level = 1
+	class_restriction = { shipclass_science_ship }
+	ship_modifier = {
+		ship_shield_hp_mult = @shield_3
+		ship_shield_regen_add_perc = @regen_3
+		ship_anomaly_fail_risk = @fail_3
+		ship_anomaly_generation_chance_mult = @discover_3
+		ship_anomaly_research_speed_mult = @speed_3
+	}
+	
+	prerequisites = { tech_c_deep_space_lab_3 }
+	component_set = "science_labs"
+	
+	ai_weight = {
+		weight = 120
+	}
+	upgrades_to = "C_MEDIUM_SCIENCE_LAB_4"
+}
+
+utility_component_template = {
+	key = "C_MEDIUM_SCIENCE_LAB_4"
+	size = medium
+	icon = "GFX_C_ship_part_science_lab_4"
+	icon_frame = 1
+	power = @power_M3
+	cost = @cost_S6
+	science_lab_speed = 1
+	science_lab_level = 1
+	class_restriction = { shipclass_science_ship }
+	ship_modifier = {
+		ship_shield_hp_mult = @shield_4
+		ship_shield_regen_add_perc = @regen_4
+		ship_anomaly_fail_risk = @fail_4
+		ship_anomaly_generation_chance_mult = @discover_4
+		ship_anomaly_research_speed_mult = @speed_4
+	}
+	
+	prerequisites = { tech_c_deep_space_lab_4 }
+	component_set = "science_labs"
+	
+	ai_weight = {
+		weight = 130
+	}
+	upgrades_to = "C_MEDIUM_SCIENCE_LAB_5"
+}
+
+utility_component_template = {
+	key = "C_MEDIUM_SCIENCE_LAB_5"
+	size = medium
+	icon = "GFX_C_ship_part_science_lab_5"
+	icon_frame = 1
+	power = @power_M4
+	cost = @cost_S7
+	science_lab_speed = 1
+	science_lab_level = 1
+	class_restriction = { shipclass_science_ship }
+	ship_modifier = {
+		ship_shield_hp_mult = @shield_5
+		ship_shield_regen_add_perc = @regen_5
+		ship_anomaly_fail_risk = @fail_5
+		ship_anomaly_generation_chance_mult = @discover_5
+		ship_anomaly_research_speed_mult = @speed_5
+	}
+	
+	prerequisites = { tech_c_deep_space_lab_5 }
+	component_set = "science_labs"
+	
+	ai_weight = {
+		weight = 140
+	}
+}

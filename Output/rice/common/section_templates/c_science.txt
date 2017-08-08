@@ -1,0 +1,15 @@
+ship_section_template = {
+	key = "C_SCIENCESHIP_SECTION_ADV"
+	ship_size = science
+	fits_on_slot = mid
+	entity = "abandoned_ship_entity"
+	icon = "GFX_ship_part_core_mid"
+	
+	prerequisites = { tech_c_science_sections }
+	
+	cost = 320
+	
+	small_utility_slots = 2
+	medium_utility_slots = 2
+	aux_utility_slots = 4
+}

@@ -1,0 +1,432 @@
+utility_component_template = {
+	key = "POWAH_REACTOR_84_1"
+	size = small
+	icon = "GFX_ship_part_reactor_1"
+	icon_frame = 1
+	cost = 210
+	power = 420
+	ai_weight = { weight = 1 }
+	size_restriction = {  Superdreadnought SCX_Superdreadnought Headquarters military_station_xlarge st_SSD st_R_SSD sr_R_SSD  }
+	prerequisites = { "tech_powah_1" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_84_2"
+	size = small
+	icon = "GFX_ship_part_reactor_2"
+	icon_frame = 1
+	cost = 420
+	power = 630
+	ai_weight = { weight = 2 }
+	size_restriction = {  Superdreadnought SCX_Superdreadnought Headquarters military_station_xlarge st_SSD st_R_SSD sr_R_SSD  }
+	prerequisites = { "tech_powah_2" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_84_3"
+	size = small
+	icon = "GFX_ship_part_reactor_3"
+	icon_frame = 1
+	cost = 625
+	power = 840
+	ai_weight = { weight = 3 }
+	size_restriction = {  Superdreadnought SCX_Superdreadnought Headquarters military_station_xlarge st_SSD st_R_SSD sr_R_SSD  }
+	prerequisites = { "tech_powah_3" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_84_4"
+	size = small
+	icon = "GFX_ship_part_reactor_4"
+	icon_frame = 1
+	cost = 840
+	power = 1050
+	ai_weight = { weight = 4 }
+	size_restriction = {  Superdreadnought SCX_Superdreadnought Headquarters military_station_xlarge st_SSD st_R_SSD sr_R_SSD  }
+	prerequisites = { "tech_powah_4" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_84_5"
+	size = small
+	icon = "GFX_ship_part_reactor_5"
+	icon_frame = 1
+	cost = 1050
+	power = 1260
+	ai_weight = { weight = 5 }
+	size_restriction = {  Superdreadnought SCX_Superdreadnought Headquarters military_station_xlarge st_SSD st_R_SSD sr_R_SSD  }
+	prerequisites = { "tech_powah_5" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_84_6"
+	size = small
+	icon = "GFX_ship_part_reactor_r6"
+	icon_frame = 1
+	cost = 1290
+	power = 1470
+	ai_weight = { weight = 6 }
+	size_restriction = {  Superdreadnought SCX_Superdreadnought Headquarters military_station_xlarge st_SSD st_R_SSD sr_R_SSD  }
+	prerequisites = { "tech_fusion_power_energon" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_84_7"
+	size = small
+	icon = "GFX_ship_part_reactor_nhsc_6"
+	icon_frame = 1
+	cost = 1260
+	power = 1470
+	ai_weight = { weight = 7 }
+	size_restriction = {  Superdreadnought SCX_Superdreadnought Headquarters military_station_xlarge st_SSD st_R_SSD sr_R_SSD  }
+	prerequisites = { "nhsc_tech_advzeropointreactor_1_fake" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_84_8"
+	size = small
+	icon = "GFX_ship_part_enigmatic_power_core"
+	icon_frame = 1
+	cost = 1260
+	power = 1470
+	ai_weight = { weight = 8 }
+	size_restriction = {  Superdreadnought SCX_Superdreadnought Headquarters military_station_xlarge st_SSD st_R_SSD sr_R_SSD  }
+	prerequisites = { "tech_powah_6" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_84_9"
+	size = small
+	icon = "GFX_ship_part_reactor_r7"
+	icon_frame = 1
+	cost = 1475
+	power = 1680
+	ai_weight = { weight = 9 }
+	size_restriction = {  Superdreadnought SCX_Superdreadnought Headquarters military_station_xlarge st_SSD st_R_SSD sr_R_SSD  }
+	prerequisites = { "tech_antimatter_power_optimized" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_84_10"
+	size = small
+	icon = "GFX_ship_part_reactor_nhsc_7"
+	icon_frame = 1
+	cost = 1680
+	power = 1890
+	ai_weight = { weight = 10 }
+	size_restriction = {  Superdreadnought SCX_Superdreadnought Headquarters military_station_xlarge st_SSD st_R_SSD sr_R_SSD  }
+	prerequisites = { "nhsc_tech_advzeropointreactor_2_fake" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_84_11"
+	size = small
+	icon = "GFX_ship_part_reactor_r8"
+	icon_frame = 1
+	cost = 1680
+	power = 1890
+	ai_weight = { weight = 11 }
+	size_restriction = {  Superdreadnought SCX_Superdreadnought Headquarters military_station_xlarge st_SSD st_R_SSD sr_R_SSD  }
+	prerequisites = { "tech_darkmatter_power" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_84_12"
+	size = small
+	icon = "GFX_ship_part_reactor_r9"
+	icon_frame = 1
+	cost = 1890
+	power = 2100
+	ai_weight = { weight = 12 }
+	size_restriction = {  Superdreadnought SCX_Superdreadnought Headquarters military_station_xlarge st_SSD st_R_SSD sr_R_SSD  }
+	prerequisites = { "tech_darkmatter_power_optimized" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_84_13"
+	size = small
+	icon = "GFX_ship_part_nhsc_enigmatic_core_2"
+	icon_frame = 1
+	cost = 1890
+	power = 2100
+	ai_weight = { weight = 13 }
+	size_restriction = {  Superdreadnought SCX_Superdreadnought Headquarters military_station_xlarge st_SSD st_R_SSD sr_R_SSD  }
+	prerequisites = { "nhsc_tech_enigmatic_power_2_fake" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_84_14"
+	size = small
+	icon = "GFX_ship_part_reactor_adv_zero_point_power"
+	icon_frame = 1
+	cost = 1890
+	power = 2100
+	ai_weight = { weight = 14 }
+	size_restriction = {  Superdreadnought SCX_Superdreadnought Headquarters military_station_xlarge st_SSD st_R_SSD sr_R_SSD  }
+	prerequisites = { "tech_adv_zero_point_power_fake" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_84_15"
+	size = small
+	icon = "GFX_ship_part_reactor_nhsc_8"
+	icon_frame = 1
+	cost = 2100
+	power = 2310
+	ai_weight = { weight = 15 }
+	size_restriction = {  Superdreadnought SCX_Superdreadnought Headquarters military_station_xlarge st_SSD st_R_SSD sr_R_SSD  }
+	prerequisites = { "nhsc_tech_advzeropointreactor_3_fake" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_84_16"
+	size = small
+	icon = "GFX_ship_part_reactor_r10"
+	icon_frame = 1
+	cost = 2305
+	power = 2520
+	ai_weight = { weight = 16 }
+	size_restriction = {  Superdreadnought SCX_Superdreadnought Headquarters military_station_xlarge st_SSD st_R_SSD sr_R_SSD  }
+	prerequisites = { "tech_singularity_power" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_84_17"
+	size = small
+	icon = "GFX_ship_part_reactor_r11"
+	icon_frame = 1
+	cost = 2935
+	power = 3150
+	ai_weight = { weight = 17 }
+	size_restriction = {  Superdreadnought SCX_Superdreadnought Headquarters military_station_xlarge st_SSD st_R_SSD sr_R_SSD  }
+	prerequisites = { "tech_tachyon_power" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_84_18"
+	size = small
+	icon = "GFX_ship_part_reactor_r12"
+	icon_frame = 1
+	cost = 3355
+	power = 3570
+	ai_weight = { weight = 18 }
+	size_restriction = {  Superdreadnought SCX_Superdreadnought Headquarters military_station_xlarge st_SSD st_R_SSD sr_R_SSD  }
+	prerequisites = { "tech_wimp_power" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_120_1"
+	size = small
+	icon = "GFX_ship_part_reactor_1"
+	icon_frame = 1
+	cost = 300
+	power = 600
+	ai_weight = { weight = 1 }
+	size_restriction = {  Flagship  }
+	prerequisites = { "tech_powah_1" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_120_2"
+	size = small
+	icon = "GFX_ship_part_reactor_2"
+	icon_frame = 1
+	cost = 600
+	power = 900
+	ai_weight = { weight = 2 }
+	size_restriction = {  Flagship  }
+	prerequisites = { "tech_powah_2" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_120_3"
+	size = small
+	icon = "GFX_ship_part_reactor_3"
+	icon_frame = 1
+	cost = 895
+	power = 1200
+	ai_weight = { weight = 3 }
+	size_restriction = {  Flagship  }
+	prerequisites = { "tech_powah_3" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_120_4"
+	size = small
+	icon = "GFX_ship_part_reactor_4"
+	icon_frame = 1
+	cost = 1200
+	power = 1500
+	ai_weight = { weight = 4 }
+	size_restriction = {  Flagship  }
+	prerequisites = { "tech_powah_4" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_120_5"
+	size = small
+	icon = "GFX_ship_part_reactor_5"
+	icon_frame = 1
+	cost = 1500
+	power = 1800
+	ai_weight = { weight = 5 }
+	size_restriction = {  Flagship  }
+	prerequisites = { "tech_powah_5" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_120_6"
+	size = small
+	icon = "GFX_ship_part_reactor_r6"
+	icon_frame = 1
+	cost = 1845
+	power = 2100
+	ai_weight = { weight = 6 }
+	size_restriction = {  Flagship  }
+	prerequisites = { "tech_fusion_power_energon" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_120_7"
+	size = small
+	icon = "GFX_ship_part_reactor_nhsc_6"
+	icon_frame = 1
+	cost = 1795
+	power = 2100
+	ai_weight = { weight = 7 }
+	size_restriction = {  Flagship  }
+	prerequisites = { "nhsc_tech_advzeropointreactor_1_fake" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_120_8"
+	size = small
+	icon = "GFX_ship_part_enigmatic_power_core"
+	icon_frame = 1
+	cost = 1795
+	power = 2100
+	ai_weight = { weight = 8 }
+	size_restriction = {  Flagship  }
+	prerequisites = { "tech_powah_6" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_120_9"
+	size = small
+	icon = "GFX_ship_part_reactor_r7"
+	icon_frame = 1
+	cost = 2110
+	power = 2400
+	ai_weight = { weight = 9 }
+	size_restriction = {  Flagship  }
+	prerequisites = { "tech_antimatter_power_optimized" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_120_10"
+	size = small
+	icon = "GFX_ship_part_reactor_nhsc_7"
+	icon_frame = 1
+	cost = 2400
+	power = 2700
+	ai_weight = { weight = 10 }
+	size_restriction = {  Flagship  }
+	prerequisites = { "nhsc_tech_advzeropointreactor_2_fake" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_120_11"
+	size = small
+	icon = "GFX_ship_part_reactor_r8"
+	icon_frame = 1
+	cost = 2400
+	power = 2700
+	ai_weight = { weight = 11 }
+	size_restriction = {  Flagship  }
+	prerequisites = { "tech_darkmatter_power" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_120_12"
+	size = small
+	icon = "GFX_ship_part_reactor_r9"
+	icon_frame = 1
+	cost = 2700
+	power = 3000
+	ai_weight = { weight = 12 }
+	size_restriction = {  Flagship  }
+	prerequisites = { "tech_darkmatter_power_optimized" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_120_13"
+	size = small
+	icon = "GFX_ship_part_nhsc_enigmatic_core_2"
+	icon_frame = 1
+	cost = 2700
+	power = 3000
+	ai_weight = { weight = 13 }
+	size_restriction = {  Flagship  }
+	prerequisites = { "nhsc_tech_enigmatic_power_2_fake" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_120_14"
+	size = small
+	icon = "GFX_ship_part_reactor_adv_zero_point_power"
+	icon_frame = 1
+	cost = 2700
+	power = 3000
+	ai_weight = { weight = 14 }
+	size_restriction = {  Flagship  }
+	prerequisites = { "tech_adv_zero_point_power_fake" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_120_15"
+	size = small
+	icon = "GFX_ship_part_reactor_nhsc_8"
+	icon_frame = 1
+	cost = 2990
+	power = 3300
+	ai_weight = { weight = 15 }
+	size_restriction = {  Flagship  }
+	prerequisites = { "nhsc_tech_advzeropointreactor_3_fake" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_120_16"
+	size = small
+	icon = "GFX_ship_part_reactor_r10"
+	icon_frame = 1
+	cost = 3295
+	power = 3600
+	ai_weight = { weight = 16 }
+	size_restriction = {  Flagship  }
+	prerequisites = { "tech_singularity_power" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_120_17"
+	size = small
+	icon = "GFX_ship_part_reactor_r11"
+	icon_frame = 1
+	cost = 4195
+	power = 4500
+	ai_weight = { weight = 17 }
+	size_restriction = {  Flagship  }
+	prerequisites = { "tech_tachyon_power" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_120_18"
+	size = small
+	icon = "GFX_ship_part_reactor_r12"
+	icon_frame = 1
+	cost = 4795
+	power = 5100
+	ai_weight = { weight = 18 }
+	size_restriction = {  Flagship  }
+	prerequisites = { "tech_wimp_power" }
+	component_set = "powerstation_components"
+}

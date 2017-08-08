@@ -1,0 +1,352 @@
+﻿l_english:
+####################################
+# Snowyamur's Grand Traits Catalogue
+####################################
+
+##################################
+#trait_snowyamur_:0 ""
+#trait_snowyamur_desc:0 "§L §!\n"
+##################################
+
+#Species Snowyamur Traits
+trait_snowyamur_innovative:0 "Innovative"
+trait_snowyamur_innovative_desc:0 "§LMembers of this species are creators, capable of advancing their race tenfold with their imaginative genius.§!\n"
+
+trait_snowyamur_valiant:0 "Valiant"
+trait_snowyamur_valiant_desc:0 "§LMembers of your species are brave warriors, always at the ready to stand against any peril that awaits.§!\n"
+
+trait_snowyamur_benign:0 "Benign"
+trait_snowyamur_benign_desc:0 "§LYour species is kind and presents itself calmly and peacefully to others without harm.§!\n"
+
+trait_snowyamur_biomolecular_alignment:0 "Biomolecular Alignment"
+trait_snowyamur_biomolecular_alignment_desc:0 "§LMolecular repair and re-construction are what make your species strong and adaptable against any disease, pathogen, or physical threat.§!\n"
+
+trait_snowyamur_durable:0 "Durable"
+trait_snowyamur_durable_desc:0 "§LMembers of your species are extremely tough, able to withstand fatal blows and remain standing on the battlefield.§!\n"
+
+trait_snowyamur_honorbound:0 "Honorbound"
+trait_snowyamur_honorbound_desc:0 "§LYour species follow a code of honor. No distance too great and no enemy too strong will obstruct your species' loyalty to the empire.§!\n"
+
+trait_snowyamur_metal_shifters:0 "Metal Shifters"
+trait_snowyamur_metal_shifters_desc:0 "§LMetal resonates and hums to your species as they are capable of shaping and manipulating it for better use in engineering.§!\n"
+
+trait_snowyamur_natural_observers:0 "Natural Observers"
+trait_snowyamur_natural_observers_desc:0 "§LKeen-eyed and observant, your species finds the environment and its many wonders brilliant sights to behold.§!\n"
+
+trait_snowyamur_quantum_attunement:0 "Quantum Attunement"
+trait_snowyamur_quantum_attunement_desc:0 "§LYour species possesses strong affinity for quantum physics and mechanics that they work well with physical experimentation.§!\n"
+
+trait_snowyamur_fragmented_soul:0 "Fragmented Soul"
+trait_snowyamur_fragmented_soul_desc:0 "§LEvery fight is perceived as an inevitable failure as your species holds the scars of many lost wars.§!\n"
+
+trait_snowyamur_molecular_degradation:0 "Molecular Degradation"
+trait_snowyamur_molecular_degradation_desc:0 "§LMismatched genetics result in the literal degradation of your species' molecular structuring, resulting in poor health and swifter deaths.§!\n"
+
+trait_snowyamur_fertile:0 "Fertile"
+trait_snowyamur_fertile_desc:0 "§LReproduction proves strong in your species, increasing their numbers ten-fold.§!\n"
+
+trait_snowyamur_infertile:0 "Infertile"
+trait_snowyamur_infertile_desc:0 "§LSterility haunts your species as they fear for extinction, reducing their numbers seven-twelfths.§!\n"
+
+trait_snowyamur_malevolent:0 "Malevolent"
+trait_snowyamur_malevolent_desc:0 "§LYour species' hostility to just about anything makes others very cautious of them.§!\n"
+
+trait_snowyamur_telepathic:0 "Telepathic"
+trait_snowyamur_telepathic_desc:0 "§LMembers of your species are capable of exchanging neural pathways amongst each other via sensor bonds, making them more understanding of each other and able to grow faster.§!\n"
+
+trait_snowyamur_congenial:0 "Congenial"
+trait_snowyamur_congenial_desc:0 "§LYour species introduces itself to others with open arms and friendly handshakes.§!\n"
+
+trait_snowyamur_feral_hunger:0 "Feral Hunger"
+trait_snowyamur_feral_hunger_desc:0 "§LYour species' hunger results in severe losses of food, requiring more to reach normal satisfaction.§!\n"
+
+trait_snowyamur_satiated_hunger:0 "Satiated Hunger"
+trait_snowyamur_satiated_hunger_desc:0 "§LYour species does not crave food with such a severity as other species, resulting in healthier growth.§!\n"
+
+trait_snowyamur_immortality:0 "Immortality"
+trait_snowyamur_immortality_desc:0 "§LLife to your species is eternal; only from time can they perish, but even that will take a while.§!\n"
+
+trait_snowyamur_harmonic:0 "Harmonic"
+trait_snowyamur_harmonic_desc:0 "§LYour species has found its prime at the heart of precise coordination and action, making them stronger combatants.§!\n"
+
+trait_snowyamur_bulwark_of_the_kaivari:0 "Bulwark of the Kai'vari"
+trait_snowyamur_bulwark_of_the_kaivari_desc:0 "§LThe Kai'vari have been natural warriors and hunters, and in the face of extinction or annhilation, their army, homes, and forces remain standing over others.§!\n"
+
+trait_snowyamur_greedy:0 "Greedy"
+trait_snowyamur_greedy_desc:0 "§LEven large amounts of wealth fail to satisfy your species.§!\n"
+
+trait_snowyamur_vile:0 "Vile"
+trait_snowyamur_vile_desc:0 "§LNot everyone appreciates you being around in the galaxy.§!\n"
+
+trait_snowyamur_cold_hearted:0 "Cold-Hearted"
+trait_snowyamur_cold_hearted_desc:0 "§LMembers of your species are cold as stone, lacking any form of joy or happiness to lighten their days as well as those of others.§!\n"
+
+trait_snowyamur_pessimistic:0 "Pessimistic"
+trait_snowyamur_pessimistic_desc:0 "§LEvery day to your species is a day lost forever, and a day closer to their inevitable deaths.§!\n"
+
+trait_snowyamur_inquiring:0 "Inquiring"
+trait_snowyamur_inquiring_desc:0 "§LYour species is always curious and ready to learn more about their universe, and will not hesistate to explore and discover.§!\n"
+
+trait_snowyamur_power_hungry:0 "Power-Hungry"
+trait_snowyamur_power_hungry_desc:0 "§LEnergy and food stuffs are mainly what your species are dependent on. The name is pretty ironic for this type of taste.§!\n"
+
+trait_snowyamur_selfless:0 "Selfless"
+trait_snowyamur_selfless_desc:0 "§LIn the face of danger, your species will stand to defend those that cannot defend themselves.§!\n"
+
+trait_snowyamur_overindulged_joy:0 "Overindulged Joy"
+trait_snowyamur_overindulged_joy_desc:0 "§LEven though your species is pretty much happy every day of their lives, they achieve their jubilation by wasting valuable rations.§!\n"
+
+trait_snowyamur_committed_researchers:0 "Committed Researchers"
+trait_snowyamur_committed_researchers_desc:0 "§LDiscovery and research are core, and your species' scientists will expend as many resources as necessary to accomplish their goals.§!\n"
+
+trait_snowyamur_arrogant:0 "Arrogant"
+trait_snowyamur_arrogant_desc:0 "§LYour species loves to boast about their accomplishments so much that while they are happy with themselves, others despise them.§!\n"
+
+trait_snowyamur_spliced:0 "Spliced"
+trait_snowyamur_spliced_desc:0 "§LMembers of your species have been genetically and naturally spliced, such that while they can inflict more pain, they can't take as much in return.§!\n"
+
+trait_snowyamur_confident:0 "Confident"
+trait_snowyamur_confident_desc:0 "§LMembers of your species are confident in their war efforts, improving their attacking capabilities, but are risking their lives more in the process.§!\n"
+
+trait_snowyamur_carnivorous:0 "Carnivorous"
+trait_snowyamur_carnivorous_desc:0 "§LMembers of your species love meat, and only eat meat. With such a rich diet of proteins, your species will grow faster.§!\n"
+
+trait_snowyamur_herbivorous:0 "Herbivorous"
+trait_snowyamur_herbivorous_desc:0 "§LMembers of your species love their vegetables, and only eat vegetables. Having such a healthy diet allows for access to more food sources.§!\n"
+
+trait_snowyamur_omnivorous:0 "Omnivorous"
+trait_snowyamur_omnivorous_desc:0 "§LMembers of your species can eat both meat and vegetables, all the while growing stronger through the nutrients received from both types of food.§!\n"
+
+trait_snowyamur_tranquil:0 "Tranquil"
+trait_snowyamur_tranquil_desc:0 "§LTo be at peace with oneself is to become a better individual, and by maintaining a calm mind in a world o peril, your specise is greeted with open arms.§!\n"
+
+trait_snowyamur_persuasive:0 "Persuasive"
+trait_snowyamur_persuasive_desc:0 "§LMembers of your species are capable of making others perform tasks their consciousness would otherwise deny.§!\n"
+
+trait_snowyamur_unconvincing:0 "Unconvincing"
+trait_snowyamur_unconvincing_desc:0 "§LMembers of your species are incapable of making others believe what would not be true in their eyes, limiting their diplomatic strength.§!\n"
+
+trait_snowyamur_cryogenic:0 "Cryogenic"
+trait_snowyamur_cryogenic_desc:0 "§LThe cold runs in your species' veins, but the heat drives them mad.§!\n"
+
+trait_snowyamur_thermogenic:0 "Thermogenic"
+trait_snowyamur_thermogenic_desc:0 "§LHeat is no more a harm than it is a home to your species, but the frigid winter isolates and kills them.§!\n"
+
+trait_snowyamur_aquagenic:0 "Aquagenic"
+trait_snowyamur_aquagenic_desc:0 "§LWater and heavy rainfalls keep your species alive, while dry earth and land leaves them dead on the ground.§!\n"
+
+trait_snowyamur_terragenic:0 "Terragenic"
+trait_snowyamur_terragenic_desc:0 "§LThe earth of creation is your species' core, while the great spans of ocean and water are their bane.§!\n"
+
+trait_snowyamur_biogenic:0 "Biogenic"
+trait_snowyamur_biogenic_desc:0 "§LGenetic reconstruction and re-configuration allow your species to live happier lives, free of pain, while making them stronger as well.§!\n"
+
+trait_snowyamur_enviromorphic:0 "Enviromorphic"
+trait_snowyamur_enviromorphic_desc:0 "§LYour species can bend and genetically transfigure themselves to fit any environment.§!\n"
+
+
+#Species Snowyamur Tier Traits
+trait_snowyamur_efficient:0 "Efficient"
+trait_snowyamur_efficient_desc:0 "§LYour species understands many methods of production and construction to improve their outputs.§!\n"
+
+trait_snowyamur_economical:0 "Economical"
+trait_snowyamur_economical_desc:0 "§LWhen it comes to profit, output, and expense, your species excels at managing their own economy to the point of possessing financial power.§!\n"
+
+trait_snowyamur_resourceful:0 "Resourceful"
+trait_snowyamur_resourceful_desc:0 "§LDividends among dividends, parts among parts, and in your society, materials and resources are well-expended and preserved to secure a prosperous world for your species.§!\n"
+
+trait_snowyamur_birthed_understanding:0 "Birthed Understanding"
+trait_snowyamur_birthed_understanding_desc:0 "§LBorn with incredible knowledge, your species excels at many things.§!\n"
+
+trait_snowyamur_prodigal_knowledge:0 "Prodigal Knowledge"
+trait_snowyamur_prodigal_knowledge_desc:0 "§LBrought into the world as prodigies of the universe, your species proves themselves the master race of the galaxy.§!\n"
+
+trait_snowyamur_awakened_genius:0 "Awakened Genius"
+trait_snowyamur_awakened_genius_desc:0 "§LIt is time to shatter the barriers that hold your species back. It is time for them to shine. It is time... for them to awaken and prove their potential at last.§!\n"
+
+trait_snowyamur_natural_speakers:0 "Natural Speakers"
+trait_snowyamur_natural_speakers_desc:0 "§LYour species possess a natural tongue for language, allowing their words to persuade even the most aggressive and violent to agree to peace.§!\n"
+
+trait_snowyamur_profound_linguist:0 "Profound Linguist"
+trait_snowyamur_profound_linguist_desc:0 "§LMembers of your species can comprehend and speak the native tongues of any species well.§!\n"
+
+trait_snowyamur_tongue_of_the_tvai:0 "Tongue of the T'vai"
+trait_snowyamur_tongue_of_the_tvai_desc:0 "§LThe T'vai have been capable of talking others into conflicts, out of wars, and into doing favors. Now your species seems capable of doing so as well.§!\n"
+
+#Modified Snowyamur Trait "Events"
+trait_snowyamur_knowledge_of_xayn:0 "Knowledge of Xayn"
+trait_snowyamur_knowledge_of_xayn_desc:0 "§LXayn possessed the eternal knowledge of the galaxy, and now your species possess it as well.§!\n"
+
+trait_snowyamur_decimated_mind_state:0 "Decimated Mind-State"
+trait_snowyamur_decimated_mind_state_desc:0 "§LNeural pathways continue to disintegrate at a rapid pace as the minds of your species dissolve into nothing, leaving behind the scar of a species doomed to extinction.§!\n"
+
+trait_snowyamur_organized:0 "Organized"
+trait_snowyamur_organized_desc:0 "§LBy maintaining and successfully monitoring tasks, resources, and objectives, your species is capable of possessing larger fleets and producing even more resources.§!\n"
+
+trait_snowyamur_grasp_of_the_nether_veil:0 "Grasp of the Nether Veil"
+trait_snowyamur_grasp_of_the_nether_veil_desc:0 "§LWhat lies within the Nether Veil is a mystery unsolved by many species. However, your species seems to have hold over the Veil and will now dwell within it.§!\n"
+
+trait_snowyamur_lithovorous:0 "Lithovorous"
+trait_snowyamur_lithovorous_desc:0 "§LYour species feeds on minerals and rare rocks, such that they mine them for ridiculous work lengths to retrieve them.§!\n"
+
+trait_snowyamur_electrovorous:0 "Electrovorous"
+trait_snowyamur_electrovorous_desc:0 "§LYour species feeds on electrical power sources, such that they produce a lot more to satisfy themselves.§!\n"
+
+#Actual Snowyamur Trait Modifiers
+
+######################
+#amur_:0 ""
+#amur_desc:0 "§L §!\n"
+######################
+
+amur_knowledge_of_xayn:0 "Knowledge of Xayn"
+amur_knowledge_of_xayn_desc:0 "§LXayn possessed the eternal knowledge of the galaxy, and now your species possess it as well.§!\n"
+
+amur_decimated_mind_state:0 "Decimated Mind-State"
+amur_decimated_mind_state_desc:0 "§LNeural pathways continue to disintegrate at a rapid pace as the minds of your species dissolve into nothing, leaving behind the scar of a species doomed to extinction.§!\n"
+
+amur_organized:0 "Organized"
+amur_organized_desc:0 "§LBy maintaining and successfully monitoring tasks, resources, and objectives, your species is capable of possessing larger fleets and producing even more resources.§!\n"
+
+amur_grasp_of_the_nether_veil:0 "Grasp of the Nether Veil"
+amur_grasp_of_the_nether_veil_desc:0 "§LWhat lies within the Nether Veil is a mystery unsolved by many species. However, your species seems to have hold over the Veil and will now dwell within it.§!\n"
+
+amur_electrovorous:0 "Electrovorous"
+amur_electrovorous_desc:0 "§LYour species feeds on electrical power sources, such that they produce a lot more to satisfy themselves.§!\n"
+
+amur_lithovorous:0 "Lithovorous"
+amur_lithovorous_desc:0 "§LYour species feeds on minerals and rare rocks, such that they mine them for ridiculous work lengths to retrieve them.§!\n"
+
+amur_inquiring:0 "Inquiring"
+amur_inquiring_desc:0 "§LYour species is always curious and ready to learn more about their universe, and will not hesistate to explore and discover.§!\n"
+
+amur_committed_researchers:0 "Committed Researchers"
+amur_committed_researchers_desc:0 "§LDiscovery and research are core, and your species' scientists will expend as many resources as necessary to accomplish their goals.§!\n"
+
+amur_persuasive:0 "Persuasive"
+amur_persuasive_desc:0 "§LMembers of your species are capable of making others perform tasks their consciousness would otherwise deny.§!\n"
+
+amur_unconvincing:0 "Unconvincing"
+amur_unconvincing_desc:0 "§LMembers of your species are incapable of making others believe what would not be true in their eyes, limiting their diplomatic strength.§!\n"
+
+amur_innovative:0 "Innovative"
+amur_innovative_desc:0 "§LMembers of this species are creators, capable of advancing their race tenfold with their imaginative genius.§!\n"
+
+#Admiral Snowyamur Traits
+
+########################################
+#leader_trait_snowyamur_:0 ""
+#leader_trait_snowyamur_desc:1 "§L §!\n"
+########################################
+
+leader_trait_snowyamur_snowfire_training:0 "Snowfire Training"
+leader_trait_snowyamur_snowfire_training_desc:1 "§LEvery individual on the Snowfire receives extensive training to combat any fleet possible. This admiral seems to have received said training.§!\n"
+
+leader_trait_snowyamur_swift:0 "Swift"
+leader_trait_snowyamur_swift_desc:1 "§LThis admiral is fast when leading the fleet and responsive to attacks.§!\n"
+
+leader_trait_snowyamur_disciplined:0 "Disciplined"
+leader_trait_snowyamur_disciplined_desc:1 "§LTrained and disciplined well, this admiral knows when one must fight and flee to nullify the losses and reap the kills.§!\n"
+
+leader_trait_snowyamur_veteran_of_the_auorvale_crisis:0 "Veteran of the Auorvale Crisis"
+leader_trait_snowyamur_veteran_of_the_auorvale_crisis_desc:1 "§LMany have suffered and perished from the Auorvale Crisis. Following its aftermath, those who fought and survived would live longer and possess uncomprehendable combat training.§!\n"
+
+leader_trait_snowyamur_observant:0 "Observant"
+leader_trait_snowyamur_observant_desc:1 "§LThis admiral is keen and sightful of his surrounding environments.§!\n"
+
+leader_trait_snowyamur_ingenious_comprehension:0 "Ingenious Comprehension"
+leader_trait_snowyamur_ingenious_comprehension_desc:1 "§LYour admiral understands the fleet very well, so well that resources, munitions, and gear are handled and produced more effectively to cut costs.§!\n"
+
+leader_trait_snowyamur_cowardly:0 "Cowardly"
+leader_trait_snowyamur_cowardly_desc:1 "§LYour admiral is afraid and will run and scream out of a fight like a coward.§!\n"
+
+leader_trait_snowyamur_anxious:0 "Anxious"
+leader_trait_snowyamur_anxious_desc:1 "§LUnfortunately, this admiral fails at commading his fleet properly due to anxity, resulting in misfired munitions and slow response time.§!\n"
+
+leader_trait_snowyamur_armor_mentality:0 "Armor Mentality"
+leader_trait_snowyamur_armor_mentality_desc:1 "§LArmor is what makes a fleet strong, so says this admiral.§!\n"
+
+leader_trait_snowyamur_shield_mentality:0 "Shield Mentality"
+leader_trait_snowyamur_shield_mentality_desc:1 "§LShield is what keeps a fleet actually alive, so says this admiral.§!\n"
+
+leader_trait_snowyamur_hailfire_munitions:0 "Hailfire Munitions"
+leader_trait_snowyamur_hailfire_munitions_desc:1 "§LThis admiral has an odd taste for non-stop gunfire and specializes in small, swift barrages.§!\n"
+
+leader_trait_snowyamur_bombardment_munitions:0 "Bombardment Munitions"
+leader_trait_snowyamur_bombardment_munitions_desc:1 "§LThis admiral has an eccentric taste for extremely devastating firepower and specializes in heavy, powerful blows.§!\n"
+
+leader_trait_snowyamur_precision_munitions:0 "Precision Munitions"
+leader_trait_snowyamur_precision_munitions_desc:1 "§LThis admiral has a very weird taste for firing on enemies from ridiculous distances and specializes in artillery firepower.§!\n"
+
+leader_trait_snowyamur_uncommunicative:0 "Uncommunicative"
+leader_trait_snowyamur_uncommunicative_desc:1 "§LWhy this admiral fails to speak to others properly is unknown, but it definitely hurts your fleet through lessened power and severed communication.§!\n"
+
+leader_trait_snowyamur_steadfast:0 "Steadfast"
+leader_trait_snowyamur_steadfast_desc:1 "§LAmidst a possible failure, the captain of the ship will not abandon his/her ship; he/she will stay and fight to the bitter end.§!\n"
+
+#Governor Snowyamur Traits
+
+########################################
+#leader_trait_snowyamur_:0 ""
+#leader_trait_snowyamur_desc:1 "§L §!\n"
+########################################
+
+leader_trait_snowyamur_motivated_excavator:0 "Motivated Excavator"
+leader_trait_snowyamur_motivated_excavator_desc:1 "§LThis governor just loves to dig through the ground like his/her life depends on it. Even though motivated, it's more of an addiction.§!\n"
+
+leader_trait_snowyamur_foundation_expert:0 "Foundation Expert"
+leader_trait_snowyamur_foundation_expert_desc:1 "§LTo secure a bright future for society, its very foundation must be secured by means of investment and careful planning.§!\n"
+
+leader_trait_snowyamur_rejuvenating_intelligence:0 "Rejuvenating Intelligence"
+leader_trait_snowyamur_rejuvenating_intelligence_desc:1 "§LYour governor's mind seems to be mending itself as a result of miracle genetics. They can live longer and knowledge of old is remembered.§!\n"
+
+leader_trait_snowyamur_watchful:0 "Watchful"
+leader_trait_snowyamur_watchful_desc:1 "§LThis governor watches over all resource inputs and outputs as well as keeps a close eye on the economy, so close that people are dissatisfied with what has now become personal surveillance.§!\n"
+
+leader_trait_snowyamur_tyrhallow_vigilance:0 "Tyrhallow Vigilance"
+leader_trait_snowyamur_tyrhallow_vigilance_desc:1 "§LTyrhalow has always been a district of holy wars and crusades, but despite all the negative rabble about them, their leaders are truely prepared for the worst to come.§!\n"
+
+#Scientist Snowyamur Traits
+
+########################################
+#leader_trait_snowyamur_:0 ""
+#leader_trait_snowyamur_desc:1 ""
+########################################
+
+leader_trait_snowyamur_deranged:0 "Deranged"
+leader_trait_snowyamur_deranged_desc:1 "This scientist is insane, hindering research with his/her constant ramblings and shabbles. However, amidst the madness lies an inclination to discover more to satisfy the insanity."
+
+leader_trait_snowyamur_resolute_scientist:0 "Resolute Scientist"
+leader_trait_snowyamur_resolute_scientist_desc:1 "Nothing wlil stand in the way of technological advancemet. No life too short, no death too swift will stop this scientist from working, for they only encourage more effort to be made."
+
+leader_trait_snowyamur_ancient_taste:0 "Ancient Taste"
+leader_trait_snowyamur_ancient_taste_tooltip:0 "§YAncient civilizations Anomalies:§!\n   Anomaly Research Speed: §G+70.0%§!\n   Anomaly Fail Risk: §G-50.0%§!"
+leader_trait_snowyamur_ancient_taste_desc:1 "Beneath the shroud that encompasses some worlds lies hidden knowledge waiting to be uncovered by those who wish to sate their hunger for ancient relics and artifacts."
+
+leader_trait_snowyamur_decouvcentre_researcher:0 "Découvcentre Researcher"
+leader_trait_snowyamur_decouvcentre_researcher_desc:1 "Découvcentre has been the home of the universe's top intellectuals and scientists. Hailing from there, your scientist stands outmatched, brilliant, and ingenious above all others."
+
+leader_trait_snowyamur_impatient:0 "Impatient"
+leader_trait_snowyamur_impatient_desc:1 "To your scientist, waiting is nothing but a waste of time. They are ready to discover what is out there in the world, but their lack of patience will hinder their research findings."
+
+#General Snowyamur Traits
+
+########################################
+#leader_trait_snowyamur_:0 ""
+#leader_trait_snowyamur_desc:1 ""
+########################################
+
+leader_trait_snowyamur_dragasah_fury:0 "Dragasah's Fury"
+leader_trait_snowyamur_dragasah_fury_desc:1 "Dragasah is a being not to be underestimated, for her rage is but a spark to kindling her violent fury. Those who oppose her will leave in ashes."
+
+leader_trait_snowyamur_syr_retribution:0 "Syr's Retribution"
+leader_trait_snowyamur_syr_retribution_desc:1 "As a Kai'vari Hunter, death to Syr is nothing but an inevitable part of the Circle of Mun'dai. Naturally, the Kai'vari live longer, and retribution is core. It seems your general possesses his rage and will be happy to inflict it on his/her enemies."
+
+leader_trait_snowyamur_persevering:0 "Persevering"
+leader_trait_snowyamur_persevering_desc:1 "This general will not back down from a fight, against the odds. He/she will stand and fight, taking the worst pain for those he/she loves."
+
+leader_trait_snowyamur_front_liner:0 "Front-Liner"
+leader_trait_snowyamur_front_liner_desc:1 "To be behind others is to be a coward of the inevitable. Your general is no coward, and while he/she will rush headlong into a fight, his/her life is at risk."
+
+leader_trait_snowyamur_brutal:0 "Brutal"
+leader_trait_snowyamur_brutal_desc:1 "In a fight, this general will brutally slaughter your enemies to a pulp, and that is what makes his/her frightening when given orders or commands."

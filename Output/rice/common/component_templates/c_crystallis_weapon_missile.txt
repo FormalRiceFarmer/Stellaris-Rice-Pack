@@ -1,0 +1,203 @@
+@missile_speed = 5
+
+# ####################
+#  Missiles
+# ####################
+
+
+### Missile Launcher 6
+weapon_component_template = {
+	key = "C_SMALL_MISSILE_6"
+	size = small
+	entity = "turret_missile_small_entity"
+	
+	icon = "GFX_C_ship_part_missiles_6"
+	icon_frame = 1
+	static_rotation = no
+	type = missile
+	
+	damage = { min = 16.8 max = 21.6 }
+	windup = { min = 2 max = 25 }
+	total_fire_time = 25
+	range = 75.0
+	accuracy = 1.00
+	tracking = 0.70
+	missile_speed = 6.5
+	missile_evasion = 0.40
+	missile_health = 6.00
+	shield_damage = 1.1
+	power = -15
+	cost = 15
+	
+	prerequisites = { "tech_c_missiles_6" }
+	component_set = "C_MISSILE_6"
+	projectile_gfx = "small_missile"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_long_range }
+	
+	upgrades_to = "C_SMALL_MISSILE_7"
+}
+
+### Missile Launcher 6
+weapon_component_template = {
+	key = "C_MEDIUM_MISSILE_6"
+	size = medium
+	entity = "turret_missile_medium_entity"
+	
+	icon = "GFX_C_ship_part_missiles_6"
+	icon_frame = 1
+	static_rotation = no
+	type = missile
+	
+	damage = { min = 30 max = 48 }
+	windup = { min = 2 max = 25 }
+	total_fire_time = 25
+	range = 95.0
+	accuracy = 1.00
+	tracking = 0.70
+	missile_speed = 6.5
+	missile_evasion = 0.40
+	missile_health = 6.00
+	shield_damage = 1.1
+	armor_penetration = 0.15
+	power = -30
+	cost = 30
+	
+	prerequisites = { "tech_c_missiles_6" }
+	component_set = "C_MISSILE_6"
+	projectile_gfx = "medium_missile"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_long_range }
+	
+	upgrades_to = "C_MEDIUM_MISSILE_7"
+}
+
+### Missile Launcher 6
+weapon_component_template = {
+	key = "C_LARGE_MISSILE_6"
+	size = large
+	entity = "turret_missile_large_entity"
+	
+	icon = "GFX_C_ship_part_missiles_6"
+	icon_frame = 1
+	static_rotation = no
+	type = missile
+	
+	damage = { min = 60 max = 99.6 }
+	windup = { min = 2 max = 25 }
+	total_fire_time = 25
+	range = 115.0
+	accuracy = 1.00
+	tracking = 0.70
+	missile_speed = 6.5
+	missile_evasion = 0.40
+	missile_health = 6.00
+	shield_damage = 1.1
+	armor_penetration = 0.30
+	power = -60
+	cost = 60
+	
+	prerequisites = { "tech_c_missiles_6" }
+	component_set = "C_MISSILE_6"
+	projectile_gfx = "large_missile"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_long_range }
+	
+	upgrades_to = "C_LARGE_MISSILE_7"
+}
+
+### Missile Launcher 7
+weapon_component_template = {
+	key = "C_SMALL_MISSILE_7"
+	size = small
+	entity = "turret_missile_small_entity"
+	
+	icon = "GFX_C_ship_part_missiles_7"
+	icon_frame = 1
+	static_rotation = no
+	type = missile
+	
+	damage = { min = 20.2 max = 25.9 }
+	windup = { min = 2 max = 25 }
+	total_fire_time = 25
+	range = 100.0
+	accuracy = 1.00
+	tracking = 0.70
+	missile_speed = 7.00
+	missile_evasion = 0.40
+	missile_health = 7.00
+	shield_damage = 1.1
+	power = -17.50
+	cost = 17.50
+	
+	prerequisites = { "tech_c_missiles_7" }
+	component_set = "C_MISSILE_7"
+	projectile_gfx = "small_missile"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_long_range }
+}
+
+### Missile Launcher 7
+weapon_component_template = {
+	key = "C_MEDIUM_MISSILE_7"
+	size = medium
+	entity = "turret_missile_medium_entity"
+	
+	icon = "GFX_C_ship_part_missiles_7"
+	icon_frame = 1
+	static_rotation = no
+	type = missile
+	
+	damage = { min = 36 max = 57.6 }
+	windup = { min = 2 max = 25 }
+	total_fire_time = 25
+	range = 120.0
+	accuracy = 1.00
+	tracking = 0.70
+	missile_speed = 7.00
+	missile_evasion = 0.40
+	missile_health = 7.00
+	shield_damage = 1.1
+	armor_penetration = 0.15
+
+	power = -35
+	cost = 35
+	
+	prerequisites = { "tech_c_missiles_7" }
+	component_set = "C_MISSILE_7"
+	projectile_gfx = "medium_missile"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_long_range }
+}
+
+### Missile Launcher 7
+weapon_component_template = {
+	key = "C_LARGE_MISSILE_7"
+	size = large
+	entity = "turret_missile_large_entity"
+	
+	icon = "GFX_C_ship_part_missiles_7"
+	icon_frame = 1
+	static_rotation = no
+	type = missile
+	
+	damage = { min = 72 max = 119.5 }
+	windup = { min = 2 max = 25 }
+	total_fire_time = 25
+	range = 140.0
+	accuracy = 1.00
+	tracking = 0.70
+	missile_speed = 7.00
+	missile_evasion = 0.40
+	missile_health = 7.00
+	shield_damage = 1.1
+	armor_penetration = 0.30
+	power = -75
+	cost = 75
+	
+	prerequisites = { "tech_c_missiles_7" }
+	component_set = "C_MISSILE_7"
+	projectile_gfx = "large_missile"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_long_range }
+}

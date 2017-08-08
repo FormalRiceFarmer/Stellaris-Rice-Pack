@@ -1,0 +1,10 @@
+utility_component_template = {
+	key = "POWAH_REACTOR_EMPTY"
+	size = small
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = 0
+	cost = 0
+	should_ai_use = no
+	component_set = "powerstation_components"
+}

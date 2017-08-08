@@ -1,0 +1,432 @@
+utility_component_template = {
+	key = "POWAH_REACTOR_60_1"
+	size = small
+	icon = "GFX_ship_part_reactor_1"
+	icon_frame = 1
+	cost = 150
+	power = 300
+	ai_weight = { weight = 1 }
+	size_restriction = {  leviathan cofh_se_battleship_hvy cofh_se_battleship_sup st_dreadnought_01 st_R_dreadnought  }
+	prerequisites = { "tech_powah_1" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_60_2"
+	size = small
+	icon = "GFX_ship_part_reactor_2"
+	icon_frame = 1
+	cost = 300
+	power = 450
+	ai_weight = { weight = 2 }
+	size_restriction = {  leviathan cofh_se_battleship_hvy cofh_se_battleship_sup st_dreadnought_01 st_R_dreadnought  }
+	prerequisites = { "tech_powah_2" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_60_3"
+	size = small
+	icon = "GFX_ship_part_reactor_3"
+	icon_frame = 1
+	cost = 445
+	power = 600
+	ai_weight = { weight = 3 }
+	size_restriction = {  leviathan cofh_se_battleship_hvy cofh_se_battleship_sup st_dreadnought_01 st_R_dreadnought  }
+	prerequisites = { "tech_powah_3" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_60_4"
+	size = small
+	icon = "GFX_ship_part_reactor_4"
+	icon_frame = 1
+	cost = 600
+	power = 750
+	ai_weight = { weight = 4 }
+	size_restriction = {  leviathan cofh_se_battleship_hvy cofh_se_battleship_sup st_dreadnought_01 st_R_dreadnought  }
+	prerequisites = { "tech_powah_4" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_60_5"
+	size = small
+	icon = "GFX_ship_part_reactor_5"
+	icon_frame = 1
+	cost = 750
+	power = 900
+	ai_weight = { weight = 5 }
+	size_restriction = {  leviathan cofh_se_battleship_hvy cofh_se_battleship_sup st_dreadnought_01 st_R_dreadnought  }
+	prerequisites = { "tech_powah_5" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_60_6"
+	size = small
+	icon = "GFX_ship_part_reactor_r6"
+	icon_frame = 1
+	cost = 920
+	power = 1050
+	ai_weight = { weight = 6 }
+	size_restriction = {  leviathan cofh_se_battleship_hvy cofh_se_battleship_sup st_dreadnought_01 st_R_dreadnought  }
+	prerequisites = { "tech_fusion_power_energon" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_60_7"
+	size = small
+	icon = "GFX_ship_part_reactor_nhsc_6"
+	icon_frame = 1
+	cost = 900
+	power = 1050
+	ai_weight = { weight = 7 }
+	size_restriction = {  leviathan cofh_se_battleship_hvy cofh_se_battleship_sup st_dreadnought_01 st_R_dreadnought  }
+	prerequisites = { "nhsc_tech_advzeropointreactor_1_fake" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_60_8"
+	size = small
+	icon = "GFX_ship_part_enigmatic_power_core"
+	icon_frame = 1
+	cost = 900
+	power = 1050
+	ai_weight = { weight = 8 }
+	size_restriction = {  leviathan cofh_se_battleship_hvy cofh_se_battleship_sup st_dreadnought_01 st_R_dreadnought  }
+	prerequisites = { "tech_powah_6" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_60_9"
+	size = small
+	icon = "GFX_ship_part_reactor_r7"
+	icon_frame = 1
+	cost = 1050
+	power = 1200
+	ai_weight = { weight = 9 }
+	size_restriction = {  leviathan cofh_se_battleship_hvy cofh_se_battleship_sup st_dreadnought_01 st_R_dreadnought  }
+	prerequisites = { "tech_antimatter_power_optimized" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_60_10"
+	size = small
+	icon = "GFX_ship_part_reactor_nhsc_7"
+	icon_frame = 1
+	cost = 1200
+	power = 1350
+	ai_weight = { weight = 10 }
+	size_restriction = {  leviathan cofh_se_battleship_hvy cofh_se_battleship_sup st_dreadnought_01 st_R_dreadnought  }
+	prerequisites = { "nhsc_tech_advzeropointreactor_2_fake" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_60_11"
+	size = small
+	icon = "GFX_ship_part_reactor_r8"
+	icon_frame = 1
+	cost = 1200
+	power = 1350
+	ai_weight = { weight = 11 }
+	size_restriction = {  leviathan cofh_se_battleship_hvy cofh_se_battleship_sup st_dreadnought_01 st_R_dreadnought  }
+	prerequisites = { "tech_darkmatter_power" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_60_12"
+	size = small
+	icon = "GFX_ship_part_reactor_r9"
+	icon_frame = 1
+	cost = 1350
+	power = 1500
+	ai_weight = { weight = 12 }
+	size_restriction = {  leviathan cofh_se_battleship_hvy cofh_se_battleship_sup st_dreadnought_01 st_R_dreadnought  }
+	prerequisites = { "tech_darkmatter_power_optimized" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_60_13"
+	size = small
+	icon = "GFX_ship_part_nhsc_enigmatic_core_2"
+	icon_frame = 1
+	cost = 1350
+	power = 1500
+	ai_weight = { weight = 13 }
+	size_restriction = {  leviathan cofh_se_battleship_hvy cofh_se_battleship_sup st_dreadnought_01 st_R_dreadnought  }
+	prerequisites = { "nhsc_tech_enigmatic_power_2_fake" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_60_14"
+	size = small
+	icon = "GFX_ship_part_reactor_adv_zero_point_power"
+	icon_frame = 1
+	cost = 1350
+	power = 1500
+	ai_weight = { weight = 14 }
+	size_restriction = {  leviathan cofh_se_battleship_hvy cofh_se_battleship_sup st_dreadnought_01 st_R_dreadnought  }
+	prerequisites = { "tech_adv_zero_point_power_fake" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_60_15"
+	size = small
+	icon = "GFX_ship_part_reactor_nhsc_8"
+	icon_frame = 1
+	cost = 1490
+	power = 1650
+	ai_weight = { weight = 15 }
+	size_restriction = {  leviathan cofh_se_battleship_hvy cofh_se_battleship_sup st_dreadnought_01 st_R_dreadnought  }
+	prerequisites = { "nhsc_tech_advzeropointreactor_3_fake" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_60_16"
+	size = small
+	icon = "GFX_ship_part_reactor_r10"
+	icon_frame = 1
+	cost = 1645
+	power = 1800
+	ai_weight = { weight = 16 }
+	size_restriction = {  leviathan cofh_se_battleship_hvy cofh_se_battleship_sup st_dreadnought_01 st_R_dreadnought  }
+	prerequisites = { "tech_singularity_power" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_60_17"
+	size = small
+	icon = "GFX_ship_part_reactor_r11"
+	icon_frame = 1
+	cost = 2100
+	power = 2250
+	ai_weight = { weight = 17 }
+	size_restriction = {  leviathan cofh_se_battleship_hvy cofh_se_battleship_sup st_dreadnought_01 st_R_dreadnought  }
+	prerequisites = { "tech_tachyon_power" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_60_18"
+	size = small
+	icon = "GFX_ship_part_reactor_r12"
+	icon_frame = 1
+	cost = 2395
+	power = 2550
+	ai_weight = { weight = 18 }
+	size_restriction = {  leviathan cofh_se_battleship_hvy cofh_se_battleship_sup st_dreadnought_01 st_R_dreadnought  }
+	prerequisites = { "tech_wimp_power" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_72_1"
+	size = small
+	icon = "GFX_ship_part_reactor_1"
+	icon_frame = 1
+	cost = 180
+	power = 360
+	ai_weight = { weight = 1 }
+	size_restriction = {  titan Dreadnought  }
+	prerequisites = { "tech_powah_1" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_72_2"
+	size = small
+	icon = "GFX_ship_part_reactor_2"
+	icon_frame = 1
+	cost = 360
+	power = 540
+	ai_weight = { weight = 2 }
+	size_restriction = {  titan Dreadnought  }
+	prerequisites = { "tech_powah_2" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_72_3"
+	size = small
+	icon = "GFX_ship_part_reactor_3"
+	icon_frame = 1
+	cost = 535
+	power = 720
+	ai_weight = { weight = 3 }
+	size_restriction = {  titan Dreadnought  }
+	prerequisites = { "tech_powah_3" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_72_4"
+	size = small
+	icon = "GFX_ship_part_reactor_4"
+	icon_frame = 1
+	cost = 720
+	power = 900
+	ai_weight = { weight = 4 }
+	size_restriction = {  titan Dreadnought  }
+	prerequisites = { "tech_powah_4" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_72_5"
+	size = small
+	icon = "GFX_ship_part_reactor_5"
+	icon_frame = 1
+	cost = 900
+	power = 1080
+	ai_weight = { weight = 5 }
+	size_restriction = {  titan Dreadnought  }
+	prerequisites = { "tech_powah_5" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_72_6"
+	size = small
+	icon = "GFX_ship_part_reactor_r6"
+	icon_frame = 1
+	cost = 1105
+	power = 1260
+	ai_weight = { weight = 6 }
+	size_restriction = {  titan Dreadnought  }
+	prerequisites = { "tech_fusion_power_energon" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_72_7"
+	size = small
+	icon = "GFX_ship_part_reactor_nhsc_6"
+	icon_frame = 1
+	cost = 1080
+	power = 1260
+	ai_weight = { weight = 7 }
+	size_restriction = {  titan Dreadnought  }
+	prerequisites = { "nhsc_tech_advzeropointreactor_1_fake" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_72_8"
+	size = small
+	icon = "GFX_ship_part_enigmatic_power_core"
+	icon_frame = 1
+	cost = 1080
+	power = 1260
+	ai_weight = { weight = 8 }
+	size_restriction = {  titan Dreadnought  }
+	prerequisites = { "tech_powah_6" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_72_9"
+	size = small
+	icon = "GFX_ship_part_reactor_r7"
+	icon_frame = 1
+	cost = 1270
+	power = 1440
+	ai_weight = { weight = 9 }
+	size_restriction = {  titan Dreadnought  }
+	prerequisites = { "tech_antimatter_power_optimized" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_72_10"
+	size = small
+	icon = "GFX_ship_part_reactor_nhsc_7"
+	icon_frame = 1
+	cost = 1440
+	power = 1620
+	ai_weight = { weight = 10 }
+	size_restriction = {  titan Dreadnought  }
+	prerequisites = { "nhsc_tech_advzeropointreactor_2_fake" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_72_11"
+	size = small
+	icon = "GFX_ship_part_reactor_r8"
+	icon_frame = 1
+	cost = 1440
+	power = 1620
+	ai_weight = { weight = 11 }
+	size_restriction = {  titan Dreadnought  }
+	prerequisites = { "tech_darkmatter_power" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_72_12"
+	size = small
+	icon = "GFX_ship_part_reactor_r9"
+	icon_frame = 1
+	cost = 1620
+	power = 1800
+	ai_weight = { weight = 12 }
+	size_restriction = {  titan Dreadnought  }
+	prerequisites = { "tech_darkmatter_power_optimized" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_72_13"
+	size = small
+	icon = "GFX_ship_part_nhsc_enigmatic_core_2"
+	icon_frame = 1
+	cost = 1620
+	power = 1800
+	ai_weight = { weight = 13 }
+	size_restriction = {  titan Dreadnought  }
+	prerequisites = { "nhsc_tech_enigmatic_power_2_fake" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_72_14"
+	size = small
+	icon = "GFX_ship_part_reactor_adv_zero_point_power"
+	icon_frame = 1
+	cost = 1620
+	power = 1800
+	ai_weight = { weight = 14 }
+	size_restriction = {  titan Dreadnought  }
+	prerequisites = { "tech_adv_zero_point_power_fake" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_72_15"
+	size = small
+	icon = "GFX_ship_part_reactor_nhsc_8"
+	icon_frame = 1
+	cost = 1790
+	power = 1980
+	ai_weight = { weight = 15 }
+	size_restriction = {  titan Dreadnought  }
+	prerequisites = { "nhsc_tech_advzeropointreactor_3_fake" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_72_16"
+	size = small
+	icon = "GFX_ship_part_reactor_r10"
+	icon_frame = 1
+	cost = 1975
+	power = 2160
+	ai_weight = { weight = 16 }
+	size_restriction = {  titan Dreadnought  }
+	prerequisites = { "tech_singularity_power" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_72_17"
+	size = small
+	icon = "GFX_ship_part_reactor_r11"
+	icon_frame = 1
+	cost = 2515
+	power = 2700
+	ai_weight = { weight = 17 }
+	size_restriction = {  titan Dreadnought  }
+	prerequisites = { "tech_tachyon_power" }
+	component_set = "powerstation_components"
+}
+utility_component_template = {
+	key = "POWAH_REACTOR_72_18"
+	size = small
+	icon = "GFX_ship_part_reactor_r12"
+	icon_frame = 1
+	cost = 2875
+	power = 3060
+	ai_weight = { weight = 18 }
+	size_restriction = {  titan Dreadnought  }
+	prerequisites = { "tech_wimp_power" }
+	component_set = "powerstation_components"
+}

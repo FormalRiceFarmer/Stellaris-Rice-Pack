@@ -1,0 +1,91 @@
+# ####################
+#  Energy Lance
+# ####################
+
+# ## Energy Lance 3
+weapon_component_template = {
+	key = "C_LARGE_ENERGY_LANCE_3"
+	size = extra_large
+	entity = "invisible_turret_entity"
+	type = instant
+	
+	icon = "GFX_C_ship_part_energy_lance_3"
+	icon_frame = 1
+	
+	firing_arc = 25.0
+	min_range = 10.0
+	static_rotation = yes
+	use_ship_kill_target = no
+	
+	damage = { min = 202.8 max = 397.2 }
+	windup = { min = 22 max = 35 }
+	total_fire_time = 60
+	range = 100.0
+	accuracy = 0.85
+	armor_penetration = 0.90
+	shield_damage = 0.67
+	power = -130
+	cost = 130
+	
+	prerequisites = { "tech_c_energy_lance_3" }
+	component_set = "C_ENERGY_LANCE_3"
+	projectile_gfx = "c_tachyon_lance_3"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_long_range weapon_role_anti_armor }
+	
+	target_weights = {
+		npc_warship_01 = 5000
+		space_dragon_baby = 5000	
+		massive_ship_fallen_empire = 5000
+		large_ship_fallen_empire = 5000	
+		battleship = 5000
+		cruiser = 2500
+		destroyer = 1000
+		small_ship_fallen_empire = 1000	
+	}
+	
+	upgrades_to = "C_LARGE_ENERGY_LANCE_4"
+}
+
+# ## Energy Lance 4
+weapon_component_template = {
+	key = "C_LARGE_ENERGY_LANCE_4"
+	size = extra_large
+	entity = "invisible_turret_entity"
+	type = instant
+	
+	icon = "GFX_C_ship_part_energy_lance_4"
+	icon_frame = 1
+	
+	firing_arc = 25.0
+	min_range = 10.0
+	static_rotation = yes
+	use_ship_kill_target = no
+	
+	damage = { min = 243.4 max = 476.6 }
+	windup = { min = 22 max = 35 }
+	total_fire_time = 60
+	range = 100.0
+	accuracy = 0.85
+	armor_penetration = 0.90
+	shield_damage = 0.67
+	power = -140
+	cost = 140
+	
+	prerequisites = { "tech_c_energy_lance_4" }
+	component_set = "C_ENERGY_LANCE_4"
+	projectile_gfx = "c_tachyon_lance_4"
+	tags = { weapon_type_energy }
+	ai_tags = { weapon_role_long_range weapon_role_anti_armor }
+	
+	target_weights = {
+		npc_warship_01 = 5000
+		space_dragon_baby = 5000	
+		massive_ship_fallen_empire = 5000
+		large_ship_fallen_empire = 5000	
+		battleship = 5000
+		cruiser = 2500
+		destroyer = 1000
+		small_ship_fallen_empire = 1000	
+	}
+}

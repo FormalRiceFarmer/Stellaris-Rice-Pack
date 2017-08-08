@@ -1,0 +1,168 @@
+
+#Scope type varies depending on what is selected
+# This = selected object or player country
+# From = player country
+
+# Mercenary Enclave
+speeddial_button_merc_effect = {
+	potential = {
+    any_relation = {
+			is_country_type = fmerc_enclave
+			has_country_flag = folk_mercenary_country
+      has_communications = from
+    }
+	}
+	allow = {
+    custom_tooltip = speeddial_button_allow_blank_tooltip 
+    hidden_trigger = {
+      is_ai = no
+      NOT = { has_country_flag = fmerc_diplomacy_engaged }
+      any_relation = {
+        is_country_type = fmerc_enclave
+        has_country_flag = folk_mercenary_country
+        has_communications = from
+      }
+    }
+	}
+	effect = {
+    custom_tooltip = speeddial_button_contact_merc_tooltip
+    hidden_effect = {
+      random_relation = {
+        limit = {
+          is_country_type = fmerc_enclave
+          has_country_flag = folk_mercenary_country
+          has_communications = from
+        }
+        
+        country_event = { id = speeddial_mod.100 }
+      }
+    }
+	}
+}
+
+
+
+# Human Fallen Empires - pirates
+speeddial_button_hfe_pirates_effect = {
+	potential = {
+    any_relation = {
+			is_country_type = human_fallen_empires_pirate
+      has_communications = from
+    }
+	}
+	allow = {
+    custom_tooltip = speeddial_button_allow_blank_tooltip 
+    hidden_trigger = {
+      is_ai = no
+      NOT = {
+        has_country_flag = human_fallen_empires_pirate.101.block
+      }
+      any_relation = {
+        is_country_type = human_fallen_empires_pirate
+        has_communications = from
+      }
+    }
+	}
+	effect = {
+    custom_tooltip = speeddial_button_contact_hfe_pirate_tooltip
+    hidden_effect = {
+      random_relation = {
+        limit = {
+          is_country_type = human_fallen_empires_pirate
+          has_communications = from
+        }
+        country_event = { id = speeddial_mod.200 }
+      }
+    }
+	}
+}
+
+# Human Fallen Empires - ??? station
+speeddial_button_hfe_station_effect = {
+	potential = {
+    any_relation = {
+			is_country_type = human_fallen_empires_thoth
+      has_communications = from
+    }
+	}
+	allow = {
+    custom_tooltip = speeddial_button_allow_blank_tooltip 
+    hidden_trigger = {
+      is_ai = no
+      NOT = {
+        has_country_flag = human_fallen_empires.711.block
+      }
+      any_relation = {
+        is_country_type = human_fallen_empires_thoth
+        has_communications = from
+      }
+    }
+	}
+	effect = {
+    custom_tooltip = speeddial_button_contact_hfe_tooltip
+    hidden_effect = {
+      random_relation = {
+        limit = {
+          is_country_type = human_fallen_empires_thoth
+          has_communications = from
+        }
+        
+        country_event = { id = speeddial_mod.201 }
+      }
+    }
+	}
+}
+
+
+# Human Fallen Empires - deepvoid
+speeddial_button_hfe_deepvoid_effect = {
+	potential = {
+    has_country_flag = human_fallen_empires_discovery
+    is_country_type = human_fallen_empires_discovery
+	}
+	allow = {
+    custom_tooltip = speeddial_button_allow_hfe_deepvoid_tooltip 
+    hidden_trigger = {
+      is_ai = no 
+      any_owned_ship = {
+        is_ship_size = human_fallen_empires_deepvoid
+        exists = orbit
+        exists = orbit.planet
+        exists = orbit.planet.spaceport
+        exists = orbit.planet.owner
+        orbit.planet.owner = {
+          is_country_type = default
+          NOT = { is_hostile = from }
+        }
+      }
+      NOT = { has_country_flag = human_fallen_empires_discovery.151.block }
+    }
+	}
+  
+	effect = {
+    custom_tooltip = speeddial_button_contact_hfe_deepvoid_tooltip
+    hidden_effect = {
+      save_event_target_as = human_fallen_empires_discovery_owner   
+      random_owned_ship = {
+        limit = {
+          is_ship_size = human_fallen_empires_deepvoid
+          exists = orbit
+          exists = orbit.planet
+          exists = orbit.planet.spaceport
+          exists = orbit.planet.owner
+          orbit.planet.owner = {
+            is_country_type = default
+            NOT = { is_hostile = from }
+          }
+        }
+        orbit.planet = {
+          save_event_target_as = human_fallen_empires_discovery_docking_planet
+          owner = {
+            save_event_target_as = human_fallen_empires_discovery_docking_planet_owner
+          }
+        }
+        human_fallen_empires_effect_discovery_diplomacy_start = yes
+      }
+    }
+	}
+}

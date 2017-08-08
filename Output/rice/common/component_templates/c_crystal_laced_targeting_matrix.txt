@@ -1,0 +1,199 @@
+
+#############
+#	COST	#
+#############
+
+@cost_1S = 10
+@cost_1M = 20
+@cost_1L = 40
+
+@cost_2S = 20
+@cost_2M = 40
+@cost_2L = 80
+
+@cost_3S = 30
+@cost_3M = 60
+@cost_3L = 120
+
+@cost_4S = 40
+@cost_4M = 80
+@cost_4L = 160
+
+@cost_5S = 50
+@cost_5M = 100
+@cost_5L = 200
+
+@cost_6S = 60
+@cost_6M = 120
+@cost_6L = 240
+
+@cost_7S = 70
+@cost_7M = 140
+@cost_7L = 280
+
+@cost_8S = 80
+@cost_8M = 160
+@cost_8L = 320
+
+@cost_9S = 90
+@cost_9M = 180
+@cost_9L = 360
+
+@cost_10S = 100
+@cost_10M = 200
+@cost_10L = 400
+
+#############
+# ACCURACY	#
+#############
+
+@acc_1S = 1
+@acc_2S = 2
+@acc_3S = 3
+@acc_4S = 4
+@acc_5S = 5
+
+#############
+# TRACKING	#
+#############
+
+@track_1S = 1
+@track_2S = 2
+@track_3S = 3
+@track_4S = 4
+@track_5S = 5
+
+#############
+# DAMAGE	#
+#############
+
+@damage_1S = 0.05
+@damage_2S = 0.075
+@damage_3S = 0.10
+@damage_4S = 0.125
+@damage_5S = 0.15
+
+#############
+#	POWER	#
+#############
+
+@power_S1 = -15
+@power_S2 = -25
+@power_S3 = -35
+@power_S4 = -45
+@power_S5 = -55
+
+# ####################
+#  acc mods
+# ####################
+
+
+# +Targeting Matrix I
+
+utility_component_template = {
+	key = "C_SMALL_TARGETING_COMPUTER_1"
+	size = aux
+	icon = "GFX_C_ship_part_targeting_computer_1"
+	icon_frame = 1
+	power = @power_S1
+	cost = @cost_1S
+	ship_modifier = {
+		ship_tracking_add = @track_1S
+		ship_accuracy_add = @acc_1S
+		ship_weapon_damage = @damage_1S
+	}
+	ai_weight = {
+		weight = 5
+	}	
+	prerequisites = { tech_c_crystalis_targeting_matrix_1 }
+	component_set = "C_TARGETTING_COMPUTER_1"
+	upgrades_to = "C_SMALL_TARGETING_COMPUTER_2"
+}
+
+# +Targeting Matrix II
+
+utility_component_template = {
+	key = "C_SMALL_TARGETING_COMPUTER_2"
+	size = aux
+	icon = "GFX_C_ship_part_targeting_computer_2"
+	icon_frame = 1
+	power = @power_S2
+	cost = @cost_2S
+	ship_modifier = {
+		ship_tracking_add = @track_2S
+		ship_accuracy_add = @acc_2S
+		ship_weapon_damage = @damage_2S
+	}
+	ai_weight = {
+		weight = 10
+	}	
+	prerequisites = { tech_c_crystalis_targeting_matrix_2 }
+	component_set = "C_TARGETTING_COMPUTER_2"
+	upgrades_to = "C_SMALL_TARGETING_COMPUTER_3"
+}
+
+# +Targeting Matrix III
+
+utility_component_template = {
+	key = "C_SMALL_TARGETING_COMPUTER_3"
+	size = aux
+	icon = "GFX_C_ship_part_targeting_computer_3"
+	icon_frame = 1
+	power = @power_S3
+	cost = @cost_3S
+	ship_modifier = {
+		ship_tracking_add = @track_3S
+		ship_accuracy_add = @acc_3S
+		ship_weapon_damage = @damage_3S
+	}
+	ai_weight = {
+		weight = 15
+	}	
+	prerequisites = { tech_c_crystalis_targeting_matrix_3 }
+	component_set = "C_TARGETTING_COMPUTER_3"
+	upgrades_to = "C_SMALL_TARGETING_COMPUTER_4"
+}
+
+# +Targeting Matrix IV
+
+utility_component_template = {
+	key = "C_SMALL_TARGETING_COMPUTER_4"
+	size = aux
+	icon = "GFX_C_ship_part_targeting_computer_4"
+	icon_frame = 1
+	power = @power_S4
+	cost = @cost_4S
+	ship_modifier = {
+		ship_tracking_add = @track_4S
+		ship_accuracy_add = @acc_4S
+		ship_weapon_damage = @damage_4S
+	}
+	ai_weight = {
+		weight = 20
+	}	
+	prerequisites = { tech_c_crystalis_targeting_matrix_4 }
+	component_set = "C_TARGETTING_COMPUTER_4"
+	upgrades_to = "C_SMALL_TARGETING_COMPUTER_5"
+}
+
+# +Targeting Matrix V
+
+utility_component_template = {
+	key = "C_SMALL_TARGETING_COMPUTER_5"
+	size = aux
+	icon = "GFX_C_ship_part_targeting_computer_5"
+	icon_frame = 1
+	power = @power_S5
+	cost = @cost_5S
+	
+	ship_modifier = {
+		ship_tracking_add = @track_5S
+		ship_accuracy_add = @acc_5S
+		ship_weapon_damage = @damage_5S
+	}
+	ai_weight = {
+		weight = 25
+	}	
+	prerequisites = { tech_c_crystalis_targeting_matrix_5 }
+	component_set = "C_TARGETTING_COMPUTER_5"
+}

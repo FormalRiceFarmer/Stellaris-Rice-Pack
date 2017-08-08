@@ -1,0 +1,12 @@
+utility_component_template = {
+	key = "POWAH_REACTOR_[key]_[index]"
+	size = small
+	icon = "[icon]"
+	icon_frame = 1
+	cost = [cost]
+	power = [power]
+	ai_weight = { weight = [index] }
+	size_restriction = { [size] }
+	prerequisites = { "[tech]" }
+	component_set = "powerstation_components"
+}

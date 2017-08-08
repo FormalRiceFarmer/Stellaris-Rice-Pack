@@ -1,0 +1,188 @@
+# Icons set here are the ones show in the actual slot. The reason is so that we can support different icons for different sizes. 
+
+#Updated Range on these
+
+# DEFAULT VALUES:
+# is_missile = no
+# is_beam = no
+# is_point_defence = no
+
+# ####################
+#  Autocannons
+# ####################
+
+# ## Autocannons 4
+weapon_component_template = {
+	type = instant
+	
+	key = "C_SMALL_AUTOCANNON_4"
+	size = small
+	entity = "small_kinetic_gun_entity"
+	
+	damage = { min = 11 max = 38.8 } #-1 -2
+	windup = { min = 2 max = 15 }
+	total_fire_time = 30
+	range = 20.0
+	accuracy = 0.84
+	tracking = 0.65
+	armor_penetration = 0.33
+	shield_damage = 1.00
+	power = -10
+	cost = 10
+	
+	icon = "GFX_C_ship_part_autocannon_4"
+	icon_frame = 1
+	
+	prerequisites = { "tech_c_autocannons_4" }
+	component_set = "C_AUTOCANNON_4"
+	projectile_gfx = "c_stormfire_auto_cannons_4_s"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_short_range }
+	
+	upgrades_to = "C_SMALL_AUTOCANNON_5"
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "C_MEDIUM_AUTOCANNON_4"
+	size = medium
+	entity = "medium_kinetic_gun_entity"
+	
+	damage = { min = 22 max = 80 } #-2 -4
+	windup = { min = 2 max = 15 }
+	total_fire_time = 30
+	range = 40.0
+	accuracy = 0.82
+	tracking = 0.35
+	armor_penetration = 0.33
+	shield_damage = 1.00
+	power = -20
+	cost = 20
+	
+	icon = "GFX_C_ship_part_autocannon_4"
+	icon_frame = 1
+	
+	prerequisites = { "tech_c_autocannons_4" }
+	component_set = "C_AUTOCANNON_4"
+	projectile_gfx = "c_stormfire_auto_cannons_4_m"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_short_range }
+	
+	upgrades_to = "C_MEDIUM_AUTOCANNON_5"
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "C_LARGE_AUTOCANNON_4"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	
+	damage = { min = 58.4 max = 160 } #-4 -8
+	windup = { min = 2 max = 15 }
+	total_fire_time = 30
+	range = 60.0
+	accuracy = 0.77
+	tracking = 0.10
+	armor_penetration = 0.33
+	shield_damage = 1.00
+	power = -40
+	cost = 40
+	
+	icon = "GFX_C_ship_part_autocannon_4"
+	icon_frame = 1
+	
+	prerequisites = { "tech_c_autocannons_4" }
+	component_set = "C_AUTOCANNON_4"
+	projectile_gfx = "c_stormfire_auto_cannons_4_l"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_short_range }
+	
+	upgrades_to = "C_LARGE_AUTOCANNON_5"
+}
+
+# ## Autocannons 5
+weapon_component_template = {
+	type = instant
+	
+	key = "C_SMALL_AUTOCANNON_5"
+	size = small
+	entity = "small_kinetic_gun_entity"
+	
+	damage = { min = 13.4 max = 47 } #-1 -2
+	windup = { min = 2 max = 15 }
+	total_fire_time = 30
+	range = 20.0
+	accuracy = 0.84
+	tracking = 0.65
+	armor_penetration = 0.33
+	shield_damage = 1.00
+	power = -12.5
+	cost = 12.5
+	
+	icon = "GFX_C_ship_part_autocannon_5"
+	icon_frame = 1
+	
+	prerequisites = { "tech_c_autocannons_5" }
+	component_set = "C_AUTOCANNON_5"
+	projectile_gfx = "c_stormfire_auto_cannons_5_s"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_short_range }
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "C_MEDIUM_AUTOCANNON_5"
+	size = medium
+	entity = "medium_kinetic_gun_entity"
+	
+	damage = { min = 26.8 max = 96.8 } #-2 -4
+	windup = { min = 2 max = 15 }
+	total_fire_time = 30
+	range = 40.0
+	accuracy = 0.82
+	tracking = 0.35
+	armor_penetration = 0.33
+	shield_damage = 1.00
+	power = -25
+	cost = 25
+	
+	icon = "GFX_C_ship_part_autocannon_5"
+	icon_frame = 1
+	
+	prerequisites = { "tech_c_autocannons_5" }
+	component_set = "C_AUTOCANNON_5"
+	projectile_gfx = "c_stormfire_auto_cannons_5_m"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_short_range }	
+}
+
+weapon_component_template = {
+	type = instant
+	
+	key = "C_LARGE_AUTOCANNON_5"
+	size = large
+	entity = "large_kinetic_gun_entity"
+	
+	damage = { min = 70.8 max = 193.6 } #-4 -8
+	windup = { min = 2 max = 15 }
+	total_fire_time = 30
+	range = 60.0
+	accuracy = 0.77
+	tracking = 0.10
+	armor_penetration = 0.33
+	shield_damage = 1.00
+	power = -50
+	cost = 50
+	
+	icon = "GFX_C_ship_part_autocannon_5"
+	icon_frame = 1
+	
+	prerequisites = { "tech_c_autocannons_5" }
+	component_set = "C_AUTOCANNON_5"
+	projectile_gfx = "c_stormfire_auto_cannons_5_l"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_short_range }
+}

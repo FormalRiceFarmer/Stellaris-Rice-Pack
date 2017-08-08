@@ -1,0 +1,92 @@
+# ####################
+#  Mass Accelerator
+# ####################
+
+# ## Mass Accelerator 3
+weapon_component_template = {
+	type = instant
+	
+	key = "C_LARGE_MASS_ACCELERATOR_3"
+	size = extra_large
+	entity = "invisible_turret_entity"
+	
+	icon = "GFX_C_ship_part_mass_accelerator_3"
+	icon_frame = 1
+	
+	firing_arc = 25.0
+	min_range = 10.0
+	static_rotation = yes
+	use_ship_kill_target = no
+	
+	damage = { min = 145.2 max = 420 }
+	windup = { min = 2 max = 25 }
+	total_fire_time = 65
+	range = 120.0
+	accuracy = 0.90
+	shield_damage = 1.33
+	armor_penetration = 0.5
+	power = -130
+	cost = 130
+	
+	prerequisites = { "tech_c_mass_accelerator_3" }
+	component_set = "C_MASS_ACCELERATOR_3"
+	projectile_gfx = "kinetic_artillery"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_long_range }
+	upgrades_to = "C_LARGE_MASS_ACCELERATOR_4"
+	
+	target_weights = {
+		npc_warship_01 = 5000
+		space_dragon_baby = 5000	
+		massive_ship_fallen_empire = 5000
+		large_ship_fallen_empire = 5000	
+		battleship = 5000
+		cruiser = 2500
+		destroyer = 1000
+		small_ship_fallen_empire = 1000	
+	}
+}
+
+# ## Mass Accelerator 4
+weapon_component_template = {
+	type = instant
+	
+	key = "C_LARGE_MASS_ACCELERATOR_4"
+	size = extra_large
+	entity = "invisible_turret_entity"
+	
+	icon = "GFX_C_ship_part_mass_accelerator_4"
+	icon_frame = 1
+	
+	firing_arc = 25.0
+	min_range = 10.0
+	static_rotation = yes
+	use_ship_kill_target = no
+	
+	damage = { min = 174.2 max = 504 }
+	windup = { min = 2 max = 25 }
+	total_fire_time = 65
+	range = 120.0
+	accuracy = 0.90
+	shield_damage = 1.33
+	armor_penetration = 0.5
+	power = -140
+	cost = 140
+	
+	prerequisites = { "tech_c_mass_accelerator_4" }
+	component_set = "C_MASS_ACCELERATOR_4"
+	projectile_gfx = "adv_kinetic_artillery"
+	tags = { weapon_type_kinetic }
+	ai_tags = { weapon_role_long_range }
+	
+	target_weights = {
+		npc_warship_01 = 5000
+		space_dragon_baby = 5000	
+		massive_ship_fallen_empire = 5000
+		large_ship_fallen_empire = 5000	
+		battleship = 5000
+		cruiser = 2500
+		destroyer = 1000
+		small_ship_fallen_empire = 1000	
+	}
+}

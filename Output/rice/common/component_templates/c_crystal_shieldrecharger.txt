@@ -1,0 +1,54 @@
+
+####################
+# Shield Recharger #
+####################
+
+utility_component_template = {
+	can_recharge_shield = yes
+	key = "C_SHIELD_RECHARGER_2"
+	size = aux
+	icon = "GFX_C_ship_part_shield_recharger_2"
+	icon_frame = 1
+	power = -30
+	cost = 60
+	
+	prerequisites = { "tech_c_shield_rechargers_2" }
+	component_set = "C_SHIELD_RECHARGER_2"
+	
+	modifier = {
+		ship_shield_regen_mult = 0.6 #Regeneration per day
+	}
+	
+	ai_weight = {
+		weight = 45
+		modifier = {
+			factor = 2.0
+			is_preferred_weapons = energy
+		}
+	}
+}
+
+utility_component_template = {
+	can_recharge_shield = yes
+	key = "C_SHIELD_RECHARGER_3"
+	size = aux
+	icon = "GFX_C_ship_part_shield_recharger_3"
+	icon_frame = 1
+	power = -40
+	cost = 80
+	
+	prerequisites = { "tech_c_shield_rechargers_3" }
+	component_set = "C_SHIELD_RECHARGER_3"
+	
+	modifier = {
+		ship_shield_regen_mult = 0.7 #Regeneration per day
+	}
+	
+	ai_weight = {
+		weight = 55
+		modifier = {
+			factor = 2.0
+			is_preferred_weapons = energy
+		}
+	}
+}

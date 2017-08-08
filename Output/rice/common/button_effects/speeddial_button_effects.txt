@@ -1,0 +1,950 @@
+
+#Scope type varies depending on what is selected
+# This = selected object or player country
+# From = player country
+
+
+speeddial_button_open_options_effect = {
+	potential = {
+    any_relation = {
+      is_country_type = enclave
+      has_communications = from
+    }
+	}
+	allow = {
+    is_ai = no
+	}
+	effect = {
+    custom_tooltip = speeddial_button_open_options_tooltip 
+    if = {
+      limit = {
+        has_country_flag = speeddial_classic_mode
+      }
+      custom_tooltip = speeddial_button_open_options_tooltip_classic
+      else = {
+        if = {
+          limit= {
+            NOT = { has_country_flag = speeddial_classic_mode }
+            NOT = { has_country_flag = speeddial_extend_fixed_mode }
+            NOT = { has_country_flag = speeddial_fixed_mode }
+          }
+          custom_tooltip = speeddial_button_open_options_tooltip_extended
+          else = {
+            if = {
+              limit = {
+                has_country_flag = speeddial_extend_fixed_mode
+              }
+              custom_tooltip = speeddial_button_open_options_tooltip_extended_fixed
+              else = {
+                if = {
+                  limit = {
+                    has_country_flag = speeddial_fixed_mode
+                  }
+                  custom_tooltip = speeddial_button_open_options_tooltip_fixed
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    hidden_effect = {
+      if = {
+        limit = {
+          has_country_flag = speeddial_classic_mode
+        }
+        remove_country_flag = speeddial_classic_mode
+        else = {
+          if = {
+            limit= {
+              NOT = { has_country_flag = speeddial_classic_mode }
+              NOT = { has_country_flag = speeddial_extend_fixed_mode }
+              NOT = { has_country_flag = speeddial_fixed_mode }
+            }
+            set_country_flag = speeddial_extend_fixed_mode
+            else = {
+              if = {
+                limit = {
+                  has_country_flag = speeddial_extend_fixed_mode
+                }
+                remove_country_flag = speeddial_extend_fixed_mode
+                set_country_flag = speeddial_fixed_mode
+                else = {
+                  if = {
+                    limit = {
+                      has_country_flag = speeddial_fixed_mode
+                    }
+                    remove_country_flag = speeddial_fixed_mode
+                    set_country_flag = speeddial_classic_mode
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    custom_tooltip = speeddial_button_open_options_tooltip_end
+  }
+}
+
+speeddial_button_extend_trader_effect = {
+	potential = {
+    NOT = { has_country_flag = speeddial_classic_mode }
+    NOT = { has_country_flag = speeddial_fixed_mode }
+    NOT = { has_country_flag = speeddial_open_trader_extenders }
+    any_relation = {
+      is_country_type = enclave
+      has_country_flag = trader_enclave_country
+      has_communications = from
+    }
+	}
+	allow = {
+    hidden_trigger = {
+      is_ai = no
+      calc_true_if = {
+        amount = 2
+        any_relation = {
+          is_country_type = enclave
+          has_country_flag = trader_enclave_country_1
+          has_communications = from
+        }
+        any_relation = {
+          is_country_type = enclave
+          has_country_flag = trader_enclave_country_2
+          has_communications = from
+        }
+        any_relation = {
+          is_country_type = enclave
+          has_country_flag = trader_enclave_country_3
+          has_communications = from
+        }
+      }
+    }
+	}
+	effect = {
+    set_country_flag = speeddial_open_trader_extenders
+    remove_country_flag = speeddial_open_curator_extenders
+  }
+}
+speeddial_button_retract_trader_effect = {
+	potential = {
+    NOT = { has_country_flag = speeddial_classic_mode }
+    NOT = { has_country_flag = speeddial_fixed_mode }
+    has_country_flag = speeddial_open_trader_extenders
+    any_relation = {
+      is_country_type = enclave
+      has_country_flag = trader_enclave_country
+      has_communications = from
+    }
+	}
+	allow = {
+    is_ai = no
+	}
+	effect = {
+    remove_country_flag = speeddial_open_trader_extenders
+  }
+}
+
+speeddial_button_extend_trader_effect_bg = {
+	potential = {
+    NOT = { has_country_flag = speeddial_classic_mode }
+    NOT = { has_country_flag = speeddial_fixed_mode }
+    has_country_flag = speeddial_open_trader_extenders
+	}
+	allow = {
+    hidden_trigger = { always = no }
+	}
+	effect = {
+    #nothing - is background only
+  }
+}
+
+speeddial_button_contact_trader_xc_effect = {
+	potential = {
+    NOT = { has_country_flag = speeddial_classic_mode }
+    NOT = { has_country_flag = speeddial_fixed_mode }
+    has_country_flag = speeddial_open_trader_extenders
+    any_relation = {
+      is_country_type = enclave
+      has_communications = from
+      has_country_flag = trader_enclave_country_1
+    }
+	}
+	allow = {
+    hidden_trigger = {
+      is_ai = no
+      NOT = { has_country_flag = trader_enclave_diplomacy_engaged }
+      any_relation = {
+        is_country_type = enclave
+        has_communications = from
+        has_country_flag = trader_enclave_country_1
+        from = { NOT = { has_country_flag = attacked_xuracorp } }
+      }
+    }
+	}
+	effect = {
+    custom_tooltip = speeddial_button_contact_traders_xc_tooltip
+    hidden_effect = {
+      set_country_flag = speeddial_fixed_contact_xc
+      remove_country_flag = speeddial_fixed_contact_rce
+      remove_country_flag = speeddial_fixed_contact_mmg
+      random_relation = { 
+        limit = {
+          is_country_type = enclave
+          has_communications = from
+          has_country_flag = trader_enclave_country_1
+          from = { NOT = { has_country_flag = attacked_xuracorp } }
+        }
+        country_event = { id = speeddial.100 }
+      }
+    }
+  }
+}
+
+speeddial_button_contact_trader_rce_effect = {
+	potential = {
+    NOT = { has_country_flag = speeddial_classic_mode }
+    NOT = { has_country_flag = speeddial_fixed_mode }
+    has_country_flag = speeddial_open_trader_extenders
+    any_relation = {
+      is_country_type = enclave
+      has_communications = from
+      has_country_flag = trader_enclave_country_2
+    }
+	}
+	allow = {
+    hidden_trigger = {
+      is_ai = no
+      NOT = { has_country_flag = trader_enclave_diplomacy_engaged }
+      any_relation = {
+        is_country_type = enclave
+        has_communications = from
+        has_country_flag = trader_enclave_country_2
+        from = { NOT = { has_country_flag = attacked_riggans } }
+      }
+    }
+	}
+	effect = {
+    custom_tooltip = speeddial_button_contact_traders_rce_tooltip
+    hidden_effect = {
+      remove_country_flag = speeddial_fixed_contact_xc
+      set_country_flag = speeddial_fixed_contact_rce
+      remove_country_flag = speeddial_fixed_contact_mmg
+      random_relation = { 
+        limit = {
+          is_country_type = enclave
+          has_communications = from
+          has_country_flag = trader_enclave_country_2
+          from = { NOT = { has_country_flag = attacked_riggans } }
+        }
+        country_event = { id = speeddial.100 }
+      }
+    }
+  }
+}
+
+speeddial_button_contact_trader_mmg_effect = {
+	potential = {
+    NOT = { has_country_flag = speeddial_classic_mode }
+    NOT = { has_country_flag = speeddial_fixed_mode }
+    has_country_flag = speeddial_open_trader_extenders
+    any_relation = {
+      is_country_type = enclave
+      has_communications = from
+      has_country_flag = trader_enclave_country_3
+    }
+	}
+	allow = {
+    hidden_trigger = {
+      is_ai = no
+      NOT = { has_country_flag = trader_enclave_diplomacy_engaged }
+      any_relation = {
+        is_country_type = enclave
+        has_communications = from
+        has_country_flag = trader_enclave_country_3
+        from = { NOT = { has_country_flag = attacked_muutagans } }
+      }
+    }
+	}
+	effect = {
+    custom_tooltip = speeddial_button_contact_traders_mmg_tooltip
+    hidden_effect = {
+      remove_country_flag = speeddial_fixed_contact_xc
+      remove_country_flag = speeddial_fixed_contact_rce
+      set_country_flag = speeddial_fixed_contact_mmg
+      random_relation = { 
+        limit = {
+          is_country_type = enclave
+          has_communications = from
+          has_country_flag = trader_enclave_country_3
+          from = { NOT = { has_country_flag = attacked_muutagans } }
+        }
+        country_event = { id = speeddial.100 }
+      }
+    }
+  }
+}
+
+# curators extended
+
+speeddial_button_extend_curator_effect = {
+	potential = {
+    NOT = { has_country_flag = speeddial_classic_mode }
+    NOT = { has_country_flag = speeddial_fixed_mode }
+    NOT = { has_country_flag = speeddial_open_curator_extenders }
+    any_relation = {
+      is_country_type = enclave
+      has_country_flag = curator_enclave_country
+      has_communications = from
+    }
+	}
+	allow = {
+    hidden_trigger = {
+      is_ai = no
+      calc_true_if = {
+        amount = 2
+        any_relation = {
+          is_country_type = enclave
+          has_country_flag = speeddial_curator_1
+          has_communications = from
+        }
+        any_relation = {
+          is_country_type = enclave
+          has_country_flag = speeddial_curator_2
+          has_communications = from
+        }
+        any_relation = {
+          is_country_type = enclave
+          has_country_flag = speeddial_curator_3
+          has_communications = from
+        }
+      }
+    }
+	}
+	effect = {
+    set_country_flag = speeddial_open_curator_extenders
+    remove_country_flag = speeddial_open_trader_extenders
+  }
+}
+speeddial_button_retract_curator_effect = {
+	potential = {
+    NOT = { has_country_flag = speeddial_classic_mode }
+    NOT = { has_country_flag = speeddial_fixed_mode }
+    has_country_flag = speeddial_open_curator_extenders
+    any_relation = {
+      is_country_type = enclave
+      has_country_flag = curator_enclave_country
+      has_communications = from
+    }
+	}
+	allow = {
+    is_ai = no
+	}
+	effect = {
+    remove_country_flag = speeddial_open_curator_extenders
+  }
+}
+speeddial_button_extend_curator_effect_bg = {
+	potential = {
+    NOT = { has_country_flag = speeddial_classic_mode }
+    NOT = { has_country_flag = speeddial_fixed_mode }
+    has_country_flag = speeddial_open_curator_extenders
+	}
+	allow = {
+    hidden_trigger = { always = no }
+	}
+	effect = {
+    #nothing - is background only
+  }
+}
+speeddial_button_contact_curator_1_effect = {
+	potential = {
+    NOT = { has_country_flag = speeddial_classic_mode }
+    NOT = { has_country_flag = speeddial_fixed_mode }
+    has_country_flag = speeddial_open_curator_extenders
+    any_relation = {
+      has_communications = from
+      has_country_flag = speeddial_curator_1
+    }
+	}
+	allow = {
+    hidden_trigger = {
+      is_ai = no
+      NOT = { has_country_flag = trader_enclave_diplomacy_engaged }
+      any_relation = {
+        has_country_flag = speeddial_curator_1
+        has_communications = from
+      }
+      NOR = { 
+        has_country_flag = curator_enclave_diplomacy_engaged 
+        has_country_flag = attacked_curators 
+      }
+    }
+	}
+	effect = {
+    set_country_flag = speeddial_fixed_contact_c1
+    remove_country_flag = speeddial_fixed_contact_c2
+    remove_country_flag = speeddial_fixed_contact_c3
+    random_relation = { 
+      limit = {
+        has_country_flag = speeddial_curator_1
+        has_communications = from
+      }
+      custom_tooltip = speeddial_button_contact_wbc_tooltip
+      hidden_effect = {
+        country_event = { id = speeddial.500 }
+      }
+    }
+  }
+}
+speeddial_button_contact_curator_2_effect = {
+	potential = {
+    NOT = { has_country_flag = speeddial_classic_mode }
+    NOT = { has_country_flag = speeddial_fixed_mode }
+    has_country_flag = speeddial_open_curator_extenders
+    any_relation = {
+      has_communications = from
+      has_country_flag = speeddial_curator_2
+    }
+	}
+	allow = {
+    hidden_trigger = {
+      is_ai = no
+      NOT = { has_country_flag = trader_enclave_diplomacy_engaged }
+      any_relation = {
+        has_country_flag = speeddial_curator_2
+        has_communications = from
+      }
+      NOR = { 
+        has_country_flag = curator_enclave_diplomacy_engaged 
+        has_country_flag = attacked_curators 
+      }
+    }
+	}
+	effect = {
+    remove_country_flag = speeddial_fixed_contact_c1
+    set_country_flag = speeddial_fixed_contact_c2
+    remove_country_flag = speeddial_fixed_contact_c3
+    random_relation = { 
+      limit = {
+        has_country_flag = speeddial_curator_2
+        has_communications = from
+      }
+      custom_tooltip = speeddial_button_contact_wbc_tooltip
+      hidden_effect = {
+        country_event = { id = speeddial.500 }
+      }
+    }
+  }
+}
+speeddial_button_contact_curator_3_effect = {
+	potential = {
+    NOT = { has_country_flag = speeddial_classic_mode }
+    NOT = { has_country_flag = speeddial_fixed_mode }
+    has_country_flag = speeddial_open_curator_extenders
+    any_relation = {
+      has_communications = from
+      has_country_flag = speeddial_curator_3
+    }
+	}
+	allow = {
+    hidden_trigger = {
+      is_ai = no
+      NOT = { has_country_flag = trader_enclave_diplomacy_engaged }
+      any_relation = {
+        has_country_flag = speeddial_curator_3
+        has_communications = from
+      }
+      NOR = { 
+        has_country_flag = curator_enclave_diplomacy_engaged 
+        has_country_flag = attacked_curators 
+      }
+    }
+	}
+	effect = {
+    remove_country_flag = speeddial_fixed_contact_c1
+    remove_country_flag = speeddial_fixed_contact_c2
+    set_country_flag = speeddial_fixed_contact_c3
+    random_relation = { 
+      limit = {
+        has_country_flag = speeddial_curator_3
+        has_communications = from
+      }
+      custom_tooltip = speeddial_button_contact_wbc_tooltip
+      hidden_effect = {
+        country_event = { id = speeddial.500 }
+      }
+    }
+  }
+}
+###############
+### CLASSIC ###
+###############
+
+
+
+# traders
+speeddial_button_trader_effect = {
+	potential = {
+    any_relation = {
+      is_country_type = enclave
+      has_country_flag = trader_enclave_country
+      has_communications = from
+    }
+	}
+	allow = {
+    custom_tooltip = speeddial_button_allow_blank_tooltip 
+    hidden_trigger = {
+      is_ai = no
+      NOT = { has_country_flag = trader_enclave_diplomacy_engaged }
+      any_relation = {
+        is_country_type = enclave
+        has_communications = from
+        OR = {
+          AND = {
+            has_country_flag = trader_enclave_country_1
+            from = { NOT = { has_country_flag = attacked_xuracorp } }
+          }
+          AND = {
+            has_country_flag = trader_enclave_country_2
+            from = { NOT = { has_country_flag = attacked_riggans } }
+          }
+          AND = {
+            has_country_flag = trader_enclave_country_3
+            from = { NOT = { has_country_flag = attacked_muutagans } }
+          }
+        }
+      }
+    }
+	}
+	effect = {
+    if = {
+      limit = {
+        OR = {
+          has_country_flag = speeddial_classic_mode
+          NOT = {
+            has_country_flag = speeddial_classic_mode 
+            has_country_flag = speeddial_extend_fixed_mode 
+            has_country_flag = speeddial_fixed_mode 
+          }
+          NOT = {
+            has_country_flag = speeddial_fixed_contact_xc 
+            has_country_flag = speeddial_fixed_contact_rce 
+            has_country_flag = speeddial_fixed_contact_mmg
+          }
+          AND = {
+            has_country_flag = speeddial_fixed_contact_xc
+            OR = {
+              has_country_flag = attacked_xuracorp
+              NOT = {
+                any_relation = {
+                  has_country_flag = trader_enclave_country_1
+                }
+              }
+            }
+          }
+          AND = {
+            has_country_flag = speeddial_fixed_contact_rce
+            OR = {
+              has_country_flag = attacked_riggans
+              NOT = {
+                any_relation = {
+                  has_country_flag = trader_enclave_country_2
+                }
+              }
+            }
+          }
+          AND = {
+            has_country_flag = speeddial_fixed_contact_mmg
+            OR = {
+              has_country_flag = attacked_muutagans
+              NOT = {
+                any_relation = {
+                  has_country_flag = trader_enclave_country_3
+                }
+              }
+            }
+          }
+        }
+      }
+      custom_tooltip = speeddial_button_contact_trader_tooltip
+      hidden_effect = {
+        random_relation = {
+          limit = {
+            is_country_type = enclave
+            has_communications = from
+            OR = {
+              AND = {
+                has_country_flag = trader_enclave_country_1
+                from = { NOT = { has_country_flag = attacked_xuracorp } }
+              }
+              AND = {
+                has_country_flag = trader_enclave_country_2
+                from = { NOT = { has_country_flag = attacked_riggans } }
+              }
+              AND = {
+                has_country_flag = trader_enclave_country_3
+                from = { NOT = { has_country_flag = attacked_muutagans } }
+              }
+            }
+          }
+          country_event = { id = speeddial.100 }
+        }
+      }
+      else = {
+        if = {
+          limit = {
+            has_country_flag = speeddial_fixed_contact_xc
+          }
+          custom_tooltip = speeddial_button_contact_traders_xc_tooltip
+          hidden_effect = {
+            random_relation = { 
+              limit = {
+                is_country_type = enclave
+                has_communications = from
+                has_country_flag = trader_enclave_country_1
+                from = { NOT = { has_country_flag = attacked_xuracorp } }
+              }
+              country_event = { id = speeddial.100 }
+            }
+          }
+          else = {
+            if = {
+              limit = {
+                has_country_flag = speeddial_fixed_contact_rce
+              }
+              custom_tooltip = speeddial_button_contact_traders_rce_tooltip
+              hidden_effect = {
+                random_relation = { 
+                  limit = {
+                    is_country_type = enclave
+                    has_communications = from
+                    has_country_flag = trader_enclave_country_2
+                    from = { NOT = { has_country_flag = attacked_riggans } }
+                  }
+                  country_event = { id = speeddial.100 }
+                }
+              }
+              else = {
+                if = {
+                  limit = {
+                    has_country_flag = speeddial_fixed_contact_mmg
+                  }
+                  custom_tooltip = speeddial_button_contact_traders_mmg_tooltip
+                  hidden_effect = {
+                    random_relation = { 
+                      limit = {
+                        is_country_type = enclave
+                        has_communications = from
+                        has_country_flag = trader_enclave_country_3
+                        from = { NOT = { has_country_flag = attacked_muutagans } }
+                      }
+                      country_event = { id = speeddial.100 }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#artists
+
+speeddial_button_artist_effect = {
+	potential = {
+    any_relation = {
+      is_country_type = enclave
+      has_country_flag = artist_enclave_country
+      has_communications = from
+    }
+	}
+	allow = {
+    custom_tooltip = speeddial_button_allow_blank_tooltip 
+    hidden_trigger = {
+      is_ai = no
+      any_relation = {
+        is_country_type = enclave
+        has_country_flag = artist_enclave_country
+        has_communications = from
+      }
+      OR = {
+        has_country_flag = artist_enclave_diplomacy_continued
+        NOT = { has_country_flag = artist_enclave_diplomacy_engaged }
+        has_country_flag = recently_purchased_art
+        has_country_flag = recently_purchased_patron
+        has_country_flag = recently_purchased_festival
+      }
+      NOR = { 
+        has_country_flag = artist_enclave_diplomacy_engaged
+      	has_country_flag = enclave_artist_ignores 
+      }
+    }
+	}
+	effect = {
+    custom_tooltip = speeddial_button_contact_artist_tooltip
+    hidden_effect = {
+      random_relation = {
+        limit = {
+          is_country_type = enclave
+          has_country_flag = artist_enclave_country
+          has_communications = from
+        }
+        country_event = { id = speeddial.300 }
+      }
+    }
+	}
+}
+
+#curators
+speeddial_button_curator_effect = {
+	potential = {
+    any_relation = {
+      is_country_type = enclave
+      has_country_flag = curator_enclave_country
+      has_communications = from
+    }
+	}
+	allow = {
+    custom_tooltip = speeddial_button_allow_blank_tooltip 
+    hidden_trigger = {
+      is_ai = no
+      NOR = { 
+        has_country_flag = curator_enclave_diplomacy_engaged 
+        has_country_flag = attacked_curators 
+      }
+      any_relation = {
+        is_country_type = enclave
+        has_country_flag = curator_enclave_country
+        has_communications = from
+      }
+    }
+	}
+	effect = {
+    if = {
+      limit = {
+        OR = {
+          has_country_flag = speeddial_classic_mode
+          NOT = {
+            has_country_flag = speeddial_classic_mode 
+            has_country_flag = speeddial_extend_fixed_mode 
+            has_country_flag = speeddial_fixed_mode 
+          }
+          NOT = {
+            has_country_flag = speeddial_fixed_contact_c1 
+            has_country_flag = speeddial_fixed_contact_c2 
+            has_country_flag = speeddial_fixed_contact_c3
+          }
+          AND = {
+            has_country_flag = speeddial_fixed_contact_c1
+            NOT = {
+              any_relation = {
+                has_country_flag = speeddial_curator_1
+              }
+            }
+          }
+          AND = {
+            has_country_flag = speeddial_fixed_contact_c2
+            NOT = {
+              any_relation = {
+                has_country_flag = speeddial_curator_2
+              }
+            }
+          }
+          AND = {
+            has_country_flag = speeddial_fixed_contact_c3
+            NOT = {
+              any_relation = {
+                has_country_flag = speeddial_curator_3
+              }
+            }
+          }
+        }
+      }
+      custom_tooltip = speeddial_button_contact_curator_tooltip
+      hidden_effect = {
+        random_relation = {
+          limit = {
+            is_country_type = enclave
+            has_country_flag = curator_enclave_country
+            has_communications = from
+          }
+          country_event = { id = speeddial.500 }
+        }
+      }
+      else = {
+        if = {
+          limit = {
+            has_country_flag = speeddial_fixed_contact_c1
+          }
+          random_relation = { 
+            limit = {
+              has_country_flag = speeddial_curator_1
+              has_communications = from
+            }
+            custom_tooltip = speeddial_button_contact_wbc_tooltip
+            hidden_effect = {
+              country_event = { id = speeddial.500 }
+            }
+          }
+          else = {
+            if = {
+              limit = {
+                has_country_flag = speeddial_fixed_contact_c2
+              }
+              random_relation = { 
+                limit = {
+                  has_country_flag = speeddial_curator_2
+                  has_communications = from
+                }
+                custom_tooltip = speeddial_button_contact_wbc_tooltip
+                hidden_effect = {
+                  country_event = { id = speeddial.500 }
+                }
+              }
+              else = {
+                if = {
+                  limit = {
+                    has_country_flag = speeddial_fixed_contact_c3
+                  }
+                  random_relation = { 
+                    limit = {
+                      has_country_flag = speeddial_curator_3
+                      has_communications = from
+                    }
+                    custom_tooltip = speeddial_button_contact_wbc_tooltip
+                    hidden_effect = {
+                      country_event = { id = speeddial.500 }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+	}
+}
+
+
+
+#shroud
+speeddial_button_shroud_effect = {
+	potential = {
+    any_relation = {
+      is_country_type = shroud
+      has_communications = from
+    }
+	}
+	allow = {
+    if = {
+      limit = { has_country_flag = speeddial_shroud_3600_timer }
+      custom_tooltip = speeddial_button_allow_shroud_3600_tooltip
+      else = {
+        if = { 
+          limit = { has_country_flag = speeddial_shroud_1800_timer }
+          custom_tooltip = speeddial_button_allow_shroud_1800_tooltip
+          else = {
+            if = { 
+              limit = { has_country_flag = speeddial_shroud_1440_timer }
+              custom_tooltip = speeddial_button_allow_shroud_1440_tooltip
+              else = {
+                if = { 
+                  limit = { has_country_flag = speeddial_shroud_1080_timer }
+                  custom_tooltip = speeddial_button_allow_shroud_1080_tooltip
+                  else = {
+                    if = { 
+                      limit = { has_country_flag = speeddial_shroud_720_timer }
+                      custom_tooltip = speeddial_button_allow_shroud_720_tooltip
+                      else = {
+                        if = { 
+                          limit = { has_country_flag = speeddial_shroud_360_timer }
+                          custom_tooltip = speeddial_button_allow_shroud_360_tooltip
+                          else = {
+                            if = { 
+                              limit = { has_country_flag = speeddial_shroud_180_timer }
+                              custom_tooltip = speeddial_button_allow_shroud_180_tooltip
+                              else = {
+                                if = { 
+                                  limit = { has_country_flag = speeddial_shroud_150_timer }
+                                  custom_tooltip = speeddial_button_allow_shroud_150_tooltip
+                                  else = {
+                                    if = { 
+                                      limit = { has_country_flag = speeddial_shroud_120_timer }
+                                      custom_tooltip = speeddial_button_allow_shroud_120_tooltip
+                                      else = {
+                                        if = { 
+                                          limit = { has_country_flag = speeddial_shroud_90_timer }
+                                          custom_tooltip = speeddial_button_allow_shroud_90_tooltip
+                                          else = {
+                                            if = { 
+                                              limit = { has_country_flag = speeddial_shroud_60_timer }
+                                              custom_tooltip = speeddial_button_allow_shroud_60_tooltip
+                                              else = {
+                                                if = { 
+                                                  limit = { has_country_flag = speeddial_shroud_30_timer }
+                                                  custom_tooltip = speeddial_button_allow_shroud_30_tooltip
+                                                  else = {
+                                                    if = {
+                                                      limit = { has_country_flag = shroud_diplomacy_engaged }
+                                                      custom_tooltip = speeddial_button_allow_blank_tooltip
+                                                      else = {
+                                                        custom_tooltip = speeddial_button_allow_shroud_tooltip 
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    hidden_trigger = {
+      is_ai = no
+      any_relation = {
+        is_country_type = shroud
+        has_communications = from
+      }
+      NOR = { 
+        has_country_flag = shroud_diplomacy_engaged
+        has_modifier = shroud_cooldown
+        has_modifier = shroud_precog_cooldown
+      }
+    }
+	}
+	effect = {
+    custom_tooltip = speeddial_button_contact_shroud_tooltip 
+    hidden_effect = {
+      random_relation = {
+        limit = {
+          is_country_type = shroud
+          has_communications = from
+        }
+        country_event = { id = speeddial.3000 }
+      }
+    }
+	}
+}

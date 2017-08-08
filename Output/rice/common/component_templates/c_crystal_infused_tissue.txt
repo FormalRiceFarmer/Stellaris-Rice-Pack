@@ -1,0 +1,142 @@
+
+#############
+#	COST	#
+#############
+
+@cost_1S = 10
+@cost_1M = 20
+@cost_1L = 40
+
+@cost_2S = 15
+@cost_2M = 30
+@cost_2L = 60
+
+@cost_3S = 20
+@cost_3M = 40
+@cost_3L = 80
+
+@cost_4S = 25
+@cost_4M = 50
+@cost_4L = 100
+
+@cost_5S = 30
+@cost_5M = 60
+@cost_5L = 120
+
+#############
+#	REGEN	#
+#############
+
+@regen_1S = 0.04
+
+@regen_2S = 0.08
+
+@regen_3S = 0.12
+
+@regen_4S = 0.16
+
+@regen_5S = 0.20
+
+# ####################
+#  Regen mods
+# ####################
+
+
+# Auto-Repair / Hull Regeneration mk I
+
+utility_component_template = {
+	key = "C_SMALL_AUTO_REPAIR_1"
+	size = aux
+	icon = "GFX_C_ship_part_auto_repair_1"
+	icon_frame = 1
+	power = 0
+	cost = @cost_1S
+	modifier = {
+		ship_auto_repair_add = @regen_1S
+	}
+	ai_weight = {
+		weight = 20
+	}
+	prerequisites = { tech_c_regenerative_hull_tissue_1 }
+	component_set = "C_AUTO_REPAIR_1"
+	upgrades_to = "C_SMALL_AUTO_REPAIR_2"
+}
+
+# Auto-Repair / Hull Regeneration mk II
+
+utility_component_template = {
+	key = "C_SMALL_AUTO_REPAIR_2"
+	size = aux
+	icon = "GFX_C_ship_part_auto_repair_2"
+	icon_frame = 1
+	power = 0
+	cost = @cost_2S
+	modifier = {
+		ship_auto_repair_add = @regen_2S
+	}
+	ai_weight = {
+		weight = 25
+	}
+	prerequisites = { tech_c_regenerative_hull_tissue_2 }
+	component_set = "C_AUTO_REPAIR_2"
+	upgrades_to = "C_SMALL_AUTO_REPAIR_3"
+}
+
+# Auto-Repair / Hull Regeneration mk III
+
+utility_component_template = {
+	key = "C_SMALL_AUTO_REPAIR_3"
+	size = aux
+	icon = "GFX_C_ship_part_auto_repair_3"
+	icon_frame = 1
+	power = 0
+	cost = @cost_3S
+	modifier = {
+		ship_auto_repair_add = @regen_3S
+	}
+	ai_weight = {
+		weight = 30
+	}
+	prerequisites = { tech_c_regenerative_hull_tissue_3 }
+	component_set = "C_AUTO_REPAIR_3"
+	upgrades_to = "C_SMALL_AUTO_REPAIR_4"
+}
+
+# Auto-Repair / Hull Regeneration mk IV
+
+utility_component_template = {
+	key = "C_SMALL_AUTO_REPAIR_4"
+	size = aux
+	icon = "GFX_C_ship_part_auto_repair_4"
+	icon_frame = 1
+	power = 0
+	cost = @cost_4S
+	modifier = {
+		ship_auto_repair_add = @regen_4S
+	}
+	ai_weight = {
+		weight = 35
+	}
+	prerequisites = { tech_c_regenerative_hull_tissue_4 }
+	component_set = "C_AUTO_REPAIR_4"
+	upgrades_to = "C_SMALL_AUTO_REPAIR_5"
+}
+
+# Auto-Repair / Hull Regeneration mk V
+
+utility_component_template = {
+	key = "C_SMALL_AUTO_REPAIR_5"
+	size = aux
+	icon = "GFX_C_ship_part_auto_repair_5"
+	icon_frame = 1
+	power = 0
+	cost = @cost_5S
+	modifier = {
+		ship_auto_repair_add = @regen_5S
+	}
+	ai_weight = {
+		weight = 40
+	}
+	prerequisites = { tech_c_regenerative_hull_tissue_5 }
+	component_set = "C_AUTO_REPAIR_5"
+}

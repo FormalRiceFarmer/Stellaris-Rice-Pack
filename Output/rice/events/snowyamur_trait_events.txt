@@ -1,0 +1,318 @@
+#Event triggers are being exploited to trigger certain trait modifiers incapable
+of being normally triggered.
+
+namespace = samur_traits
+
+### Samur Trait Game Start Event
+
+###DO NOT HAVE ANY POPULATION HAPPINESS MODIFIERS USED; THEY DO NOT WORK!
+
+#Snowy Traits added to trigger on game start
+
+#Decimated Mind-State
+event = {
+	id = samur_traits.1
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		every_country = {
+			if = {
+				limit = {
+					AND = {
+						NOT = {
+							has_modifier = amur_decimated_mind_state
+							has_country_flag = flag_trait_snowyamur_decimated_mind_state
+						}
+							has_trait = trait_snowyamur_decimated_mind_state
+					}
+				}
+				add_modifier = {
+					modifier = amur_decimated_mind_state
+					days = -1
+				}
+				set_country_flag = flag_trait_snowyamur_decimated_mind_state
+			}
+		}
+	}
+}
+
+#Organized
+event = {
+	id = samur_traits.2
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		every_country = {
+			if = {
+				limit = {
+					AND = {
+						NOT = { 
+							has_modifier = amur_organized
+							has_country_flag = flag_trait_snowyamur_organized
+						}
+							has_trait = trait_snowyamur_organized
+					}
+				}
+				add_modifier = {
+					modifier = amur_organized
+					days = -1
+				}
+				set_country_flag = flag_trait_snowyamur_organized
+			}
+		}
+	}
+}
+
+#Grasp of the Nether Veil
+event = {
+	id = samur_traits.3
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		every_country = {
+			if = {
+				limit = {
+					AND = {
+						NOT = {
+							has_modifier = amur_grasp_of_the_nether_veil
+							has_country_flag = flag_trait_snowyamur_grasp_of_the_nether_veil
+						}
+							has_trait = trait_snowyamur_grasp_of_the_nether_veil
+					}
+				}
+				add_modifier = {
+					modifier = amur_grasp_of_the_nether_veil
+					days = -1
+				}
+				set_country_flag = flag_trait_snowyamur_grasp_of_the_nether_veil
+			}
+		}
+	}
+}
+
+#Electrovorous
+event = {
+	id = samur_traits.4
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		every_country = {
+			if = {
+				limit = {
+					AND = {
+						NOT = { 
+							has_modifier = amur_electrovorous
+							has_country_flag = flag_trait_snowyamur_electrovorous
+						}
+							has_trait = trait_snowyamur_electrovorous
+					}
+				}
+				add_modifier = {
+					modifier = amur_electrovorous
+					days = -1
+				}
+				set_country_flag = flag_trait_snowyamur_electrovorous
+			}
+		}
+	}
+}
+
+#Lithovorous
+event = {
+	id = samur_traits.5
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		every_country = {
+			if = {
+				limit = {
+					AND = {
+						NOT = { 
+							has_modifier = amur_lithovorous
+							has_country_flag = flag_trait_snowyamur_lithovorous
+						}
+							has_trait = trait_snowyamur_lithovorous
+					}
+				}
+				add_modifier = {
+					modifier = amur_lithovorous
+					days = -1
+				}
+				set_country_flag = flag_trait_snowyamur_lithovorous
+			}
+		}
+	}
+}
+
+#Knowledge of Xayn
+event = {
+	id = samur_traits.6
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		every_country = {
+			if = {
+				limit = {
+					AND = {
+						NOT = { 
+							has_modifier = amur_knowledge_of_xayn
+							has_country_flag = flag_trait_snowyamur_knowledge_of_xayn
+						}
+							has_trait = trait_snowyamur_knowledge_of_xayn
+					}
+				}
+				add_modifier = {
+					modifier = amur_knowledge_of_xayn
+					days = -1
+				}
+				set_country_flag = flag_trait_snowyamur_knowledge_of_xayn
+			}
+		}
+	}
+}
+
+#Inquiring
+event = {
+	id = samur_traits.7
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		every_country = {
+			if = {
+				limit = {
+					AND = {
+						NOT = { 
+							has_modifier = amur_inquiring
+							has_country_flag = flag_trait_snowyamur_inquiring
+						}
+							has_trait = trait_snowyamur_inquiring
+					}
+				}
+				add_modifier = {
+					modifier = amur_inquiring
+					days = -1
+				}
+				set_country_flag = flag_trait_snowyamur_inquiring
+			}
+		}
+	}
+}
+
+#Committed Researchers
+event = {
+	id = samur_traits.8
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		every_country = {
+			if = {
+				limit = {
+					AND = {
+						NOT = { 
+							has_modifier = amur_committed_researchers
+							has_country_flag = flag_trait_snowyamur_committed_researchers
+						}
+							has_trait = trait_snowyamur_committed_researchers
+					}
+				}
+				add_modifier = {
+					modifier = amur_committed_researchers
+					days = -1
+				}
+				set_country_flag = flag_trait_snowyamur_committed_researchers
+			}
+		}
+	}
+}
+
+#Persuasive
+event = {
+	id = samur_traits.9
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		every_country = {
+			if = {
+				limit = {
+					AND = {
+						NOT = { 
+							has_modifier = amur_persuasive
+							has_country_flag = flag_trait_snowyamur_persuasive
+						}
+							has_trait = trait_snowyamur_persuasive
+					}
+				}
+				add_modifier = {
+					modifier = amur_persuasive
+					days = -1
+				}
+				set_country_flag = flag_trait_snowyamur_persuasive
+			}
+		}
+	}
+}
+
+#Unconvincing
+event = {
+	id = samur_traits.10
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		every_country = {
+			if = {
+				limit = {
+					AND = {
+						NOT = { 
+							has_modifier = amur_unconvincing
+							has_country_flag = flag_trait_snowyamur_unconvincing
+						}
+							has_trait = trait_snowyamur_unconvincing
+					}
+				}
+				add_modifier = {
+					modifier = amur_unconvincing
+					days = -1
+				}
+				set_country_flag = flag_trait_snowyamur_unconvincing
+			}
+		}
+	}
+}
+
+#Innovative
+event = {
+	id = samur_traits.11
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		every_country = {
+			if = {
+				limit = {
+					AND = {
+						NOT = { 
+							has_modifier = amur_innovative
+							has_country_flag = flag_trait_snowyamur_innovative
+						}
+							has_trait = trait_snowyamur_innovative
+					}
+				}
+				add_modifier = {
+					modifier = amur_innovative
+					days = -1
+				}
+				set_country_flag = flag_trait_snowyamur_innovative
+			}
+		}
+	}
+}

@@ -1,0 +1,150 @@
+########
+#	COST	  #
+########
+@cost_1 = 50
+@cost_2 = 75
+@cost_3 = 100
+@cost_4 = 125
+@cost_5 = 150
+
+#########
+#	POWER   #
+#########
+@power_1 = -10
+@power_2 = -20
+@power_3 = -40
+@power_4 = -60
+@power_5 = -80
+
+#########
+#	DAMAGE #
+#########
+@damage_1 = 0.20
+@damage_2 = 0.40
+@damage_3 = 0.60
+@damage_4 = 0.80
+@damage_5 = 1.00
+
+#############
+#	FLIGHTSPEED  #
+#############
+@flightspeed_1 = 0.20
+@flightspeed_2 = 0.40
+@flightspeed_3 = 0.60
+@flightspeed_4 = 0.80
+@flightspeed_5 = 1.00
+
+# Hangar Bays
+utility_component_template = {
+	key = "C_HANGAR_BAY_1"
+	size = aux
+	icon = "GFX_C_ship_part_hangar_1"
+	icon_frame = 1
+	power = @power_1
+	cost = @cost_1
+	
+	ship_modifier = {
+		weapon_type_strike_craft_weapon_damage_mult = @damage_1
+		weapon_type_strike_craft_speed_mult = @flightspeed_1
+	}
+	
+	ai_weight = {
+		weight = 25
+	}
+	
+	prerequisites = { "tech_c_hangar_1" }
+	component_set = "C_HANGAR_1"
+	
+	upgrades_to = "C_HANGAR_BAY_2"
+}
+
+utility_component_template = {
+	key = "C_HANGAR_BAY_2"
+	size = aux
+	icon = "GFX_C_ship_part_hangar_2"
+	icon_frame = 1
+	power = @power_2
+	cost = @cost_2
+
+	ship_modifier = {
+		weapon_type_strike_craft_weapon_damage_mult = @damage_2
+		weapon_type_strike_craft_speed_mult = @flightspeed_2
+	}
+	
+	ai_weight = {
+		weight = 30
+	}
+	
+	prerequisites = { "tech_c_hangar_2" }
+	component_set = "C_HANGAR_2"
+	
+	upgrades_to = "C_HANGAR_BAY_3"
+}
+
+utility_component_template = {
+	key = "C_HANGAR_BAY_3"
+	size = aux
+	icon = "GFX_C_ship_part_hangar_3"
+	icon_frame = 1
+	power = @power_3
+	cost = @cost_3
+
+	ship_modifier = {
+		weapon_type_strike_craft_weapon_damage_mult = @damage_3
+		weapon_type_strike_craft_speed_mult = @flightspeed_3
+	}
+	
+	ai_weight = {
+		weight = 35
+	}
+	
+	prerequisites = { "tech_c_hangar_3" }
+	component_set = "C_HANGAR_3"
+	
+	upgrades_to = "C_HANGAR_BAY_4"
+}
+
+utility_component_template = {
+	key = "C_HANGAR_BAY_4"
+	size = aux
+	icon = "GFX_C_ship_part_hangar_4"
+	icon_frame = 1
+	power = @power_4
+	cost = @cost_4
+
+	ship_modifier = {
+		weapon_type_strike_craft_weapon_damage_mult = @damage_4
+		weapon_type_strike_craft_speed_mult = @flightspeed_4
+	}
+	
+	ai_weight = {
+		weight = 40
+	}
+	
+	prerequisites = { "tech_c_hangar_4" }
+	component_set = "C_HANGAR_4"
+	
+	upgrades_to = "C_HANGAR_BAY_5"
+}
+
+utility_component_template = {
+	key = "C_HANGAR_BAY_5"
+	size = aux
+	icon = "GFX_C_ship_part_hangar_5"
+	icon_frame = 1
+	power = @power_5
+	cost = @cost_5
+
+	ship_modifier = {
+		weapon_type_strike_craft_weapon_damage_mult = @damage_5
+		weapon_type_strike_craft_speed_mult = @flightspeed_5
+	}
+	
+	ai_weight = {
+		weight = 45
+	}
+	
+	prerequisites = { "tech_c_hangar_5" }
+	component_set = "C_HANGAR_5"
+	
+}
