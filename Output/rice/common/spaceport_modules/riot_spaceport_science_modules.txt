@@ -1,0 +1,652 @@
+#RIOT 5/1/17
+
+spaceport_science_lab_1 = {
+	icon = "GFX_spaceport_science_lab_1"
+	section = "SCIENCE_SPACEPORT_SECTION"
+	prerequisites = { "tech_spaceport_2" }
+	spaceport_level = 2
+	replaceable = yes
+	construction_days = 180
+	#hidden = yes
+	
+	cost = {
+		minerals = 100
+	}
+	
+	required_resources = {
+		energy = 2
+	}
+	
+	station_modifier = {
+
+	}
+	
+	produced_resources = {
+		#sr_scientist = 1
+	}
+	
+	modifier = {
+
+	}
+	
+	planet_modifier = {
+		tile_resource_physics_research_mult = 0.01
+		tile_resource_society_research_mult = 0.01
+		tile_resource_engineering_research_mult = 0.1
+	}
+
+
+	ai_weight = {
+		factor = 1
+	}
+}
+
+spaceport_science_lab_2 = {
+	icon = "GFX_spaceport_science_lab_2"
+	section = "SCIENCE_SPACEPORT_SECTION"
+	prerequisites = { "tech_spaceport_3" }
+	spaceport_level = 3
+	replaceable = yes
+	construction_days = 270
+	#hidden = yes
+	
+	cost = {
+		minerals = 200
+	}
+	
+	required_resources = {
+		energy = 4
+	}
+	
+	station_modifier = {
+
+	}
+	
+	produced_resources = {
+		#sr_scientist = 2
+	}
+	
+	modifier = {
+
+	}
+	
+	planet_modifier = {
+		tile_resource_physics_research_mult = 0.02
+		tile_resource_society_research_mult = 0.02
+		tile_resource_engineering_research_mult = 0.2
+	}
+
+
+	ai_weight = {
+		factor = 1
+	}
+}
+
+spaceport_science_lab_3 = {
+	icon = "GFX_spaceport_science_lab_3"
+	section = "SCIENCE_SPACEPORT_SECTION"
+	prerequisites = { "tech_spaceport_4" }
+	spaceport_level = 4
+	replaceable = yes
+	construction_days = 360
+	#hidden = yes
+	
+	cost = {
+		minerals = 400
+	}
+	
+	station_modifier = {
+
+	}
+	
+	required_resources = {
+		energy = 6
+	}
+	
+	produced_resources = {
+		#sr_scientist = 3
+	}
+	
+	modifier = {
+
+	}
+	
+	planet_modifier = {
+		tile_resource_physics_research_mult = 0.03
+		tile_resource_society_research_mult = 0.03
+		tile_resource_engineering_research_mult = 0.3
+	}
+
+
+	ai_weight = {
+		factor = 1
+	}
+}
+
+spaceport_science_lab_4 = {
+	icon = "GFX_spaceport_science_lab_4"
+	section = "SCIENCE_SPACEPORT_SECTION"
+	prerequisites = { "tech_spaceport_6" }
+	spaceport_level = 6
+	replaceable = yes
+	construction_days = 450
+	#hidden = yes
+	
+	cost = {
+		minerals = 600
+	}
+	
+	station_modifier = {
+
+	}
+	
+	required_resources = {
+		energy = 8
+	}
+	
+	produced_resources = {
+		#sr_scientist = 4
+	}
+	
+	modifier = {
+
+	}
+	
+	planet_modifier = {
+		tile_resource_physics_research_mult = 0.05
+		tile_resource_society_research_mult = 0.05
+		tile_resource_engineering_research_mult = 0.5
+	}
+
+
+	ai_weight = {
+		factor = 1
+	}
+}
+
+spaceport_engineering_lab_1 = {
+	icon = "GFX_spaceport_engineering_lab_1"
+	section = "SCIENCE_SPACEPORT_SECTION"
+	prerequisites = { "tech_engineering_lab_1" }
+	spaceport_level = 2
+	replaceable = yes
+	construction_days = 180
+	#hidden = yes
+	
+	cost = {
+		minerals = 100
+	}
+	
+	required_resources = {
+		#sr_scientist = 1
+		energy = 2
+	}
+	
+	station_modifier = {
+
+	}
+	
+	produced_resources = {
+		engineering_research = 2
+	}
+	
+	modifier = {
+
+	}
+	
+	planet_modifier = {
+		#resource_engineering_research_add = 2
+	}
+
+
+	ai_weight = {
+		factor = 1
+	}
+}
+
+spaceport_physics_lab_1 = {
+	icon = "GFX_spaceport_physics_lab_1"
+	section = "SCIENCE_SPACEPORT_SECTION"
+	prerequisites = { "tech_physics_lab_1" }
+	spaceport_level = 2
+	replaceable = yes
+	construction_days = 180
+	#hidden = yes
+	
+	cost = {
+		minerals = 100
+	}
+	
+	required_resources = {
+		##sr_scientist = 1
+		energy = 2
+	}
+	
+	station_modifier = {
+
+	}
+	
+	produced_resources = {
+		physics_research = 2
+	}
+	
+	modifier = {
+
+	}
+	
+	planet_modifier = {
+		#resource_physics_research_add = 2
+	}
+
+
+	ai_weight = {
+		factor = 1
+	}
+}
+
+spaceport_society_lab_1 = {
+	icon = "GFX_spaceport_society_lab_1"
+	section = "SCIENCE_SPACEPORT_SECTION"
+	prerequisites = { "tech_biolab_1" }
+	spaceport_level = 2
+	replaceable = yes
+	construction_days = 180
+	#hidden = yes
+	
+	cost = {
+		minerals = 100
+	}
+	
+	required_resources = {
+		#sr_scientist = 1
+		energy = 2
+	}
+	
+	station_modifier = {
+
+	}
+	
+	produced_resources = {
+		society_research = 2
+	}
+	
+	modifier = {
+
+	}
+	
+	planet_modifier = {
+		#resource_physics_society_add = 2
+	}
+
+
+	ai_weight = {
+		factor = 1
+	}
+}
+
+spaceport_engineering_lab_2 = {
+	icon = "GFX_spaceport_engineering_lab_2"
+	section = "SCIENCE_SPACEPORT_SECTION"
+	prerequisites = { "tech_engineering_lab_2" }
+	spaceport_level = 3
+	replaceable = yes
+	construction_days = 270
+	#hidden = yes
+	
+	cost = {
+		minerals = 200
+	}
+	
+	required_resources = {
+		#sr_scientist = 2
+		energy = 3
+	}
+	
+	station_modifier = {
+		ship_fire_rate_mult = 0.05
+		ship_weapon_damage = 0.05
+	}
+	
+	ship_modifier = {
+		ship_fire_rate_mult = 0.05
+		ship_weapon_damage = 0.05
+	}
+	
+	produced_resources = {
+		engineering_research = 1
+	}
+	
+	modifier = {
+
+	}
+	
+	planet_modifier = {
+		#resource_physics_research_add = 2
+
+	}
+
+
+	ai_weight = {
+		factor = 1
+	}
+}
+
+spaceport_physics_lab_2 = {
+	icon = "GFX_spaceport_physics_lab_2"
+	section = "SCIENCE_SPACEPORT_SECTION"
+	prerequisites = { "tech_physics_lab_2" }
+	spaceport_level = 3
+	replaceable = yes
+	construction_days = 270
+	#hidden = yes
+	
+	cost = {
+		minerals = 200
+	}
+	
+	required_resources = {
+		#sr_scientist = 2
+		energy = 3
+	}
+	
+	station_modifier = {
+
+	}
+	
+	ship_modifier = {
+
+	}
+	
+	produced_resources = {
+		physics_research = 2
+	}
+
+	modifier = {
+		#all_technology_research_speed = 0.1
+	}
+	
+	planet_modifier = {
+		#resource_physics_research_add = 2
+		tile_resource_physics_research_mult = 0.10
+	}
+
+
+	ai_weight = {
+		factor = 1
+	}
+}
+
+spaceport_society_lab_2 = {
+	icon = "GFX_spaceport_society_lab_2"
+	section = "SCIENCE_SPACEPORT_SECTION"
+	prerequisites = { "tech_biolab_2" }
+	spaceport_level = 3
+	replaceable = yes
+	construction_days = 270
+	#hidden = yes
+	
+	cost = {
+		minerals = 200
+	}
+	
+	required_resources = {
+		#sr_scientist = 2
+		energy = 3
+	}
+	
+	station_modifier = {
+
+	}
+
+	
+	ship_modifier = {
+
+	}
+	
+	produced_resources = {
+		society_research = 2
+	}
+	
+	modifier = {
+	}
+	
+	planet_modifier = {
+		#resource_society_research_add = 2
+		tile_resource_society_research_mult = 0.10
+	}
+
+
+	ai_weight = {
+		factor = 1
+	}
+}
+
+spaceport_engineering_lab_3 = {
+	icon = "GFX_spaceport_engineering_lab_3"
+	section = "SCIENCE_SPACEPORT_SECTION"
+	prerequisites = { "tech_engineering_lab_3" }
+	spaceport_level = 4
+	replaceable = yes
+	construction_days = 360
+	#hidden = yes
+	
+	cost = {
+		minerals = 300
+	}
+	
+	required_resources = {
+		#sr_scientist = 3
+		energy = 4
+	}
+	
+	station_modifier = {
+		ship_weapon_damage = 0.15
+	}
+	
+	ship_modifier = {
+		ship_weapon_damage = 0.15
+	}
+	
+	produced_resources = {
+		engineering_research = 2
+	}
+	
+	modifier = {
+		
+	}
+	
+	planet_modifier = {
+		#resource_physics_research_add = 3
+
+	}
+
+
+	ai_weight = {
+		factor = 1
+	}
+}
+
+spaceport_physics_lab_3 = {
+	icon = "GFX_spaceport_physics_lab_3"
+	section = "SCIENCE_SPACEPORT_SECTION"
+	prerequisites = { "tech_physics_lab_3" }
+	spaceport_level = 4
+	replaceable = yes
+	construction_days = 360
+	#hidden = yes
+	
+	cost = {
+		minerals = 300
+	}
+	
+	required_resources = {
+		#sr_scientist = 3
+		energy = 4
+	}
+	
+	station_modifier = {
+
+	}
+	
+	ship_modifier = {
+
+	}
+	
+	produced_resources = {
+		physics_research = 2
+	}
+
+	modifier = {
+
+	}
+	
+	planet_modifier = {
+		tile_resource_physics_research_mult = 0.05
+		#tile_resource_society_research_mult = 0.05
+		#tile_resource_engineering_research_mult = 0.2
+		pop_environment_tolerance = 0.05
+	}
+
+
+	ai_weight = {
+		factor = 1
+	}
+}
+
+spaceport_society_lab_3 = {
+	icon = "GFX_spaceport_society_lab_3"
+	section = "SCIENCE_SPACEPORT_SECTION"
+	prerequisites = { "tech_biolab_3" }
+	spaceport_level = 4
+	replaceable = yes
+	construction_days = 360
+	#hidden = yes
+	
+	cost = {
+		minerals = 300
+	}
+	
+	required_resources = {
+		#sr_scientist = 3
+		energy = 4
+	}
+	
+	station_modifier = {
+
+	}
+	
+
+	
+	ship_modifier = {
+
+	}
+	
+	produced_resources = {
+		unity = 3
+		society_research = 2
+	}
+	
+	modifier = {
+	}
+	
+	planet_modifier = {
+
+	}
+
+
+	ai_weight = {
+		factor = 1
+	}
+}
+
+spaceport_robot_lab_1 = {
+	icon = "GFX_spaceport_robot_lab_1"
+	section = "SCIENCE_SPACEPORT_SECTION"
+	prerequisites = { "tech_robotic_workers" }
+	spaceport_level = 4
+	replaceable = yes
+	construction_days = 360
+	#hidden = yes
+	
+	cost = {
+		minerals = 300
+	}
+	
+	required_resources = {
+		#sr_scientist = 2
+		energy = 4
+	}
+	
+	station_modifier = {
+
+	}
+
+	
+	ship_modifier = {
+
+	}
+	
+	produced_resources = {
+	
+	}
+	
+	modifier = {
+	}
+	
+	planet_modifier = {
+		pop_robot_production_output = 0.05
+	}
+
+
+	ai_weight = {
+		factor = 1
+	}
+}
+
+spaceport_robot_lab_2 = {
+	icon = "GFX_spaceport_robot_lab_2"
+	section = "SCIENCE_SPACEPORT_SECTION"
+	prerequisites = { "tech_droid_workers" }
+	spaceport_level = 6
+	replaceable = yes
+	construction_days = 450
+	#hidden = yes
+	
+	cost = {
+		minerals = 500
+	}
+	
+	required_resources = {
+		#sr_scientist = 3
+		energy = 6
+	}
+	
+	station_modifier = {
+
+	}
+	
+
+	
+	ship_modifier = {
+
+	}
+	
+	produced_resources = {
+	
+	}
+	
+	modifier = {
+	}
+	
+	planet_modifier = {
+		pop_robot_production_output = 0.10
+	}
+
+
+	ai_weight = {
+		factor = 1
+	}
+}
+
+
+

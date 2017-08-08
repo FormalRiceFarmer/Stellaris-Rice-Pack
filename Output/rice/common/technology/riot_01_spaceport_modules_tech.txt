@@ -1,0 +1,1089 @@
+
+@tier1cost1 = 240
+@tier1cost2 = 360
+@tier1cost3 = 480
+@tier1cost4 = 600
+
+@tier2cost1 = 900
+@tier2cost2 = 1200
+@tier2cost3 = 1500
+@tier2cost4 = 1800
+
+@tier3cost1 = 1000
+@tier3cost2 = 1300
+@tier3cost3 = 1600
+@tier3cost4 = 1900
+
+
+@tier1weight1 = 100
+@tier1weight2 = 95
+@tier1weight3 = 90
+@tier1weight4 = 85
+
+@tier2weight1 = 75
+@tier2weight2 = 70
+@tier2weight3 = 65
+@tier2weight4 = 60
+
+@tier3weight1 = 50
+@tier3weight2 = 45
+@tier3weight3 = 40
+@tier3weight4 = 35
+
+
+tech_synchronized_defences_2 = {
+	area = physics
+	tier = 3
+	cost = @tier3cost3
+	category = { computing }
+	ai_update_type = military		
+	prerequisites = { "tech_synchronized_defences" }
+	#is_rare = yes
+	weight = @tier3weight3
+	
+	# unlocks orbital module - synchronized_defenses
+	
+	weight_modifier = {
+		factor = 0.5
+		modifier = {
+			factor = 0.50
+			NOR = {
+				research_leader = {
+					area = physics
+					has_trait = "leader_trait_expertise_voidcraft"
+				}
+				research_leader = {
+					area = physics
+					has_trait = "leader_trait_curator"
+				}
+			}
+		}
+		modifier = {
+			factor = 0.75
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 0.65
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 1.10
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.20
+			has_ethic = ethic_fanatic_militarist
+		}
+	}
+	
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_SYNCHRONIZED_DEFENCES_2_TITLE"
+			desc = "TECH_UNLOCK_SYNCHRONIZED_DEFENCES_2_DESC"
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+	}		
+}
+
+
+tech_battleship_yard_2 = {
+	cost = @tier3cost4
+	area = engineering
+	tier = 3
+	#is_rare = yes
+	category = { voidcraft }	
+	prerequisites = { "tech_battleship_yard" }
+	weight = @tier3weight4
+		
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+	
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_BATTLESHIP_YARD_2_TITLE"
+			desc = "TECH_UNLOCK_BATTLESHIP_YARD_2_DESC"
+		}
+	}
+}
+
+tech_psionic_engineering_academy = {
+	cost = @tier3cost4
+	area = engineering
+	tier = 3
+	#is_rare = yes
+	category = { voidcraft }	
+	prerequisites = { "tech_precognition_interface" }
+	weight = @tier3weight4
+		
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_voidcraft"
+			}
+		}
+	}
+	
+	prereqfor_desc = {
+		ship = {
+			#title = "TECH_UNLOCK_BATTLESHIP_YARD_2_TITLE"
+			#desc = "TECH_UNLOCK_BATTLESHIP_YARD_2_DESC"
+		}
+	}
+}
+
+#Medium Hydroponics
+tech_orbital_hydroponics_2 = {
+	cost = @tier3cost3
+	area = society
+	tier = 3
+	#is_rare = yes
+	category = { biology }	
+	prerequisites = { "tech_orbital_hydroponics" }
+	weight = @tier3weight3
+	
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_biology"
+			}
+		}
+	}	
+	
+	ai_weight = {
+		factor = 1.5 #farms are good
+		modifier = {
+			factor = 2
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 4
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_biology"
+			}
+		}
+	}
+	
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_ORBITAL_HYDROPONICS_2_TITLE"
+			desc = "TECH_UNLOCK_ORBITAL_HYDROPONICS_2_DESC"
+		}
+	}
+}
+
+#Large Hydroponics
+tech_orbital_hydroponics_3 = {
+	cost = @tier3cost3
+	area = society
+	tier = 3
+	#is_rare = yes
+	category = { biology }	
+	prerequisites = { "tech_orbital_hydroponics_2" }
+	weight = @tier3weight3
+	
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_biology"
+			}
+		}
+	}	
+	
+	ai_weight = {
+		factor = 1.5 #farms are good
+		modifier = {
+			factor = 2
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 4
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_biology"
+			}
+		}
+	}
+	
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_ORBITAL_HYDROPONICS_3_TITLE"
+			desc = "TECH_UNLOCK_ORBITAL_HYDROPONICS_3_DESC"
+		}
+	}
+}
+
+#Huge Hydroponics
+tech_orbital_hydroponics_4 = {
+	cost = @tier3cost3
+	area = society
+	tier = 4
+	is_rare = yes
+	category = { biology }	
+	prerequisites = { "tech_orbital_hydroponics_3" }
+	weight = @tier3weight3
+	
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 2
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_biology"
+			}
+		}
+	}	
+	
+	ai_weight = {
+		factor = 1.5 #farms are good
+		modifier = {
+			factor = 2
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 4
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_biology"
+			}
+		}
+	}
+	
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_ORBITAL_HYDROPONICS_4_TITLE"
+			desc = "TECH_UNLOCK_ORBITAL_HYDROPONICS_4_DESC"
+		}
+	}
+	
+}
+
+#Medium Solar Panel
+tech_solar_panel_network_2 = {
+	cost = @tier3cost3
+	area = physics
+	tier = 3
+	#is_rare = yes
+	category = { industry }
+	prerequisites = { "tech_solar_panel_network" "tech_spaceport_3" }
+	weight = @tier3weight3
+
+	
+	weight_modifier = {
+		modifier = {
+			is_ai = yes
+			factor = 10
+		}
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+	
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_SOLAR_PANEL_NETWORK_2_TITLE"
+			desc = "TECH_UNLOCK_SOLAR_PANEL_NETWORK_2_DESC"
+		}
+	}
+	
+	ai_weight = {
+		factor = 10
+	}
+}
+
+#Large Solar Panel
+tech_solar_panel_network_3 = {
+	cost = @tier3cost3
+	area = physics
+	tier = 3
+	#is_rare = yes
+	category = { industry }
+	prerequisites = { "tech_solar_panel_network_2" "tech_spaceport_4" }
+	weight = @tier3weight3
+
+	
+	weight_modifier = {
+		modifier = {
+			is_ai = yes
+			factor = 10
+		}
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+	
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_SOLAR_PANEL_NETWORK_3_TITLE"
+			desc = "TECH_UNLOCK_SOLAR_PANEL_NETWORK_3_DESC"
+		}
+	}
+	
+	ai_weight = {
+		factor = 10
+	}
+}
+
+#Huge Solar Panel
+tech_solar_panel_network_4 = {
+	cost = @tier3cost3
+	area = physics
+	tier = 3
+	is_rare = yes
+	category = { industry }
+	prerequisites = { "tech_solar_panel_network_3" "tech_spaceport_5" }
+	weight = @tier3weight3
+
+	
+	weight_modifier = {
+		modifier = {
+			is_ai = yes
+			factor = 10
+		}
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 10
+	}
+	
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_SOLAR_PANEL_NETWORK_4_TITLE"
+			desc = "TECH_UNLOCK_SOLAR_PANEL_NETWORK_4_DESC"
+		}
+	}
+}
+
+#HiveSolar Panel
+tech_hive_solar_panel_network = {
+	cost = @tier3cost3
+	area = physics
+	tier = 3
+	is_rare = yes
+	category = { industry }
+	prerequisites = { "tech_solar_panel_network_3" "tech_spaceport_5" }
+	weight = @tier3weight3
+
+	
+	weight_modifier = {
+		factor = 1.5
+		modifier = {
+			factor = 2
+			has_ethic = "ethic_hive_mind"	
+		}			
+		modifier = {
+			factor = 0
+			NOT = {
+				has_ethic = "ethic_hive_mind"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 10
+	}
+	
+	prereqfor_desc = {
+		ship = {
+			#title = "TECH_UNLOCK_SOLAR_PANEL_NETWORK_4_TITLE"
+			#desc = "TECH_UNLOCK_SOLAR_PANEL_NETWORK_4_DESC"
+		}
+	}
+}
+
+
+tech_reinforced_hull_1 = {
+	area = engineering
+	tier = 1
+	cost = @tier1cost3
+	category = { materials }
+	ai_update_type = military		
+	#is_rare = no
+	weight = @tier1weight3
+	prerequisites = { "tech_ship_armor_1" }
+	
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.25
+			NOT = {
+				research_leader = {
+					area = physics
+					has_trait = "leader_trait_expertise_voidcraft"
+				}
+			}
+		}
+		modifier = {
+			factor = 0.75
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 0.65
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 1.10
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.20
+			has_ethic = ethic_fanatic_militarist
+		}
+	}
+		
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_REINFORCED_HULL_1_TITLE"
+			desc = "TECH_UNLOCK_REINFORCED_HULL_1_DESC"
+		}
+	}
+	
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+	}	
+}
+
+tech_reinforced_hull_2 = {
+	area = engineering
+	tier = 2
+	cost = @tier3cost3
+	category = { materials }
+	ai_update_type = military	
+	prerequisites = { "tech_reinforced_hull_1" }	
+	#is_rare = yes
+	weight = @tier3weight3
+
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.25
+			NOT = {
+				research_leader = {
+					area = physics
+					has_trait = "leader_trait_expertise_voidcraft"
+				}
+			}
+		}
+		modifier = {
+			factor = 0.75
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 0.65
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 1.10
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.20
+			has_ethic = ethic_fanatic_militarist
+		}
+	}
+	
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_REINFORCED_HULL_2_TITLE"
+			desc = "TECH_UNLOCK_REINFORCED_HULL_2_DESC"
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+	}	
+}
+
+tech_reinforced_hull_3 = {
+	area = engineering
+	tier = 3
+	cost = @tier3cost3
+	category = { materials }
+	ai_update_type = military	
+	prerequisites = { "tech_reinforced_hull_2" }	
+	is_rare = yes
+	weight = @tier3weight3
+	
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.25
+			NOT = {
+				research_leader = {
+					area = physics
+					has_trait = "leader_trait_expertise_voidcraft"
+				}
+			}
+		}
+		modifier = {
+			factor = 0.75
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 0.65
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 1.10
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.20
+			has_ethic = ethic_fanatic_militarist
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+	}
+
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_REINFORCED_HULL_3_TITLE"
+			desc = "TECH_UNLOCK_REINFORCED_HULL_3_DESC"
+		}
+	}
+}
+
+
+#Material Factory
+tech_material_factory_1 = {
+	cost = @tier3cost3
+	area = physics
+	tier = 1
+	#is_rare = yes
+	category = { industry }
+	prerequisites = { "tech_solar_panel_network" }
+	weight = @tier3weight3
+	
+	
+	weight_modifier = {
+		modifier = {
+			is_ai = yes
+			factor = 10
+		}
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+	
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_MATERIAL_FACTORY_1_TITLE"
+			desc = "TECH_UNLOCK_MATERIAL_FACTORY_1_DESC"
+		}
+	}
+	
+	ai_weight = {
+		factor = 10
+	}
+}
+
+#Material Factory 2
+tech_material_factory_2 = {
+	cost = @tier3cost3
+	area = physics
+	tier = 2
+	#is_rare = yes
+	category = { industry }
+	prerequisites = { "tech_material_factory_1" }
+	weight = @tier3weight3
+	
+	
+	weight_modifier = {
+		modifier = {
+			is_ai = yes
+			factor = 10
+		}
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+	
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_MATERIAL_FACTORY_2_TITLE"
+			desc = "TECH_UNLOCK_MATERIAL_FACTORY_2_DESC"
+		}
+	}
+	
+	ai_weight = {
+		factor = 10
+	}
+}
+
+
+#Material Factory 3
+tech_material_factory_3 = {
+	cost = @tier3cost3
+	area = physics
+	tier = 3
+	#is_rare = yes
+	category = { industry }
+	prerequisites = { "tech_material_factory_2" }
+	weight = @tier3weight3
+	
+	
+	weight_modifier = {
+		modifier = {
+			is_ai = yes
+			factor = 10
+		}
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+	
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_MATERIAL_FACTORY_3_TITLE"
+			desc = "TECH_UNLOCK_MATERIAL_FACTORY_3_DESC"
+		}
+	}
+	
+	ai_weight = {
+		factor = 10
+	}
+}
+
+#Material Factory 4
+tech_material_factory_4 = {
+	cost = @tier3cost3
+	area = physics
+	tier = 4
+	is_rare = yes
+	category = { industry }
+	prerequisites = { "tech_material_factory_3" }
+	weight = @tier3weight3
+	
+	
+	weight_modifier = {
+		modifier = {
+			is_ai = yes
+			factor = 10
+		}
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 10
+	}
+	
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_MATERIAL_FACTORY_4_TITLE"
+			desc = "TECH_UNLOCK_MATERIAL_FACTORY_4_DESC"
+		}
+	}
+}
+
+#Listening Post
+#tech_listening_post_1 = {
+#	cost = @tier3cost3
+#	area = physics
+#	tier = 1
+#	#is_rare = yes
+#	category = { industry }
+#	prerequisites = { "tech_orbital_sensor_array" }
+#	weight = @tier3weight3
+#	
+#
+#	weight_modifier = {
+#		modifier = {
+#			is_ai = yes
+#			factor = 10
+#		}
+#		modifier = {
+#			factor = 2
+#			research_leader = {
+#				area = engineering
+#				has_trait = "leader_trait_expertise_industry"
+#			}
+#		}
+#	}
+#	
+#	prereqfor_desc = {
+#		ship = {
+#			title = "TECH_UNLOCK_LISTENING_POST_1_TITLE"
+#			desc = "TECH_UNLOCK_LISTENING_POST_1_DESC"
+#		}
+#	}
+#	
+#	ai_weight = {
+#		factor = 10
+#	}
+#}
+#
+##Listening Post 2
+#tech_listening_post_2 = {
+#	cost = @tier3cost3
+#	area = physics
+#	tier = 3
+#	#is_rare = yes
+#	category = { industry }
+#	prerequisites = { "tech_listening_post_1" }
+#	weight = @tier3weight3
+#	
+#
+#	weight_modifier = {
+#		modifier = {
+#			is_ai = yes
+#			factor = 10
+#		}
+#		modifier = {
+#			factor = 2
+#			research_leader = {
+#				area = engineering
+#				has_trait = "leader_trait_expertise_industry"
+#			}
+#		}
+#	}
+#	
+#	ai_weight = {
+#		factor = 10
+#	}
+#	
+#	prereqfor_desc = {
+#		ship = {
+#			title = "TECH_UNLOCK_LISTENING_POST_2_TITLE"
+#			desc = "TECH_UNLOCK_LISTENING_POST_2_DESC"
+#		}
+#	}
+#}
+
+#Media - Radio
+tech_media_1 = {
+	cost = @tier2cost2
+	area = society
+	tier = 2
+	#is_rare = yes
+	category = { biology }
+	prerequisites = { "tech_hypercomms_forum" }
+	weight = @tier2weight2
+	
+
+	weight_modifier = {
+		modifier = {
+			is_ai = yes
+			factor = 10
+		}
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_biology"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 10
+	}
+	
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_MEDIA_1_TITLE"
+			desc = "TECH_UNLOCK_MEDIA_1_DESC"
+		}
+	}
+}
+
+#Media - TV
+tech_media_2 = {
+	cost = @tier3cost3
+	area = society
+	tier = 3
+	#is_rare = yes
+	category = { biology }
+	prerequisites = { "tech_media_1" }
+	weight = @tier3weight3
+	
+
+	weight_modifier = {
+		modifier = {
+			is_ai = yes
+			factor = 10
+		}
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_biology"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 10
+	}
+	
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_MEDIA_2_TITLE"
+			desc = "TECH_UNLOCK_MEDIA_2_DESC"
+		}
+	}
+}
+
+tech_media_psionic = {
+	cost = @tier3cost3
+	area = society
+	tier = 3
+	#is_rare = yes
+	category = { biology }
+	prerequisites = { "tech_media_2" "tech_telepathy"}
+	weight = @tier3weight3
+	
+
+	weight_modifier = {
+		modifier = {
+			is_ai = yes
+			factor = 10
+		}
+		modifier = {
+			factor = 2
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_biology"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 10
+	}
+	
+	prereqfor_desc = {
+		ship = {
+			#title = "TECH_UNLOCK_MEDIA_2_TITLE"
+			#desc = "TECH_UNLOCK_MEDIA_2_DESC"
+		}
+	}
+}
+
+tech_media_hive = {
+	cost = @tier3cost3
+	area = society
+	tier = 3
+	#is_rare = yes
+	category = { biology }
+	prerequisites = { "tech_media_2"}
+	weight = @tier3weight3
+	
+
+	weight_modifier = {
+		modifier = {
+			is_ai = yes
+			factor = 10
+		}
+		modifier = {
+			factor = 100
+			has_ethic = ethic_hive_mind
+		}
+		
+		modifier = {
+			factor = 0
+			NOT = {has_ethic = ethic_hive_mind}
+		}
+	}
+	
+	ai_weight = {
+		factor = 10
+	}
+	
+	prereqfor_desc = {
+		ship = {
+			#title = "TECH_UNLOCK_MEDIA_2_TITLE"
+			#desc = "TECH_UNLOCK_MEDIA_2_DESC"
+		}
+	}
+}
+
+#Doctrine: Fleet Support 2
+tech_doctrine_fleet_support_2 = {
+	cost = @tier3cost3
+	area = society
+	tier = 3
+	category = { military_theory }
+	prerequisites = { "tech_doctrine_fleet_support" }
+	weight = @tier3weight3
+	
+	#unlocks crew quarters and engineering bay modules
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_militarist
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_militarist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+	
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_DOCTRINE_FLEET_SUPPORT_2_TITLE"
+			desc = "TECH_UNLOCK_DOCTRINE_FLEET_SUPPORT_2_DESC"
+		}
+	}
+}

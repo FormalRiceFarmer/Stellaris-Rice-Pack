@@ -90,6 +90,13 @@ ship_section_template = {
 	fits_on_slot = "12"
 	fits_on_slot = "13"
 	fits_on_slot = "14"
+	fits_on_slot = "15"
+	fits_on_slot = "16"
+	fits_on_slot = "17"
+	fits_on_slot = "18"
+	fits_on_slot = "19"
+	fits_on_slot = "20"
+
 }
 
 ship_section_template = {
@@ -110,6 +117,13 @@ ship_section_template = {
 	fits_on_slot = "12"
 	fits_on_slot = "13"
 	fits_on_slot = "14"
+	fits_on_slot = "15"
+	fits_on_slot = "16"
+	fits_on_slot = "17"
+	fits_on_slot = "18"
+	fits_on_slot = "19"
+	fits_on_slot = "20"
+
 }
 
 ship_section_template = {
@@ -130,6 +144,13 @@ ship_section_template = {
 	fits_on_slot = "12"
 	fits_on_slot = "13"
 	fits_on_slot = "14"
+	fits_on_slot = "15"
+	fits_on_slot = "16"
+	fits_on_slot = "17"
+	fits_on_slot = "18"
+	fits_on_slot = "19"
+	fits_on_slot = "20"
+	
 }
 
 ship_section_template = {
@@ -150,4 +171,11 @@ ship_section_template = {
 	fits_on_slot = "12"
 	fits_on_slot = "13"
 	fits_on_slot = "14"
+	fits_on_slot = "15"
+	fits_on_slot = "16"
+	fits_on_slot = "17"
+	fits_on_slot = "18"
+	fits_on_slot = "19"
+	fits_on_slot = "20"
+	
 }

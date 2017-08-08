@@ -1,0 +1,27 @@
+﻿l_english:
+
+ sm_spaceport_science_lab_1:0 "Science Lab I"
+ sm_spaceport_science_lab_2:0 "Science Lab II"
+ sm_spaceport_science_lab_3:0 "Science Lab III"
+ sm_spaceport_science_lab_4:0 "Science Lab IV"
+ 
+ sm_spaceport_engineering_lab_1:0 "Engineering Lab I"
+ sm_spaceport_engineering_lab_2:0 "Engineering Lab II"
+ sm_spaceport_engineering_lab_3:0 "Engineering Lab III"
+ 
+ sm_spaceport_physics_lab_1:0 "Physics Lab I"
+ sm_spaceport_physics_lab_2:0 "Physics Lab II"
+ sm_spaceport_physics_lab_3:0 "Physics Lab III"
+ 
+ sm_spaceport_society_lab_1:0 "Society Lab I"
+ sm_spaceport_society_lab_2:0 "Society Lab II"
+ sm_spaceport_society_lab_3:0 "Society Lab III"
+ 
+ sm_spaceport_robot_lab_1:0 "Robotics Lab I"
+ sm_spaceport_robot_lab_2:0 "Robotics Lab II"
+ 
+ 
+ sr_scientist:0 "Scientist"
+ sr_scientist_desc:1 "Educated Scientist."
+ 
+ 

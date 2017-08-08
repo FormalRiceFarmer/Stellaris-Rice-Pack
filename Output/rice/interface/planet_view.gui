@@ -1,11 +1,12 @@
 guiTypes = {
 
 	@build_info_x_pos = 120
-	@planet_view_height = 905
+	@planet_view_height = 566
 	@module_width = 540
-	@tile_info_module_width = 345
+	@tile_info_panel_module_width = 344
+	@tile_info_module_width = 334
 	@tile_progress_bar_height = 7
-	@tile_info_x = 128
+	@tile_info_x = 123
 	@tile_title_y = 30
 	@title_desc_y = 68
 
@@ -21,7 +22,7 @@ guiTypes = {
 
 	positionType = {
 		name = "planet_view_height_maximum_constant"
-		position = { x = -1 y = 730 }
+		position = { x = -1 y = 800 }
 	}
 
 	positionType = {
@@ -48,7 +49,7 @@ guiTypes = {
 	# How small the window must be before it moves planet_name
 	positionType = {
 		name = "planet_name_move_size_y"
-		position = { x = 0 y = 730 }
+		position = { x = 0 y = 700 }
 	}
 
 
@@ -65,11 +66,11 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "background_window"
-			size = { width = 562 height = 900 }
-			position = { x = 0 y = 0 }			# Y Controlls upper part of steaching middle
+			size = { width = 562 height = 0 }
+			position = { x = 0 y = 264 }		# Y Controlls upper part of steaching middle
 
 			background = {
-				name = "GFX_tile_outliner_bg"
+				name = "planet_view_bg"
 				quadTextureSprite = "GFX_planet_bg_tile"
 			}
 		}
@@ -81,12 +82,12 @@ guiTypes = {
 			orientation = upper_left
 		}
 
-		#iconType = {
-		#	name = "planet_bg_bottom"
-		#	spriteType = "GFX_planet_bg_bottom"
-		#	position = { x = 0 y = -339 }
-		#	orientation = lower_left
-		#}
+		iconType = {
+			name = "planet_bg_bottom"
+			spriteType = "GFX_planet_bg_bottom"
+			position = { x = 0 y = -339 }
+			orientation = lower_left
+		}
 
 		# Header
 		buttonType = {
@@ -156,9 +157,9 @@ guiTypes = {
 		# Modular Content
 		smoothListboxType = {
 			name = "modular_content"
-			position = { x = 10 y = 50 }
+			position = { x = 10 y = 35 }
 			backGround = ""
-			size = { x = @module_width y = 800 }
+			size = { x = @module_width y = 480 }
 			scrollbarType = "standardlistbox_slider"
 			borderSize = { x = 0 y = 0 }
 			orientation = "UPPER_LEFT"
@@ -851,12 +852,12 @@ guiTypes = {
 	# Colonized
 	containerWindowType = {
 		name = "planet_view_module_colonized"
-		size = { width = @module_width height = 460 }
+		size = { width = @module_width height = 220 }
 
 		containerWindowType = {
 			name = "nogovernor"
 			position = { x = -4 y = 5 }
-			size = { width = 350 height = 400 }
+			size = { width = 350 height = 220 }
 
 			background = {
 				name = "nogovernor_background"
@@ -892,7 +893,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "governor"
-			size = { width = 350 height = 400 }
+			size = { width = 350 height = 220 }
 			position = { x = -4 y = 5 }
 
 			background = {
@@ -996,7 +997,7 @@ guiTypes = {
 			name = "change"
 			size = { x = 298 y = 35 }
 			orientation = lower_left
-			position = { x = 172 y = -118 }
+			position = { x = 172 y = -58 }
 			spriteType = "GFX_standard_button_142_34_button"
 			buttonFont = "cg_16b"
 			text = "CHANGE"
@@ -1008,7 +1009,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "edicts"
-			size = { width = 200 height = 400 }
+			size = { width = 200 height = 220 }
 			position = { x = 345 y = 5 }
 
 			background = {
@@ -1020,7 +1021,7 @@ guiTypes = {
 				name = "edicts"
 				position = { x=0 y=0 }
 				orientation = upper_left
-				size = { x=225 y=355 }
+				size = { x=225 y=175 }
 				borderSize = { x=0 y=0 }
 				scrollbartype = "standardlistbox_slider"
 				alwaysTransparent = yes
@@ -1056,14 +1057,14 @@ guiTypes = {
 	## Armies Module
 	containerWindowType = {
 		name = "planet_view_module_armies"
-		size = { width = @module_width height = 450 }
+		size = { width = @module_width height = 380 }
 
 		## Military Fleets
 
 		containerWindowType = {
 			name = "friendly_fleets"
 			size = { width = 265 height = 33 }
-			position = { x = 1 y = 11 }
+			position = { x = 1 y = 16 }
 
 			background = {
 				name = "friendly_fleets_background"
@@ -1487,7 +1488,7 @@ guiTypes = {
 			orientation = center_down
 			#alwaysTransparent = yes
 		}
-
+		
 		instantTextBoxType = {
 			name = "planet_armies"
 			font = "cg_16b"
@@ -1499,6 +1500,7 @@ guiTypes = {
 			orientation = center_down
 			#alwaysTransparent = yes
 		}		
+
 		# Ground support
 
 		containerWindowType = {
@@ -2491,7 +2493,7 @@ guiTypes = {
 	# Terrain details
 	containerWindowType = {
 		name = "planet_view_tile_info_panel_module_tile"
-		size = { width = 344 height = 172 }
+		size = { width = @tile_info_panel_module_width height = 172 }
 		show_sound = "planet_view_menu_slide"
 
 		background = {
@@ -2628,7 +2630,7 @@ guiTypes = {
 
 		iconType = {
 			name = "black_frame"
-			spriteType = "GFX_planetview_black_frame"
+			spriteType = "GFX_planetview_black_frame_revised"
 			position = { x = 1 y = 13 }
 		}
 
@@ -3082,7 +3084,7 @@ guiTypes = {
 			buttonType = {
 				name = "info_button"
 				spriteType = "GFX_standard_button_142_34_button"
-				position = { x = -10 y = -5 }
+				position = { x = 145 y = 35 }
 				font = "malgun_goth_24"
 				buttonText = "DETAILS"
 				oversound = menu_over_01
@@ -3099,12 +3101,12 @@ guiTypes = {
 
 			gridBoxType = {
 				name = "modules"
-				position = { x = 160 y = 7 }
+				position = { x = 1 y = -80 }
 				slotSize = { width = 54 height = 54 }
 				format = "UPPER_LEFT"
-				#max_slots_horizontal = 0
-				#max_slots_vertical = 1
-				#size = { width = 516 height = 52 }
+				max_slots_horizontal = 10
+				max_slots_vertical = 3
+				size = { width = 516 height = 104 }
 			}
 		}
 
@@ -3219,7 +3221,7 @@ guiTypes = {
 	# Species Details
 	containerWindowType = {
 		name = "planet_view_tile_info_panel_module_pop"
-		size = { width = 345 height = 230 }
+		size = { width = @tile_info_panel_module_width height = 230 }
 		show_sound = "planet_view_menu_slide"
 		
 
@@ -3307,7 +3309,7 @@ guiTypes = {
 			font = "cg_16b"
 			text = "HOG"
 			position = { x = 130 y = 127 }
-			maxWidth = 190
+			maxWidth = 130
 			maxHeight = 20
 			fixedSize = yes
 			format = left
@@ -3474,7 +3476,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "planet_view_tile_info_panel_module_building"
-		size = { width = 345 height = 260 }
+		size = { width = @tile_info_panel_module_width height = 260 }
 
 		background = {
 			name = "planet_view_tile_info_panel_module_building_background"
@@ -3555,7 +3557,7 @@ guiTypes = {
 			font = "cg_16b"
 			text = ""
 			position = { x = @tile_info_x y = @title_desc_y }
-			maxWidth = 230
+			maxWidth = 220
 			maxHeight = 100
 			fixedSize = yes
 			format = left
@@ -4238,20 +4240,14 @@ guiTypes = {
 			fixedSize = yes
 			format = right
 			orientation = upper_right
-#			alwaysTransparent = yes
+			#alwaysTransparent = yes
 			text_color_code = "H"
 		}
-
-
-
-
-
-
 	}
 
 	containerWindowType = {
 		name = "planet_view_terraform_panel_module_current"
-		size = { width = 345 height = 190 }
+		size = { width = 344 height = 190 }
 
 		background = {
 			name = "planet_view_terraform_panel_module_current_background"
@@ -4263,7 +4259,7 @@ guiTypes = {
 			name = "name"
 			font = "cg_16b"
 			text = "NAME"
-			position = { x = 5 y = 10 }
+			position = { x = 0 y = 10 }
 			maxWidth = @tile_info_module_width
 			maxHeight = 200
 			fixedSize = yes
@@ -4397,13 +4393,13 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "planet_view_panel"
-		size = { width = 370 height = 600 }
+		size = { width = 357 height = 600 }
 
 		origo = lower_left
 		orientation = lower_left
 		show_position = { x = 569 y = -84 }
 		hide_position = { x = -350 y = -86 }
-		animation_time = 0
+		animation_time = 200
 		animation_type = decelerated
 
 		background = {
@@ -4438,9 +4434,9 @@ guiTypes = {
 		# Modular Content
 		smoothListboxType = {
 			name = "modular_content"
-			position = { x = 6 y = 53 }
+			position = { x = 11 y = 53 }
 			background = ""
-			size = { x = @tile_info_module_width y = 540 }
+			size = { x = @tile_info_module_width y = 535 }
 			scrollbarType = "standardlistbox_slider"
 			borderSize = { x = 0 y = 0 }
 			orientation = "UPPER_LEFT"
@@ -4928,8 +4924,9 @@ guiTypes = {
 			name = "species"
 			font = "cg_16b"
 			position = { x = 55 y = 22 }
-			maxWidth = 390
+			maxWidth = 260
 			maxHeight = 32
+			fixedSize = yes
 			format = LEFT
 			alwaysTransparent = yes
 			text_color_code = "E"

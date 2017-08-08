@@ -1,0 +1,897 @@
+# No scope, like on_game_start
+on_monthly_pulse = {
+	events = {
+	
+	
+	
+	}
+}
+
+# No scope, like on_game_start
+on_yearly_pulse = {
+	events = {
+	
+	
+	
+	}
+}
+
+# No scope, like on_game_start
+#on_bi_yearly_pulse = {
+#	events = {
+#	}
+#}
+
+# No scope, like on_game_start
+#on_five_year_pulse = {
+#}
+
+# No scope, like on_game_start
+on_decade_pulse = {
+	events = {
+	}
+}
+
+# Triggers when the game starts
+on_game_start = {
+	events = {
+	}
+}
+
+# Triggers when pressing begin in the intro window
+# This = country to press begin
+on_press_begin = {
+	events = {
+	}
+}
+
+# Triggers when a station is abandoned.
+# this = ship of station being lost.
+# from = country losing ownership.
+on_border_change_station_lost = {
+	events = {
+	}
+}
+
+# Triggers when an abandoned station is gained.
+# this = ship of station being gained.
+# from = country gaining ownership.
+on_border_change_station_gained = {
+	events = {
+	}
+}
+
+# Triggers when trying to open the diplomacy view for countries with custom diplomacy.
+# Country scope
+# This = target country (player)
+# From = source country
+on_custom_diplomacy = {
+	events = {
+	}
+}
+
+# Triggered when two empires discover each other
+on_first_contact = {
+	events = {
+	}
+}
+
+# Triggered when an Empire has fleets within another Empire's borders.
+# This = receiver
+# From = sender
+# FromFrom = fleet
+# FromFromFrom = system
+on_enforce_borders = {
+	events = {
+	}
+}
+
+# Triggers country_event for the attacker upon victory
+# This = country, leader attacker
+# From = country, planet owner
+# FromFrom = planet
+on_planet_attackers_win = {
+	events = {
+	}
+}
+
+# Triggers country_event for the attacker upon defeat
+# This = country, attack leader
+# From = country, planet owner
+# FromFrom = planet
+on_planet_attackers_lose = {
+	events = {
+	}
+}
+
+# Triggers country_event for the defender upon victory
+# This = country, planet owner
+# From = country, attack leader
+# FromFrom = planet
+on_planet_defenders_win = {
+	events = {
+	}
+}
+
+# Triggers country_event for the defender upon defeat
+# This = country, planet owner
+# From = country, attack leader
+# FromFrom = planet
+on_planet_defenders_lose = {
+	events = {
+	}
+}
+
+# Triggers event when a system is entered by ships from a country (not pirates or monsters) for the first time
+# Scope = Ship
+# From = System
+# FromFrom = Country
+on_entering_system_first_time = {
+	events = {
+
+	}
+	random_events = {
+
+	}
+}
+
+# Triggers event when ship enters a system
+# Scope = Ship
+# From = System
+# FromFrom = Country
+on_entering_system = {
+	events = {
+
+	}
+	random_events = {
+
+	}
+}
+
+# A fleet has entered a system
+# Scope = Fleet
+# From = System
+on_entering_system_fleet = {
+	events = {
+
+	}
+}
+
+# A ship has surveyed a planet.
+# Scope = Ship
+# From = Planet
+on_survey = {
+	events = {
+
+	}
+}
+
+# A country has gained a surveyed status on a planet. Happens after "on_survey" if a science ship surveyed a planet.
+# Root = Planet
+# From = Country
+# FromFrom = Fleet of the science ship that surveyed it, if any
+on_planet_surveyed = {
+	events = {
+
+	}
+}
+
+# A ship is done surveying the last unsurveyed planet in a system
+# Scope = ship
+# From = system
+on_system_survey = {
+	events = {
+
+	}
+}
+
+# A planet has begun the colonization process.
+# Scope = Planet
+on_colonization_started = {
+	events = {
+
+	}
+	random_events = {
+
+	}
+}
+
+# A planet has been colonized.
+# Scope = Planet
+on_colonized = {
+	events = {
+
+	}
+}
+
+# A colony has been destroyed. Called just before owner and controller is cleared
+# Scope = Planet
+on_colony_destroyed = {
+	events = {
+
+	}
+}
+
+# This = owner of fleet 1
+# From = owner of fleet 2
+# FromFrom = fleet 1
+# FromFromFrom = fleet 2
+on_entering_battle = {
+	events = {
+
+	}
+}
+
+# This = owner of ship 1 (destroyed)
+# From = owner of ship 2 (combatant)
+# FromFrom = ship 1
+# FromFromFrom = ship 2
+on_ship_destroyed_victim = {
+	events = {
+
+	}
+}
+
+# This = owner of ship 1 (combatant)
+# From = owner of ship 2 (destroyed)
+# FromFrom = ship 1
+# FromFromFrom = ship 2
+on_ship_destroyed_perp = {
+	events = {
+
+	}
+	random_events = {
+	}
+}
+
+# This = owner of fleet 1 (destroyed)
+# From = owner of fleet 2 (combatant)
+# FromFrom = fleet 1
+# FromFromFrom = fleet 2
+on_fleet_destroyed_victim = {
+	events = {
+
+	}
+}
+
+# This = owner of fleet 1 (combatant)
+# From = owner of fleet 2 (destroyed)
+# FromFrom = fleet 1
+# FromFromFrom = fleet 2
+on_fleet_destroyed_perp = {
+	events = {
+
+	}
+	random_events = {
+
+	}
+}
+
+# This = owner of fleet
+# From = disbanded fleet
+on_fleet_disbanded = {
+	events = {
+
+	}
+}
+
+# This = owner of fleet
+# From = destroyed fleet
+on_fleet_destroyed_maintenance = {
+	events = {
+
+	}
+}
+
+# The game will generate one on_building_X on_action for every station ship-size
+# Orbital stations will get the planet in FROM, space stations only get they building ship
+
+# This = construction ship
+# From = planet it is built on
+# Fires when construction is complete,
+# immediately before station is created
+on_building_mining_station = {
+	events = {
+	
+	}
+}
+
+# This = construction ship
+# From = planet it is built on
+# Fires when construction is complete,
+# immediately before station is created
+on_building_research_station = {
+	events = {
+
+	}
+}
+
+# This = construction ship
+# From = planet it is built on
+# Fires when construction is complete,
+# immediately before station is created
+on_building_outpost_station = {
+	events = {
+
+	}
+}
+
+# This = construction ship
+# Fires when construction is complete,
+# immediately before station is created
+on_building_wormhole_station = {
+	events = {
+	}
+}
+
+# This = country
+# From = opponent war leader
+on_entering_war = {
+	events = {
+	}
+}
+
+# This = Country
+# From = Fleet
+on_fleet_detected = {
+	events = {
+	}
+}
+
+# This = Ship
+# From = Disabler Ship
+on_ship_disabled = {
+	events = {
+
+	}
+}
+
+# This = Ship
+on_ship_enabled = {
+	events = {
+	}
+}
+
+# Triggers when a Special Project to uplift a pre-sentient species is completed
+# Scope = planet_event
+# This = planet scope
+# From = uplifted species
+on_uplift_completion = {
+	events = {
+
+	}
+}
+
+# This = Planet scope
+# From = Country
+on_purge_complete = {
+	events = {
+
+	}
+}
+
+# This = Pop scope
+# From = Planet
+on_purge_begun = {
+	events = {
+
+	}
+}
+
+# This = Pop scope
+# From = Planet
+on_purge_canceled = {
+	events = {
+
+	}
+}
+
+# Planet has reached 0 health
+# This = Planet
+on_planet_zero_health = {
+	events = {
+
+	}
+}
+
+# Pop is enslaved
+# This = Pop scope
+# owner_species = { (species)
+# owner = { owner_species = { (empire main species)
+# owner = { (empire)
+on_pop_enslaved = {
+	events = {
+
+	}
+}
+
+# Full Orbital Bombardment commenced
+# This = Country scope
+# From = Planet
+on_full_orbital_bombardment = {
+	events = {
+	}
+}
+
+# Pop is released from slavery
+# This = Pop scope
+# owner_species = { (species)
+# owner = { owner_species = { (empire main species)
+# owner = { (empire)
+on_pop_emancipated = {
+	events = {
+
+	}
+}
+
+# Executed right before a country has established communications with another country
+# This = Country which established the communications
+# From = Country which communications were established with
+on_pre_communications_established = {
+	events = {
+
+	}
+}
+
+# Executed right after country has established communications with another country
+# This = Country which established the communications
+# From = Country which communications were established with
+on_post_communications_established = {
+	events = {
+
+	}
+}
+
+# Executed as a leader has died
+# This = Country
+# From = Leader
+on_leader_death = {
+	events = {
+
+	}
+}
+
+# A leader leveled up.
+# Scope = Country
+# From = Leader
+on_leader_level_up = {
+	events = {
+
+	}
+}
+
+# Executed as new ruler has been set
+# This = Country
+on_ruler_set = {
+	events = {
+
+	}
+}
+
+# Executed when a ruler has been removed
+# From = Previous Ruler
+# This = Country
+on_ruler_removed = {
+	events = {
+	}
+}
+
+# From = Tile
+# This = Planet
+on_blocker_cleared = {
+	events = {
+
+	}
+}
+
+# A ship has started a new order
+# Root = Ship
+# From = Country
+on_ship_order = {
+	events = {
+	
+	}
+}
+
+# Executes after a policy has been changed
+# use last_changed_policy to identify which policy it was
+# This = Country
+on_policy_changed = {
+	events = {
+
+	}
+}
+
+# A ship has been built
+# Root = Ship
+# From = Planet
+on_ship_built = {
+	events = {
+	#riotportupgradeevent.1 #When the Spaceport is built.
+	#riotportupgradeevent.2 #When the upgrade to Spaceport 2 is completed.
+	#riotportupgradeevent.3 #When the upgrade to Spaceport 3 is completed.
+	#riotportupgradeevent.4 #When the upgrade to Spaceport 4 is completed.
+	#riotportupgradeevent.5 #When the upgrade to Spaceport 5 is completed.
+	#riotportupgradeevent.6 #When the upgrade to Spaceport 6 is completed.
+	#riotportupgradeevent.7 #When the upgrade to Spaceport 7 is completed.
+	#riotportupgradeevent.8 #When the upgrade to Spaceport 8 is completed.
+	#riotportupgradeevent.9 #When the upgrade to Spaceport 9 is completed.
+	#riotportupgradeevent.10 #When the upgrade to Spaceport 10 is completed.
+	#riotportupgradeevent.11 #When the upgrade to Spaceport 11 is completed.
+	#riotportupgradeevent.12 #When the upgrade to Spaceport 12 is completed.
+	#riotportupgradeevent.13 #When the upgrade to Spaceport 13 is completed.
+	#riotportupgradeevent.14 #When the upgrade to Spaceport 14 is completed.
+	#riotportupgradeevent.15 #When the upgrade to Spaceport 15 is completed.
+	#riotportupgradeevent.16 #When the upgrade to Spaceport 16 is completed.
+	#riotportupgradeevent.17 #When the upgrade to Spaceport 17 is completed.
+	#riotportupgradeevent.18 #When the upgrade to Spaceport 18 is completed.
+	#riotportupgradeevent.19 #When the upgrade to Spaceport 19 is completed.
+
+	}
+}
+
+# A ship design has been finished
+# Root = Country
+on_ship_designed = {
+	events = {
+
+	}
+}
+
+# A war is beginning, executed for every country in the war.
+# Root = Country
+# From = War
+on_war_beginning = {
+	events = {
+
+	}
+}
+
+# A war has ended
+# Root = Loser
+# From = Main Winner
+on_war_ended = {
+	events = {
+	}
+}
+
+# Root = Planet being bombarded for a day.
+# From = Fleet performing the delicate bombardment.
+on_daily_bombardment = {
+	events = {
+
+	}
+}
+
+# A country has increased the level of a tech, use last_increased_tech trigger to check tech and level.
+# This = Country
+on_tech_increased = {
+	events = {
+
+	}
+}
+
+# A country has modified a species
+# This = Country
+# From = Species ( Post Modification )
+on_modification_complete = {
+	events = {
+
+	}
+}
+
+# A planets controller becomes a country not the same as the owner.
+# Root = Planet
+# From = Planet Owner
+# FromFrom = Planet Controller (the one occupying)
+on_planet_occupied = {
+	events = {
+
+	}
+}
+
+# A fleet has successfully escaped from combat, executed right before the fleet enters FTL
+# This = escaping fleet
+# From = system escaped from
+# FromFrom = system escaping to
+on_emergency_ftl = {
+	events = {
+
+	}
+	random_events = {
+
+	}
+}
+
+#A building construction has been completed.
+# This = Planet
+# From = Tile
+on_building_complete = {
+	events = {
+
+	}
+}
+
+# A building construction has been queued.
+# This = Planet
+# From = Tile
+on_building_queued = {
+	events = {
+	}	
+}
+
+# A building construction has been unqueued.
+# This = Planet
+# From = Tile
+on_building_unqueued = {
+	events = {
+	}	
+}
+
+# A building construction has been completed, which is an upgrade of previous building.
+# This = Planet
+# From = Tile
+on_building_upgraded = {
+	events = {
+
+	}	
+}
+
+# A building construction has demolished.
+# This = Planet
+# From = Tile
+on_building_demolished = {
+	events = {
+
+	}
+}
+
+# A building construction has finished, replacing another building.
+# This = Planet
+# From = Tile
+on_building_replaced = {
+	events = {
+
+	}
+}
+
+# A planet is being bombarded
+# This = planet under bombardment
+# From = bombarding empire
+on_monthly_orbital_bombardment = {
+	events = {
+
+	}
+}
+
+# A tile building has been ruined
+# This = Planet
+# From = Tile
+on_building_ruined = {
+	events = {
+		
+	}
+}
+
+# A tile building has been repaired
+# This = Planet
+# From = Tile
+on_building_repaired = {
+	events = {
+	}
+}
+
+# Tutorial level for a country has changed
+# This = Country
+on_tutorial_level_changed = {
+	events = {
+
+	}
+}
+
+# A war has been won
+# Root = Winner Warleader
+# From = Loser Warleader
+# FromFrom = War
+on_war_won = {
+	events = {
+
+	}
+}
+
+# A war has been won, by force
+# Root = Winner Warleader
+# From = Loser Warleader
+# FromFrom = War
+on_war_won_forced = {
+	events = {
+
+	}
+}
+
+# A war has been lost
+# Root = Loser Warleader
+# From = Winner Warleader
+# FromFrom = War
+on_war_lost = {
+	events = {
+	
+	}
+}
+
+# A war has been lost, by force
+# Root = Loser Warleader
+# From = Winner Warleader
+# FromFrom = War
+on_war_lost_forced = {
+	events = {
+	
+	}
+}
+
+# A white peace has been signed
+# Root = Recipient
+# From = Actor
+# FromFrom = Main Attacker
+# FromFromFrom = Main Defender
+# FromFromFromFrom = War
+on_white_peace = {
+	events = {
+
+	}
+}
+
+# A white peace has been signed, by force
+# Root = Recipient
+# From = Actor
+# FromFrom = Main Attacker
+# FromFromFrom = Main Defender
+# FromFromFromFrom = War
+on_white_peace_forced = {
+	events = {
+
+	}
+}
+
+# A pop has finished migrating to another planet
+# Root = pop
+# From = Tile on the new planet
+# FromFrom = Tile on the old planet
+on_pop_migration_end = {
+	events = {
+	}
+}
+
+# A pop has been resettled to another planet
+# Root = pop
+# From = Tile on the old planet
+on_pop_resettled = {
+	events = {
+	}
+}
+
+# A pop has been born
+# This = pop
+on_pop_birth = {
+	events = {
+
+	}
+}
+
+# Initial rebels manage to take control of the planet, happens before the new owner is set, after the war is created.
+# This = Rebel Country
+# From = Planet
+# FromFrom = War
+on_rebels_take_planet = {
+	events = {
+
+	}
+}
+
+# Initial rebels manage to take control of the planet, happens after the new owner is set, after the war is created.
+# This = Rebel Country
+# From = Planet
+# FromFrom = War
+on_rebels_take_planet_owner_switched = {
+	events = {
+
+	}
+}
+
+
+#Country scope
+on_election_started = {
+	events = {
+
+	}
+}
+on_election_ended = {
+	events = {
+
+	}
+}
+
+#From = Country scope
+#This = Planet scope
+on_planet_ownerless = {
+	events = {
+
+	}
+}
+
+#From = Country scope
+#This = Planet scope
+on_planet_transfer = {
+	events = {
+
+	}
+}
+
+#From = Planet scope
+#This = Fleet scope
+on_fleet_enter_orbit = {
+	events = {
+	}
+}
+
+#This = Country scope
+on_join_alliance = {
+	events = {
+	}
+}
+
+#This = Country scope
+on_leave_alliance = {
+	events = {
+	}
+}
+
+# X years has passed since a planet was colonized (won't trigger on empire homeworld)
+on_colony_1_year_old = {
+	events = {
+	}
+
+	random_events = {
+
+	}
+}
+
+on_colony_2_years_old = {
+	events = {
+	}
+	random_events = {
+
+	}
+}
+
+on_colony_3_years_old = {
+	events = {
+	}
+	random_events = {
+
+	}
+}
+
+on_colony_4_years_old = {
+	random_events = {
+
+	}
+}
+
+on_colony_5_years_old = {
+}
+
+on_colony_6_years_old = {
+}
+
+on_colony_7_years_old = {
+}
+
+on_colony_8_years_old = {
+}
+
+on_colony_9_years_old = {
+}
+
+on_colony_10_years_old = {
+}
