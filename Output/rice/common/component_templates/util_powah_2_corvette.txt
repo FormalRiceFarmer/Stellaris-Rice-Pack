@@ -6,7 +6,7 @@ utility_component_template = {
 	cost = 10
 	power = 35
 	ai_weight = { weight = 1 }
-	size_restriction = {  corvette corvetteNSC  }
+	size_restriction = {  science colonizer constructor transport corvette corvetteNSC  }
 	prerequisites = { "tech_powah_1" }
 	component_set = "powerstation_components"
 }
@@ -18,7 +18,7 @@ utility_component_template = {
 	cost = 30
 	power = 55
 	ai_weight = { weight = 2 }
-	size_restriction = {  corvette corvetteNSC  }
+	size_restriction = {  science colonizer constructor transport corvette corvetteNSC  }
 	prerequisites = { "tech_powah_2" }
 	component_set = "powerstation_components"
 }
@@ -30,7 +30,7 @@ utility_component_template = {
 	cost = 45
 	power = 70
 	ai_weight = { weight = 3 }
-	size_restriction = {  corvette corvetteNSC  }
+	size_restriction = {  science colonizer constructor transport corvette corvetteNSC  }
 	prerequisites = { "tech_powah_3" }
 	component_set = "powerstation_components"
 }
@@ -42,7 +42,7 @@ utility_component_template = {
 	cost = 65
 	power = 90
 	ai_weight = { weight = 4 }
-	size_restriction = {  corvette corvetteNSC  }
+	size_restriction = {  science colonizer constructor transport corvette corvetteNSC  }
 	prerequisites = { "tech_powah_4" }
 	component_set = "powerstation_components"
 }
@@ -54,7 +54,7 @@ utility_component_template = {
 	cost = 80
 	power = 105
 	ai_weight = { weight = 5 }
-	size_restriction = {  corvette corvetteNSC  }
+	size_restriction = {  science colonizer constructor transport corvette corvetteNSC  }
 	prerequisites = { "tech_powah_5" }
 	component_set = "powerstation_components"
 }
@@ -66,7 +66,7 @@ utility_component_template = {
 	cost = 110
 	power = 125
 	ai_weight = { weight = 6 }
-	size_restriction = {  corvette corvetteNSC  }
+	size_restriction = {  science colonizer constructor transport corvette corvetteNSC  }
 	prerequisites = { "tech_fusion_power_energon" }
 	component_set = "powerstation_components"
 }
@@ -78,7 +78,7 @@ utility_component_template = {
 	cost = 100
 	power = 125
 	ai_weight = { weight = 7 }
-	size_restriction = {  corvette corvetteNSC  }
+	size_restriction = {  science colonizer constructor transport corvette corvetteNSC  }
 	prerequisites = { "nhsc_tech_advzeropointreactor_1_fake" }
 	component_set = "powerstation_components"
 }
@@ -90,7 +90,7 @@ utility_component_template = {
 	cost = 100
 	power = 125
 	ai_weight = { weight = 8 }
-	size_restriction = {  corvette corvetteNSC  }
+	size_restriction = {  science colonizer constructor transport corvette corvetteNSC  }
 	prerequisites = { "tech_powah_6" }
 	component_set = "powerstation_components"
 }
@@ -102,7 +102,7 @@ utility_component_template = {
 	cost = 115
 	power = 140
 	ai_weight = { weight = 9 }
-	size_restriction = {  corvette corvetteNSC  }
+	size_restriction = {  science colonizer constructor transport corvette corvetteNSC  }
 	prerequisites = { "tech_antimatter_power_optimized" }
 	component_set = "powerstation_components"
 }
@@ -114,7 +114,7 @@ utility_component_template = {
 	cost = 135
 	power = 160
 	ai_weight = { weight = 10 }
-	size_restriction = {  corvette corvetteNSC  }
+	size_restriction = {  science colonizer constructor transport corvette corvetteNSC  }
 	prerequisites = { "nhsc_tech_advzeropointreactor_2_fake" }
 	component_set = "powerstation_components"
 }
@@ -126,7 +126,7 @@ utility_component_template = {
 	cost = 135
 	power = 160
 	ai_weight = { weight = 11 }
-	size_restriction = {  corvette corvetteNSC  }
+	size_restriction = {  science colonizer constructor transport corvette corvetteNSC  }
 	prerequisites = { "tech_darkmatter_power" }
 	component_set = "powerstation_components"
 }
@@ -138,7 +138,7 @@ utility_component_template = {
 	cost = 150
 	power = 175
 	ai_weight = { weight = 12 }
-	size_restriction = {  corvette corvetteNSC  }
+	size_restriction = {  science colonizer constructor transport corvette corvetteNSC  }
 	prerequisites = { "tech_darkmatter_power_optimized" }
 	component_set = "powerstation_components"
 }
@@ -150,7 +150,7 @@ utility_component_template = {
 	cost = 150
 	power = 175
 	ai_weight = { weight = 13 }
-	size_restriction = {  corvette corvetteNSC  }
+	size_restriction = {  science colonizer constructor transport corvette corvetteNSC  }
 	prerequisites = { "nhsc_tech_enigmatic_power_2_fake" }
 	component_set = "powerstation_components"
 }
@@ -162,7 +162,7 @@ utility_component_template = {
 	cost = 150
 	power = 175
 	ai_weight = { weight = 14 }
-	size_restriction = {  corvette corvetteNSC  }
+	size_restriction = {  science colonizer constructor transport corvette corvetteNSC  }
 	prerequisites = { "tech_adv_zero_point_power_fake" }
 	component_set = "powerstation_components"
 }
@@ -174,7 +174,7 @@ utility_component_template = {
 	cost = 170
 	power = 195
 	ai_weight = { weight = 15 }
-	size_restriction = {  corvette corvetteNSC  }
+	size_restriction = {  science colonizer constructor transport corvette corvetteNSC  }
 	prerequisites = { "nhsc_tech_advzeropointreactor_3_fake" }
 	component_set = "powerstation_components"
 }
@@ -186,7 +186,7 @@ utility_component_template = {
 	cost = 185
 	power = 210
 	ai_weight = { weight = 16 }
-	size_restriction = {  corvette corvetteNSC  }
+	size_restriction = {  science colonizer constructor transport corvette corvetteNSC  }
 	prerequisites = { "tech_singularity_power" }
 	component_set = "powerstation_components"
 }
@@ -198,7 +198,7 @@ utility_component_template = {
 	cost = 240
 	power = 265
 	ai_weight = { weight = 17 }
-	size_restriction = {  corvette corvetteNSC  }
+	size_restriction = {  science colonizer constructor transport corvette corvetteNSC  }
 	prerequisites = { "tech_tachyon_power" }
 	component_set = "powerstation_components"
 }
@@ -210,7 +210,7 @@ utility_component_template = {
 	cost = 275
 	power = 300
 	ai_weight = { weight = 18 }
-	size_restriction = {  corvette corvetteNSC  }
+	size_restriction = {  science colonizer constructor transport corvette corvetteNSC  }
 	prerequisites = { "tech_wimp_power" }
 	component_set = "powerstation_components"
 }

@@ -1,0 +1,7 @@
+NGameplay = {
+	START_YEAR = 0
+}
+
+NInterface = {
+	MAX_NUM_SAVE_GAMES = 1000000
+}

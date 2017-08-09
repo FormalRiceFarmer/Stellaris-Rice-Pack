@@ -150,7 +150,7 @@ end
 local reactorSets = {
 	{
 		utility = 7,
-		size = " corvette corvetteNSC ",
+		size = " science colonizer constructor transport corvette corvetteNSC ",
 		file = "util_powah_2_corvette.txt",
 	},
 	{
@@ -160,7 +160,7 @@ local reactorSets = {
 	},
 	{
 		utility = 14,
-		size = " cofh_se_auxiliary_tender overload_mobile_station_small cofh_se_destroyer_hvy cofh_se_corvette_sup cofh_se_destroyer_sup military_station_small military_station_small_NSC Drydock st_light_cruiser_01 st_light_Int_01 st_R_light_Int_01 st_Rebel_01_Escort st_Empire_01_Escort st_R_light_cruiser ",
+		size = " orbital_station mining_station research_station observation_station outpost_station SensorStation MiningBase PowerStation cofh_se_auxiliary_tender overload_mobile_station_small cofh_se_destroyer_hvy cofh_se_corvette_sup cofh_se_destroyer_sup military_station_small military_station_small_NSC Drydock st_light_cruiser_01 st_light_Int_01 st_R_light_Int_01 st_Rebel_01_Escort st_Empire_01_Escort st_R_light_cruiser ",
 		file = "util_powah_6_station.txt",
 	},
 	{
@@ -235,7 +235,9 @@ do
 
 		-- Stellaris Remake
 		zhow_carrier                 = { 0, 0, 12 },
-
+		
+		science                      = { 4, 2, 0 },
+		orbital_station              = { 2, 2, 2 },
 		-- NSC
 		corvetteNSC                  = { 4, 2, 0 },
 		destroyerNSC                 = { 4, 4, 0 },
